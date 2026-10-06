@@ -249,7 +249,7 @@ function sectorPage(s){
   <div class="grid g5">${ind}</div>${notes}
   <h2>浪的位置 <small>每一浪用 价格（相对强度、广度）+ 财报（收入、毛利率、EBITDA 利润率、RPO）六项来验证</small></h2>
   <div class="grid g3">${waves}</div>
-  <h2>产业链 <small>从终端产品往上游拆；点击任一环节看公司和上下游关系</small></h2>
+  <h2>产业链 <small>从终端产品往上游拆；点击任一环节看公司和上下游关系 · ⚙ 决定效率 · ▲ 主升浪触发点</small></h2>
   <div class="tabs">${s.chains.map(c=>`<button class="${c.id===ch.id?"on":""}" onclick="state.chain['${s.id}']='${c.id}';render()">${esc(c.name)}</button>`).join("")}</div>
   <div class="card" style="margin-bottom:10px"><b>${esc(ch.product)}</b><div class="small muted" style="margin-top:4px">${esc(ch.summary)}</div></div>
   ${diagram(s,ch)}
@@ -279,7 +279,8 @@ function diagram(s,ch){
       <rect class="b" width="${NW}" height="${NH}" rx="8"/><rect width="4" height="${NH-12}" y="6" x="0" rx="2" style="fill:var(--w${n.wave});stroke:none"/>
       ${name.map((t,i)=>`<text x="13" y="${name.length>1?19+i*15:23}" font-weight="600">${esc(t)}</text>`).join("")}
       <text class="sub" x="13" y="${NH-9}">${WN[n.wave]} · ${listed.length} 家上市${flags?"  "+flags:""}</text></g>`}).join("");
-  const axis=`<text class="axis" x="12" y="16">◀ 上游（设备 / 材料 / 零部件）</text><text class="axis" x="${W/2}" y="16" text-anchor="middle">⚙ 决定效率　▲ 主升浪触发点</text><text class="axis" x="${W-12}" y="16" text-anchor="end">下游（终端产品）▶</text>`;
+  const wide=W>=900;
+  const axis=`<text class="axis" x="12" y="16">◀ 上游${wide?"（设备 / 材料 / 零部件）":""}</text>${wide?`<text class="axis" x="${W/2}" y="16" text-anchor="middle">⚙ 决定效率　▲ 主升浪触发点</text>`:""}<text class="axis" x="${W-12}" y="16" text-anchor="end">下游${wide?"（终端产品）":""} ▶</text>`;
   return `<div class="diagram"><svg viewBox="0 0 ${W} ${H}" style="max-width:${W}px;min-width:${Math.min(W,620)}px;margin:0 auto"><defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--faint)"/></marker><marker id="arh" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--accent)"/></marker></defs>${axis}${edges}${nodes}</svg></div>`;
 }
 function pickNode(sid,cid,nid){const k=sid+"/"+cid;state.node[k]=state.node[k]===nid?null:nid;const y=window.scrollY;render();window.scrollTo(0,y)}
