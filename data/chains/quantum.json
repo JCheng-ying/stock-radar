@@ -1,0 +1,94 @@
+{
+  "id": "quantum",
+  "name": "量子计算",
+  "summizer_tags": ["量子计算板块"],
+  "etfs": {"QTUM": "量子计算主题 ETF", "SMH": "半导体（对照）"},
+  "industry": {
+    "需求": "目前收入主要来自政府科研合同和云上试用；真正的商业需求（材料/药物模拟、优化、密码学）要等容错量子计算机出现。",
+    "供给": "稀释制冷机、氦-3、高精度激光、专用测控电子的产能都很小，整机交付以“台”计。",
+    "资本开支": "各国政府量子计划拨款 + 上市公司增发融资是主要资金来源，账上现金能烧几年是生存指标。",
+    "技术进步": "核心是量子纠错：逻辑量子比特数量、两比特门保真度（99.9% 以上）、纠错后错误率随规模下降。每一次纠错里程碑都是板块行情的发令枪。",
+    "产业政策": "美国国家量子计划再授权、DARPA 量子基准计划（QBI）入选名单、后量子密码（PQC）迁移时间表。"
+  },
+  "waves": {
+    "1": {"name": "一浪：硬件与零部件", "desc": "整机公司 + 制冷、测控、激光、芯片代工——目前行情几乎全在这一层，靠技术里程碑和融资驱动。"},
+    "2": {"name": "二浪：B端应用", "desc": "量子云服务、优化求解、后量子密码迁移——看合同额（bookings/RPO）和企业客户数。"},
+    "3": {"name": "三浪：C端应用", "desc": "尚未出现。要等容错量子计算机商业化之后。"}
+  },
+  "chains": [
+    {
+      "id": "quantum-computer",
+      "name": "一台量子计算机",
+      "product": "把一台量子计算机拆开：量子芯片、制冷、测控、激光、纠错",
+      "summary": "不同技术路线（超导、离子阱、中性原子、光子、硅自旋）用到的零件不一样：超导路线离不开稀释制冷机和微波测控；离子阱和中性原子路线离不开高精度激光和真空系统；所有路线最后都卡在“量子纠错”——需要经典算力实时解码。",
+      "nodes": [
+        {"id": "system", "name": "量子计算整机", "layer": 0, "wave": 1,
+         "role": "把量子处理器、控制系统、软件集成成可用的机器，通过云或直接销售交付。",
+         "eff": "两比特门保真度 × 量子比特数 × 相干时间，合起来决定能跑多深的电路。",
+         "trigger": "逻辑量子比特数量/纠错里程碑达成；入选 DARPA QBI 下一阶段；拿到大额政府或企业整机订单。",
+         "cos": ["IONQ|离子阱，已收购 SkyWater 晶圆厂做垂直整合", "RGTI|Rigetti，超导", "QBTS|D-Wave，退火 + 门模型", "QUBT|光子", "?IBM|超导，路线图最清晰", "?GOOGL|Willow 超导芯片", "QNT|Quantinuum，离子阱", "?HON|Quantinuum 控股股东", "INFQ|Infleqtion，中性原子", "XNDU|Xanadu，光子", "IQMX|IQM，超导", "~PsiQuantum|未上市，光子", "~QuEra|未上市，中性原子"]},
+        {"id": "qpu", "name": "量子芯片制造", "layer": 1, "wave": 1,
+         "role": "超导量子比特、光子芯片、硅自旋量子比特都需要专门的晶圆产线。",
+         "eff": "制造一致性决定量子比特质量的均匀度，是规模化的前提。",
+         "trigger": "量子芯片进入标准 300mm 产线量产。",
+         "cos": ["~SkyWater|2026-07 被 IonQ 收购退市，代工 D-Wave / PsiQuantum", "?GFS|格芯，PsiQuantum 光子芯片", "?INTC|硅自旋量子比特", "?IBM|自有产线"]},
+        {"id": "cryo", "name": "稀释制冷机 / 低温系统", "layer": 1, "wave": 1,
+         "role": "超导量子比特要在 10 毫开尔文下工作，比外太空还冷。制冷机的冷量决定一台机器能放多少量子比特。",
+         "eff": "制冷功率和布线密度是超导路线扩展的物理上限。",
+         "cos": ["~Bluefors|芬兰未上市，龙头", "~Oxford Instruments|伦敦上市", "?FORM|FormFactor，低温探针台", "?LIN|林德，氦气", "?APD|空气化工，氦气"]},
+        {"id": "ctrl", "name": "测控电子 / 微波系统", "layer": 1, "wave": 1,
+         "role": "产生和读取控制量子比特的微波/射频脉冲：任意波形发生器、低噪放大器、FPGA。",
+         "eff": "控制精度和串扰直接决定门保真度。",
+         "cos": ["?KEYS|是德科技，量子测控", "~Quantum Machines|未上市", "~Zurich Instruments|罗德与施瓦茨旗下", "?AMD|FPGA（赛灵思）", "?ADI|高速数据转换器"]},
+        {"id": "laser", "name": "激光与光学系统", "layer": 1, "wave": 1,
+         "role": "离子阱、中性原子、光子路线用激光来囚禁和操控量子比特。",
+         "eff": "激光稳定性和光学集成度决定离子阱/中性原子路线的门速度与规模。",
+         "cos": ["?COHR|Coherent", "?LITE|Lumentum", "?IPGP|IPG 光子", "?MKSI|MKS，光学与真空"]},
+        {"id": "qec", "name": "量子纠错 / 经典协处理", "layer": 1, "wave": 1,
+         "role": "纠错需要经典计算机在微秒级实时解码，GPU/FPGA 与量子处理器混合部署。",
+         "eff": "解码速度必须快过错误累积速度——这是从“物理比特”到“逻辑比特”的关键一环。",
+         "trigger": "实时纠错在更大码距上演示成功，是整个板块主升浪最重要的技术触发点。",
+         "cos": ["?NVDA|CUDA-Q / NVQLink", "?AMD|FPGA 解码", "?IBM|qLDPC 码路线"]},
+        {"id": "qcloud", "name": "量子云平台 / 软件", "layer": 0, "wave": 2,
+         "role": "企业和科研用户通过云接入各家量子计算机。",
+         "trigger": "云上量子用量和企业合同额（bookings）显著放大。",
+         "cos": ["?AMZN|Braket", "?MSFT|Azure Quantum", "?GOOGL|Quantum AI", "?IBM|Qiskit / Quantum Network"]}
+      ],
+      "edges": [
+        ["qpu", "system", "量子处理器"],
+        ["cryo", "system", "超导路线的工作环境"],
+        ["ctrl", "system", "控制与读出"],
+        ["laser", "system", "离子阱 / 中性原子 / 光子路线"],
+        ["qec", "system", "实时纠错解码"],
+        ["ctrl", "qec", "读出数据"],
+        ["system", "qcloud", "接入云平台"]
+      ]
+    },
+    {
+      "id": "pqc",
+      "name": "量子安全与量子网络",
+      "product": "银行和政府把加密系统换成“抗量子攻击”的版本",
+      "summary": "量子计算的第一个确定性 B 端需求：不管量子计算机什么时候成熟，“先窃取后解密”的威胁让政府和金融机构现在就必须迁移到后量子密码（PQC）。这是二浪里有明确时间表的一段。",
+      "nodes": [
+        {"id": "pqcapp", "name": "后量子密码迁移（政府 / 金融客户）", "layer": 0, "wave": 2,
+         "role": "NIST 标准落地后，联邦机构和关键基础设施按时间表强制迁移。",
+         "trigger": "强制迁移期限临近；量子计算机破解密码的资源估计被大幅下修。",
+         "cos": ["?PANW|Palo Alto", "?CRWD|CrowdStrike", "?CSCO|思科", "?IBM|PQC 标准主要贡献者", "?NET|Cloudflare，已默认启用 PQC"]},
+        {"id": "pqchip", "name": "PQC 芯片 / 加密方案", "layer": 1, "wave": 2,
+         "role": "把抗量子算法做进安全芯片、加密软件。",
+         "cos": ["LAES|SEALSQ，PQC 芯片", "ARQQ|Arqit，对称密钥协商", "BTQ|BTQ，区块链 PQC"]},
+        {"id": "qkd", "name": "量子密钥分发 / 量子网络", "layer": 1, "wave": 1,
+         "role": "用量子态分发密钥，以及把多台量子计算机联网。",
+         "cos": ["IONQ|收购 ID Quantique / Lightsynq", "QUBT|光子器件", "~Toshiba|日本上市，QKD"]},
+        {"id": "photonics", "name": "单光子源 / 探测器 / 光纤", "layer": 2, "wave": 1,
+         "role": "量子网络的底层光学器件。",
+         "cos": ["?COHR|Coherent", "?LITE|Lumentum", "?GLW|康宁"]}
+      ],
+      "edges": [
+        ["photonics", "qkd", "光学器件"],
+        ["qkd", "pqcapp", "物理层密钥"],
+        ["pqchip", "pqcapp", "算法与芯片"]
+      ]
+    }
+  ]
+}

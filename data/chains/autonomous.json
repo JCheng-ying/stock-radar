@@ -1,0 +1,121 @@
+{
+  "id": "autonomous",
+  "name": "自动驾驶",
+  "summizer_tags": ["edge AI板块", "机器人板块"],
+  "etfs": {"DRIV": "自动驾驶与电动车 ETF", "IDRV": "自动驾驶 ETF"},
+  "industry": {
+    "需求": "Robotaxi 每英里成本一旦低于有人网约车，需求几乎无上限；卡车货运长期缺司机；消费者对 L2+ 辅助驾驶的付费意愿在提升。",
+    "供给": "合规的无人驾驶车辆产能、车规级算力芯片、激光雷达成本，以及最稀缺的——各城市的运营牌照。",
+    "资本开支": "Waymo 的车队扩张投入、特斯拉的训练算力集群（Cortex）和 Cybercab 产线、各家的仿真与数据闭环。",
+    "技术进步": "端到端大模型取代规则代码；纯视觉 vs 多传感器融合；每次接管间隔里程（MPI）是最核心的技术指标。",
+    "产业政策": "NHTSA 对无方向盘车辆的豁免数量、各州无人驾驶运营许可、对中国车载软硬件的限制。"
+  },
+  "waves": {
+    "1": {"name": "一浪：芯片、传感器与算力", "desc": "车载计算芯片、激光雷达、摄像头、训练算力——车还没大规模上路，先卖零件。"},
+    "2": {"name": "二浪：B端运营", "desc": "Robotaxi 车队、自动驾驶卡车、矿山农机——看运营城市数、付费订单量和每英里成本。"},
+    "3": {"name": "三浪：C端应用", "desc": "私家车的 L2+/L3 辅助驾驶订阅——看搭载率和软件订阅收入。"}
+  },
+  "chains": [
+    {
+      "id": "robotaxi",
+      "name": "一辆 Robotaxi",
+      "product": "把一辆 Waymo / Cybercab 拆开：大脑、眼睛、底盘、车队运营",
+      "summary": "一辆 Robotaxi = 一辆车 + 一套自动驾驶系统（芯片 + 传感器 + 软件）+ 运营网络。硬件成本每年在降，真正的壁垒是软件的安全里程和监管许可。",
+      "nodes": [
+        {"id": "ops", "name": "Robotaxi 运营平台", "layer": 0, "wave": 2,
+         "role": "拥有或调度无人车队，直接向乘客收费。",
+         "eff": "车辆利用率（每天付费里程）和每英里成本决定单车盈利。",
+         "trigger": "进入新城市的速度加快、每周付费订单量公布并超预期、取消安全员。",
+         "cos": ["?GOOGL|Waymo，美国规模最大", "TSLA|Robotaxi / Cybercab", "?AMZN|Zoox", "UBER|聚合平台，接入多家", "LYFT|聚合平台", "?BIDU|萝卜快跑", "PONY|小马智行", "WRD|文远知行"]},
+        {"id": "stack", "name": "自动驾驶系统（软件栈）", "layer": 1, "wave": 1,
+         "role": "感知、预测、规划的端到端模型。",
+         "eff": "每次接管间隔里程（MPI）——安全性决定能不能撤掉安全员，是整条链价值的总开关。",
+         "trigger": "端到端模型让 MPI 出现数量级提升；监管批准无安全员运营。",
+         "cos": ["?GOOGL|Waymo Driver", "TSLA|FSD", "MBLY|Mobileye Drive", "?NVDA|DRIVE 全栈方案", "~Wayve|未上市", "~Nuro|未上市"]},
+        {"id": "compute", "name": "车载计算芯片", "layer": 2, "wave": 1,
+         "role": "车上实时推理的 AI 芯片。",
+         "eff": "算力/功耗比决定能跑多大的模型。",
+         "cos": ["?NVDA|DRIVE Thor", "?QCOM|Snapdragon Ride", "MBLY|EyeQ", "AMBA|Ambarella", "TSLA|自研 AI5 / AI6"]},
+        {"id": "lidar", "name": "激光雷达", "layer": 2, "wave": 1,
+         "role": "三维测距传感器。成本已从几万美元降到几百美元。",
+         "trigger": "拿到主流车企量产定点；单价继续下探带动搭载率。",
+         "cos": ["HSAI|禾赛", "OUST|Ouster", "AEVA|Aeva，FMCW", "INVZ|Innoviz", "MVIS|MicroVision"]},
+        {"id": "camera", "name": "摄像头 / 毫米波雷达 / 模拟芯片", "layer": 2, "wave": 1,
+         "role": "车规图像传感器、雷达芯片、电源管理。",
+         "cos": ["ON|安森美，车载 CIS", "?SONY|图像传感器", "?NXPI|雷达芯片", "?TXN|德州仪器", "?ADI|亚德诺", "?IFNNY|英飞凌", "ARBE|4D 成像雷达"]},
+        {"id": "train", "name": "训练算力与仿真", "layer": 2, "wave": 1,
+         "role": "用海量行驶视频训练模型，在仿真里跑极端场景。",
+         "cos": ["?NVDA|训练 GPU + 仿真", "TSLA|自建 Cortex 集群"]},
+        {"id": "vehicle", "name": "整车与线控底盘", "layer": 1, "wave": 1,
+         "role": "为无人驾驶设计的车辆平台，以及线控转向/制动等冗余执行机构。",
+         "cos": ["TSLA|Cybercab", "MGA|麦格纳，为 Waymo 代工改装", "APTV|安波福，电子架构", "?BWA|博格华纳", "?GM|通用", "~现代汽车|Waymo 车辆供应方", "~丰田|与 Waymo 合作"]},
+        {"id": "fleet", "name": "车队运维 / 充电 / 保险", "layer": 1, "wave": 2,
+         "role": "清洁、充电、维修、保险——Robotaxi 规模化后的线下重资产环节。",
+         "cos": ["UBER|车队合作伙伴网络", "?HTZ|赫兹，车队管理", "?EVGO|快充网络"]}
+      ],
+      "edges": [
+        ["train", "stack", "模型训练"],
+        ["compute", "stack", "车端推理"],
+        ["lidar", "stack", "感知输入"],
+        ["camera", "stack", "感知输入"],
+        ["stack", "ops", "驾驶能力"],
+        ["vehicle", "ops", "车辆"],
+        ["fleet", "ops", "线下运维"]
+      ]
+    },
+    {
+      "id": "trucking",
+      "name": "自动驾驶卡车与作业车辆",
+      "product": "一辆没有司机、在高速上跑长途的重卡",
+      "summary": "B 端场景比 Robotaxi 更简单（高速公路、固定线路、封闭矿区），商业逻辑是直接替代司机成本。看商业化里程和客户合同。",
+      "nodes": [
+        {"id": "truckops", "name": "自动驾驶货运运营", "layer": 0, "wave": 2,
+         "role": "按英里向货主/车队收费的“司机即服务”。",
+         "trigger": "无人驾驶商业里程快速累积、线路扩张、夜间与雨天运营获批。",
+         "cos": ["AUR|Aurora", "KDK|Kodiak", "~Waabi|未上市"]},
+        {"id": "truckoem", "name": "卡车整车厂", "layer": 1, "wave": 2,
+         "role": "提供带冗余系统的卡车平台。",
+         "cos": ["?PCAR|帕卡", "~Volvo / Daimler Truck|欧洲上市"]},
+        {"id": "offroad", "name": "矿山 / 农业 / 工程机械自动化", "layer": 0, "wave": 2,
+         "role": "封闭场景最早实现无人化并盈利。",
+         "cos": ["?CAT|卡特彼勒，无人矿卡", "?DE|迪尔，自动驾驶拖拉机"]},
+        {"id": "tsensor", "name": "长距感知传感器", "layer": 2, "wave": 1,
+         "role": "卡车刹车距离长，需要看得更远的激光雷达和雷达。",
+         "cos": ["AEVA|Aeva", "OUST|Ouster", "ARBE|Arbe"]},
+        {"id": "tcompute", "name": "计算平台", "layer": 2, "wave": 1,
+         "role": "车载算力。",
+         "cos": ["?NVDA|DRIVE", "?QCOM|Ride"]}
+      ],
+      "edges": [
+        ["tsensor", "truckops", "远距感知"],
+        ["tcompute", "truckops", "车端算力"],
+        ["truckoem", "truckops", "冗余卡车平台"],
+        ["tsensor", "offroad", "感知"],
+        ["tcompute", "offroad", "算力"]
+      ]
+    },
+    {
+      "id": "adas",
+      "name": "私家车辅助驾驶（L2+ / L3）",
+      "product": "你自己的车在高速和城区自己开，你只需要看着",
+      "summary": "三浪：辅助驾驶从选配变成标配，再变成按月订阅的软件收入。看搭载率、订阅率和单车软件收入。",
+      "nodes": [
+        {"id": "carmaker", "name": "车企（软件订阅）", "layer": 0, "wave": 3,
+         "role": "把辅助驾驶做成付费功能。",
+         "trigger": "订阅率明显提升；L3（可脱手脱眼）在主要市场获批。",
+         "cos": ["TSLA|FSD 订阅", "XPEV|小鹏", "LI|理想", "NIO|蔚来", "RIVN|Rivian", "?GM|Super Cruise", "?F|BlueCruise"]},
+        {"id": "adasys", "name": "辅助驾驶方案商", "layer": 1, "wave": 1,
+         "role": "给没有自研能力的车企提供整套方案。",
+         "cos": ["MBLY|Mobileye", "?NVDA|DRIVE", "?QCOM|Ride", "APTV|安波福"]},
+        {"id": "asensor", "name": "传感器与芯片", "layer": 2, "wave": 1,
+         "role": "摄像头、雷达、激光雷达、域控制器芯片。",
+         "cos": ["ON|安森美", "?NXPI|恩智浦", "HSAI|禾赛", "INVZ|Innoviz", "AMBA|Ambarella"]}
+      ],
+      "edges": [
+        ["asensor", "adasys", "感知硬件"],
+        ["adasys", "carmaker", "整套方案"],
+        ["asensor", "carmaker", "自研车企直采"]
+      ]
+    }
+  ]
+}

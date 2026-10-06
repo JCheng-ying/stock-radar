@@ -1,0 +1,143 @@
+"""入口：python -m src.main [--no-push] [--force] [--only AI]
+
+抓数据 -> 算五个面 -> 判断浪位 -> 推送变化 -> 生成 index.html
+"""
+import argparse
+import json
+import logging
+from datetime import datetime, timezone
+
+from . import alerts, analyze, build_site, config, fetch, universe
+
+log = logging.getLogger("stock-radar")
+
+
+def _summizer(members):
+    """从 Summizer 的图谱里取出：各板块的利好/利空信号，以及带来源的公司关系。"""
+    try:
+        g = json.loads(config.SUMMIZER_GRAPH.read_text())
+    except Exception:
+        return {}, {}
+    nodes = g["nodes"] if isinstance(g["nodes"], dict) else {n["name"]: n for n in g["nodes"]}
+    key_ticker = {k: n["ticker"].upper() for k, n in nodes.items() if n.get("ticker")}
+    rel = {}
+    for e in g.get("edges", []):
+        for a, b in ((e["source"], e["target"]), (e["target"], e["source"])):
+            t = key_ticker.get(a)
+            if t in members and b in nodes:
+                ev = (e.get("evidence") or [{}])[-1]
+                rel.setdefault(t, []).append({
+                    "other": nodes[b]["name"], "type": e["type"], "desc": ev.get("description", ""),
+                    "url": ev.get("article_url", ""), "date": (ev.get("published") or "")[:16]})
+    signals = {}
+    for s in g.get("sector_signals", []):
+        signals.setdefault(s["sector"], []).append({
+            "desc": s["description"], "title": s.get("article_title", ""), "url": s.get("article_url", ""),
+            "src": s.get("source_name", ""), "added": (s.get("added_at") or "")[:10]})
+    for v in signals.values():
+        v.sort(key=lambda x: x["added"], reverse=True)
+    return signals, rel
+
+
+def build_snapshot(force=False):
+    sectors = universe.load_sectors()
+    members = universe.memberships(sectors)
+    tickers = sorted(members)
+    theme_etfs = universe.sector_etfs(sectors)
+    try:
+        notes = json.loads(config.NOTES.read_text())
+    except Exception:
+        notes = {}
+
+    log.info("行情：%d 只股票 + ETF/宏观", len(tickers))
+    igv_hold = fetch.fetch_etf_holdings("IGV")
+    px = fetch.fetch_prices(tickers + list(fetch.MACRO) + list(fetch.SPDR) + list(theme_etfs)
+                            + fetch.LEVERAGED + fetch.LEVERAGE_BASE + ["IGV", "SMH"] + igv_hold)
+    spy = px["SPY"]["Close"]
+    log.info("基本面与一致预期")
+    funds = fetch.fetch_fundamentals(tickers, force=force)
+    log.info("SEC RPO")
+    rpo = fetch.fetch_rpo(tickers, force=force)
+    log.info("SEC 8-K 重大事件")
+    filings = fetch.fetch_filings(tickers, force=force)
+    fg = fetch.fetch_fear_greed()
+    sig, rel = _summizer(members)
+
+    companies = {}
+    for t in tickers:
+        if t not in px:
+            log.warning("没有行情，跳过：%s", t)
+            continue
+        f = funds.get(t) or {"info": {}, "quarters": []}
+        tc = analyze.tech(px[t], spy)
+        fu = analyze.fundamentals(f, rpo.get(t))
+        ex = analyze.expectation(f, tc["price"])
+        ca = analyze.capital(f, tc)
+        h, hwhy = analyze.heat(tc, ca)
+        info = f.get("info") or {}
+        companies[t] = {
+            "name": info.get("shortName") or info.get("longName") or t, "industry": info.get("industry", ""),
+            "tech": tc, "fund": fu, "expect": ex, "capital": ca, "heat": h, "heat_why": hwhy,
+            "members": members[t], "news": f.get("news") or [], "filings": filings.get(t, []), "relations": (rel.get(t) or [])[:12],
+            "notes": (notes.get("companies") or {}).get(t, []),
+            "spark": [round(float(x), 2) for x in px[t]["Close"].tail(config.SPARK_DAYS).tolist()],
+            "spark_end": str(px[t].index[-1].date()),
+        }
+
+    sentiment = analyze.market_sentiment(px, fg, companies, fetch.LEVERAGED, fetch.LEVERAGE_BASE,
+                                         notes.get("margin_debt"))
+    for c in companies.values():
+        fm, em = c["fund"].get("fcf_margin"), c["fund"].get("em")
+        burning = (fm is not None and fm < -0.5) or (em is not None and em < -0.5)
+        c["signal"] = analyze.position_signal(c["fund"].get("score"), c["expect"].get("score"),
+                                              c["heat"], sentiment.get("heat"), burning)
+
+    out_sectors = []
+    for s in sectors:
+        signals = []
+        for tag in s.get("summizer_tags", [])[:1]:
+            signals += sig.get(tag, [])
+        out_sectors.append({
+            "id": s["id"], "name": s["name"], "industry": s["industry"], "etfs": s.get("etfs", {}),
+            "chains": s["chains"], "wave_status": analyze.wave_status(s, companies, px, spy),
+            "signals": signals[:25], "notes": (notes.get("sectors") or {}).get(s["id"], []),
+        })
+
+    return {
+        "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "as_of": str(spy.index[-1].date()),
+        "market": {
+            "funding": analyze.macro_funding(px),
+            "sentiment": sentiment,
+            "spdr": analyze.etf_flows(px, fetch.SPDR),
+            "themes": analyze.etf_flows(px, {**theme_etfs, "IGV": "软件", "SMH": "半导体", "QQQ": "纳指100", "IWM": "罗素2000"}),
+            "igv": analyze.igv_check(px, igv_hold, companies),
+        },
+        "sectors": out_sectors,
+        "companies": companies,
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--no-push", action="store_true", help="只生成网页，不检测变化、不推送")
+    ap.add_argument("--force", action="store_true", help="忽略缓存，重新拉取基本面")
+    ap.add_argument("--rebuild", action="store_true", help="不联网，用上次的 snapshot.json 重新生成网页")
+    args = ap.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
+    config.load_env()
+    if args.rebuild:
+        snap = json.loads(config.SNAPSHOT.read_text())
+    else:
+        snap = build_snapshot(force=args.force)
+        if not args.no_push:
+            for a in alerts.run(snap):
+                log.info("推送[%s] %s", "已发" if a["sent"] else "仅记录", a["title"])
+        config.SNAPSHOT.write_text(json.dumps(snap, ensure_ascii=False))
+    snap["alerts"] = alerts.recent()
+    build_site.build(snap)
+    log.info("完成：%d 家公司 -> %s", len(snap["companies"]), config.SITE)
+
+
+if __name__ == "__main__":
+    main()
