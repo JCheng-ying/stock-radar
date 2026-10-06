@@ -1,121 +1,900 @@
 {
-  "id": "autonomous",
-  "name": "自动驾驶",
-  "summizer_tags": ["edge AI板块", "机器人板块"],
-  "etfs": {"DRIV": "自动驾驶与电动车 ETF", "IDRV": "自动驾驶 ETF"},
-  "industry": {
-    "需求": "Robotaxi 每英里成本一旦低于有人网约车，需求几乎无上限；卡车货运长期缺司机；消费者对 L2+ 辅助驾驶的付费意愿在提升。",
-    "供给": "合规的无人驾驶车辆产能、车规级算力芯片、激光雷达成本，以及最稀缺的——各城市的运营牌照。",
-    "资本开支": "Waymo 的车队扩张投入、特斯拉的训练算力集群（Cortex）和 Cybercab 产线、各家的仿真与数据闭环。",
-    "技术进步": "端到端大模型取代规则代码；纯视觉 vs 多传感器融合；每次接管间隔里程（MPI）是最核心的技术指标。",
-    "产业政策": "NHTSA 对无方向盘车辆的豁免数量、各州无人驾驶运营许可、对中国车载软硬件的限制。"
+ "id": "autonomous",
+ "name": "自动驾驶",
+ "summizer_tags": [
+  "edge AI板块",
+  "机器人板块"
+ ],
+ "etfs": {
+  "DRIV": "自动驾驶与电动车 ETF",
+  "IDRV": "自动驾驶 ETF"
+ },
+ "industry": {
+  "需求": "Robotaxi 每英里成本一旦低于有人网约车，需求几乎无上限；卡车货运长期缺司机；消费者对 L2+ 辅助驾驶的付费意愿在提升。",
+  "供给": "合规的无人驾驶车辆产能、车规级算力芯片、激光雷达成本，以及最稀缺的——各城市的运营牌照。",
+  "资本开支": "Waymo 的车队扩张投入、特斯拉的训练算力集群（Cortex）和 Cybercab 产线、各家的仿真与数据闭环。",
+  "技术进步": "端到端大模型取代规则代码；纯视觉 vs 多传感器融合；每次接管间隔里程（MPI）是最核心的技术指标。",
+  "产业政策": "NHTSA 对无方向盘车辆的豁免数量、各州无人驾驶运营许可、对中国车载软硬件的限制。"
+ },
+ "waves": {
+  "1": {
+   "name": "一浪：芯片、传感器与算力",
+   "desc": "车载计算芯片、激光雷达、摄像头、训练算力——车还没大规模上路，先卖零件。"
   },
-  "waves": {
-    "1": {"name": "一浪：芯片、传感器与算力", "desc": "车载计算芯片、激光雷达、摄像头、训练算力——车还没大规模上路，先卖零件。"},
-    "2": {"name": "二浪：B端运营", "desc": "Robotaxi 车队、自动驾驶卡车、矿山农机——看运营城市数、付费订单量和每英里成本。"},
-    "3": {"name": "三浪：C端应用", "desc": "私家车的 L2+/L3 辅助驾驶订阅——看搭载率和软件订阅收入。"}
+  "2": {
+   "name": "二浪：B端运营",
+   "desc": "Robotaxi 车队、自动驾驶卡车、矿山农机——看运营城市数、付费订单量和每英里成本。"
   },
-  "chains": [
+  "3": {
+   "name": "三浪：C端应用",
+   "desc": "私家车的 L2+/L3 辅助驾驶订阅——看搭载率和软件订阅收入。"
+  }
+ },
+ "chains": [
+  {
+   "id": "robotaxi",
+   "name": "Robotaxi",
+   "icon": "🚕",
+   "model": "custom",
+   "product": "把一辆 Waymo / Cybercab 拆开：眼睛、大脑、底盘、动力，以及看不见的软件和车队",
+   "summary": "一辆 Robotaxi = 一辆车 + 一套自动驾驶系统（芯片 + 传感器 + 软件）+ 运营网络。硬件成本每年在降，真正的壁垒是软件的安全里程和监管许可。",
+   "nodes": [
     {
-      "id": "robotaxi",
-      "name": "一辆 Robotaxi",
-      "product": "把一辆 Waymo / Cybercab 拆开：大脑、眼睛、底盘、车队运营",
-      "summary": "一辆 Robotaxi = 一辆车 + 一套自动驾驶系统（芯片 + 传感器 + 软件）+ 运营网络。硬件成本每年在降，真正的壁垒是软件的安全里程和监管许可。",
-      "nodes": [
-        {"id": "ops", "name": "Robotaxi 运营平台", "layer": 0, "wave": 2,
-         "role": "拥有或调度无人车队，直接向乘客收费。",
-         "eff": "车辆利用率（每天付费里程）和每英里成本决定单车盈利。",
-         "trigger": "进入新城市的速度加快、每周付费订单量公布并超预期、取消安全员。",
-         "cos": ["?GOOGL|Waymo，美国规模最大", "TSLA|Robotaxi / Cybercab", "?AMZN|Zoox", "UBER|聚合平台，接入多家", "LYFT|聚合平台", "?BIDU|萝卜快跑", "PONY|小马智行", "WRD|文远知行"]},
-        {"id": "stack", "name": "自动驾驶系统（软件栈）", "layer": 1, "wave": 1,
-         "role": "感知、预测、规划的端到端模型。",
-         "eff": "每次接管间隔里程（MPI）——安全性决定能不能撤掉安全员，是整条链价值的总开关。",
-         "trigger": "端到端模型让 MPI 出现数量级提升；监管批准无安全员运营。",
-         "cos": ["?GOOGL|Waymo Driver", "TSLA|FSD", "MBLY|Mobileye Drive", "?NVDA|DRIVE 全栈方案", "~Wayve|未上市", "~Nuro|未上市"]},
-        {"id": "compute", "name": "车载计算芯片", "layer": 2, "wave": 1,
-         "role": "车上实时推理的 AI 芯片。",
-         "eff": "算力/功耗比决定能跑多大的模型。",
-         "cos": ["?NVDA|DRIVE Thor", "?QCOM|Snapdragon Ride", "MBLY|EyeQ", "AMBA|Ambarella", "TSLA|自研 AI5 / AI6"]},
-        {"id": "lidar", "name": "激光雷达", "layer": 2, "wave": 1,
-         "role": "三维测距传感器。成本已从几万美元降到几百美元。",
-         "trigger": "拿到主流车企量产定点；单价继续下探带动搭载率。",
-         "cos": ["HSAI|禾赛", "OUST|Ouster", "AEVA|Aeva，FMCW", "INVZ|Innoviz", "MVIS|MicroVision"]},
-        {"id": "camera", "name": "摄像头 / 毫米波雷达 / 模拟芯片", "layer": 2, "wave": 1,
-         "role": "车规图像传感器、雷达芯片、电源管理。",
-         "cos": ["ON|安森美，车载 CIS", "?SONY|图像传感器", "?NXPI|雷达芯片", "?TXN|德州仪器", "?ADI|亚德诺", "?IFNNY|英飞凌", "ARBE|4D 成像雷达"]},
-        {"id": "train", "name": "训练算力与仿真", "layer": 2, "wave": 1,
-         "role": "用海量行驶视频训练模型，在仿真里跑极端场景。",
-         "cos": ["?NVDA|训练 GPU + 仿真", "TSLA|自建 Cortex 集群"]},
-        {"id": "vehicle", "name": "整车与线控底盘", "layer": 1, "wave": 1,
-         "role": "为无人驾驶设计的车辆平台，以及线控转向/制动等冗余执行机构。",
-         "cos": ["TSLA|Cybercab", "MGA|麦格纳，为 Waymo 代工改装", "APTV|安波福，电子架构", "?BWA|博格华纳", "?GM|通用", "~现代汽车|Waymo 车辆供应方", "~丰田|与 Waymo 合作"]},
-        {"id": "fleet", "name": "车队运维 / 充电 / 保险", "layer": 1, "wave": 2,
-         "role": "清洁、充电、维修、保险——Robotaxi 规模化后的线下重资产环节。",
-         "cos": ["UBER|车队合作伙伴网络", "?HTZ|赫兹，车队管理", "?EVGO|快充网络"]}
-      ],
-      "edges": [
-        ["train", "stack", "模型训练"],
-        ["compute", "stack", "车端推理"],
-        ["lidar", "stack", "感知输入"],
-        ["camera", "stack", "感知输入"],
-        ["stack", "ops", "驾驶能力"],
-        ["vehicle", "ops", "车辆"],
-        ["fleet", "ops", "线下运维"]
-      ]
+     "id": "ops",
+     "name": "运营平台（向乘客收费）",
+     "group": "运营",
+     "wave": 2,
+     "role": "拥有或调度无人车队。",
+     "cos": [
+      "?GOOGL|Waymo",
+      "TSLA|Robotaxi / Cybercab",
+      "?AMZN|Zoox",
+      "UBER|聚合平台",
+      "LYFT|",
+      "?BIDU|萝卜快跑",
+      "PONY|小马智行",
+      "WRD|文远知行",
+      "GRAB|东南亚"
+     ],
+     "kw": [
+      "robotaxi",
+      "ride-hailing",
+      "autonomous ride",
+      "mobility platform"
+     ],
+     "eff": "车辆利用率和每英里成本决定单车盈利。",
+     "trigger": "进新城市加快；周付费订单量超预期；撤掉安全员。"
     },
     {
-      "id": "trucking",
-      "name": "自动驾驶卡车与作业车辆",
-      "product": "一辆没有司机、在高速上跑长途的重卡",
-      "summary": "B 端场景比 Robotaxi 更简单（高速公路、固定线路、封闭矿区），商业逻辑是直接替代司机成本。看商业化里程和客户合同。",
-      "nodes": [
-        {"id": "truckops", "name": "自动驾驶货运运营", "layer": 0, "wave": 2,
-         "role": "按英里向货主/车队收费的“司机即服务”。",
-         "trigger": "无人驾驶商业里程快速累积、线路扩张、夜间与雨天运营获批。",
-         "cos": ["AUR|Aurora", "KDK|Kodiak", "~Waabi|未上市"]},
-        {"id": "truckoem", "name": "卡车整车厂", "layer": 1, "wave": 2,
-         "role": "提供带冗余系统的卡车平台。",
-         "cos": ["?PCAR|帕卡", "~Volvo / Daimler Truck|欧洲上市"]},
-        {"id": "offroad", "name": "矿山 / 农业 / 工程机械自动化", "layer": 0, "wave": 2,
-         "role": "封闭场景最早实现无人化并盈利。",
-         "cos": ["?CAT|卡特彼勒，无人矿卡", "?DE|迪尔，自动驾驶拖拉机"]},
-        {"id": "tsensor", "name": "长距感知传感器", "layer": 2, "wave": 1,
-         "role": "卡车刹车距离长，需要看得更远的激光雷达和雷达。",
-         "cos": ["AEVA|Aeva", "OUST|Ouster", "ARBE|Arbe"]},
-        {"id": "tcompute", "name": "计算平台", "layer": 2, "wave": 1,
-         "role": "车载算力。",
-         "cos": ["?NVDA|DRIVE", "?QCOM|Ride"]}
-      ],
-      "edges": [
-        ["tsensor", "truckops", "远距感知"],
-        ["tcompute", "truckops", "车端算力"],
-        ["truckoem", "truckops", "冗余卡车平台"],
-        ["tsensor", "offroad", "感知"],
-        ["tcompute", "offroad", "算力"]
-      ]
+     "id": "stack",
+     "name": "自动驾驶软件（端到端模型）",
+     "group": "大脑",
+     "wave": 1,
+     "role": "感知、预测、规划。",
+     "cos": [
+      "?GOOGL|Waymo Driver",
+      "TSLA|FSD",
+      "MBLY|Mobileye Drive",
+      "?NVDA|DRIVE AV",
+      "AUR|Aurora Driver",
+      "PONY|",
+      "WRD|",
+      "~Wayve / Nuro / Momenta|未上市"
+     ],
+     "kw": [
+      "autonomous driving",
+      "self-driving",
+      "autonomous vehicle technology",
+      "autonomous driving technology"
+     ],
+     "eff": "每次接管间隔里程（MPI）——安全性是整条链价值的总开关。",
+     "trigger": "端到端模型让 MPI 数量级提升；监管批准无安全员运营。"
     },
     {
-      "id": "adas",
-      "name": "私家车辅助驾驶（L2+ / L3）",
-      "product": "你自己的车在高速和城区自己开，你只需要看着",
-      "summary": "三浪：辅助驾驶从选配变成标配，再变成按月订阅的软件收入。看搭载率、订阅率和单车软件收入。",
-      "nodes": [
-        {"id": "carmaker", "name": "车企（软件订阅）", "layer": 0, "wave": 3,
-         "role": "把辅助驾驶做成付费功能。",
-         "trigger": "订阅率明显提升；L3（可脱手脱眼）在主要市场获批。",
-         "cos": ["TSLA|FSD 订阅", "XPEV|小鹏", "LI|理想", "NIO|蔚来", "RIVN|Rivian", "?GM|Super Cruise", "?F|BlueCruise"]},
-        {"id": "adasys", "name": "辅助驾驶方案商", "layer": 1, "wave": 1,
-         "role": "给没有自研能力的车企提供整套方案。",
-         "cos": ["MBLY|Mobileye", "?NVDA|DRIVE", "?QCOM|Ride", "APTV|安波福"]},
-        {"id": "asensor", "name": "传感器与芯片", "layer": 2, "wave": 1,
-         "role": "摄像头、雷达、激光雷达、域控制器芯片。",
-         "cos": ["ON|安森美", "?NXPI|恩智浦", "HSAI|禾赛", "INVZ|Innoviz", "AMBA|Ambarella"]}
-      ],
-      "edges": [
-        ["asensor", "adasys", "感知硬件"],
-        ["adasys", "carmaker", "整套方案"],
-        ["asensor", "carmaker", "自研车企直采"]
-      ]
+     "id": "train",
+     "name": "训练算力 / 仿真 / 数据闭环",
+     "group": "大脑",
+     "wave": 1,
+     "role": "用海量行驶视频训练，在仿真里跑极端场景。",
+     "cos": [
+      "?NVDA|训练 GPU + Cosmos",
+      "TSLA|Cortex 集群",
+      "~Applied Intuition / Scale AI|未上市",
+      "?U|Unity"
+     ],
+     "kw": [
+      "simulation"
+     ]
+    },
+    {
+     "id": "compute",
+     "name": "车载计算平台",
+     "group": "大脑",
+     "wave": 1,
+     "role": "车上实时推理的 AI 芯片和域控制器。",
+     "cos": [
+      "?NVDA|DRIVE Thor",
+      "?QCOM|Snapdragon Ride",
+      "MBLY|EyeQ",
+      "AMBA|Ambarella",
+      "TSLA|AI5 / AI6",
+      "?RNECY|瑞萨",
+      "INDI|indie Semiconductor",
+      "~地平线 / 黑芝麻|港股"
+     ],
+     "kw": [
+      "automotive semiconductor",
+      "adas",
+      "automotive processors",
+      "advanced driver assistance"
+     ],
+     "m": "box .4 .12 .3 @-1.05 .05 0",
+     "eff": "算力/功耗比决定能跑多大的模型。"
+    },
+    {
+     "id": "lidar",
+     "name": "激光雷达",
+     "group": "眼睛",
+     "wave": 1,
+     "role": "三维测距，成本已从几万美元降到几百美元。",
+     "cos": [
+      "HSAI|禾赛",
+      "OUST|Ouster",
+      "AEVA|Aeva",
+      "INVZ|Innoviz",
+      "MVIS|MicroVision",
+      "LIDR|AEye",
+      "~速腾聚创|港股",
+      "?LITE|激光芯片",
+      "?COHR|"
+     ],
+     "kw": [
+      "lidar"
+     ],
+     "m": "cyl .15 .15 @0 .8 0;cyl .08 .1 @1.3 .2 .6;cyl .08 .1 @1.3 .2 -.6",
+     "trigger": "拿到主流车企量产定点；单价继续下探。"
+    },
+    {
+     "id": "camera",
+     "name": "摄像头 / 图像传感器",
+     "group": "眼睛",
+     "wave": 1,
+     "role": "每车 10~30 颗摄像头。",
+     "cos": [
+      "?ON|安森美，车载 CIS 龙头",
+      "?SONY|",
+      "?STM|",
+      "GNTX|Gentex，后视镜与摄像",
+      "?MGA|麦格纳摄像头模组",
+      "~豪威 / 舜宇 / LG Innotek|亚洲"
+     ],
+     "kw": [
+      "automotive cameras",
+      "image sensors",
+      "vision systems"
+     ],
+     "m": "box .08 .08 .08 @.5 .72 .4;box .08 .08 .08 @.5 .72 -.4;box .08 .08 .08 @-.9 .72 0;box .08 .08 .08 @1.42 .1 0"
+    },
+    {
+     "id": "radar",
+     "name": "毫米波雷达 / 模拟与射频芯片",
+     "group": "眼睛",
+     "wave": 1,
+     "role": "全天候测距测速。",
+     "cos": [
+      "?NXPI|恩智浦",
+      "?TXN|德州仪器",
+      "?IFNNY|英飞凌",
+      "?ADI|亚德诺",
+      "ARBE|Arbe，4D 成像雷达",
+      "?APTV|",
+      "INDI|",
+      "~大陆 / 博世|"
+     ],
+     "kw": [
+      "radar",
+      "imaging radar",
+      "automotive radar"
+     ],
+     "m": "box .1 .06 .2 @1.45 -.15 .35;box .1 .06 .2 @1.45 -.15 -.35;box .1 .06 .2 @-1.45 -.15 0"
+    },
+    {
+     "id": "gnss",
+     "name": "高精定位（GNSS / IMU）/ 地图",
+     "group": "眼睛",
+     "wave": 1,
+     "role": "厘米级定位和高精地图。",
+     "cos": [
+      "TRMB|Trimble",
+      "?GRMN|佳明",
+      "?HON|",
+      "?ADI|",
+      "?GOOGL|地图",
+      "?HXGBY|海克斯康",
+      "~u-blox / HERE / TomTom|欧洲",
+      "?STM|"
+     ],
+     "kw": [
+      "gnss",
+      "precise positioning",
+      "positioning technology",
+      "high-definition maps",
+      "navigation solutions"
+     ],
+     "m": "cone .06 .1 @-.5 .72 0"
+    },
+    {
+     "id": "v2x",
+     "name": "车联网 / 远程协助（5G）",
+     "group": "连接",
+     "wave": 1,
+     "role": "车和云、和远程协助中心的连接。",
+     "cos": [
+      "?QCOM|车载 5G",
+      "?T|",
+      "?VZ|",
+      "?TMUS|",
+      "?SWKS|",
+      "~移远 / Rolling Wireless|",
+      "AIRG|Airgain"
+     ],
+     "kw": [
+      "connected vehicle",
+      "telematics",
+      "v2x",
+      "vehicle connectivity"
+     ],
+     "m": "box .15 .05 .15 @-.5 .7 .3"
+    },
+    {
+     "id": "dbw",
+     "name": "线控转向 / 线控制动（冗余执行）",
+     "group": "底盘",
+     "wave": 1,
+     "role": "没有方向盘之后，转向和刹车必须双冗余。",
+     "cos": [
+      "?APTV|安波福",
+      "?BWA|博格华纳",
+      "?MGA|麦格纳",
+      "?ALV|奥托立夫",
+      "~博世 / 采埃孚 / 耐世特 / 布雷博|未上市或海外",
+      "?DAN|Dana",
+      "?GNTX|"
+     ],
+     "kw": [
+      "steer-by-wire",
+      "brake-by-wire",
+      "steering systems",
+      "braking systems",
+      "chassis systems"
+     ],
+     "m": "box .3 .1 .9 @.95 -.32 0",
+     "eff": "冗余执行机构是撤掉安全员的硬件前提。"
+    },
+    {
+     "id": "ee",
+     "name": "电子电气架构 / 线束 / 连接器",
+     "group": "底盘",
+     "wave": 1,
+     "role": "域控制器、车载以太网、高压线束。",
+     "cos": [
+      "APTV|安波福",
+      "?LEA|李尔",
+      "VC|伟世通",
+      "?APH|安费诺",
+      "?TEL|泰科",
+      "?NXPI|车载网络",
+      "?MCHP|",
+      "?MRVL|车载以太网",
+      "?LFUS|"
+     ],
+     "kw": [
+      "vehicle architecture",
+      "automotive ethernet",
+      "wiring",
+      "electrical distribution",
+      "automotive electronics"
+     ],
+     "m": "box .9 .05 .05 @0 -.1 .5;box .9 .05 .05 @0 -.1 -.5"
+    },
+    {
+     "id": "battery",
+     "name": "动力电池",
+     "group": "动力",
+     "wave": 1,
+     "role": "电动化是 Robotaxi 的默认选项。",
+     "cos": [
+      "TSLA|",
+      "~PCRFY|松下（代码已无行情）",
+      "QS|QuantumScape",
+      "?ALB|雅宝，锂",
+      "SLDP|",
+      "?GM|Ultium",
+      "~宁德时代 / LG 新能源|亚洲",
+      "~FREY|T1 Energy（代码已无行情）"
+     ],
+     "kw": [
+      "ev batteries",
+      "battery cells",
+      "lithium"
+     ],
+     "m": "box 1.6 .12 1.0 @0 -.25 0"
+    },
+    {
+     "id": "drive",
+     "name": "电驱 / 功率半导体（SiC）",
+     "group": "动力",
+     "wave": 1,
+     "role": "电机、逆变器、碳化硅。",
+     "cos": [
+      "?BWA|",
+      "?ON|安森美 SiC",
+      "WOLF|Wolfspeed",
+      "?STM|",
+      "?IFNNY|",
+      "TSLA|自研",
+      "?DAN|",
+      "?ALGM|"
+     ],
+     "kw": [
+      "electric drive",
+      "inverters",
+      "silicon carbide",
+      "traction inverter",
+      "e-mobility"
+     ],
+     "m": "box .4 .25 .5 @-.95 -.3 0;cyl .28 .2 @-.95 -.45 .68 rx;cyl .28 .2 @.95 -.45 .68 rx;cyl .28 .2 @-.95 -.45 -.68 rx;cyl .28 .2 @.95 -.45 -.68 rx"
+    },
+    {
+     "id": "body",
+     "name": "车身 / 整车制造 / 改装",
+     "group": "整车",
+     "wave": 1,
+     "role": "为无人驾驶设计的车辆平台。",
+     "cos": [
+      "TSLA|Cybercab",
+      "?MGA|为 Waymo 代工改装",
+      "?GM|",
+      "~HYMTF|现代 Ioniq 5（代码已无行情）",
+      "?TM|丰田",
+      "~极氪（吉利）|Waymo 新车型",
+      "?STLA|",
+      "?F|"
+     ],
+     "kw": [
+      "contract vehicle manufacturing",
+      "vehicle assembly"
+     ],
+     "m": "box 2.8 .5 1.3 @0 0 0;box 1.6 .4 1.2 @-.1 .46 0;box 2.7 .1 1.25 @0 -.42 0",
+     "shell": true
+    },
+    {
+     "id": "cabin",
+     "name": "座舱 / 乘客交互 / 清洁传感",
+     "group": "整车",
+     "wave": 2,
+     "role": "没有司机之后的屏幕、语音、车内监控。",
+     "cos": [
+      "VC|伟世通",
+      "CRNC|Cerence，语音",
+      "?GOOGL|",
+      "GNTX|舱内监控",
+      "?SONY|",
+      "~Harman（三星）|",
+      "?LEA|座椅"
+     ],
+     "kw": [
+      "cockpit",
+      "in-cabin",
+      "driver monitoring",
+      "infotainment",
+      "voice assistants"
+     ],
+     "m": "box .05 .2 .4 @.3 .25 0"
+    },
+    {
+     "id": "clean",
+     "name": "传感器清洗 / 加热 / 热管理",
+     "group": "整车",
+     "wave": 1,
+     "role": "雨雪泥污下保持传感器干净。",
+     "cos": [
+      "?GNTX|",
+      "?VLEEY|法雷奥",
+      "?MOD|",
+      "~dlhBOWLES|未上市"
+     ],
+     "kw": [
+      "sensor cleaning"
+     ]
+    },
+    {
+     "id": "fleet",
+     "name": "车队运维 / 充电 / 场站",
+     "group": "运营",
+     "wave": 2,
+     "role": "清洁、充电、维修、停车——规模化后的线下重资产。",
+     "cos": [
+      "?UBER|合作伙伴网络",
+      "?HTZ|赫兹",
+      "?CAR|安飞士，Waymo 达拉斯合作",
+      "?EVGO|",
+      "?CHPT|ChargePoint",
+      "~Moove / Flexdrive|未上市",
+      "?KMX|"
+     ],
+     "kw": [
+      "fleet management",
+      "ev charging",
+      "fleet services",
+      "charging network"
+     ]
+    },
+    {
+     "id": "ins",
+     "name": "保险 / 事故责任 / 安全认证",
+     "group": "运营",
+     "wave": 2,
+     "role": "责任从司机转到运营方，保险模式随之改变。",
+     "cos": [
+      "?PGR|前进保险",
+      "?ALL|好事达",
+      "?LMND|Lemonade",
+      "ROOT|",
+      "?TRV|",
+      "~Swiss Re|"
+     ],
+     "kw": [
+      "auto insurance"
+     ],
+     "trigger": "无人驾驶事故率数据获保险公司认可，保费显著低于人类司机。"
+    },
+    {
+     "id": "reg",
+     "name": "测试 / 监管许可",
+     "group": "运营",
+     "wave": 2,
+     "role": "各州运营许可、NHTSA 豁免。",
+     "cos": [
+      "~NHTSA / 加州 DMV / CPUC|监管机构",
+      "?UL|UL Solutions",
+      "~TÜV / DEKRA|未上市"
+     ],
+     "kw": [],
+     "trigger": "联邦层面放宽无方向盘车辆豁免数量上限。"
     }
-  ]
+   ],
+   "edges": []
+  },
+  {
+   "id": "truck",
+   "name": "自动驾驶卡车",
+   "icon": "🚛",
+   "model": "custom",
+   "product": "一辆没有司机、在高速上跑长途的重卡",
+   "summary": "B 端场景比 Robotaxi 更简单（高速、固定线路），商业逻辑是直接替代司机成本。看商业化里程和客户合同。",
+   "nodes": [
+    {
+     "id": "drv",
+     "name": "自动驾驶系统（司机即服务）",
+     "group": "大脑",
+     "wave": 2,
+     "role": "按英里向货主收费。",
+     "cos": [
+      "AUR|Aurora",
+      "KDK|Kodiak",
+      "~Waabi / Plus / Bot Auto|未上市",
+      "?TSLA|Semi"
+     ],
+     "kw": [
+      "autonomous trucking",
+      "autonomous trucks",
+      "self-driving trucks"
+     ],
+     "trigger": "无人商业里程快速累积；夜间和雨天运营获批。"
+    },
+    {
+     "id": "pod",
+     "name": "传感器舱（远距激光雷达 / 雷达 / 摄像头）",
+     "group": "眼睛",
+     "wave": 1,
+     "role": "卡车刹车距离长，要看 400 米以外。",
+     "cos": [
+      "AEVA|Aeva，FMCW",
+      "OUST|",
+      "ARBE|",
+      "LIDR|",
+      "?ON|",
+      "INVZ|",
+      "~大陆|Aurora 硬件伙伴"
+     ],
+     "kw": [
+      "long-range lidar",
+      "fmcw",
+      "4d lidar"
+     ],
+     "m": "box .12 .12 1.3 @1.72 .72 0;cyl .08 .1 @1.75 .3 .6;cyl .08 .1 @1.75 .3 -.6"
+    },
+    {
+     "id": "comp",
+     "name": "车载计算",
+     "group": "大脑",
+     "wave": 1,
+     "role": "",
+     "cos": [
+      "?NVDA|DRIVE",
+      "?QCOM|",
+      "AMBA|"
+     ],
+     "kw": [],
+     "m": "box .3 .2 .3 @1.0 .1 0"
+    },
+    {
+     "id": "oem",
+     "name": "卡车整车厂",
+     "group": "整车",
+     "wave": 2,
+     "role": "提供带冗余系统的卡车平台。",
+     "cos": [
+      "PCAR|帕卡（Peterbilt / Kenworth）",
+      "?VLVLY|沃尔沃",
+      "?DTRUY|戴姆勒卡车",
+      "?TRATF|Traton（International）",
+      "?TSLA|",
+      "HYLN|"
+     ],
+     "kw": [
+      "heavy-duty trucks",
+      "commercial vehicles",
+      "class 8"
+     ],
+     "m": "box .9 1.1 1.1 @1.3 .1 0;box 3.9 .1 .9 @-.1 -.55 0",
+     "shell": true
+    },
+    {
+     "id": "red",
+     "name": "冗余制动 / 转向 / 电源",
+     "group": "底盘",
+     "wave": 1,
+     "role": "任何一套失效都有备份。",
+     "cos": [
+      "?CMI|康明斯",
+      "?BWA|",
+      "ALSN|Allison 变速箱",
+      "~采埃孚 / 克诺尔 / 博世|",
+      "?DAN|",
+      "CVGI|"
+     ],
+     "kw": [
+      "commercial vehicle systems",
+      "braking systems",
+      "steering",
+      "drivetrain"
+     ],
+     "m": "box .2 .1 .8 @1.2 -.5 0",
+     "eff": "冗余底盘的量产进度决定无人卡车能多快铺开。"
+    },
+    {
+     "id": "power",
+     "name": "动力总成",
+     "group": "动力",
+     "wave": 1,
+     "role": "柴油、氢或电。",
+     "cos": [
+      "CMI|康明斯",
+      "?PCAR|",
+      "?BWA|",
+      "?WAB|",
+      "PLUG|",
+      "HYLN|Hyliion"
+     ],
+     "kw": [
+      "powertrain",
+      "engines"
+     ],
+     "m": "box .5 .4 .6 @1.5 -.3 0;cyl .22 .16 @1.4 -.72 .5 rx;cyl .22 .16 @1.4 -.72 -.5 rx;cyl .22 .16 @.2 -.72 .5 rx;cyl .22 .16 @.2 -.72 -.5 rx;cyl .22 .16 @-1.5 -.72 .5 rx;cyl .22 .16 @-1.5 -.72 -.5 rx"
+    },
+    {
+     "id": "trailer",
+     "name": "挂车 / 车联网 / 轮胎管理",
+     "group": "整车",
+     "wave": 2,
+     "role": "挂车、远程信息处理、胎压。",
+     "cos": [
+      "WNC|Wabash",
+      "?GT|固特异",
+      "?TRMB|",
+      "?SMRT|",
+      "~Samsara|",
+      "IOT|Samsara"
+     ],
+     "kw": [
+      "trailers",
+      "telematics",
+      "fleet telematics"
+     ],
+     "m": "box 2.6 1.2 1.1 @-.7 .2 0",
+     "shell": true
+    },
+    {
+     "id": "carrier",
+     "name": "货运客户 / 物流网络",
+     "group": "客户",
+     "wave": 2,
+     "role": "第一批用无人卡车的车队。",
+     "cos": [
+      "?UBER|Uber Freight",
+      "?JBHT|J.B. Hunt",
+      "?KNX|Knight-Swift",
+      "?WERN|Werner",
+      "?SNDR|Schneider",
+      "?FDX|联邦快递",
+      "?UPS|",
+      "?HTLD|",
+      "?RXO|",
+      "?ODFL|"
+     ],
+     "kw": [],
+     "trigger": "客户从试点线路转为常态化签约。"
+    },
+    {
+     "id": "hub",
+     "name": "枢纽 / 远程监控中心",
+     "group": "运营",
+     "wave": 2,
+     "role": "高速出入口的换装枢纽和远程值守。",
+     "cos": [
+      "?R|Ryder",
+      "?PAG|",
+      "~Pilot / Love's|未上市"
+     ],
+     "kw": [
+      "truck leasing",
+      "fleet maintenance"
+     ]
+    },
+    {
+     "id": "offroad",
+     "name": "矿山 / 农业 / 工程机械自动化",
+     "group": "整车",
+     "wave": 2,
+     "role": "封闭场景最早实现无人化并盈利。",
+     "cos": [
+      "?CAT|卡特彼勒",
+      "?DE|迪尔",
+      "?KMTUY|小松",
+      "?AGCO|",
+      "?CNH|",
+      "TRMB|Trimble",
+      "?HXGBY|",
+      "?TEX|"
+     ],
+     "kw": [
+      "autonomous mining",
+      "precision agriculture",
+      "autonomous haulage",
+      "machine control"
+     ]
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "adas",
+   "name": "私家车智能驾驶（L2+ / L3）",
+   "icon": "🚗",
+   "model": "stack",
+   "product": "你自己的车在高速和城区自己开，你只需要看着",
+   "summary": "三浪：辅助驾驶从选配变标配，再变成按月订阅的软件收入。看搭载率、订阅率和单车软件收入。",
+   "nodes": [
+    {
+     "id": "car",
+     "name": "车企（软件订阅）",
+     "group": "车企",
+     "wave": 3,
+     "role": "把辅助驾驶做成付费功能。",
+     "cos": [
+      "TSLA|FSD 订阅",
+      "XPEV|小鹏",
+      "LI|理想",
+      "NIO|蔚来",
+      "RIVN|Rivian",
+      "?GM|Super Cruise",
+      "?F|BlueCruise",
+      "LCID|Lucid",
+      "?TM|",
+      "?HMC|",
+      "?STLA|",
+      "?MBGYY|奔驰 L3",
+      "~ZK|极氪（代码已无行情）",
+      "~比亚迪 / 小米 / 华为系|亚洲"
+     ],
+     "kw": [
+      "electric vehicles",
+      "autonomous driving features"
+     ],
+     "trigger": "订阅率明显提升；L3（脱手脱眼）在主要市场获批。"
+    },
+    {
+     "id": "sol",
+     "name": "辅助驾驶方案商",
+     "group": "方案",
+     "wave": 1,
+     "role": "给没有自研能力的车企提供整套方案。",
+     "cos": [
+      "MBLY|Mobileye",
+      "?NVDA|DRIVE",
+      "?QCOM|Snapdragon Ride",
+      "?APTV|",
+      "?MGA|",
+      "~Momenta / 地平线 / 博世 / 华为|"
+     ],
+     "kw": [
+      "advanced driver assistance systems",
+      "adas solutions"
+     ]
+    },
+    {
+     "id": "chip",
+     "name": "智驾 / 座舱芯片",
+     "group": "芯片",
+     "wave": 1,
+     "role": "",
+     "cos": [
+      "?NVDA|",
+      "?QCOM|",
+      "MBLY|",
+      "AMBA|",
+      "INDI|",
+      "?NXPI|",
+      "?RNECY|",
+      "?TXN|",
+      "?ON|"
+     ],
+     "kw": [
+      "automotive semiconductors",
+      "automotive chips"
+     ]
+    },
+    {
+     "id": "sens",
+     "name": "摄像头 / 雷达 / 激光雷达",
+     "group": "传感",
+     "wave": 1,
+     "role": "",
+     "cos": [
+      "?ON|",
+      "HSAI|",
+      "INVZ|",
+      "ARBE|",
+      "OUST|",
+      "?SONY|",
+      "GNTX|",
+      "AEVA|",
+      "MVIS|"
+     ],
+     "kw": [
+      "automotive sensors",
+      "automotive lidar"
+     ]
+    },
+    {
+     "id": "os",
+     "name": "车载操作系统 / 中间件 / OTA",
+     "group": "软件",
+     "wave": 2,
+     "role": "实时操作系统和软件升级。",
+     "cos": [
+      "BB|黑莓 QNX",
+      "?GOOGL|Android Automotive",
+      "?AAPL|CarPlay",
+      "CRNC|Cerence",
+      "~Elektrobit / Vector|未上市",
+      "?SNPS|车载虚拟化"
+     ],
+     "kw": [
+      "embedded software",
+      "automotive software",
+      "over-the-air",
+      "real-time operating system"
+     ]
+    },
+    {
+     "id": "dms",
+     "name": "驾驶员监控（DMS）",
+     "group": "传感",
+     "wave": 2,
+     "role": "L2+ 法规强制要求盯着驾驶员。",
+     "cos": [
+      "GNTX|Gentex",
+      "CRNC|",
+      "?MGA|",
+      "~Seeing Machines / Smart Eye|海外上市",
+      "?STM|"
+     ],
+     "kw": [
+      "driver monitoring"
+     ],
+     "trigger": "欧美法规强制标配 DMS。"
+    },
+    {
+     "id": "map",
+     "name": "地图 / 定位 / 数据",
+     "group": "软件",
+     "wave": 2,
+     "role": "众包高精地图。",
+     "cos": [
+      "?GOOGL|",
+      "MBLY|REM 众包地图",
+      "TRMB|",
+      "~HERE / TomTom|"
+     ],
+     "kw": [
+      "mapping",
+      "location data",
+      "location technology"
+     ]
+    },
+    {
+     "id": "t1",
+     "name": "Tier 1 系统集成",
+     "group": "方案",
+     "wave": 1,
+     "role": "把方案装上车并对功能安全负责。",
+     "cos": [
+      "APTV|",
+      "?MGA|",
+      "?BWA|",
+      "VC|",
+      "?LEA|",
+      "?ALV|",
+      "~博世 / 大陆 / 采埃孚 / 法雷奥 / 电装|"
+     ],
+     "kw": [
+      "automotive supplier",
+      "tier 1",
+      "automotive technology"
+     ]
+    },
+    {
+     "id": "test",
+     "name": "测试验证 / 仿真 / 功能安全",
+     "group": "软件",
+     "wave": 1,
+     "role": "",
+     "cos": [
+      "?KEYS|是德",
+      "?SNPS|Ansys",
+      "?UL|",
+      "?NVDA|",
+      "~dSPACE / Applied Intuition|未上市"
+     ],
+     "kw": [
+      "automotive testing",
+      "functional safety"
+     ]
+    },
+    {
+     "id": "ubi",
+     "name": "保险与数据变现",
+     "group": "变现",
+     "wave": 3,
+     "role": "按驾驶行为定价的车险。",
+     "cos": [
+      "TSLA|特斯拉保险",
+      "?PGR|",
+      "ROOT|",
+      "?LMND|",
+      "?ALL|",
+      "~CCCS|CCC 智能理赔（代码已无行情）"
+     ],
+     "kw": [
+      "usage-based insurance",
+      "telematics-based"
+     ]
+    }
+   ],
+   "edges": []
+  }
+ ]
 }

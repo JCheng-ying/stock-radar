@@ -22,10 +22,10 @@ SUMMIZER_GRAPH = Path(os.environ.get(
 SEC_UA = os.environ.get("SEC_UA", "stock-radar/1.0 (personal research; contact@stock-radar.dev)")
 
 PRICE_PERIOD = "2y"        # 日线历史长度（算 200 日线、52 周位置）
-SPARK_DAYS = 180           # 打包进网页的日线根数
+SPARK_DAYS = 120           # 打包进网页的日线根数
 FUND_CACHE_HOURS = 20      # 基本面/一致预期缓存多久（财报季每天刷新一次就够）
 SEC_CACHE_HOURS = 72
-MAX_WORKERS = 6
+MAX_WORKERS = 4
 
 
 def load_env():

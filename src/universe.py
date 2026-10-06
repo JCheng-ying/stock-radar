@@ -45,7 +45,7 @@ def memberships(sectors):
                         out.setdefault(c["ticker"], []).append({
                             "sector": s["id"], "chain": chain["id"], "node": node["id"],
                             "node_name": node["name"], "wave": node["wave"], "note": c["note"],
-                            "core": c["core"], "sector_name": s["name"], "chain_name": chain["name"]})
+                            "core": c["core"], "auto": bool(c.get("auto")), "sector_name": s["name"], "chain_name": chain["name"]})
     return out
 
 

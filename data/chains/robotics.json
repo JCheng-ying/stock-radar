@@ -1,140 +1,930 @@
 {
-  "id": "robotics",
-  "name": "机器人",
-  "summizer_tags": ["机器人板块"],
-  "etfs": {"BOTZ": "机器人与 AI 主题 ETF", "ROBO": "全球机器人与自动化 ETF"},
-  "industry": {
-    "需求": "劳动力短缺 + 人工成本上升；仓储、汽车工厂是人形机器人最先落地的场景，家庭是终极市场但最远。",
-    "供给": "行星滚柱丝杠、谐波减速器、灵巧手、六维力传感器产能有限且集中在日本和中国；美国本土供应链很薄。",
-    "资本开支": "特斯拉 Optimus 量产线投入、Figure / 1X 等的融资额、亚马逊仓储自动化开支。",
-    "技术进步": "具身大模型（VLA）让机器人从“编程”变成“学习”；灵巧手和触觉是当前最大的短板；仿真到现实（sim-to-real）决定训练成本。",
-    "产业政策": "美国对中国机器人及零部件的限制、制造业回流补贴、稀土永磁出口管制。"
+ "id": "robotics",
+ "name": "机器人",
+ "summizer_tags": [
+  "机器人板块"
+ ],
+ "etfs": {
+  "BOTZ": "机器人与 AI 主题 ETF",
+  "ROBO": "全球机器人与自动化 ETF"
+ },
+ "industry": {
+  "需求": "劳动力短缺 + 人工成本上升；仓储、汽车工厂是人形机器人最先落地的场景，家庭是终极市场但最远。",
+  "供给": "行星滚柱丝杠、谐波减速器、灵巧手、六维力传感器产能有限且集中在日本和中国；美国本土供应链很薄。",
+  "资本开支": "特斯拉 Optimus 量产线投入、Figure / 1X 等的融资额、亚马逊仓储自动化开支。",
+  "技术进步": "具身大模型（VLA）让机器人从“编程”变成“学习”；灵巧手和触觉是当前最大的短板；仿真到现实（sim-to-real）决定训练成本。",
+  "产业政策": "美国对中国机器人及零部件的限制、制造业回流补贴、稀土永磁出口管制。"
+ },
+ "waves": {
+  "1": {
+   "name": "一浪：核心零部件与“大脑”",
+   "desc": "执行器、减速器、传感器、芯片、具身模型——整机还没放量之前，先炒确定受益的上游。"
   },
-  "waves": {
-    "1": {"name": "一浪：核心零部件与“大脑”", "desc": "执行器、减速器、传感器、芯片、具身模型——整机还没放量之前，先炒确定受益的上游。"},
-    "2": {"name": "二浪：B端应用", "desc": "工厂、仓储、手术机器人——看订单积压（backlog）、系统毛利率和客户复购。"},
-    "3": {"name": "三浪：C端应用", "desc": "家用人形机器人——目前只有预订和试点，还没有规模收入。"}
+  "2": {
+   "name": "二浪：B端应用",
+   "desc": "工厂、仓储、手术机器人——看订单积压（backlog）、系统毛利率和客户复购。"
   },
-  "chains": [
+  "3": {
+   "name": "三浪：C端应用",
+   "desc": "家用人形机器人——目前只有预订和试点，还没有规模收入。"
+  }
+ },
+ "chains": [
+  {
+   "id": "humanoid",
+   "name": "人形机器人",
+   "icon": "🤖",
+   "model": "custom",
+   "product": "把特斯拉 Optimus 拆开：大脑、关节、手、眼睛、电池、骨架",
+   "summary": "一台人形机器人约 28~50 个关节，每个关节 = 电机 + 减速器 / 丝杠 + 编码器 + 驱动器 + 轴承。成本大头在执行器和灵巧手；能力上限在“大脑”。量产瓶颈是丝杠、灵巧手和数据。",
+   "nodes": [
     {
-      "id": "humanoid",
-      "name": "一台人形机器人",
-      "product": "把特斯拉 Optimus 拆开：大脑、关节、手、眼睛、电池",
-      "summary": "一台人形机器人大约有 28~50 个关节，每个关节 = 电机 + 减速器/丝杠 + 编码器 + 驱动器。成本大头在执行器和灵巧手；能力上限在“大脑”（具身模型）。量产的瓶颈目前是丝杠、灵巧手和数据。",
-      "nodes": [
-        {"id": "oem", "name": "人形机器人整机", "layer": 0, "wave": 3,
-         "role": "设计整机、集成软硬件、建量产线。",
-         "trigger": "量产时间表兑现（千台 → 万台级）、对外销售价格公布、进入第三方工厂实际干活。",
-         "cos": ["TSLA|Optimus", "?XPEV|小鹏 Iron", "~Figure AI|未上市", "~Agility Robotics|未上市，Digit", "~Apptronik|未上市", "~1X Technologies|未上市，家用 NEO", "~Boston Dynamics|现代汽车旗下", "~Unitree 宇树|未上市", "~UBTECH 优必选|香港上市"]},
-        {"id": "brain", "name": "“大脑”：具身模型与计算平台", "layer": 1, "wave": 1,
-         "role": "视觉-语言-动作（VLA）模型 + 机载算力 + 仿真训练平台。",
-         "eff": "模型的泛化能力决定机器人能不能离开演示视频、在陌生环境里干活——这是整个产业的能力上限。",
-         "trigger": "通用具身模型在未见过的任务上成功率出现阶跃。",
-         "cos": ["?NVDA|Jetson Thor + Isaac GR00T", "?GOOGL|Gemini Robotics", "TSLA|自研 FSD 迁移", "?QCOM|机器人 SoC", "~Physical Intelligence|未上市", "~Skild AI|未上市"]},
-        {"id": "actuator", "name": "关节执行器（电机 + 驱动）", "layer": 1, "wave": 1,
-         "role": "无框力矩电机、空心杯电机、伺服驱动器——机器人的“肌肉”。",
-         "eff": "功率密度（扭矩/重量）决定负载能力和续航。",
-         "cos": ["RRX|Regal Rexnord（Kollmorgen 电机）", "ALNT|Allient，精密电机", "NOVT|Novanta，编码器与运动控制", "?PH|派克汉尼汾", "MOG-A|Moog，高性能执行器", "~三花智控 / 拓普集团|A 股，特斯拉供应链"]},
-        {"id": "reducer", "name": "减速器 / 行星滚柱丝杠", "layer": 2, "wave": 1,
-         "role": "把电机的高转速变成大扭矩（旋转关节用谐波减速器，直线关节用行星滚柱丝杠）。",
-         "eff": "精度和寿命决定机器人动作的稳定性；丝杠磨削产能是当前量产最紧的瓶颈。",
-         "trigger": "丝杠 / 减速器成本因工艺突破（以车代磨、冷锻）大幅下降。",
-         "cos": ["TKR|铁姆肯（Cone Drive 谐波）", "RRX|Regal Rexnord", "~Harmonic Drive Systems|日本上市", "~Nabtesco|日本上市"]},
-        {"id": "hand", "name": "灵巧手与触觉传感", "layer": 1, "wave": 1,
-         "role": "一只灵巧手有十几到二十几个自由度，再加指尖触觉——机器人能不能“干细活”全看它。",
-         "eff": "手是目前公认最难的硬件，直接决定机器人能替代多少工种。",
-         "trigger": "高自由度灵巧手的寿命和成本达到量产标准。",
-         "cos": ["?TEL|泰科电子，传感器与连接器", "~Shadow Robot / 因时机器人|未上市"]},
-        {"id": "sense", "name": "视觉 / 力矩 / 惯性传感器", "layer": 2, "wave": 1,
-         "role": "摄像头、激光雷达、六维力传感器、IMU——机器人的眼睛和平衡感。",
-         "cos": ["OUST|Ouster，激光雷达", "CGNX|康耐视，机器视觉", "?TDY|Teledyne，相机", "?ADI|IMU 与模拟芯片", "?STM|意法，MEMS", "?SONY|图像传感器"]},
-        {"id": "chip", "name": "功率与模拟芯片", "layer": 2, "wave": 1,
-         "role": "每个关节都要电机驱动芯片、电流传感和电源管理。",
-         "cos": ["?TXN|德州仪器", "?ADI|亚德诺", "?ON|安森美", "?MPWR|芯源系统", "?NXPI|恩智浦", "?IFNNY|英飞凌"]},
-        {"id": "magnet", "name": "稀土永磁材料", "layer": 3, "wave": 1,
-         "role": "电机里的钕铁硼磁体，供应链高度依赖中国。",
-         "trigger": "稀土出口管制升级 / 美国本土磁体产能投产。",
-         "cos": ["MP|MP Materials，美国唯一稀土矿 + 磁体"]},
-        {"id": "battery", "name": "电池", "layer": 2, "wave": 1,
-         "role": "高能量密度电池包，决定单次工作时长。",
-         "cos": ["TSLA|自供", "~松下 / LG 新能源|海外上市"]}
-      ],
-      "edges": [
-        ["magnet", "actuator", "永磁体"],
-        ["chip", "actuator", "电机驱动"],
-        ["reducer", "actuator", "减速 / 直线传动"],
-        ["actuator", "oem", "28~50 个关节"],
-        ["hand", "oem", "末端操作"],
-        ["sense", "oem", "感知"],
-        ["sense", "brain", "感知数据"],
-        ["battery", "oem", "供电"],
-        ["brain", "oem", "决策与控制"]
-      ]
+     "id": "oem",
+     "name": "整机厂",
+     "group": "整机",
+     "wave": 3,
+     "role": "设计整机、集成软硬件、建量产线。",
+     "cos": [
+      "TSLA|Optimus",
+      "XPEV|小鹏 Iron",
+      "~HYMTF|现代（波士顿动力）（代码已无行情）",
+      "~Figure / Agility / Apptronik / 1X|未上市",
+      "~宇树 / 优必选 / 智元|中国",
+      "?TM|丰田"
+     ],
+     "kw": [
+      "humanoid robot",
+      "humanoid"
+     ],
+     "trigger": "量产时间表兑现（千台 → 万台）；对外售价公布；进第三方工厂干活。"
     },
     {
-      "id": "industrial",
-      "name": "工厂与仓储自动化",
-      "product": "一座几乎不需要人的仓库 / 工厂产线",
-      "summary": "机器人板块里已经有真实收入和利润的部分。看订单积压和毛利率：订单积压上升 + 系统毛利率改善，说明 B 端这一浪在走。",
-      "nodes": [
-        {"id": "wh", "name": "仓储自动化系统", "layer": 0, "wave": 2,
-         "role": "整仓自动化：存取、分拣、搬运。",
-         "trigger": "订单积压（backlog）大幅增加、新客户落地。",
-         "cos": ["SYM|Symbotic，沃尔玛体系", "?AMZN|自建机器人车队，百万台级", "ZBRA|斑马技术，AMR", "~AutoStore|奥斯陆上市"]},
-        {"id": "arm", "name": "工业机器人 / 协作机器人", "layer": 0, "wave": 2,
-         "role": "机械臂、协作臂、移动机器人。",
-         "trigger": "制造业资本开支周期回升（PMI 新订单重回扩张）。",
-         "cos": ["TER|泰瑞达（Universal Robots / MiR）", "FANUY|发那科", "ABBNY|ABB", "ROK|罗克韦尔自动化", "?EMR|艾默生", "~KUKA / 安川|海外上市"]},
-        {"id": "svcbot", "name": "服务 / 配送机器人", "layer": 0, "wave": 2,
-         "role": "餐饮、配送、安防等商用服务机器人。",
-         "cos": ["SERV|Serve Robotics，人行道配送", "RR|Richtech Robotics", "KSCP|Knightscope，安防"]},
-        {"id": "vision", "name": "机器视觉与传感", "layer": 1, "wave": 1,
-         "role": "识别、定位、质检。",
-         "cos": ["CGNX|康耐视", "?KEYS|是德科技", "OUST|Ouster", "NOVT|Novanta"]},
-        {"id": "motion", "name": "运动控制与传动部件", "layer": 1, "wave": 1,
-         "role": "伺服、减速器、直线导轨。",
-         "cos": ["RRX|Regal Rexnord", "?PH|派克汉尼汾", "TKR|铁姆肯", "ALNT|Allient"]},
-        {"id": "sim", "name": "仿真 / 数字孪生 / 机器人 AI", "layer": 1, "wave": 1,
-         "role": "在虚拟工厂里先训练和验证机器人。",
-         "eff": "仿真到现实的迁移效率决定部署一条新产线要多久。",
-         "cos": ["?NVDA|Omniverse / Isaac", "?PTC|工业软件", "?ADSK|欧特克"]}
-      ],
-      "edges": [
-        ["vision", "wh", "识别与定位"],
-        ["vision", "arm", "视觉引导"],
-        ["motion", "arm", "关节与驱动"],
-        ["motion", "wh", "搬运机构"],
-        ["sim", "arm", "训练与编程"],
-        ["sim", "wh", "仓库数字孪生"],
-        ["arm", "svcbot", "技术外溢"]
-      ]
+     "id": "model",
+     "name": "具身大模型（VLA）",
+     "group": "大脑",
+     "wave": 1,
+     "role": "视觉-语言-动作模型，决定机器人能不能在陌生环境干活。",
+     "cos": [
+      "?GOOGL|Gemini Robotics",
+      "?NVDA|GR00T",
+      "TSLA|FSD 迁移",
+      "?META|",
+      "~Physical Intelligence / Skild / Figure Helix|未上市"
+     ],
+     "kw": [
+      "embodied ai",
+      "physical ai",
+      "robot foundation model"
+     ],
+     "eff": "模型的泛化能力是整个产业的能力上限。",
+     "trigger": "通用模型在未见过的任务上成功率出现阶跃。"
     },
     {
-      "id": "surgical",
-      "name": "手术机器人",
-      "product": "一台达芬奇手术机器人做一台微创手术",
-      "summary": "商业模式最成熟的机器人细分：卖设备只是开始，每台手术消耗的器械和服务才是长期收入（经常性收入占比超过八成）。看装机量和手术量增速。",
-      "nodes": [
-        {"id": "surg", "name": "手术机器人系统", "layer": 0, "wave": 2,
-         "role": "设备装机 + 每台手术的耗材 + 服务。",
-         "trigger": "新一代平台放量、手术量增速上修、新适应症获批。",
-         "cos": ["ISRG|直觉外科，达芬奇", "?SYK|史赛克，Mako 骨科", "?MDT|美敦力，Hugo", "GMED|Globus，脊柱", "PRCT|Procept，泌尿"]},
-        {"id": "inst", "name": "手术器械与耗材", "layer": 1, "wave": 2,
-         "role": "一次性或有限次数使用的器械，经常性收入的来源。",
-         "cos": ["ISRG|自产", "?TFX|Teleflex"]},
-        {"id": "img", "name": "成像与导航", "layer": 1, "wave": 1,
-         "role": "内窥镜成像、术中导航。",
-         "cos": ["?TDY|Teledyne", "?SONY|图像传感器"]},
-        {"id": "prec", "name": "精密运动部件", "layer": 1, "wave": 1,
-         "role": "微型电机、编码器、力反馈。",
-         "eff": "力反馈（触觉）精度决定医生的操作手感，是新一代平台的主要卖点。",
-         "cos": ["NOVT|Novanta，医疗运动控制", "ALNT|Allient"]}
-      ],
-      "edges": [
-        ["inst", "surg", "每台手术消耗"],
-        ["img", "surg", "视野"],
-        ["prec", "surg", "机械臂关节"]
-      ]
+     "id": "compute",
+     "name": "机载计算芯片",
+     "group": "大脑",
+     "wave": 1,
+     "role": "在机器人身上实时推理。",
+     "cos": [
+      "?NVDA|Jetson Thor",
+      "?QCOM|Dragonwing",
+      "?AMBA|Ambarella",
+      "?INTC|",
+      "TSLA|自研 AI5"
+     ],
+     "kw": [
+      "edge ai",
+      "ai processors for edge"
+     ],
+     "m": "box .36 .26 .12 @0 1.05 .34"
+    },
+    {
+     "id": "sim",
+     "name": "仿真 / 数据采集 / 训练算力",
+     "group": "大脑",
+     "wave": 1,
+     "role": "在仿真里先练，或用遥操作采集真实数据。",
+     "cos": [
+      "?NVDA|Isaac Sim / Omniverse",
+      "?U|Unity",
+      "?PTC|",
+      "~Scale AI|数据"
+     ],
+     "kw": [
+      "simulation software",
+      "digital twin"
+     ],
+     "eff": "仿真到现实的迁移效率决定训练成本。"
+    },
+    {
+     "id": "cam",
+     "name": "摄像头 / 深度相机 / 激光雷达",
+     "group": "感知",
+     "wave": 1,
+     "role": "头部和手腕的眼睛。",
+     "cos": [
+      "?SONY|图像传感器",
+      "?ON|安森美",
+      "OUST|Ouster",
+      "?TDY|FLIR",
+      "?STM|ToF",
+      "HSAI|禾赛",
+      "~奥比中光|A 股"
+     ],
+     "kw": [
+      "lidar",
+      "depth sensing",
+      "machine vision",
+      "image sensors"
+     ],
+     "m": "sph .28 @0 1.6 0;box .32 .08 .1 @0 1.65 .27"
+    },
+    {
+     "id": "imu",
+     "name": "惯性测量单元（IMU）",
+     "group": "感知",
+     "wave": 1,
+     "role": "平衡感。",
+     "cos": [
+      "?ADI|亚德诺",
+      "?STM|意法",
+      "?HON|霍尼韦尔",
+      "~TDK|TDK InvenSense（代码已无行情）",
+      "~BOSCHLTD|博世（代码已无行情）"
+     ],
+     "kw": [
+      "inertial measurement",
+      "inertial sensors",
+      "mems sensors"
+     ],
+     "m": "box .12 .08 .12 @0 .3 .3"
+    },
+    {
+     "id": "motor",
+     "name": "无框力矩电机 / 空心杯电机",
+     "group": "执行器",
+     "wave": 1,
+     "role": "关节的“肌肉”。",
+     "cos": [
+      "RRX|Regal Rexnord（Kollmorgen）",
+      "ALNT|Allient",
+      "MOG-A|Moog",
+      "?PH|派克",
+      "?NDEKY|日本电产",
+      "~Maxon / Faulhaber|瑞士未上市",
+      "~三花 / 拓普 / 鸣志|A 股"
+     ],
+     "kw": [
+      "frameless motors",
+      "servo motors",
+      "precision motion",
+      "motion control",
+      "electric motors",
+      "actuators"
+     ],
+     "m": "cyl .14 .22 @-.56 1.22 0 rz;cyl .14 .22 @.56 1.22 0 rz;cyl .13 .2 @-.22 .12 0 rz;cyl .13 .2 @.22 .12 0 rz",
+     "eff": "功率密度（扭矩/重量）决定负载和续航。"
+    },
+    {
+     "id": "harmonic",
+     "name": "谐波减速器",
+     "group": "执行器",
+     "wave": 1,
+     "role": "旋转关节把高转速变成大扭矩。",
+     "cos": [
+      "TKR|铁姆肯（Cone Drive）",
+      "RRX|",
+      "~Harmonic Drive Systems|日本上市",
+      "~绿的谐波|A 股",
+      "?NOVT|"
+     ],
+     "kw": [
+      "harmonic",
+      "gear reducers",
+      "speed reducers",
+      "precision gearing",
+      "gearboxes"
+     ],
+     "m": "cyl .11 .16 @-.6 .7 0 rz;cyl .11 .16 @.6 .7 0 rz"
+    },
+    {
+     "id": "screw",
+     "name": "行星滚柱丝杠（直线执行器）",
+     "group": "执行器",
+     "wave": 1,
+     "role": "腿和手臂的直线关节，当前量产最紧的瓶颈。",
+     "cos": [
+      "RRX|Thomson",
+      "TKR|铁姆肯",
+      "?PH|",
+      "~Rollvis / GSA|瑞士未上市",
+      "~舍弗勒 / THK / NSK|海外上市",
+      "~恒立 / 贝斯特 / 五洲新春|A 股"
+     ],
+     "kw": [
+      "roller screws",
+      "ball screws",
+      "linear motion",
+      "linear actuators"
+     ],
+     "m": "cyl .07 .62 @-.2 -.32 0;cyl .07 .62 @.2 -.32 0;cyl .06 .6 @-.2 -1.12 0;cyl .06 .6 @.2 -1.12 0",
+     "eff": "精度和寿命决定动作稳定性。",
+     "trigger": "工艺突破（以车代磨、冷锻）让丝杠成本大幅下降。"
+    },
+    {
+     "id": "bearing",
+     "name": "轴承（交叉滚子 / 薄壁）",
+     "group": "执行器",
+     "wave": 1,
+     "role": "每个关节都要高刚性轴承。",
+     "cos": [
+      "TKR|铁姆肯",
+      "RBC|RBC Bearings",
+      "~SKF / 舍弗勒 / NSK|海外上市",
+      "?KAI|Kadant"
+     ],
+     "kw": [
+      "bearings"
+     ],
+     "m": "cyl .1 .14 @-.2 -.7 0 rz;cyl .1 .14 @.2 -.7 0 rz"
+    },
+    {
+     "id": "encoder",
+     "name": "编码器 / 位置与磁传感器",
+     "group": "执行器",
+     "wave": 1,
+     "role": "关节转到哪了。",
+     "cos": [
+      "NOVT|Novanta（Celera Motion）",
+      "ALGM|Allegro，磁传感器",
+      "?MCHP|",
+      "?TXN|",
+      "MLXSF|Melexis",
+      "~Renishaw / 海德汉|海外"
+     ],
+     "kw": [
+      "encoders",
+      "magnetic sensors",
+      "position sensors",
+      "position sensing"
+     ],
+     "m": "cyl .09 .04 @-.72 1.22 0 rz;cyl .09 .04 @.72 1.22 0 rz"
+    },
+    {
+     "id": "force",
+     "name": "力 / 力矩传感器",
+     "group": "感知",
+     "wave": 1,
+     "role": "脚踝、手腕的六维力传感器。",
+     "cos": [
+      "NOVT|ATI Industrial Automation",
+      "VPG|Vishay Precision",
+      "?TEL|泰科",
+      "?ST|Sensata",
+      "?HON|",
+      "~Kistler / 柯力传感|海外"
+     ],
+     "kw": [
+      "force sensors",
+      "torque sensors",
+      "load cells",
+      "force measurement"
+     ],
+     "m": "cyl .09 .06 @-.2 -1.5 0;cyl .09 .06 @.2 -1.5 0"
+    },
+    {
+     "id": "hand",
+     "name": "灵巧手",
+     "group": "手",
+     "wave": 1,
+     "role": "一只手十几到二十几个自由度，公认最难的硬件。",
+     "cos": [
+      "TSLA|自研",
+      "~Shadow Robot / 因时 / 灵心巧手|未上市",
+      "~兆威机电|A 股",
+      "?ALNT|微型电机"
+     ],
+     "kw": [
+      "dexterous",
+      "robotic hands",
+      "micro motors",
+      "miniature motors"
+     ],
+     "m": "box .14 .22 .08 @-.6 .08 0;box .14 .22 .08 @.6 .08 0",
+     "eff": "手决定机器人能替代多少工种。",
+     "trigger": "高自由度灵巧手的寿命和成本达到量产标准。"
+    },
+    {
+     "id": "skin",
+     "name": "触觉传感 / 电子皮肤",
+     "group": "手",
+     "wave": 1,
+     "role": "指尖的触觉。",
+     "cos": [
+      "?TEL|",
+      "~GelSight / Loomia / 汉威 / 帕西尼|未上市或 A 股",
+      "IDCC|",
+      "?SYNA|触控芯片"
+     ],
+     "kw": [
+      "tactile sensors",
+      "haptic technology",
+      "haptics"
+     ],
+     "m": "box .1 .05 .1 @-.6 -.08 .08;box .1 .05 .1 @.6 -.08 .08"
+    },
+    {
+     "id": "driver",
+     "name": "电机驱动 / 功率与模拟芯片",
+     "group": "电子",
+     "wave": 1,
+     "role": "每个关节一套驱动芯片、电流传感和电源管理。",
+     "cos": [
+      "?TXN|德州仪器",
+      "?ADI|亚德诺",
+      "?ON|安森美",
+      "MPWR|芯源",
+      "?NXPI|恩智浦",
+      "?IFNNY|英飞凌",
+      "?STM|意法",
+      "NVTS|Navitas GaN",
+      "POWI|",
+      "ALGM|电机驱动",
+      "?MCHP|"
+     ],
+     "kw": [
+      "motor drivers",
+      "motor control",
+      "power semiconductors",
+      "gallium nitride"
+     ],
+     "m": "box .22 .12 .05 @0 .62 .34"
+    },
+    {
+     "id": "battery",
+     "name": "电池包",
+     "group": "能源",
+     "wave": 1,
+     "role": "决定单次工作时长。",
+     "cos": [
+      "TSLA|自供",
+      "~PCRFY|松下（代码已无行情）",
+      "ENVX|Enovix",
+      "AMPX|Amprius，高能量密度",
+      "QS|QuantumScape，固态",
+      "SLDP|Solid Power",
+      "~LG 新能源 / 宁德时代|亚洲"
+     ],
+     "kw": [
+      "solid-state battery",
+      "lithium-ion battery cells",
+      "battery cells",
+      "high energy density"
+     ],
+     "m": "box .5 .5 .15 @0 .72 -.34",
+     "trigger": "固态 / 硅负极电池量产，续航翻倍。"
+    },
+    {
+     "id": "magnet",
+     "name": "稀土永磁",
+     "group": "材料",
+     "wave": 1,
+     "role": "电机里的钕铁硼磁体，供应链高度依赖中国。",
+     "cos": [
+      "MP|MP Materials",
+      "USAR|USA Rare Earth",
+      "?UUUU|Energy Fuels",
+      "?LYSDY|莱纳斯",
+      "TMC|深海矿产",
+      "~金力永磁 / 中科三环|A 股"
+     ],
+     "kw": [
+      "rare earth",
+      "permanent magnets",
+      "neodymium",
+      "critical minerals"
+     ],
+     "m": "tor .1 .03 @-.4 1.48 0;tor .1 .03 @.4 1.48 0",
+     "trigger": "稀土出口管制升级 / 美国本土磁体产能投产。"
+    },
+    {
+     "id": "struct",
+     "name": "骨架结构件 / 轻量化材料",
+     "group": "材料",
+     "wave": 1,
+     "role": "铝镁合金、碳纤维、PEEK 工程塑料——减重就是增续航。",
+     "cos": [
+      "?HXL|赫氏，碳纤维",
+      "?ATI|钛合金",
+      "?AA|美铝",
+      "?CE|塞拉尼斯，工程塑料",
+      "~Victrex|伦敦上市，PEEK",
+      "XMTR|Xometry，按需制造",
+      "PRLB|Proto Labs",
+      "?DD|"
+     ],
+     "kw": [
+      "lightweight materials",
+      "engineered materials",
+      "carbon fiber",
+      "digital manufacturing",
+      "injection molding"
+     ],
+     "m": "box .8 .9 .36 @0 .88 0;box .6 .24 .3 @0 .28 0;box .13 .45 .13 @-.6 .96 0;box .13 .45 .13 @.6 .96 0;box .12 .4 .12 @-.6 .42 0;box .12 .4 .12 @.6 .42 0;box .2 .1 .4 @-.2 -1.72 .08;box .2 .1 .4 @.2 -1.72 .08",
+     "shell": true
+    },
+    {
+     "id": "harness",
+     "name": "线束 / 连接器 / 热管理",
+     "group": "电子",
+     "wave": 1,
+     "role": "全身走线与散热。",
+     "cos": [
+      "?APH|安费诺",
+      "?TEL|泰科",
+      "?LFUS|Littelfuse",
+      "?BDC|Belden",
+      "?ROG|Rogers"
+     ],
+     "kw": [
+      "connectors",
+      "wire harness",
+      "cable assemblies"
+     ]
+    },
+    {
+     "id": "deploy",
+     "name": "部署客户：汽车厂 / 物流",
+     "group": "客户",
+     "wave": 2,
+     "role": "第一批真正让人形机器人上岗的工厂和仓库。",
+     "cos": [
+      "TSLA|自家工厂",
+      "~BMWYY|宝马 × Figure（代码已无行情）",
+      "?GM|",
+      "?AMZN|× Agility",
+      "?GXO|GXO 物流试点",
+      "?F|"
+     ],
+     "kw": [],
+     "trigger": "客户从试点转为批量采购。"
     }
-  ]
+   ],
+   "edges": []
+  },
+  {
+   "id": "industrial",
+   "name": "工厂与仓储机器人",
+   "icon": "🦾",
+   "model": "custom",
+   "product": "把一条自动化产线拆开：机械臂、移动底盘、视觉、控制器、软件",
+   "summary": "机器人板块里已经有真实收入和利润的部分。看订单积压和毛利率。",
+   "nodes": [
+    {
+     "id": "arm",
+     "name": "机械臂 / 协作机器人本体",
+     "group": "本体",
+     "wave": 2,
+     "role": "六轴机械臂、协作臂。",
+     "cos": [
+      "TER|泰瑞达（Universal Robots）",
+      "FANUY|发那科",
+      "ABBNY|ABB",
+      "?YASKY|安川",
+      "~KUKA（美的）|",
+      "?SIEGY|西门子"
+     ],
+     "kw": [
+      "industrial robots",
+      "collaborative robots",
+      "robotic arms",
+      "robotics"
+     ],
+     "m": "box .25 1.1 .25 @0 -.4 0;box .9 .2 .2 @.5 .2 0",
+     "trigger": "制造业资本开支周期回升（PMI 新订单重回扩张）。"
+    },
+    {
+     "id": "servo",
+     "name": "伺服电机 / 驱动器",
+     "group": "传动",
+     "wave": 1,
+     "role": "每个轴一套伺服。",
+     "cos": [
+      "RRX|",
+      "ALNT|",
+      "?PH|",
+      "?YASKY|",
+      "?EMR|",
+      "?ROK|",
+      "AIT|Applied Industrial"
+     ],
+     "kw": [
+      "servo",
+      "drives and motors",
+      "motion control"
+     ],
+     "m": "cyl .25 .3 @0 -1.1 0"
+    },
+    {
+     "id": "rv",
+     "name": "RV / 谐波减速器",
+     "group": "传动",
+     "wave": 1,
+     "role": "工业机器人成本的三成。",
+     "cos": [
+      "~Nabtesco|日本上市",
+      "~Harmonic Drive|",
+      "TKR|",
+      "RRX|",
+      "~双环传动 / 中大力德|A 股"
+     ],
+     "kw": [
+      "gear reducers",
+      "precision gears",
+      "speed reducers"
+     ],
+     "m": "cyl .22 .3 @0 .2 0 rx;cyl .13 .2 @1.0 .2 0 rz"
+    },
+    {
+     "id": "ctrl",
+     "name": "控制器 / PLC / 工业软件",
+     "group": "控制",
+     "wave": 2,
+     "role": "产线的大脑。",
+     "cos": [
+      "ROK|罗克韦尔",
+      "EMR|艾默生",
+      "?SIEGY|西门子",
+      "?HON|霍尼韦尔",
+      "?SBGSY|施耐德",
+      "?ABBNY|",
+      "~AZPN|AspenTech 已并入艾默生（代码已无行情）"
+     ],
+     "kw": [
+      "industrial automation",
+      "programmable logic",
+      "automation solutions",
+      "process automation"
+     ],
+     "m": "box .6 .9 .5 @-1.7 -1.3 0"
+    },
+    {
+     "id": "grip",
+     "name": "末端执行器 / 夹爪 / 真空吸盘",
+     "group": "本体",
+     "wave": 2,
+     "role": "机械臂的“手”。",
+     "cos": [
+      "?PH|",
+      "~Schunk / OnRobot / Robotiq / Piab|未上市",
+      "?NDSN|诺信，点胶",
+      "?ITW|"
+     ],
+     "kw": [
+      "end effectors",
+      "grippers",
+      "end-of-arm"
+     ],
+     "m": "box .1 .25 .06 @1.25 .3 0;box .1 .25 .06 @1.25 .1 0"
+    },
+    {
+     "id": "vision",
+     "name": "机器视觉 / 条码识别",
+     "group": "感知",
+     "wave": 1,
+     "role": "识别、定位、质检。",
+     "cos": [
+      "CGNX|康耐视",
+      "ZBRA|斑马",
+      "?TDY|Teledyne",
+      "?KYCCF|基恩士",
+      "?NOVT|",
+      "?ISRG|",
+      "~Basler|德国上市"
+     ],
+     "kw": [
+      "machine vision",
+      "barcode",
+      "vision systems",
+      "automatic identification"
+     ],
+     "m": "box .16 .12 .12 @1.0 .46 0"
+    },
+    {
+     "id": "amr",
+     "name": "自主移动机器人（AMR）/ 仓储系统",
+     "group": "本体",
+     "wave": 2,
+     "role": "整仓自动化：存取、分拣、搬运。",
+     "cos": [
+      "SYM|Symbotic",
+      "?AMZN|百万台级自建",
+      "ZBRA|Fetch",
+      "?KIGRY|凯傲 / Dematic",
+      "~AutoStore|奥斯陆上市",
+      "~大福 / 极智嘉|亚洲",
+      "?HON|Intelligrated",
+      "GXO|应用方"
+     ],
+     "kw": [
+      "warehouse automation",
+      "autonomous mobile robots",
+      "material handling",
+      "automated storage",
+      "fulfillment automation"
+     ],
+     "m": "box 1.6 .3 1.1 @0 -1.78 0",
+     "trigger": "订单积压大幅增加；新客户落地。"
+    },
+    {
+     "id": "drive",
+     "name": "轮毂电机 / 驱动轮 / 电池",
+     "group": "传动",
+     "wave": 1,
+     "role": "AMR 的底盘。",
+     "cos": [
+      "ALNT|",
+      "?RRX|",
+      "ENS|EnerSys，叉车与 AMR 电池",
+      "?HY|海斯特-耶鲁"
+     ],
+     "kw": [
+      "motive power",
+      "traction motors"
+     ],
+     "m": "cyl .15 .08 @-.6 -1.93 .58 rx;cyl .15 .08 @.6 -1.93 .58 rx;cyl .15 .08 @-.6 -1.93 -.58 rx;cyl .15 .08 @.6 -1.93 -.58 rx"
+    },
+    {
+     "id": "nav",
+     "name": "导航传感器（激光雷达 / 安全扫描）",
+     "group": "感知",
+     "wave": 1,
+     "role": "AMR 的定位和避障。",
+     "cos": [
+      "OUST|Ouster",
+      "HSAI|",
+      "~SICK / 倍加福|德国未上市",
+      "?TRMB|Trimble"
+     ],
+     "kw": [
+      "lidar sensors",
+      "safety sensors"
+     ],
+     "m": "cyl .1 .1 @.7 -1.55 .4"
+    },
+    {
+     "id": "wms",
+     "name": "仓储 / 供应链软件",
+     "group": "软件",
+     "wave": 2,
+     "role": "调度机器人和订单的系统。",
+     "cos": [
+      "MANH|Manhattan Associates",
+      "?SAP|",
+      "?ORCL|",
+      "DSGX|Descartes",
+      "SPSC|SPS Commerce",
+      "KNX|",
+      "~Blue Yonder|松下旗下"
+     ],
+     "kw": [
+      "warehouse management",
+      "supply chain software",
+      "supply chain execution"
+     ]
+    },
+    {
+     "id": "simu",
+     "name": "仿真 / 数字孪生 / CAD",
+     "group": "软件",
+     "wave": 1,
+     "role": "先在虚拟工厂里验证。",
+     "cos": [
+      "?NVDA|Omniverse",
+      "PTC|",
+      "ADSK|欧特克",
+      "?SIEGY|",
+      "~达索系统|巴黎上市",
+      "~ANSS|Ansys 已并入新思（代码已无行情）",
+      "BSY|Bentley"
+     ],
+     "kw": [
+      "digital twin",
+      "product lifecycle management",
+      "computer-aided design",
+      "simulation software"
+     ]
+    },
+    {
+     "id": "svc",
+     "name": "服务 / 配送 / 安防机器人",
+     "group": "本体",
+     "wave": 2,
+     "role": "餐饮、配送、巡逻、清洁。",
+     "cos": [
+      "SERV|Serve Robotics",
+      "RR|Richtech",
+      "KSCP|Knightscope",
+      "?UBER|配送合作",
+      "~擎朗 / 普渡|未上市",
+      "?TTC|Toro，割草机器人",
+      "~IRBT|iRobot 已退市（代码已无行情）"
+     ],
+     "kw": [
+      "delivery robots",
+      "service robots",
+      "security robots",
+      "autonomous robots"
+     ]
+    },
+    {
+     "id": "weld",
+     "name": "焊接 / 喷涂 / 3D 打印等工艺设备",
+     "group": "本体",
+     "wave": 2,
+     "role": "机器人干的具体活。",
+     "cos": [
+      "LECO|林肯电气，焊接自动化",
+      "?ESAB|ESAB",
+      "?NDSN|",
+      "?GGG|固瑞克，喷涂",
+      "SSYS|Stratasys",
+      "DDD|3D Systems",
+      "NNDM|"
+     ],
+     "kw": [
+      "welding automation",
+      "robotic welding",
+      "additive manufacturing",
+      "3d printing"
+     ]
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "surgical",
+   "name": "手术机器人",
+   "icon": "🩺",
+   "model": "custom",
+   "product": "把一台达芬奇手术机器人拆开：医生控制台、机械臂、器械、成像",
+   "summary": "商业模式最成熟的机器人细分：卖设备只是开始，每台手术消耗的器械和服务才是长期收入。看装机量和手术量增速。",
+   "nodes": [
+    {
+     "id": "sys",
+     "name": "手术机器人系统",
+     "group": "整机",
+     "wave": 2,
+     "role": "设备装机 + 耗材 + 服务。",
+     "cos": [
+      "ISRG|直觉外科，达芬奇",
+      "SYK|史赛克 Mako",
+      "MDT|美敦力 Hugo",
+      "GMED|Globus",
+      "PRCT|Procept",
+      "?ZBH|捷迈邦美 ROSA",
+      "?JNJ|强生 Ottava",
+      "?SNN|施乐辉 CORI",
+      "~CMR Surgical|未上市",
+      "STXS|Stereotaxis",
+      "?BSX|波科"
+     ],
+     "kw": [
+      "robotic-assisted",
+      "surgical robot",
+      "robotic surgery",
+      "robotic system"
+     ],
+     "m": "box .9 .3 .9 @.8 -1.5 0;cyl .15 1.6 @.8 -.6 0;box .8 .1 .1 @.4 .3 .3;box .8 .1 .1 @.4 .3 -.3;box .8 .1 .1 @.4 .5 0",
+     "trigger": "新一代平台放量；手术量增速上修；新适应症获批。"
+    },
+    {
+     "id": "inst",
+     "name": "手术器械 / 耗材",
+     "group": "耗材",
+     "wave": 2,
+     "role": "每台手术都要消耗，经常性收入的来源。",
+     "cos": [
+      "ISRG|自产",
+      "?TFX|Teleflex",
+      "?COO|",
+      "?ITGR|Integer，器械代工",
+      "?MMSI|Merit"
+     ],
+     "kw": [
+      "surgical instruments",
+      "single-use"
+     ],
+     "m": "cyl .03 .9 @-.1 -.2 .3;cyl .03 .9 @-.1 -.2 -.3"
+    },
+    {
+     "id": "scope",
+     "name": "3D 内窥镜 / 成像",
+     "group": "成像",
+     "wave": 1,
+     "role": "医生的眼睛。",
+     "cos": [
+      "?TDY|",
+      "?SONY|",
+      "?OLYMY|奥林巴斯",
+      "?STE|Steris",
+      "?SYK|",
+      "~Karl Storz|未上市"
+     ],
+     "kw": [
+      "endoscopy",
+      "endoscopes",
+      "visualization systems"
+     ],
+     "m": "cyl .04 1.0 @-.1 0 0"
+    },
+    {
+     "id": "joint",
+     "name": "精密电机 / 编码器 / 力反馈",
+     "group": "传动",
+     "wave": 1,
+     "role": "机械臂关节与力反馈。",
+     "cos": [
+      "NOVT|Novanta，医疗运动控制",
+      "ALNT|",
+      "~Maxon|未上市"
+     ],
+     "kw": [
+      "precision motion",
+      "medical motion"
+     ],
+     "m": "sph .1 @.8 .3 .3;sph .1 @.8 .3 -.3;sph .1 @.8 .5 0",
+     "eff": "力反馈精度决定医生手感，是新一代平台的主要卖点。"
+    },
+    {
+     "id": "console",
+     "name": "医生控制台 / 3D 显示",
+     "group": "整机",
+     "wave": 2,
+     "role": "医生坐着操作的地方。",
+     "cos": [
+      "ISRG|",
+      "?SONY|医用显示器",
+      "~Barco|布鲁塞尔上市"
+     ],
+     "kw": [],
+     "m": "box .7 1.1 .7 @-1.8 -1.1 0;box .5 .3 .2 @-1.8 -.3 .1;sph .08 @-1.65 -.6 .42;sph .08 @-1.95 -.6 .42"
+    },
+    {
+     "id": "nav",
+     "name": "术中导航 / 影像设备",
+     "group": "成像",
+     "wave": 2,
+     "role": "CT、C 臂、导航定位。",
+     "cos": [
+      "?GEHC|GE 医疗",
+      "?SMMNY|西门子医疗",
+      "?MDT|StealthStation",
+      "GMED|Excelsius",
+      "?SYK|",
+      "~Brainlab|未上市"
+     ],
+     "kw": [
+      "surgical navigation",
+      "image-guided",
+      "imaging systems"
+     ],
+     "m": "box .6 1.3 .5 @2.2 -1.0 0"
+    },
+    {
+     "id": "ai",
+     "name": "手术 AI / 数据 / 远程手术",
+     "group": "软件",
+     "wave": 2,
+     "role": "术前规划、术中识别、远程操作。",
+     "cos": [
+      "ISRG|My Intuitive / 数据平台",
+      "?NVDA|Holoscan",
+      "?MDT|Touch Surgery",
+      "~Proximie / Activ Surgical|未上市"
+     ],
+     "kw": [
+      "digital surgery",
+      "surgical planning"
+     ],
+     "trigger": "远程手术获批并商业化。"
+    },
+    {
+     "id": "hosp",
+     "name": "医院 / 手术中心",
+     "group": "客户",
+     "wave": 2,
+     "role": "买单方，资本开支周期影响装机节奏。",
+     "cos": [
+      "?HCA|HCA",
+      "?THC|Tenet",
+      "?UHS|",
+      "?SGRY|Surgery Partners"
+     ],
+     "kw": []
+    }
+   ],
+   "edges": []
+  }
+ ]
 }

@@ -7,4 +7,6 @@ from . import config
 def build(snap):
     html = config.TEMPLATE.read_text()
     data = json.dumps(snap, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    three = (config.ROOT / "web" / "vendor" / "three.min.js").read_text().replace("</script", "<\\/script")
+    html = html.replace("/*__THREE__*/", three, 1)
     config.SITE.write_text(html.replace("/*__DATA__*/null", data))

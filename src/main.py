@@ -7,7 +7,7 @@ import json
 import logging
 from datetime import datetime, timezone
 
-from . import alerts, analyze, build_site, config, fetch, universe
+from . import alerts, analyze, build_site, config, discover, fetch, universe
 
 log = logging.getLogger("stock-radar")
 
@@ -41,6 +41,9 @@ def _summizer(members):
 
 def build_snapshot(force=False):
     sectors = universe.load_sectors()
+    n_auto = discover.match_parts(sectors)          # 全市场扫描结果按关键词挂到零件上
+    log.info("全市场自动匹配：新增 %d 条 零件-公司 关系", n_auto)
+    profiles = discover.load_profiles()
     members = universe.memberships(sectors)
     tickers = sorted(members)
     theme_etfs = universe.sector_etfs(sectors)
@@ -76,7 +79,9 @@ def build_snapshot(force=False):
         h, hwhy = analyze.heat(tc, ca)
         info = f.get("info") or {}
         companies[t] = {
-            "name": info.get("shortName") or info.get("longName") or t, "industry": info.get("industry", ""),
+            "name": info.get("shortName") or info.get("longName") or (profiles.get(t) or {}).get("short") or t,
+            "industry": info.get("industry", ""),
+            "about": ((profiles.get(t) or {}).get("summary") or "")[:420],
             "tech": tc, "fund": fu, "expect": ex, "capital": ca, "heat": h, "heat_why": hwhy,
             "members": members[t], "news": f.get("news") or [], "filings": filings.get(t, []), "relations": (rel.get(t) or [])[:12],
             "notes": (notes.get("companies") or {}).get(t, []),

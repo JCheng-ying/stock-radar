@@ -66,6 +66,17 @@ def fetch_prices(tickers):
     """返回 {ticker: DataFrame(Close, Volume)}，日线。分批下载，失败的代码直接缺席。"""
     out = {}
     tickers = sorted(set(tickers))
+    _price_pass(tickers, out)
+    for _ in range(2):            # 整批缺失多半是被限流，歇一会儿再补
+        missing = [t for t in tickers if t not in out]
+        if len(missing) <= 8:
+            break
+        time.sleep(60)
+        _price_pass(missing, out)
+    return out
+
+
+def _price_pass(tickers, out):
     for i in range(0, len(tickers), 60):
         batch = tickers[i:i + 60]
         try:
@@ -81,7 +92,7 @@ def fetch_prices(tickers):
                     out[t] = sub
             except Exception:
                 pass
-    return out
+        time.sleep(1)
 
 
 # ---------- 基本面 + 一致预期 ----------

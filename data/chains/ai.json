@@ -1,164 +1,1732 @@
 {
-  "id": "ai",
-  "name": "AI",
-  "summizer_tags": ["AI板块", "edge AI板块", "能源板块"],
-  "etfs": {"SMH": "半导体（一浪：基础设备）", "IGV": "软件（二浪：B端应用）", "SOCL": "社交/互联网（三浪：C端应用）"},
-  "industry": {
-    "需求": "大模型训练 + 推理 token 消耗量指数级增长；推理占比持续上升，Agent 让单次任务的 token 消耗比对话高 1~2 个数量级。",
-    "供给": "先进制程（台积电 3nm/2nm）、CoWoS 先进封装、HBM、电力接入是四个硬约束，谁先解除谁先放量。",
-    "资本开支": "四大云厂商（微软/谷歌/亚马逊/Meta）+ 甲骨文 + OpenAI 的资本开支指引是一浪最直接的温度计，每个财报季都要对比上调/下调。",
-    "技术进步": "模型能力（推理、长任务 Agent）、单位 token 成本下降、定制 ASIC、光互联（CPO）、液冷。成本每降一个量级，就打开一层新应用。",
-    "产业政策": "美国对华芯片出口管制、各国主权 AI、数据中心电力审批与核电重启政策。"
+ "id": "ai",
+ "name": "AI",
+ "summizer_tags": [
+  "AI板块",
+  "edge AI板块",
+  "能源板块"
+ ],
+ "etfs": {
+  "SMH": "半导体（一浪：基础设备）",
+  "IGV": "软件（二浪：B端应用）",
+  "SOCL": "社交/互联网（三浪：C端应用）"
+ },
+ "industry": {
+  "需求": "大模型训练 + 推理 token 消耗量指数级增长；推理占比持续上升，Agent 让单次任务的 token 消耗比对话高 1~2 个数量级。",
+  "供给": "先进制程（台积电 3nm/2nm）、CoWoS 先进封装、HBM、电力接入是四个硬约束，谁先解除谁先放量。",
+  "资本开支": "四大云厂商（微软/谷歌/亚马逊/Meta）+ 甲骨文 + OpenAI 的资本开支指引是一浪最直接的温度计，每个财报季都要对比上调/下调。",
+  "技术进步": "模型能力（推理、长任务 Agent）、单位 token 成本下降、定制 ASIC、光互联（CPO）、液冷。成本每降一个量级，就打开一层新应用。",
+  "产业政策": "美国对华芯片出口管制、各国主权 AI、数据中心电力审批与核电重启政策。"
+ },
+ "waves": {
+  "1": {
+   "name": "一浪：基础设备",
+   "desc": "芯片、存储、网络、代工、设备、服务器、电力散热——卖铲子的人，看资本开支和订单。"
   },
-  "waves": {
-    "1": {"name": "一浪：基础设备", "desc": "芯片、存储、网络、代工、设备、服务器、电力散热——卖铲子的人，看资本开支和订单。"},
-    "2": {"name": "二浪：B端应用", "desc": "企业软件 / Agent / 数据平台——AI 开始优化生产效率，看 IGV 是否分化上涨、毛利率、EBITDA 利润率、RPO。"},
-    "3": {"name": "三浪：C端应用", "desc": "面向消费者的 AI 产品、广告、端侧设备——看用户时长、付费率和广告单价。"}
+  "2": {
+   "name": "二浪：B端应用",
+   "desc": "企业软件 / Agent / 数据平台——AI 开始优化生产效率，看 IGV 是否分化上涨、毛利率、EBITDA 利润率、RPO。"
   },
-  "chains": [
+  "3": {
+   "name": "三浪：C端应用",
+   "desc": "面向消费者的 AI 产品、广告、端侧设备——看用户时长、付费率和广告单价。"
+  }
+ },
+ "chains": [
+  {
+   "id": "assistant",
+   "name": "AI 助手（ChatGPT 类）",
+   "icon": "💬",
+   "model": "stack",
+   "product": "你问一句话、它答一段话——背后是谁提供数据、系统、算力、芯片、网络、能源和场地",
+   "summary": "从上往下拆：入口 → 模型 → 数据 → 系统软件 → 算力 → 芯片 → 网络 → 能源 → 场地。越往下越重资产、供给越紧；越往上越靠近用户、变现越晚。",
+   "nodes": [
     {
-      "id": "chatgpt",
-      "name": "ChatGPT 类大模型产品",
-      "product": "你在 ChatGPT 里输入一句话，到屏幕上出现回答",
-      "summary": "一句提问的背后：模型公司租用云上的 GPU 集群做推理；GPU 由台积电代工、配 HBM 内存、靠高速网络连成集群，装进服务器，再放进有电、有冷却的数据中心。越往上游，供给越集中，定价权越强。",
-      "nodes": [
-        {"id": "app", "name": "大模型产品 / 模型公司", "layer": 0, "wave": 3,
-         "role": "直接面对用户的对话助手和 API，决定需求有多大。模型公司的融资额和 token 消耗量是整条链的需求源头。",
-         "trigger": "新一代模型发布带来能力跃迁（长任务 Agent、多模态），或付费用户/API 收入超预期。",
-         "cos": ["~OpenAI|未上市，ChatGPT", "~Anthropic|未上市，Claude", "GOOGL|Gemini", "META|Meta AI + Llama", "MSFT|Copilot，OpenAI 最大股东之一"]},
-        {"id": "cloud", "name": "AI 云 / 算力租赁", "layer": 1, "wave": 1,
-         "role": "把 GPU 集群按小时租给模型公司。资本开支的直接出资方，RPO（未履约订单）最能反映未来几年的确定性需求。",
-         "eff": "集群利用率和单位算力成本决定毛利率；电力接入速度决定能多快上线。",
-         "trigger": "云厂商上调资本开支指引、RPO 环比大增（如甲骨文与 OpenAI 的长单）。",
-         "cos": ["MSFT|Azure", "AMZN|AWS", "GOOGL|Google Cloud", "ORCL|OCI，RPO 弹性最大", "CRWV|CoreWeave，纯 GPU 云", "NBIS|Nebius", "IREN|矿场转 AI 云", "APLD|Applied Digital，数据中心托管"]},
-        {"id": "gpu", "name": "AI 加速芯片（GPU / 定制 ASIC）", "layer": 2, "wave": 1,
-         "role": "训练和推理的核心算力。英伟达靠 CUDA 生态占主导，博通/Marvell 帮云厂商做定制 ASIC 分流。",
-         "eff": "每瓦性能、每 token 成本——直接决定下游模型公司的毛利率，是整条链效率的第一决定因素。",
-         "trigger": "新一代平台量产爬坡（每年一代）、定制 ASIC 大单落地、出口管制松紧变化。",
-         "cos": ["NVDA|GPU 绝对龙头", "AMD|Instinct GPU，OpenAI 6GW 协议", "AVGO|定制 ASIC（谷歌 TPU、OpenAI）", "MRVL|定制 ASIC + 光 DSP", "CBRS|Cerebras，晶圆级推理芯片", "~Groq|未上市，推理芯片"]},
-        {"id": "mem", "name": "HBM 高带宽内存 / 存储", "layer": 3, "wave": 1,
-         "role": "GPU 旁边的高速内存，每代 GPU 需要的 HBM 容量都在翻倍；推理还带动企业级 SSD 和大容量硬盘。",
-         "eff": "内存带宽决定 GPU 能不能跑满，HBM 是算力的隐形瓶颈之一。",
-         "trigger": "HBM 新一代认证通过、DRAM/NAND 合约价进入上行周期。",
-         "cos": ["MU|美光，HBM 三强之一", "~SK hynix|韩国上市，HBM 龙头", "~Samsung Electronics|韩国上市", "SNDK|闪迪，NAND", "WDC|大容量硬盘", "STX|希捷，大容量硬盘"]},
-        {"id": "net", "name": "数据中心网络与光互联", "layer": 3, "wave": 1,
-         "role": "把几万到几十万颗 GPU 连成一台“超级计算机”：交换机、交换芯片、光模块、有源铜缆、Retimer。",
-         "eff": "集群越大，网络越是瓶颈——互联带宽和时延决定大集群的有效利用率。",
-         "trigger": "800G→1.6T 光模块升级、CPO（共封装光学）量产、以太网在 AI 后端网络抢份额。",
-         "cos": ["ANET|Arista，AI 以太网交换机", "AVGO|Tomahawk/Jericho 交换芯片", "MRVL|光 DSP", "CRDO|Credo，有源电缆", "ALAB|Astera Labs，Retimer", "COHR|Coherent，光模块/激光器", "LITE|Lumentum，激光芯片", "CIEN|Ciena，数据中心互联", "FN|Fabrinet，光器件代工", "AAOI|应用光电", "GLW|康宁，光纤"]},
-        {"id": "server", "name": "AI 服务器 / 整机柜", "layer": 2, "wave": 1,
-         "role": "把芯片、内存、网络、电源、液冷集成成整机柜交付。毛利率薄，但出货量是算力落地的同步指标。",
-         "trigger": "新平台机柜开始批量出货；毛利率企稳。",
-         "cos": ["DELL|AI 服务器订单积压", "SMCI|超微", "HPE|慧与", "CLS|Celestica，云厂商白牌", "~鸿海 / 广达 / 纬创|台湾上市 ODM"]},
-        {"id": "foundry", "name": "晶圆代工与先进封装", "layer": 4, "wave": 1,
-         "role": "所有先进 AI 芯片几乎都由台积电制造，CoWoS 先进封装产能是过去两年 GPU 出货量的天花板。",
-         "eff": "先进制程良率 + CoWoS 产能 = 全行业 GPU 供给上限，是真正的总闸门。",
-         "trigger": "台积电月度营收/资本开支指引上调、CoWoS 扩产、2nm 量产。",
-         "cos": ["TSM|台积电，先进制程垄断", "INTC|英特尔代工，18A", "AMKR|Amkor，封测", "ASX|日月光，封测", "?GFS|格芯，成熟/特色工艺"]},
-        {"id": "equip", "name": "半导体设备", "layer": 5, "wave": 1,
-         "role": "代工厂和存储厂扩产要先买设备：光刻、刻蚀、沉积、量测、测试。",
-         "trigger": "台积电/存储厂资本开支上调；HBM 与先进封装设备需求。",
-         "cos": ["ASML|EUV 光刻垄断", "AMAT|应用材料", "LRCX|泛林，刻蚀", "KLAC|科磊，量测", "TER|泰瑞达，测试", "ONTO|先进封装量测", "CAMT|Camtek，封装检测"]},
-        {"id": "eda", "name": "EDA 与芯片 IP", "layer": 5, "wave": 1,
-         "role": "设计芯片必须用的软件和 IP 核，定制 ASIC 越多，EDA/IP 用量越大。",
-         "cos": ["SNPS|新思", "CDNS|楷登", "ARM|Arm，CPU 架构授权"]},
-        {"id": "power", "name": "数据中心电力与散热", "layer": 3, "wave": 1,
-         "role": "一座 1GW 的 AI 数据中心相当于一座中型城市的用电量。供电（核电/燃气/燃料电池）、配电、液冷是 2025 年之后最紧的物理约束。",
-         "eff": "“有电才有算力”——并网排队时间直接决定算力上线速度。",
-         "trigger": "核电重启/长期购电协议（PPA）、燃气轮机订单排到几年后、液冷渗透率提升。",
-         "cos": ["VRT|Vertiv，液冷/配电", "ETN|伊顿，电气设备", "GEV|GE Vernova，燃气轮机", "CEG|Constellation，核电", "VST|Vistra", "TLN|Talen", "BE|Bloom，燃料电池", "MOD|Modine，散热", "NVT|nVent，液冷", "OKLO|小型核反应堆", "SMR|NuScale"]},
-        {"id": "dc", "name": "数据中心地产 / 托管", "layer": 2, "wave": 1,
-         "role": "提供机房、土地和并网容量。",
-         "cos": ["EQIX|Equinix", "DLR|Digital Realty"]}
-      ],
-      "edges": [
-        ["equip", "foundry", "卖设备，扩产前置指标"],
-        ["eda", "gpu", "设计工具与 IP"],
-        ["foundry", "gpu", "代工制造 + CoWoS 封装"],
-        ["mem", "gpu", "HBM 与 GPU 封装在一起"],
-        ["mem", "server", "DRAM / SSD"],
-        ["gpu", "server", "核心算力部件"],
-        ["net", "server", "把机柜连成集群"],
-        ["power", "dc", "供电与冷却"],
-        ["server", "cloud", "整机柜交付"],
-        ["dc", "cloud", "机房与并网容量"],
-        ["cloud", "app", "出租算力（长期合同 → RPO）"]
-      ]
+     "id": "app",
+     "name": "助手入口 / 分发",
+     "group": "入口",
+     "wave": 3,
+     "role": "用户直接接触的产品和流量入口，决定需求有多大。",
+     "trigger": "付费用户数 / API 收入超预期；新一代模型带来能力跃迁。",
+     "cos": [
+      "~OpenAI|未上市，ChatGPT",
+      "~Anthropic|未上市，Claude",
+      "GOOGL|Gemini + 搜索入口",
+      "META|Meta AI",
+      "MSFT|Copilot",
+      "AAPL|Siri / 系统级入口",
+      "AMZN|Alexa+"
+     ],
+     "kw": [
+      "ai assistant",
+      "conversational ai",
+      "chatbot"
+     ]
     },
     {
-      "id": "enterprise-agent",
-      "name": "企业 AI Agent / 软件",
-      "product": "企业里一个能自己查数据、写代码、处理工单的 AI 员工",
-      "summary": "二浪的核心：模型能力通过企业软件落到生产流程里。判断它来没来，不看故事，看软件公司财报里毛利率是否守住、EBITDA 利润率是否抬升、RPO 是否加速，以及 IGV 里是不是只有真正受益的公司在涨（分化上涨）。",
-      "nodes": [
-        {"id": "agent", "name": "企业 Agent / Copilot 应用", "layer": 0, "wave": 2,
-         "role": "把 AI 嵌进 CRM、ITSM、ERP、办公套件，按席位或按用量收费。",
-         "eff": "AI 功能的推理成本会吃掉毛利率——毛利率能稳住说明产品有定价权。",
-         "trigger": "AI 产品 ARR 单独披露并加速、RPO/cRPO 环比加速、净留存率回升。",
-         "cos": ["MSFT|M365 Copilot", "CRM|Agentforce", "NOW|Now Assist", "PLTR|AIP，增速最快", "ADBE|Firefly", "WDAY|Workday", "SAP|Joule", "INTU|Intuit", "HUBS|HubSpot", "APP|AppLovin，AI 广告引擎"]},
-        {"id": "data", "name": "数据平台 / 可观测性", "layer": 1, "wave": 2,
-         "role": "Agent 要读企业自己的数据才有用：数据仓库、向量检索、数据库、监控。",
-         "trigger": "按用量计费的消耗增速回升，是企业 AI 真实落地的先行指标。",
-         "cos": ["SNOW|Snowflake", "MDB|MongoDB", "DDOG|Datadog", "ORCL|数据库 + OCI", "ESTC|Elastic，向量检索", "~Databricks|未上市"]},
-        {"id": "dev", "name": "AI 编程 / 开发者工具", "layer": 1, "wave": 2,
-         "role": "目前最成熟的 Agent 场景，token 消耗最大的 B 端应用。",
-         "cos": ["MSFT|GitHub Copilot", "GTLB|GitLab", "~Cursor (Anysphere)|未上市", "~Anthropic|Claude Code"]},
-        {"id": "sec", "name": "AI 安全 / 身份", "layer": 1, "wave": 2,
-         "role": "Agent 有了权限就需要治理：身份、数据防泄漏、网络边界。",
-         "cos": ["CRWD|CrowdStrike", "PANW|Palo Alto", "ZS|Zscaler", "NET|Cloudflare，边缘推理 + 安全"]},
-        {"id": "svc", "name": "IT 服务 / 落地集成", "layer": 1, "wave": 2,
-         "role": "帮传统企业把 AI 接进流程，订单额反映企业预算是否真的在迁移。",
-         "cos": ["ACN|埃森哲", "IBM|watsonx + 咨询"]},
-        {"id": "model", "name": "基础模型 API", "layer": 2, "wave": 1,
-         "role": "应用层调用的模型。token 单价每年下降一个量级，是应用层毛利率改善的来源。",
-         "eff": "模型的任务完成率和单位成本，决定 Agent 能不能真正替代人力。",
-         "trigger": "模型在长任务基准上出现阶跃；API 价格大幅下调。",
-         "cos": ["~OpenAI|未上市", "~Anthropic|未上市", "GOOGL|Gemini API", "AMZN|Bedrock", "META|Llama 开源"]},
-        {"id": "cloud2", "name": "云基础设施", "layer": 3, "wave": 1,
-         "role": "模型与应用都跑在云上。",
-         "cos": ["MSFT|Azure", "AMZN|AWS", "GOOGL|Google Cloud", "ORCL|OCI"]}
-      ],
-      "edges": [
-        ["cloud2", "model", "训练与推理算力"],
-        ["model", "agent", "模型能力 / token"],
-        ["model", "dev", "代码模型"],
-        ["data", "agent", "企业私有数据"],
-        ["dev", "agent", "开发与部署"],
-        ["sec", "agent", "权限与治理"],
-        ["svc", "agent", "实施落地"]
-      ]
+     "id": "model",
+     "name": "基础大模型",
+     "group": "模型",
+     "wave": 1,
+     "role": "训练并提供大模型。模型公司的融资额和 token 消耗是整条链的需求源头。",
+     "eff": "模型的任务完成率和单位 token 成本，决定下游应用能不能赚钱。",
+     "trigger": "长任务 Agent 基准出现阶跃；API 大幅降价。",
+     "cos": [
+      "~OpenAI|未上市",
+      "~Anthropic|未上市",
+      "GOOGL|Gemini",
+      "META|Llama 开源",
+      "AMZN|Nova + 投资 Anthropic",
+      "MSFT|投资 OpenAI + 自研 MAI",
+      "~xAI|已并入 SpaceX",
+      "BABA|通义千问",
+      "BIDU|文心"
+     ],
+     "kw": [
+      "large language model",
+      "foundation model"
+     ]
     },
     {
-      "id": "consumer-edge",
-      "name": "C 端 AI 应用与端侧设备",
-      "product": "手机 / 眼镜 / PC 上随身的 AI 助手，以及由 AI 驱动的内容与广告",
-      "summary": "三浪：AI 变成普通人每天用的东西。两条变现路径——广告（推荐与投放效率提升）和硬件换机（端侧模型需要更强的芯片和内存）。",
-      "nodes": [
-        {"id": "capp", "name": "C 端 AI 应用 / 广告平台", "layer": 0, "wave": 3,
-         "role": "AI 提升推荐和广告转化率，是目前 C 端最确定的变现方式。",
-         "trigger": "广告单价与使用时长同时上升；AI 助手月活突破并开始商业化。",
-         "cos": ["META|广告 + Meta AI", "GOOGL|搜索 AI 模式 + YouTube", "AMZN|Alexa+ 与电商", "RDDT|Reddit，数据授权", "DUOL|多邻国", "SPOT|Spotify", "PINS|Pinterest"]},
-        {"id": "device", "name": "AI 终端设备", "layer": 1, "wave": 3,
-         "role": "手机、PC、AI 眼镜。端侧 AI 推动换机周期和单机内存容量提升。",
-         "trigger": "AI 功能带来可见的换机潮；AI 眼镜出货量上台阶。",
-         "cos": ["AAPL|iPhone + Apple Intelligence", "META|Ray-Ban Meta 眼镜", "GOOGL|Pixel + Android", "DELL|AI PC", "HPQ|AI PC"]},
-        {"id": "soc", "name": "端侧 AI 芯片 (SoC / NPU)", "layer": 2, "wave": 1,
-         "role": "在设备本地跑模型的芯片。",
-         "eff": "每瓦推理性能决定端侧能跑多大的模型。",
-         "cos": ["QCOM|骁龙", "ARM|架构授权", "AAPL|自研 A/M 系列", "AMD|AI PC", "INTC|AI PC", "AMBA|Ambarella，边缘视觉", "LSCC|Lattice，低功耗 FPGA", "CEVA|边缘 AI IP", "~联发科|台湾上市"]},
-        {"id": "emem", "name": "移动内存 / 存储", "layer": 2, "wave": 1,
-         "role": "端侧模型吃内存，单机 DRAM 容量上升。",
-         "cos": ["MU|美光", "SNDK|闪迪"]},
-        {"id": "efab", "name": "晶圆代工", "layer": 3, "wave": 1,
-         "role": "先进制程代工。",
-         "cos": ["TSM|台积电"]}
-      ],
-      "edges": [
-        ["efab", "soc", "代工"],
-        ["soc", "device", "端侧算力"],
-        ["emem", "device", "内存"],
-        ["device", "capp", "入口与分发"]
-      ]
+     "id": "content",
+     "name": "训练数据：内容授权",
+     "group": "数据",
+     "wave": 2,
+     "role": "模型公司付费购买高质量文本、图片、代码、论坛内容的授权。",
+     "trigger": "新的大额数据授权协议；版权诉讼判决。",
+     "cos": [
+      "RDDT|Reddit，论坛数据授权",
+      "NYT|纽约时报",
+      "NWSA|新闻集团",
+      "TRI|汤森路透，法律数据",
+      "SSTK|Shutterstock，图片",
+      "GETY|Getty Images",
+      "WLY|Wiley，学术出版"
+     ],
+     "kw": [
+      "data licensing",
+      "content licensing",
+      "licensing our content"
+     ]
+    },
+    {
+     "id": "label",
+     "name": "训练数据：标注与评测",
+     "group": "数据",
+     "wave": 2,
+     "role": "人工标注、专家反馈（RLHF）、模型评测数据的外包。",
+     "trigger": "模型公司的数据外包合同放量。",
+     "cos": [
+      "INOD|Innodata，专做大模型训练数据",
+      "~Scale AI|未上市，Meta 持股 49%",
+      "~Surge AI|未上市",
+      "~Mercor|未上市",
+      "TTEC|客服外包转标注"
+     ],
+     "kw": [
+      "data annotation",
+      "data labeling",
+      "training data for",
+      "ai data"
+     ]
+    },
+    {
+     "id": "dataplat",
+     "name": "数据平台 / 向量检索",
+     "group": "数据",
+     "wave": 2,
+     "role": "企业自己的数据放在哪、怎么被模型检索到：数据仓库、数据库、向量库、可观测性。",
+     "trigger": "按用量计费的消耗增速回升。",
+     "cos": [
+      "SNOW|Snowflake",
+      "MDB|MongoDB",
+      "ESTC|Elastic，向量检索",
+      "DDOG|Datadog",
+      "ORCL|数据库",
+      "~Databricks|未上市"
+     ],
+     "kw": [
+      "data cloud",
+      "data lakehouse",
+      "vector search",
+      "vector database",
+      "data streaming platform"
+     ]
+    },
+    {
+     "id": "framework",
+     "name": "AI 软件栈（训练 / 推理框架）",
+     "group": "系统",
+     "wave": 1,
+     "role": "CUDA、PyTorch、推理引擎——芯片能不能被用起来全靠这一层，也是英伟达最深的护城河。",
+     "eff": "软件栈的成熟度决定换芯片的迁移成本。",
+     "cos": [
+      "NVDA|CUDA 生态",
+      "META|PyTorch",
+      "GOOGL|JAX / TensorFlow",
+      "AMD|ROCm"
+     ],
+     "kw": [
+      "inference platform",
+      "machine learning platform",
+      "mlops"
+     ]
+    },
+    {
+     "id": "orchestr",
+     "name": "算力调度 / 虚拟化 / 存储软件",
+     "group": "系统",
+     "wave": 1,
+     "role": "把几十万颗 GPU 管起来：集群调度、虚拟化、并行文件系统、数据管道。",
+     "cos": [
+      "MSFT|Azure 平台",
+      "IBM|Red Hat OpenShift",
+      "NTNX|Nutanix",
+      "~PSTG|Pure Storage，AI 存储（代码已无行情）",
+      "NTAP|NetApp",
+      "~CFLT|Confluent，数据流（代码已无行情）"
+     ],
+     "kw": [
+      "kubernetes",
+      "virtualization software",
+      "hybrid multicloud",
+      "hyperconverged",
+      "all-flash",
+      "storage platform"
+     ]
+    },
+    {
+     "id": "aisec",
+     "name": "安全 / 身份",
+     "group": "系统",
+     "wave": 2,
+     "role": "模型和 Agent 的权限、数据防泄漏、网络边界。",
+     "cos": [
+      "CRWD|CrowdStrike",
+      "PANW|Palo Alto",
+      "ZS|Zscaler",
+      "NET|Cloudflare",
+      "OKTA|身份",
+      "S|SentinelOne",
+      "RBRK|Rubrik，数据安全"
+     ],
+     "kw": [
+      "zero trust",
+      "identity security",
+      "endpoint security",
+      "cybersecurity platform"
+     ]
+    },
+    {
+     "id": "cloud",
+     "name": "超大规模云",
+     "group": "算力",
+     "wave": 1,
+     "role": "资本开支的直接出资方，把算力按用量租给模型公司和企业。RPO 最能反映未来确定性需求。",
+     "eff": "集群利用率和单位算力成本决定云的毛利率。",
+     "trigger": "上调资本开支指引；RPO 环比大增。",
+     "cos": [
+      "MSFT|Azure",
+      "AMZN|AWS",
+      "GOOGL|Google Cloud",
+      "ORCL|OCI，RPO 弹性最大",
+      "BABA|阿里云"
+     ],
+     "kw": [
+      "public cloud",
+      "cloud infrastructure services"
+     ]
+    },
+    {
+     "id": "neocloud",
+     "name": "GPU 云 / 算力租赁 / 矿场转型",
+     "group": "算力",
+     "wave": 1,
+     "role": "专门出租 GPU 的新型云，以及手里有电力和场地、转做 AI 托管的比特币矿企。",
+     "trigger": "与云厂商 / 模型公司签下多年期合同。",
+     "cos": [
+      "CRWV|CoreWeave",
+      "NBIS|Nebius",
+      "IREN|IREN",
+      "APLD|Applied Digital",
+      "CIFR|Cipher",
+      "WULF|TeraWulf",
+      "CORZ|Core Scientific",
+      "HUT|Hut 8",
+      "GLXY|Galaxy，Helios 园区",
+      "BTDR|Bitdeer",
+      "RIOT|Riot"
+     ],
+     "kw": [
+      "gpu cloud",
+      "ai cloud",
+      "hpc hosting",
+      "high-performance computing hosting",
+      "ai and hpc",
+      "ai infrastructure",
+      "hpc colocation"
+     ]
+    },
+    {
+     "id": "gpu",
+     "name": "GPU / AI 加速器",
+     "group": "芯片",
+     "wave": 1,
+     "role": "训练和推理的核心算力。",
+     "eff": "每瓦性能、每 token 成本——整条链效率的第一决定因素。",
+     "trigger": "新一代平台量产爬坡；出口管制松紧变化。",
+     "cos": [
+      "NVDA|绝对龙头",
+      "AMD|Instinct",
+      "CBRS|Cerebras，晶圆级推理",
+      "~Groq|未上市"
+     ],
+     "kw": [
+      "graphics processing units",
+      "ai accelerators",
+      "gpus"
+     ]
+    },
+    {
+     "id": "asic",
+     "name": "定制 ASIC",
+     "group": "芯片",
+     "wave": 1,
+     "role": "云厂商自研芯片（TPU、Trainium、MAIA）背后的设计服务商，分流 GPU 需求。",
+     "trigger": "新的定制芯片大单（如 OpenAI × 博通）。",
+     "cos": [
+      "AVGO|博通，TPU / OpenAI",
+      "MRVL|Marvell",
+      "GOOGL|TPU",
+      "AMZN|Trainium",
+      "~世芯 / 创意电子|台湾上市"
+     ],
+     "kw": [
+      "custom silicon",
+      "custom asic",
+      "application-specific integrated circuit"
+     ]
+    },
+    {
+     "id": "cpu",
+     "name": "服务器 CPU",
+     "group": "芯片",
+     "wave": 1,
+     "role": "每台 AI 服务器仍需要 CPU 做调度；Agent 工作负载让 CPU 需求回升。",
+     "cos": [
+      "AMD|EPYC",
+      "INTC|Xeon",
+      "ARM|Neoverse 架构",
+      "?QCOM|重返数据中心"
+     ],
+     "kw": [
+      "server processors",
+      "data center processors"
+     ]
+    },
+    {
+     "id": "mem",
+     "name": "HBM / 内存 / 存储",
+     "group": "芯片",
+     "wave": 1,
+     "role": "HBM 每代容量翻倍；推理带动企业级 SSD 和大容量硬盘。",
+     "eff": "内存带宽决定 GPU 能不能跑满。",
+     "trigger": "HBM 新一代认证；DRAM / NAND 合约价上行。",
+     "cos": [
+      "MU|美光",
+      "~SK hynix|韩国上市，HBM 龙头",
+      "~Samsung|韩国上市",
+      "SNDK|闪迪",
+      "WDC|西部数据",
+      "STX|希捷",
+      "SIMO|慧荣，SSD 主控",
+      "RMBS|Rambus，内存接口"
+     ],
+     "kw": [
+      "dram",
+      "nand flash",
+      "hard disk drives",
+      "memory interface",
+      "solid state drives"
+     ]
+    },
+    {
+     "id": "server",
+     "name": "AI 服务器 / 整机柜",
+     "group": "整机",
+     "wave": 1,
+     "role": "把芯片、内存、网络、电源、液冷集成成整机柜交付。",
+     "trigger": "新平台机柜批量出货；毛利率企稳。",
+     "cos": [
+      "DELL|戴尔",
+      "SMCI|超微",
+      "HPE|慧与",
+      "CLS|Celestica",
+      "FLEX|伟创力",
+      "JBL|捷普",
+      "SANM|Sanmina",
+      "~鸿海 / 广达 / 纬创|台湾上市"
+     ],
+     "kw": [
+      "ai servers",
+      "server and storage systems",
+      "rack-scale",
+      "electronics manufacturing services"
+     ]
+    },
+    {
+     "id": "switch",
+     "name": "交换机 / 交换芯片",
+     "group": "网络",
+     "wave": 1,
+     "role": "把几十万颗 GPU 连成一台机器。",
+     "eff": "集群越大网络越是瓶颈。",
+     "trigger": "以太网在 AI 后端网络抢 InfiniBand 份额。",
+     "cos": [
+      "ANET|Arista",
+      "AVGO|Tomahawk 交换芯片",
+      "NVDA|Spectrum-X / InfiniBand",
+      "CSCO|思科",
+      "HPE|Juniper",
+      "MRVL|Teralynx"
+     ],
+     "kw": [
+      "ethernet switches",
+      "data center networking",
+      "networking switches"
+     ]
+    },
+    {
+     "id": "optical",
+     "name": "光模块 / 铜缆 / 互联芯片",
+     "group": "网络",
+     "wave": 1,
+     "role": "机柜间用光、机柜内用铜。800G → 1.6T，再到 CPO。",
+     "trigger": "1.6T 放量；CPO 量产。",
+     "cos": [
+      "COHR|Coherent",
+      "LITE|Lumentum",
+      "AAOI|应用光电",
+      "FN|Fabrinet，代工",
+      "CIEN|Ciena",
+      "CRDO|Credo，有源电缆",
+      "ALAB|Astera Labs",
+      "MTSI|MACOM",
+      "SMTC|Semtech",
+      "POET|光中介层",
+      "LWLG|电光聚合物",
+      "GLW|康宁，光纤",
+      "APH|安费诺，铜缆"
+     ],
+     "kw": [
+      "optical transceivers",
+      "silicon photonics",
+      "active electrical cables",
+      "optical interconnect",
+      "optical components",
+      "retimer",
+      "high-speed connectivity",
+      "optical networking"
+     ]
+    },
+    {
+     "id": "powergen",
+     "name": "发电：核电 / 燃气 / 燃料电池",
+     "group": "能源",
+     "wave": 1,
+     "role": "一座 1GW 数据中心相当于一座中型城市的用电。",
+     "eff": "有电才有算力——并网排队时间决定算力上线速度。",
+     "trigger": "核电重启 / 长期购电协议；燃气轮机订单排到几年后。",
+     "cos": [
+      "CEG|Constellation，核电",
+      "VST|Vistra",
+      "TLN|Talen",
+      "NRG|NRG",
+      "GEV|GE Vernova，燃气轮机",
+      "BE|Bloom，燃料电池",
+      "OKLO|小型堆",
+      "SMR|NuScale",
+      "NNE|微堆",
+      "CCJ|Cameco，铀",
+      "LEU|Centrus，浓缩铀",
+      "BWXT|核部件",
+      "NEE|NextEra",
+      "?SO|南方电力",
+      "?DUK|杜克能源"
+     ],
+     "kw": [
+      "nuclear power",
+      "small modular reactor",
+      "fuel cell",
+      "gas turbines",
+      "uranium",
+      "independent power producer",
+      "nuclear fuel"
+     ]
+    },
+    {
+     "id": "grid",
+     "name": "配电：变压器 / 开关柜 / UPS",
+     "group": "能源",
+     "wave": 1,
+     "role": "把电从电网送到机柜：变压器、开关柜、母线、不间断电源。交期最长的环节之一。",
+     "cos": [
+      "ETN|伊顿",
+      "VRT|Vertiv",
+      "GEV|电网设备",
+      "HUBB|Hubbell",
+      "POWL|Powell，开关柜",
+      "NVT|nVent",
+      "AMSC|美国超导",
+      "PWR|Quanta，电网施工",
+      "MYRG|MYR",
+      "~Schneider / Siemens Energy|欧洲上市"
+     ],
+     "kw": [
+      "switchgear",
+      "transformers",
+      "uninterruptible power",
+      "power distribution",
+      "electrical equipment",
+      "grid infrastructure",
+      "power management solutions"
+     ]
+    },
+    {
+     "id": "cooling",
+     "name": "散热：液冷 / 冷水机组",
+     "group": "能源",
+     "wave": 1,
+     "role": "单机柜功率从 20kW 升到 100kW 以上，风冷到头，必须液冷。",
+     "trigger": "液冷渗透率提升；新一代机柜功率再翻倍。",
+     "cos": [
+      "VRT|Vertiv",
+      "MOD|Modine",
+      "NVT|nVent",
+      "JCI|江森自控",
+      "TT|特灵",
+      "CARR|开利",
+      "AAON|数据中心空调",
+      "~Boyd / CoolIT|未上市"
+     ],
+     "kw": [
+      "liquid cooling",
+      "thermal management",
+      "data center cooling",
+      "chillers",
+      "precision cooling"
+     ]
+    },
+    {
+     "id": "backup",
+     "name": "备用电源 / 储能",
+     "group": "能源",
+     "wave": 1,
+     "role": "柴油发电机、电池储能——电网不够时自己发电、削峰。",
+     "cos": [
+      "CAT|卡特彼勒，发电机组",
+      "CMI|康明斯",
+      "GNRC|Generac",
+      "FLNC|Fluence，储能",
+      "EOSE|Eos，长时储能",
+      "?TSLA|Megapack",
+      "ENS|EnerSys"
+     ],
+     "kw": [
+      "generator sets",
+      "backup power",
+      "battery energy storage",
+      "energy storage systems"
+     ]
+    },
+    {
+     "id": "dc",
+     "name": "数据中心地产 / 托管",
+     "group": "场地",
+     "wave": 1,
+     "role": "土地、机房、并网容量。",
+     "cos": [
+      "EQIX|Equinix",
+      "DLR|Digital Realty",
+      "IRM|Iron Mountain"
+     ],
+     "kw": [
+      "data centers",
+      "colocation"
+     ]
+    },
+    {
+     "id": "build",
+     "name": "数据中心施工 / 机电安装",
+     "group": "场地",
+     "wave": 1,
+     "role": "土建、电气、暖通安装，订单积压（backlog）直接反映在建规模。",
+     "trigger": "订单积压创新高。",
+     "cos": [
+      "EME|EMCOR",
+      "FIX|Comfort Systems",
+      "STRL|Sterling",
+      "IESC|IES",
+      "PRIM|Primoris",
+      "PWR|Quanta",
+      "?J|Jacobs",
+      "?FLR|福陆"
+     ],
+     "kw": [
+      "data center construction",
+      "mechanical and electrical",
+      "electrical contractor",
+      "mission critical"
+     ]
+    },
+    {
+     "id": "fiber",
+     "name": "光纤网络 / 互联",
+     "group": "场地",
+     "wave": 1,
+     "role": "数据中心之间的长途光纤和海缆。",
+     "cos": [
+      "GLW|康宁",
+      "CIEN|Ciena",
+      "LUMN|Lumen，AI 光纤合同",
+      "?CCOI|Cogent",
+      "CLFD|Clearfield"
+     ],
+     "kw": [
+      "fiber network",
+      "dark fiber",
+      "optical fiber",
+      "subsea"
+     ]
     }
-  ]
+   ],
+   "edges": []
+  },
+  {
+   "id": "rack",
+   "name": "AI 服务器机柜",
+   "icon": "🗄️",
+   "model": "custom",
+   "product": "把一个英伟达整机柜拆开：一柜 100 多千瓦，里面每一块板子、每一根管子是谁做的",
+   "summary": "机柜是算力的最小交付单位。价值量最大的是 GPU 和 HBM；最容易被忽视但最紧缺的是电源、液冷和高速互联。",
+   "nodes": [
+    {
+     "id": "gpu",
+     "name": "GPU 模组",
+     "group": "芯片",
+     "wave": 1,
+     "role": "机柜价值量的六成以上。",
+     "eff": "每瓦性能。",
+     "m": "box .28 .08 .28 @-.3 .22 .15;box .28 .08 .28 @.3 .22 .15;box .28 .08 .28 @-.3 .22 -.25;box .28 .08 .28 @.3 .22 -.25",
+     "cos": [
+      "NVDA|GB / Rubin 平台",
+      "AMD|Helios 机柜",
+      "AVGO|定制 ASIC"
+     ],
+     "kw": []
+    },
+    {
+     "id": "hbm",
+     "name": "HBM 内存",
+     "group": "芯片",
+     "wave": 1,
+     "role": "紧贴 GPU 的高带宽内存。",
+     "m": "box .08 .1 .28 @-.52 .22 .15;box .08 .1 .28 @.52 .22 .15;box .08 .1 .28 @-.52 .22 -.25;box .08 .1 .28 @.52 .22 -.25",
+     "cos": [
+      "MU|美光",
+      "~SK hynix|韩国上市",
+      "~Samsung|韩国上市"
+     ],
+     "kw": [
+      "high bandwidth memory"
+     ]
+    },
+    {
+     "id": "cpu",
+     "name": "CPU",
+     "group": "芯片",
+     "wave": 1,
+     "role": "调度与数据预处理。",
+     "m": "box .22 .06 .22 @0 .2 .48",
+     "cos": [
+      "NVDA|Vera（Arm 架构）",
+      "AMD|EPYC",
+      "INTC|Xeon",
+      "ARM|架构授权"
+     ],
+     "kw": []
+    },
+    {
+     "id": "dpu",
+     "name": "网卡 / DPU",
+     "group": "网络",
+     "wave": 1,
+     "role": "每台服务器连入网络的接口，承担网络和存储卸载。",
+     "m": "box .34 .05 .14 @0 .2 -.52",
+     "cos": [
+      "NVDA|BlueField / ConnectX",
+      "AVGO|博通网卡",
+      "MRVL|OCTEON",
+      "AMD|Pensando"
+     ],
+     "kw": [
+      "network interface",
+      "data processing unit",
+      "smartnic"
+     ]
+    },
+    {
+     "id": "ssd",
+     "name": "SSD 存储",
+     "group": "芯片",
+     "wave": 1,
+     "role": "本地高速存储。",
+     "m": "box .1 .04 .3 @-.46 .14 .5;box .1 .04 .3 @.46 .14 .5",
+     "cos": [
+      "SNDK|闪迪",
+      "MU|美光",
+      "WDC|西部数据",
+      "SIMO|主控芯片",
+      "~Kioxia / Solidigm|海外"
+     ],
+     "kw": [
+      "enterprise ssd"
+     ]
+    },
+    {
+     "id": "pcb",
+     "name": "主板 / PCB / 覆铜板",
+     "group": "板材",
+     "wave": 1,
+     "role": "高层数、低损耗的 PCB 和上游覆铜板，随信号速率升级而涨价。",
+     "m": "box 1.1 .04 1.2 @0 .06 0",
+     "cos": [
+      "TTMI|TTM，高端 PCB",
+      "SANM|Sanmina",
+      "~台光电 / 金像电 / 沪电|亚洲上市",
+      "ROG|Rogers，高频材料"
+     ],
+     "kw": [
+      "printed circuit boards",
+      "pcb",
+      "laminates",
+      "interconnect substrates"
+     ]
+    },
+    {
+     "id": "bmc",
+     "name": "管理芯片 / 时钟 / 电源管理 IC",
+     "group": "芯片",
+     "wave": 1,
+     "role": "BMC 远程管理、时钟、给 GPU 供电的多相电源芯片。",
+     "m": "box .1 .04 .1 @0 .14 .12;box .08 .04 .08 @0 .14 -.08",
+     "cos": [
+      "MPWR|芯源，GPU 供电",
+      "LSCC|Lattice，控制 FPGA",
+      "?TXN|德州仪器",
+      "?ADI|亚德诺",
+      "?IFNNY|英飞凌",
+      "SITM|SiTime，时钟",
+      "?RNECY|瑞萨",
+      "~Aspeed 信骅|台湾上市，BMC"
+     ],
+     "kw": [
+      "power management ics",
+      "timing solutions",
+      "clock",
+      "voltage regulators",
+      "analog and mixed-signal"
+     ]
+    },
+    {
+     "id": "coldplate",
+     "name": "液冷：冷板 / 快接头 / 分液管",
+     "group": "散热",
+     "wave": 1,
+     "role": "冷板贴在芯片上带走热量，快接头和分液管把冷却液送到每个托盘。",
+     "eff": "散热能力决定机柜功率密度上限。",
+     "m": "box .26 .05 .26 @-.3 .38 .15;box .26 .05 .26 @.3 .38 .15;box .26 .05 .26 @-.3 .38 -.25;box .26 .05 .26 @.3 .38 -.25;cyl .035 3.3 @-.6 0 -.62;cyl .035 3.3 @.6 0 -.62",
+     "cos": [
+      "VRT|Vertiv",
+      "NVT|nVent",
+      "MOD|Modine",
+      "?PH|派克，快接头",
+      "~奇鋐 AVC / 双鸿|台湾上市",
+      "~Boyd|未上市"
+     ],
+     "kw": [
+      "cold plates",
+      "liquid cooling",
+      "quick disconnect",
+      "coolant distribution"
+     ]
+    },
+    {
+     "id": "cdu",
+     "name": "冷却液分配单元（CDU）",
+     "group": "散热",
+     "wave": 1,
+     "role": "机柜液冷回路的“水泵 + 换热器”。",
+     "m": "box 1.1 .45 1.2 @0 -1.55 0",
+     "cos": [
+      "VRT|Vertiv",
+      "NVT|nVent",
+      "MOD|Modine",
+      "SMCI|自研",
+      "~Motivair|已被施耐德收购",
+      "XYL|赛莱默，泵"
+     ],
+     "kw": [
+      "coolant distribution unit",
+      "heat exchangers",
+      "pumps"
+     ]
+    },
+    {
+     "id": "psu",
+     "name": "电源架（PSU）/ 功率半导体",
+     "group": "电源",
+     "wave": 1,
+     "role": "把交流电变成 48V / 800V 直流。下一代 800V 高压直流架构带来 SiC / GaN 的增量。",
+     "trigger": "800V HVDC 架构落地。",
+     "m": "box 1.1 .2 1.2 @0 1.3 0",
+     "cos": [
+      "VICR|Vicor，电源模块",
+      "MPWR|芯源",
+      "NVTS|Navitas，GaN/SiC",
+      "POWI|Power Integrations",
+      "?ON|安森美",
+      "?IFNNY|英飞凌",
+      "AEIS|Advanced Energy",
+      "?STM|意法",
+      "WOLF|Wolfspeed，SiC",
+      "~台达 / 光宝|台湾上市"
+     ],
+     "kw": [
+      "power modules",
+      "gallium nitride",
+      "silicon carbide",
+      "power conversion",
+      "power supplies",
+      "power semiconductors"
+     ]
+    },
+    {
+     "id": "bbu",
+     "name": "备电：电池模组 / 超级电容",
+     "group": "电源",
+     "wave": 1,
+     "role": "机柜内的备用电池和平抑功率波动的超级电容。",
+     "m": "box 1.1 .18 1.2 @0 -1.1 0",
+     "cos": [
+      "ENS|EnerSys",
+      "?ETN|伊顿",
+      "?VRT|Vertiv",
+      "~Panasonic / 顺达|海外"
+     ],
+     "kw": [
+      "supercapacitors",
+      "ultracapacitors",
+      "battery backup"
+     ]
+    },
+    {
+     "id": "busbar",
+     "name": "母线排 / 配电",
+     "group": "电源",
+     "wave": 1,
+     "role": "机柜背部的大电流铜排。",
+     "m": "box .07 3.3 .04 @0 0 -.62",
+     "cos": [
+      "APH|安费诺",
+      "TEL|泰科电子",
+      "?ETN|伊顿",
+      "NVT|nVent"
+     ],
+     "kw": [
+      "busbars",
+      "power interconnect"
+     ]
+    },
+    {
+     "id": "cable",
+     "name": "铜缆背板 / 连接器",
+     "group": "网络",
+     "wave": 1,
+     "role": "机柜内 GPU 之间用铜缆背板互联，单柜几千根线。",
+     "m": "box .9 2.2 .05 @0 -.1 -.72",
+     "cos": [
+      "APH|安费诺，主供",
+      "TEL|泰科电子",
+      "CRDO|Credo，有源电缆",
+      "ALAB|Astera，Retimer",
+      "~Molex / 立讯|未上市 / A 股"
+     ],
+     "kw": [
+      "connectors",
+      "cable assemblies",
+      "interconnect solutions",
+      "high-speed cable"
+     ]
+    },
+    {
+     "id": "switch",
+     "name": "机柜交换机",
+     "group": "网络",
+     "wave": 1,
+     "role": "机柜顶部的交换机。",
+     "m": "box 1.1 .14 1.2 @0 1.62 0",
+     "cos": [
+      "ANET|Arista",
+      "NVDA|Spectrum / Quantum",
+      "AVGO|交换芯片",
+      "CSCO|思科",
+      "CLS|白牌交换机"
+     ],
+     "kw": [
+      "ethernet switches"
+     ]
+    },
+    {
+     "id": "optic",
+     "name": "光模块 / CPO",
+     "group": "网络",
+     "wave": 1,
+     "role": "插在交换机上的光模块；下一代直接把光引擎封装到交换芯片旁（CPO）。",
+     "trigger": "CPO 交换机量产。",
+     "m": "box .12 .06 .26 @-.4 1.62 .72;box .12 .06 .26 @-.2 1.62 .72;box .12 .06 .26 @0 1.62 .72;box .12 .06 .26 @.2 1.62 .72;box .12 .06 .26 @.4 1.62 .72",
+     "cos": [
+      "COHR|Coherent",
+      "LITE|Lumentum",
+      "AAOI|应用光电",
+      "FN|Fabrinet",
+      "MRVL|光 DSP",
+      "AVGO|CPO",
+      "~中际旭创 / 新易盛|A 股"
+     ],
+     "kw": [
+      "optical transceivers",
+      "co-packaged optics",
+      "laser chips"
+     ]
+    },
+    {
+     "id": "chassis",
+     "name": "机柜 / 机箱 / 整机组装（ODM）",
+     "group": "整机",
+     "wave": 1,
+     "role": "钣金机柜、滑轨，以及把所有东西装起来并测试的代工厂。",
+     "m": "box 1.36 3.7 .05 @0 0 -.8;box .05 3.7 1.5 @-.7 0 0;box .05 3.7 1.5 @.7 0 0;box 1.1 .05 1.2 @0 .85 0;box 1.1 .05 1.2 @0 -.45 0;box 1.1 .05 1.2 @0 -.75 0",
+     "cos": [
+      "CLS|Celestica",
+      "SMCI|超微",
+      "DELL|戴尔",
+      "HPE|慧与",
+      "FLEX|伟创力",
+      "JBL|捷普",
+      "~鸿海 / 广达 / 纬颖|台湾上市"
+     ],
+     "kw": [
+      "server racks",
+      "enclosures",
+      "electronics manufacturing services"
+     ],
+     "shell": true
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "chip",
+   "name": "一颗 AI 芯片",
+   "icon": "🔲",
+   "model": "custom",
+   "product": "把一颗 GPU 拆开：设计、制造、封装、测试，每一步用谁的设备和材料",
+   "summary": "中间是芯片本体的五层结构（散热盖、逻辑芯片、HBM、硅中介层、载板）；外圈是造它所需要的工厂、设备、材料和软件。全行业 GPU 的供给上限由台积电先进制程和 CoWoS 产能决定。",
+   "nodes": [
+    {
+     "id": "lid",
+     "name": "散热盖 / 导热材料（TIM）",
+     "group": "封装",
+     "wave": 1,
+     "role": "把几百瓦热量传到冷板上。",
+     "m": "box 2.2 .08 2.2 @0 .5 0",
+     "cos": [
+      "?HON|霍尼韦尔，导热材料",
+      "?MMM|3M",
+      "?DD|杜邦",
+      "~Indium / 信越|未上市 / 日本"
+     ],
+     "kw": [
+      "thermal interface materials"
+     ]
+    },
+    {
+     "id": "die",
+     "name": "逻辑芯片（设计）",
+     "group": "设计",
+     "wave": 1,
+     "role": "芯片设计公司只做设计，不做制造。",
+     "m": "box .9 .08 .9 @0 .2 0",
+     "cos": [
+      "NVDA|GPU",
+      "AMD|GPU / CPU",
+      "AVGO|定制 ASIC",
+      "MRVL|定制 ASIC",
+      "QCOM|推理芯片",
+      "INTC|Gaudi / CPU"
+     ],
+     "kw": [
+      "fabless semiconductor"
+     ]
+    },
+    {
+     "id": "hbm",
+     "name": "HBM 堆叠",
+     "group": "存储",
+     "wave": 1,
+     "role": "8~16 层 DRAM 用 TSV 垂直堆叠，贴在逻辑芯片旁。",
+     "eff": "带宽决定 GPU 利用率。",
+     "m": "box .28 .2 .4 @-.7 .26 .3;box .28 .2 .4 @-.7 .26 -.3;box .28 .2 .4 @.7 .26 .3;box .28 .2 .4 @.7 .26 -.3",
+     "cos": [
+      "MU|美光",
+      "~SK hynix|韩国上市",
+      "~Samsung|韩国上市"
+     ],
+     "kw": []
+    },
+    {
+     "id": "interposer",
+     "name": "硅中介层（CoWoS）",
+     "group": "封装",
+     "wave": 1,
+     "role": "把逻辑芯片和 HBM 连在一起的一层硅——过去两年 GPU 出货量的天花板。",
+     "eff": "CoWoS 产能 = GPU 供给上限。",
+     "trigger": "CoWoS 扩产；面板级封装 / 玻璃基板导入。",
+     "m": "box 1.9 .06 1.9 @0 0 0",
+     "cos": [
+      "TSM|台积电，CoWoS",
+      "AMKR|Amkor",
+      "ASX|日月光",
+      "INTC|EMIB / Foveros"
+     ],
+     "kw": [
+      "advanced packaging",
+      "2.5d",
+      "wafer level packaging"
+     ]
+    },
+    {
+     "id": "substrate",
+     "name": "ABF 载板",
+     "group": "封装",
+     "wave": 1,
+     "role": "芯片和主板之间的高密度基板。",
+     "m": "box 2.4 .1 2.4 @0 -.3 0",
+     "cos": [
+      "~Ibiden / 欣兴 / AT&S|海外上市",
+      "~味之素（ABF 膜）|日本上市",
+      "?GLW|康宁，玻璃基板"
+     ],
+     "kw": [
+      "ic substrates",
+      "package substrates"
+     ]
+    },
+    {
+     "id": "fab",
+     "name": "晶圆代工",
+     "group": "制造",
+     "wave": 1,
+     "role": "先进制程几乎只有台积电。",
+     "eff": "良率和产能是总闸门。",
+     "trigger": "台积电月度营收 / 资本开支上调；2nm 量产。",
+     "cos": [
+      "TSM|台积电",
+      "INTC|18A",
+      "GFS|格芯",
+      "~Samsung Foundry|韩国",
+      "UMC|联电",
+      "TSEM|Tower"
+     ],
+     "kw": [
+      "foundry",
+      "wafer fabrication"
+     ]
+    },
+    {
+     "id": "litho",
+     "name": "光刻",
+     "group": "设备",
+     "wave": 1,
+     "role": "EUV 光刻机只有 ASML 能造。",
+     "cos": [
+      "ASML|EUV 垄断",
+      "~Nikon / Canon|日本上市",
+      "~蔡司|未上市，镜头"
+     ],
+     "kw": [
+      "lithography"
+     ]
+    },
+    {
+     "id": "etch",
+     "name": "刻蚀 / 薄膜沉积 / 离子注入",
+     "group": "设备",
+     "wave": 1,
+     "role": "一层层把电路“雕”出来。HBM 和先进封装带来额外需求。",
+     "trigger": "存储厂资本开支上调。",
+     "cos": [
+      "LRCX|泛林",
+      "AMAT|应用材料",
+      "~东京电子|日本上市",
+      "ACLS|Axcelis，离子注入",
+      "ASMIY|ASM，原子层沉积",
+      "VECO|Veeco",
+      "ACMR|盛美，清洗",
+      "ICHR|Ichor，气体输送",
+      "UCTT|超科林，部件"
+     ],
+     "kw": [
+      "etch",
+      "deposition",
+      "ion implantation",
+      "semiconductor capital equipment",
+      "wafer processing",
+      "semiconductor equipment"
+     ]
+    },
+    {
+     "id": "metro",
+     "name": "量测 / 检测",
+     "group": "设备",
+     "wave": 1,
+     "role": "每道工序后检查缺陷，制程越先进用得越多。",
+     "cos": [
+      "KLAC|科磊",
+      "ONTO|Onto",
+      "CAMT|Camtek",
+      "NVMI|Nova",
+      "?TMO|赛默飞，电镜",
+      "~Lasertec|日本上市"
+     ],
+     "kw": [
+      "metrology",
+      "process control",
+      "inspection systems"
+     ]
+    },
+    {
+     "id": "bond",
+     "name": "键合 / 封装设备",
+     "group": "设备",
+     "wave": 1,
+     "role": "HBM 堆叠用的热压键合机、混合键合机。",
+     "trigger": "HBM4 改用混合键合。",
+     "cos": [
+      "KLIC|库力索法",
+      "~BESI|阿姆斯特丹上市",
+      "~韩美半导体|韩国上市",
+      "AMAT|混合键合",
+      "?ASMIY|ASM",
+      "COHU|分选机"
+     ],
+     "kw": [
+      "bonding",
+      "die attach",
+      "semiconductor assembly"
+     ]
+    },
+    {
+     "id": "test",
+     "name": "测试设备 / 探针卡",
+     "group": "设备",
+     "wave": 1,
+     "role": "AI 芯片测试时间成倍增加。",
+     "cos": [
+      "TER|泰瑞达",
+      "~爱德万|日本上市",
+      "FORM|FormFactor，探针卡",
+      "AEHR|Aehr，老化测试",
+      "COHU|Cohu",
+      "?KEYS|是德"
+     ],
+     "kw": [
+      "test systems",
+      "automated test equipment",
+      "probe cards",
+      "burn-in"
+     ]
+    },
+    {
+     "id": "osat",
+     "name": "封装测试代工（OSAT）",
+     "group": "制造",
+     "wave": 1,
+     "role": "台积电产能不够时的外溢。",
+     "cos": [
+      "AMKR|Amkor",
+      "ASX|日月光",
+      "~京元电 / 力成|台湾上市"
+     ],
+     "kw": [
+      "outsourced semiconductor assembly",
+      "packaging and test services"
+     ]
+    },
+    {
+     "id": "eda",
+     "name": "EDA / IP",
+     "group": "设计",
+     "wave": 1,
+     "role": "设计芯片必须用的软件和现成电路模块。",
+     "cos": [
+      "SNPS|新思",
+      "CDNS|楷登",
+      "ARM|Arm",
+      "RMBS|Rambus",
+      "CEVA|IP 授权",
+      "ALAB|互联 IP"
+     ],
+     "kw": [
+      "electronic design automation",
+      "semiconductor ip",
+      "intellectual property licensing"
+     ]
+    },
+    {
+     "id": "mat",
+     "name": "硅片 / 特气 / 化学品",
+     "group": "材料",
+     "wave": 1,
+     "role": "硅片、光刻胶、电子特气、抛光液、超纯过滤。",
+     "cos": [
+      "ENTG|Entegris",
+      "LIN|林德",
+      "APD|空气化工",
+      "MKSI|MKS",
+      "?DD|杜邦，光刻胶",
+      "~信越 / SUMCO|日本上市，硅片",
+      "AXTI|化合物衬底",
+      "~CCMP|已并入 Entegris（代码已无行情）"
+     ],
+     "kw": [
+      "semiconductor materials",
+      "specialty gases",
+      "electronic materials",
+      "silicon wafers",
+      "cmp slurries",
+      "photoresist"
+     ]
+    },
+    {
+     "id": "mask",
+     "name": "光掩膜",
+     "group": "材料",
+     "wave": 1,
+     "role": "电路图案的“底片”。",
+     "cos": [
+      "PLAB|Photronics",
+      "~Hoya / 凸版|日本上市"
+     ],
+     "kw": [
+      "photomasks"
+     ]
+    },
+    {
+     "id": "facility",
+     "name": "晶圆厂建设 / 洁净室 / 厂务",
+     "group": "制造",
+     "wave": 1,
+     "role": "建厂、洁净室、超纯水、真空与尾气处理。",
+     "trigger": "美国本土晶圆厂开工潮。",
+     "cos": [
+      "?EME|EMCOR",
+      "?J|Jacobs",
+      "?FLR|福陆",
+      "?XYL|超纯水",
+      "?ECL|艺康",
+      "~帆宣 / 汉唐|台湾上市"
+     ],
+     "kw": [
+      "cleanroom",
+      "ultrapure water",
+      "semiconductor fabs"
+     ]
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "agent",
+   "name": "企业 AI Agent",
+   "icon": "🧑‍💼",
+   "model": "stack",
+   "product": "企业里一个能自己查数据、写代码、处理工单的 AI 员工",
+   "summary": "二浪的核心。判断它来没来，不看故事，看软件公司财报里毛利率是否守住、EBITDA 利润率是否抬升、RPO 是否加速，以及 IGV 里是不是只有真正受益的公司在涨。",
+   "nodes": [
+    {
+     "id": "suite",
+     "name": "通用办公 / 业务套件 Agent",
+     "group": "应用",
+     "wave": 2,
+     "role": "把 AI 嵌进办公、CRM、ITSM、ERP，按席位或用量收费。",
+     "eff": "推理成本会吃毛利率——毛利率稳住说明有定价权。",
+     "trigger": "AI 产品 ARR 单独披露并加速；RPO / cRPO 环比加速。",
+     "cos": [
+      "MSFT|M365 Copilot",
+      "CRM|Agentforce",
+      "NOW|Now Assist",
+      "WDAY|Workday",
+      "SAP|Joule",
+      "ADBE|Firefly",
+      "INTU|Intuit",
+      "HUBS|HubSpot",
+      "TEAM|Atlassian Rovo",
+      "ZM|Zoom",
+      "DOCU|Docusign",
+      "MNDY|monday"
+     ],
+     "kw": [
+      "ai agents",
+      "agentic ai",
+      "ai-powered platform",
+      "enterprise software"
+     ]
+    },
+    {
+     "id": "vertical",
+     "name": "垂直行业 AI",
+     "group": "应用",
+     "wave": 2,
+     "role": "国防、医疗、法律、金融、广告、客服等行业的专用 AI。",
+     "trigger": "行业客户的大单。",
+     "cos": [
+      "PLTR|Palantir AIP",
+      "APP|AppLovin，广告",
+      "TTD|Trade Desk",
+      "VEEV|Veeva，医药",
+      "DOCS|Doximity",
+      "TEM|Tempus，医疗数据",
+      "TRI|法律 CoCounsel",
+      "NICE|客服",
+      "FIVN|Five9",
+      "SOUN|SoundHound，语音",
+      "AI|C3.ai",
+      "BBAI|BigBear.ai",
+      "UPST|Upstart，信贷",
+      "DUOL|教育",
+      "GWRE|保险软件"
+     ],
+     "kw": [
+      "artificial intelligence platform",
+      "ai-driven",
+      "generative ai",
+      "machine learning models"
+     ]
+    },
+    {
+     "id": "dev",
+     "name": "AI 编程 / 开发者工具",
+     "group": "开发",
+     "wave": 2,
+     "role": "目前最成熟、token 消耗最大的 Agent 场景。",
+     "cos": [
+      "MSFT|GitHub Copilot",
+      "GTLB|GitLab",
+      "FROG|JFrog",
+      "DT|Dynatrace",
+      "~Cursor|未上市",
+      "~Anthropic|Claude Code",
+      "FIG|Figma",
+      "U|Unity"
+     ],
+     "kw": [
+      "developer platform",
+      "devsecops",
+      "software development platform"
+     ]
+    },
+    {
+     "id": "auto",
+     "name": "流程自动化 / RPA",
+     "group": "开发",
+     "wave": 2,
+     "role": "把 Agent 接进老系统、跑业务流程。",
+     "cos": [
+      "PATH|UiPath",
+      "PEGA|Pegasystems",
+      "APPN|Appian",
+      "SOUN|语音 Agent"
+     ],
+     "kw": [
+      "robotic process automation",
+      "workflow automation",
+      "low-code"
+     ]
+    },
+    {
+     "id": "data",
+     "name": "数据平台 / 可观测性",
+     "group": "数据",
+     "wave": 2,
+     "role": "Agent 要读企业自己的数据才有用。",
+     "trigger": "消耗型收入增速回升——企业 AI 真实落地的先行指标。",
+     "cos": [
+      "SNOW|Snowflake",
+      "MDB|MongoDB",
+      "DDOG|Datadog",
+      "ESTC|Elastic",
+      "ORCL|数据库",
+      "~CFLT|Confluent（代码已无行情）",
+      "~INFA|Informatica（代码已无行情）",
+      "~Databricks|未上市"
+     ],
+     "kw": [
+      "data cloud",
+      "observability",
+      "data management",
+      "data integration"
+     ]
+    },
+    {
+     "id": "sec",
+     "name": "安全 / 身份 / 治理",
+     "group": "安全",
+     "wave": 2,
+     "role": "Agent 有了权限就需要治理。",
+     "cos": [
+      "CRWD|CrowdStrike",
+      "PANW|Palo Alto",
+      "ZS|Zscaler",
+      "NET|Cloudflare",
+      "OKTA|Okta",
+      "S|SentinelOne",
+      "RBRK|Rubrik",
+      "~CYBR|已被 PANW 收购（代码已无行情）",
+      "FTNT|Fortinet",
+      "VRNS|Varonis，数据治理",
+      "SAIL|SailPoint"
+     ],
+     "kw": [
+      "identity security",
+      "zero trust",
+      "data security",
+      "security operations"
+     ]
+    },
+    {
+     "id": "svc",
+     "name": "IT 服务 / 落地集成",
+     "group": "服务",
+     "wave": 2,
+     "role": "帮传统企业把 AI 接进流程；订单额反映预算是否真的在迁移。",
+     "cos": [
+      "ACN|埃森哲",
+      "IBM|IBM 咨询",
+      "INFY|Infosys",
+      "EPAM|EPAM",
+      "GLOB|Globant",
+      "CTSH|Cognizant",
+      "GIB|CGI"
+     ],
+     "kw": [
+      "it services",
+      "digital transformation",
+      "consulting and technology services"
+     ]
+    },
+    {
+     "id": "modelapi",
+     "name": "模型 API",
+     "group": "模型",
+     "wave": 1,
+     "role": "应用层调用的模型。token 单价每年降一个量级，是应用毛利率改善的来源。",
+     "eff": "任务完成率和单位成本决定 Agent 能不能替代人力。",
+     "cos": [
+      "~OpenAI|未上市",
+      "~Anthropic|未上市",
+      "GOOGL|Gemini API",
+      "AMZN|Bedrock",
+      "MSFT|Azure AI Foundry",
+      "META|Llama"
+     ],
+     "kw": []
+    },
+    {
+     "id": "edgeinf",
+     "name": "边缘推理 / CDN",
+     "group": "算力",
+     "wave": 1,
+     "role": "把推理放到离用户更近的地方。",
+     "cos": [
+      "NET|Workers AI",
+      "AKAM|Akamai",
+      "FSLY|Fastly",
+      "DOCN|DigitalOcean"
+     ],
+     "kw": [
+      "edge cloud",
+      "content delivery network",
+      "edge computing"
+     ]
+    },
+    {
+     "id": "cloud",
+     "name": "云基础设施",
+     "group": "算力",
+     "wave": 1,
+     "role": "模型与应用都跑在云上。",
+     "cos": [
+      "MSFT|Azure",
+      "AMZN|AWS",
+      "GOOGL|Google Cloud",
+      "ORCL|OCI"
+     ],
+     "kw": []
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "phone",
+   "name": "AI 手机 / AI 眼镜",
+   "icon": "📱",
+   "model": "custom",
+   "product": "把一部能在本地跑大模型的手机拆开",
+   "summary": "三浪的硬件载体。端侧 AI 的直接结果是：芯片更贵、内存翻倍、散热和电池更讲究；AI 眼镜则多出微显示和光波导。",
+   "nodes": [
+    {
+     "id": "brand",
+     "name": "品牌 / 操作系统 / 端侧助手",
+     "group": "整机",
+     "wave": 3,
+     "role": "决定 AI 功能能不能带来换机。",
+     "trigger": "AI 功能带来可见的换机潮；AI 眼镜出货上台阶。",
+     "cos": [
+      "AAPL|iPhone + Apple Intelligence",
+      "GOOGL|Pixel + Android",
+      "META|Ray-Ban Meta 眼镜",
+      "~Samsung / 小米|海外上市",
+      "SONO|智能音箱",
+      "?AMZN|Echo"
+     ],
+     "kw": [
+      "smartphones",
+      "smart glasses",
+      "wearable devices",
+      "consumer electronics"
+     ]
+    },
+    {
+     "id": "glass",
+     "name": "盖板玻璃",
+     "group": "显示",
+     "wave": 3,
+     "role": "正面和背面的强化玻璃。",
+     "m": "box 1.3 2.6 .04 @0 0 .5",
+     "cos": [
+      "GLW|康宁大猩猩玻璃"
+     ],
+     "kw": [
+      "cover glass"
+     ]
+    },
+    {
+     "id": "display",
+     "name": "OLED 屏 / 微显示 / 光波导",
+     "group": "显示",
+     "wave": 3,
+     "role": "手机屏幕；AI 眼镜用的 Micro-OLED、LCoS 和光波导。",
+     "m": "box 1.24 2.5 .04 @0 0 .34",
+     "cos": [
+      "OLED|Universal Display，OLED 材料",
+      "LPL|LG Display",
+      "HIMX|奇景，LCoS + 驱动",
+      "KOPN|Kopin，微显示",
+      "VUZI|Vuzix，波导",
+      "?MVIS|MicroVision",
+      "SYNA|新思国际，触控",
+      "~三星显示 / 京东方|海外"
+     ],
+     "kw": [
+      "oled",
+      "microdisplays",
+      "waveguide",
+      "display drivers",
+      "augmented reality"
+     ]
+    },
+    {
+     "id": "soc",
+     "name": "主芯片（SoC / NPU）",
+     "group": "芯片",
+     "wave": 1,
+     "role": "在本地跑模型的芯片。",
+     "eff": "每瓦推理性能决定端侧能跑多大的模型。",
+     "m": "box .26 .26 .05 @-.18 .85 .16",
+     "cos": [
+      "QCOM|骁龙",
+      "AAPL|A 系列自研",
+      "ARM|架构授权",
+      "~联发科|台湾上市",
+      "TSM|代工"
+     ],
+     "kw": [
+      "mobile processors",
+      "system-on-chip"
+     ]
+    },
+    {
+     "id": "mem",
+     "name": "内存 / 闪存",
+     "group": "芯片",
+     "wave": 1,
+     "role": "端侧模型吃内存，单机 DRAM 从 8GB 升到 12~16GB。",
+     "m": "box .2 .2 .05 @.2 .85 .16",
+     "cos": [
+      "MU|美光",
+      "SNDK|闪迪",
+      "~SK hynix / Samsung|韩国"
+     ],
+     "kw": [
+      "mobile memory"
+     ]
+    },
+    {
+     "id": "rf",
+     "name": "射频前端 / 基带 / Wi-Fi",
+     "group": "芯片",
+     "wave": 3,
+     "role": "信号收发。",
+     "m": "box .15 .32 .05 @.32 .45 .16",
+     "cos": [
+      "QCOM|基带",
+      "AVGO|Wi-Fi / 滤波器",
+      "QRVO|Qorvo",
+      "SWKS|Skyworks",
+      "?MRVL|",
+      "~村田|日本上市"
+     ],
+     "kw": [
+      "rf front-end",
+      "radio frequency",
+      "wireless connectivity",
+      "wi-fi"
+     ]
+    },
+    {
+     "id": "pmic",
+     "name": "电源管理 / 音频 / 模拟芯片",
+     "group": "芯片",
+     "wave": 3,
+     "role": "充电、音频放大、触觉驱动。",
+     "m": "box .5 .12 .05 @0 -1.15 .12",
+     "cos": [
+      "CRUS|Cirrus Logic，音频",
+      "?TXN|德州仪器",
+      "?ADI|亚德诺",
+      "?STM|意法",
+      "KN|楼氏，麦克风",
+      "~歌尔 / 瑞声|亚洲上市"
+     ],
+     "kw": [
+      "audio",
+      "mems microphones",
+      "haptic",
+      "mixed-signal"
+     ]
+    },
+    {
+     "id": "camera",
+     "name": "摄像头：图像传感器 / 镜头",
+     "group": "感知",
+     "wave": 3,
+     "role": "多模态 AI 的眼睛。",
+     "m": "cyl .16 .16 @-.35 1.0 -.32 rx;cyl .16 .16 @.02 1.0 -.32 rx",
+     "cos": [
+      "SONY|图像传感器龙头",
+      "?ON|安森美",
+      "?STM|ToF 传感器",
+      "LITE|3D 感测激光",
+      "COHR|VCSEL",
+      "~大立光 / 舜宇 / 豪威|亚洲"
+     ],
+     "kw": [
+      "image sensors",
+      "vcsel",
+      "3d sensing",
+      "camera modules"
+     ]
+    },
+    {
+     "id": "pcb",
+     "name": "主板 / 柔性电路板",
+     "group": "结构",
+     "wave": 3,
+     "role": "类载板、软板。",
+     "m": "box .9 .7 .04 @0 .8 .08",
+     "cos": [
+      "TTMI|TTM",
+      "~臻鼎 / 欣兴 / 旗胜|亚洲上市"
+     ],
+     "kw": [
+      "flexible printed circuits"
+     ]
+    },
+    {
+     "id": "battery",
+     "name": "电池 / 快充",
+     "group": "电源",
+     "wave": 3,
+     "role": "端侧推理更耗电，硅负极等高能量密度电池受益。",
+     "m": "box 1.0 1.3 .1 @0 -.35 .1",
+     "cos": [
+      "ENVX|Enovix，硅负极",
+      "AMPX|Amprius",
+      "NVTS|GaN 快充",
+      "POWI|快充芯片",
+      "~ATL / 欣旺达|亚洲"
+     ],
+     "kw": [
+      "silicon anode",
+      "lithium-ion battery cells",
+      "fast charging"
+     ]
+    },
+    {
+     "id": "thermal",
+     "name": "散热（均热板）",
+     "group": "结构",
+     "wave": 3,
+     "role": "本地跑模型发热更大。",
+     "m": "box 1.0 1.0 .03 @0 .5 -.08",
+     "cos": [
+      "~双鸿 / 奇鋐 / 飞荣达|亚洲上市"
+     ],
+     "kw": [
+      "vapor chamber"
+     ]
+    },
+    {
+     "id": "frame",
+     "name": "中框 / 组装代工",
+     "group": "结构",
+     "wave": 3,
+     "role": "钛 / 铝中框和整机组装。",
+     "m": "box 1.36 2.7 .12 @0 0 -.2;box 1.3 2.6 .04 @0 0 -.5",
+     "cos": [
+      "JBL|捷普",
+      "FLEX|伟创力",
+      "~鸿海 / 立讯 / 和硕|亚洲上市"
+     ],
+     "kw": [
+      "precision components",
+      "contract manufacturing"
+     ]
+    }
+   ],
+   "edges": []
+  }
+ ]
 }

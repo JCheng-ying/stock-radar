@@ -4,3 +4,4 @@ data/cache/
 .env
 *.log
 .DS_Store
+data/profiles.json

@@ -1,130 +1,1008 @@
 {
-  "id": "aerospace",
-  "name": "航空航天",
-  "summizer_tags": ["太空经济板块"],
-  "etfs": {"UFO": "太空产业 ETF", "ARKX": "太空探索 ETF", "ITA": "航空航天与国防 ETF"},
-  "industry": {
-    "需求": "卫星互联网星座（Starlink、Kuiper、手机直连）、国防（导弹预警、“金穹”）、遥感数据；发射需求由星座部署节奏决定。",
-    "供给": "发射运力仍是瓶颈但在快速缓解；瓶颈正在从“送上去”转向卫星本身的功率、天线面积和产能。",
-    "资本开支": "SpaceX、亚马逊 Kuiper 的星座投入；美国太空军和 NASA 预算；各公司新火箭和产线的建设。",
-    "技术进步": "火箭可重复使用（发射成本下降一个量级）、大型相控阵天线、星间激光通信、卫星批量化制造。",
-    "产业政策": "美国太空运输政策鼓励提高发射频率、国防部“金穹”导弹防御计划、频谱分配与手机直连牌照、NASA 商业月球计划（CLPS）。"
+ "id": "aerospace",
+ "name": "航空航天",
+ "summizer_tags": [
+  "太空经济板块"
+ ],
+ "etfs": {
+  "UFO": "太空产业 ETF",
+  "ARKX": "太空探索 ETF",
+  "ITA": "航空航天与国防 ETF"
+ },
+ "industry": {
+  "需求": "卫星互联网星座（Starlink、Kuiper、手机直连）、国防（导弹预警、“金穹”）、遥感数据；发射需求由星座部署节奏决定。",
+  "供给": "发射运力仍是瓶颈但在快速缓解；瓶颈正在从“送上去”转向卫星本身的功率、天线面积和产能。",
+  "资本开支": "SpaceX、亚马逊 Kuiper 的星座投入；美国太空军和 NASA 预算；各公司新火箭和产线的建设。",
+  "技术进步": "火箭可重复使用（发射成本下降一个量级）、大型相控阵天线、星间激光通信、卫星批量化制造。",
+  "产业政策": "美国太空运输政策鼓励提高发射频率、国防部“金穹”导弹防御计划、频谱分配与手机直连牌照、NASA 商业月球计划（CLPS）。"
+ },
+ "waves": {
+  "1": {
+   "name": "一浪：发射与制造",
+   "desc": "火箭、发动机、卫星平台、零部件——把东西送上天的能力，看发射次数和订单积压。"
   },
-  "waves": {
-    "1": {"name": "一浪：发射与制造", "desc": "火箭、发动机、卫星平台、零部件——把东西送上天的能力，看发射次数和订单积压。"},
-    "2": {"name": "二浪：B端 / 政府应用", "desc": "国防合同、遥感数据、在轨服务——看合同积压（backlog/RPO）和毛利率。"},
-    "3": {"name": "三浪：C端应用", "desc": "卫星宽带、手机直连卫星——看用户数和 ARPU。"}
+  "2": {
+   "name": "二浪：B端 / 政府应用",
+   "desc": "国防合同、遥感数据、在轨服务——看合同积压（backlog/RPO）和毛利率。"
   },
-  "chains": [
+  "3": {
+   "name": "三浪：C端应用",
+   "desc": "卫星宽带、手机直连卫星——看用户数和 ARPU。"
+  }
+ },
+ "chains": [
+  {
+   "id": "rocket",
+   "name": "可回收火箭",
+   "icon": "🚀",
+   "model": "custom",
+   "product": "把一枚猎鹰 9 号那样的火箭从头到脚拆开",
+   "summary": "发射是太空经济的“运费”。发动机是最难最贵的部分；高发射频率还依赖特种材料、3D 打印和发射场周转。",
+   "nodes": [
     {
-      "id": "launch",
-      "name": "一次火箭发射",
-      "product": "把一枚火箭拆开：发动机、箭体结构、航电、发射场",
-      "summary": "发射是太空经济的“运费”。可重复使用把每公斤入轨成本打下来之后，下游所有商业模式才成立。发动机是火箭最难、最贵的部分；高发射频率还依赖特种材料和发射场周转。",
-      "nodes": [
-        {"id": "lsp", "name": "发射服务", "layer": 0, "wave": 1,
-         "role": "提供入轨运力。",
-         "eff": "复用次数和发射周转时间决定单次成本。",
-         "trigger": "新型中大型可复用火箭首飞成功并进入常态化发射。",
-         "cos": ["RKLB|Rocket Lab，Electron + Neutron", "FLY|Firefly，Alpha + Eclipse", "~SpaceX|Falcon 9 / Starship", "~Blue Origin|New Glenn", "~ULA|波音 + 洛马合资，Vulcan", "BA|ULA 股东", "LMT|ULA 股东"]},
-        {"id": "engine", "name": "火箭发动机与推进", "layer": 1, "wave": 1,
-         "role": "液体发动机、固体助推器、在轨推进。",
-         "eff": "比冲、推重比和可复用次数——发动机产能是提高发射频率的第一瓶颈。",
-         "cos": ["LHX|L3Harris（Aerojet Rocketdyne）", "NOC|固体助推器", "RKLB|自研 Archimedes", "KRMN|Karman，推进与分离系统", "~Ursa Major|未上市"]},
-        {"id": "struct", "name": "箭体结构与特种材料", "layer": 2, "wave": 1,
-         "role": "碳纤维复合材料、钛合金、高温合金、锻件。",
-         "cos": ["HXL|赫氏，碳纤维", "ATI|钛与特种合金", "CRS|Carpenter，高温合金", "HWM|Howmet，锻件与紧固件"]},
-        {"id": "avionics", "name": "航电 / 抗辐射电子", "layer": 2, "wave": 1,
-         "role": "飞行计算机、惯导、抗辐射芯片。",
-         "cos": ["MRCY|Mercury，任务计算机", "?HON|霍尼韦尔，惯导", "?TDY|Teledyne", "?MCHP|Microchip，抗辐射芯片", "?ADI|射频与数据转换"]},
-        {"id": "range", "name": "发射场与地面服务", "layer": 1, "wave": 1,
-         "role": "发射工位、测控、推进剂。",
-         "trigger": "发射场审批放宽、新工位投产。",
-         "cos": ["?LIN|林德，液氧/甲烷", "?APD|空气化工", "KBR|地面与任务支持"]}
-      ],
-      "edges": [
-        ["struct", "lsp", "箭体"],
-        ["struct", "engine", "高温合金"],
-        ["engine", "lsp", "动力"],
-        ["avionics", "lsp", "制导与控制"],
-        ["range", "lsp", "发射保障"]
-      ]
+     "id": "lsp",
+     "name": "发射服务商",
+     "group": "整机",
+     "wave": 1,
+     "role": "提供入轨运力。",
+     "cos": [
+      "RKLB|Rocket Lab",
+      "FLY|Firefly",
+      "?BA|ULA 股东",
+      "?LMT|ULA 股东",
+      "~SpaceX / Blue Origin / ULA / Relativity / Stoke|未上市"
+     ],
+     "kw": [
+      "launch services",
+      "launch vehicles",
+      "space launch",
+      "rockets"
+     ],
+     "eff": "复用次数和周转时间决定单次成本。",
+     "trigger": "新型中大型可复用火箭首飞成功并进入常态化发射。"
     },
     {
-      "id": "satcom",
-      "name": "卫星互联网与手机直连",
-      "product": "手机在没有基站的地方直接连上卫星",
-      "summary": "太空经济里最大的商业市场。发射变便宜之后，瓶颈转移到卫星本身：天线面积、发电功率、星间激光链路，以及地面的频谱和运营商合作。",
-      "nodes": [
-        {"id": "user", "name": "用户与运营商渠道", "layer": 0, "wave": 3,
-         "role": "手机厂商和电信运营商把卫星连接打包卖给消费者。",
-         "trigger": "手机直连从“短信”升级到“宽带数据”并开始收费；用户数披露。",
-         "cos": ["?TMUS|T-Mobile，与 Starlink 合作", "?T|AT&T，与 AST 合作", "?VZ|Verizon", "?AAPL|iPhone 卫星功能"]},
-        {"id": "constellation", "name": "星座运营商", "layer": 1, "wave": 3,
-         "role": "拥有频谱和卫星，卖连接服务。",
-         "eff": "单星容量 × 星座规模决定能服务多少用户。",
-         "trigger": "星座达到连续覆盖所需的最少卫星数；拿到关键频谱或监管批准。",
-         "cos": ["ASTS|AST SpaceMobile，手机直连宽带", "GSAT|Globalstar，苹果合作", "IRDM|铱星", "VSAT|Viasat", "ECHO|EchoStar，频谱", "?AMZN|Kuiper", "~SpaceX Starlink|未上市"]},
-        {"id": "bus", "name": "卫星平台 / 整星制造", "layer": 2, "wave": 1,
-         "role": "批量化制造卫星。",
-         "trigger": "国防星座大单（太空发展局 SDA 各批次）授标。",
-         "cos": ["RKLB|卫星平台 + 部件", "YSS|York Space Systems", "RDW|Redwire", "LMT|洛马", "NOC|诺格", "BA|波音（Millennium）", "VOYG|Voyager"]},
-        {"id": "payload", "name": "相控阵天线 / 射频载荷", "layer": 3, "wave": 1,
-         "role": "卫星上的通信载荷，射频芯片用量随天线面积增长。",
-         "eff": "天线面积和波束数量决定单星容量——瓶颈正从“质量”变成“面积”。",
-         "cos": ["?ADI|射频与波束成形芯片", "?QRVO|Qorvo", "?MTSI|MACOM", "KRMN|Karman", "MRCY|Mercury"]},
-        {"id": "solar", "name": "太阳翼与电源", "layer": 3, "wave": 1,
-         "role": "卫星发电能力，决定能带多大功率的载荷。",
-         "eff": "功率是大型通信卫星和“轨道数据中心”设想的硬约束。",
-         "cos": ["RKLB|SolAero 太阳能电池", "RDW|ROSA 柔性太阳翼"]},
-        {"id": "lasercom", "name": "星间激光通信", "layer": 3, "wave": 1,
-         "role": "卫星之间用激光传数据，减少对地面站的依赖。",
-         "cos": ["RKLB|收购 Mynaric", "~Tesat / CACI|激光终端"]},
-        {"id": "ground", "name": "地面站与用户终端", "layer": 2, "wave": 1,
-         "role": "信关站、用户终端天线、地面网络。",
-         "cos": ["GILT|Gilat", "KTOS|Kratos，地面系统", "CMTL|Comtech"]}
-      ],
-      "edges": [
-        ["payload", "bus", "通信载荷"],
-        ["solar", "bus", "供电"],
-        ["lasercom", "bus", "星间链路"],
-        ["bus", "constellation", "卫星交付"],
-        ["ground", "constellation", "落地与回传"],
-        ["constellation", "user", "连接服务"]
-      ]
+     "id": "fairing",
+     "name": "整流罩 / 复合材料结构",
+     "group": "结构",
+     "wave": 1,
+     "role": "保护载荷的头锥，碳纤维复合材料。",
+     "cos": [
+      "HXL|赫氏",
+      "?TXT|德事隆",
+      "~Beyond Gravity|瑞士未上市",
+      "~SPR|Spirit Aero 已并入波音（代码已无行情）",
+      "DCO|Ducommun"
+     ],
+     "kw": [
+      "composite structures",
+      "aerostructures",
+      "composites"
+     ],
+     "m": "cone .28 .7 @0 1.85 0"
     },
     {
-      "id": "defense-data",
-      "name": "国防航天与遥感数据",
-      "product": "一张从太空拍的、几小时内更新的地球图像，和一套导弹预警网",
-      "summary": "二浪：政府是太空经济最大的 B 端客户。合同积压（backlog）是这条链最重要的数字；遥感公司则看数据订阅收入和毛利率改善。",
-      "nodes": [
-        {"id": "gov", "name": "国防 / 政府系统总包", "layer": 0, "wave": 2,
-         "role": "导弹预警、军用通信、太空态势感知的总承包商。",
-         "trigger": "“金穹”等大型计划拨款落地并授标；国防预算上调。",
-         "cos": ["LMT|洛克希德·马丁", "NOC|诺斯罗普·格鲁曼", "RTX|雷神", "LHX|L3Harris", "GD|通用动力", "?PLTR|数据与指挥软件"]},
-        {"id": "eo", "name": "遥感与数据服务", "layer": 0, "wave": 2,
-         "role": "卖卫星图像、气象和船舶数据订阅。",
-         "trigger": "大额多年期政府数据合同；调整后 EBITDA 转正。",
-         "cos": ["PL|Planet Labs", "BKSY|BlackSky", "SPIR|Spire", "SATL|Satellogic"]},
-        {"id": "newspace", "name": "新太空国防供应商", "layer": 1, "wave": 1,
-         "role": "中小型的平台、部件、无人系统供应商，受益于国防采购向商业公司倾斜。",
-         "cos": ["KTOS|Kratos", "RKLB|Rocket Lab", "RDW|Redwire", "VOYG|Voyager", "KRMN|Karman", "AVAV|AeroVironment", "FLY|Firefly", "YSS|York"]},
-        {"id": "lunar", "name": "月球与在轨服务", "layer": 1, "wave": 2,
-         "role": "月球着陆器、在轨加注、碎片清除、商业空间站。",
-         "trigger": "NASA CLPS 任务成功着陆；在轨服务合同授标。",
-         "cos": ["LUNR|Intuitive Machines", "FLY|Firefly，Blue Ghost", "VOYG|Starlab 空间站", "~Axiom Space|未上市"]},
-        {"id": "nuclear", "name": "核动力 / 特种推进", "layer": 2, "wave": 1,
-         "role": "太空核反应堆、核热推进。",
-         "cos": ["BWXT|BWX Technologies"]}
-      ],
-      "edges": [
-        ["newspace", "gov", "分包与部件"],
-        ["newspace", "eo", "卫星平台"],
-        ["nuclear", "lunar", "月面与深空电源"],
-        ["lunar", "gov", "NASA / 国防任务"],
-        ["eo", "gov", "数据订阅"]
-      ]
+     "id": "sep",
+     "name": "载荷适配 / 分离机构 / 火工品",
+     "group": "结构",
+     "wave": 1,
+     "role": "星箭分离、级间分离。",
+     "cos": [
+      "KRMN|Karman",
+      "?CW|柯蒂斯-莱特",
+      "~Ensign-Bickford / PSEMC|未上市",
+      "?MOG-A|"
+     ],
+     "kw": [
+      "separation systems",
+      "pyrotechnic",
+      "payload protection"
+     ],
+     "m": "cyl .2 .2 @0 1.4 0"
+    },
+    {
+     "id": "avion",
+     "name": "航电 / 制导导航控制",
+     "group": "电子",
+     "wave": 1,
+     "role": "飞行计算机、惯导、遥测。",
+     "cos": [
+      "?HON|霍尼韦尔",
+      "MRCY|Mercury",
+      "?TDY|",
+      "?LHX|",
+      "?RTX|柯林斯",
+      "?CW|",
+      "?NOC|",
+      "TTMI|航天电子"
+     ],
+     "kw": [
+      "avionics",
+      "inertial navigation",
+      "flight control",
+      "mission computing",
+      "guidance"
+     ],
+     "m": "tor .29 .04 @0 1.22 0"
+    },
+    {
+     "id": "tank2",
+     "name": "二级箭体 / 贮箱",
+     "group": "结构",
+     "wave": 1,
+     "role": "铝锂合金或不锈钢贮箱。",
+     "cos": [
+      "?ATI|",
+      "?CRS|",
+      "KALU|Kaiser 铝业",
+      "?AA|美铝",
+      "?CSTM|Constellium",
+      "?LMT|"
+     ],
+     "kw": [
+      "aerospace plate",
+      "aluminum products",
+      "specialty alloys"
+     ],
+     "m": "cyl .28 .6 @0 .92 0"
+    },
+    {
+     "id": "eng2",
+     "name": "二级真空发动机",
+     "group": "推进",
+     "wave": 1,
+     "role": "在真空中工作的上面级发动机。",
+     "cos": [
+      "?LHX|Aerojet Rocketdyne RL10",
+      "RKLB|",
+      "~SpaceX / Blue Origin|未上市"
+     ],
+     "kw": [
+      "rocket engines"
+     ],
+     "m": "cone .16 .25 @0 .48 0"
+    },
+    {
+     "id": "fin",
+     "name": "栅格舵 / 作动器 / 阀门",
+     "group": "推进",
+     "wave": 1,
+     "role": "控制火箭姿态和推进剂流量的作动与流体部件。",
+     "cos": [
+      "MOG-A|Moog",
+      "?PH|派克",
+      "?CW|",
+      "?CR|Crane",
+      "DCO|",
+      "?TDG|TransDigm",
+      "?WWD|Woodward",
+      "HEI|HEICO"
+     ],
+     "kw": [
+      "actuation systems",
+      "flight control actuation",
+      "valves",
+      "fluid control",
+      "aerospace components"
+     ],
+     "m": "box .9 .04 .1 @0 .32 0"
+    },
+    {
+     "id": "tank1",
+     "name": "一级箭体 / 贮箱",
+     "group": "结构",
+     "wave": 1,
+     "role": "火箭的主体。",
+     "cos": [
+      "?ATI|",
+      "KALU|",
+      "?HWM|Howmet",
+      "~Constellium|",
+      "?NOC|固体壳体"
+     ],
+     "kw": [
+      "aerospace structures"
+     ],
+     "m": "cyl .28 1.6 @0 -.6 0"
+    },
+    {
+     "id": "engine",
+     "name": "一级主发动机",
+     "group": "推进",
+     "wave": 1,
+     "role": "火箭最难、最贵的部分。",
+     "cos": [
+      "?LHX|Aerojet Rocketdyne",
+      "RKLB|Archimedes / Rutherford",
+      "FLY|",
+      "~SpaceX Raptor / Blue Origin BE-4 / Ursa Major|未上市",
+      "?GE|GE 航空航天"
+     ],
+     "kw": [
+      "propulsion systems",
+      "rocket propulsion",
+      "liquid rocket"
+     ],
+     "m": "cone .1 .25 @-.14 -1.62 0;cone .1 .25 @.14 -1.62 0;cone .1 .25 @0 -1.62 .14;cone .1 .25 @0 -1.62 -.14",
+     "eff": "比冲、推重比、复用次数——发动机产能是提高发射频率的第一瓶颈。"
+    },
+    {
+     "id": "pump",
+     "name": "涡轮泵 / 3D 打印部件",
+     "group": "推进",
+     "wave": 1,
+     "role": "发动机心脏；大量采用金属 3D 打印。",
+     "cos": [
+      "VELO|Velo3D",
+      "?NNDM|",
+      "?GE|Colibrium Additive",
+      "?CRS|金属粉末",
+      "?ATI|",
+      "XMTR|",
+      "~Ursa Major|未上市"
+     ],
+     "kw": [
+      "additive manufacturing",
+      "metal 3d printing",
+      "metal powders",
+      "turbomachinery"
+     ],
+     "m": "sph .07 @-.14 -1.42 0;sph .07 @.14 -1.42 0",
+     "trigger": "3D 打印把发动机交付周期从年缩到月。"
+    },
+    {
+     "id": "alloy",
+     "name": "高温合金 / 锻件 / 紧固件",
+     "group": "材料",
+     "wave": 1,
+     "role": "燃烧室、喷管、涡轮用的特种金属。",
+     "cos": [
+      "HWM|Howmet",
+      "CRS|Carpenter",
+      "ATI|ATI",
+      "~PCC|伯克希尔旗下 PCC（代码已无行情）",
+      "~HAYN|Haynes 已被收购（代码已无行情）",
+      "?MTRN|Materion",
+      "?TDG|"
+     ],
+     "kw": [
+      "superalloys",
+      "titanium",
+      "forgings",
+      "specialty metals",
+      "nickel-based alloys",
+      "fasteners"
+     ]
+    },
+    {
+     "id": "srb",
+     "name": "固体助推器 / 含能材料",
+     "group": "推进",
+     "wave": 1,
+     "role": "捆绑式固体火箭，也是导弹的发动机。",
+     "cos": [
+      "?NOC|诺格",
+      "?LHX|",
+      "KRMN|",
+      "?KTOS|",
+      "~Anduril / X-Bow / Ursa Major|未上市",
+      "?GD|"
+     ],
+     "kw": [
+      "solid rocket motors",
+      "energetics",
+      "solid propulsion"
+     ],
+     "m": "cyl .09 1.0 @-.4 -.5 .25;cyl .09 1.0 @.4 -.5 -.25",
+     "trigger": "国防部扩大固体发动机第二、第三供应商。"
+    },
+    {
+     "id": "tps",
+     "name": "热防护 / 隔热材料",
+     "group": "材料",
+     "wave": 1,
+     "role": "再入和发动机舱的防热。",
+     "cos": [
+      "?HXL|",
+      "KRMN|",
+      "~Spirit AeroSystems|",
+      "?PKE|Park Aerospace，烧蚀材料",
+      "?ATRO|"
+     ],
+     "kw": [
+      "thermal protection",
+      "ablative",
+      "high-temperature materials"
+     ],
+     "m": "cyl .3 .05 @0 -1.42 0"
+    },
+    {
+     "id": "leg",
+     "name": "着陆腿 / 回收系统",
+     "group": "结构",
+     "wave": 1,
+     "role": "回收用的着陆腿、海上回收船。",
+     "cos": [
+      "?HXL|碳纤维",
+      "?MOG-A|",
+      "~SpaceX|"
+     ],
+     "kw": [],
+     "m": "box .05 .7 .05 @-.36 -1.3 0;box .05 .7 .05 @.36 -1.3 0;box .05 .7 .05 @0 -1.3 .36;box .05 .7 .05 @0 -1.3 -.36"
+    },
+    {
+     "id": "prop",
+     "name": "推进剂 / 工业气体",
+     "group": "材料",
+     "wave": 1,
+     "role": "液氧、甲烷、煤油、氦气、氮气。",
+     "cos": [
+      "?LIN|林德",
+      "?APD|空气化工",
+      "~Air Liquide|巴黎上市",
+      "~CHRT|Chart，低温储运已被收购（代码已无行情）"
+     ],
+     "kw": [
+      "industrial gases",
+      "cryogenic"
+     ]
+    },
+    {
+     "id": "pad",
+     "name": "发射场 / 测控 / 地面支持",
+     "group": "地面",
+     "wave": 1,
+     "role": "发射工位、测控、靶场服务。",
+     "cos": [
+      "?KBR|",
+      "?J|Jacobs",
+      "?PSN|Parsons",
+      "?AMTM|Amentum",
+      "?VSEC|",
+      "?LDOS|",
+      "~Space Florida|"
+     ],
+     "kw": [
+      "launch operations",
+      "range services",
+      "mission support",
+      "ground systems"
+     ],
+     "m": "box 1.6 .1 1.6 @0 -2.05 0",
+     "trigger": "发射场审批放宽、新工位投产。"
+    },
+    {
+     "id": "ins",
+     "name": "测试 / 认证 / 保险",
+     "group": "地面",
+     "wave": 1,
+     "role": "环境试验、发射保险。",
+     "cos": [
+      "?AJG|",
+      "~Element / NTS|未上市"
+     ],
+     "kw": []
     }
-  ]
+   ],
+   "edges": []
+  },
+  {
+   "id": "sat",
+   "name": "通信卫星与星座",
+   "icon": "🛰️",
+   "model": "custom",
+   "product": "把一颗低轨通信卫星拆开，连同地面站和你的手机",
+   "summary": "太空经济里最大的商业市场。发射变便宜之后，瓶颈转到卫星本身：天线面积、发电功率、星间激光链路，以及地面的频谱和运营商合作。",
+   "nodes": [
+    {
+     "id": "op",
+     "name": "星座运营商（卖连接）",
+     "group": "运营",
+     "wave": 3,
+     "role": "拥有频谱和卫星。",
+     "cos": [
+      "ASTS|AST SpaceMobile",
+      "GSAT|Globalstar",
+      "IRDM|铱星",
+      "VSAT|Viasat",
+      "ECHO|EchoStar，频谱",
+      "?AMZN|Kuiper",
+      "TSAT|Telesat",
+      "~SpaceX Starlink / Eutelsat OneWeb / SES|未上市或欧洲"
+     ],
+     "kw": [
+      "satellite communications",
+      "satellite broadband",
+      "satellite connectivity",
+      "direct-to-device",
+      "satellite services",
+      "mobile satellite"
+     ],
+     "eff": "单星容量 × 星座规模。",
+     "trigger": "星座达到连续覆盖所需卫星数；拿到关键频谱或监管批准。"
+    },
+    {
+     "id": "bus",
+     "name": "卫星平台 / 整星制造",
+     "group": "平台",
+     "wave": 1,
+     "role": "批量化造卫星。",
+     "cos": [
+      "RKLB|",
+      "YSS|York",
+      "RDW|Redwire",
+      "?LMT|",
+      "?NOC|",
+      "?BA|Millennium",
+      "VOYG|",
+      "?EADSY|空客",
+      "~MDA Space|多伦多上市",
+      "~Apex / K2 / Terran Orbital|未上市",
+      "SIDU|Sidus Space"
+     ],
+     "kw": [
+      "satellite manufacturing",
+      "spacecraft",
+      "satellite bus",
+      "space systems",
+      "small satellites"
+     ],
+     "m": "box .8 .8 .8 @0 0 0",
+     "trigger": "国防星座（SDA 各批次）大单授标。"
+    },
+    {
+     "id": "array",
+     "name": "相控阵天线 / 射频载荷",
+     "group": "载荷",
+     "wave": 1,
+     "role": "通信载荷，射频芯片用量随天线面积增长。",
+     "cos": [
+      "?ADI|波束成形芯片",
+      "?QRVO|Qorvo（Anokiwave）",
+      "MTSI|MACOM",
+      "MRCY|",
+      "?KRMN|",
+      "~Filtronic / CesiumAstro|海外或未上市",
+      "?APH|",
+      "?TDY|"
+     ],
+     "kw": [
+      "phased array",
+      "beamforming",
+      "rf and microwave",
+      "microwave components",
+      "antenna systems"
+     ],
+     "m": "box .95 .06 .95 @0 -.55 0",
+     "eff": "天线面积和波束数决定单星容量——瓶颈从“质量”变成“面积”。"
+    },
+    {
+     "id": "twta",
+     "name": "功放 / 行波管 / 反射面天线",
+     "group": "载荷",
+     "wave": 1,
+     "role": "把信号放大发回地面。",
+     "cos": [
+      "?LHX|L3Harris，可展开天线",
+      "~Elve / CPI / Thales|未上市或欧洲",
+      "?NOC|Astro Aerospace",
+      "?MTSI|"
+     ],
+     "kw": [
+      "traveling wave tube",
+      "power amplifiers",
+      "reflector antennas"
+     ],
+     "m": "cone .36 .2 @0 .62 0"
+    },
+    {
+     "id": "solar",
+     "name": "太阳翼 / 太阳能电池片",
+     "group": "电源",
+     "wave": 1,
+     "role": "卫星的发电能力。",
+     "cos": [
+      "RKLB|SolAero",
+      "RDW|ROSA 柔性太阳翼",
+      "?BA|Spectrolab",
+      "?FSLR|",
+      "~Azur Space / Solestial|未上市"
+     ],
+     "kw": [
+      "solar arrays",
+      "space solar",
+      "solar cells for space"
+     ],
+     "m": "box 1.6 .04 .7 @-1.4 0 0;box 1.6 .04 .7 @1.4 0 0",
+     "eff": "功率是大型通信卫星和“轨道数据中心”的硬约束。"
+    },
+    {
+     "id": "batt",
+     "name": "星载电池 / 电源管理",
+     "group": "电源",
+     "wave": 1,
+     "role": "阴影区供电。",
+     "cos": [
+      "ENS|EnerSys",
+      "~EAGLE|EaglePicher 未上市（代码已无行情）",
+      "~Saft（道达尔）|",
+      "VICR|电源模块",
+      "?TXN|抗辐射电源芯片"
+     ],
+     "kw": [
+      "space batteries",
+      "aerospace batteries"
+     ],
+     "m": "box .3 .2 .3 @-.22 -.15 .56"
+    },
+    {
+     "id": "obc",
+     "name": "星载计算机 / 抗辐射芯片",
+     "group": "电子",
+     "wave": 1,
+     "role": "在辐射环境下工作的处理器和存储。",
+     "cos": [
+      "?MCHP|Microchip",
+      "?AMD|航天级 FPGA",
+      "MRCY|",
+      "?TDY|e2v",
+      "?BAESY|BAE RAD750",
+      "?TXN|",
+      "?LSCC|",
+      "~Frontgrade|未上市"
+     ],
+     "kw": [
+      "radiation-hardened",
+      "radiation-tolerant",
+      "space-grade",
+      "high-reliability"
+     ],
+     "m": "box .3 .1 .3 @.22 .2 .56"
+    },
+    {
+     "id": "adcs",
+     "name": "姿态控制：反作用轮 / 星敏感器",
+     "group": "电子",
+     "wave": 1,
+     "role": "让卫星指向正确方向。",
+     "cos": [
+      "RKLB|Sinclair",
+      "?HON|",
+      "RDW|",
+      "?RTX|Blue Canyon",
+      "?TDY|",
+      "~Jena-Optronik|"
+     ],
+     "kw": [
+      "reaction wheels",
+      "star trackers",
+      "attitude control"
+     ],
+     "m": "cyl .12 .06 @.22 -.1 .56;cyl .06 .15 @.3 .5 -.3"
+    },
+    {
+     "id": "ep",
+     "name": "电推进 / 化学推进",
+     "group": "推进",
+     "wave": 1,
+     "role": "轨道维持和离轨。",
+     "cos": [
+      "?LHX|Aerojet",
+      "?NOC|",
+      "RDW|",
+      "?MOG-A|",
+      "~Busek / Phase Four / Benchmark|未上市",
+      "~Safran|巴黎上市"
+     ],
+     "kw": [
+      "electric propulsion",
+      "satellite propulsion",
+      "thrusters"
+     ],
+     "m": "cone .1 .18 @0 0 -.58 rx"
+    },
+    {
+     "id": "laser",
+     "name": "星间激光通信终端",
+     "group": "载荷",
+     "wave": 1,
+     "role": "卫星之间用激光传数据。",
+     "cos": [
+      "RKLB|Mynaric",
+      "?CACI|CACI",
+      "~Tesat / Skyloom|未上市",
+      "?VSAT|",
+      "?COHR|"
+     ],
+     "kw": [
+      "laser communications",
+      "optical communications terminals",
+      "free-space optical"
+     ],
+     "m": "sph .09 @.3 .46 .46;sph .09 @-.3 .46 -.46",
+     "trigger": "SDA 星座全面采用激光链路。"
+    },
+    {
+     "id": "thermal",
+     "name": "结构 / 热控 / 展开机构",
+     "group": "平台",
+     "wave": 1,
+     "role": "碳纤维桁架、散热板、铰链。",
+     "cos": [
+      "?HXL|",
+      "RDW|",
+      "?MOG-A|",
+      "DCO|",
+      "~Beyond Gravity|"
+     ],
+     "kw": [
+      "deployable structures",
+      "thermal control"
+     ]
+    },
+    {
+     "id": "gs",
+     "name": "地面站 / 信关站 / 测控网",
+     "group": "地面",
+     "wave": 1,
+     "role": "卫星数据落地。",
+     "cos": [
+      "GILT|Gilat",
+      "KTOS|Kratos",
+      "CMTL|Comtech",
+      "VSAT|",
+      "?AMZN|AWS Ground Station",
+      "~KSAT / Leaf Space|未上市",
+      "?CIEN|"
+     ],
+     "kw": [
+      "ground stations",
+      "satellite ground",
+      "gateway",
+      "ground segment",
+      "teleport"
+     ],
+     "m": "cone .4 .25 @-1.6 -1.7 0;cyl .05 .4 @-1.6 -1.98 0"
+    },
+    {
+     "id": "ut",
+     "name": "用户终端 / 天线",
+     "group": "地面",
+     "wave": 3,
+     "role": "装在屋顶、车船飞机上的天线。",
+     "cos": [
+      "GILT|",
+      "~Kymeta / Intellian / Hanwha|未上市或韩国",
+      "?GRMN|佳明 inReach",
+      "KVHI|KVH",
+      "~SpaceX|"
+     ],
+     "kw": [
+      "user terminals",
+      "satellite antennas",
+      "flat panel antennas",
+      "satellite terminals"
+     ],
+     "m": "box .4 .04 .3 @1.4 -1.8 0"
+    },
+    {
+     "id": "d2d",
+     "name": "手机直连：运营商 / 手机厂",
+     "group": "运营",
+     "wave": 3,
+     "role": "把卫星连接打包卖给消费者。",
+     "cos": [
+      "?TMUS|× Starlink",
+      "?T|× AST",
+      "?VZ|× AST",
+      "?AAPL|× Globalstar",
+      "?QCOM|卫星基带",
+      "?VOD|沃达丰"
+     ],
+     "kw": [
+      "wireless carriers"
+     ],
+     "m": "box .12 .25 .02 @.6 -1.8 .3",
+     "trigger": "手机直连从短信升级到宽带数据并开始收费。"
+    },
+    {
+     "id": "eo",
+     "name": "遥感 / 气象 / 数据服务",
+     "group": "运营",
+     "wave": 2,
+     "role": "卖图像和数据订阅。",
+     "cos": [
+      "PL|Planet",
+      "BKSY|BlackSky",
+      "SPIR|Spire",
+      "SATL|Satellogic",
+      "~ICEYE / Capella / Umbra|未上市",
+      "~MAXR|Maxar 已私有化（代码已无行情）"
+     ],
+     "kw": [
+      "earth observation",
+      "geospatial intelligence",
+      "satellite imagery",
+      "geospatial data"
+     ],
+     "trigger": "大额多年期政府数据合同；调整后 EBITDA 转正。"
+    },
+    {
+     "id": "inorbit",
+     "name": "在轨服务 / 太空制造 / 空间站",
+     "group": "运营",
+     "wave": 2,
+     "role": "加注、延寿、碎片清除、微重力制造。",
+     "cos": [
+      "VOYG|Starlab",
+      "RDW|太空制造",
+      "?NOC|MEV 延寿",
+      "LUNR|",
+      "~Astroscale / Starfish / Varda / Axiom|未上市或日本",
+      "MNTS|Momentus"
+     ],
+     "kw": [
+      "in-space",
+      "on-orbit servicing",
+      "space station",
+      "orbital"
+     ]
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "defense",
+   "name": "导弹防御与国防航天",
+   "icon": "🛡️",
+   "model": "stack",
+   "product": "一套“金穹”式的导弹预警与拦截网，从太空传感器到地面指挥",
+   "summary": "政府是太空经济最大的 B 端客户。合同积压（backlog）是这条链最重要的数字。",
+   "nodes": [
+    {
+     "id": "prime",
+     "name": "系统总包",
+     "group": "总包",
+     "wave": 2,
+     "role": "大型项目的总承包商。",
+     "cos": [
+      "LMT|洛克希德·马丁",
+      "NOC|诺斯罗普·格鲁曼",
+      "RTX|雷神",
+      "LHX|L3Harris",
+      "GD|通用动力",
+      "?BA|波音",
+      "?BAESY|BAE"
+     ],
+     "kw": [
+      "defense contractor",
+      "missile defense",
+      "defense systems"
+     ],
+     "trigger": "“金穹”拨款落地并授标；国防预算上调。"
+    },
+    {
+     "id": "sensor",
+     "name": "天基预警 / 跟踪卫星与红外载荷",
+     "group": "传感",
+     "wave": 1,
+     "role": "发现和跟踪导弹的卫星。",
+     "cos": [
+      "LHX|红外载荷",
+      "?NOC|",
+      "?RTX|",
+      "YSS|York",
+      "RKLB|SDA 订单",
+      "?TDY|红外探测器",
+      "?LDOS|",
+      "SIDU|"
+     ],
+     "kw": [
+      "infrared sensors",
+      "space-based sensors",
+      "missile warning",
+      "electro-optical"
+     ]
+    },
+    {
+     "id": "radar",
+     "name": "雷达 / 电子战",
+     "group": "传感",
+     "wave": 1,
+     "role": "地基、海基雷达和电子战。",
+     "cos": [
+      "RTX|",
+      "LMT|",
+      "?NOC|",
+      "MRCY|Mercury",
+      "?CW|",
+      "?HII|",
+      "~Anduril / Epirus|未上市",
+      "?CAES|已并入霍尼韦尔"
+     ],
+     "kw": [
+      "radar systems",
+      "electronic warfare",
+      "sensor processing"
+     ]
+    },
+    {
+     "id": "int",
+     "name": "拦截弹 / 高超音速",
+     "group": "拦截",
+     "wave": 1,
+     "role": "拦截器及其导引头。",
+     "cos": [
+      "LMT|PAC-3 / THAAD",
+      "RTX|SM-3 / SM-6",
+      "?NOC|GBI",
+      "?BA|",
+      "KRMN|",
+      "?KTOS|高超靶弹",
+      "~Castelion / Anduril|未上市"
+     ],
+     "kw": [
+      "interceptors",
+      "hypersonic",
+      "missiles",
+      "munitions"
+     ]
+    },
+    {
+     "id": "motor",
+     "name": "固体发动机 / 含能材料",
+     "group": "拦截",
+     "wave": 1,
+     "role": "所有导弹的瓶颈部件。",
+     "cos": [
+      "LHX|Aerojet",
+      "NOC|",
+      "KRMN|",
+      "~Ursa Major / X-Bow / Anduril|未上市",
+      "?OLN|Olin，弹药",
+      "?NPK|"
+     ],
+     "kw": [
+      "solid rocket motors",
+      "energetics",
+      "ammunition"
+     ],
+     "trigger": "弹药补库存的多年期合同。"
+    },
+    {
+     "id": "c2",
+     "name": "指挥控制 / 数据融合软件",
+     "group": "软件",
+     "wave": 2,
+     "role": "把所有传感器数据汇成一张图。",
+     "cos": [
+      "PLTR|Palantir",
+      "?BAH|博思艾伦",
+      "LDOS|Leidos",
+      "SAIC|",
+      "CACI|",
+      "BBAI|BigBear.ai",
+      "~Anduril Lattice|未上市",
+      "PSN|Parsons",
+      "?KBR|"
+     ],
+     "kw": [
+      "command and control",
+      "mission software",
+      "defense technology",
+      "national security solutions",
+      "intelligence community"
+     ]
+    },
+    {
+     "id": "uas",
+     "name": "无人机 / 巡飞弹 / 反无人机",
+     "group": "平台",
+     "wave": 1,
+     "role": "低成本无人系统。",
+     "cos": [
+      "AVAV|AeroVironment",
+      "KTOS|Kratos 女武神",
+      "RCAT|Red Cat",
+      "UMAC|Unusual Machines",
+      "ONDS|Ondas",
+      "?TXT|",
+      "DRSHF|DroneShield",
+      "~Anduril / Shield AI|未上市",
+      "JOBY|",
+      "ACHR|"
+     ],
+     "kw": [
+      "unmanned aircraft",
+      "drones",
+      "unmanned systems",
+      "counter-uas",
+      "loitering munitions",
+      "uncrewed"
+     ]
+    },
+    {
+     "id": "elec",
+     "name": "军用电子 / 元器件",
+     "group": "电子",
+     "wave": 1,
+     "role": "抗辐射、宽温元器件和连接器。",
+     "cos": [
+      "MRCY|",
+      "?TDG|TransDigm",
+      "HEI|HEICO",
+      "?APH|",
+      "?TEL|",
+      "DCO|",
+      "?CW|",
+      "TTMI|",
+      "?VSH|Vishay",
+      "ATRO|Astronics"
+     ],
+     "kw": [
+      "defense electronics",
+      "aerospace and defense electronics",
+      "mil-spec",
+      "ruggedized"
+     ]
+    },
+    {
+     "id": "nuke",
+     "name": "核动力 / 太空核能",
+     "group": "能源",
+     "wave": 1,
+     "role": "太空核反应堆、核热推进、舰艇反应堆。",
+     "cos": [
+      "BWXT|BWX Technologies",
+      "?LMT|",
+      "?GD|",
+      "~X-energy / Westinghouse|"
+     ],
+     "kw": [
+      "naval nuclear",
+      "nuclear components",
+      "microreactor"
+     ]
+    },
+    {
+     "id": "lunar",
+     "name": "月球 / 深空 / 态势感知",
+     "group": "平台",
+     "wave": 2,
+     "role": "月球着陆器、深空通信、太空态势感知。",
+     "cos": [
+      "LUNR|Intuitive Machines",
+      "FLY|Blue Ghost",
+      "VOYG|",
+      "RDW|",
+      "?KBR|",
+      "~LeoLabs / ispace / Astrobotic|未上市或日本"
+     ],
+     "kw": [
+      "lunar",
+      "space domain awareness",
+      "cislunar",
+      "space exploration"
+     ],
+     "trigger": "NASA CLPS 任务成功着陆；在轨服务合同授标。"
+    },
+    {
+     "id": "ship",
+     "name": "造船 / 平台",
+     "group": "平台",
+     "wave": 1,
+     "role": "海基拦截平台。",
+     "cos": [
+      "HII|亨廷顿·英格尔斯",
+      "GD|",
+      "?LDOS|"
+     ],
+     "kw": [
+      "shipbuilding"
+     ]
+    }
+   ],
+   "edges": []
+  }
+ ]
 }

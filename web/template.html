@@ -114,6 +114,37 @@ tr.row{cursor:pointer}tr.row:hover td{background:var(--panel2)}
 .legend{font-size:11px;color:var(--faint);margin-top:28px;border-top:1px solid var(--line);padding-top:12px}
 .empty{color:var(--faint);padding:14px 0;font-size:13px}
 @media (max-width:640px){.g2,.g3{grid-template-columns:1fr}.hd input{width:100%;margin:0}.big{font-size:22px}}
+
+/* 物品栏 + 3D 拆解 */
+.inv{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.slot{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px 14px;cursor:pointer;transition:transform .12s,border-color .12s;position:relative;min-height:150px}
+.slot:hover{transform:translateY(-2px);border-color:var(--accent)}
+.slot.on{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.slot .ic{font-size:40px;line-height:1;margin-bottom:10px}
+.slot b{display:block;font-size:14px}
+.slot .ct{position:absolute;right:12px;top:12px;text-align:right;font-size:11px;color:var(--muted);line-height:1.5}
+.slot p{margin:6px 0 0;font-size:12px;color:var(--muted);line-height:1.45}
+.pv{display:grid;grid-template-columns:260px 1fr;gap:12px;margin-top:12px}
+.plist{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:8px;max-height:600px;overflow:auto}
+.plist h4{margin:10px 6px 4px;font-size:11px;color:var(--muted);font-weight:600;display:flex;align-items:center;gap:6px;letter-spacing:.5px}
+.plist h4 i{width:9px;height:9px;border-radius:2px;display:inline-block}
+.plist button{display:flex;width:100%;justify-content:space-between;gap:8px;text-align:left;background:none;border:0;color:var(--text);font:inherit;font-size:13px;padding:5px 8px;border-radius:6px;cursor:pointer}
+.plist button:hover{background:var(--panel2)}
+.plist button.on{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent);font-weight:600}
+.plist button span{color:var(--faint);font-size:11px;white-space:nowrap}
+.stagewrap{position:relative;background:radial-gradient(ellipse at 50% 40%,var(--panel2),var(--bg) 75%);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+#stage{height:600px;position:relative;touch-action:none;cursor:grab}
+#stage:active{cursor:grabbing}
+#stage canvas{display:block}
+.lb{position:absolute;transform:translate(-50%,-50%);font-size:11px;padding:1px 6px;border-radius:5px;background:color-mix(in srgb,var(--bg) 78%,transparent);border:1px solid var(--line);color:var(--text);white-space:nowrap;pointer-events:auto;cursor:pointer;user-select:none}
+.lb.on{border-color:var(--accent);color:var(--accent);font-weight:600;z-index:3}
+.lb:hover{border-color:var(--faint);z-index:4}
+.ctl{position:absolute;left:10px;right:10px;bottom:10px;display:flex;gap:10px;align-items:center;font-size:12px;color:var(--muted);flex-wrap:wrap}
+.ctl input[type=range]{flex:1;min-width:120px;accent-color:var(--accent)}
+.ctl button,.back{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:7px;padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+.hint{position:absolute;left:12px;top:10px;font-size:11px;color:var(--faint);pointer-events:none}
+.auto{font-size:10px;padding:0 5px;border-radius:4px;border:1px dashed var(--faint);color:var(--muted)}
+@media (max-width:820px){.pv{grid-template-columns:1fr}.plist{max-height:220px;order:2}#stage{height:420px}}
 </style>
 </head>
 <body>
@@ -127,6 +158,7 @@ tr.row{cursor:pointer}tr.row:hover td{background:var(--panel2)}
 </header>
 <main id="app"></main>
 <div id="modal"><div class="mbox"><button class="mclose" onclick="closeCo()">×</button><div id="mbody"></div></div></div>
+<script>/*__THREE__*/</script>
 <script>const DATA=/*__DATA__*/null;</script>
 <script>
 "use strict";
@@ -171,12 +203,13 @@ function bars(vals,{w=150,h=46,color="var(--accent)",signed=false}={}){
 
 /* ---------- 导航 ---------- */
 const TABS=[["overview","总览"],...S.map(s=>["s:"+s.id,s.name]),["all","全部公司"],["alerts","推送记录"]];
-let state={tab:"overview",chain:{},node:{},sort:{k:"sig",d:-1},filter:{sector:"",signal:""}};
+let state={tab:"overview",chain:{},node:{},prod:{},part:{},sort:{k:"sig",d:-1},filter:{sector:"",signal:""}};
 function go(tab){state.tab=tab;history.replaceState(null,"","#"+tab);render();window.scrollTo(0,0)}
 function render(){
   $("#nav").innerHTML=TABS.map(([k,n])=>`<button class="${state.tab===k?"on":""}" onclick="go('${k}')">${n}</button>`).join("");
   const t=state.tab;
   $("#app").innerHTML=(t==="overview"?overview():t==="all"?allCos():t==="alerts"?alertsPage():sectorPage(S.find(s=>"s:"+s.id===t)||S[0]))+legend();
+  mountViewer();
 }
 function legend(){return `<div class="legend">颜色约定：<span class="up">红涨</span> / <span class="down">绿跌</span>；情绪热度 <span style="color:var(--cold)">蓝 = 悲观</span>、<span style="color:var(--hot)">橙 = 乐观</span>。所有分数和信号都是按固定规则从公开数据算出来的信息整理，每一项都附有依据，仅供个人研究参考，不构成投资建议。数据来源：Yahoo Finance（行情 / 财报 / 一致预期）、SEC EDGAR（RPO、8-K）、CNN（恐贪指数）、Summizer 图谱（产业消息）。</div>`}
 
@@ -232,9 +265,12 @@ function flowTable(title,rows){
   return `<div class="tw"><table><tr><th class="l">${title}</th><th>1周</th><th>1月</th><th>3月</th><th>相对强度(1月)</th><th>成交额变化</th></tr>${rows.map(r=>`<tr><td><span class="tk">${r.sym}</span> <span class="muted small">${esc(r.name)}</span></td><td class="num ${cls(r.r1w)}">${pct(r.r1w,1)}</td><td class="num ${cls(r.r1m)}">${pct(r.r1m,1)}</td><td class="num ${cls(r.r3m)}">${pct(r.r3m,1)}</td><td class="num ${cls(r.rs1m)}">${pct(r.rs1m,1)}</td><td class="num">${has(r.flow)?(r.flow>0.1?"放量 ":r.flow<-0.1?"缩量 ":"")+pct(r.flow):"—"}</td></tr>`).join("")}</table></div>`;
 }
 
-/* ---------- 板块页 ---------- */
+/* ---------- 板块页：物品栏 → 3D 拆解 → 零件 → 股票 ---------- */
+const GC=["#9d8cff","#3fc1c9","#f08bb4","#c9a45c","#5fb878","#4c9aff","#ff9a3d","#e06c75","#8bd3dd","#d4c26a","#b07cd8","#7fb7be"];
+const listed=n=>n.cos.filter(c=>c.ticker&&C[c.ticker]);
+function prodStats(ch){const t=new Set(),b=new Set();ch.nodes.forEach(n=>listed(n).forEach(c=>{t.add(c.ticker);if(C[c.ticker].signal.level===2)b.add(c.ticker)}));return{parts:ch.nodes.length,stocks:t.size,buy:b.size}}
 function sectorPage(s){
-  const cid=state.chain[s.id]||s.chains[0].id, ch=s.chains.find(c=>c.id===cid)||s.chains[0];
+  const cid=state.prod[s.id], ch=s.chains.find(c=>c.id===cid);
   const waves=s.wave_status.map(w=>`<div class="card"><h3>${esc(w.name)} <span class="faint">· ${w.tickers.length} 家纯正标的</span></h3>
     <div class="big lv${w.level}" style="font-size:19px">${esc(w.stage)}${w.diverging?` <span class="chip" style="font-size:11px;font-weight:400">分化上涨</span>`:""}</div>
     <div class="small muted" style="margin-top:4px">${esc(w.desc)}</div>
@@ -244,67 +280,124 @@ function sectorPage(s){
   </div>`).join("");
   const ind=Object.entries(s.industry).map(([k,v])=>`<div class="card"><h3>${esc(k)}</h3><div class="small">${esc(v)}</div></div>`).join("");
   const notes=(s.notes||[]).map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}</div>`).join("");
+  const inv=s.chains.map(c=>{const st=prodStats(c);return`<div class="slot ${ch&&c.id===ch.id?"on":""}" onclick="openProd('${s.id}','${c.id}')"><div class="ct">${st.parts} 个零件<br>${st.stocks} 只股票${st.buy?`<br><span style="color:var(--cold)">${st.buy} 个买点</span>`:""}</div><div class="ic">${c.icon||"📦"}</div><b>${esc(c.name)}</b><p>${esc(c.product)}</p></div>`}).join("");
   return `
-  <h2 style="margin-top:6px">${s.name} · 产业面 <small>需求 / 供给 / 资本开支 / 技术进步 / 产业政策</small></h2>
-  <div class="grid g5">${ind}</div>${notes}
+  <h2 style="margin-top:6px">${s.name} · 物品栏 <small>这个板块里被大面积使用的产品；点开一个，把它拆到每个零件，再看每个零件背后的股票</small></h2>
+  <div class="inv">${inv}</div>
+  ${ch?prodView(s,ch):""}
   <h2>浪的位置 <small>每一浪用 价格（相对强度、广度）+ 财报（收入、毛利率、EBITDA 利润率、RPO）六项来验证</small></h2>
   <div class="grid g3">${waves}</div>
-  <h2>产业链 <small>从终端产品往上游拆；点击任一环节看公司和上下游关系 · ⚙ 决定效率 · ▲ 主升浪触发点</small></h2>
-  <div class="tabs">${s.chains.map(c=>`<button class="${c.id===ch.id?"on":""}" onclick="state.chain['${s.id}']='${c.id}';render()">${esc(c.name)}</button>`).join("")}</div>
-  <div class="card" style="margin-bottom:10px"><b>${esc(ch.product)}</b><div class="small muted" style="margin-top:4px">${esc(ch.summary)}</div></div>
-  ${diagram(s,ch)}
-  ${nodeDetail(s,ch)}
+  <h2>产业面 <small>需求 / 供给 / 资本开支 / 技术进步 / 产业政策</small></h2>
+  <div class="grid g5">${ind}</div>${notes}
   <h2>产业消息 <small>来自 Summizer 资讯图谱的利好 / 利空信号</small></h2>
   <div class="card">${s.signals.length?`<ul class="feed">${s.signals.map(x=>`<li>${esc(x.desc)}<div class="m">${esc(x.added)} · ${esc(x.src)} · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div></li>`).join("")}</ul>`:`<div class="empty">Summizer 图谱里暂时没有这个板块的信号。</div>`}</div>`;
 }
-function diagram(s,ch){
-  const maxL=Math.max(...ch.nodes.map(n=>n.layer)), cols={};
-  ch.nodes.forEach(n=>(cols[n.layer]=cols[n.layer]||[]).push(n));
-  const NW=176,NH=62,GX=64,GY=16,PT=30;
-  const rows=Math.max(...Object.values(cols).map(c=>c.length));
-  const W=(maxL+1)*NW+maxL*GX+24, H=PT+rows*NH+(rows-1)*GY+16;
-  const pos={};
-  for(let L=0;L<=maxL;L++){const col=cols[L]||[], x=12+(maxL-L)*(NW+GX), tot=col.length*NH+(col.length-1)*GY, y0=PT+(H-PT-16-tot)/2;
-    col.forEach((n,i)=>pos[n.id]={x,y:y0+i*(NH+GY)});}
-  const sel=state.node[s.id+"/"+ch.id];
-  const near=new Set(); if(sel){near.add(sel);ch.edges.forEach(([a,b])=>{if(a===sel)near.add(b);if(b===sel)near.add(a)})}
-  const edges=ch.edges.map(([a,b,l])=>{const p=pos[a],q=pos[b]; if(!p||!q)return"";
-    const x1=p.x+NW,y1=p.y+NH/2,x2=q.x-3,y2=q.y+NH/2,mx=(x1+x2)/2;
-    const hi=sel&&(a===sel||b===sel);
-    return `<path class="ed ${hi?"hi":sel?"dim":""}" d="M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}" marker-end="url(#ar${hi?"h":""})"/>${hi?`<text class="el" x="${mx}" y="${(y1+y2)/2-4}" text-anchor="middle">${esc(l)}</text>`:""}`}).join("");
-  const nodes=ch.nodes.map(n=>{const p=pos[n.id], listed=n.cos.filter(c=>c.ticker&&C[c.ticker]);
-    const name=n.name.length>13?[n.name.slice(0,13),n.name.slice(13,26)]:[n.name];
-    const flags=(n.eff?"⚙":"")+(n.trigger?"▲":"");
-    return `<g class="nd ${sel===n.id?"sel":sel&&!near.has(n.id)?"dim":""}" onclick="pickNode('${s.id}','${ch.id}','${n.id}')" transform="translate(${p.x},${p.y})">
-      <rect class="b" width="${NW}" height="${NH}" rx="8"/><rect width="4" height="${NH-12}" y="6" x="0" rx="2" style="fill:var(--w${n.wave});stroke:none"/>
-      ${name.map((t,i)=>`<text x="13" y="${name.length>1?19+i*15:23}" font-weight="600">${esc(t)}</text>`).join("")}
-      <text class="sub" x="13" y="${NH-9}">${WN[n.wave]} · ${listed.length} 家上市${flags?"  "+flags:""}</text></g>`}).join("");
-  const wide=W>=900;
-  const axis=`<text class="axis" x="12" y="16">◀ 上游${wide?"（设备 / 材料 / 零部件）":""}</text>${wide?`<text class="axis" x="${W/2}" y="16" text-anchor="middle">⚙ 决定效率　▲ 主升浪触发点</text>`:""}<text class="axis" x="${W-12}" y="16" text-anchor="end">下游${wide?"（终端产品）":""} ▶</text>`;
-  return `<div class="diagram"><svg viewBox="0 0 ${W} ${H}" style="max-width:${W}px;min-width:${Math.min(W,620)}px;margin:0 auto"><defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--faint)"/></marker><marker id="arh" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="var(--accent)"/></marker></defs>${axis}${edges}${nodes}</svg></div>`;
+function openProd(sid,cid){state.prod[sid]=state.prod[sid]===cid?null:cid;render();const el=$("#pv");if(el)el.scrollIntoView({behavior:"smooth",block:"start"})}
+function prodView(s,ch){
+  const groups=[...new Set(ch.nodes.map(n=>n.group))];
+  const list=groups.map((g,gi)=>`<h4><i style="background:${GC[gi%GC.length]}"></i>${esc(g)}</h4>`+ch.nodes.filter(n=>n.group===g).map(n=>`<button data-p="${n.id}" onclick="pickPart('${n.id}')">${esc(n.name)}<span>${listed(n).length} 只</span></button>`).join("")).join("");
+  return `<div id="pv" style="scroll-margin-top:96px">
+  <h2>${ch.icon||""} ${esc(ch.name)} · 拆解 <small>${esc(ch.product)}</small> <button class="back" onclick="openProd('${s.id}','${ch.id}')">收起</button></h2>
+  <div class="card small muted">${esc(ch.summary)}</div>
+  <div class="pv">
+    <div class="plist"><div class="small muted" style="padding:4px 8px">${ch.nodes.length} 个零件 · 按“谁提供什么”分组</div>${list}</div>
+    <div class="stagewrap"><div id="stage"></div><div class="hint">拖动旋转 · 滚轮缩放 · 点零件看股票（窄屏只显示选中零件的名字）${ch.model==="custom"&&ch.nodes.some(n=>!n.m)?" · 底部一圈六边形是看不见的部分（软件 / 服务 / 客户）":""}</div>
+      <div class="ctl"><button onclick="setExplode(0)">合上</button><input id="exr" type="range" min="0" max="100" value="100" oninput="setExplode(this.value/100,true)"><button onclick="setExplode(1)">拆开</button><button onclick="resetView()">复位</button></div></div>
+  </div>
+  <div id="partPanel">${partPanel(s,ch)}</div></div>`;
 }
-function pickNode(sid,cid,nid){const k=sid+"/"+cid;state.node[k]=state.node[k]===nid?null:nid;const y=window.scrollY;render();window.scrollTo(0,y)}
-function nodeDetail(s,ch){
-  const sel=state.node[s.id+"/"+ch.id];
-  const list=sel?ch.nodes.filter(n=>n.id===sel):ch.nodes;
-  const nm=id=>(ch.nodes.find(n=>n.id===id)||{}).name||id;
-  return (sel?`<div class="small muted" style="margin:10px 2px">只显示选中的环节 · 再点一次该环节可取消选择</div>`:`<div class="small muted" style="margin:10px 2px">下面按环节列出全部公司；点击上图的某个环节可以只看那一环，并高亮它的上下游关系。</div>`)+list.map(n=>{
-    const ups=ch.edges.filter(e=>e[1]===n.id), downs=ch.edges.filter(e=>e[0]===n.id);
-    const listed=n.cos.filter(c=>c.ticker&&C[c.ticker]), others=n.cos.filter(c=>!c.ticker||!C[c.ticker]);
-    return `<div class="card" style="margin-top:10px">
-      <div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap"><b style="font-size:15px">${esc(n.name)}</b>${wv(n.wave)}</div>
-      <div style="margin-top:6px">${esc(n.role)}</div>
-      ${n.eff?`<div class="note"><b>⚙ 决定效率：</b>${esc(n.eff)}</div>`:""}
-      ${n.trigger?`<div class="note"><b>▲ 主升浪触发点：</b>${esc(n.trigger)}</div>`:""}
-      ${ups.length||downs.length?`<div class="small muted" style="margin:8px 0">${ups.map(e=>`${esc(nm(e[0]))} <span class="faint">—${esc(e[2])}→</span> 本环节`).concat(downs.map(e=>`本环节 <span class="faint">—${esc(e[2])}→</span> ${esc(nm(e[1]))}`)).join("　·　")}</div>`:""}
-      ${listed.length?`<div class="tw" style="margin-top:8px"><table><tr><th class="l">公司</th><th class="l">在这一环的角色</th><th>现价</th><th>日</th><th>3月</th><th>收入同比</th><th>毛利率</th><th title="基本面">基</th><th title="预期面">预</th><th title="资金面">资</th><th title="情绪热度">热度</th><th>点位</th></tr>
-      ${listed.map(c=>coRow(c.ticker,c.note,c.core)).join("")}</table></div>`:""}
-      ${others.length?`<div class="small muted" style="margin-top:8px">未在美股上市 / 无数据：${others.map(c=>`<b style="color:var(--text)">${esc(c.name)}</b>${c.note?"（"+esc(c.note)+"）":""}`).join("、")}</div>`:""}
-    </div>`}).join("");
+function partPanel(s,ch){
+  const sel=state.part[s.id+"/"+ch.id], n=ch.nodes.find(x=>x.id===sel);
+  if(!n){
+    const seen=new Set(),rows=[];ch.nodes.forEach(x=>listed(x).forEach(c=>{if(!seen.has(c.ticker)&&!c.auto){seen.add(c.ticker);rows.push([c,x])}}));
+    rows.sort((a,b)=>C[b[0].ticker].signal.level-C[a[0].ticker].signal.level||(C[b[0].ticker].fund.score||0)-(C[a[0].ticker].fund.score||0));
+    return `<div class="card" style="margin-top:12px"><b>还没选零件</b> <span class="muted small">在 3D 图上或左侧清单里点一个零件。下面先列出这个产品里点位信号最靠前的公司：</span>
+    <div class="tw" style="margin-top:8px"><table>${thead()}${rows.slice(0,12).map(([c,x])=>coRow(c.ticker,x.name,c.core,false)).join("")}</table></div></div>`;
+  }
+  const L=listed(n), man=L.filter(c=>!c.auto), auto=L.filter(c=>c.auto), others=n.cos.filter(c=>!c.ticker||!C[c.ticker]);
+  return `<div class="card" style="margin-top:12px">
+    <div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap"><b style="font-size:16px">${esc(n.name)}</b>${wv(n.wave)}<span class="chip">${esc(n.group)}</span><span class="muted small">${man.length} 只人工确认 · ${auto.length} 只全市场自动发现</span></div>
+    ${n.role?`<div style="margin-top:6px">${esc(n.role)}</div>`:""}
+    ${n.eff?`<div class="note"><b>⚙ 决定效率：</b>${esc(n.eff)}</div>`:""}
+    ${n.trigger?`<div class="note"><b>▲ 主升浪触发点：</b>${esc(n.trigger)}</div>`:""}
+    ${L.length?`<div class="tw" style="margin-top:8px"><table>${thead()}${man.map(c=>coRow(c.ticker,c.note,c.core,false)).join("")}${auto.map(c=>coRow(c.ticker,c.note,false,true)).join("")}</table></div>`:""}
+    ${others.length?`<div class="small muted" style="margin-top:8px">未在美股上市 / 无数据：${others.map(c=>`<b style="color:var(--text)">${esc(c.name)}</b>${c.note?"（"+esc(c.note)+"）":""}`).join("、")}</div>`:""}
+    ${auto.length?`<div class="small faint" style="margin-top:8px">“自动发现”= 从全部美股上市公司的主营业务描述里按关键词匹配出来的，未经人工核对，可能有误配；不计入浪位统计。</div>`:""}
+  </div>`;
 }
-function coRow(t,note,core){
+const thead=()=>`<tr><th class="l">公司</th><th class="l">在这个零件里做什么</th><th>现价</th><th>日</th><th>3月</th><th>收入同比</th><th>毛利率</th><th title="基本面">基</th><th title="预期面">预</th><th title="资金面">资</th><th title="情绪热度">热度</th><th>点位</th></tr>`;
+function curProd(){const s=S.find(x=>"s:"+x.id===state.tab);if(!s)return null;const ch=s.chains.find(c=>c.id===state.prod[s.id]);return ch?{s,ch}:null}
+function pickPart(id){const p=curProd();if(!p)return;const k=p.s.id+"/"+p.ch.id;state.part[k]=state.part[k]===id?null:id;$("#partPanel").innerHTML=partPanel(p.s,p.ch);syncPartUI()}
+function syncPartUI(){const p=curProd();if(!p)return;const sel=state.part[p.s.id+"/"+p.ch.id];document.querySelectorAll(".plist button").forEach(b=>b.classList.toggle("on",b.dataset.p===sel));if(V)V.sel=sel||null}
+
+/* ---------- 3D 引擎（three.js，零件用基本几何体拼） ---------- */
+let V=null;
+function parseM(str){return str.split(";").map(x=>{const[a,b]=x.split("@"),p=a.trim().split(/\s+/),q=b.trim().split(/\s+/);return{t:p[0],d:p.slice(1).map(Number),pos:q.slice(0,3).map(Number),rot:q[3]||""}})}
+function buildParts(ch){
+  const groups=[...new Set(ch.nodes.map(n=>n.group))],parts=[];
+  if(ch.model==="stack"){const L=groups.length,gap=.34;
+    groups.forEach((g,gi)=>{const ns=ch.nodes.filter(n=>n.group===g),y=(L-1)/2*gap-gi*gap,w=3.4/ns.length;
+      ns.forEach((n,i)=>parts.push({n,prims:[{t:"box",d:[w-.06,.24,2.1],pos:[-1.7+w*(i+.5),y,0],rot:""}]}))});
+    return{groups,parts,ex:[.3,1.4,0],rad:9.5};}
+  ch.nodes.filter(n=>n.m).forEach(n=>parts.push({n,prims:parseM(n.m)}));
+  const E=.9;let hr=0,ymin=0;parts.forEach(pt=>pt.prims.forEach(pr=>{hr=Math.max(hr,Math.hypot(pr.pos[0],pr.pos[2])*(1+E));ymin=Math.min(ymin,pr.pos[1]*(1+E))}));
+  const loose=ch.nodes.filter(n=>!n.m),R=Math.max(2.4,Math.min(4,hr*.8)),Y=ymin-.7;
+  loose.forEach((n,i)=>{const a=i/loose.length*Math.PI*2+.5;parts.push({n,loose:true,prims:[{t:"hex",d:[.34,.1],pos:[Math.cos(a)*R,Y,Math.sin(a)*R],rot:""}]})});
+  return{groups,parts,ex:[E,E,E],rad:11};
+}
+function disposeViewer(){if(!V)return;cancelAnimationFrame(V.raf);V.ro&&V.ro.disconnect();V.renderer.dispose();V=null}
+function mountViewer(){
+  disposeViewer();const p=curProd(),el=$("#stage");if(!p||!el)return;
+  if(!window.THREE||!window.WebGLRenderingContext){el.innerHTML=`<div class="empty" style="padding:40px">这个浏览器不支持 WebGL，无法显示 3D 图；左侧零件清单仍然可用。</div>`;return}
+  let renderer;try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true})}catch(e){el.innerHTML=`<div class="empty" style="padding:40px">WebGL 初始化失败，无法显示 3D 图；左侧零件清单仍然可用。</div>`;return}
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));el.appendChild(renderer.domElement);
+  const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(36,1,.1,200);
+  scene.add(new THREE.AmbientLight(0xffffff,1.5));const d1=new THREE.DirectionalLight(0xffffff,2.2);d1.position.set(5,9,7);scene.add(d1);const d2=new THREE.DirectionalLight(0x9db4ff,.9);d2.position.set(-7,-3,-5);scene.add(d2);
+  const B=buildParts(p.ch),meshes=[];
+  B.parts.forEach(pt=>{const col=new THREE.Color(GC[B.groups.indexOf(pt.n.group)%GC.length]);pt.meshes=[];const c=[0,0,0];
+    pt.prims.forEach(pr=>{const d=pr.d;let g;
+      if(pr.t==="box")g=new THREE.BoxGeometry(d[0],d[1],d[2]);else if(pr.t==="cyl")g=new THREE.CylinderGeometry(d[0],d[0],d[1],32);else if(pr.t==="hex")g=new THREE.CylinderGeometry(d[0],d[0],d[1],6);
+      else if(pr.t==="sph")g=new THREE.SphereGeometry(d[0],28,18);else if(pr.t==="cone")g=new THREE.CylinderGeometry(d[0]*.25,d[0],d[1],28);else g=new THREE.TorusGeometry(d[0],d[1],14,40);
+      const m=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:col,roughness:.5,metalness:.2,transparent:true}));
+      if(pr.rot==="rx")m.rotation.x=Math.PI/2;else if(pr.rot==="rz")m.rotation.z=Math.PI/2;else if(pr.t==="tor")m.rotation.x=Math.PI/2;
+      m.add(new THREE.LineSegments(new THREE.EdgesGeometry(g,25),new THREE.LineBasicMaterial({color:0x000000,transparent:true,opacity:.3})));
+      m.userData={pt,base:pr.pos};scene.add(m);meshes.push(m);pt.meshes.push(m);pr.pos.forEach((v,i)=>c[i]+=v/pt.prims.length)});
+    pt.c=c;const lb=document.createElement("div");lb.className="lb";lb.textContent=pt.n.name.split(/[（(：]/)[0].trim().slice(0,14);lb.onclick=e=>{e.stopPropagation();pickPart(pt.n.id)};el.appendChild(lb);pt.lb=lb});
+  const mn=[1e9,1e9,1e9],mx=[-1e9,-1e9,-1e9];
+  B.parts.forEach(pt=>pt.prims.forEach(pr=>{const k=pt.loose?0:1,h=Math.max(...pr.d.filter(x=>x>0))/2;for(let i=0;i<3;i++){const v=pr.pos[i]*(1+B.ex[i]*k);mn[i]=Math.min(mn[i],v-h);mx[i]=Math.max(mx[i],v+h)}}));
+  const tg=[0,(mn[1]+mx[1])/2,0],fit=Math.max(Math.hypot(mx[0]-mn[0],mx[2]-mn[2])*.5,(mx[1]-mn[1])*.5)*3.05+1.5;
+  V={renderer,scene,cam,el,B,meshes,tg,t:0,tt:1,th:.75,ph:1.12,rad:fit,rad0:fit,idle:0,sel:state.part[p.s.id+"/"+p.ch.id]||null,hover:null};
+  const size=()=>{const w=el.clientWidth,h=el.clientHeight;renderer.setSize(w,h);cam.aspect=w/h;cam.updateProjectionMatrix()};size();
+  if(window.ResizeObserver){V.ro=new ResizeObserver(size);V.ro.observe(el)}
+  const ray=new THREE.Raycaster(),ndc=new THREE.Vector2();
+  const hit=e=>{const r=el.getBoundingClientRect();ndc.set((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1);ray.setFromCamera(ndc,cam);const hs=ray.intersectObjects(meshes,false);const h=hs.find(x=>!x.object.userData.pt.n.shell)||hs[0];return h?h.object.userData.pt:null};
+  let drag=null;const cv=renderer.domElement;
+  cv.addEventListener("pointerdown",e=>{drag={x:e.clientX,y:e.clientY,moved:0};cv.setPointerCapture(e.pointerId)});
+  cv.addEventListener("pointermove",e=>{V.idle=0;if(drag){const dx=e.clientX-drag.x,dy=e.clientY-drag.y;drag.moved+=Math.abs(dx)+Math.abs(dy);V.th-=dx*.008;V.ph=Math.max(.15,Math.min(Math.PI-.15,V.ph-dy*.008));drag.x=e.clientX;drag.y=e.clientY}else{const h=hit(e);V.hover=h?h.n.id:null;cv.style.cursor=h?"pointer":""}});
+  cv.addEventListener("pointerup",e=>{if(drag&&drag.moved<6){const h=hit(e);if(h)pickPart(h.n.id)}drag=null});
+  cv.addEventListener("pointerleave",()=>{V&&(V.hover=null)});
+  cv.addEventListener("wheel",e=>{e.preventDefault();V.idle=0;V.rad=Math.max(V.rad0*.3,Math.min(V.rad0*2.2,V.rad*(1+Math.sign(e.deltaY)*.08)))},{passive:false});
+  const v3=new THREE.Vector3();
+  const tick=()=>{if(!V||!el.isConnected){disposeViewer();return}
+    V.t+=(V.tt-V.t)*.12;V.idle++;if(V.idle>150&&!V.sel)V.th+=.0025;
+    const t=V.t,ex=V.B.ex;
+    cam.position.set(V.rad*Math.sin(V.ph)*Math.sin(V.th),V.tg[1]+V.rad*Math.cos(V.ph),V.rad*Math.sin(V.ph)*Math.cos(V.th));cam.lookAt(0,V.tg[1],0);
+    const w=el.clientWidth,h=el.clientHeight;
+    V.B.parts.forEach(pt=>{const k=pt.loose?0:t,on=V.sel===pt.n.id,hv=V.hover===pt.n.id,dim=V.sel&&!on;
+      pt.meshes.forEach(m=>{const b=m.userData.base;m.position.set(b[0]*(1+ex[0]*k),b[1]*(1+ex[1]*k),b[2]*(1+ex[2]*k));const sh=pt.n.shell&&!on;m.material.opacity=dim?(sh?.06:.16):sh?.2:1;m.material.depthWrite=!dim&&!sh;m.material.emissive.setHex(on?0x554010:hv?0x2a2a2a:0);m.children[0].material.opacity=dim?.06:.3});
+      v3.set(pt.c[0]*(1+ex[0]*k),pt.c[1]*(1+ex[1]*k)+(pt.loose?.28:0),pt.c[2]*(1+ex[2]*k)).project(cam);
+      pt.show=v3.z<1&&(on||hv||(w>=520&&!dim&&(pt.loose||t>.45)));pt.sx=(v3.x+1)/2*w;pt.sy=(1-v3.y)/2*h;pt.lb.classList.toggle("on",on)});
+    const vis=V.B.parts.filter(pt=>pt.show).sort((a,b)=>a.sy-b.sy),placed=[];
+    vis.forEach(pt=>{const lw=pt.lb.offsetWidth||80;let y=pt.sy,guard=0;for(let i=0;i<placed.length&&guard<200;i++){const q=placed[i];if(Math.abs(q.x-pt.sx)<(lw+q.w)/2+4&&Math.abs(q.y-y)<19){y=q.y+20;i=-1;guard++}}placed.push({x:pt.sx,y,w:lw});pt.lb.style.left=pt.sx+"px";pt.lb.style.top=y+"px"});
+    V.B.parts.forEach(pt=>pt.lb.style.display=pt.show?"":"none");
+    renderer.render(scene,cam);V.raf=requestAnimationFrame(tick)};
+  tick();syncPartUI();
+}
+function setExplode(x,fromSlider){if(!V)return;V.tt=+x;V.idle=0;if(!fromSlider){const r=$("#exr");if(r)r.value=x*100}}
+function resetView(){if(!V)return;V.th=.75;V.ph=1.12;V.rad=V.rad0;V.idle=0;setExplode(1);const p=curProd();if(p&&state.part[p.s.id+"/"+p.ch.id])pickPart(state.part[p.s.id+"/"+p.ch.id])}
+function coRow(t,note,core,auto){
   const c=C[t],k=c.tech,f=c.fund;
-  return `<tr class="row" onclick="openCo('${t}')"><td><span class="tk ${core===false?"nc":""}">${t}</span>${core===false?` <span class="faint small" title="业务多元，这个板块只占它一部分，不计入浪位统计">◦</span>`:""} <span class="muted small">${esc(c.name).slice(0,20)}</span></td><td class="wrap l">${esc(note||"")}</td><td class="num">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td>${sc(f.score)}</td><td>${sc(c.expect.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td></tr>`;
+  return `<tr class="row" onclick="openCo('${t}')"><td><span class="tk ${core===false&&!auto?"nc":""}">${t}</span>${auto?` <span class="auto">自动</span>`:core===false?` <span class="faint small" title="业务多元，这个板块只占它一部分，不计入浪位统计">◦</span>`:""} <span class="muted small">${esc(c.name).slice(0,20)}</span></td><td class="wrap l">${esc(note||"")}</td><td class="num">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td>${sc(f.score)}</td><td>${sc(c.expect.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td></tr>`;
 }
 
 /* ---------- 全部公司 ---------- */
@@ -340,8 +433,8 @@ function openCo(t){
   const k=c.tech,f=c.fund,e=c.expect,a=c.capital,qs=f.quarters||[];
   const ql=qs.map(q=>q.end.slice(2,7));
   const fig=(title,vals,fmt,opt)=>`<figure><figcaption><span>${title}</span><b class="num">${fmt(vals[vals.length-1])}</b></figcaption>${bars(vals,opt)}</figure>`;
-  const mem=c.members.map(m=>{const s=S.find(x=>x.id===m.sector),ch=s.chains.find(x=>x.id===m.chain),n=ch.nodes.find(x=>x.id===m.node);
-    return `<li><a href="#" onclick="event.preventDefault();jump('${m.sector}','${m.chain}','${m.node}')" style="color:var(--text)">${esc(m.sector_name)} › ${esc(m.chain_name)} › <b>${esc(m.node_name)}</b></a> ${wv(m.wave)}${m.core?"":` <span class="faint small">非纯正标的</span>`}${m.note?`<div class="small">${esc(m.note)}</div>`:""}${n.trigger?`<div class="small"><span style="color:var(--accent)">▲ 触发点：</span>${esc(n.trigger)}</div>`:""}</li>`}).join("");
+  const mem=c.members.slice(0,14).map(m=>{const s=S.find(x=>x.id===m.sector),ch=s.chains.find(x=>x.id===m.chain),n=ch.nodes.find(x=>x.id===m.node);
+    return `<li><a href="#" onclick="event.preventDefault();jump('${m.sector}','${m.chain}','${m.node}')" style="color:var(--text)">${esc(m.sector_name)} › ${esc(m.chain_name)} › <b>${esc(m.node_name)}</b></a> ${wv(m.wave)}${m.auto?` <span class="auto">自动</span>`:m.core?"":` <span class="faint small">非纯正标的</span>`}${m.note?`<div class="small">${esc(m.note)}</div>`:""}${n.trigger?`<div class="small"><span style="color:var(--accent)">▲ 触发点：</span>${esc(n.trigger)}</div>`:""}</li>`}).join("");
   const waves=[...new Set(c.members.filter(m=>m.core).map(m=>m.sector+":"+m.wave))].map(x=>{const[sid,w]=x.split(":"),s=S.find(y=>y.id===sid),ws=s.wave_status[w-1];return`<div class="small" style="margin-top:6px">${esc(s.name)} ${wv(+w)} 当前：<b class="lv${ws.level}">${esc(ws.stage)}</b></div>`}).join("");
   let tgt="";
   if(has(e.target)&&has(e.target_lo)&&has(e.target_hi)&&has(k.price)){const lo=Math.min(e.target_lo,k.price)*.97,hi=Math.max(e.target_hi,k.price)*1.03,P=x=>(x-lo)/(hi-lo)*100;
@@ -355,11 +448,12 @@ function openCo(t){
   $("#mbody").innerHTML=`
   <div class="mh"><span class="t">${t}</span><span>${esc(c.name)}</span><span class="muted small">${esc(c.industry)}</span></div>
   <div class="mh" style="margin-top:6px"><span class="big num">${num(k.price,2)}</span><span class="num ${cls(k.chg1d)}">${pct(k.chg1d,2)}</span>${sig(c.signal)}<span class="muted small">市值 ${money(a.mcap)} · 下次财报 ${e.next_earnings||"—"}</span></div>
+  ${c.about?`<div class="small muted" style="margin-top:8px">${esc(c.about)}…</div>`:""}
   <div class="note" style="margin-top:12px"><b>点位判断（${esc(c.signal.zone)}）：</b>${esc(c.signal.text)}</div>
   <div class="card" style="margin-top:12px">${priceChart}
     <div class="kv"><div><span>1周</span><b class="num ${cls(k.r1w)}">${pct(k.r1w,1)}</b></div><div><span>1月</span><b class="num ${cls(k.r1m)}">${pct(k.r1m,1)}</b></div><div><span>3月</span><b class="num ${cls(k.r3m)}">${pct(k.r3m)}</b></div><div><span>6月</span><b class="num ${cls(k.r6m)}">${pct(k.r6m)}</b></div><div><span>1年</span><b class="num ${cls(k.r1y)}">${pct(k.r1y)}</b></div><div><span>距52周高点</span><b class="num ${cls(k.dd)}">${pct(k.dd)}</b></div><div><span>偏离50日线</span><b class="num ${cls(k.vs50)}">${pct(k.vs50)}</b></div><div><span>偏离200日线</span><b class="num ${cls(k.vs200)}">${pct(k.vs200)}</b></div></div></div>
   <div class="grid g2" style="margin-top:12px">
-    <div class="card facet"><h3>① 产业面 · 它在产业链的什么位置</h3><ul class="why">${mem}</ul>${waves}</div>
+    <div class="card facet"><h3>① 产业面 · 它是哪些产品的哪个零件</h3><ul class="why">${mem}</ul>${waves}</div>
     <div class="card facet"><h3>② 基本面 · 内在价值 <em>${f.score??"—"}</em></h3>
       <ul class="why">${f.why.map(w=>`<li>${esc(w)}</li>`).join("")||"<li>财报数据不足</li>"}</ul>
       ${qs.length?`<div class="mini">${fig("季度收入",qs.map(q=>q.rev),money)}${fig("毛利率",qs.map(q=>q.gm),x=>pct0(x,1),{color:"var(--w2)"})}${fig("EBITDA 利润率",qs.map(q=>q.em),x=>pct0(x,1),{signed:true})}${fig("EPS",qs.map(q=>q.eps),x=>num(x,2),{signed:true})}${fig("自由现金流",qs.map(q=>q.fcf),money,{signed:true})}${f.rpo?fig("RPO 长期订单",f.rpo.map(r=>r.val),money,{color:"var(--w1)"}):""}</div><div class="heat-l" style="margin-top:6px"><span>季度：${ql.join(" · ")}</span><span>净现金 ${money(f.net_cash)}</span></div>`:""}</div>
@@ -382,7 +476,7 @@ function openCo(t){
   $("#modal").classList.add("on");$("#modal").scrollTop=0;document.body.style.overflow="hidden";
 }
 function closeCo(){$("#modal").classList.remove("on");document.body.style.overflow=""}
-function jump(sid,cid,nid){closeCo();state.chain[sid]=cid;state.node[sid+"/"+cid]=nid;state.tab="s:"+sid;history.replaceState(null,"","#s:"+sid);render();setTimeout(()=>{const el=$(".diagram");el&&el.scrollIntoView({behavior:"smooth",block:"start"})},50)}
+function jump(sid,cid,nid){closeCo();state.prod[sid]=cid;state.part[sid+"/"+cid]=nid;state.tab="s:"+sid;history.replaceState(null,"","#s:"+sid);render();setTimeout(()=>{const el=$("#pv");el&&el.scrollIntoView({behavior:"smooth",block:"start"})},50)}
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")closeCo()});
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeCo()});
 $("#q").addEventListener("input",()=>{if(state.tab!=="all"){state.tab="all";history.replaceState(null,"","#all")}render()});

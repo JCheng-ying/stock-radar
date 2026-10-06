@@ -1,94 +1,692 @@
 {
-  "id": "quantum",
-  "name": "量子计算",
-  "summizer_tags": ["量子计算板块"],
-  "etfs": {"QTUM": "量子计算主题 ETF", "SMH": "半导体（对照）"},
-  "industry": {
-    "需求": "目前收入主要来自政府科研合同和云上试用；真正的商业需求（材料/药物模拟、优化、密码学）要等容错量子计算机出现。",
-    "供给": "稀释制冷机、氦-3、高精度激光、专用测控电子的产能都很小，整机交付以“台”计。",
-    "资本开支": "各国政府量子计划拨款 + 上市公司增发融资是主要资金来源，账上现金能烧几年是生存指标。",
-    "技术进步": "核心是量子纠错：逻辑量子比特数量、两比特门保真度（99.9% 以上）、纠错后错误率随规模下降。每一次纠错里程碑都是板块行情的发令枪。",
-    "产业政策": "美国国家量子计划再授权、DARPA 量子基准计划（QBI）入选名单、后量子密码（PQC）迁移时间表。"
+ "id": "quantum",
+ "name": "量子计算",
+ "summizer_tags": [
+  "量子计算板块"
+ ],
+ "etfs": {
+  "QTUM": "量子计算主题 ETF",
+  "SMH": "半导体（对照）"
+ },
+ "industry": {
+  "需求": "目前收入主要来自政府科研合同和云上试用；真正的商业需求（材料/药物模拟、优化、密码学）要等容错量子计算机出现。",
+  "供给": "稀释制冷机、氦-3、高精度激光、专用测控电子的产能都很小，整机交付以“台”计。",
+  "资本开支": "各国政府量子计划拨款 + 上市公司增发融资是主要资金来源，账上现金能烧几年是生存指标。",
+  "技术进步": "核心是量子纠错：逻辑量子比特数量、两比特门保真度（99.9% 以上）、纠错后错误率随规模下降。每一次纠错里程碑都是板块行情的发令枪。",
+  "产业政策": "美国国家量子计划再授权、DARPA 量子基准计划（QBI）入选名单、后量子密码（PQC）迁移时间表。"
+ },
+ "waves": {
+  "1": {
+   "name": "一浪：硬件与零部件",
+   "desc": "整机公司 + 制冷、测控、激光、芯片代工——目前行情几乎全在这一层，靠技术里程碑和融资驱动。"
   },
-  "waves": {
-    "1": {"name": "一浪：硬件与零部件", "desc": "整机公司 + 制冷、测控、激光、芯片代工——目前行情几乎全在这一层，靠技术里程碑和融资驱动。"},
-    "2": {"name": "二浪：B端应用", "desc": "量子云服务、优化求解、后量子密码迁移——看合同额（bookings/RPO）和企业客户数。"},
-    "3": {"name": "三浪：C端应用", "desc": "尚未出现。要等容错量子计算机商业化之后。"}
+  "2": {
+   "name": "二浪：B端应用",
+   "desc": "量子云服务、优化求解、后量子密码迁移——看合同额（bookings/RPO）和企业客户数。"
   },
-  "chains": [
+  "3": {
+   "name": "三浪：C端应用",
+   "desc": "尚未出现。要等容错量子计算机商业化之后。"
+  }
+ },
+ "chains": [
+  {
+   "id": "sc",
+   "name": "超导量子计算机",
+   "icon": "❄️",
+   "model": "custom",
+   "product": "把 IBM / 谷歌那种“吊灯”拆开：从室温机柜一路降到比外太空还冷的芯片",
+   "summary": "超导路线：量子芯片挂在稀释制冷机最底层（约 10 毫开尔文），上千根微波线从室温一级级降温接下来。制冷功率和布线密度是扩展的物理上限；纠错需要旁边放一台 GPU 服务器实时解码。",
+   "nodes": [
     {
-      "id": "quantum-computer",
-      "name": "一台量子计算机",
-      "product": "把一台量子计算机拆开：量子芯片、制冷、测控、激光、纠错",
-      "summary": "不同技术路线（超导、离子阱、中性原子、光子、硅自旋）用到的零件不一样：超导路线离不开稀释制冷机和微波测控；离子阱和中性原子路线离不开高精度激光和真空系统；所有路线最后都卡在“量子纠错”——需要经典算力实时解码。",
-      "nodes": [
-        {"id": "system", "name": "量子计算整机", "layer": 0, "wave": 1,
-         "role": "把量子处理器、控制系统、软件集成成可用的机器，通过云或直接销售交付。",
-         "eff": "两比特门保真度 × 量子比特数 × 相干时间，合起来决定能跑多深的电路。",
-         "trigger": "逻辑量子比特数量/纠错里程碑达成；入选 DARPA QBI 下一阶段；拿到大额政府或企业整机订单。",
-         "cos": ["IONQ|离子阱，已收购 SkyWater 晶圆厂做垂直整合", "RGTI|Rigetti，超导", "QBTS|D-Wave，退火 + 门模型", "QUBT|光子", "?IBM|超导，路线图最清晰", "?GOOGL|Willow 超导芯片", "QNT|Quantinuum，离子阱", "?HON|Quantinuum 控股股东", "INFQ|Infleqtion，中性原子", "XNDU|Xanadu，光子", "IQMX|IQM，超导", "~PsiQuantum|未上市，光子", "~QuEra|未上市，中性原子"]},
-        {"id": "qpu", "name": "量子芯片制造", "layer": 1, "wave": 1,
-         "role": "超导量子比特、光子芯片、硅自旋量子比特都需要专门的晶圆产线。",
-         "eff": "制造一致性决定量子比特质量的均匀度，是规模化的前提。",
-         "trigger": "量子芯片进入标准 300mm 产线量产。",
-         "cos": ["~SkyWater|2026-07 被 IonQ 收购退市，代工 D-Wave / PsiQuantum", "?GFS|格芯，PsiQuantum 光子芯片", "?INTC|硅自旋量子比特", "?IBM|自有产线"]},
-        {"id": "cryo", "name": "稀释制冷机 / 低温系统", "layer": 1, "wave": 1,
-         "role": "超导量子比特要在 10 毫开尔文下工作，比外太空还冷。制冷机的冷量决定一台机器能放多少量子比特。",
-         "eff": "制冷功率和布线密度是超导路线扩展的物理上限。",
-         "cos": ["~Bluefors|芬兰未上市，龙头", "~Oxford Instruments|伦敦上市", "?FORM|FormFactor，低温探针台", "?LIN|林德，氦气", "?APD|空气化工，氦气"]},
-        {"id": "ctrl", "name": "测控电子 / 微波系统", "layer": 1, "wave": 1,
-         "role": "产生和读取控制量子比特的微波/射频脉冲：任意波形发生器、低噪放大器、FPGA。",
-         "eff": "控制精度和串扰直接决定门保真度。",
-         "cos": ["?KEYS|是德科技，量子测控", "~Quantum Machines|未上市", "~Zurich Instruments|罗德与施瓦茨旗下", "?AMD|FPGA（赛灵思）", "?ADI|高速数据转换器"]},
-        {"id": "laser", "name": "激光与光学系统", "layer": 1, "wave": 1,
-         "role": "离子阱、中性原子、光子路线用激光来囚禁和操控量子比特。",
-         "eff": "激光稳定性和光学集成度决定离子阱/中性原子路线的门速度与规模。",
-         "cos": ["?COHR|Coherent", "?LITE|Lumentum", "?IPGP|IPG 光子", "?MKSI|MKS，光学与真空"]},
-        {"id": "qec", "name": "量子纠错 / 经典协处理", "layer": 1, "wave": 1,
-         "role": "纠错需要经典计算机在微秒级实时解码，GPU/FPGA 与量子处理器混合部署。",
-         "eff": "解码速度必须快过错误累积速度——这是从“物理比特”到“逻辑比特”的关键一环。",
-         "trigger": "实时纠错在更大码距上演示成功，是整个板块主升浪最重要的技术触发点。",
-         "cos": ["?NVDA|CUDA-Q / NVQLink", "?AMD|FPGA 解码", "?IBM|qLDPC 码路线"]},
-        {"id": "qcloud", "name": "量子云平台 / 软件", "layer": 0, "wave": 2,
-         "role": "企业和科研用户通过云接入各家量子计算机。",
-         "trigger": "云上量子用量和企业合同额（bookings）显著放大。",
-         "cos": ["?AMZN|Braket", "?MSFT|Azure Quantum", "?GOOGL|Quantum AI", "?IBM|Qiskit / Quantum Network"]}
-      ],
-      "edges": [
-        ["qpu", "system", "量子处理器"],
-        ["cryo", "system", "超导路线的工作环境"],
-        ["ctrl", "system", "控制与读出"],
-        ["laser", "system", "离子阱 / 中性原子 / 光子路线"],
-        ["qec", "system", "实时纠错解码"],
-        ["ctrl", "qec", "读出数据"],
-        ["system", "qcloud", "接入云平台"]
-      ]
+     "id": "oem",
+     "name": "整机厂 / 系统集成",
+     "group": "整机",
+     "wave": 1,
+     "role": "设计量子处理器并集成整机，通过云或直接销售交付。",
+     "cos": [
+      "IBM|路线图最清晰",
+      "GOOGL|Willow 芯片",
+      "RGTI|Rigetti",
+      "QBTS|D-Wave，退火 + 门模型",
+      "IQMX|IQM",
+      "~Alice & Bob / OQC|未上市"
+     ],
+     "kw": [
+      "superconducting quantum",
+      "quantum computers",
+      "quantum computing systems",
+      "quantum processors"
+     ],
+     "eff": "两比特门保真度 × 比特数 × 相干时间。",
+     "trigger": "逻辑比特 / 纠错里程碑；入选 DARPA QBI 下一阶段；整机大单。"
     },
     {
-      "id": "pqc",
-      "name": "量子安全与量子网络",
-      "product": "银行和政府把加密系统换成“抗量子攻击”的版本",
-      "summary": "量子计算的第一个确定性 B 端需求：不管量子计算机什么时候成熟，“先窃取后解密”的威胁让政府和金融机构现在就必须迁移到后量子密码（PQC）。这是二浪里有明确时间表的一段。",
-      "nodes": [
-        {"id": "pqcapp", "name": "后量子密码迁移（政府 / 金融客户）", "layer": 0, "wave": 2,
-         "role": "NIST 标准落地后，联邦机构和关键基础设施按时间表强制迁移。",
-         "trigger": "强制迁移期限临近；量子计算机破解密码的资源估计被大幅下修。",
-         "cos": ["?PANW|Palo Alto", "?CRWD|CrowdStrike", "?CSCO|思科", "?IBM|PQC 标准主要贡献者", "?NET|Cloudflare，已默认启用 PQC"]},
-        {"id": "pqchip", "name": "PQC 芯片 / 加密方案", "layer": 1, "wave": 2,
-         "role": "把抗量子算法做进安全芯片、加密软件。",
-         "cos": ["LAES|SEALSQ，PQC 芯片", "ARQQ|Arqit，对称密钥协商", "BTQ|BTQ，区块链 PQC"]},
-        {"id": "qkd", "name": "量子密钥分发 / 量子网络", "layer": 1, "wave": 1,
-         "role": "用量子态分发密钥，以及把多台量子计算机联网。",
-         "cos": ["IONQ|收购 ID Quantique / Lightsynq", "QUBT|光子器件", "~Toshiba|日本上市，QKD"]},
-        {"id": "photonics", "name": "单光子源 / 探测器 / 光纤", "layer": 2, "wave": 1,
-         "role": "量子网络的底层光学器件。",
-         "cos": ["?COHR|Coherent", "?LITE|Lumentum", "?GLW|康宁"]}
-      ],
-      "edges": [
-        ["photonics", "qkd", "光学器件"],
-        ["qkd", "pqcapp", "物理层密钥"],
-        ["pqchip", "pqcapp", "算法与芯片"]
-      ]
+     "id": "qpu",
+     "name": "量子芯片（QPU）制造",
+     "group": "芯片",
+     "wave": 1,
+     "role": "约瑟夫森结超导电路，需要专门的晶圆产线。",
+     "cos": [
+      "IBM|自有产线",
+      "?GFS|格芯",
+      "?INTC|硅自旋路线",
+      "IONQ|已收购 SkyWater 晶圆厂",
+      "~SEEQC|未上市",
+      "?TSEM|Tower，特色工艺"
+     ],
+     "kw": [
+      "quantum chips",
+      "superconducting circuits"
+     ],
+     "m": "box .34 .04 .34 @0 -.62 0",
+     "eff": "制造一致性决定比特质量的均匀度。"
+    },
+    {
+     "id": "shield",
+     "name": "磁屏蔽 / 样品座 / 封装",
+     "group": "芯片",
+     "wave": 1,
+     "role": "把芯片和外界磁场、辐射隔开。",
+     "cos": [
+      "~Amuneal / Magnetic Shields|未上市",
+      "?MTRN|Materion，特种金属"
+     ],
+     "kw": [
+      "magnetic shielding"
+     ],
+     "m": "cyl .42 .5 @0 -1.2 0"
+    },
+    {
+     "id": "fridge",
+     "name": "稀释制冷机",
+     "group": "制冷",
+     "wave": 1,
+     "role": "五级冷盘，一级比一级冷。制冷机交期和冷量决定一台机器能放多少比特。",
+     "cos": [
+      "~Bluefors|芬兰未上市，龙头",
+      "~Oxford Instruments|伦敦上市",
+      "~Maybell / ICEoxford|未上市",
+      "?FORM|FormFactor，低温探针台与制冷机"
+     ],
+     "kw": [
+      "dilution refrigerator",
+      "cryogenic systems",
+      "cryostat"
+     ],
+     "m": "cyl 1.1 .05 @0 1.6 0;cyl .95 .05 @0 1.05 0;cyl .8 .05 @0 .55 0;cyl .65 .05 @0 .12 0;cyl .5 .05 @0 -.28 0",
+     "eff": "制冷功率是超导路线扩展的物理上限。"
+    },
+    {
+     "id": "pulse",
+     "name": "脉冲管制冷机 / 压缩机",
+     "group": "制冷",
+     "wave": 1,
+     "role": "提供前级 4K 冷量的机械制冷机。",
+     "cos": [
+      "~Cryomech（Bluefors）|未上市",
+      "~住友重机|日本上市",
+      "?CR|Crane，低温泵阀",
+      "~CHX|ChampionX 已并入 SLB（代码已无行情）"
+     ],
+     "kw": [
+      "cryocoolers",
+      "cryogenic equipment"
+     ],
+     "m": "cyl .18 .8 @.5 2.15 0;box .6 .6 .6 @-2.3 -1.0 0"
+    },
+    {
+     "id": "helium",
+     "name": "氦-3 / 氦-4 气体",
+     "group": "制冷",
+     "wave": 1,
+     "role": "稀释制冷必须用氦-3，全球供给极少。",
+     "cos": [
+      "?LIN|林德",
+      "?APD|空气化工",
+      "~Interlune|未上市，月球氦-3"
+     ],
+     "kw": [
+      "helium"
+     ],
+     "trigger": "氦-3 供给约束被打破（或加剧）。"
+    },
+    {
+     "id": "wire",
+     "name": "低温线缆 / 衰减器 / 连接器",
+     "group": "布线",
+     "wave": 1,
+     "role": "每个比特要好几根同轴线，线多了既漏热又占地方。",
+     "cos": [
+      "~Coax Co / Delft Circuits|未上市",
+      "?APH|安费诺",
+      "?TEL|泰科",
+      "?CRS|特种合金线材"
+     ],
+     "kw": [
+      "cryogenic cable",
+      "coaxial"
+     ],
+     "m": "cyl .02 2.1 @-.3 .62 .2;cyl .02 2.1 @-.1 .62 -.3;cyl .02 2.1 @.3 .62 .1;cyl .02 2.1 @.1 .62 .35",
+     "eff": "布线密度是扩展瓶颈——多路复用 / 低温 CMOS 是解法。"
+    },
+    {
+     "id": "amp",
+     "name": "低温放大器（HEMT / 参量放大）",
+     "group": "布线",
+     "wave": 1,
+     "role": "把极微弱的读出信号放大而不引入噪声。",
+     "cos": [
+      "~Low Noise Factory|未上市",
+      "?MTSI|MACOM",
+      "?QRVO|Qorvo"
+     ],
+     "kw": [
+      "low noise amplifiers",
+      "cryogenic amplifiers"
+     ],
+     "m": "box .15 .1 .15 @-.42 .3 0;box .15 .1 .15 @.42 .3 0"
+    },
+    {
+     "id": "ctrl",
+     "name": "室温测控电子（任意波形 / 微波源）",
+     "group": "测控",
+     "wave": 1,
+     "role": "产生和读取控制比特的微波脉冲。",
+     "cos": [
+      "?KEYS|是德，量子测控系统",
+      "~Quantum Machines|未上市",
+      "~Zurich Instruments|罗德与施瓦茨旗下",
+      "~Qblox|未上市",
+      "~NATI|NI 已并入艾默生（代码已无行情）"
+     ],
+     "kw": [
+      "quantum control",
+      "arbitrary waveform",
+      "microwave signal generators",
+      "test and measurement"
+     ],
+     "m": "box .6 1.6 .6 @2.3 .1 0",
+     "eff": "控制精度和串扰直接决定门保真度。"
+    },
+    {
+     "id": "fpga",
+     "name": "FPGA / 高速 ADC-DAC",
+     "group": "测控",
+     "wave": 1,
+     "role": "测控机柜里的核心芯片。",
+     "cos": [
+      "?AMD|赛灵思 RFSoC",
+      "?ADI|数据转换器",
+      "?TXN|德州仪器",
+      "?LSCC|Lattice",
+      "?MCHP|Microchip"
+     ],
+     "kw": [
+      "data converters",
+      "rf-sampling"
+     ],
+     "m": "box .5 .12 .5 @2.3 1.15 0"
+    },
+    {
+     "id": "qec",
+     "name": "纠错解码（GPU / 专用芯片）",
+     "group": "纠错",
+     "wave": 1,
+     "role": "纠错要在微秒级实时解码，GPU / FPGA 与量子处理器混合部署。",
+     "cos": [
+      "?NVDA|CUDA-Q / NVQLink",
+      "?AMD|FPGA 解码",
+      "IBM|qLDPC 码",
+      "~Riverlane|未上市"
+     ],
+     "kw": [
+      "quantum error correction"
+     ],
+     "m": "box .6 .5 .6 @2.3 -1.3 0",
+     "eff": "解码速度必须快过错误累积速度。",
+     "trigger": "实时纠错在更大码距上演示成功——整个板块最重要的技术触发点。"
+    },
+    {
+     "id": "sw",
+     "name": "量子软件 / 编译器 / 算法",
+     "group": "软件",
+     "wave": 2,
+     "role": "把问题翻译成量子电路。",
+     "cos": [
+      "IBM|Qiskit",
+      "?GOOGL|Cirq",
+      "?NVDA|CUDA-Q",
+      "QUBT|应用软件",
+      "~Classiq / Q-CTRL|未上市",
+      "ZPTA|Zapata 已退市"
+     ],
+     "kw": [
+      "quantum software",
+      "quantum algorithms"
+     ]
+    },
+    {
+     "id": "cloud",
+     "name": "量子云接入",
+     "group": "云",
+     "wave": 2,
+     "role": "企业和科研用户通过云按次付费使用。",
+     "cos": [
+      "?AMZN|Braket",
+      "?MSFT|Azure Quantum",
+      "?GOOGL|Quantum AI",
+      "IBM|Quantum Network",
+      "IONQ|",
+      "RGTI|",
+      "QBTS|Leap 云"
+     ],
+     "kw": [
+      "quantum cloud",
+      "quantum computing as a service"
+     ],
+     "trigger": "云上用量和企业合同额（bookings）显著放大。"
+    },
+    {
+     "id": "app",
+     "name": "应用客户：药物 / 材料 / 金融优化",
+     "group": "应用",
+     "wave": 2,
+     "role": "真正付钱的用户，目前多是试点。",
+     "cos": [
+      "?JPM|摩根大通",
+      "?HON|霍尼韦尔",
+      "?MRNA|Moderna × IBM",
+      "?BA|波音",
+      "?HSBC|汇丰"
+     ],
+     "kw": [],
+     "trigger": "出现可验证的“量子优势”商业案例。"
     }
-  ]
+   ],
+   "edges": []
+  },
+  {
+   "id": "ion",
+   "name": "离子阱 / 中性原子量子计算机",
+   "icon": "⚛️",
+   "model": "custom",
+   "product": "把 IonQ / Quantinuum 那种机器拆开：真空腔、激光、光学、探测",
+   "summary": "这条路线不需要稀释制冷机，但离不开高精度激光和超高真空：用激光把单个原子囚禁、冷却、操控。瓶颈是激光系统的稳定性和光学集成度。",
+   "nodes": [
+    {
+     "id": "oem",
+     "name": "整机厂",
+     "group": "整机",
+     "wave": 1,
+     "role": "离子阱、中性原子、光子路线的整机公司。",
+     "cos": [
+      "IONQ|离子阱",
+      "QNT|Quantinuum",
+      "?HON|Quantinuum 控股股东",
+      "INFQ|Infleqtion，中性原子",
+      "XNDU|Xanadu，光子",
+      "QUBT|光子",
+      "~QuEra / Pasqal / Atom Computing|未上市",
+      "~PsiQuantum|未上市"
+     ],
+     "kw": [
+      "trapped ion",
+      "neutral atom",
+      "photonic quantum"
+     ],
+     "trigger": "两比特门保真度突破 99.99%；比特数上千并保持保真度。"
+    },
+    {
+     "id": "trap",
+     "name": "离子阱芯片 / 原子阵列",
+     "group": "芯片",
+     "wave": 1,
+     "role": "刻有电极的芯片，把离子悬浮在表面上方。",
+     "cos": [
+      "IONQ|自有 SkyWater 产线",
+      "?HON|霍尼韦尔制造",
+      "~Sandia / Infineon|国家实验室 / 欧洲",
+      "?IFNNY|英飞凌离子阱"
+     ],
+     "kw": [
+      "ion trap"
+     ],
+     "m": "box .26 .03 .26 @0 0 0"
+    },
+    {
+     "id": "vac",
+     "name": "超高真空腔 / 真空泵",
+     "group": "真空",
+     "wave": 1,
+     "role": "腔体里的真空度接近外太空。",
+     "cos": [
+      "?MKSI|MKS，真空与测量",
+      "?A|安捷伦真空",
+      "~Pfeiffer / Edwards|欧洲上市",
+      "?ATLKY|阿特拉斯·科普柯"
+     ],
+     "kw": [
+      "vacuum pumps",
+      "vacuum technology",
+      "ultra-high vacuum"
+     ],
+     "m": "tor .5 .12 @0 0 0;cyl .2 .5 @.95 -.45 .5"
+    },
+    {
+     "id": "laser",
+     "name": "激光器",
+     "group": "光学",
+     "wave": 1,
+     "role": "每种操作对应特定波长的窄线宽激光。",
+     "cos": [
+      "COHR|Coherent",
+      "LITE|Lumentum",
+      "IPGP|IPG",
+      "LASR|nLIGHT",
+      "~Toptica / M Squared|未上市",
+      "?NOVT|Novanta"
+     ],
+     "kw": [
+      "lasers",
+      "laser systems",
+      "photonics"
+     ],
+     "m": "box .5 .25 .3 @-1.5 -.55 .6;box .5 .25 .3 @-1.5 -.55 -.6",
+     "eff": "激光稳定性决定门保真度和速度。"
+    },
+    {
+     "id": "mod",
+     "name": "声光 / 电光调制器",
+     "group": "光学",
+     "wave": 1,
+     "role": "把一束激光切成能单独控制每个原子的很多束。",
+     "cos": [
+      "?COHR|Coherent",
+      "~G&H / AA Opto|海外",
+      "LWLG|电光聚合物",
+      "?MTSI|驱动芯片"
+     ],
+     "kw": [
+      "acousto-optic",
+      "electro-optic modulators",
+      "optical modulators"
+     ],
+     "m": "box .2 .2 .2 @-.85 -.6 .5;box .2 .2 .2 @-.85 -.6 -.5"
+    },
+    {
+     "id": "optics",
+     "name": "光学元件 / 物镜 / 光纤",
+     "group": "光学",
+     "wave": 1,
+     "role": "反射镜、透镜、高数值孔径物镜、保偏光纤。",
+     "cos": [
+      "?GLW|康宁",
+      "?COHR|",
+      "LITE|",
+      "~Thorlabs / Edmund|未上市",
+      "?TDY|Teledyne",
+      "POET|光子集成",
+      "~Jenoptik|德国上市"
+     ],
+     "kw": [
+      "optical components",
+      "precision optics",
+      "photonic integrated circuits"
+     ],
+     "m": "cyl .1 .05 @-.4 -.5 .3 rz;cyl .1 .05 @.5 -.5 -.4 rz;cyl .12 .3 @0 .65 0",
+     "trigger": "光子集成把一桌子光学器件缩到芯片上。"
+    },
+    {
+     "id": "det",
+     "name": "单光子探测器 / 科学相机",
+     "group": "探测",
+     "wave": 1,
+     "role": "读出每个原子的状态。",
+     "cos": [
+      "?TDY|Teledyne",
+      "~Hamamatsu|日本上市",
+      "~Andor（牛津仪器）|伦敦上市",
+      "~ID Quantique|已被 IonQ 收购",
+      "?ON|安森美 SPAD"
+     ],
+     "kw": [
+      "single-photon",
+      "scientific cameras",
+      "photon detection"
+     ],
+     "m": "box .3 .3 .4 @0 1.25 0"
+    },
+    {
+     "id": "rf",
+     "name": "射频 / 微波源与控制电子",
+     "group": "测控",
+     "wave": 1,
+     "role": "驱动电极和调制器。",
+     "cos": [
+      "?KEYS|是德",
+      "?AMD|FPGA",
+      "?ADI|",
+      "~Quantum Machines|未上市"
+     ],
+     "kw": [
+      "signal generators"
+     ],
+     "m": "box .5 .3 .4 @1.5 -.55 -.5;box .6 1.4 .6 @2.7 -.2 0"
+    },
+    {
+     "id": "table",
+     "name": "光学平台 / 隔振 / 环境控制",
+     "group": "真空",
+     "wave": 1,
+     "role": "隔绝振动和温度漂移。",
+     "cos": [
+      "?MKSI|Newport",
+      "~TMC（Ametek）|",
+      "?AME|阿美特克"
+     ],
+     "kw": [
+      "vibration isolation"
+     ],
+     "m": "box 3.7 .12 2.3 @0 -.85 0"
+    },
+    {
+     "id": "qec",
+     "name": "纠错 / 经典协处理",
+     "group": "纠错",
+     "wave": 1,
+     "role": "与超导路线相同：实时解码。",
+     "cos": [
+      "?NVDA|",
+      "?AMD|",
+      "QNT|已演示逻辑比特"
+     ],
+     "kw": [],
+     "trigger": "逻辑比特错误率低于物理比特，并随规模继续下降。"
+    },
+    {
+     "id": "net",
+     "name": "量子网络 / 量子存储",
+     "group": "网络",
+     "wave": 1,
+     "role": "把多台机器用光子连起来。",
+     "cos": [
+      "IONQ|Lightsynq / ID Quantique",
+      "QUBT|",
+      "?CSCO|思科量子网络",
+      "~Qunnect / Aliro|未上市"
+     ],
+     "kw": [
+      "quantum networking",
+      "quantum communication"
+     ]
+    },
+    {
+     "id": "cloud",
+     "name": "云接入与应用",
+     "group": "云",
+     "wave": 2,
+     "role": "同样通过三大云出售。",
+     "cos": [
+      "?AMZN|Braket",
+      "?MSFT|Azure Quantum",
+      "IONQ|",
+      "QNT|"
+     ],
+     "kw": []
+    }
+   ],
+   "edges": []
+  },
+  {
+   "id": "pqc",
+   "name": "抗量子加密（PQC）",
+   "icon": "🔐",
+   "model": "stack",
+   "product": "银行和政府把加密系统换成“量子计算机也破不了”的版本",
+   "summary": "量子计算第一个有确定时间表的 B 端需求：“先窃取、后解密”的威胁让政府和金融机构现在就必须迁移。",
+   "nodes": [
+    {
+     "id": "cust",
+     "name": "被强制迁移的客户",
+     "group": "客户",
+     "wave": 2,
+     "role": "联邦机构、银行、电信、云——按 NIST 时间表淘汰旧算法。",
+     "cos": [
+      "?JPM|摩根大通",
+      "?V|Visa",
+      "?T|AT&T",
+      "?LMT|国防承包商"
+     ],
+     "kw": [],
+     "trigger": "强制迁移期限临近；破解 RSA 所需比特数的估计被大幅下修。"
+    },
+    {
+     "id": "secsw",
+     "name": "安全软件厂商",
+     "group": "软件",
+     "wave": 2,
+     "role": "在产品里内置 PQC 算法并卖迁移服务。",
+     "cos": [
+      "?PANW|Palo Alto",
+      "?CRWD|CrowdStrike",
+      "?ZS|Zscaler",
+      "?NET|已默认启用 PQC",
+      "?FTNT|Fortinet",
+      "?OKTA|",
+      "?CHKP|Check Point"
+     ],
+     "kw": [
+      "post-quantum",
+      "quantum-safe",
+      "quantum-resistant"
+     ]
+    },
+    {
+     "id": "pki",
+     "name": "证书 / 密钥管理 / 加密盘点",
+     "group": "软件",
+     "wave": 2,
+     "role": "先盘点企业里哪里用了旧算法，再替换证书和密钥。",
+     "cos": [
+      "IBM|PQC 标准主要贡献者",
+      "~DigiCert / Entrust / Keyfactor|未上市",
+      "~Thales|巴黎上市",
+      "?ACN|迁移咨询"
+     ],
+     "kw": [
+      "cryptographic",
+      "key management",
+      "encryption solutions"
+     ]
+    },
+    {
+     "id": "chip",
+     "name": "PQC 安全芯片 / HSM",
+     "group": "芯片",
+     "wave": 2,
+     "role": "把抗量子算法做进安全芯片、硬件加密机。",
+     "cos": [
+      "LAES|SEALSQ",
+      "?NXPI|恩智浦",
+      "?IFNNY|英飞凌",
+      "?MCHP|Microchip",
+      "RMBS|Rambus，PQC IP",
+      "?STM|意法"
+     ],
+     "kw": [
+      "secure microcontrollers",
+      "hardware security",
+      "secure elements"
+     ]
+    },
+    {
+     "id": "sym",
+     "name": "密钥协商 / 量子随机数",
+     "group": "芯片",
+     "wave": 2,
+     "role": "对称密钥方案和量子随机数发生器。",
+     "cos": [
+      "ARQQ|Arqit",
+      "QUBT|量子随机数",
+      "BTQ|区块链 PQC",
+      "~Quantinuum Quantum Origin|QNT 旗下",
+      "QNT|"
+     ],
+     "kw": [
+      "quantum encryption",
+      "quantum random number",
+      "quantum cybersecurity"
+     ]
+    },
+    {
+     "id": "qkd",
+     "name": "量子密钥分发（QKD）",
+     "group": "网络",
+     "wave": 1,
+     "role": "用量子态在物理层分发密钥。",
+     "cos": [
+      "IONQ|ID Quantique",
+      "~Toshiba|日本上市",
+      "?CIEN|Ciena",
+      "?CSCO|思科",
+      "?NOK|诺基亚"
+     ],
+     "kw": [
+      "quantum key distribution"
+     ]
+    },
+    {
+     "id": "netgear",
+     "name": "网络设备升级",
+     "group": "网络",
+     "wave": 2,
+     "role": "路由器、防火墙、VPN 要换支持 PQC 的固件和硬件。",
+     "cos": [
+      "?CSCO|思科",
+      "?HPE|Juniper",
+      "?ANET|Arista",
+      "?FFIV|F5",
+      "?CIEN|"
+     ],
+     "kw": []
+    },
+    {
+     "id": "cloud",
+     "name": "云与浏览器",
+     "group": "云",
+     "wave": 2,
+     "role": "云和浏览器先行默认开启。",
+     "cos": [
+      "?AMZN|",
+      "?MSFT|",
+      "?GOOGL|Chrome",
+      "?AAPL|iMessage PQ3"
+     ],
+     "kw": []
+    }
+   ],
+   "edges": []
+  }
+ ]
 }
