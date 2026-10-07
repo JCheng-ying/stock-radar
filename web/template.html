@@ -145,13 +145,27 @@ tr.row{cursor:pointer}tr.row:hover td{background:var(--panel2)}
 .hint{position:absolute;left:12px;top:10px;font-size:11px;color:var(--faint);pointer-events:none}
 .auto{font-size:10px;padding:0 5px;border-radius:4px;border:1px dashed var(--faint);color:var(--muted)}
 @media (max-width:820px){.pv{grid-template-columns:1fr}.plist{max-height:220px;order:2}#stage{height:420px}}
+
+details{margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+details>summary{cursor:pointer;color:var(--accent);font-size:12px;list-style:none;user-select:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary:before{content:"▸ ";}details[open]>summary:before{content:"▾ ";}
+.rule{font-size:12px;color:var(--muted);margin:2px 0 0}
+.src{font-size:11px;color:var(--faint)}.src a{color:var(--faint)}
+table.calc td,table.calc th{white-space:normal;font-size:12px;vertical-align:top}
+table.fin td,table.fin th{font-size:12px;padding:4px 8px}
+table.fin td:first-child{position:sticky;left:0;background:var(--panel);color:var(--muted)}
+table.fin tr.sep td{border-top:1px solid var(--line)}
+.live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--down);margin-right:4px;vertical-align:middle}
+.doc h3{font-size:14px;color:var(--text);margin:18px 0 6px}.doc p,.doc li{font-size:13px;color:var(--muted);margin:4px 0}.doc ul{margin:4px 0;padding-left:18px}
+.doc code{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:var(--panel2);padding:1px 5px;border-radius:4px;color:var(--text)}
 </style>
 </head>
 <body>
 <header>
   <div class="hd">
     <h1><b>Stock Radar</b> · 产业链信息处理器</h1>
-    <span class="asof" id="asof"></span>
+    <span class="asof" id="asof"></span><span class="asof" id="livest"></span>
     <input id="q" placeholder="搜索代码或公司名…" autocomplete="off">
   </div>
   <nav id="nav"></nav>
@@ -202,14 +216,14 @@ function bars(vals,{w=150,h=46,color="var(--accent)",signed=false}={}){
 }
 
 /* ---------- 导航 ---------- */
-const TABS=[["overview","总览"],...S.map(s=>["s:"+s.id,s.name]),["all","全部公司"],["alerts","推送记录"]];
+const TABS=[["overview","总览"],...S.map(s=>["s:"+s.id,s.name]),["earn","财报"],["all","全部公司"],["alerts","推送记录"],["method","判断标准"]];
 let state={tab:"overview",chain:{},node:{},prod:{},part:{},sort:{k:"sig",d:-1},filter:{sector:"",signal:""}};
 function go(tab){state.tab=tab;history.replaceState(null,"","#"+tab);render();window.scrollTo(0,0)}
 function render(){
   $("#nav").innerHTML=TABS.map(([k,n])=>`<button class="${state.tab===k?"on":""}" onclick="go('${k}')">${n}</button>`).join("");
   const t=state.tab;
-  $("#app").innerHTML=(t==="overview"?overview():t==="all"?allCos():t==="alerts"?alertsPage():sectorPage(S.find(s=>"s:"+s.id===t)||S[0]))+legend();
-  mountViewer();
+  $("#app").innerHTML=(t==="overview"?overview():t==="all"?allCos():t==="alerts"?alertsPage():t==="earn"?earnPage():t==="method"?methodPage():sectorPage(S.find(s=>"s:"+s.id===t)||S[0]))+legend();
+  mountViewer();applyLive();
 }
 function legend(){return `<div class="legend">颜色约定：<span class="up">红涨</span> / <span class="down">绿跌</span>；情绪热度 <span style="color:var(--cold)">蓝 = 悲观</span>、<span style="color:var(--hot)">橙 = 乐观</span>。所有分数和信号都是按固定规则从公开数据算出来的信息整理，每一项都附有依据，仅供个人研究参考，不构成投资建议。数据来源：Yahoo Finance（行情 / 财报 / 一致预期）、SEC EDGAR（RPO、8-K）、CNN（恐贪指数）、Summizer 图谱（产业消息）。</div>`}
 
@@ -217,7 +231,7 @@ function legend(){return `<div class="legend">颜色约定：<span class="up">�
 function overview(){
   const f=M.funding, s=M.sentiment;
   const fItems=f.items.map(i=>`<figure><figcaption><span>${esc(i.name)}</span><b class="num">${i.last}${i.unit}</b></figcaption>${line(i.series,{h:40})}<figcaption><span>一年 <span class="num ${cls(i.d1y)}">${has(i.d1y)?(i.d1y>0?"+":"")+(i.unit==="%"?(i.d1y*100).toFixed(0)+"bp":i.d1y.toFixed(1)):"—"}</span></span><span>分位 ${num(i.pct1y,0)}%</span></figcaption></figure>`).join("");
-  const parts=s.parts.map(p=>`<div style="margin-top:12px"><div style="display:flex;justify-content:space-between"><b>${esc(p.name)}</b><span class="num">${esc(p.value)}</span></div>${heatOnly(p.heat)}<div class="small muted">${esc(p.text)}</div></div>`).join("");
+  const parts=s.parts.map(p=>`<div style="margin-top:12px"><div style="display:flex;justify-content:space-between"><b>${esc(p.name)}</b><span class="num">${esc(p.value)} <span class="faint">→ 热度 ${p.heat}</span></span></div>${heatOnly(p.heat)}<div class="small muted">${esc(p.text)}</div>${p.rule?`<div class="rule">算法：${esc(p.rule)}</div>`:""}${p.src?`<div class="src">来源：${p.url?`<a href="${safeUrl(p.url)}" target="_blank" rel="noopener">${esc(p.src)}</a>`:esc(p.src)}</div>`:""}</div>`).join("");
   const E=Object.entries(C);
   const buy=E.filter(([,c])=>c.signal.level===2).sort((a,b)=>(b[1].fund.score+b[1].expect.score)-(a[1].fund.score+a[1].expect.score)).slice(0,12);
   const risk=E.filter(([,c])=>c.signal.level===-2).sort((a,b)=>b[1].heat-a[1].heat).slice(0,12);
@@ -228,13 +242,20 @@ function overview(){
     <div class="card"><h3>资金面 · 钱贵不贵（以年为周期）</h3>
       <div class="big">${esc(f.regime)} <span class="muted small">流动性友好度 ${f.score}/100</span></div>
       <ul class="why">${f.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>
-      <div class="mini">${fItems}</div></div>
+      <div class="mini">${fItems}</div>
+      <details><summary>怎么算出来的：逐项计分（合计 ${f.score} 分）</summary>
+        <table class="calc"><tr><th class="l">指标</th><th class="l">当前值</th><th class="l">计分规则</th><th>得分</th></tr>
+        ${f.calc.map(c=>`<tr><td class="l"><b>${esc(c.name)}</b>${c.src?`<div class="src">来源：<a href="${safeUrl(c.url)}" target="_blank" rel="noopener">${esc(c.src)}</a></div>`:""}</td><td class="l num">${esc(c.value)}<div class="rule">${esc(c.read)}</div></td><td class="l muted">${esc(c.rule)}</td><td class="num ${c.pts>0&&c.name!=="起始分"?"up":c.pts<0?"down":""}">${c.name==="起始分"?c.pts:(c.pts>0?"+":"")+c.pts}</td></tr>`).join("")}
+        <tr><td class="l" colspan="3"><b>合计</b>（限制在 0~100）<div class="rule">≥ 62 判为「钱便宜（宽松）」，≤ 38 判为「钱贵（紧缩）」，中间为「中性」。逻辑：利率上行 = 钱变贵 = 远期现金流折现更狠 = 科技成长股估值承压。</div></td><td class="num"><b>${f.score}</b></td></tr></table>
+        <div class="src" style="margin-top:6px">全部用日线收盘价，“一年变化”= 现值 − 252 个交易日前的值。没有直接用联邦基金利率（FRED 接口不稳定），用 3 个月美债收益率作为政策利率的代理。</div>
+      </details></div>
     <div class="card"><h3>情绪面 · 现在是什么点位</h3>
       <div class="big">${esc(s.zone||"—")} <span class="muted small">热度 ${s.heat}/100</span></div>
       ${heatBar(s.heat)}
       <div class="note">${esc(s.verdict||"")}</div>
       ${parts}
       ${s.why.map(w=>`<div class="small muted" style="margin-top:8px">${esc(w)}</div>`).join("")}
+      <div class="rule" style="margin-top:10px">综合热度 ${s.heat} = 以上 ${s.parts.length} 项热度的简单平均（${s.parts.map(p=>p.heat).join(" + ")}）÷ ${s.parts.length}。分区：≤20 极度悲观，≤38 偏悲观，39~61 中性，62~77 偏乐观，≥78 极度乐观。极度悲观时利空已充分定价 → 找机会；极度乐观时利好已被消化 → 防回调。</div>
       ${s.margin&&s.margin.text?`<div class="small muted" style="margin-top:8px">融资余额：${esc(s.margin.text)}</div>`:""}
     </div>
   </div>
@@ -275,8 +296,14 @@ function sectorPage(s){
     <div class="big lv${w.level}" style="font-size:19px">${esc(w.stage)}${w.diverging?` <span class="chip" style="font-size:11px;font-weight:400">分化上涨</span>`:""}</div>
     <div class="small muted" style="margin-top:4px">${esc(w.desc)}</div>
     ${has(w.score)?`<div class="bar" style="margin-top:10px"><i style="width:${w.score}%"></i></div>
-    <ul class="checks">${w.checks.map(c=>`<li><span class="${c.ok===null?"faint":c.ok?"ck1":"ck0"}">${c.ok===null?"·":c.ok?"✓":"✗"}</span><span>${esc(c.name)}<div class="t">${esc(c.text)}</div></span></li>`).join("")}</ul>
-    <div class="kv"><div><span>近6月(中位)</span><b class="num ${cls(w.r6m)}">${pct(w.r6m)}</b></div><div><span>近1年(中位)</span><b class="num ${cls(w.r1y)}">${pct(w.r1y)}</b></div><div><span>RSI 中位</span><b class="num">${num(w.rsi_med,0)}</b></div></div>`:`<div class="empty">这一层暂时没有足够的纯正上市标的来做统计。</div>`}
+    <ul class="checks">${w.checks.map(c=>`<li><span class="${c.ok===null?"faint":c.ok?"ck1":"ck0"}">${c.ok===null?"·":c.ok?"✓":"✗"}</span><span>${esc(c.name)}<div class="t">${esc(c.text)}</div><div class="src">标准：${esc(c.rule||"")}</div></span></li>`).join("")}</ul>
+    <div class="kv"><div><span>近6月(中位)</span><b class="num ${cls(w.r6m)}">${pct(w.r6m)}</b></div><div><span>近1年(中位)</span><b class="num ${cls(w.r1y)}">${pct(w.r1y)}</b></div><div><span>RSI 中位</span><b class="num">${num(w.rsi_med,0)}</b></div></div>
+    <details><summary>为什么是「${esc(w.stage)}」+ ${w.members?w.members.length:0} 只成分股明细</summary>
+      <div class="rule"><b style="color:var(--text)">判定路径：</b>${esc(w.path||"")}</div>
+      <div class="rule">阶段规则见「判断标准」页。数据来源：价格 = Yahoo Finance 日线；收入 / 毛利率 / EBITDA = Yahoo Finance 季报；RPO = SEC EDGAR XBRL。</div>
+      <div class="tw" style="margin-top:8px;max-height:320px"><table class="fin"><tr><th class="l">代码</th><th>3月</th><th>50日线</th><th>200日线</th><th>收入同比</th><th>毛利率Δ</th><th>EBITDA率Δ</th><th>RPO同比</th></tr>
+      ${(w.members||[]).map(m=>`<tr class="row" onclick="openCo('${m.t}')"><td class="tk">${m.t}</td><td class="num ${cls(m.r3m)}">${pct(m.r3m)}</td><td>${m.a50?"上":"<span class='faint'>下</span>"}</td><td>${m.a200===null?"—":m.a200?"上":"<span class='faint'>下</span>"}</td><td class="num ${cls(m.rev)}">${pct(m.rev)}</td><td class="num ${cls(m.gm)}">${pp(m.gm)}</td><td class="num ${cls(m.em)}">${pp(m.em)}</td><td class="num ${cls(m.rpo)}">${pct(m.rpo)}</td></tr>`).join("")}</table></div>
+    </details>`:`<div class="empty">这一层暂时没有足够的纯正上市标的来做统计。</div>`}
   </div>`).join("");
   const ind=Object.entries(s.industry).map(([k,v])=>`<div class="card"><h3>${esc(k)}</h3><div class="small">${esc(v)}</div></div>`).join("");
   const notes=(s.notes||[]).map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}</div>`).join("");
@@ -397,7 +424,7 @@ function setExplode(x,fromSlider){if(!V)return;V.tt=+x;V.idle=0;if(!fromSlider){
 function resetView(){if(!V)return;V.th=.75;V.ph=1.12;V.rad=V.rad0;V.idle=0;setExplode(1);const p=curProd();if(p&&state.part[p.s.id+"/"+p.ch.id])pickPart(state.part[p.s.id+"/"+p.ch.id])}
 function coRow(t,note,core,auto){
   const c=C[t],k=c.tech,f=c.fund;
-  return `<tr class="row" onclick="openCo('${t}')"><td><span class="tk ${core===false&&!auto?"nc":""}">${t}</span>${auto?` <span class="auto">自动</span>`:core===false?` <span class="faint small" title="业务多元，这个板块只占它一部分，不计入浪位统计">◦</span>`:""} <span class="muted small">${esc(c.name).slice(0,20)}</span></td><td class="wrap l">${esc(note||"")}</td><td class="num">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td>${sc(f.score)}</td><td>${sc(c.expect.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td></tr>`;
+  return `<tr class="row" onclick="openCo('${t}')"><td><span class="tk ${core===false&&!auto?"nc":""}">${t}</span>${auto?` <span class="auto">自动</span>`:core===false?` <span class="faint small" title="业务多元，这个板块只占它一部分，不计入浪位统计">◦</span>`:""} <span class="muted small">${esc(c.name).slice(0,20)}</span></td><td class="wrap l">${esc(note||"")}</td><td class="num" data-lp="${t}">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}" data-lc="${t}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td>${sc(f.score)}</td><td>${sc(c.expect.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td></tr>`;
 }
 
 /* ---------- 全部公司 ---------- */
@@ -415,9 +442,142 @@ function allCos(){
   </div>
   <div class="small muted" style="margin-bottom:8px">${rows.length} 家 · 点表头排序 · 点一行看五个面的详情</div>
   <div class="tw" style="max-height:78vh"><table><tr>${COLS.map(([k,n])=>`<th class="s ${k==="t"||k==="sec"?"l":""}" onclick="sortBy('${k}')">${n}${state.sort.k===k?(d>0?" ↑":" ↓"):""}</th>`).join("")}</tr>
-  ${rows.map(([t,c])=>{const k=c.tech,f=c.fund,e=c.expect;return`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,18)}</span></td><td class="l small muted">${[...new Set(c.members.map(m=>m.sector_name))].join(" / ")}</td><td class="num">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r1m)}">${pct(k.r1m)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td class="num ${cls(f.gm_yoy)}">${pp(f.gm_yoy)}</td><td class="num">${pct0(f.em)}</td><td class="num ${cls(f.rpo_yoy)}">${pct(f.rpo_yoy)}</td><td class="num ${cls(e.upside)}">${pct(e.upside)}</td><td class="num">${num(c.capital.fpe)}</td><td>${sc(f.score)}</td><td>${sc(e.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td><td class="num small">${e.next_earnings||"—"}</td></tr>`}).join("")}</table></div>`;
+  ${rows.map(([t,c])=>{const k=c.tech,f=c.fund,e=c.expect;return`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,18)}</span></td><td class="l small muted">${[...new Set(c.members.map(m=>m.sector_name))].join(" / ")}</td><td class="num" data-lp="${t}">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}" data-lc="${t}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r1m)}">${pct(k.r1m)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td class="num ${cls(f.gm_yoy)}">${pp(f.gm_yoy)}</td><td class="num">${pct0(f.em)}</td><td class="num ${cls(f.rpo_yoy)}">${pct(f.rpo_yoy)}</td><td class="num ${cls(e.upside)}">${pct(e.upside)}</td><td class="num">${num(c.capital.fpe)}</td><td>${sc(f.score)}</td><td>${sc(e.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td><td class="num small">${e.next_earnings||"—"}</td></tr>`}).join("")}</table></div>`;
 }
 function sortBy(k){state.sort=state.sort.k===k?{k,d:-state.sort.d}:{k,d:-1};render()}
+
+
+/* ---------- 财报明细 ---------- */
+const p1=x=>pct0(x,1), n2=x=>num(x,2);
+const FR=[["rev","收入",money,0],["cogs","营业成本",money,0],["gp","毛利",money,0],["gm","毛利率（产品力）",p1,1],["rd","研发费用",money,0],["rdp","研发占收入",p1,1],["sga","销售与管理费用",money,0],["op","营业利润",money,0],["om","营业利润率",p1,1],["ebitda","EBITDA",money,0],["em","EBITDA 利润率（经营效率）",p1,1],["ni","净利润",money,0],["nm","净利率",p1,1],["eps","稀释 EPS",n2,0],["ocf","经营现金流",money,0,1],["capex","资本开支",money,0],["fcf","自由现金流",money,0],["fcfm","自由现金流率",p1,1],["sbc","股权激励费用",money,0],["cash","现金及短期投资",money,0,1],["debt","总债务",money,0],["defrev","递延收入",money,0],["inv","存货",money,0],["shares","稀释股数",money,0]];
+function finTable(rows,rpo,annual){
+  if(!rows||!rows.length)return`<div class="empty">数据源没有提供。</div>`;
+  const last=rows[rows.length-1],prev=rows[rows.length-2],yago=annual?prev:rows[rows.length-5];
+  const chg=(k,isR,a,b)=>{if(!a||!b||!has(a[k])||!has(b[k]))return`<td class="faint">—</td>`;if(isR){const d=a[k]-b[k];return`<td class="num ${cls(d)}">${pp(d)}</td>`}if(b[k]===0)return`<td class="faint">—</td>`;const g=(a[k]-b[k])/Math.abs(b[k]);return`<td class="num ${cls(g)}">${pct(g)}</td>`};
+  const R=FR.filter(([k])=>rows.some(r=>has(r[k]))).map(([k,n,f,isR,sep])=>`<tr class="${sep?"sep":""}"><td class="l">${n}</td>${rows.map(r=>`<td class="num">${f(r[k])}</td>`).join("")}${annual?"":chg(k,isR,last,prev)}${chg(k,isR,last,yago)}</tr>`).join("");
+  let rp="";if(rpo&&rpo.length){const by={};rpo.forEach(x=>by[x.end]=x.val);if(rows.some(r=>by[r.end]))rp=`<tr class="sep"><td class="l">RPO 剩余履约义务（长期订单）</td>${rows.map(r=>`<td class="num">${money(by[r.end])}</td>`).join("")}<td colspan="2" class="faint small">SEC</td></tr>`}
+  return `<div class="tw"><table class="fin"><tr><th class="l">${annual?"财年截至":"季度截至"}</th>${rows.map(r=>`<th>${r.end.slice(0,7)}</th>`).join("")}${annual?"":"<th>环比</th>"}<th>同比</th></tr>${R}${rp}</table></div>`;
+}
+function finSection(t,c){
+  const f=c.fund,e=c.expect,E=e.estimates||{},PN={"0q":"本季度","+1q":"下季度","0y":"本财年","+1y":"下财年"};
+  const est=Object.keys(PN).filter(k=>E[k]).map(k=>{const x=E[k];return`<tr><td class="l">${PN[k]}</td><td class="num">${n2(x.eps_avg)}</td><td class="num muted">${n2(x.eps_lo)} ~ ${n2(x.eps_hi)}</td><td class="num ${cls(x.eps_growth)}">${pct(x.eps_growth)}</td><td class="num">${money(x.rev_avg)}</td><td class="num muted">${money(x.rev_lo)} ~ ${money(x.rev_hi)}</td><td class="num ${cls(x.rev_growth)}">${pct(x.rev_growth)}</td><td class="num muted">${num(x.eps_n,0)} / ${num(x.rev_n,0)}</td></tr>`}).join("");
+  const sur=(e.surprises||[]).map(x=>`<tr><td class="l">${esc(x.q)}</td><td class="num">${n2(x.actual)}</td><td class="num">${n2(x.est)}</td><td class="num ${cls(x.pct)}">${pct(x.pct,1)}</td></tr>`).join("");
+  const rx=e.reaction, rep=(c.reports||[]).map(r=>`<a href="${safeUrl(r.url)}" target="_blank" rel="noopener">${esc(r.form)}（${esc(r.date)}）</a>`).join(" · ");
+  return `<h2>财报明细 <small>最近 ${f.quarters.length} 个季度 · 数据抓取于 ${esc((c.fetched||"").replace("T"," "))} UTC · 来源 Yahoo Finance（利润表 / 现金流量表 / 资产负债表）、SEC EDGAR（RPO）</small></h2>
+  <div class="card small">${rx?`最近一次财报：<b>${esc(rx.date)}</b> 发布${has(rx.chg)?`，发布前一日收盘到发布后一个交易日收盘股价 <b class="num ${cls(rx.chg)}">${pct(rx.chg,1)}</b>`:""} · <a href="${safeUrl(rx.url)}" target="_blank" rel="noopener">财报新闻稿原文（8-K）</a>`:"近 120 天没有查到财报 8-K。"}${rep?` · 定期报告原文：${rep}`:""} · 下次财报：<b>${e.next_earnings||"未公布"}</b></div>
+  <h3 style="margin-top:12px">季度</h3>${finTable(f.quarters,f.rpo,false)}
+  <div class="src" style="margin-top:4px">比率类科目的环比 / 同比显示为百分点（pp）变化，金额类显示为增长率。同比 = 与表中第 1 列（一年前同季）相比；数据源最多给 5~6 个季度。</div>
+  ${f.annual&&f.annual.length?`<h3 style="margin-top:14px">年度</h3>${finTable(f.annual,null,true)}`:""}
+  <div class="grid g2" style="margin-top:12px">
+    <div class="card"><h3>分析师一致预期</h3>${est?`<div class="tw" style="border:0"><table class="fin"><tr><th class="l">期间</th><th>EPS 预期</th><th>区间</th><th>同比</th><th>收入预期</th><th>区间</th><th>同比</th><th>分析师数</th></tr>${est}</table></div>`:`<div class="empty">没有分析师预期数据。</div>`}</div>
+    <div class="card"><h3>历次财报 EPS：实际 vs 预期</h3>${sur?`<table class="fin"><tr><th class="l">季度</th><th>实际</th><th>预期</th><th>超预期幅度</th></tr>${sur}</table><div class="src" style="margin-top:4px">实际值与预期值可能一个是 GAAP、一个是调整后口径，出现离谱的幅度时以财报原文为准。</div>`:`<div class="empty">没有数据。</div>`}</div>
+  </div>`;
+}
+
+/* ---------- 财报页：最近已发布 + 即将发布 ---------- */
+function earnPage(){
+  const E=Object.entries(C);
+  const done=E.filter(([,c])=>c.expect.reaction).sort((a,b)=>b[1].expect.reaction.date.localeCompare(a[1].expect.reaction.date)).slice(0,80);
+  const up=E.filter(([,c])=>c.expect.next_earnings&&c.expect.next_earnings>=DATA.as_of).sort((a,b)=>a[1].expect.next_earnings.localeCompare(b[1].expect.next_earnings)).slice(0,80);
+  const sec=c=>[...new Set(c.members.map(m=>m.sector_name))].join("/");
+  return `<h2 style="margin-top:6px">即将发布财报 <small>日期和预期来自 Yahoo Finance；财报日前 1 天到后 3 天，这家公司每次刷新都会重新抓数据</small></h2>
+  <div class="tw" style="max-height:60vh"><table><tr><th class="l">日期</th><th class="l">公司</th><th class="l">板块</th><th>EPS 预期</th><th>收入预期</th><th>预期收入同比</th><th>上次超预期</th><th>90天预测修正</th><th>热度</th><th>点位</th></tr>
+  ${up.map(([t,c])=>{const e=c.expect,q=(e.estimates||{})["0q"]||{};return`<tr class="row" onclick="openCo('${t}')"><td class="num">${e.next_earnings}</td><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,22)}</span></td><td class="l small muted">${sec(c)}</td><td class="num">${n2(e.eps_est)}</td><td class="num">${money(e.rev_est)}</td><td class="num ${cls(q.rev_growth)}">${pct(q.rev_growth)}</td><td class="num ${cls(e.last_surprise)}">${pct(e.last_surprise)}</td><td class="num ${cls(e.rev_ny)}">${pct(e.rev_ny)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td></tr>`}).join("")||`<tr><td colspan="10" class="empty">暂无</td></tr>`}</table></div>
+  <h2>最近已发布 <small>按财报 8-K（条款 2.02）的提交日期排序；股价反应 = 发布前一日收盘 → 发布后一个交易日收盘</small></h2>
+  <div class="tw" style="max-height:70vh"><table><tr><th class="l">发布日</th><th class="l">公司</th><th class="l">板块</th><th>季度截至</th><th>收入</th><th>收入同比</th><th>毛利率</th><th>毛利率Δ</th><th>EBITDA率</th><th>EPS</th><th>EPS超预期</th><th>RPO同比</th><th>股价反应</th><th>原文</th></tr>
+  ${done.map(([t,c])=>{const f=c.fund,e=c.expect,r=e.reaction;return`<tr class="row" onclick="openCo('${t}')"><td class="num">${r.date}</td><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,20)}</span></td><td class="l small muted">${sec(c)}</td><td class="num small">${f.q_end||"—"}</td><td class="num">${money((f.quarters[f.quarters.length-1]||{}).rev)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm,1)}</td><td class="num ${cls(f.gm_yoy)}">${pp(f.gm_yoy)}</td><td class="num">${pct0(f.em,1)}</td><td class="num">${n2(f.eps)}</td><td class="num ${cls(e.last_surprise)}">${pct(e.last_surprise)}</td><td class="num ${cls(f.rpo_yoy)}">${pct(f.rpo_yoy)}</td><td class="num ${cls(r.chg)}">${pct(r.chg,1)}</td><td><a href="${safeUrl(r.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">8-K</a></td></tr>`}).join("")||`<tr><td colspan="14" class="empty">暂无</td></tr>`}</table></div>
+  <div class="src" style="margin-top:6px">“季度截至”如果明显早于发布日，说明数据源还没更新到这份新财报——以 8-K 原文为准，下次刷新会补上。</div>`;
+}
+
+/* ---------- 实时报价（腾讯行情，浏览器直接取） ---------- */
+const LIVE={};let liveAt=null;
+async function fetchLive(ts){
+  for(let i=0;i<ts.length;i+=60){
+    try{const r=await fetch("https://qt.gtimg.cn/q="+ts.slice(i,i+60).map(t=>"us"+t.replace("-",".")).join(","),{cache:"no-store"});
+      const txt=new TextDecoder("gbk").decode(await r.arrayBuffer());
+      txt.split(";").forEach(row=>{const m=row.match(/v_us([A-Z.]+)="(.*)"/);if(!m)return;const a=m[2].split("~"),p=parseFloat(a[3]);if(!(p>0))return;LIVE[m[1].replace(".","-")]={p,pct:parseFloat(a[32])/100,time:a[30],cn:a[1]}});
+      liveAt=new Date()}catch(e){}}
+  applyLive();
+}
+function applyLive(){
+  document.querySelectorAll("[data-lp]").forEach(el=>{const l=LIVE[el.dataset.lp];if(l)el.textContent=l.p.toFixed(2)});
+  document.querySelectorAll("[data-lc]").forEach(el=>{const l=LIVE[el.dataset.lc];if(l&&has(l.pct)){el.textContent=pct(l.pct,+(el.dataset.d||1));el.classList.remove("up","down");const k=cls(l.pct);k&&el.classList.add(k)}});
+  document.querySelectorAll("[data-lt]").forEach(el=>{const l=LIVE[el.dataset.lt];if(l)el.innerHTML=`<i class="live"></i>${esc(l.cn||"")} · 报价时间 ${esc(l.time)}（美东）`});
+  const el=$("#livest");if(el&&liveAt)el.innerHTML=`<i class="live"></i>实时报价 ${liveAt.toLocaleTimeString("zh-CN",{hour12:false})}（腾讯行情，每 2 分钟）`;
+}
+function liveLoop(){if(document.visibilityState==="visible")fetchLive(Object.keys(C))}
+
+/* ---------- 判断标准 ---------- */
+function methodPage(){
+  const f=M.funding,s=M.sentiment,g=M.igv||{};
+  const age=Math.round((Date.now()-new Date(DATA.generated))/36e5*10)/10;
+  return `<div class="doc">
+  <h2 style="margin-top:6px">判断标准 <small>这个页面上每一个结论是怎么来的：信息来源、计算公式、阈值。全部是写死的规则，没有任何主观调整</small></h2>
+  <div class="note">这些规则是把你描述的框架翻译成可计算的条件，阈值是初始设定，不是经过回测验证的参数。觉得哪一条不合理，改 <code>src/analyze.py</code> 里对应的数字即可。所有结论都是信息整理，不构成投资建议。</div>
+
+  <div class="card"><h3 style="margin-top:0">一、数据来源与新鲜度</h3>
+  <div class="tw" style="border:0"><table class="calc"><tr><th class="l">数据</th><th class="l">来源</th><th class="l">更新频率</th><th class="l">当前</th></tr>
+  <tr><td class="l">实时报价</td><td class="l"><a href="https://qt.gtimg.cn/q=usNVDA" target="_blank" rel="noopener">腾讯行情 qt.gtimg.cn</a>（浏览器直接取）</td><td class="l">打开网页时取一次，之后每 2 分钟；点开公司时再取一次</td><td class="l">见页面顶部</td></tr>
+  <tr><td class="l">日线行情（算均线、涨幅、RSI、热度）</td><td class="l"><a href="https://finance.yahoo.com" target="_blank" rel="noopener">Yahoo Finance</a></td><td class="l">每次定时刷新</td><td class="l">行情截至 ${DATA.as_of}；网页生成于 ${age} 小时前</td></tr>
+  <tr><td class="l">季报 / 年报科目、分析师一致预期、目标价</td><td class="l">Yahoo Finance</td><td class="l">每家公司 20 小时缓存；财报日前 1 天到后 3 天不用缓存，每次刷新都重抓</td><td class="l">每家公司的抓取时间见其财报明细标题</td></tr>
+  <tr><td class="l">RPO（剩余履约义务）</td><td class="l"><a href="https://www.sec.gov/edgar/sec-api-documentation" target="_blank" rel="noopener">SEC EDGAR XBRL</a>，科目 RevenueRemainingPerformanceObligation</td><td class="l">72 小时缓存</td><td class="l">只有按美国会计准则披露的公司才有</td></tr>
+  <tr><td class="l">重大事件（8-K）、10-Q / 10-K 原文链接</td><td class="l">SEC EDGAR submissions</td><td class="l">12 小时缓存，保留近 120 天</td><td class="l"></td></tr>
+  <tr><td class="l">恐贪指数、Put/Call</td><td class="l"><a href="https://www.cnn.com/markets/fear-and-greed" target="_blank" rel="noopener">CNN Fear &amp; Greed</a></td><td class="l">每次刷新</td><td class="l">${s.fg?s.fg.score:"—"}</td></tr>
+  <tr><td class="l">全市场上市公司名单 + 主营业务描述</td><td class="l"><a href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank" rel="noopener">Nasdaq Screener</a> + Yahoo Finance</td><td class="l">手动，建议每 30 天</td><td class="l">${Object.keys(C).length} 家进入本页</td></tr>
+  <tr><td class="l">产业消息、公司关系</td><td class="l">你的 Summizer 资讯图谱</td><td class="l">随 Summizer 更新</td><td class="l"></td></tr>
+  <tr><td class="l">产品拆解、零件归属、效率 / 触发点说明</td><td class="l">人工整理（data/chains）</td><td class="l">手动，建议每季度</td><td class="l"></td></tr></table></div>
+  <p>没接上的：FINRA 融资余额（网站挡爬虫）、联邦基金利率原始序列（FRED 接口不稳定）、期权未平仓和资金流的逐笔数据（需付费源）。</p></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">二、资金面：钱贵不贵（当前 ${f.score} 分 · ${esc(f.regime)}）</h3>
+  <p>看的是“以年为周期，钱的价格往哪走”。从 50 分起，逐项加减：</p>
+  <div class="tw" style="border:0"><table class="calc"><tr><th class="l">指标</th><th class="l">当前值</th><th class="l">规则</th><th>得分</th></tr>${f.calc.map(c=>`<tr><td class="l">${esc(c.name)}</td><td class="l num">${esc(c.value)}</td><td class="l">${esc(c.rule)}</td><td class="num">${c.pts}</td></tr>`).join("")}</table></div>
+  <p>合计 ≥ 62 →「钱便宜」；≤ 38 →「钱贵」；其余「中性」。分析逻辑：10 年期美债是成长股折现率的锚，上行 → 远期盈利折现后更不值钱 → 估值（PE）被压；3 个月美债贴着联储政策利率走，反映加息 / 降息周期；美元走强意味着全球美元流动性收紧；高收益债跑赢国债说明资金愿意承担风险。</p>
+  <p><b>板块资金流</b>（总览页的两张表）：每个 ETF 算 1 周 / 1 月 / 3 月涨幅；相对强度 = ETF 涨幅 − 标普500 同期涨幅；成交额变化 = 近 20 日日均成交额 ÷ 近 60 日日均成交额 − 1（超过 +10% 标“放量”，低于 −10% 标“缩量”）。相对强度为正且放量 = 资金在流入这个板块。这是用价格和成交额推断的，不是真实的申赎资金流数据。</p>
+  <p><b>个股的资金面分数</b>：50 分起。估值：有 PEG 用 (1.5 − PEG) × 12（±15）；没有 PEG 用 (30 − 远期PE) × 0.5（±15）；还没盈利用 (10 − 市销率) × 1（−15~+10）。成交额变化 × 30（±10）。近 3 个月相对标普500 的超额涨幅 × 50（±12）。</p></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">三、情绪面：现在是什么点位（当前热度 ${s.heat} · ${esc(s.zone||"")}）</h3>
+  <p>四项各自换算成 0~100 的“热度”（0 = 极度悲观，100 = 极度乐观），取简单平均：</p>
+  <ul>${s.parts.map(p=>`<li><b style="color:var(--text)">${esc(p.name)}</b>（当前 ${esc(p.value)} → 热度 ${p.heat}）：${esc(p.rule)} <span class="src">来源：${esc(p.src)}</span></li>`).join("")}</ul>
+  <p>分区：≤ 20 极度悲观；≤ 38 偏悲观；39~61 中性；62~77 偏乐观；≥ 78 极度乐观。分析逻辑：极度乐观时利好已被价格消化，再出利好也涨不动，存在回调风险；极度悲观时利空已充分定价，再出利空也跌不动，是找机会的窗口。</p>
+  <p><b>个股热度</b>（三项平均）：RSI(14) 换算 (RSI − 30) ÷ 40 × 100；52 周区间位置 (现价 − 52周低) ÷ (52周高 − 52周低) × 100；偏离 200 日线 50 + 偏离幅度 × 125。分区：≤ 20 极度悲观，≤ 38 偏悲观，39~64 中性，65~79 偏乐观，≥ 80 极度乐观。</p></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">四、浪的位置：一浪基础设备 → 二浪 B 端应用 → 三浪 C 端应用</h3>
+  <p><b>怎么分浪：</b>每个零件人工标了属于哪一浪（见 3D 拆解页零件名旁的标签）。一个板块某一浪的“篮子”= 该板块所有属于这一浪的零件下的<b>人工确认且纯正</b>的公司（标 ◦ 的多元化公司和“自动”发现的公司不算）。少于 3 家不做判断。</p>
+  <p><b>六项检查</b>（每个板块页的浪位卡片上逐项列出当前值）：</p>
+  <ul><li>价格 ①相对强度：篮子等权平均近 3 个月涨幅 − 标普500 &gt; 2%</li><li>价格 ②上涨广度：站上 50 日线的公司占比 ≥ 55%</li><li>财报 ③收入增速：最新一季收入同比的中位数 ≥ 15%</li><li>财报 ④毛利率（代表产品力）：毛利率同比改善的公司占比 ≥ 55%</li><li>财报 ⑤EBITDA 利润率（代表经营效率）：同比改善的公司占比 ≥ 55%</li><li>财报 ⑥RPO（长期大单）：披露 RPO 的公司中，RPO 同比增速中位数 ≥ 15%</li></ul>
+  <p><b>阶段判定</b>（从上往下，命中第一条就停）。“财报强”= 财报四项里满足 ≥ 2 项且 ≥ 60%；“已涨过”= 篮子过去一年涨幅中位数 ≥ 40%：</p>
+  <div class="tw" style="border:0"><table class="calc"><tr><th class="l">条件</th><th class="l">阶段</th></tr>
+  <tr><td class="l">RSI 中位数 ≥ 68，且 ≥ 85% 的公司站上 200 日线，且近 6 个月涨幅中位数 ≥ 50%</td><td class="l lv4">主升浪后段 / 过热</td></tr>
+  <tr><td class="l">价格两项都满足 + 财报强</td><td class="l lv3">主升浪进行中</td></tr>
+  <tr><td class="l">价格满足一项 + 财报强 + 已涨过</td><td class="l lv3">主升浪中的整理</td></tr>
+  <tr><td class="l">价格满足一项 + 财报强 + 没涨过</td><td class="l lv2">启动初期</td></tr>
+  <tr><td class="l">价格都不满足 + 财报强 + 已涨过</td><td class="l lv2">回调中（财报仍在改善）</td></tr>
+  <tr><td class="l">价格都不满足 + 财报强 + 没涨过</td><td class="l lv1">财报已改善，价格未反映</td></tr>
+  <tr><td class="l">价格满足至少一项，财报不强</td><td class="l lv1">价格先行，财报待验证</td></tr>
+  <tr><td class="l">以上都不是</td><td class="l lv0">尚未启动</td></tr></table></div>
+  <p><b>“分化上涨”标记：</b>篮子近 3 个月上涨，成分股涨幅的四分位差 ≥ 25 个百分点，且站上 50 日线的占比在 35%~75% 之间——说明资金在挑真正受益的公司，而不是普涨。</p>
+  <p><b>IGV 检查</b>（你提到的二浪判据，总览页）：上涨 = IGV 近 3 个月涨幅 &gt; 3%（当前 ${pct(g.igv_r3m,1)}）；分化 = IGV 前十大持仓近 3 个月涨幅最高与最低之差 ≥ 35 个百分点（当前 ${pct0(g.spread)}），且上涨的只数占 30%~80%（当前 ${pct0(g.up_share)}）。两者都成立才算“有分化的上涨”。另看 IGV ÷ SMH 比值的走势：上行表示资金从硬件转向软件。来源：Yahoo Finance 的 IGV、SMH 及前十大持仓日线。</p>
+  <p><b>局限：</b>毛利率和 EBITDA 的“同比”只能比最新一季（数据源只给 5 个季度），看不到趋势是否在加速；篮子是等权的，小公司和大公司一票一权。</p></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">五、个股：基本面、预期面、点位信号</h3>
+  <p><b>基本面</b>（内在价值在变好还是变差）：50 分起。收入同比 × 60（±15）；毛利率同比每变化 1 个百分点 ±3 分（±10）；EBITDA 利润率每 1 个百分点 ±2 分（±10）；EPS 同比 × 15（±7.5）；近四季自由现金流率 × 40（±7.5）；RPO 同比 × 10（−3~+5）。至少要有两项数据才出分。</p>
+  <p><b>预期面</b>（现实与预期的差距 = 上涨空间）：50 分起。现价距分析师一致目标价的空间 × 80（−20~+25，至少 3 位分析师）；近 90 天下财年 EPS 预测的修正幅度 × 100（±15）——预期在上修说明现实比预期好；上次财报 EPS 超预期幅度 × 100（±8）；分析师评级均值 (2.5 − 评级) × 4（±5，1 = 强买，5 = 卖出）。</p>
+  <p><b>点位信号</b>（基本面 × 预期面 × 个股热度）：“基本面好”= ≥ 60 分；“预期好”= ≥ 58 分。</p>
+  <div class="tw" style="border:0"><table class="calc"><tr><th class="l">条件</th><th class="l">信号</th><th class="l">含义</th></tr>
+  <tr><td class="l">热度 ≤ 38，基本面好，预期好</td><td class="l"><span class="chip sig2">关注买点</span></td><td class="l">好公司处在悲观区，利空大概率已定价。如果公司还在大幅亏损（EBITDA 率或自由现金流率低于 −50%），降为“观察”</td></tr>
+  <tr><td class="l">热度 ≤ 38，两项只满足一项</td><td class="l"><span class="chip sig1">观察</span></td><td class="l">等另一项确认，通常是下一次财报</td></tr>
+  <tr><td class="l">热度 ≤ 38，两项都不满足</td><td class="l"><span class="chip sig0">弱势</span></td><td class="l">便宜可能有便宜的道理</td></tr>
+  <tr><td class="l">热度 ≥ 80</td><td class="l"><span class="chip sig-2">回调风险</span></td><td class="l">利好大概率已被消化</td></tr>
+  <tr><td class="l">热度 65~79，且两项没有同时满足</td><td class="l"><span class="chip sig-1">谨慎</span></td><td class="l">价格偏热而基本面 / 预期没跟上</td></tr>
+  <tr><td class="l">热度 39~79，基本面好，预期好</td><td class="l"><span class="chip sig1">趋势中</span></td><td class="l">趋势中段，等回踩均线</td></tr>
+  <tr><td class="l">其余</td><td class="l"><span class="chip sig0">中性</span></td><td class="l">没有明显错配</td></tr></table></div></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">六、推送什么、什么时候推</h3>
+  <p>每次定时刷新后，和上一次保存的状态对比，只有发生变化才推：</p>
+  <ul><li>新财报落地：数据源里某家公司的“最新季度截止日”变新了 → 推送收入同比、毛利率及变化、EBITDA 利润率、EPS 超预期幅度、RPO 同比、当前信号</li><li>某只股票的点位信号变为「关注买点」或「回调风险」</li><li>某个板块某一浪的阶段发生变化</li><li>VIX 跨入 ≥ 30（极度恐慌）、≥ 22（恐慌升温）、≤ 13（过度平静）；市场综合情绪进入极度悲观 / 极度乐观</li><li>IGV“分化上涨”信号出现或消失</li><li>财报日 3 天内提醒（每个财报日只提醒一次，附一致预期 EPS）</li><li>单日涨跌超过 8%</li></ul>
+  <p>单次刷新最多推 12 条，其余合并成一条。及时程度取决于定时任务的频率：默认交易时段每 30 分钟一次，盘后再跑三次（抓盘后财报）。数据源（Yahoo）自身更新新财报通常滞后发布几小时到一天，财报页会同时列出 SEC 8-K 原文链接，那是最快的一手来源。</p></div>
+  </div>`;
+}
 
 /* ---------- 推送记录 ---------- */
 function alertsPage(){
@@ -447,7 +607,7 @@ function openCo(t){
   const priceChart=`<div style="position:relative">${line(spark,{h:150,w:700,color:k.r6m>=0?"var(--up)":"var(--down)",marks})}<div style="position:absolute;inset:0">${line(ma50,{h:150,w:700,color:"var(--w2)",fill:false,marks:[{v:smn,c:"transparent"},{v:smx,c:"transparent"},...marks.map(m=>({v:m.v,c:"transparent"}))]})}</div></div><div class="heat-l" style="margin-top:4px"><span>近 ${spark.length} 个交易日 · <span style="color:var(--w2)">— 50日线</span> · <span style="color:var(--w1)">┄ 200日线 ${num(k.ma200,1)}</span> · <span style="color:var(--accent)">┄ 一致目标价</span></span><span>截至 ${c.spark_end}</span></div>`;
   $("#mbody").innerHTML=`
   <div class="mh"><span class="t">${t}</span><span>${esc(c.name)}</span><span class="muted small">${esc(c.industry)}</span></div>
-  <div class="mh" style="margin-top:6px"><span class="big num">${num(k.price,2)}</span><span class="num ${cls(k.chg1d)}">${pct(k.chg1d,2)}</span>${sig(c.signal)}<span class="muted small">市值 ${money(a.mcap)} · 下次财报 ${e.next_earnings||"—"}</span></div>
+  <div class="mh" style="margin-top:6px"><span class="big num" data-lp="${t}">${num(k.price,2)}</span><span class="num ${cls(k.chg1d)}" data-lc="${t}" data-d="2">${pct(k.chg1d,2)}</span><span class="small muted" data-lt="${t}">收盘价 ${DATA.as_of}</span>${sig(c.signal)}<span class="muted small">市值 ${money(a.mcap)} · 下次财报 ${e.next_earnings||"—"}</span></div>
   ${c.about?`<div class="small muted" style="margin-top:8px">${esc(c.about)}…</div>`:""}
   <div class="note" style="margin-top:12px"><b>点位判断（${esc(c.signal.zone)}）：</b>${esc(c.signal.text)}</div>
   <div class="card" style="margin-top:12px">${priceChart}
@@ -467,13 +627,14 @@ function openCo(t){
     <div class="card facet" style="grid-column:1/-1"><h3>⑤ 情绪面 · 具体点位 <em>${c.heat??"—"}</em></h3>${heatBar(c.heat)}
       <ul class="why">${c.heat_why.map(w=>`<li>${esc(w)}</li>`).join("")}<li>大盘情绪：${esc(M.sentiment.zone)}（热度 ${M.sentiment.heat}）——${esc(M.sentiment.verdict)}</li></ul></div>
   </div>
+  ${finSection(t,c)}
   ${(c.notes||[]).length?`<h2>重大消息判断</h2>${c.notes.map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}${n.url?` <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">来源</a>`:""}</div>`).join("")}`:""}
   <div class="grid g2" style="margin-top:12px">
     <div class="card"><h3>重大事件公告（SEC 8-K，近 60 天）</h3>${(c.filings||[]).length?`<ul class="feed">${c.filings.map(x=>`<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.items.join(" · ")||"8-K")}</a><div class="m">${esc(x.date)}</div></li>`).join("")}</ul>`:`<div class="empty">近 60 天没有 8-K（或不是按美国本土公司格式披露）。</div>`}</div>
     <div class="card"><h3>最新新闻</h3>${c.news.length?`<ul class="feed">${c.news.map(x=>`<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="m">${esc(x.date)} · ${esc(x.src)}</div></li>`).join("")}</ul>`:`<div class="empty">暂无</div>`}</div>
   </div>
   ${c.relations.length?`<div class="card" style="margin-top:12px"><h3>图谱关系（来自 Summizer，每条都有原文来源）</h3><ul class="feed">${c.relations.map(r=>`<li><span class="chip">${REL[r.type]||esc(r.type)}</span> <b>${esc(r.other)}</b> — ${esc(r.desc)} ${r.url?`<a class="m" href="${safeUrl(r.url)}" target="_blank" rel="noopener">来源</a>`:""}</li>`).join("")}</ul></div>`:""}`;
-  $("#modal").classList.add("on");$("#modal").scrollTop=0;document.body.style.overflow="hidden";
+  $("#modal").classList.add("on");$("#modal").scrollTop=0;document.body.style.overflow="hidden";fetchLive([t]);
 }
 function closeCo(){$("#modal").classList.remove("on");document.body.style.overflow=""}
 function jump(sid,cid,nid){closeCo();state.prod[sid]=cid;state.part[sid+"/"+cid]=nid;state.tab="s:"+sid;history.replaceState(null,"","#s:"+sid);render();setTimeout(()=>{const el=$("#pv");el&&el.scrollIntoView({behavior:"smooth",block:"start"})},50)}
@@ -486,6 +647,7 @@ const gen=new Date(DATA.generated);
 $("#asof").textContent=`行情截至 ${DATA.as_of} · 生成于 ${gen.toLocaleString("zh-CN",{hour12:false})} · ${Object.keys(C).length} 家公司`;
 const h0=decodeURIComponent(location.hash.slice(1)); if(TABS.some(t=>t[0]===h0))state.tab=h0;
 render();
+fetchLive(Object.keys(C));setInterval(liveLoop,120000);
 </script>
 </body>
 </html>

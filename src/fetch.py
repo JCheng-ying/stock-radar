@@ -106,31 +106,65 @@ INFO_KEYS = [
     "freeCashflow", "totalCash", "totalDebt", "trailingEps", "forwardEps",
     "shortPercentOfFloat", "heldPercentInstitutions", "beta",
 ]
-INCOME_ROWS = {"Total Revenue": "rev", "Gross Profit": "gp", "EBITDA": "ebitda",
-               "Operating Income": "op", "Net Income": "ni", "Diluted EPS": "eps"}
+INCOME_ROWS = {"Total Revenue": "rev", "Cost Of Revenue": "cogs", "Gross Profit": "gp",
+               "Research And Development": "rd", "Selling General And Administration": "sga",
+               "Operating Income": "op", "EBITDA": "ebitda", "Net Income": "ni", "Diluted EPS": "eps",
+               "Diluted Average Shares": "shares"}
+CASH_ROWS = {"Operating Cash Flow": "ocf", "Capital Expenditure": "capex", "Free Cash Flow": "fcf",
+             "Stock Based Compensation": "sbc"}
+BAL_ROWS = {"Cash Cash Equivalents And Short Term Investments": "cash", "Total Debt": "debt",
+            "Current Deferred Revenue": "defrev", "Stockholders Equity": "equity", "Inventory": "inv"}
+FUND_VERSION = 2
 
 
-def _quarters(t):
-    """最近几个季度的收入/毛利/EBITDA/EPS/自由现金流，按时间从旧到新。"""
-    rows = {}
+def _collect(frame, mapping, rows):
     try:
-        inc = t.quarterly_income_stmt
-        for src, key in INCOME_ROWS.items():
-            if src in inc.index:
-                for col, v in inc.loc[src].items():
+        for src, key in mapping.items():
+            if src in frame.index:
+                for col, v in frame.loc[src].items():
                     rows.setdefault(str(col.date()), {})[key] = _num(v)
     except Exception:
         pass
-    try:
-        cf = t.quarterly_cashflow
-        if "Free Cash Flow" in cf.index:
-            for col, v in cf.loc["Free Cash Flow"].items():
-                if str(col.date()) in rows:
-                    rows[str(col.date())]["fcf"] = _num(v)
-    except Exception:
-        pass
+
+
+def _quarters(t):
+    """最近几个季度的利润表 / 现金流 / 资产负债表主要科目，按时间从旧到新。"""
+    rows = {}
+    for getter, mapping in ((lambda: t.quarterly_income_stmt, INCOME_ROWS),
+                            (lambda: t.quarterly_cashflow, CASH_ROWS),
+                            (lambda: t.quarterly_balance_sheet, BAL_ROWS)):
+        try:
+            _collect(getter(), mapping, rows)
+        except Exception:
+            pass
     out = [dict(end=k, **v) for k, v in sorted(rows.items()) if v.get("rev")]
     return out[-6:]
+
+
+def _annual(t):
+    rows = {}
+    try:
+        _collect(t.income_stmt, INCOME_ROWS, rows)
+        _collect(t.cashflow, CASH_ROWS, rows)
+    except Exception:
+        pass
+    return [dict(end=k, **v) for k, v in sorted(rows.items()) if v.get("rev")][-4:]
+
+
+def _estimates(t):
+    """分析师一致预期：本季 / 下季 / 今年 / 明年 的 EPS 和收入。"""
+    out = {}
+    for attr, pre in (("earnings_estimate", "eps"), ("revenue_estimate", "rev")):
+        try:
+            df = getattr(t, attr)
+            for period, r in df.iterrows():
+                d = out.setdefault(period, {})
+                d[pre + "_avg"], d[pre + "_lo"], d[pre + "_hi"] = _num(r.get("avg")), _num(r.get("low")), _num(r.get("high"))
+                d[pre + "_n"], d[pre + "_growth"] = _num(r.get("numberOfAnalysts")), _num(r.get("growth"))
+                d[pre + "_yago"] = _num(r.get("yearAgoEps" if pre == "eps" else "yearAgoRevenue"))
+        except Exception:
+            pass
+    return out
 
 
 def _one_fundamental(ticker):
@@ -141,7 +175,10 @@ def _one_fundamental(ticker):
     except Exception:
         info = {}
     d["info"] = {k: info.get(k) for k in INFO_KEYS if info.get(k) is not None}
+    d["v"] = FUND_VERSION
     d["quarters"] = _quarters(t)
+    d["annual"] = _annual(t)
+    d["estimates"] = _estimates(t)
     try:
         cal = t.calendar or {}
         ed = cal.get("Earnings Date") or []
@@ -160,7 +197,7 @@ def _one_fundamental(ticker):
         eh = t.earnings_history
         d["surprises"] = [{"q": str(getattr(i, "date", lambda: i)()), "actual": _num(r.get("epsActual")),
                            "est": _num(r.get("epsEstimate")), "pct": _num(r.get("surprisePercent"))}
-                          for i, r in eh.iterrows()][-4:]
+                          for i, r in eh.iterrows()][-6:]
     except Exception:
         d["surprises"] = []
     news = []
@@ -176,24 +213,39 @@ def _one_fundamental(ticker):
     return d
 
 
-def fetch_fundamentals(tickers, force=False):
+def _earnings_window(c):
+    """财报日前 1 天到后 3 天：不用缓存，保证新财报当天就能看到。"""
+    try:
+        ne = datetime.fromisoformat(c.get("next_earnings")).date()
+        return -3 <= (ne - datetime.now().date()).days <= 1
+    except Exception:
+        return False
+
+
+def fetch_fundamentals(tickers, force=False, cache_only=False):
     def work(tk):
         name = f"fund_{tk}.json"
-        if not force:
-            c = _cache_get(name, config.FUND_CACHE_HOURS)
-            if c:
-                return c
+        old = _cache_get(name, 24 * 365)
+        if cache_only:
+            return old or {"ticker": tk, "info": {}, "quarters": []}
+        if not force and old and old.get("v") == FUND_VERSION and not _earnings_window(old):
+            fresh = _cache_get(name, 3 if old.get("fast") else config.FUND_CACHE_HOURS)
+            if fresh:
+                return fresh
         for attempt in range(2):
             try:
                 d = _one_fundamental(tk)
                 if d["info"] or d["quarters"]:
+                    # 刚过财报日但新季度还没出现在数据源里：标记成"短缓存"，3 小时后再查
+                    d["fast"] = bool(old and _earnings_window(old) and old.get("quarters") and d["quarters"]
+                                     and old["quarters"][-1]["end"] == d["quarters"][-1]["end"])
                     _cache_put(name, d)
                     return d
             except Exception:
                 log.exception("fundamental %s", tk)
             time.sleep(2 + attempt * 3)
         # 这次没取到，退回旧缓存（哪怕过期）总比没有好
-        return _cache_get(name, 24 * 365) or {"ticker": tk, "info": {}, "quarters": []}
+        return old or {"ticker": tk, "info": {}, "quarters": []}
 
     with ThreadPoolExecutor(config.MAX_WORKERS) as ex:
         return {d["ticker"]: d for d in ex.map(work, sorted(set(tickers)))}
@@ -260,7 +312,7 @@ ITEM_8K = {
 }
 
 
-def fetch_filings(tickers, days=60, force=False):
+def fetch_filings(tickers, days=120, force=False):
     """最近的 8-K（重大事件公告）。{ticker: [{date, items:[中文], url}]}"""
     try:
         ciks = _cik_map()
@@ -269,7 +321,7 @@ def fetch_filings(tickers, days=60, force=False):
     cutoff = datetime.now(timezone.utc).timestamp() - days * 86400
     out = {}
     for tk in sorted(set(tickers)):
-        name = f"8k_{tk}.json"
+        name = f"sec2_{tk}.json"
         c = None if force else _cache_get(name, 12)
         if c is None:
             c = []
@@ -278,20 +330,24 @@ def fetch_filings(tickers, days=60, force=False):
                 try:
                     r = _sec_get(f"https://data.sec.gov/submissions/CIK{cik:010d}.json")
                     rec = r.json()["filings"]["recent"] if r.status_code == 200 else {}
+                    reports = []
                     for form, dt, acc, doc, items in zip(rec.get("form", []), rec.get("filingDate", []),
                                                          rec.get("accessionNumber", []), rec.get("primaryDocument", []),
                                                          rec.get("items", [])):
+                        url = f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace('-', '')}/{doc}"
+                        if form in ("10-Q", "10-K", "20-F", "6-K") and len(reports) < 3 and form != "6-K":
+                            reports.append({"date": dt, "form": form, "url": url})
                         if form != "8-K" or datetime.fromisoformat(dt).replace(tzinfo=timezone.utc).timestamp() < cutoff:
                             continue
                         codes = [i.strip() for i in items.split(",") if i.strip() and i.strip() != "9.01"]
                         c.append({"date": dt, "codes": codes,
-                                  "items": [ITEM_8K.get(i, f"条款 {i}") for i in codes],
-                                  "url": f"https://www.sec.gov/Archives/edgar/data/{cik}/{acc.replace('-', '')}/{doc}"})
+                                  "items": [ITEM_8K.get(i, f"条款 {i}") for i in codes], "url": url})
+                    c = c[:10] + [dict(r, report=True) for r in reports]
                 except Exception:
                     log.warning("8-K %s failed", tk)
-            _cache_put(name, c[:8])
+            _cache_put(name, c)
         if c:
-            out[tk] = c[:8]
+            out[tk] = c
     return out
 
 

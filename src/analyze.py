@@ -79,14 +79,15 @@ def fundamentals(f, rpo):
     q = f.get("quarters") or []
     info = f.get("info") or {}
     m = {"quarters": []}
-    for x in q:
+    def ratios(x):
         rev = x.get("rev")
-        m["quarters"].append({
-            "end": x["end"], "rev": rev,
-            "gm": _r(x["gp"] / rev) if x.get("gp") is not None and rev else None,
-            "em": _r(x["ebitda"] / rev) if x.get("ebitda") is not None and rev else None,
-            "om": _r(x["op"] / rev) if x.get("op") is not None and rev else None,
-            "eps": x.get("eps"), "fcf": x.get("fcf")})
+        d = dict(x)
+        for key, src in (("gm", "gp"), ("em", "ebitda"), ("om", "op"), ("nm", "ni"), ("rdp", "rd"), ("fcfm", "fcf")):
+            d[key] = _r(x[src] / rev) if x.get(src) is not None and rev else None
+        return d
+
+    m["quarters"] = [ratios(x) for x in q]
+    m["annual"] = [ratios(x) for x in (f.get("annual") or [])]
     qs = m["quarters"]
     cur = qs[-1] if qs else {}
     prev = qs[-2] if len(qs) >= 2 else {}
@@ -289,8 +290,11 @@ def position_signal(fs, es, h, mkt_heat, burning=False):
 
 # ---------- 大盘：资金面 ----------
 
+YF = "https://finance.yahoo.com/quote/"
+
+
 def macro_funding(px):
-    out = {"items": [], "why": []}
+    out = {"items": [], "why": [], "calc": []}
 
     def add(sym, name, unit, scale=1.0):
         if sym not in px:
@@ -306,31 +310,42 @@ def macro_funding(px):
         out["items"].append(d)
         return d
 
+    def calc(name, value, rule, pts, sym, read):
+        out["calc"].append({"name": name, "value": value, "rule": rule, "pts": _r(pts, 1),
+                            "src": f"Yahoo Finance {sym}", "url": YF + sym.replace("^", "%5E"), "read": read})
+        return pts
+
     y10 = add("^TNX", "10年期美债收益率", "%")
-    y5 = add("^FVX", "5年期美债收益率", "%")
+    add("^FVX", "5年期美债收益率", "%")
     y3m = add("^IRX", "3个月美债收益率（贴近联储政策利率）", "%")
     dxy = add("DX-Y.NYB", "美元指数", "")
     score = 50.0  # 越高 = 钱越便宜、对成长股估值越友好
+    out["calc"].append({"name": "起始分", "value": "", "rule": "中性起点", "pts": 50, "src": "", "url": "", "read": ""})
     if y10 and y10["d1y"] is not None:
-        score -= _clip(y10["d1y"] * 20, -20, 20)
-        dirn = "上行" if y10["d1y"] > 0 else "下行"
-        out["why"].append(f"10年期美债 {y10['last']}%，一年{dirn} {abs(y10['d1y']) * 100:.0f}bp——"
-                          f"{'钱在变贵，压制科技股估值' if y10['d1y'] > 0.25 else '钱在变便宜，支撑估值扩张' if y10['d1y'] < -0.25 else '利率大体走平'}")
+        read = "钱在变贵，压制科技股估值" if y10["d1y"] > 0.25 else "钱在变便宜，支撑估值扩张" if y10["d1y"] < -0.25 else "利率大体走平"
+        score += calc("10年期美债：一年变化", f"{y10['last']}%（一年 {y10['d1y'] * 100:+.0f}bp）",
+                      "每上行 100bp 扣 20 分，下行加分；上下限 ±20", -_clip(y10["d1y"] * 20, -20, 20), "^TNX", read)
+        out["why"].append(f"10年期美债 {y10['last']}%，一年{'上行' if y10['d1y'] > 0 else '下行'} {abs(y10['d1y']) * 100:.0f}bp——{read}")
     if y3m and y3m["d1y"] is not None:
-        score -= _clip(y3m["d1y"] * 12, -15, 15)
-        out["why"].append(f"3个月美债 {y3m['last']}%，一年变化 {y3m['d1y'] * 100:+.0f}bp——"
-                          f"{'联储处在加息/偏紧周期' if y3m['d1y'] > 0.25 else '联储处在降息周期' if y3m['d1y'] < -0.25 else '政策利率按兵不动'}")
+        read = "联储处在加息 / 偏紧周期" if y3m["d1y"] > 0.25 else "联储处在降息周期" if y3m["d1y"] < -0.25 else "政策利率按兵不动"
+        score += calc("3个月美债（联储政策代理）：一年变化", f"{y3m['last']}%（一年 {y3m['d1y'] * 100:+.0f}bp）",
+                      "每上行 100bp 扣 12 分，下行加分；上下限 ±15", -_clip(y3m["d1y"] * 12, -15, 15), "^IRX", read)
+        out["why"].append(f"3个月美债 {y3m['last']}%，一年变化 {y3m['d1y'] * 100:+.0f}bp——{read}")
     if y10 and y3m:
         sp = y10["last"] - y3m["last"]
         out["curve"] = _r(sp, 2)
+        calc("收益率曲线：10年 − 3个月", f"{sp:+.2f}%", "只作参考，不计分。小于 0 为倒挂", 0, "^TNX",
+             "倒挂，市场在担心衰退" if sp < 0 else "正常向上")
         out["why"].append(f"10年 - 3个月利差 {sp:+.2f}%（{'倒挂，衰退担忧' if sp < 0 else '正常向上'}）")
     if dxy and dxy["d1y"] is not None:
         chg = dxy["d1y"] / (dxy["last"] - dxy["d1y"])
-        score -= _clip(chg * 100, -8, 8)
+        score += calc("美元指数：一年涨跌", f"{dxy['last']}（一年 {chg:+.1%}）", "每涨 1% 扣 1 分；上下限 ±8",
+                      -_clip(chg * 100, -8, 8), "DX-Y.NYB", "美元走强 = 全球流动性收紧" if chg > 0 else "美元走弱 = 流动性改善")
         out["why"].append(f"美元指数 {dxy['last']}，一年 {chg:+.1%}（美元走强 = 全球流动性收紧）")
     if "HYG" in px and "TLT" in px:
         r = _ret(px["HYG"]["Close"], 63) - _ret(px["TLT"]["Close"], 63)
-        score += _clip(r * 100, -7, 7)
+        score += calc("信用风险偏好：高收益债 HYG − 长期国债 TLT（近3个月）", f"{r:+.1%}", "每 1% 加 1 分；上下限 ±7",
+                      _clip(r * 100, -7, 7), "HYG", "资金愿意承担信用风险" if r > 0 else "资金在避险")
         out["why"].append(f"高收益债相对长期国债近3个月 {r:+.1%}（{'信用风险偏好在' if r > 0 else '资金在避险'}）")
     out["score"] = round(_clip(score))
     s = out["score"]
@@ -358,8 +373,9 @@ def market_sentiment(px, fg, companies, lev_syms, lev_base, margin_note):
     out = {"why": [], "parts": []}
     parts = []
 
-    def part(name, val, heat_val, text):
-        out["parts"].append({"name": name, "value": val, "heat": round(heat_val), "text": text})
+    def part(name, val, heat_val, text, rule="", src="", url=""):
+        out["parts"].append({"name": name, "value": val, "heat": round(heat_val), "text": text,
+                             "rule": rule, "src": src, "url": url})
         parts.append(heat_val)
 
     if "^VIX" in px:
@@ -376,12 +392,17 @@ def market_sentiment(px, fg, companies, lev_syms, lev_base, margin_note):
             out["vix"]["term"] = _r(ts, 3)
             if ts > 1:
                 txt += "；期限结构倒挂（短期恐慌高于远期，往往接近情绪底）"
-        part("VIX 恐慌指数", _r(last, 1), h, f"VIX {last:.1f}，处于近一年 {pc:.0f}% 分位——{txt}")
+        part("VIX 恐慌指数", _r(last, 1), h, f"VIX {last:.1f}，处于近一年 {pc:.0f}% 分位——{txt}",
+             "热度 = 50 + (18 − VIX) × 5，限制在 0~100。18 是长期中枢；≥30 极度恐慌，≥22 恐慌升温，≤13 过度平静。"
+             "另看 VIX ÷ 3个月VIX：大于 1 表示期限结构倒挂，短期恐慌高于远期，往往接近情绪底。",
+             "Yahoo Finance ^VIX、^VIX3M（CBOE 指数）", YF + "%5EVIX")
     if fg:
         out["fg"] = fg
         zh = {"extreme fear": "极度恐惧", "fear": "恐惧", "neutral": "中性", "greed": "贪婪", "extreme greed": "极度贪婪"}
         part("CNN 恐贪指数", fg["score"], fg["score"],
-             f"{fg['score']:.0f}（{zh.get(fg['rating'], fg['rating'])}），一周前 {fg['prev_week']:.0f}，一月前 {fg['prev_month']:.0f}")
+             f"{fg['score']:.0f}（{zh.get(fg['rating'], fg['rating'])}），一周前 {fg['prev_week']:.0f}，一月前 {fg['prev_month']:.0f}",
+             "热度直接取指数值（0~100）。CNN 用七项合成：股价动量、新高新低、涨跌广度、Put/Call、VIX、垃圾债利差、避险需求。"
+             "≤25 极度恐惧，≥75 极度贪婪。", "CNN Fear & Greed Index", "https://www.cnn.com/markets/fear-and-greed")
         if fg.get("put_call"):
             out["why"].append(f"Put/Call 比 {fg['put_call']:.2f}（>1 偏恐慌，<0.7 偏贪婪）")
     # 估值拥挤度：产业链公司里有多少已经远离200日线 + 远期市盈率中位数
@@ -394,8 +415,11 @@ def market_sentiment(px, fg, companies, lev_syms, lev_base, margin_note):
         out["crowding"] = {"above200": _r(above), "stretched": _r(stretched), "median_fpe": _r(med_fpe, 1), "n": len(vs200)}
         h = _clip(above * 60 + stretched * 130)
         part("估值拥挤度", f"{above:.0%}", h,
-             f"五大板块 {len(vs200)} 家公司中 {above:.0%} 站上200日线，{stretched:.0%} 高出200日线三成以上；"
-             f"远期市盈率中位数 {med_fpe:.0f}x" if med_fpe else f"{above:.0%} 站上200日线")
+             (f"本页全部 {len(vs200)} 家公司中 {above:.0%} 站上200日线，{stretched:.0%} 高出200日线三成以上；"
+              f"远期市盈率中位数 {med_fpe:.0f}x") if med_fpe else f"{above:.0%} 站上200日线",
+             "热度 = 站上200日线的公司占比 × 60 + 高出200日线 30% 以上的公司占比 × 130，限制在 0~100。"
+             "衡量的是“大家是不是都已经涨上去了”。远期市盈率中位数只展示、不计分。",
+             "Yahoo Finance 日线（本页全部公司）+ 一致预期 EPS", "")
     # 杠杆风险：三倍做多 ETF 成交额占比
     try:
         num = sum((px[s]["Close"] * px[s]["Volume"]) for s in lev_syms if s in px)
@@ -406,7 +430,10 @@ def market_sentiment(px, fg, companies, lev_syms, lev_base, margin_note):
         out["leverage"] = {"ratio": _r(last, 3), "pct1y": _r(pc, 0),
                            "series": [_r(x, 3) for x in ratio.tail(252).iloc[::3].tolist()]}
         part("杠杆风险", f"{pc:.0f}%分位", pc,
-             f"三倍做多 ETF 成交额占比处于近一年 {pc:.0f}% 分位（越高说明散户加杠杆越激进）")
+             f"三倍做多 ETF 成交额占比处于近一年 {pc:.0f}% 分位（越高说明散户加杠杆越激进）",
+             "(TQQQ + SOXL + UPRO + TECL 的成交额) ÷ (QQQ + SPY + SMH 的成交额)，取 20 日均值，热度 = 它在近一年里的分位数。"
+             "这是融资余额的替代指标：FINRA 的融资余额月度数据网站挡爬虫，拿不到。",
+             "Yahoo Finance 各 ETF 日线", YF + "TQQQ")
     except Exception:
         pass
     if margin_note:
@@ -466,18 +493,27 @@ def wave_status(sector, companies, px, spy):
         def chk(name, ok, text):
             row["checks"].append({"name": name, "ok": None if ok is None else bool(ok), "text": text})
 
+        def chk(name, ok, text, rule):
+            row["checks"].append({"name": name, "ok": None if ok is None else bool(ok), "text": text, "rule": rule})
+
         chk("相对强度", None if rel3 is None else rel3 > 0.02,
-            f"篮子近3个月 {avg3:+.0%}，相对标普500 {rel3:+.0%}" if rel3 is not None else "无数据")
+            f"篮子近3个月 {avg3:+.0%}，相对标普500 {rel3:+.0%}" if rel3 is not None else "无数据",
+            "这一浪全部纯正标的等权平均的近 63 个交易日涨幅 − 标普500 同期涨幅 > 2%")
         chk("上涨广度", None if b50 is None else b50 >= 0.55,
-            f"{b50:.0%} 的公司站上50日线，{b200:.0%} 站上200日线" if b50 is not None and b200 is not None else "无数据")
+            f"{b50:.0%} 的公司站上50日线，{b200:.0%} 站上200日线" if b50 is not None and b200 is not None else "无数据",
+            "收盘价高于 50 日均线的公司占比 ≥ 55%")
         chk("收入增速", None if rev_med is None else rev_med >= 0.15,
-            f"收入同比增速中位数 {rev_med:+.0%}" if rev_med is not None else "无数据")
+            f"收入同比增速中位数 {rev_med:+.0%}" if rev_med is not None else "无数据",
+            "最新一季收入同比增速的中位数 ≥ 15%")
         chk("毛利率（产品力）", None if gm_up is None else gm_up >= 0.55,
-            f"{gm_up:.0%} 的公司毛利率在改善" if gm_up is not None else "无数据")
+            f"{gm_up:.0%} 的公司毛利率在改善" if gm_up is not None else "无数据",
+            "最新一季毛利率高于去年同期（没有去年同期就比上一季）的公司占比 ≥ 55%")
         chk("EBITDA 利润率（经营效率）", None if em_up is None else em_up >= 0.55,
-            f"{em_up:.0%} 的公司 EBITDA 利润率在改善" if em_up is not None else "无数据")
+            f"{em_up:.0%} 的公司 EBITDA 利润率在改善" if em_up is not None else "无数据",
+            "最新一季 EBITDA ÷ 收入 高于去年同期的公司占比 ≥ 55%")
         chk("RPO（长期大单）", None if rpo_med is None else rpo_med >= 0.15,
-            f"{len(rpos)} 家披露 RPO，同比增速中位数 {rpo_med:+.0%}" if rpo_med is not None else "披露 RPO 的公司不足")
+            f"{len(rpos)} 家披露 RPO，同比增速中位数 {rpo_med:+.0%}" if rpo_med is not None else "披露 RPO 的公司不足",
+            "披露了 RPO（剩余履约义务）的公司，其 RPO 同比增速的中位数 ≥ 15%")
         valid = [c for c in row["checks"] if c["ok"] is not None]
         passed = sum(1 for c in valid if c["ok"])
         price_ok = sum(1 for c in row["checks"][:2] if c["ok"])
@@ -508,6 +544,16 @@ def wave_status(sector, companies, px, spy):
         # 分化上涨：篮子在涨，但内部涨跌差距很大——说明资金在挑真正受益的公司，是浪的早期特征
         if disp is not None and avg3 > 0 and b50 is not None:
             row["diverging"] = bool(disp >= 0.25 and 0.35 <= b50 <= 0.75)
+        row["path"] = (f"价格 {price_ok}/2 项满足；财报 {fund_ok}/{fund_n} 项满足（{'强' if fund_strong else '不强'}：需 ≥2 项且 ≥60%）；"
+                       f"过去一年涨幅中位数 {r1y:+.0%}（{'已涨过一大段' if has_run else '还没涨过'}：阈值 40%）；"
+                       f"过热条件（RSI 中位 ≥68、≥85% 站上200日线、6月涨幅中位 ≥50%）{'成立' if overheated else '不成立'}"
+                       if r1y is not None else f"价格 {price_ok}/2；财报 {fund_ok}/{fund_n}")
+        row["members"] = [{"t": t, "r3m": c["tech"]["r3m"], "a50": (c["tech"]["vs50"] or 0) > 0,
+                           "a200": (c["tech"]["vs200"] or 0) > 0 if c["tech"]["vs200"] is not None else None,
+                           "rev": c["fund"].get("rev_yoy"),
+                           "gm": c["fund"].get("gm_yoy") if c["fund"].get("gm_yoy") is not None else c["fund"].get("gm_qoq"),
+                           "em": c["fund"].get("em_yoy") if c["fund"].get("em_yoy") is not None else c["fund"].get("em_qoq"),
+                           "rpo": c["fund"].get("rpo_yoy")} for t, c in zip(tks, cs)]
         row.update(stage=stage, level=level, score=round(ratio * 100), passed=passed, total=len(valid))
         out.append(row)
     return out

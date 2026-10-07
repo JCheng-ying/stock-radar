@@ -25,7 +25,7 @@ PRICE_PERIOD = "2y"        # 日线历史长度（算 200 日线、52 周位置�
 SPARK_DAYS = 120           # 打包进网页的日线根数
 FUND_CACHE_HOURS = 20      # 基本面/一致预期缓存多久（财报季每天刷新一次就够）
 SEC_CACHE_HOURS = 72
-MAX_WORKERS = 4
+MAX_WORKERS = 3
 
 
 def load_env():

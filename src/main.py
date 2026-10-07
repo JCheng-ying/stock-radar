@@ -39,7 +39,23 @@ def _summizer(members):
     return signals, rel
 
 
-def build_snapshot(force=False):
+def _reaction(close, filings):
+    """最近一次财报（8-K 条款 2.02）发布前一日收盘 -> 发布后一个交易日收盘 的涨跌。
+    盘前和盘后发布都落在这个两日窗口里。"""
+    for x in filings:
+        if "2.02" in (x.get("codes") or []):
+            try:
+                idx = close.index.searchsorted(x["date"])
+                if 0 < idx < len(close) - 1:
+                    return {"date": x["date"], "chg": round(float(close.iloc[idx + 1] / close.iloc[idx - 1] - 1), 4),
+                            "url": x["url"]}
+                return {"date": x["date"], "chg": None, "url": x["url"]}
+            except Exception:
+                return None
+    return None
+
+
+def build_snapshot(force=False, quick=False):
     sectors = universe.load_sectors()
     n_auto = discover.match_parts(sectors)          # 全市场扫描结果按关键词挂到零件上
     log.info("全市场自动匹配：新增 %d 条 零件-公司 关系", n_auto)
@@ -58,7 +74,7 @@ def build_snapshot(force=False):
                             + fetch.LEVERAGED + fetch.LEVERAGE_BASE + ["IGV", "SMH"] + igv_hold)
     spy = px["SPY"]["Close"]
     log.info("基本面与一致预期")
-    funds = fetch.fetch_fundamentals(tickers, force=force)
+    funds = fetch.fetch_fundamentals(tickers, force=force, cache_only=quick)
     log.info("SEC RPO")
     rpo = fetch.fetch_rpo(tickers, force=force)
     log.info("SEC 8-K 重大事件")
@@ -78,12 +94,16 @@ def build_snapshot(force=False):
         ca = analyze.capital(f, tc)
         h, hwhy = analyze.heat(tc, ca)
         info = f.get("info") or {}
+        fl = filings.get(t, [])
+        ex["estimates"] = f.get("estimates") or {}
+        ex["reaction"] = _reaction(px[t]["Close"], fl)
         companies[t] = {
             "name": info.get("shortName") or info.get("longName") or (profiles.get(t) or {}).get("short") or t,
             "industry": info.get("industry", ""),
             "about": ((profiles.get(t) or {}).get("summary") or "")[:420],
             "tech": tc, "fund": fu, "expect": ex, "capital": ca, "heat": h, "heat_why": hwhy,
-            "members": members[t], "news": f.get("news") or [], "filings": filings.get(t, []), "relations": (rel.get(t) or [])[:12],
+            "members": members[t], "news": f.get("news") or [], "filings": [x for x in fl if not x.get("report")],
+            "reports": [x for x in fl if x.get("report")], "fetched": (f.get("fetched") or "")[:16], "relations": (rel.get(t) or [])[:12],
             "notes": (notes.get("companies") or {}).get(t, []),
             "spark": [round(float(x), 2) for x in px[t]["Close"].tail(config.SPARK_DAYS).tolist()],
             "spark_end": str(px[t].index[-1].date()),
@@ -127,6 +147,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-push", action="store_true", help="只生成网页，不检测变化、不推送")
     ap.add_argument("--force", action="store_true", help="忽略缓存，重新拉取基本面")
+    ap.add_argument("--quick", action="store_true", help="只刷新行情和 SEC，财报/预期用现有缓存（几分钟内跑完）")
     ap.add_argument("--rebuild", action="store_true", help="不联网，用上次的 snapshot.json 重新生成网页")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
@@ -134,7 +155,7 @@ def main():
     if args.rebuild:
         snap = json.loads(config.SNAPSHOT.read_text())
     else:
-        snap = build_snapshot(force=args.force)
+        snap = build_snapshot(force=args.force, quick=args.quick)
         if not args.no_push:
             for a in alerts.run(snap):
                 log.info("推送[%s] %s", "已发" if a["sent"] else "仅记录", a["title"])
