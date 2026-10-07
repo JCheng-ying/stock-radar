@@ -223,32 +223,55 @@ def _earnings_window(c):
 
 
 def fetch_fundamentals(tickers, force=False, cache_only=False):
+    """有缓存优先用缓存。Yahoo 限流时会连续返回空数据——连续失败 8 次就熔断，
+    这一轮剩下的公司直接沿用旧缓存，留给下一轮再补（已抓到的不会丢）。"""
+    state = {"fails": 0, "tripped": False, "new": 0}
+
     def work(tk):
         name = f"fund_{tk}.json"
         old = _cache_get(name, 24 * 365)
+        blank = {"ticker": tk, "info": {}, "quarters": []}
         if cache_only:
-            return old or {"ticker": tk, "info": {}, "quarters": []}
+            return old or blank
         if not force and old and old.get("v") == FUND_VERSION and not _earnings_window(old):
             fresh = _cache_get(name, 3 if old.get("fast") else config.FUND_CACHE_HOURS)
             if fresh:
                 return fresh
-        for attempt in range(2):
-            try:
-                d = _one_fundamental(tk)
-                if d["info"] or d["quarters"]:
-                    # 刚过财报日但新季度还没出现在数据源里：标记成"短缓存"，3 小时后再查
-                    d["fast"] = bool(old and _earnings_window(old) and old.get("quarters") and d["quarters"]
-                                     and old["quarters"][-1]["end"] == d["quarters"][-1]["end"])
-                    _cache_put(name, d)
-                    return d
-            except Exception:
-                log.exception("fundamental %s", tk)
-            time.sleep(2 + attempt * 3)
-        # 这次没取到，退回旧缓存（哪怕过期）总比没有好
-        return old or {"ticker": tk, "info": {}, "quarters": []}
+        if state["tripped"]:
+            return old or blank
+        try:
+            d = _one_fundamental(tk)
+        except Exception:
+            d = blank
+        if d["info"] or d["quarters"]:
+            state["fails"] = 0
+            state["new"] += 1
+            # 刚过财报日但新季度还没出现在数据源里：标记成"短缓存"，3 小时后再查
+            d["fast"] = bool(old and _earnings_window(old) and old.get("quarters") and d["quarters"]
+                             and old["quarters"][-1]["end"] == d["quarters"][-1]["end"])
+            _cache_put(name, d)
+            return d
+        state["fails"] += 1
+        if state["fails"] >= 8 and not state["tripped"]:
+            state["tripped"] = True
+            log.warning("Yahoo 限流：本轮停止抓财报，其余公司沿用缓存（本轮新抓到 %d 家）", state["new"])
+        time.sleep(1.5)
+        return old or blank
 
     with ThreadPoolExecutor(config.MAX_WORKERS) as ex:
-        return {d["ticker"]: d for d in ex.map(work, sorted(set(tickers)))}
+        out = {d["ticker"]: d for d in ex.map(work, sorted(set(tickers), key=_stale_first))}
+    log.info("财报：本轮新抓 %d 家%s", state["new"], "（已熔断）" if state["tripped"] else "")
+    return out
+
+
+def _stale_first(tk):
+    """缓存最旧的排前面，保证每一轮都在补最缺的。"""
+    f = config.CACHE / f"fund_{tk}.json"
+    try:
+        v2 = json.loads(f.read_text()).get("v") == FUND_VERSION
+        return (1 if v2 else 0, f.stat().st_mtime)
+    except Exception:
+        return (0, 0)
 
 
 # ---------- SEC：RPO（剩余履约义务 = 已签约未确认收入的长期订单） ----------
