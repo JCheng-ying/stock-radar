@@ -5,6 +5,7 @@
 import argparse
 import json
 import logging
+import re
 from datetime import datetime, timezone
 
 from . import alerts, analyze, build_site, config, discover, fetch, universe
@@ -55,11 +56,43 @@ def _reaction(close, filings):
     return None
 
 
+def _excerpt(summary, kws, limit=330):
+    """从公司主营业务描述里摘出和这个零件相关的原句（命中关键词的句子；没有就取第一句）。"""
+    if not summary:
+        return ""
+    sents = re.split(r"(?<=[.;])\s+(?=[A-Z])", summary)
+    rx = [re.compile(r"(?<![a-z])" + re.escape(k.lower()) + r"(?![a-z])") for k in kws]
+    hit = [x for x in sents if any(r.search(x.lower()) for r in rx)]
+    out = " ".join((hit or sents[:1])[:2])
+    return out if len(out) <= limit else out[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def _attach_insights(sectors, profiles):
+    """把 data/insights.json 里人工研究的"产品对比 / 竞合关系"挂到零件上；
+    并给每家公司配一段业务描述原文摘录（所有公司都有，自动生成）。"""
+    try:
+        raw = json.loads((config.DATA / "insights.json").read_text())
+    except Exception:
+        raw = {}
+    ins = {}
+    for key, v in raw.items():
+        for k in [key] + v.get("also", []):
+            ins[k] = {x: v[x] for x in v if x != "also"}
+    for s in sectors:
+        for ch in s["chains"]:
+            for n in ch["nodes"]:
+                n["ins"] = ins.get(f"{s['id']}/{ch['id']}/{n['id']}")
+                for c in n["cos"]:
+                    if c.get("ticker"):
+                        c["ex"] = _excerpt((profiles.get(c["ticker"]) or {}).get("summary", ""), n.get("kw", []))
+
+
 def build_snapshot(force=False, quick=False):
     sectors = universe.load_sectors()
     n_auto = discover.match_parts(sectors)          # 全市场扫描结果按关键词挂到零件上
     log.info("全市场自动匹配：新增 %d 条 零件-公司 关系", n_auto)
     profiles = discover.load_profiles()
+    _attach_insights(sectors, profiles)
     members = universe.memberships(sectors)
     tickers = sorted(members)
     theme_etfs = universe.sector_etfs(sectors)
@@ -148,10 +181,25 @@ def main():
     ap.add_argument("--no-push", action="store_true", help="只生成网页，不检测变化、不推送")
     ap.add_argument("--force", action="store_true", help="忽略缓存，重新拉取基本面")
     ap.add_argument("--quick", action="store_true", help="只刷新行情和 SEC，财报/预期用现有缓存（几分钟内跑完）")
+    ap.add_argument("--todo", action="store_true", help="列出还没做人工研究的零件")
     ap.add_argument("--rebuild", action="store_true", help="不联网，用上次的 snapshot.json 重新生成网页")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
     config.load_env()
+    if args.todo:
+        snap = json.loads(config.SNAPSHOT.read_text())
+        rows = []
+        for sec in snap["sectors"]:
+            lv = {w["wave"]: w["level"] for w in sec["wave_status"]}
+            for ch in sec["chains"]:
+                for n in ch["nodes"]:
+                    k = sum(1 for c in n["cos"] if c.get("ticker") and not c.get("auto"))
+                    if not n.get("ins") and k >= 3:
+                        rows.append((-(lv.get(n["wave"], 0)), -k, f"{sec['id']}/{ch['id']}/{n['id']}", n["name"]))
+        for a_, k, key, name in sorted(rows):
+            print(f"{key:38s} {name}（{-k} 家，浪位等级 {-a_}）")
+        print(f"共 {len(rows)} 个零件待研究")
+        return
     if args.rebuild:
         snap = json.loads(config.SNAPSHOT.read_text())
     else:

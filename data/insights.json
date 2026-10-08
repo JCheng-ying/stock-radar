@@ -1,0 +1,951 @@
+{
+ "ai/assistant/gpu": {
+  "also": [
+   "ai/rack/gpu",
+   "ai/chip/die"
+  ],
+  "updated": "2026-10-08",
+  "note": "三种路线在抢同一笔算力预算：通用 GPU（英伟达、AMD）、云厂商定制 ASIC（见“定制 ASIC”零件）、专用推理芯片（Cerebras、Groq）。OpenAI 同时是这三种路线的客户。",
+  "companies": {
+   "NVDA": {
+    "products": "Blackwell（GB200 / GB300 整机柜）→ Rubin（Vera CPU + Rubin GPU，2026 年接替）；Rubin CPX（长上下文推理，2026 年底）",
+    "diff": "唯一提供“芯片 + 网络 + 软件（CUDA）+ 整机柜”全套的厂商；CoWoS 封装产能占比约一半",
+    "ties": "所有主要云厂商和模型公司；2025 年底以授权方式吸收了 Groq 的推理技术和团队",
+    "src": [
+     [
+      "Futurum：CES 上的 Rubin 与 Helios",
+      "https://futurumgroup.com/insights/at-ces-nvidia-rubin-and-amd-helios-made-memory-the-future-of-ai/"
+     ],
+     [
+      "Constellation Research：Nvidia–Groq 授权交易",
+      "https://www.constellationr.com/insights/news/nvidias-groq-deal-acquisition-acquihire-or-creative-licensing-deal"
+     ]
+    ]
+   },
+   "AMD": {
+    "products": "Instinct MI450 系列 GPU + Helios 整机柜",
+    "diff": "开放生态（ROCm、以太网互联）；价格和显存容量是主要卖点；软件栈成熟度仍落后 CUDA",
+    "ties": "OpenAI：6GW 部署协议，并向 OpenAI 发行认股权证（全部行权约合 10% 股权）；台积电代工",
+    "src": [
+     [
+      "CNBC：OpenAI 与 AMD 芯片协议",
+      "https://www.cnbc.com/2025/10/06/openai-amd-chip-deal-ai.html"
+     ],
+     [
+      "Futurum：CES 上的 Rubin 与 Helios",
+      "https://futurumgroup.com/insights/at-ces-nvidia-rubin-and-amd-helios-made-memory-the-future-of-ai/"
+     ]
+    ]
+   },
+   "AVGO": {
+    "products": "不卖通用 GPU，帮客户做定制加速器（XPU）",
+    "diff": "定制芯片单价低、针对单一客户的工作负载优化",
+    "ties": "谷歌 TPU、OpenAI 自研芯片（10GW）",
+    "src": [
+     [
+      "CNBC：OpenAI 与博通定制芯片协议",
+      "https://www.cnbc.com/2025/10/13/openai-partners-with-broadcom-custom-ai-chips-alongside-nvidia-amd.html"
+     ],
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   },
+   "CBRS": {
+    "products": "WSE-3 晶圆级芯片（一整片晶圆就是一颗芯片）+ 自营推理云",
+    "diff": "推理速度极快；不卖芯片而是卖算力服务；过去收入高度集中于 G42",
+    "ties": "OpenAI：多年期协议，750MW、逾 100 亿美元，至 2028 年交付",
+    "src": [
+     [
+      "DataCenterDynamics：OpenAI 与 Cerebras 750MW 协议",
+      "https://www.datacenterdynamics.com/en/news/openai-signs-10-billion-deal-with-cerebras-with-750mw-of-big-chip-compute/"
+     ]
+    ]
+   },
+   "MRVL": {
+    "products": "定制 ASIC 设计服务",
+    "diff": "见“定制 ASIC”零件",
+    "ties": "亚马逊 Trainium、微软 Maia",
+    "src": [
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   },
+   "QCOM": {
+    "products": "AI200 / AI250 推理机柜",
+    "diff": "主打推理的每瓦成本，数据中心是新业务",
+    "ties": "",
+    "src": []
+   },
+   "INTC": {
+    "products": "Xeon CPU、Gaudi 加速器；18A 代工",
+    "diff": "加速器份额很小，价值更多在 CPU 和代工",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "AMD",
+    "b": "OpenAI",
+    "type": "供应 + 持股",
+    "desc": "OpenAI 部署 6GW 的 AMD GPU（从 MI450 开始），AMD 向 OpenAI 发行认股权证。",
+    "src": [
+     "CNBC：OpenAI 与 AMD 芯片协议",
+     "https://www.cnbc.com/2025/10/06/openai-amd-chip-deal-ai.html"
+    ]
+   },
+   {
+    "a": "NVDA",
+    "b": "AMD",
+    "type": "竞争",
+    "desc": "Rubin 对 MI450 / Helios，都是整机柜级方案，2026 年正面交锋。",
+    "src": [
+     "Futurum：CES 上的 Rubin 与 Helios",
+     "https://futurumgroup.com/insights/at-ces-nvidia-rubin-and-amd-helios-made-memory-the-future-of-ai/"
+    ]
+   },
+   {
+    "a": "NVDA",
+    "b": "Groq",
+    "type": "技术授权",
+    "desc": "英伟达获得 Groq 推理技术的非独占授权，Groq CEO 和团队加入英伟达；报道金额约 200 亿美元，双方未确认。",
+    "src": [
+     "Constellation Research：Nvidia–Groq 授权交易",
+     "https://www.constellationr.com/insights/news/nvidias-groq-deal-acquisition-acquihire-or-creative-licensing-deal"
+    ]
+   },
+   {
+    "a": "CBRS",
+    "b": "OpenAI",
+    "type": "供应",
+    "desc": "Cerebras 用自己的晶圆级芯片为 OpenAI 提供 750MW 推理算力，硬件由 Cerebras 持有和运营。",
+    "src": [
+     "DataCenterDynamics：OpenAI 与 Cerebras 750MW 协议",
+     "https://www.datacenterdynamics.com/en/news/openai-signs-10-billion-deal-with-cerebras-with-750mw-of-big-chip-compute/"
+    ]
+   },
+   {
+    "a": "NVDA",
+    "b": "AVGO",
+    "type": "竞争",
+    "desc": "通用 GPU 对云厂商定制 ASIC：博通和 Marvell 合计占定制 ASIC 协同设计市场约 95%。",
+    "src": [
+     "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/asic": {
+  "updated": "2026-10-08",
+  "note": "定制 ASIC 的生意是“云厂商出需求和架构，设计服务商出后端设计、IP 和量产管理”。博通和 Marvell 合计约占 95%。",
+  "companies": {
+   "AVGO": {
+    "products": "XPU 定制加速器 + 配套的以太网交换芯片和机柜",
+    "diff": "规模最大；能把定制芯片和自家网络芯片打包",
+    "ties": "谷歌 TPU（长期）；OpenAI（10GW，2026 下半年开始部署，2029 年底完成）；Meta MTIA（据报道，未获官方确认）；Anthropic 可能是其未具名的百亿美元客户（分析师推测）",
+    "src": [
+     [
+      "CNBC：OpenAI 与博通定制芯片协议",
+      "https://www.cnbc.com/2025/10/13/openai-partners-with-broadcom-custom-ai-chips-alongside-nvidia-amd.html"
+     ],
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   },
+   "MRVL": {
+    "products": "定制 ASIC + 光 DSP",
+    "diff": "第二大；公司预计 2026 年 AI ASIC 收入最高约 110 亿美元",
+    "ties": "亚马逊 Trainium（Trainium2 已量产，用于 AWS 和 Anthropic 训练集群；参与 2nm 的 Trainium 4）；微软 Maia（2026 下半年起爬坡，量仍不确定）；谷歌 Axion CPU",
+    "src": [
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   },
+   "GOOGL": {
+    "products": "TPU",
+    "diff": "自研架构，博通做后端；也通过谷歌云对外出租",
+    "ties": "博通",
+    "src": [
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   },
+   "AMZN": {
+    "products": "Trainium",
+    "diff": "主要供 Anthropic 和 AWS 内部使用",
+    "ties": "Marvell",
+    "src": [
+     [
+      "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+      "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "AVGO",
+    "b": "OpenAI",
+    "type": "供应",
+    "desc": "共同开发并部署约 10GW 的定制加速器和机柜系统。",
+    "src": [
+     "CNBC：OpenAI 与博通定制芯片协议",
+     "https://www.cnbc.com/2025/10/13/openai-partners-with-broadcom-custom-ai-chips-alongside-nvidia-amd.html"
+    ]
+   },
+   {
+    "a": "AVGO",
+    "b": "GOOGL",
+    "type": "供应",
+    "desc": "博通是谷歌 TPU 的长期设计伙伴。",
+    "src": [
+     "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   },
+   {
+    "a": "MRVL",
+    "b": "AMZN",
+    "type": "供应",
+    "desc": "Marvell 参与亚马逊 Trainium 的设计；Trainium2 用于 Anthropic 的训练集群。",
+    "src": [
+     "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   },
+   {
+    "a": "MRVL",
+    "b": "MSFT",
+    "type": "供应",
+    "desc": "Marvell 参与微软 Maia；放量时间和规模仍有不确定性。",
+    "src": [
+     "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   },
+   {
+    "a": "AVGO",
+    "b": "MRVL",
+    "type": "竞争",
+    "desc": "两家争夺同一批云厂商的下一代定制芯片项目。",
+    "src": [
+     "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/mem": {
+  "also": [
+   "ai/rack/hbm",
+   "ai/chip/hbm"
+  ],
+  "updated": "2026-10-08",
+  "note": "HBM 只有三家能做。英伟达 Rubin 平台用 HBM4，谁先通过认证、谁拿到多少份额，各家报道有出入，下面注明了分歧。",
+  "companies": {
+   "MU": {
+    "products": "HBM3E、HBM4；数据中心 DRAM 和 SSD",
+    "diff": "三家中份额最小（HBM 约一成多到两成），目标是做到与其 DRAM 份额相当；美国本土唯一",
+    "ties": "英伟达称三家均已通过认证并在生产",
+    "src": [
+     [
+      "TrendForce HBM 市场简报（2026-06-23）",
+      "https://www.trendforce.com/research/download/RP260623IP3"
+     ]
+    ]
+   },
+   "SNDK": {
+    "products": "企业级 NAND / SSD",
+    "diff": "不做 HBM，受益于推理带来的存储需求",
+    "ties": "",
+    "src": []
+   },
+   "WDC": {
+    "products": "大容量机械硬盘",
+    "diff": "不做 HBM；数据中心冷数据存储",
+    "ties": "",
+    "src": []
+   },
+   "STX": {
+    "products": "大容量机械硬盘（HAMR）",
+    "diff": "与西部数据双寡头",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "SK hynix",
+    "b": "NVDA",
+    "type": "供应",
+    "desc": "长期是英伟达 HBM 主供；UBS 等预计其拿到 Rubin 平台 HBM4 约七成，但 TrendForce 6 月称其因接口同步问题把量产推到三季度。两种说法并存。",
+    "src": [
+     "TrendForce HBM 市场简报（2026-06-23）",
+     "https://www.trendforce.com/research/download/RP260623IP3"
+    ]
+   },
+   {
+    "a": "Samsung",
+    "b": "NVDA",
+    "type": "供应",
+    "desc": "TrendForce 称三星最先完成 HBM4 验证并在 2026 年二季度开始出货，份额在回升。",
+    "src": [
+     "TrendForce：三星、SK 海力士成为 Rubin 的 HBM4 供应商（2026-03）",
+     "https://www.trendforce.com/news/2026/03/09/news-samsung-sk%E2%80%AFhynix-reportedly-tapped-as-nvidia-rubin-hbm4-suppliers-shipments-could-start-in-march"
+    ]
+   },
+   {
+    "a": "MU",
+    "b": "SK hynix",
+    "type": "竞争",
+    "desc": "三家争夺英伟达和定制 ASIC 的 HBM 份额；TrendForce 预计 2026 年 SK 海力士位出货约占一半，三星升至近三成。",
+    "src": [
+     "TrendForce HBM 市场简报（2026-06-23）",
+     "https://www.trendforce.com/research/download/RP260623IP3"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/neocloud": {
+  "updated": "2026-10-08",
+  "note": "新型云的共同模式：先签下云厂商 / 模型公司的多年期合同，再拿合同去融资买 GPU、建机房。看点是合同积压有多少、客户有多集中、电力和机房跟不跟得上。",
+  "companies": {
+   "CRWV": {
+    "products": "GPU 云（英伟达为主）",
+    "diff": "规模最大；2026 年二季度末合同积压约 1040 亿美元；客户高度集中",
+    "ties": "微软（收入约三分之二）、OpenAI、Meta；英伟达持股",
+    "src": [
+     [
+      "The Next Platform：新型云的现金与积压订单（2026-08）",
+      "https://www.nextplatform.com/cloud/2026/08/14/the-neoclouds-build-cash-hoards-faster-than-revenues/5288040"
+     ]
+    ]
+   },
+   "NBIS": {
+    "products": "GPU 云 + 自建数据中心",
+    "diff": "合同积压约 490 亿美元；Meta 合同里有“剩余容量兜底”条款",
+    "ties": "Meta（5 年约 270 亿美元）、微软（约 174~194 亿美元）",
+    "src": [
+     [
+      "Investing.com：Nebius 490 亿美元合同积压",
+      "https://www.investing.com/analysis/nebius-just-locked-up-49b-in-ai-contracts-5-ways-to-play-the-neocloud-boom-200677144"
+     ]
+    ]
+   },
+   "IREN": {
+    "products": "自有电力和场地的 AI 云",
+    "diff": "由比特币矿场转型，优势是已并网的电力",
+    "ties": "微软（约 97 亿美元合同）；与英伟达的 5GW 合作",
+    "src": [
+     [
+      "Invezz：IREN / Nebius / CoreWeave（2026-09）",
+      "https://invezz.com/news/2026/09/14/iren-nebius-coreweave-heres-why-these-neocloud-stocks-are-falling/"
+     ]
+    ]
+   },
+   "APLD": {
+    "products": "数据中心托管（不自己持有 GPU）",
+    "diff": "做“房东”，把机房长租给 CoreWeave 等",
+    "ties": "CoreWeave",
+    "src": []
+   },
+   "CORZ": {
+    "products": "矿场改造的高密度托管",
+    "diff": "同样是托管模式",
+    "ties": "CoreWeave",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "CRWV",
+    "b": "MSFT",
+    "type": "客户",
+    "desc": "微软贡献 CoreWeave 约三分之二的收入。",
+    "src": [
+     "The Next Platform：新型云的现金与积压订单（2026-08）",
+     "https://www.nextplatform.com/cloud/2026/08/14/the-neoclouds-build-cash-hoards-faster-than-revenues/5288040"
+    ]
+   },
+   {
+    "a": "NBIS",
+    "b": "META",
+    "type": "客户",
+    "desc": "5 年约 270 亿美元的 AI 基础设施协议。",
+    "src": [
+     "Investing.com：Nebius 490 亿美元合同积压",
+     "https://www.investing.com/analysis/nebius-just-locked-up-49b-in-ai-contracts-5-ways-to-play-the-neocloud-boom-200677144"
+    ]
+   },
+   {
+    "a": "NBIS",
+    "b": "MSFT",
+    "type": "客户",
+    "desc": "约 174~194 亿美元的多年期合同。",
+    "src": [
+     "Investing.com：Nebius 490 亿美元合同积压",
+     "https://www.investing.com/analysis/nebius-just-locked-up-49b-in-ai-contracts-5-ways-to-play-the-neocloud-boom-200677144"
+    ]
+   },
+   {
+    "a": "IREN",
+    "b": "MSFT",
+    "type": "客户",
+    "desc": "约 97 亿美元的 GPU 云合同。",
+    "src": [
+     "Invezz：IREN / Nebius / CoreWeave（2026-09）",
+     "https://invezz.com/news/2026/09/14/iren-nebius-coreweave-heres-why-these-neocloud-stocks-are-falling/"
+    ]
+   },
+   {
+    "a": "CRWV",
+    "b": "NBIS",
+    "type": "竞争",
+    "desc": "争夺同一批大客户的外溢算力需求；差别在自有机房比例和客户集中度。",
+    "src": [
+     "The Next Platform：新型云的现金与积压订单（2026-08）",
+     "https://www.nextplatform.com/cloud/2026/08/14/the-neoclouds-build-cash-hoards-faster-than-revenues/5288040"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/switch": {
+  "also": [
+   "ai/rack/switch"
+  ],
+  "updated": "2026-10-08",
+  "note": "AI 集群网络有两个阵营：英伟达自己的全套方案，和“博通芯片 + Arista 等整机”的开放以太网阵营。Arista 既依赖博通的芯片，又在整机层面和英伟达竞争。",
+  "companies": {
+   "AVGO": {
+    "products": "Tomahawk 6（102.4Tbps，单芯片）、Jericho 3-AI",
+    "diff": "商用交换芯片的事实标准；同时支持铜缆和 CPO",
+    "ties": "卖给 Arista、云厂商白牌交换机",
+    "src": [
+     [
+      "TechInsights：Tomahawk 6",
+      "https://techinsights.com/ja/node/59921"
+     ]
+    ]
+   },
+   "NVDA": {
+    "products": "Spectrum-X 以太网、Quantum InfiniBand；Spectrum-X Photonics（CPO）",
+    "diff": "和 GPU 捆绑销售；自研交换芯片",
+    "ties": "戴尔等整机厂采用其 Spectrum 芯片",
+    "src": [
+     [
+      "Network World：AI 网络技术选购指南",
+      "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+     ]
+    ]
+   },
+   "ANET": {
+    "products": "7060X6（Tomahawk 5）、7800R4（Jericho 3-AI）AI 交换机 + EOS 系统",
+    "diff": "软件和大客户关系是壁垒；芯片来自博通",
+    "ties": "微软、Meta 是最大客户",
+    "src": [
+     [
+      "Network World：AI 网络技术选购指南",
+      "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+     ]
+    ]
+   },
+   "CSCO": {
+    "products": "Silicon One 芯片 + Nexus 交换机",
+    "diff": "自研芯片；在超大规模客户中份额较小",
+    "ties": "",
+    "src": []
+   },
+   "CLS": {
+    "products": "为云厂商代工白牌交换机",
+    "diff": "按客户设计制造，毛利率低于品牌厂商",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "AVGO",
+    "b": "ANET",
+    "type": "供应",
+    "desc": "Arista 的 AI 交换机用博通 Tomahawk / Jericho 芯片。",
+    "src": [
+     "Network World：AI 网络技术选购指南",
+     "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+    ]
+   },
+   {
+    "a": "ANET",
+    "b": "NVDA",
+    "type": "竞争",
+    "desc": "以太网整机对英伟达的 Spectrum-X / InfiniBand 捆绑方案。",
+    "src": [
+     "Network World：AI 网络技术选购指南",
+     "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+    ]
+   },
+   {
+    "a": "AVGO",
+    "b": "NVDA",
+    "type": "竞争",
+    "desc": "Tomahawk 6 与 Spectrum-X Photonics 都是 102.4Tbps 级别，直接对标。",
+    "src": [
+     "TechInsights：Tomahawk 6",
+     "https://techinsights.com/ja/node/59921"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/optical": {
+  "also": [
+   "ai/rack/optic"
+  ],
+  "updated": "2026-10-08",
+  "note": "现在主流是可插拔光模块（800G → 1.6T）；下一步是把光引擎直接封装到交换芯片旁（CPO）。CPO 的放量时间各家说法不一：Lumentum 最新口径是 2027 下半年激光芯片需求爬坡。",
+  "companies": {
+   "LITE": {
+    "products": "超高功率激光芯片（CPO 光源）、EML 激光芯片、光路交换机（OCS）",
+    "diff": "卖上游激光芯片，是 CPO 最直接的受益者；OCS 积压订单超 4 亿美元",
+    "ties": "多家 CPO 客户（未具名）",
+    "src": [
+     [
+      "Lightwave：Lumentum CEO 谈 CPO",
+      "https://www.lightwaveonline.com/home/article/55338753/lumentums-ceo-sees-growing-customer-interest-in-co-packaged-optics-cpo"
+     ]
+    ]
+   },
+   "COHR": {
+    "products": "800G / 1.6T 光模块、激光器、OCS、CPO 方案",
+    "diff": "从芯片到模块垂直整合",
+    "ties": "与英伟达有战略合作",
+    "src": [
+     [
+      "Network World：AI 网络技术选购指南",
+      "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+     ]
+    ]
+   },
+   "AAOI": {
+    "products": "数据中心光模块",
+    "diff": "美国本土产能；客户集中",
+    "ties": "",
+    "src": []
+   },
+   "FN": {
+    "products": "光器件精密代工",
+    "diff": "不做自有品牌，给英伟达等代工",
+    "ties": "英伟达",
+    "src": []
+   },
+   "CRDO": {
+    "products": "有源电缆（AEC）、光 DSP",
+    "diff": "机柜内短距离用铜缆替代光",
+    "ties": "",
+    "src": []
+   },
+   "ALAB": {
+    "products": "Retimer、Scorpio 交换芯片",
+    "diff": "解决机柜内高速信号完整性",
+    "ties": "",
+    "src": []
+   },
+   "MRVL": {
+    "products": "光 DSP",
+    "diff": "光模块里的核心芯片",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "LITE",
+    "b": "COHR",
+    "type": "竞争",
+    "desc": "都供应激光芯片和光路交换机，争夺 CPO 光源份额。",
+    "src": [
+     "Lightwave：Lumentum CEO 谈 CPO",
+     "https://www.lightwaveonline.com/home/article/55338753/lumentums-ceo-sees-growing-customer-interest-in-co-packaged-optics-cpo"
+    ]
+   },
+   {
+    "a": "COHR",
+    "b": "NVDA",
+    "type": "合作",
+    "desc": "英伟达与 Coherent 在光互联上有战略合作。",
+    "src": [
+     "Network World：AI 网络技术选购指南",
+     "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+    ]
+   },
+   {
+    "a": "CRDO",
+    "b": "COHR",
+    "type": "替代",
+    "desc": "机柜内短距离，有源铜缆在替代一部分光模块。",
+    "src": [
+     "Network World：AI 网络技术选购指南",
+     "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
+    ]
+   }
+  ]
+ },
+ "quantum/sc/oem": {
+  "also": [
+   "quantum/ion/oem"
+  ],
+  "updated": "2026-10-08",
+  "note": "各家技术路线不同，不能只比量子比特数。还没有一家能靠收入养活自己，账上现金和政府合同是生存指标。",
+  "companies": {
+   "IBM": {
+    "products": "超导量子处理器 + Qiskit 软件生态",
+    "diff": "路线图最公开；量子只是 IBM 很小的一部分业务",
+    "ties": "通过 IBM Quantum Network 向企业和高校开放",
+    "src": []
+   },
+   "IONQ": {
+    "products": "离子阱量子计算机（Forte / Tempo），云上出售",
+    "diff": "离子阱：门保真度高、速度慢；靠收购扩张（Oxford Ionics、ID Quantique、SkyWater 晶圆厂）",
+    "ties": "收购 SkyWater 做垂直整合；在亚马逊、微软、谷歌云上架",
+    "src": [
+     [
+      "The Quantum Insider：IonQ 完成收购 SkyWater",
+      "https://thequantuminsider.com/2026/07/31/ionq-completes-skywater-acquisition-quantum-manufacturing/"
+     ],
+     [
+      "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
+      "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
+     ]
+    ]
+   },
+   "QNT": {
+    "products": "离子阱（Helios 系列）",
+    "diff": "2026 年 6 月上市，募资约 16.8 亿美元、估值逾 150 亿美元；霍尼韦尔控股",
+    "ties": "霍尼韦尔",
+    "src": [
+     [
+      "BrokerChooser：Quantinuum 上市对竞争格局的影响",
+      "https://brokerchooser.com/news/quantinuums-market-entry-reshapes-competition-for-ionq-rigetti-and-d-wave--89ee9d7e"
+     ]
+    ]
+   },
+   "RGTI": {
+    "products": "超导（Cepheus-1-36Q、108 比特系统）",
+    "diff": "自己设计并制造芯片；最依赖政府合同；2026 年一季度收入 440 万美元、现金 5.69 亿美元",
+    "ties": "向印度 C-DAC 交付系统；接入英伟达 NVQLink",
+    "src": [
+     [
+      "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
+      "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
+     ]
+    ]
+   },
+   "QBTS": {
+    "products": "量子退火机（Advantage）+ 门模型",
+    "diff": "退火路线只做优化问题，但已有一些经常性的商业收入；2026 年 1 月以 5.5 亿美元收购 Quantum Circuits，补上门模型",
+    "ties": "",
+    "src": [
+     [
+      "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
+      "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
+     ]
+    ]
+   },
+   "INFQ": {
+    "products": "中性原子量子计算机、量子传感",
+    "diff": "中性原子：比特数容易做大",
+    "ties": "",
+    "src": []
+   },
+   "GOOGL": {
+    "products": "Willow 超导芯片",
+    "diff": "研究导向，不对外销售整机",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "IONQ",
+    "b": "SkyWater",
+    "type": "收购",
+    "desc": "2026 年 7 月 31 日完成，IonQ 获得美国本土晶圆厂，用于量产离子阱芯片。",
+    "src": [
+     "The Quantum Insider：IonQ 完成收购 SkyWater",
+     "https://thequantuminsider.com/2026/07/31/ionq-completes-skywater-acquisition-quantum-manufacturing/"
+    ]
+   },
+   {
+    "a": "IONQ",
+    "b": "QNT",
+    "type": "竞争",
+    "desc": "同为离子阱路线；Quantinuum 上市后成为 IonQ 最直接的可比公司。",
+    "src": [
+     "BrokerChooser：Quantinuum 上市对竞争格局的影响",
+     "https://brokerchooser.com/news/quantinuums-market-entry-reshapes-competition-for-ionq-rigetti-and-d-wave--89ee9d7e"
+    ]
+   },
+   {
+    "a": "RGTI",
+    "b": "IBM",
+    "type": "竞争",
+    "desc": "同为超导路线。",
+    "src": [
+     "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
+     "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
+    ]
+   },
+   {
+    "a": "NVDA",
+    "b": "RGTI",
+    "type": "合作",
+    "desc": "英伟达通过 NVQLink / CUDA-Q 给各家量子硬件提供纠错和混合计算，其风投部门同时投资离子阱、光子、中性原子多条路线。",
+    "src": [
+     "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
+     "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
+    ]
+   }
+  ]
+ },
+ "autonomous/robotaxi/lidar": {
+  "also": [
+   "autonomous/truck/pod",
+   "autonomous/adas/sens"
+  ],
+  "updated": "2026-10-08",
+  "note": "激光雷达公司的差别主要在：测距原理（ToF 还是 FMCW）、客户在中国还是欧美、以及是否已经大规模量产。",
+  "companies": {
+   "HSAI": {
+    "products": "ATX（车载长距，2026 年 4 月量产）、AT 系列、机器人用 JT 系列",
+    "diff": "ToF；出货量最大（2025 年超 160 万台，规划年产能 400 万台）；长距车载份额第一",
+    "ties": "24 家车企、120 多款车型定点（理想、小米、长安、吉利等）；英伟达 DRIVE Hyperion 10 的指定激光雷达伙伴",
+    "src": [
+     [
+      "禾赛 6-K（SEC，2026）",
+      "https://www.sec.gov/Archives/edgar/data/0001861737/000110465926048075/tm2612222d1_ex99-1.pdf"
+     ],
+     [
+      "盖世汽车：禾赛 CES 2026 产能翻倍至 400 万台",
+      "https://autonews.gasgoo.com/articles/icv/ces-2026-hesai-technology-to-double-planned-annual-lidar-production-capacity-to-4-million-units-2008906906314043392"
+     ]
+    ]
+   },
+   "INVZ": {
+    "products": "InnovizTwo",
+    "diff": "ToF；客户以欧洲车企和卡车为主；2026 年二季度收入 1810 万美元",
+    "ties": "大众、Mobileye、戴姆勒卡车 / Torc（L4 卡车量产定点）",
+    "src": [
+     [
+      "Innoviz 6-K 财报（SEC，2026）",
+      "https://www.sec.gov/Archives/edgar/data/0001835654/000117891326003861/exhibit_99-1.htm"
+     ]
+    ]
+   },
+   "AEVA": {
+    "products": "Atlas 4D 激光雷达",
+    "diff": "FMCW：能直接测速度、抗干扰，成本更高",
+    "ties": "戴姆勒卡车（首个量产客户）",
+    "src": []
+   },
+   "OUST": {
+    "products": "OS 系列数字激光雷达",
+    "diff": "收入以工业、机器人、智慧基础设施为主，车载占比小",
+    "ties": "",
+    "src": []
+   },
+   "MVIS": {
+    "products": "MOVIA / MAVIN",
+    "diff": "2026 年收入指引 1000~1500 万美元，转向工业和国防",
+    "ties": "",
+    "src": []
+   }
+  },
+  "relations": [
+   {
+    "a": "HSAI",
+    "b": "NVDA",
+    "type": "合作",
+    "desc": "禾赛是英伟达 DRIVE Hyperion 10 参考平台的指定激光雷达伙伴。",
+    "src": [
+     "禾赛 6-K（SEC，2026）",
+     "https://www.sec.gov/Archives/edgar/data/0001861737/000110465926048075/tm2612222d1_ex99-1.pdf"
+    ]
+   },
+   {
+    "a": "INVZ",
+    "b": "MBLY",
+    "type": "供应",
+    "desc": "Innoviz 为 Mobileye 的自动驾驶方案供应激光雷达。",
+    "src": [
+     "Innoviz 6-K 财报（SEC，2026）",
+     "https://www.sec.gov/Archives/edgar/data/0001835654/000117891326003861/exhibit_99-1.htm"
+    ]
+   },
+   {
+    "a": "HSAI",
+    "b": "INVZ",
+    "type": "竞争",
+    "desc": "禾赛主攻中国车企并向海外扩张，Innoviz 守欧洲车企和卡车。",
+    "src": [
+     "盖世汽车：禾赛 CES 2026 产能翻倍至 400 万台",
+     "https://autonews.gasgoo.com/articles/icv/ces-2026-hesai-technology-to-double-planned-annual-lidar-production-capacity-to-4-million-units-2008906906314043392"
+    ]
+   }
+  ]
+ },
+ "autonomous/robotaxi/ops": {
+  "updated": "2026-10-08",
+  "note": "两种模式：自己拥有车队和技术（Waymo、特斯拉、Zoox），或做聚合平台接入别人的车（Uber、Lyft）。Uber 同时和几乎所有技术公司合作。",
+  "companies": {
+   "GOOGL": {
+    "products": "Waymo One",
+    "diff": "规模遥遥领先：14 个美国城市付费运营，每周超 50 万单，目标 2026 年底周百万单；车队 4000 多辆",
+    "ties": "车辆：捷豹 I-PACE、极氪 Ojai、现代 Ioniq 5（麦格纳改装）",
+    "src": [
+     [
+      "Drive Tesla Canada：Waymo 扩至 14 城（2026-09）",
+      "https://driveteslacanada.ca/news/waymo-driverless-rides-denver-san-diego-tampa/"
+     ],
+     [
+      "Claims Journal：Waymo 联席 CEO 谈 2026 年周百万单目标",
+      "https://amp.claimsjournal.com/news/national/2026/02/12/335668.htm"
+     ],
+     [
+      "WardsAuto：现代四季度开始向 Waymo 交付 Robotaxi",
+      "https://www.wardsauto.com/news/hyundai-to-begin-delivering-robotaxis-to-waymo-in-q4/829226/"
+     ]
+    ]
+   },
+   "TSLA": {
+    "products": "Robotaxi 服务 + Cybercab（无方向盘）",
+    "diff": "纯视觉、自产车辆，单车成本最低；但规模很小（2026 年 6 月彭博统计约 59 辆），Cybercab 仍待监管豁免",
+    "ties": "全部自研自产",
+    "src": [
+     [
+      "Business Today：Cybercab 开始生产（2026-04）",
+      "https://www.businesstoday.in/amp/technology/story/elon-musk-shares-first-cybercab-production-footage-robotaxi-push-intensifies-527332-2026-04-24"
+     ]
+    ]
+   },
+   "AMZN": {
+    "products": "Zoox（专用无方向盘车）",
+    "diff": "专门设计的双向行驶车辆；截至 2026 年 3 月尚未收费",
+    "ties": "与 Uber 合作，先在拉斯维加斯上线",
+    "src": [
+     [
+      "BNN Bloomberg：Zoox 与 Uber 合作（2026-03）",
+      "https://www.bnnbloomberg.ca/business/2026/03/11/zoox-and-uber-tie-up-to-deploy-robotaxis-on-ride-hailing-network/"
+     ]
+    ]
+   },
+   "UBER": {
+    "products": "聚合平台",
+    "diff": "不做技术，接入 20 多家合作方；目标 2026 年底在 15 个城市提供无人驾驶",
+    "ties": "Waymo、Zoox、文远知行、小马智行、Lucid + Nuro（计划 6 年至少 2 万辆）",
+    "src": [
+     [
+      "Bloomberg：Uber 联手 Lucid、Nuro 推 Robotaxi",
+      "https://www.bloomberg.com/news/articles/2025-07-17/uber-partnering-with-lucid-nuro-to-launch-robotaxis-in-2026"
+     ],
+     [
+      "BNN Bloomberg：Zoox 与 Uber 合作（2026-03）",
+      "https://www.bnnbloomberg.ca/business/2026/03/11/zoox-and-uber-tie-up-to-deploy-robotaxis-on-ride-hailing-network/"
+     ]
+    ]
+   },
+   "WRD": {
+    "products": "Robotaxi、无人小巴",
+    "diff": "中国 + 中东；在阿布扎比通过 Uber 运营",
+    "ties": "Uber（计划 5 年新增 15 个海外城市）",
+    "src": [
+     [
+      "盖世汽车：文远知行与 Uber 扩展至 15 个新城市",
+      "https://autonews.gasgoo.com/icv/70037353.html"
+     ]
+    ]
+   },
+   "PONY": {
+    "products": "Robotaxi",
+    "diff": "中国一线城市 + 海外",
+    "ties": "Uber（中东起步，2026 年 3 月扩展到克罗地亚）",
+    "src": [
+     [
+      "小马智行 6-K（SEC，2026）",
+      "https://www.sec.gov/Archives/edgar/data/1969302/000110465926034888/tm269906d1_ex99-2.htm"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "UBER",
+    "b": "GOOGL",
+    "type": "合作",
+    "desc": "Waymo 在部分城市通过 Uber 接单。",
+    "src": [
+     "Drive Tesla Canada：Waymo 扩至 14 城（2026-09）",
+     "https://driveteslacanada.ca/news/waymo-driverless-rides-denver-san-diego-tampa/"
+    ]
+   },
+   {
+    "a": "UBER",
+    "b": "AMZN",
+    "type": "合作",
+    "desc": "Zoox 接入 Uber，拉斯维加斯先行，洛杉矶计划 2027 年中。",
+    "src": [
+     "BNN Bloomberg：Zoox 与 Uber 合作（2026-03）",
+     "https://www.bnnbloomberg.ca/business/2026/03/11/zoox-and-uber-tie-up-to-deploy-robotaxis-on-ride-hailing-network/"
+    ]
+   },
+   {
+    "a": "UBER",
+    "b": "LCID",
+    "type": "合作",
+    "desc": "Uber 采购搭载 Nuro 系统的 Lucid Gravity，计划 6 年至少 2 万辆。",
+    "src": [
+     "Bloomberg：Uber 联手 Lucid、Nuro 推 Robotaxi",
+     "https://www.bloomberg.com/news/articles/2025-07-17/uber-partnering-with-lucid-nuro-to-launch-robotaxis-in-2026"
+    ]
+   },
+   {
+    "a": "UBER",
+    "b": "WRD",
+    "type": "合作",
+    "desc": "文远知行通过 Uber 在阿布扎比运营，并计划扩到 15 个新城市。",
+    "src": [
+     "盖世汽车：文远知行与 Uber 扩展至 15 个新城市",
+     "https://autonews.gasgoo.com/icv/70037353.html"
+    ]
+   },
+   {
+    "a": "GOOGL",
+    "b": "HYMTF",
+    "type": "供应",
+    "desc": "现代在佐治亚生产 Ioniq 5，由麦格纳加装 Waymo 系统；据报道未来几年可能采购 5 万辆。",
+    "src": [
+     "WardsAuto：现代四季度开始向 Waymo 交付 Robotaxi",
+     "https://www.wardsauto.com/news/hyundai-to-begin-delivering-robotaxis-to-waymo-in-q4/829226/"
+    ]
+   },
+   {
+    "a": "GOOGL",
+    "b": "TSLA",
+    "type": "竞争",
+    "desc": "多传感器融合 + 高成本车辆 对 纯视觉 + 低成本自产车辆。",
+    "src": [
+     "Business Today：Cybercab 开始生产（2026-04）",
+     "https://www.businesstoday.in/amp/technology/story/elon-musk-shares-first-cybercab-production-footage-robotaxi-push-intensifies-527332-2026-04-24"
+    ]
+   }
+  ]
+ }
+}

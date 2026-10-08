@@ -51,7 +51,48 @@ Python 做不了，由 Claude 会话定期来做。直接对 Claude 说"按 REFR
 - 有没有值得新增的产品，或者某个产品需要拆得更细。
 - 每 30 天跑一次 `python -m src.discover scan` 更新全市场名单（被限流就多跑两次，只补缺的）。
 
-## 3. 规则复核（偶尔）
+## 3. 零件深度研究：产品对比 + 竞争与合作（建议每天做 3~5 个零件）
+
+网页上每个零件有三层信息：① 每家公司的业务原文摘录（自动，全覆盖）；② Summizer 图谱里的关系
+（自动）；③ **人工研究的"产品对比"和"竞争与合作"**——这一层要靠这里持续补。写在 `data/insights.json`：
+
+```json
+{
+  "ai/assistant/gpu": {
+    "also": ["ai/rack/gpu"],
+    "updated": "2026-10-08",
+    "note": "一两句话：这个零件上各家的路线分歧是什么。",
+    "companies": {
+      "NVDA": {"products": "具体产品名和代际", "diff": "和别家的不同", "ties": "绑定的客户 / 伙伴",
+               "src": [["来源标题", "https://..."]]}
+    },
+    "relations": [
+      {"a": "AMD", "b": "OpenAI", "type": "供应", "desc": "一句话说清这段关系", "src": ["来源标题", "https://..."]}
+    ]
+  }
+}
+```
+
+键是 `板块id/产品id/零件id`；`also` 列出内容相同的其它零件。`a` / `b` 写美股代码，没有代码就写名字。
+`type` 用：竞争、替代、供应、客户、合作、技术授权、收购。
+
+要求：
+- 每条都用 WebSearch 查证到今天，**每条关系必须带可访问的来源 URL**；查不到来源的不写。
+- 来源之间有分歧（比如谁拿了多少份额）就把分歧写出来，不要挑一个。未经公司确认的写明"据报道"。
+- 优先顺序：先做人工确认公司多、且属于当前"主升浪进行中 / 启动初期"那一浪的零件。
+  列出还没做的零件：`python -m src.main --todo`
+- 写完跑 `python -m src.main --quick --no-push` 重新生成。
+
+## 4. 和 Summizer 联动
+
+`schedule/install.sh` 会装一个监听任务：`~/Desktop/Summizer/data/graph.json` 一变，自动跑
+`run.sh --quick`，新的板块信号和公司关系几秒到几分钟内进网页。所以 Summizer 的每日流程不需要改。
+
+如果希望每天更新 Summizer 的那个 Claude 会话**顺便**做本文件第 1、3 节（重大消息判断、零件研究），
+在 Summizer 的 `PIPELINE_INSTRUCTIONS.md` 末尾加一句：
+"全部完成后，按 `~/stock-radar/REFRESH_INSTRUCTIONS.md` 的第 1 节和第 3 节维护 stock-radar。"
+
+## 5. 规则复核（偶尔）
 
 `src/analyze.py` 里的阈值（浪位六项检查、热度分区、点位信号）都是写死的规则。如果某个结论明显
 不合常识，先看网页上列出的依据是哪一项导致的，再决定是数据问题还是阈值问题，改之前跟用户确认。

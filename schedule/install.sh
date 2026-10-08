@@ -10,8 +10,11 @@ PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
 DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 launchctl bootout "gui/$(id -u)/$LABEL" 2>/dev/null || true
+WLABEL="com.stock-radar.summizer-watch"
+WPLIST="$HOME/Library/LaunchAgents/$WLABEL.plist"
+launchctl bootout "gui/$(id -u)/$WLABEL" 2>/dev/null || true
 if [ "$1" = "--uninstall" ]; then
-  rm -f "$PLIST"; echo "已卸载定时任务。"; exit 0
+  rm -f "$PLIST" "$WPLIST"; echo "已卸载定时任务。"; exit 0
 fi
 
 slots=""
@@ -36,4 +39,23 @@ cat > "$PLIST" <<PL
 </dict></plist>
 PL
 launchctl bootstrap "gui/$(id -u)" "$PLIST"
+
+# 第二个任务：Summizer 的图谱文件一变（每天自动更新后），几秒内触发一次快速重建，
+# 新的产业消息和公司关系马上进网页。路径可用环境变量 SUMMIZER_GRAPH 改。
+GRAPH="${SUMMIZER_GRAPH:-$HOME/Desktop/Summizer/data/graph.json}"
+cat > "$WPLIST" <<PL
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>$WLABEL</string>
+  <key>ProgramArguments</key><array><string>/bin/bash</string><string>$DIR/run.sh</string><string>--quick</string></array>
+  <key>WorkingDirectory</key><string>$DIR</string>
+  <key>WatchPaths</key><array><string>$GRAPH</string></array>
+  <key>ThrottleInterval</key><integer>120</integer>
+  <key>StandardOutPath</key><string>$DIR/data/cache/run.log</string>
+  <key>StandardErrorPath</key><string>$DIR/data/cache/run.log</string>
+</dict></plist>
+PL
+launchctl bootstrap "gui/$(id -u)" "$WPLIST"
+echo "已安装：$GRAPH 一有变化就自动重建网页。"
 echo "已安装：工作日交易时段每 30 分钟 + 盘后 4 次自动刷新。日志在 data/cache/run.log"
