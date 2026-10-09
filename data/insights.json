@@ -20,7 +20,8 @@
       "Constellation Research：Nvidia–Groq 授权交易",
       "https://www.constellationr.com/insights/news/nvidias-groq-deal-acquisition-acquihire-or-creative-licensing-deal"
      ]
-    ]
+    ],
+    "what": "GPU 是同时做海量简单运算的芯片，训练和运行大模型的主力。整机柜是把几十上百颗 GPU 连同网络、供电、液冷预先装好的一整柜算力，买回去接上电和水就能用。"
    },
    "AMD": {
     "products": "Instinct MI450 系列 GPU + Helios 整机柜",
@@ -35,7 +36,8 @@
       "Futurum：CES 上的 Rubin 与 Helios",
       "https://futurumgroup.com/insights/at-ces-nvidia-rubin-and-amd-helios-made-memory-the-future-of-ai/"
      ]
-    ]
+    ],
+    "what": "同样是训练和运行大模型的 GPU，Helios 是它对标英伟达的整机柜。卖点是每颗芯片带的显存更大、互联用开放标准，客户不被一家绑死。"
    },
    "AVGO": {
     "products": "不卖通用 GPU，帮客户做定制加速器（XPU）",
@@ -50,7 +52,8 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "不卖现成的 GPU，而是按某一家云厂商的需求量身设计一款专用 AI 芯片：只做这家要的那几种运算，所以更省电、更便宜，但别人用不了。"
    },
    "CBRS": {
     "products": "WSE-3 晶圆级芯片（一整片晶圆就是一颗芯片）+ 自营推理云",
@@ -61,7 +64,8 @@
       "DataCenterDynamics：OpenAI 与 Cerebras 750MW 协议",
       "https://www.datacenterdynamics.com/en/news/openai-signs-10-billion-deal-with-cerebras-with-750mw-of-big-chip-compute/"
      ]
-    ]
+    ],
+    "what": "把一整片晶圆做成一颗巨型芯片，省掉了很多颗小芯片之间来回传数据的时间，所以回答生成得特别快。它不卖芯片，而是自己建机房、按用量出租算力。"
    },
    "MRVL": {
     "products": "定制 ASIC 设计服务",
@@ -72,21 +76,24 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "和博通一样做定制 AI 芯片的设计服务：云厂商出想法和架构，它负责把芯片真正设计出来并交给台积电量产。"
    },
    "QCOM": {
     "products": "AI200 / AI250 推理机柜",
     "diff": "主打推理的每瓦成本，数据中心是新业务",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "把手机芯片的省电技术搬到数据中心，做专门用来“运行”模型（推理）而不是“训练”模型的机柜，主打每度电能回答更多问题。"
    },
    "INTC": {
     "products": "Xeon CPU、Gaudi 加速器；18A 代工",
     "diff": "加速器份额很小，价值更多在 CPU 和代工",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "CPU 是服务器里负责调度和通用计算的芯片，每台 AI 服务器仍要配；Gaudi 是它自己的 AI 加速芯片；18A 是它帮别人代工芯片的最新工艺。"
    }
   },
   "relations": [
@@ -159,7 +166,8 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "定制加速器（XPU）就是为一家客户专门设计的 AI 芯片。博通提供设计能力、高速接口等现成模块，并管理量产；还能把配套的网络芯片一起卖。"
    },
    "MRVL": {
     "products": "定制 ASIC + 光 DSP",
@@ -170,7 +178,8 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "同样是帮云厂商把自研 AI 芯片做出来的设计服务商；另外做光模块里的核心信号处理芯片（光 DSP），负责把电信号和光信号互相转换。"
    },
    "GOOGL": {
     "products": "TPU",
@@ -181,7 +190,8 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "TPU 是谷歌自己设计、专门跑自家模型的 AI 芯片，用来减少对英伟达的依赖，也通过谷歌云租给外部客户。"
    },
    "AMZN": {
     "products": "Trainium",
@@ -192,7 +202,8 @@
       "Tom's Hardware：定制 AI ASIC 现状（2026-05）",
       "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
      ]
-    ]
+    ],
+    "what": "Trainium 是亚马逊自研的 AI 训练芯片，主要给 Anthropic 和 AWS 内部用，目的是降低算力成本。"
    }
   },
   "relations": [
@@ -265,28 +276,32 @@
       "TrendForce HBM 市场简报（2026-06-23）",
       "https://www.trendforce.com/research/download/RP260623IP3"
      ]
-    ]
+    ],
+    "what": "HBM 是把多层内存芯片垂直叠起来、紧贴在 GPU 旁边的高速内存，GPU 算得再快也要靠它喂数据；普通 DRAM 是服务器内存，SSD 是硬盘。"
    },
    "SNDK": {
     "products": "企业级 NAND / SSD",
     "diff": "不做 HBM，受益于推理带来的存储需求",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "NAND 闪存是断电不丢数据的存储芯片，做成 SSD 用来存模型和训练数据。AI 推理要频繁读取大量数据，带动企业级 SSD 需求。"
    },
    "WDC": {
     "products": "大容量机械硬盘",
     "diff": "不做 HBM；数据中心冷数据存储",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "机械硬盘，单位容量最便宜的存储方式。数据中心用它存放不常读取的海量数据（训练素材、日志、备份）。"
    },
    "STX": {
     "products": "大容量机械硬盘（HAMR）",
     "diff": "与西部数据双寡头",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "同样是大容量机械硬盘。HAMR 是用激光加热盘片来写入的新技术，能在同样大小的盘里存更多数据。"
    }
   },
   "relations": [
@@ -335,7 +350,8 @@
       "The Next Platform：新型云的现金与积压订单（2026-08）",
       "https://www.nextplatform.com/cloud/2026/08/14/the-neoclouds-build-cash-hoards-faster-than-revenues/5288040"
      ]
-    ]
+    ],
+    "what": "专门出租 GPU 算力的云：自己买英伟达的 GPU、建或租机房，再按小时或按长期合同租给模型公司和大云厂商。"
    },
    "NBIS": {
     "products": "GPU 云 + 自建数据中心",
@@ -346,7 +362,8 @@
       "Investing.com：Nebius 490 亿美元合同积压",
       "https://www.investing.com/analysis/nebius-just-locked-up-49b-in-ai-contracts-5-ways-to-play-the-neocloud-boom-200677144"
      ]
-    ]
+    ],
+    "what": "同样是出租 GPU 算力，自己设计和建造数据中心的比例更高。"
    },
    "IREN": {
     "products": "自有电力和场地的 AI 云",
@@ -357,21 +374,24 @@
       "Invezz：IREN / Nebius / CoreWeave（2026-09）",
       "https://invezz.com/news/2026/09/14/iren-nebius-coreweave-heres-why-these-neocloud-stocks-are-falling/"
      ]
-    ]
+    ],
+    "what": "原来挖比特币，手里有大量已经接好电的场地，现在改装成 AI 数据中心并自己买 GPU 出租。"
    },
    "APLD": {
     "products": "数据中心托管（不自己持有 GPU）",
     "diff": "做“房东”，把机房长租给 CoreWeave 等",
     "ties": "CoreWeave",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "只做“房东”：建好带电力和冷却的机房，长期整租给 CoreWeave 这类公司，自己不买 GPU。"
    },
    "CORZ": {
     "products": "矿场改造的高密度托管",
     "diff": "同样是托管模式",
     "ties": "CoreWeave",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "同样是比特币矿场改造的机房托管，把场地和电力长租给 AI 算力公司。"
    }
   },
   "relations": [
@@ -443,7 +463,8 @@
       "TechInsights：Tomahawk 6",
       "https://techinsights.com/ja/node/59921"
      ]
-    ]
+    ],
+    "what": "交换芯片是交换机的“大脑”，决定数据包从哪个口进、哪个口出。Tomahawk 用于把 GPU 连成集群，一颗芯片能同时处理 100Tbps 以上的流量。"
    },
    "NVDA": {
     "products": "Spectrum-X 以太网、Quantum InfiniBand；Spectrum-X Photonics（CPO）",
@@ -454,7 +475,8 @@
       "Network World：AI 网络技术选购指南",
       "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
      ]
-    ]
+    ],
+    "what": "英伟达自己的网络设备：InfiniBand 是它的私有高速网络，Spectrum-X 是针对 AI 优化的以太网，通常和 GPU 打包卖。"
    },
    "ANET": {
     "products": "7060X6（Tomahawk 5）、7800R4（Jericho 3-AI）AI 交换机 + EOS 系统",
@@ -465,21 +487,24 @@
       "Network World：AI 网络技术选购指南",
       "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
      ]
-    ]
+    ],
+    "what": "把博通的交换芯片做成整台交换机，并配上自己的操作系统（EOS）。大集群里几万个端口的管理、排错主要靠这套软件。"
    },
    "CSCO": {
     "products": "Silicon One 芯片 + Nexus 交换机",
     "diff": "自研芯片；在超大规模客户中份额较小",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "老牌网络设备商，交换芯片和整机都自己做，主要客户是企业和运营商。"
    },
    "CLS": {
     "products": "为云厂商代工白牌交换机",
     "diff": "按客户设计制造，毛利率低于品牌厂商",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "按云厂商给的设计图代工生产交换机，不贴自己的牌子（白牌），赚制造的钱。"
    }
   },
   "relations": [
@@ -531,7 +556,8 @@
       "Lightwave：Lumentum CEO 谈 CPO",
       "https://www.lightwaveonline.com/home/article/55338753/lumentums-ceo-sees-growing-customer-interest-in-co-packaged-optics-cpo"
      ]
-    ]
+    ],
+    "what": "激光芯片是光模块里发光的核心元件，把电信号变成光信号；光路交换机（OCS）用微镜直接转接光路，不用先转回电信号。"
    },
    "COHR": {
     "products": "800G / 1.6T 光模块、激光器、OCS、CPO 方案",
@@ -542,42 +568,48 @@
       "Network World：AI 网络技术选购指南",
       "https://www.networkworld.com/article/4087534/buyers-guide-to-ai-networking-technology.html"
      ]
-    ]
+    ],
+    "what": "光模块是插在交换机上的“电转光”小盒子，机柜之间靠它用光纤传数据。它从激光芯片到整个模块都自己做。"
    },
    "AAOI": {
     "products": "数据中心光模块",
     "diff": "美国本土产能；客户集中",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "同样做数据中心光模块，生产主要在美国和中国台湾。"
    },
    "FN": {
     "products": "光器件精密代工",
     "diff": "不做自有品牌，给英伟达等代工",
     "ties": "英伟达",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "不做自己的产品，专门替别人精密组装光器件和光模块，是英伟达光模块的主要代工厂。"
    },
    "CRDO": {
     "products": "有源电缆（AEC）、光 DSP",
     "diff": "机柜内短距离用铜缆替代光",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "有源电缆是带信号增强芯片的铜缆，机柜内几米的距离用它比用光模块更便宜、更省电。"
    },
    "ALAB": {
     "products": "Retimer、Scorpio 交换芯片",
     "diff": "解决机柜内高速信号完整性",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "Retimer 是放在高速线路中间的“信号整形”芯片：信号跑远了会失真，它负责重新整理干净再往下传。"
    },
    "MRVL": {
     "products": "光 DSP",
     "diff": "光模块里的核心芯片",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "光 DSP 是光模块里负责编码、解码和纠错的芯片，决定一个光模块能跑多快。"
    }
   },
   "relations": [
@@ -625,7 +657,8 @@
     "diff": "路线图最公开；量子只是 IBM 很小的一部分业务",
     "ties": "通过 IBM Quantum Network 向企业和高校开放",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "用超导电路做量子比特，需要冷却到接近绝对零度。量子计算机不是更快的普通电脑，而是擅长特定问题（分子模拟、某些优化和密码破解）的专用机器。"
    },
    "IONQ": {
     "products": "离子阱量子计算机（Forte / Tempo），云上出售",
@@ -640,7 +673,8 @@
       "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
       "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
      ]
-    ]
+    ],
+    "what": "用电场把带电的原子（离子）悬在真空里当量子比特，用激光操控。优点是出错率低，缺点是每一步操作慢。"
    },
    "QNT": {
     "products": "离子阱（Helios 系列）",
@@ -651,7 +685,8 @@
       "BrokerChooser：Quantinuum 上市对竞争格局的影响",
       "https://brokerchooser.com/news/quantinuums-market-entry-reshapes-competition-for-ionq-rigetti-and-d-wave--89ee9d7e"
      ]
-    ]
+    ],
+    "what": "同样是离子阱路线，以门操作精度高著称，同时卖配套的量子软件和加密产品。"
    },
    "RGTI": {
     "products": "超导（Cepheus-1-36Q、108 比特系统）",
@@ -662,7 +697,8 @@
       "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
       "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
      ]
-    ]
+    ],
+    "what": "超导路线，自己设计并在自家小型晶圆厂里制造量子芯片，通过云或直接卖整机给科研机构。"
    },
    "QBTS": {
     "products": "量子退火机（Advantage）+ 门模型",
@@ -673,21 +709,24 @@
       "Nasdaq：Rigetti vs IonQ vs D-Wave（2026 下半年）",
       "https://www.nasdaq.com/articles/rigetti-vs-ionq-vs-d-wave-ranking-quantum-computing-trade-heading-h2-2026"
      ]
-    ]
+    ],
+    "what": "量子退火机只解决一类问题：在海量组合里找最优解（排班、路线、投资组合），不能运行通用量子算法；它正在补做通用的门模型机器。"
    },
    "INFQ": {
     "products": "中性原子量子计算机、量子传感",
     "diff": "中性原子：比特数容易做大",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "用激光把不带电的原子排成阵列当量子比特，容易把数量做大；同一套技术也用来做高精度的量子时钟和传感器。"
    },
    "GOOGL": {
     "products": "Willow 超导芯片",
     "diff": "研究导向，不对外销售整机",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "谷歌的超导量子芯片，主要用于展示纠错等研究里程碑，目前不对外销售。"
    }
   },
   "relations": [
@@ -754,7 +793,8 @@
       "盖世汽车：禾赛 CES 2026 产能翻倍至 400 万台",
       "https://autonews.gasgoo.com/articles/icv/ces-2026-hesai-technology-to-double-planned-annual-lidar-production-capacity-to-4-million-units-2008906906314043392"
      ]
-    ]
+    ],
+    "what": "激光雷达向四周发射激光并测量反射回来的时间，实时画出周围的三维地图，让车在黑夜和逆光下也能判断距离。禾赛做车顶和车身上的长距、近距型号。"
    },
    "INVZ": {
     "products": "InnovizTwo",
@@ -765,28 +805,32 @@
       "Innoviz 6-K 财报（SEC，2026）",
       "https://www.sec.gov/Archives/edgar/data/0001835654/000117891326003861/exhibit_99-1.htm"
      ]
-    ]
+    ],
+    "what": "同样是给量产车用的激光雷达，主要卖给欧洲车企和卡车厂，用于 L3/L4 级自动驾驶。"
    },
    "AEVA": {
     "products": "Atlas 4D 激光雷达",
     "diff": "FMCW：能直接测速度、抗干扰，成本更高",
     "ties": "戴姆勒卡车（首个量产客户）",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "另一种原理的激光雷达（FMCW）：除了测距离，还能直接测出每个点的速度，对高速行驶的卡车尤其有用。"
    },
    "OUST": {
     "products": "OS 系列数字激光雷达",
     "diff": "收入以工业、机器人、智慧基础设施为主，车载占比小",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "把激光雷达做成芯片化的数字产品，主要用在工厂、仓库机器人、路口监测和安防，车载只是一小部分。"
    },
    "MVIS": {
     "products": "MOVIA / MAVIN",
     "diff": "2026 年收入指引 1000~1500 万美元，转向工业和国防",
     "ties": "",
     "src": [],
-    "unverified": true
+    "unverified": true,
+    "what": "用微型振镜扫描激光的激光雷达，目前转向工业和国防客户。"
    }
   },
   "relations": [
@@ -843,7 +887,8 @@
       "WardsAuto：现代四季度开始向 Waymo 交付 Robotaxi",
       "https://www.wardsauto.com/news/hyundai-to-begin-delivering-robotaxis-to-waymo-in-q4/829226/"
      ]
-    ]
+    ],
+    "what": "Waymo One 是不需要司机的网约车服务：乘客用 App 叫车，来的是一辆全程自己开的车。Waymo 自己做驾驶系统并运营车队。"
    },
    "TSLA": {
     "products": "Robotaxi 服务 + Cybercab（无方向盘）",
@@ -854,7 +899,8 @@
       "Business Today：Cybercab 开始生产（2026-04）",
       "https://www.businesstoday.in/amp/technology/story/elon-musk-shares-first-cybercab-production-footage-robotaxi-push-intensifies-527332-2026-04-24"
      ]
-    ]
+    ],
+    "what": "特斯拉自己的无人网约车服务；Cybercab 是专门为此设计的两座车，没有方向盘和踏板。"
    },
    "AMZN": {
     "products": "Zoox（专用无方向盘车）",
@@ -865,7 +911,8 @@
       "BNN Bloomberg：Zoox 与 Uber 合作（2026-03）",
       "https://www.bnnbloomberg.ca/business/2026/03/11/zoox-and-uber-tie-up-to-deploy-robotaxis-on-ride-hailing-network/"
      ]
-    ]
+    ],
+    "what": "Zoox 是专门设计的无人接驳车：没有驾驶位，四个座位面对面，前后都能开。"
    },
    "UBER": {
     "products": "聚合平台",
@@ -880,7 +927,8 @@
       "BNN Bloomberg：Zoox 与 Uber 合作（2026-03）",
       "https://www.bnnbloomberg.ca/business/2026/03/11/zoox-and-uber-tie-up-to-deploy-robotaxis-on-ride-hailing-network/"
      ]
-    ]
+    ],
+    "what": "打车平台本身不做自动驾驶，而是把各家的无人车接进自己的 App，让乘客在同一个入口叫到。"
    },
    "WRD": {
     "products": "Robotaxi、无人小巴",
@@ -891,7 +939,8 @@
       "盖世汽车：文远知行与 Uber 扩展至 15 个新城市",
       "https://autonews.gasgoo.com/icv/70037353.html"
      ]
-    ]
+    ],
+    "what": "在中国和中东运营无人出租车和无人小巴的公司，自己做驾驶系统。"
    },
    "PONY": {
     "products": "Robotaxi",
@@ -902,7 +951,8 @@
       "小马智行 6-K（SEC，2026）",
       "https://www.sec.gov/Archives/edgar/data/1969302/000110465926034888/tm269906d1_ex99-2.htm"
      ]
-    ]
+    ],
+    "what": "同样是自己做驾驶系统并运营无人出租车，主要在中国一线城市。"
    }
   },
   "relations": [
@@ -985,7 +1035,8 @@
       "AP：Meta 签下三份核电协议（2026-01）",
       "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
      ]
-    ]
+    ],
+    "what": "拥有并运营核电站，把电卖给电网或直接和数据中心签长期合同。核电 24 小时不间断、不排碳，正好匹配数据中心全天满负荷的用电。"
    },
    "VST": {
     "products": "核电 + 燃气发电（得州为主）",
@@ -996,7 +1047,8 @@
       "AP：Meta 签下三份核电协议（2026-01）",
       "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
      ]
-    ]
+    ],
+    "what": "拥有核电站和燃气电厂的发电公司，靠卖电赚钱。"
    },
    "TLN": {
     "products": "Susquehanna 核电站",
@@ -1007,7 +1059,8 @@
       "World Nuclear News：Talen–亚马逊扩大供电协议",
       "https://world-nuclear-news.org/articles/new-supply-agreement-expands-talen-amazon-partnership"
      ]
-    ]
+    ],
+    "what": "拥有一座大型核电站，旁边就是亚马逊的数据中心园区。"
    },
    "NEE": {
     "products": "风光储 + 核电",
@@ -1018,7 +1071,8 @@
       "AP：Meta 签下三份核电协议（2026-01）",
       "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
      ]
-    ]
+    ],
+    "what": "美国最大的风电、光伏和储能开发商，也有核电站；把电通过长期合同卖给企业和电力公司。"
    },
    "GEV": {
     "products": "重型燃气轮机（HA 级）、航改燃机、小型堆 BWRX-300",
@@ -1033,7 +1087,8 @@
       "Power Engineering：数据中心推动 GE Vernova 订单创纪录",
       "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
      ]
-    ]
+    ],
+    "what": "造发电设备：燃气轮机烧天然气带动发电机，是目前新增电力里建得最快的大型电源。它卖设备和后续几十年的维护服务，不卖电。"
    },
    "BE": {
     "products": "固体氧化物燃料电池（现场发电，不用等并网）",
@@ -1044,7 +1099,8 @@
       "DataCenterDynamics：甲骨文把 Bloom 燃料电池协议扩到 2.8GW",
       "https://www.datacenterdynamics.com/en/news/oracle-expands-fuel-cell-supply-deal-with-bloom-energy-to-28gw/"
      ]
-    ]
+    ],
+    "what": "燃料电池把天然气通过电化学反应直接变成电，不经过燃烧。可以像集装箱一样摆在数据中心旁边现场发电，不用等电网接入。"
    },
    "OKLO": {
     "products": "Aurora 快堆（尚未商业运行）",
@@ -1055,7 +1111,8 @@
       "AP：Meta 签下三份核电协议（2026-01）",
       "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
      ]
-    ]
+    ],
+    "what": "设计小型核反应堆，计划自己建、自己运营、直接卖电给数据中心。目前还没有一座建成发电。"
    },
    "SMR": {
     "products": "NuScale 小型模块化反应堆（唯一获 NRC 设计认证）",
@@ -1070,7 +1127,8 @@
       "Zacks：TVA 6GW 计划与 NuScale",
       "https://www.zacks.com/stock/news/2882159/will-tva-s-6-gw-program-boost-nuscale-power-s-long-term-growth"
      ]
-    ]
+    ],
+    "what": "设计可以在工厂里预制、运到现场拼装的小型核反应堆。公司只卖设计和技术，电站由别人投资建设。"
    },
    "CCJ": {
     "products": "铀矿 + 持有西屋电气 49%",
@@ -1085,31 +1143,36 @@
       "Pulse 2.0：能源部最高 175 亿美元支持西屋 AP1000",
       "https://pulse2.com/cameco-welcomes-does-up-to-17-5-billion-commitment-to-support-westinghouse-ap1000-reactor-deployment/"
      ]
-    ]
+    ],
+    "what": "开采铀矿并加工成核燃料；持有西屋电气近一半股权，西屋是大型核反应堆的设计方和核电站的服务商。"
    },
    "LEU": {
     "products": "浓缩铀（含高丰度低浓铀 HALEU）",
     "diff": "美国本土唯一有 HALEU 产能的上市公司，小型堆的燃料瓶颈",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "把天然铀提纯（浓缩）成反应堆能用的燃料。新型小堆需要纯度更高的 HALEU，目前美国只有它能做。"
    },
    "BWXT": {
     "products": "核部件、海军反应堆、微堆",
     "diff": "卖部件，不依赖某一种堆型胜出",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "制造反应堆的核心部件和核燃料，长期给美国海军的核潜艇和航母供货，也在做小型堆。"
    },
    "NNE": {
     "products": "微型反应堆（研发阶段）",
     "diff": "没有收入，最早期",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "研发可以用卡车运输的微型反应堆，还在早期设计和审批阶段。"
    },
    "NRG": {
     "products": "燃气发电 + 零售电力",
     "diff": "卖电；以燃气为主",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "拥有燃气电厂并直接向家庭和企业卖电的公司。"
    }
   },
   "relations": [
@@ -1212,7 +1275,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "电从电网进到机柜要逐级降压和分配：变压器负责降压，开关柜负责通断和保护，UPS 在断电瞬间无缝顶上，母线槽把大电流送到每一排机柜。伊顿这几样都做。"
    },
    "VRT": {
     "products": "UPS、配电柜、母线、800V 直流方案，加上液冷",
@@ -1223,7 +1287,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "专门为数据中心做的供电设备：UPS（不间断电源）、配电柜、给机柜送电的母线，以及下一代 800V 直流供电方案。"
    },
    "GEV": {
     "products": "高压变压器、开关设备、变电站（电气化业务）",
@@ -1234,25 +1299,29 @@
       "Power Engineering：数据中心推动 GE Vernova 订单创纪录",
       "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
      ]
-    ]
+    ],
+    "what": "电网侧的大型设备：把几十万伏高压降下来的大变压器、高压开关和整座变电站。"
    },
    "POWL": {
     "products": "定制中压开关柜、配电室",
     "diff": "小而专；原本做油气和电力，数据中心是新增量",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "按客户需求定制的中压开关柜和整体式配电室——一个装满开关和保护设备的集装箱，运到现场就能用。"
    },
    "HUBB": {
     "products": "电网连接件、开关、公用事业配电部件",
     "diff": "卖给电力公司为主，间接受益",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "电线杆和变电站上的各种连接件、绝缘子、开关等电网硬件，主要卖给电力公司。"
    },
    "NVT": {
     "products": "机柜配电、母线、电气连接与防护，加上液冷",
     "diff": "靠近机柜这一端",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "机柜内外的配电条、母线和电气连接件，以及保护电气设备的机箱。"
    },
    "PWR": {
     "products": "输电线路、变电站施工",
@@ -1263,13 +1332,15 @@
       "Barchart：建 AI 数据中心的三家公司",
       "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
      ]
-    ]
+    ],
+    "what": "施工队：架设输电线路、建变电站、把电力从电网接到数据中心园区。不生产设备。"
    },
    "AMSC": {
     "products": "电能质量与并网系统",
     "diff": "小市值，产品更专",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "稳定电压、改善电能质量的电力电子设备，用于工厂、数据中心和新能源并网。"
    }
   },
   "relations": [
@@ -1332,7 +1403,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "氮化镓和碳化硅是比硅更耐高压、开关更快的半导体材料，用它们做电源里的开关器件，转换效率更高、体积更小、发热更少。"
    },
    "MPWR": {
     "products": "给 GPU 供电的多相电源模块和控制芯片",
@@ -1343,7 +1415,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "GPU 核心只需要不到 1 伏但电流极大的电。它做的电源模块就贴在 GPU 旁边，负责完成这最后一步降压。"
    },
    "IFNNY": {
     "products": "硅、SiC、GaN 全系列功率半导体",
@@ -1354,7 +1427,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "各种功率半导体——电源里负责高速开关、把电压变来变去的器件，从机房入口到芯片旁边每一级都要用。"
    },
    "ON": {
     "products": "SiC 和硅功率器件",
@@ -1365,7 +1439,8 @@
       "DataCenterDynamics：Nvidia 与数据中心伙伴共建 800V HVDC",
       "https://www.datacenterdynamics.com/en/news/nvidia-working-with-data-center-partners-to-build-800v-hvdc-power-systems"
      ]
-    ]
+    ],
+    "what": "碳化硅和硅的功率器件，原本主要用在电动车上，现在也卖给数据中心电源。"
    },
    "POWI": {
     "products": "高压 GaN 电源芯片",
@@ -1376,7 +1451,8 @@
       "DataCenterDynamics：Nvidia 与数据中心伙伴共建 800V HVDC",
       "https://www.datacenterdynamics.com/en/news/nvidia-working-with-data-center-partners-to-build-800v-hvdc-power-systems"
      ]
-    ]
+    ],
+    "what": "把高压开关管和控制电路做在一起的电源芯片，用于把高压直流转换成低压。"
    },
    "STM": {
     "products": "SiC 和硅功率器件",
@@ -1387,7 +1463,8 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "碳化硅和硅功率器件，以及配套的控制芯片。"
    },
    "VICR": {
     "products": "高密度电源模块（分比式电源架构）",
@@ -1398,19 +1475,22 @@
       "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
       "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
      ]
-    ]
+    ],
+    "what": "把一整级电源转换做成一个小模块，体积小、能通过的电流密度高，可以放在离芯片很近的地方。"
    },
    "AEIS": {
     "products": "数据中心服务器电源",
     "diff": "做整机电源而不是芯片",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "装在服务器或机柜里的整台电源（把交流电变成服务器用的直流电）。"
    },
    "WOLF": {
     "products": "SiC 衬底和器件",
     "diff": "上游材料；经历过破产重组",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "碳化硅的原材料（衬底晶圆）和器件，是功率半导体的上游。"
    }
   },
   "relations": [
@@ -1476,7 +1556,8 @@
       "Motley Fool：卡特彼勒积压订单 630 亿美元（2026-08）",
       "https://www.fool.com/investing/2026/08/03/caterpillars-order-backlog-hit-a-record-63-billion/"
      ]
-    ]
+    ],
+    "what": "大型柴油或燃气发电机组。原本只在停电时启动，现在电网接入要排队好几年，不少数据中心直接用它们当主电源。"
    },
    "GNRC": {
     "products": "大型柴油备用发电机（数据中心是新业务）",
@@ -1491,13 +1572,15 @@
       "Nasdaq：Generac 与亚马逊的发电机协议",
       "https://www.nasdaq.com/articles/generac-signs-amazon-generator-deal-24b-initial-deliveries"
      ]
-    ]
+    ],
+    "what": "停电时自动启动的大型柴油备用发电机。"
    },
    "CMI": {
     "products": "柴油和燃气备用发电机组",
     "diff": "与卡特彼勒是这个市场的两大老牌供应商",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "柴油和燃气发电机组，数据中心备用电源的主要品牌之一。"
    },
    "FLNC": {
     "products": "电网级电池储能系统",
@@ -1512,25 +1595,29 @@
       "S&P Global：Fluence 谈电池作为数据中心与电网之间的缓冲",
       "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/fluence-exec-touts-batteries-as-shock-absorber-between-data-centers-grid-97565515"
      ]
-    ]
+    ],
+    "what": "集装箱式的大型电池储能系统：电便宜或有富余时充电，用电高峰或断电时放电，也能缓冲 AI 负载忽高忽低对电网的冲击。"
    },
    "EOSE": {
     "products": "锌基长时储能电池",
     "diff": "非锂电、美国本土制造；规模小、仍在亏损",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "用锌而不是锂做的电池，适合连续放电 4 小时以上的场景，不易起火。"
    },
    "TSLA": {
     "products": "Megapack",
     "diff": "储能出货量最大，但只是特斯拉的一部分业务",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "Megapack 是特斯拉的集装箱式储能电池，电网和大型用电方用它来存电和调峰。"
    },
    "ENS": {
     "products": "数据中心 UPS 电池、机柜内备电模组",
     "diff": "做机房内的短时备电，不是电网级",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "机房里 UPS 用的电池，以及装在机柜内、断电瞬间顶上几分钟的备电模组。"
    }
   },
   "relations": [
@@ -1583,7 +1670,8 @@
       "Business Wire：伊顿收购 Boyd Thermal",
       "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
      ]
-    ]
+    ],
+    "what": "液冷：冷板贴在芯片上，冷却液流过带走热量；CDU 是这条回路的水泵加换热器，把热交给机房的冷却水。它还做传统的机房空调。"
    },
    "ETN": {
     "products": "Boyd Thermal 的冷板和液冷系统",
@@ -1594,43 +1682,50 @@
       "Business Wire：伊顿收购 Boyd Thermal",
       "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
      ]
-    ]
+    ],
+    "what": "Boyd 做的是冷板（贴在芯片上的金属散热块）和整套液冷回路。"
    },
    "NVT": {
     "products": "CDU、分液管、机柜级液冷",
     "diff": "靠近机柜的液冷部件",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "CDU 和分液管——把冷却液分送到机柜里每一台服务器的管路系统。"
    },
    "MOD": {
     "products": "数据中心冷水机组、CDU（Airedale 品牌）",
     "diff": "从汽车散热转型，数据中心占比快速上升",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "冷水机组把机房里的热最终排到室外；也做 CDU。"
    },
    "TT": {
     "products": "大型冷水机组",
     "diff": "机房外的制冷设备，不做机柜内液冷",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "大型冷水机组：制造冷水供整座数据中心使用，相当于机房的中央空调主机。"
    },
    "JCI": {
     "products": "冷水机组（York）、楼宇控制",
     "diff": "同上；积压订单创纪录",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "大型冷水机组，以及控制整栋建筑温度和能耗的楼宇自控系统。"
    },
    "CARR": {
     "products": "冷水机组",
     "diff": "同上",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "大型冷水机组和空调设备。"
    },
    "AAON": {
     "products": "定制数据中心空调（BASX）",
     "diff": "小而专",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "按数据中心需求定制的大型空调和冷却机组。"
    }
   },
   "relations": [
@@ -1693,7 +1788,8 @@
       "Barchart：建 AI 数据中心的三家公司",
       "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
      ]
-    ]
+    ],
+    "what": "在数据中心里安装空调、冷却管路和电气系统，并在工厂里预先做好一部分模块再运到现场拼装，缩短工期。"
    },
    "EME": {
     "products": "电气和机电安装（规模最大的专业承包商）",
@@ -1704,7 +1800,8 @@
       "Nasdaq：EMCOR 2026 年能否继续跑赢",
       "https://www.nasdaq.com/articles/can-emcor-outgrow-nonresidential-construction-again-2026"
      ]
-    ]
+    ],
+    "what": "美国最大的机电安装承包商：负责建筑里的电气、暖通、消防系统的安装和后续维护。"
    },
    "STRL": {
     "products": "大型场地平整、土方和地下设施",
@@ -1715,7 +1812,8 @@
       "Barchart：建 AI 数据中心的三家公司",
       "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
      ]
-    ]
+    ],
+    "what": "开工的第一步：平整几百英亩的土地、挖地基、铺设地下的水电管线，之后别的施工队才能进场。"
    },
    "PWR": {
     "products": "输电线路、变电站、数据中心外部电力接入",
@@ -1726,19 +1824,22 @@
       "Barchart：建 AI 数据中心的三家公司",
       "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
      ]
-    ]
+    ],
+    "what": "把高压电从电网引到园区：架线、建变电站。"
    },
    "IESC": {
     "products": "电气安装、数据通信布线",
     "diff": "规模较小，数据中心占比高",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "电气布线和通信布线的安装。"
    },
    "PRIM": {
     "products": "电力和管线工程",
     "diff": "偏公用事业",
     "ties": "",
-    "unverified": true
+    "unverified": true,
+    "what": "电力线路和管道工程的施工。"
    },
    "J": {
     "products": "设计与工程管理",
@@ -1749,7 +1850,8 @@
       "Barchart：建 AI 数据中心的三家公司",
       "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
      ]
-    ]
+    ],
+    "what": "做工程设计和项目管理：画图纸、定方案、监督施工，不直接出施工队。"
    }
   },
   "relations": [

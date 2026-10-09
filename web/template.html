@@ -363,8 +363,8 @@ function insightBlock(n,L){
   if(I){const rows=Object.entries(I.companies||{}).filter(([t])=>C[t]);
     cmp=`<h3 style="margin-top:16px;color:var(--text)">产品对比：同一个零件，各家做的具体是什么 <span class="faint small">· 人工研究，更新于 ${esc(I.updated||"")}</span></h3>
     ${I.note?`<div class="note">${esc(I.note)}</div>`:""}
-    <div class="tw"><table class="calc"><tr><th class="l">公司</th><th class="l">具体产品</th><th class="l">和别家的不同</th><th class="l">绑定的客户 / 伙伴</th><th class="l">来源</th></tr>
-    ${rows.map(([t,x])=>`<tr><td class="l">${tkLink(t)}<div class="src">${esc(C[t].name).slice(0,18)}</div></td><td class="l">${esc(x.products||"")}${x.unverified?`<div class="src">这一行本轮未查到当日来源，按已有知识整理，请以公司年报为准</div>`:""}</td><td class="l muted">${esc(x.diff||"")}</td><td class="l muted">${esc(x.ties||"")}</td><td class="l src">${(x.src||[]).map(srcLink).join("<br>")||((C[t].reports||[])[0]?`<a href="${safeUrl(C[t].reports[0].url)}" target="_blank" rel="noopener">公司 ${esc(C[t].reports[0].form)}</a>`:"")}</td></tr>`).join("")}</table></div>`}
+    <div class="tw"><table class="calc"><tr><th class="l">公司</th><th class="l" style="min-width:260px">具体产品 · 它是做什么的</th><th class="l">和别家的不同</th><th class="l">绑定的客户 / 伙伴</th><th class="l">来源</th></tr>
+    ${rows.map(([t,x])=>`<tr><td class="l">${tkLink(t)}<div class="src">${esc(C[t].name).slice(0,18)}</div></td><td class="l"><b>${esc(x.products||"")}</b>${x.what?`<div class="rule" style="margin-top:4px">${esc(x.what)}</div>`:""}${x.unverified?`<div class="src">这一行本轮未查到当日来源，按已有知识整理，请以公司年报为准</div>`:""}</td><td class="l muted">${esc(x.diff||"")}</td><td class="l muted">${esc(x.ties||"")}</td><td class="l src">${(x.src||[]).map(srcLink).join("<br>")||((C[t].reports||[])[0]?`<a href="${safeUrl(C[t].reports[0].url)}" target="_blank" rel="noopener">公司 ${esc(C[t].reports[0].form)}</a>`:"")}</td></tr>`).join("")}</table></div>`}
   // ② 竞争与合作：人工研究 + Summizer 图谱
   const rel=(I&&I.relations||[]).map(r=>({a:r.a,b:r.b,type:r.type,desc:r.desc,src:r.src,from:"研究"}));
   const seen=new Set(rel.map(r=>[r.a,r.b].sort().join("|")));
@@ -619,8 +619,19 @@ function openCo(t){
   const k=c.tech,f=c.fund,e=c.expect,a=c.capital,qs=f.quarters||[];
   const ql=qs.map(q=>q.end.slice(2,7));
   const fig=(title,vals,fmt,opt)=>`<figure><figcaption><span>${title}</span><b class="num">${fmt(vals[vals.length-1])}</b></figcaption>${bars(vals,opt)}</figure>`;
+  const seenIns=new Set();
   const mem=c.members.slice(0,14).map(m=>{const s=S.find(x=>x.id===m.sector),ch=s.chains.find(x=>x.id===m.chain),n=ch.nodes.find(x=>x.id===m.node);
-    return `<li><a href="#" onclick="event.preventDefault();jump('${m.sector}','${m.chain}','${m.node}')" style="color:var(--text)">${esc(m.sector_name)} › ${esc(m.chain_name)} › <b>${esc(m.node_name)}</b></a> ${wv(m.wave)}${m.auto?` <span class="auto">自动</span>`:m.core?"":` <span class="faint small">非纯正标的</span>`}${m.note?`<div class="small">${esc(m.note)}</div>`:""}${n.trigger?`<div class="small"><span style="color:var(--accent)">▲ 触发点：</span>${esc(n.trigger)}</div>`:""}</li>`}).join("");
+    const x=n.ins&&n.ins.companies&&n.ins.companies[t], co=n.cos.find(q=>q.ticker===t)||{};
+    const sig_=x?(x.products||"")+"|"+(x.what||""):null, dup=sig_&&seenIns.has(sig_); if(sig_)seenIns.add(sig_);
+    const body=x&&!dup?`<div style="margin:6px 0 2px;padding:8px 10px;background:var(--panel2);border-radius:8px">
+        <div style="color:var(--text)"><span class="faint small">具体产品</span>　<b>${esc(x.products||"")}</b></div>
+        ${x.what?`<div class="small" style="margin-top:4px"><span class="faint">它是做什么的</span>　${esc(x.what)}</div>`:""}
+        ${x.diff?`<div class="small" style="margin-top:4px"><span class="faint">和别家的不同</span>　${esc(x.diff)}</div>`:""}
+        ${x.ties?`<div class="small" style="margin-top:4px"><span class="faint">绑定的客户 / 伙伴</span>　${esc(x.ties)}</div>`:""}
+        <div class="src" style="margin-top:4px">${x.unverified?"本轮未查到当日来源，按已有知识整理 · ":""}${(x.src||[]).map(srcLink).join(" · ")}</div></div>`
+      :x&&dup?`<div class="src" style="margin-top:2px">产品同上</div>`
+      :`<div class="small" style="margin-top:4px"><span class="faint">这个零件是做什么的</span>　${esc(n.role||"")}</div>${m.note?`<div class="small"><span class="faint">它在其中的角色</span>　${esc(m.note)}</div>`:""}${co.ex?`<div class="src" style="margin-top:2px">公司业务原文：${esc(co.ex)}</div>`:""}`;
+    return `<li><a href="#" onclick="event.preventDefault();jump('${m.sector}','${m.chain}','${m.node}')" style="color:var(--text)">${esc(m.sector_name)} › ${esc(m.chain_name)} › <b>${esc(m.node_name)}</b></a> ${wv(m.wave)}${m.auto?` <span class="auto">自动</span>`:m.core?"":` <span class="faint small">非纯正标的</span>`}${body}${n.trigger?`<div class="small"><span style="color:var(--accent)">▲ 触发点：</span>${esc(n.trigger)}</div>`:""}</li>`}).join("");
   const waves=[...new Set(c.members.filter(m=>m.core).map(m=>m.sector+":"+m.wave))].map(x=>{const[sid,w]=x.split(":"),s=S.find(y=>y.id===sid),ws=s.wave_status[w-1];return`<div class="small" style="margin-top:6px">${esc(s.name)} ${wv(+w)} 当前：<b class="lv${ws.level}">${esc(ws.stage)}</b></div>`}).join("");
   let tgt="";
   if(has(e.target)&&has(e.target_lo)&&has(e.target_hi)&&has(k.price)){const lo=Math.min(e.target_lo,k.price)*.97,hi=Math.max(e.target_hi,k.price)*1.03,P=x=>(x-lo)/(hi-lo)*100;
@@ -639,7 +650,7 @@ function openCo(t){
   <div class="card" style="margin-top:12px">${priceChart}
     <div class="kv"><div><span>1周</span><b class="num ${cls(k.r1w)}">${pct(k.r1w,1)}</b></div><div><span>1月</span><b class="num ${cls(k.r1m)}">${pct(k.r1m,1)}</b></div><div><span>3月</span><b class="num ${cls(k.r3m)}">${pct(k.r3m)}</b></div><div><span>6月</span><b class="num ${cls(k.r6m)}">${pct(k.r6m)}</b></div><div><span>1年</span><b class="num ${cls(k.r1y)}">${pct(k.r1y)}</b></div><div><span>距52周高点</span><b class="num ${cls(k.dd)}">${pct(k.dd)}</b></div><div><span>偏离50日线</span><b class="num ${cls(k.vs50)}">${pct(k.vs50)}</b></div><div><span>偏离200日线</span><b class="num ${cls(k.vs200)}">${pct(k.vs200)}</b></div></div></div>
   <div class="grid g2" style="margin-top:12px">
-    <div class="card facet"><h3>① 产业面 · 它是哪些产品的哪个零件</h3><ul class="why">${mem}</ul>${waves}</div>
+    <div class="card facet" style="grid-column:1/-1"><h3>① 产业面 · 它是哪些产品的哪个零件、具体做什么</h3><ul class="why">${mem}</ul>${waves}</div>
     <div class="card facet"><h3>② 基本面 · 内在价值 <em>${f.score??"—"}</em></h3>
       <ul class="why">${f.why.map(w=>`<li>${esc(w)}</li>`).join("")||"<li>财报数据不足</li>"}</ul>
       ${qs.length?`<div class="mini">${fig("季度收入",qs.map(q=>q.rev),money)}${fig("毛利率",qs.map(q=>q.gm),x=>pct0(x,1),{color:"var(--w2)"})}${fig("EBITDA 利润率",qs.map(q=>q.em),x=>pct0(x,1),{signed:true})}${fig("EPS",qs.map(q=>q.eps),x=>num(x,2),{signed:true})}${fig("自由现金流",qs.map(q=>q.fcf),money,{signed:true})}${f.rpo?fig("RPO 长期订单",f.rpo.map(r=>r.val),money,{color:"var(--w1)"}):""}</div><div class="heat-l" style="margin-top:6px"><span>季度：${ql.join(" · ")}</span><span>净现金 ${money(f.net_cash)}</span></div>`:""}</div>

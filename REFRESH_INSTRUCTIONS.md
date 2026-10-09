@@ -63,7 +63,9 @@ Python 做不了，由 Claude 会话定期来做。直接对 Claude 说"按 REFR
     "updated": "2026-10-08",
     "note": "一两句话：这个零件上各家的路线分歧是什么。",
     "companies": {
-      "NVDA": {"products": "具体产品名和代际", "diff": "和别家的不同", "ties": "绑定的客户 / 伙伴",
+      "NVDA": {"products": "具体产品名和代际",
+               "what": "两三句大白话：这个产品是干什么用的、解决什么问题（给不懂行的人看）",
+               "diff": "和别家的不同", "ties": "绑定的客户 / 伙伴",
                "src": [["来源标题", "https://..."]]}
     },
     "relations": [
