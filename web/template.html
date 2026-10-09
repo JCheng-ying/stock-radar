@@ -364,7 +364,7 @@ function insightBlock(n,L){
     cmp=`<h3 style="margin-top:16px;color:var(--text)">产品对比：同一个零件，各家做的具体是什么 <span class="faint small">· 人工研究，更新于 ${esc(I.updated||"")}</span></h3>
     ${I.note?`<div class="note">${esc(I.note)}</div>`:""}
     <div class="tw"><table class="calc"><tr><th class="l">公司</th><th class="l">具体产品</th><th class="l">和别家的不同</th><th class="l">绑定的客户 / 伙伴</th><th class="l">来源</th></tr>
-    ${rows.map(([t,x])=>`<tr><td class="l">${tkLink(t)}<div class="src">${esc(C[t].name).slice(0,18)}</div></td><td class="l">${esc(x.products||"")}</td><td class="l muted">${esc(x.diff||"")}</td><td class="l muted">${esc(x.ties||"")}</td><td class="l src">${(x.src||[]).map(srcLink).join("<br>")||((C[t].reports||[])[0]?`<a href="${safeUrl(C[t].reports[0].url)}" target="_blank" rel="noopener">公司 ${esc(C[t].reports[0].form)}</a>`:"")}</td></tr>`).join("")}</table></div>`}
+    ${rows.map(([t,x])=>`<tr><td class="l">${tkLink(t)}<div class="src">${esc(C[t].name).slice(0,18)}</div></td><td class="l">${esc(x.products||"")}${x.unverified?`<div class="src">这一行本轮未查到当日来源，按已有知识整理，请以公司年报为准</div>`:""}</td><td class="l muted">${esc(x.diff||"")}</td><td class="l muted">${esc(x.ties||"")}</td><td class="l src">${(x.src||[]).map(srcLink).join("<br>")||((C[t].reports||[])[0]?`<a href="${safeUrl(C[t].reports[0].url)}" target="_blank" rel="noopener">公司 ${esc(C[t].reports[0].form)}</a>`:"")}</td></tr>`).join("")}</table></div>`}
   // ② 竞争与合作：人工研究 + Summizer 图谱
   const rel=(I&&I.relations||[]).map(r=>({a:r.a,b:r.b,type:r.type,desc:r.desc,src:r.src,from:"研究"}));
   const seen=new Set(rel.map(r=>[r.a,r.b].sort().join("|")));
@@ -376,7 +376,7 @@ function insightBlock(n,L){
     <div class="tw" style="margin-top:8px;max-height:420px"><table class="calc"><tr><th class="l">公司</th><th class="l">业务描述中相关的原句</th><th class="l">出处</th></tr>
     ${L.filter(c=>c.ex).map(c=>`<tr><td class="l">${tkLink(c.ticker)}${c.auto?` <span class="auto">自动</span>`:""}</td><td class="l muted">${esc(c.ex)}</td><td class="l src"><a href="https://finance.yahoo.com/quote/${encodeURIComponent(c.ticker)}/profile" target="_blank" rel="noopener">Yahoo 公司简介</a>${(C[c.ticker].reports||[]).slice(0,1).map(r=>`<br><a href="${safeUrl(r.url)}" target="_blank" rel="noopener">${esc(r.form)} 原文（SEC）</a>`).join("")}</td></tr>`).join("")}</table></div>
     <div class="src" style="margin-top:4px">想核实一家公司到底做什么产品，最权威的是它的 10-K 年报第 1 项“Business”，点右侧链接可直接打开。</div></details>`:"";
-  return cmp+relH+(I?"":`<div class="small faint" style="margin-top:10px">这个零件还没有做人工的“产品对比”研究（目前只完成了第一批核心零件）。下面是自动整理的原文和 Summizer 图谱里已有的关系。</div>`)+exH;
+  return cmp+relH+(I?"":`<div class="small faint" style="margin-top:10px">${n.skip?"这个零件是客户型 / 辅助型，或与别的零件重复，不做人工的“产品对比”。":"这个零件还没有做人工的“产品对比”研究。"}下面是自动整理的原文和 Summizer 图谱里已有的关系。</div>`)+exH;
 }
 const thead=()=>`<tr><th class="l">公司</th><th class="l">在这个零件里做什么</th><th>现价</th><th>日</th><th>3月</th><th>收入同比</th><th>毛利率</th><th title="基本面">基</th><th title="预期面">预</th><th title="资金面">资</th><th title="情绪热度">热度</th><th>点位</th></tr>`;
 function curProd(){const s=S.find(x=>"s:"+x.id===state.tab);if(!s)return null;const ch=s.chains.find(c=>c.id===state.prod[s.id]);return ch?{s,ch}:null}

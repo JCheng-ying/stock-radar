@@ -75,6 +75,7 @@ def _attach_insights(sectors, profiles):
     except Exception:
         raw = {}
     ins = {}
+    skip = set((raw.pop("_skip", None) or {}).get("keys", []))
     for key, v in raw.items():
         for k in [key] + v.get("also", []):
             ins[k] = {x: v[x] for x in v if x != "also"}
@@ -82,6 +83,7 @@ def _attach_insights(sectors, profiles):
         for ch in s["chains"]:
             for n in ch["nodes"]:
                 n["ins"] = ins.get(f"{s['id']}/{ch['id']}/{n['id']}")
+                n["skip"] = f"{s['id']}/{ch['id']}/{n['id']}" in skip
                 for c in n["cos"]:
                     if c.get("ticker"):
                         c["ex"] = _excerpt((profiles.get(c["ticker"]) or {}).get("summary", ""), n.get("kw", []))
@@ -194,7 +196,7 @@ def main():
             for ch in sec["chains"]:
                 for n in ch["nodes"]:
                     k = sum(1 for c in n["cos"] if c.get("ticker") and not c.get("auto"))
-                    if not n.get("ins") and k >= 3:
+                    if not n.get("ins") and not n.get("skip") and k >= 3:
                         rows.append((-(lv.get(n["wave"], 0)), -k, f"{sec['id']}/{ch['id']}/{n['id']}", n["name"]))
         for a_, k, key, name in sorted(rows):
             print(f"{key:38s} {name}（{-k} 家，浪位等级 {-a_}）")

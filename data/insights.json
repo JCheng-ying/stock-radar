@@ -78,13 +78,15 @@
     "products": "AI200 / AI250 推理机柜",
     "diff": "主打推理的每瓦成本，数据中心是新业务",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "INTC": {
     "products": "Xeon CPU、Gaudi 加速器；18A 代工",
     "diff": "加速器份额很小，价值更多在 CPU 和代工",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -269,19 +271,22 @@
     "products": "企业级 NAND / SSD",
     "diff": "不做 HBM，受益于推理带来的存储需求",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "WDC": {
     "products": "大容量机械硬盘",
     "diff": "不做 HBM；数据中心冷数据存储",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "STX": {
     "products": "大容量机械硬盘（HAMR）",
     "diff": "与西部数据双寡头",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -358,13 +363,15 @@
     "products": "数据中心托管（不自己持有 GPU）",
     "diff": "做“房东”，把机房长租给 CoreWeave 等",
     "ties": "CoreWeave",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "CORZ": {
     "products": "矿场改造的高密度托管",
     "diff": "同样是托管模式",
     "ties": "CoreWeave",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -464,13 +471,15 @@
     "products": "Silicon One 芯片 + Nexus 交换机",
     "diff": "自研芯片；在超大规模客户中份额较小",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "CLS": {
     "products": "为云厂商代工白牌交换机",
     "diff": "按客户设计制造，毛利率低于品牌厂商",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -539,31 +548,36 @@
     "products": "数据中心光模块",
     "diff": "美国本土产能；客户集中",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "FN": {
     "products": "光器件精密代工",
     "diff": "不做自有品牌，给英伟达等代工",
     "ties": "英伟达",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "CRDO": {
     "products": "有源电缆（AEC）、光 DSP",
     "diff": "机柜内短距离用铜缆替代光",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "ALAB": {
     "products": "Retimer、Scorpio 交换芯片",
     "diff": "解决机柜内高速信号完整性",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "MRVL": {
     "products": "光 DSP",
     "diff": "光模块里的核心芯片",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -610,7 +624,8 @@
     "products": "超导量子处理器 + Qiskit 软件生态",
     "diff": "路线图最公开；量子只是 IBM 很小的一部分业务",
     "ties": "通过 IBM Quantum Network 向企业和高校开放",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "IONQ": {
     "products": "离子阱量子计算机（Forte / Tempo），云上出售",
@@ -664,13 +679,15 @@
     "products": "中性原子量子计算机、量子传感",
     "diff": "中性原子：比特数容易做大",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "GOOGL": {
     "products": "Willow 超导芯片",
     "diff": "研究导向，不对外销售整机",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -754,19 +771,22 @@
     "products": "Atlas 4D 激光雷达",
     "diff": "FMCW：能直接测速度、抗干扰，成本更高",
     "ties": "戴姆勒卡车（首个量产客户）",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "OUST": {
     "products": "OS 系列数字激光雷达",
     "diff": "收入以工业、机器人、智慧基础设施为主，车载占比小",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    },
    "MVIS": {
     "products": "MOVIA / MAVIN",
     "diff": "2026 年收入指引 1000~1500 万美元，转向工业和国防",
     "ties": "",
-    "src": []
+    "src": [],
+    "unverified": true
    }
   },
   "relations": [
@@ -946,6 +966,858 @@
      "https://www.businesstoday.in/amp/technology/story/elon-musk-shares-first-cybercab-production-footage-robotaxi-push-intensifies-527332-2026-04-24"
     ]
    }
+  ]
+ },
+ "ai/assistant/powergen": {
+  "updated": "2026-10-08",
+  "note": "三类电源在抢数据中心合同：现有核电站的长期购电（最快、最确定）、燃气轮机和燃料电池（两三年内能交付）、小型堆（多为框架协议，2030 年前后才有电）。看一家公司，先分清它卖的是“电”还是“设备”，以及合同是已签约还是意向。",
+  "companies": {
+   "CEG": {
+    "products": "美国最大的核电机组群；收购 Calpine 后加上燃气和地热",
+    "diff": "卖电，手里有最多的现成核电；靠机组增容和重启扩产",
+    "ties": "微软（三里岛 / Crane 机组重启，重启时间各报道为 2027~2028）；Meta（20 年购电）；谷歌（涉及 11 台机组增容，金额各家报道不一）",
+    "src": [
+     [
+      "路透（TimesLIVE 转载）：谷歌与 Constellation 的电力协议（2026-10-06）",
+      "https://www.timeslive.co.za/news/sci-tech/2026-10-06-google-enters-massive-36-gw-power-deal-with-constellation-energy/"
+     ],
+     [
+      "AP：Meta 签下三份核电协议（2026-01）",
+      "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+     ]
+    ]
+   },
+   "VST": {
+    "products": "核电 + 燃气发电（得州为主）",
+    "diff": "卖电；燃气占比高，对电价更敏感",
+    "ties": "Meta（20 年购电，Prometheus 数据中心三份协议之一）",
+    "src": [
+     [
+      "AP：Meta 签下三份核电协议（2026-01）",
+      "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+     ]
+    ]
+   },
+   "TLN": {
+    "products": "Susquehanna 核电站",
+    "diff": "卖电；最早做“核电站直供数据中心”，被 FERC 否决后改成并网后供电",
+    "ties": "亚马逊：合同总量 1920MW，至 2042 年，最晚 2032 年达到满额",
+    "src": [
+     [
+      "World Nuclear News：Talen–亚马逊扩大供电协议",
+      "https://world-nuclear-news.org/articles/new-supply-agreement-expands-talen-amazon-partnership"
+     ]
+    ]
+   },
+   "NEE": {
+    "products": "风光储 + 核电",
+    "diff": "卖电；最大的可再生能源开发商",
+    "ties": "谷歌（25 年购电，支持 615MW 的 Duane Arnold 核电站重启）",
+    "src": [
+     [
+      "AP：Meta 签下三份核电协议（2026-01）",
+      "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+     ]
+    ]
+   },
+   "GEV": {
+    "products": "重型燃气轮机（HA 级）、航改燃机、小型堆 BWRX-300",
+    "diff": "卖设备；燃机订单 + 产能预订合计 116GW（2026 年二季度），目标年底至少 125GW；新订单价格比 2025 年四季度高 10~20 个点",
+    "ties": "上半年数据中心相关订单超 50 亿美元，是 2025 全年的两倍多",
+    "src": [
+     [
+      "GE Vernova 2026 年二季度财报新闻稿（SEC 8-K）",
+      "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm"
+     ],
+     [
+      "Power Engineering：数据中心推动 GE Vernova 订单创纪录",
+      "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+     ]
+    ]
+   },
+   "BE": {
+    "products": "固体氧化物燃料电池（现场发电，不用等并网）",
+    "diff": "卖设备；交付快（给甲骨文的一套系统 55 天上线）",
+    "ties": "甲骨文（最高 2.8GW，其中 1.2GW 已签约）；AEP（26.5 亿美元）；Brookfield（金额各报道不一，未核实）",
+    "src": [
+     [
+      "DataCenterDynamics：甲骨文把 Bloom 燃料电池协议扩到 2.8GW",
+      "https://www.datacenterdynamics.com/en/news/oracle-expands-fuel-cell-supply-deal-with-bloom-energy-to-28gw/"
+     ]
+    ]
+   },
+   "OKLO": {
+    "products": "Aurora 快堆（尚未商业运行）",
+    "diff": "自己建堆、自己卖电；目前全是意向和框架协议",
+    "ties": "Meta（俄亥俄 1.2GW 园区）；Equinix（500MW）",
+    "src": [
+     [
+      "AP：Meta 签下三份核电协议（2026-01）",
+      "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+     ]
+    ]
+   },
+   "SMR": {
+    "products": "NuScale 小型模块化反应堆（唯一获 NRC 设计认证）",
+    "diff": "卖技术，不持有电站；商业化全靠合作方 ENTRA1",
+    "ties": "TVA：ENTRA1 与 TVA 是非约束性协议，6~8GW 的购电协议仍在谈，公司预计 2026 年底前有结果",
+    "src": [
+     [
+      "NuScale 8-K 财报新闻稿（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/1822966/000182296626000016/a20260226-earningscallpr.htm"
+     ],
+     [
+      "Zacks：TVA 6GW 计划与 NuScale",
+      "https://www.zacks.com/stock/news/2882159/will-tva-s-6-gw-program-boost-nuscale-power-s-long-term-growth"
+     ]
+    ]
+   },
+   "CCJ": {
+    "products": "铀矿 + 持有西屋电气 49%",
+    "diff": "卖燃料，也通过西屋分享新建大型堆（AP1000）",
+    "ties": "美国能源部对西屋最高 175 亿美元的有条件贷款承诺，用于最多 10 台 AP1000 的长周期设备",
+    "src": [
+     [
+      "Cameco 6-K（SEC，2026）",
+      "https://www.sec.gov/Archives/edgar/data/0001009001/000119312526279269/d83887dex991.htm"
+     ],
+     [
+      "Pulse 2.0：能源部最高 175 亿美元支持西屋 AP1000",
+      "https://pulse2.com/cameco-welcomes-does-up-to-17-5-billion-commitment-to-support-westinghouse-ap1000-reactor-deployment/"
+     ]
+    ]
+   },
+   "LEU": {
+    "products": "浓缩铀（含高丰度低浓铀 HALEU）",
+    "diff": "美国本土唯一有 HALEU 产能的上市公司，小型堆的燃料瓶颈",
+    "ties": "",
+    "unverified": true
+   },
+   "BWXT": {
+    "products": "核部件、海军反应堆、微堆",
+    "diff": "卖部件，不依赖某一种堆型胜出",
+    "ties": "",
+    "unverified": true
+   },
+   "NNE": {
+    "products": "微型反应堆（研发阶段）",
+    "diff": "没有收入，最早期",
+    "ties": "",
+    "unverified": true
+   },
+   "NRG": {
+    "products": "燃气发电 + 零售电力",
+    "diff": "卖电；以燃气为主",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "CEG",
+    "b": "GOOGL",
+    "type": "客户",
+    "desc": "谷歌与 Constellation 的协议涉及伊利诺伊、宾州、新泽西 11 台核电机组的增容，回应 PJM 的“自带电源”方案。",
+    "src": [
+     "路透（TimesLIVE 转载）：谷歌与 Constellation 的电力协议（2026-10-06）",
+     "https://www.timeslive.co.za/news/sci-tech/2026-10-06-google-enters-massive-36-gw-power-deal-with-constellation-energy/"
+    ]
+   },
+   {
+    "a": "TLN",
+    "b": "AMZN",
+    "type": "客户",
+    "desc": "Susquehanna 核电站向亚马逊供电 1920MW 至 2042 年。",
+    "src": [
+     "World Nuclear News：Talen–亚马逊扩大供电协议",
+     "https://world-nuclear-news.org/articles/new-supply-agreement-expands-talen-amazon-partnership"
+    ]
+   },
+   {
+    "a": "VST",
+    "b": "META",
+    "type": "客户",
+    "desc": "Meta 2026 年 1 月同时与 Vistra、Oklo、TerraPower 签约，合计到 2035 年最高 6.6GW。",
+    "src": [
+     "AP：Meta 签下三份核电协议（2026-01）",
+     "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+    ]
+   },
+   {
+    "a": "OKLO",
+    "b": "META",
+    "type": "客户",
+    "desc": "在俄亥俄州 Pike County 开发 1.2GW 电力园区。小型堆尚未商业化，属于前期协议。",
+    "src": [
+     "AP：Meta 签下三份核电协议（2026-01）",
+     "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+    ]
+   },
+   {
+    "a": "BE",
+    "b": "ORCL",
+    "type": "客户",
+    "desc": "甲骨文采购 Bloom 燃料电池最高 2.8GW，1.2GW 已是确定合同。",
+    "src": [
+     "DataCenterDynamics：甲骨文把 Bloom 燃料电池协议扩到 2.8GW",
+     "https://www.datacenterdynamics.com/en/news/oracle-expands-fuel-cell-supply-deal-with-bloom-energy-to-28gw/"
+    ]
+   },
+   {
+    "a": "GEV",
+    "b": "BE",
+    "type": "替代",
+    "desc": "燃机排产已到 2029~2030 年，等不及的客户转向燃料电池和往复式发电机。",
+    "src": [
+     "Power Engineering：数据中心推动 GE Vernova 订单创纪录",
+     "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+    ]
+   },
+   {
+    "a": "CEG",
+    "b": "VST",
+    "type": "竞争",
+    "desc": "都是有核电的独立发电商，争夺同一批云厂商的长期购电合同。",
+    "src": [
+     "AP：Meta 签下三份核电协议（2026-01）",
+     "https://ny1.com/nyc/all-boroughs/ap-top-news/2026/01/09/meta-signs-three-nuclear-power-deals-to-help-support-its-ai-data-centers"
+    ]
+   },
+   {
+    "a": "SMR",
+    "b": "OKLO",
+    "type": "竞争",
+    "desc": "NuScale 卖技术授权，Oklo 自建自营；两家都还没有商业运行的反应堆。",
+    "src": [
+     "Zacks：TVA 6GW 计划与 NuScale",
+     "https://www.zacks.com/stock/news/2882159/will-tva-s-6-gw-program-boost-nuscale-power-s-long-term-growth"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/grid": {
+  "updated": "2026-10-08",
+  "note": "从电网到机柜之间的设备。共同特点是交期极长：大型变压器 128~160 周以上，中压开关柜 44~80 周，部分产品排到 2028 年。差别在于各家卖的是哪一段。",
+  "companies": {
+   "ETN": {
+    "products": "中低压开关柜、变压器、UPS、母线槽；收购 Boyd Thermal 后加上液冷",
+    "diff": "电气设备最全，“从电网到芯片”打包；电气业务积压订单同比 +43%~48%",
+    "ties": "Nvidia 800V 直流架构的系统伙伴；南卡变压器厂（3.4 亿美元，2027 年投产）",
+    "src": [
+     [
+      "TNW：美国电力设备被数据中心需求挤兑",
+      "https://thenextweb.com/news/us-power-companies-scramble-data-centre-equipment"
+     ],
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "VRT": {
+    "products": "UPS、配电柜、母线、800V 直流方案，加上液冷",
+    "diff": "纯数据中心公司（伊顿、施耐德是综合电气）；2025 年底积压约 150 亿美元",
+    "ties": "与 Nvidia 联合开发参考设计；800V 方案计划 2026 下半年上市",
+    "src": [
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "GEV": {
+    "products": "高压变压器、开关设备、变电站（电气化业务）",
+    "diff": "做高压输变电这一段；2026 年一季度数据中心相关电气订单 24 亿美元，超过 2025 全年",
+    "ties": "",
+    "src": [
+     [
+      "Power Engineering：数据中心推动 GE Vernova 订单创纪录",
+      "https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/"
+     ]
+    ]
+   },
+   "POWL": {
+    "products": "定制中压开关柜、配电室",
+    "diff": "小而专；原本做油气和电力，数据中心是新增量",
+    "ties": "",
+    "unverified": true
+   },
+   "HUBB": {
+    "products": "电网连接件、开关、公用事业配电部件",
+    "diff": "卖给电力公司为主，间接受益",
+    "ties": "",
+    "unverified": true
+   },
+   "NVT": {
+    "products": "机柜配电、母线、电气连接与防护，加上液冷",
+    "diff": "靠近机柜这一端",
+    "ties": "",
+    "unverified": true
+   },
+   "PWR": {
+    "products": "输电线路、变电站施工",
+    "diff": "不卖设备，卖施工；积压订单 485 亿美元，主要是电网而非机房",
+    "ties": "",
+    "src": [
+     [
+      "Barchart：建 AI 数据中心的三家公司",
+      "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+     ]
+    ]
+   },
+   "AMSC": {
+    "products": "电能质量与并网系统",
+    "diff": "小市值，产品更专",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "ETN",
+    "b": "VRT",
+    "type": "竞争",
+    "desc": "都在卖“配电 + 液冷”的整套方案；伊顿靠收购 Boyd 补上液冷，Vertiv 本来就两样都做。",
+    "src": [
+     "Business Wire：伊顿收购 Boyd Thermal",
+     "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+    ]
+   },
+   {
+    "a": "ETN",
+    "b": "NVDA",
+    "type": "合作",
+    "desc": "伊顿、施耐德、Vertiv 是 Nvidia 800V 直流架构点名的数据中心电力系统伙伴。",
+    "src": [
+     "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+     "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+    ]
+   },
+   {
+    "a": "ETN",
+    "b": "Schneider Electric",
+    "type": "竞争",
+    "desc": "施耐德是最主要的海外对手，同样通过收购（Motivair）补液冷。",
+    "src": [
+     "DataCenterDynamics：施耐德收购 Motivair 多数股权",
+     "https://www.datacenterdynamics.com/en/news/schneider-electric-acquires-majority-stake-in-cooling-company-motivair-corp/"
+    ]
+   },
+   {
+    "a": "GEV",
+    "b": "ETN",
+    "type": "竞争",
+    "desc": "在变压器和开关设备上有重叠，GE Vernova 偏高压、伊顿偏中低压。",
+    "src": [
+     "TNW：美国电力设备被数据中心需求挤兑",
+     "https://thenextweb.com/news/us-power-companies-scramble-data-centre-equipment"
+    ]
+   }
+  ]
+ },
+ "ai/rack/psu": {
+  "updated": "2026-10-08",
+  "note": "机柜供电正在从 48V 换到 800V 高压直流，量产时间对应 Nvidia Kyber 机柜（2027 年）。换代会重排供应商座次：谁在 Nvidia 的伙伴名单里、做的是哪一级电压转换，是区分各家的关键。",
+  "companies": {
+   "NVTS": {
+    "products": "氮化镓（GaN）和碳化硅（SiC）功率器件：100V GaN、650V GaN、高压 SiC",
+    "diff": "小公司，全部押注 800V 架构；收入基数小、弹性大",
+    "ties": "Nvidia 800V 架构的芯片伙伴（针对 Kyber 机柜）",
+    "src": [
+     [
+      "Navitas：与 Nvidia 开发 800V HVDC 架构",
+      "https://navitassemi.com/navitas-developing-next-generation-800-v-hvdc-architecture-with-nvidia/"
+     ],
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "MPWR": {
+    "products": "给 GPU 供电的多相电源模块和控制芯片",
+    "diff": "做最靠近芯片的最后一级（把 48V / 12V 降到 1V 以下）；已是 Nvidia 主力供应商之一",
+    "ties": "Nvidia 800V 伙伴名单",
+    "src": [
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "IFNNY": {
+    "products": "硅、SiC、GaN 全系列功率半导体",
+    "diff": "功率半导体全球第一，三种材料都有",
+    "ties": "Nvidia 800V 伙伴名单",
+    "src": [
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "ON": {
+    "products": "SiC 和硅功率器件",
+    "diff": "主业是汽车，数据中心是新增量",
+    "ties": "出现在后来扩充的 Nvidia 伙伴名单里",
+    "src": [
+     [
+      "DataCenterDynamics：Nvidia 与数据中心伙伴共建 800V HVDC",
+      "https://www.datacenterdynamics.com/en/news/nvidia-working-with-data-center-partners-to-build-800v-hvdc-power-systems"
+     ]
+    ]
+   },
+   "POWI": {
+    "products": "高压 GaN 电源芯片",
+    "diff": "自有高压 GaN 工艺",
+    "ties": "出现在后来扩充的 Nvidia 伙伴名单里",
+    "src": [
+     [
+      "DataCenterDynamics：Nvidia 与数据中心伙伴共建 800V HVDC",
+      "https://www.datacenterdynamics.com/en/news/nvidia-working-with-data-center-partners-to-build-800v-hvdc-power-systems"
+     ]
+    ]
+   },
+   "STM": {
+    "products": "SiC 和硅功率器件",
+    "diff": "欧洲大厂，汽车和工业为主",
+    "ties": "Nvidia 800V 伙伴名单",
+    "src": [
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "VICR": {
+    "products": "高密度电源模块（分比式电源架构）",
+    "diff": "技术独特、有专利壁垒；但本轮查到的 Nvidia 800V 伙伴名单里没有它",
+    "ties": "",
+    "src": [
+     [
+      "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+      "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+     ]
+    ]
+   },
+   "AEIS": {
+    "products": "数据中心服务器电源",
+    "diff": "做整机电源而不是芯片",
+    "ties": "",
+    "unverified": true
+   },
+   "WOLF": {
+    "products": "SiC 衬底和器件",
+    "diff": "上游材料；经历过破产重组",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "NVTS",
+    "b": "NVDA",
+    "type": "合作",
+    "desc": "共同开发支持 Kyber 机柜的 800V 高压直流架构。",
+    "src": [
+     "Navitas：与 Nvidia 开发 800V HVDC 架构",
+     "https://navitassemi.com/navitas-developing-next-generation-800-v-hvdc-architecture-with-nvidia/"
+    ]
+   },
+   {
+    "a": "MPWR",
+    "b": "IFNNY",
+    "type": "竞争",
+    "desc": "都在 Nvidia 的芯片伙伴名单里（另有 ROHM、意法、德州仪器等），争夺同一个电源方案里的份额。",
+    "src": [
+     "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+     "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+    ]
+   },
+   {
+    "a": "VICR",
+    "b": "MPWR",
+    "type": "竞争",
+    "desc": "都做芯片级供电模块；Vicor 未出现在本轮查到的 800V 伙伴名单中。",
+    "src": [
+     "Nvidia 开发者博客：800V HVDC 架构与合作伙伴名单",
+     "https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-Generation-of-ai-factories"
+    ]
+   },
+   {
+    "a": "NVTS",
+    "b": "Delta",
+    "type": "供应",
+    "desc": "台达、光宝等做电源架整机，采用上游的 GaN / SiC 器件；台达计划 2026 年三季度量产 800V 产品（二手来源）。",
+    "src": [
+     "DataCenterDynamics：Nvidia 与数据中心伙伴共建 800V HVDC",
+     "https://www.datacenterdynamics.com/en/news/nvidia-working-with-data-center-partners-to-build-800v-hvdc-power-systems"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/backup": {
+  "also": [
+   "ai/rack/bbu"
+  ],
+  "updated": "2026-10-08",
+  "note": "原本只是“停电时顶一下”的备用电源，现在因为并网要等四年以上，变成了“先用它发电”的主力。发电机和电池在这里既竞争又互补。",
+  "companies": {
+   "CAT": {
+    "products": "大型往复式发电机组、燃气轮机（Solar Turbines）",
+    "diff": "规模最大，产品从备用到主用都有；积压订单创纪录（各报道为 630 亿或 721 亿美元，口径不同），部分排到 2030 年",
+    "ties": "2026 年一季度发电业务销售同比 +41%",
+    "src": [
+     [
+      "Energy Digital：数据中心电力需求推动卡特彼勒积压订单创纪录",
+      "https://energydigital.com/news/data-centre-power-demand-drives-caterpillar-record-backlog"
+     ],
+     [
+      "Motley Fool：卡特彼勒积压订单 630 亿美元（2026-08）",
+      "https://www.fool.com/investing/2026/08/03/caterpillars-order-backlog-hit-a-record-63-billion/"
+     ]
+    ]
+   },
+   "GNRC": {
+    "products": "大型柴油备用发电机（数据中心是新业务）",
+    "diff": "从家用发电机转型，基数小、增速快；数据中心积压 16 亿美元（2026 年 7 月）",
+    "ties": "亚马逊：首批交付约 24 亿美元，2027~2028 年",
+    "src": [
+     [
+      "Nasdaq：Generac 16 亿美元数据中心积压订单",
+      "https://www.nasdaq.com/articles/how-generacs-16-billion-data-center-backlog-changes-its-outlook"
+     ],
+     [
+      "Nasdaq：Generac 与亚马逊的发电机协议",
+      "https://www.nasdaq.com/articles/generac-signs-amazon-generator-deal-24b-initial-deliveries"
+     ]
+    ]
+   },
+   "CMI": {
+    "products": "柴油和燃气备用发电机组",
+    "diff": "与卡特彼勒是这个市场的两大老牌供应商",
+    "ties": "",
+    "unverified": true
+   },
+   "FLNC": {
+    "products": "电网级电池储能系统",
+    "diff": "九成订单仍来自电力公司；数据中心相关约 8.5 亿美元（3 亿已签约 + 5.5 亿为意向）；积压 64 亿美元",
+    "ties": "一家数据中心开发商（3 亿美元，表后储能）+ 一家超大规模云厂商",
+    "src": [
+     [
+      "pv magazine：Fluence 164GWh 管道与超大规模客户订单（2026-08）",
+      "https://pv-magazine-usa.com/2026/08/07/fluence-reports-164-gwh-pipeline-including-major-hyperscaler-order/"
+     ],
+     [
+      "S&P Global：Fluence 谈电池作为数据中心与电网之间的缓冲",
+      "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/fluence-exec-touts-batteries-as-shock-absorber-between-data-centers-grid-97565515"
+     ]
+    ]
+   },
+   "EOSE": {
+    "products": "锌基长时储能电池",
+    "diff": "非锂电、美国本土制造；规模小、仍在亏损",
+    "ties": "",
+    "unverified": true
+   },
+   "TSLA": {
+    "products": "Megapack",
+    "diff": "储能出货量最大，但只是特斯拉的一部分业务",
+    "ties": "",
+    "unverified": true
+   },
+   "ENS": {
+    "products": "数据中心 UPS 电池、机柜内备电模组",
+    "diff": "做机房内的短时备电，不是电网级",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "GNRC",
+    "b": "AMZN",
+    "type": "客户",
+    "desc": "Generac 与亚马逊签下发电机供应协议，首批约 24 亿美元。",
+    "src": [
+     "Nasdaq：Generac 与亚马逊的发电机协议",
+     "https://www.nasdaq.com/articles/generac-signs-amazon-generator-deal-24b-initial-deliveries"
+    ]
+   },
+   {
+    "a": "CAT",
+    "b": "GNRC",
+    "type": "竞争",
+    "desc": "卡特彼勒和康明斯是老牌供应商，Generac 是靠交期切入的新进入者。",
+    "src": [
+     "Nasdaq：Generac 16 亿美元数据中心积压订单",
+     "https://www.nasdaq.com/articles/how-generacs-16-billion-data-center-backlog-changes-its-outlook"
+    ]
+   },
+   {
+    "a": "FLNC",
+    "b": "CAT",
+    "type": "替代",
+    "desc": "电池可以替代一部分柴油发电机做备用和过渡电源，并帮数据中心降低对电网的承诺容量、加快并网。",
+    "src": [
+     "S&P Global：Fluence 谈电池作为数据中心与电网之间的缓冲",
+     "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/2/fluence-exec-touts-batteries-as-shock-absorber-between-data-centers-grid-97565515"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/cooling": {
+  "also": [
+   "ai/rack/coldplate",
+   "ai/rack/cdu"
+  ],
+  "updated": "2026-10-08",
+  "note": "液冷市场正在被电气巨头收购整合：伊顿买 Boyd，施耐德买 Motivair，Vertiv 买 PurgeRite。本轮没有查到可靠的市场份额数据；暖通公司（特灵、江森、开利）做的是机房外的冷水机组，和机柜内液冷不是同一段。",
+  "companies": {
+   "VRT": {
+    "products": "冷却液分配单元（CDU）、冷板回路、机房空调；收购 PurgeRite（约 10 亿美元）做液冷运维服务",
+    "diff": "机柜内液冷和机房级散热都做，且与配电打包",
+    "ties": "与 Nvidia 联合开发参考设计",
+    "src": [
+     [
+      "Business Wire：伊顿收购 Boyd Thermal",
+      "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+     ]
+    ]
+   },
+   "ETN": {
+    "products": "Boyd Thermal 的冷板和液冷系统",
+    "diff": "靠收购进入：95 亿美元买 Boyd，其 2026 年预计销售 17 亿美元、其中液冷 15 亿；原定 2026 年二季度交割，本轮未确认是否完成",
+    "ties": "",
+    "src": [
+     [
+      "Business Wire：伊顿收购 Boyd Thermal",
+      "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+     ]
+    ]
+   },
+   "NVT": {
+    "products": "CDU、分液管、机柜级液冷",
+    "diff": "靠近机柜的液冷部件",
+    "ties": "",
+    "unverified": true
+   },
+   "MOD": {
+    "products": "数据中心冷水机组、CDU（Airedale 品牌）",
+    "diff": "从汽车散热转型，数据中心占比快速上升",
+    "ties": "",
+    "unverified": true
+   },
+   "TT": {
+    "products": "大型冷水机组",
+    "diff": "机房外的制冷设备，不做机柜内液冷",
+    "ties": "",
+    "unverified": true
+   },
+   "JCI": {
+    "products": "冷水机组（York）、楼宇控制",
+    "diff": "同上；积压订单创纪录",
+    "ties": "",
+    "unverified": true
+   },
+   "CARR": {
+    "products": "冷水机组",
+    "diff": "同上",
+    "ties": "",
+    "unverified": true
+   },
+   "AAON": {
+    "products": "定制数据中心空调（BASX）",
+    "diff": "小而专",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "ETN",
+    "b": "Boyd Thermal",
+    "type": "收购",
+    "desc": "伊顿以 95 亿美元收购 Boyd Thermal，约为其 2026 年预计 EBITDA 的 22.5 倍。",
+    "src": [
+     "Business Wire：伊顿收购 Boyd Thermal",
+     "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+    ]
+   },
+   {
+    "a": "Schneider Electric",
+    "b": "Motivair",
+    "type": "收购",
+    "desc": "施耐德以约 8.5 亿美元收购 Motivair 75% 股权，2028 年前可买剩余部分。",
+    "src": [
+     "DataCenterDynamics：施耐德收购 Motivair 多数股权",
+     "https://www.datacenterdynamics.com/en/news/schneider-electric-acquires-majority-stake-in-cooling-company-motivair-corp/"
+    ]
+   },
+   {
+    "a": "VRT",
+    "b": "ETN",
+    "type": "竞争",
+    "desc": "收购之后，两家都能提供“配电 + 液冷”的整套方案。",
+    "src": [
+     "Business Wire：伊顿收购 Boyd Thermal",
+     "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+    ]
+   },
+   {
+    "a": "VRT",
+    "b": "TT",
+    "type": "合作",
+    "desc": "机柜内液冷把热量带到机房外，仍需要冷水机组排热——两段是上下游而非替代。",
+    "src": [
+     "Business Wire：伊顿收购 Boyd Thermal",
+     "https://www.businesswire.com/news/home/20251103856036/en/Eaton-Signs-Agreement-to-Acquire-Boyd-Thermal-Expanding-Solutions-for-Data-Center-Customers-to-Include-Critical-Liquid-Cooling-Technology"
+    ]
+   }
+  ]
+ },
+ "ai/assistant/build": {
+  "updated": "2026-10-08",
+  "note": "施工公司的差别在“做哪一种活”：机电安装（EMCOR、Comfort Systems、IES）、场地土方（Sterling）、电网线路（Quanta、Primoris）。共同的瓶颈不是订单而是熟练工人。",
+  "companies": {
+   "FIX": {
+    "products": "暖通和电气机电安装、模块化预制",
+    "diff": "数据中心占比最高：科技客户占 2025 年收入 45%；积压从 2025 年底 119 亿升到 2026 年一季度约 125 亿美元（二季度 141 亿为二手来源，未核实）",
+    "ties": "",
+    "src": [
+     [
+      "Nasdaq：Comfort Systems 的创纪录积压订单",
+      "https://www.nasdaq.com/articles/can-comfort-systems-record-backlog-keep-demand-pipeline-strong"
+     ],
+     [
+      "Barchart：建 AI 数据中心的三家公司",
+      "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+     ]
+    ]
+   },
+   "EME": {
+    "products": "电气和机电安装（规模最大的专业承包商）",
+    "diff": "终端市场更分散（医疗、制造、水务），数据中心只是其一；积压创纪录但本轮未查到具体数字",
+    "ties": "",
+    "src": [
+     [
+      "Nasdaq：EMCOR 2026 年能否继续跑赢",
+      "https://www.nasdaq.com/articles/can-emcor-outgrow-nonresidential-construction-again-2026"
+     ]
+    ]
+   },
+   "STRL": {
+    "products": "大型场地平整、土方和地下设施",
+    "diff": "做开工最早的一段；积压 52 亿美元，其中电子基础设施业务九成以上是数据中心、晶圆厂等关键设施",
+    "ties": "",
+    "src": [
+     [
+      "Barchart：建 AI 数据中心的三家公司",
+      "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+     ]
+    ]
+   },
+   "PWR": {
+    "products": "输电线路、变电站、数据中心外部电力接入",
+    "diff": "积压 485 亿美元，以电网长周期项目为主，不是机房建筑",
+    "ties": "",
+    "src": [
+     [
+      "Barchart：建 AI 数据中心的三家公司",
+      "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+     ]
+    ]
+   },
+   "IESC": {
+    "products": "电气安装、数据通信布线",
+    "diff": "规模较小，数据中心占比高",
+    "ties": "",
+    "unverified": true
+   },
+   "PRIM": {
+    "products": "电力和管线工程",
+    "diff": "偏公用事业",
+    "ties": "",
+    "unverified": true
+   },
+   "J": {
+    "products": "设计与工程管理",
+    "diff": "卖工程设计而不是施工队；积压约 270 亿美元创纪录",
+    "ties": "",
+    "src": [
+     [
+      "Barchart：建 AI 数据中心的三家公司",
+      "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "FIX",
+    "b": "EME",
+    "type": "竞争",
+    "desc": "都做机电安装；Comfort Systems 的数据中心占比明显高于 EMCOR。",
+    "src": [
+     "Nasdaq：Comfort Systems 的创纪录积压订单",
+     "https://www.nasdaq.com/articles/can-comfort-systems-record-backlog-keep-demand-pipeline-strong"
+    ]
+   },
+   {
+    "a": "STRL",
+    "b": "FIX",
+    "type": "合作",
+    "desc": "同一个项目上是前后工序：先场地和地下设施，再机电安装。",
+    "src": [
+     "Barchart：建 AI 数据中心的三家公司",
+     "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+    ]
+   },
+   {
+    "a": "PWR",
+    "b": "STRL",
+    "type": "合作",
+    "desc": "Quanta 负责把电接到园区，和场内施工方不直接竞争。",
+    "src": [
+     "Barchart：建 AI 数据中心的三家公司",
+     "https://www.barchart.com/story/news/3972766/forget-chips-these-3-stocks-are-building-the-ai-data-center-boom"
+    ]
+   }
+  ]
+ },
+ "_skip": {
+  "why": "客户型或辅助型零件，公司之间没有产品可比；或与另一个零件内容重复",
+  "keys": [
+   "robotics/surgical/hosp",
+   "quantum/pqc/cust",
+   "quantum/sc/app",
+   "robotics/humanoid/deploy",
+   "autonomous/truck/carrier",
+   "quantum/pqc/cloud",
+   "quantum/ion/cloud",
+   "quantum/ion/qec",
+   "autonomous/robotaxi/ins",
+   "autonomous/adas/ubi",
+   "ai/agent/cloud",
+   "ai/agent/modelapi",
+   "ai/rack/cpu",
+   "ai/rack/ssd",
+   "ai/rack/busbar",
+   "aerospace/defense/ship",
+   "robotics/humanoid/harness",
+   "ai/chip/lid",
+   "autonomous/robotaxi/clean",
+   "autonomous/robotaxi/train",
+   "autonomous/truck/comp",
+   "quantum/pqc/netgear",
+   "autonomous/truck/hub",
+   "autonomous/adas/map",
+   "aerospace/rocket/tank1",
+   "aerospace/rocket/tank2",
+   "robotics/humanoid/sim",
+   "autonomous/truck/trailer",
+   "ai/assistant/app",
+   "ai/phone/brand"
   ]
  }
 }
