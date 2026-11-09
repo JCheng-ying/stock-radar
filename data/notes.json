@@ -1,1 +1,216 @@
-{"companies": {}, "sectors": {}, "margin_debt": null}
+{
+ "companies": {
+  "NVDA": [
+   {
+    "date": "2026-11-08",
+    "text": "中国对 H200 的进口审批停滞，约 60 万颗芯片滞留香港；美国放行之后卡点转到了中方。影响预期面（中国收入），不影响产品力。",
+    "url": "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
+   }
+  ],
+  "ANET": [
+   {
+    "date": "2026-11-08",
+    "text": "三季度收入 36.6 亿美元（+58.5%，上市以来最快），毛利率 64%、经营利润率 49.1%；全年指引第四次上调至约 133 亿美元，首次给出 2027 年约 185 亿美元展望。基本面和预期面同时上修。",
+    "url": "https://siliconangle.com/2026/11/04/aristas-record-quarter-shows-the-network-has-become-central-to-ai/"
+   }
+  ],
+  "BE": [
+   {
+    "date": "2026-11-08",
+    "text": "与 NTT Data 签 900MW 固体氧化物燃料电池部署协议，首批 2027 年发货，是与单一数据中心开发商签过的最大一单。产业面（现场发电）和预期面利好。",
+    "url": "https://www.datacenterdynamics.com/en/news/ntt-data-signs-900mw-fuel-cell-supply-deal-with-bloom-energy/"
+   }
+  ],
+  "MU": [
+   {
+    "date": "2026-11-08",
+    "text": "台湾桃园 45 亿美元内存新厂因劳资纠纷暂停施工（报道）。影响供给扩张节奏，可能延长 DRAM/HBM 涨价周期，对自身产能爬坡是风险。",
+    "url": "https://www.datacenterdynamics.com/en/news/ongoing-labor-dispute-sees-micron-pause-construction-at-its-45bn-memory-fab-in-taoyuan-taiwan-report/"
+   }
+  ],
+  "INTC": [
+   {
+    "date": "2026-11-08",
+    "text": "三季度调整后 EPS 0.52 美元（预期 0.40），收入 165.1 亿美元（+21%）；但客户端业务 −5%、指引弱，股价单日跌超 30%。数据中心业务 +78%。",
+    "url": "https://siliconangle.com/2026/10/29/shares-of-intel-plummet-more-than-20-following-weak-guidance-blamed-on-pc-market-slowdown/"
+   }
+  ],
+  "IONQ": [
+   {
+    "date": "2026-11-08",
+    "text": "三季度收入 1.738 亿美元（+336%），全年指引上调至 5.05~5.15 亿美元；其中 IonQ 平台收入 9030 万美元，其余主要来自 SkyWater 代工。",
+    "url": "https://thequantuminsider.com/2026/11/05/ionq-raises-revenue-forecast-as-quarterly-sales-climb-to-173-8-million/"
+   }
+  ],
+  "QNT": [
+   {
+    "date": "2026-11-08",
+    "text": "三季度收入 910 万美元（+233%），全年指引上调至 3100~3400 万美元；净亏损扩大到 1.18 亿美元，期末现金 19.4 亿美元。",
+    "url": "https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement/"
+   }
+  ],
+  "QCOM": [
+   {
+    "date": "2026-11-08",
+    "text": "营收不及预期、指引疲弱，内存涨价反噬智能手机需求——半导体按“离 AI 数据中心多近”分化。",
+    "url": "https://siliconangle.com/2026/11/04/qualcomms-stock-falls-on-revenue-miss-and-weak-guidance-arm-and-globalfoundries-do-little-better/"
+   }
+  ],
+  "AMZN": [
+   {
+    "date": "2026-11-08",
+    "text": "AWS 仍在加速，但营收不及预期，市场不再无条件为资本开支买单。",
+    "url": "https://siliconangle.com/2026/10/29/despite-cloud-boom-amazons-stock-falls-disappointing-earnings-and-revenue-miss/"
+   }
+  ],
+  "WULF": [
+   {
+    "date": "2026-11-08",
+    "text": "谷歌为 TeraWulf 肯塔基数据中心提供信用担保——大厂用自身信用帮中小开发商降低融资成本。",
+    "url": "https://www.datacenterdynamics.com/en/news/google-to-serve-as-credit-backstop-for-terawulf-data-center-in-kentucky/"
+   }
+  ],
+  "AGLT": [
+   {
+    "date": "2026-11-08",
+    "text": "经与 Churchill Capital Corp XI 合并在纳斯达克上市，募资 4.65 亿美元，用于推出 Digit 5（续航 20 小时、摆线驱动执行器）并扩产。",
+    "url": "https://siliconangle.com/2026/11/05/humanoid-robot-maker-agility-robotics-debuts-on-the-nasdaq-after-spac-merger/"
+   }
+  ]
+ },
+ "sectors": {
+  "ai": [
+   {
+    "date": "2026-11-08",
+    "text": "AI 的定价逻辑转向“检验现金流和回报”：资本开支被惩罚，企业端 token 支出增速放缓，数据中心开始面临地方政治阻力。算力需求本身没有消失，网络和现场发电仍在拿新单。"
+   }
+  ],
+  "quantum": [
+   {
+    "date": "2026-11-08",
+    "text": "IonQ、Quantinuum 同时上调收入指引；客户开始为尚不存在的容错机器签长期预订合同。"
+   }
+  ],
+  "robotics": [
+   {
+    "date": "2026-11-08",
+    "text": "Agility Robotics 上市（AGLT），人形机器人首个纯标的；Figure 接手约 10 万块 GPU 的算力租约（报道）。"
+   }
+  ]
+ },
+ "margin_debt": null,
+ "daily": [
+  {
+   "date": "2026-11-08",
+   "market": "这是一个月来的第一次研判（10 月 8 日后自动刷新没有运行，今天已修复）。一个月里市场的核心变化是：AI 的定价逻辑从“奖励资本开支”转向“检验现金流和回报”——四大云厂商今年资本开支合计超 7400 亿美元，谷歌、英特尔、高通财报后单日大跌，半导体 ETF（SMH）一个月 −24%、纳指 100 −12%，资金流向医疗、必需消费、房地产等防御板块。资金面仍是“钱贵”（29 分；10 年期美债 4.86%，比一年前高 70bp，高收益债相对国债近 3 个月 −2.5%，资金在避险）。情绪面已降到偏悲观（热度 35：VIX 25.6、恐贪指数 22），但杠杆 ETF 成交占比仍在近一年 81% 分位，说明散户杠杆还没出清，这是情绪底还没完全确认的信号。按框架，这正是“利空在被定价”的阶段：基本面仍在改善的公司大批进入“关注买点”（人工确认的公司里有 156 家），但需要等杠杆出清或 VIX 期限结构倒挂来确认情绪底。",
+   "sectors": {
+    "ai": "一浪从“主升浪”退到“财报已改善，价格未反映”：财报没坏（Arista 三季度收入 +58.5%、四次上调全年指引；英特尔数据中心业务 +78%），坏的是估值和融资信心。新出现的约束有三条：企业端 token 支出增速放缓（Ramp 数据 8~9 月合计仅 +1.5%）、中国对 H200 进口审批卡住近 60 万颗、数据中心在中期选举后面临地方监管阻力。网络（Arista）和现场发电（Bloom）仍在拿新单，是这轮回调里基本面最硬的两段。",
+    "quantum": "两家离子阱公司都上调了收入指引：IonQ 三季度收入 1.738 亿美元（+336%），但近一半来自收购的 SkyWater 晶圆代工；Quantinuum 收入 910 万美元（+233%）几乎都是量子本身。股价跟随大盘下跌，浪位仍是“尚未启动 / 财报已改善价格未反映”。",
+    "robotics": "Agility Robotics 经 SPAC 上市（代码 AGLT），二级市场第一次有纯人形机器人标的；另据报道 Figure 接手了微软放弃的 Nscale 算力，机器人模型训练的算力采购已到大模型公司量级。零部件一浪财报在改善但价格未跟上。",
+    "aerospace": "一浪、二浪都是“财报已改善，价格未反映”；UFO ETF 一个月 −7%，相对抗跌。国防主题（ITA）是主题 ETF 里唯一正收益的。",
+    "autonomous": "板块随大盘回调，浪位“尚未启动 / 财报已改善价格未反映”，本期 Summizer 没有重要的新产业消息。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "距高点 −22%、热度 24，进入“关注买点”；11 月 17 日发财报。变量：中国 H200 进口审批（近 60 万颗滞留香港）和云厂商资本开支是否被下调。"
+    },
+    {
+     "t": "ANET",
+     "why": "三季度收入 +58.5%、经营利润率 49%，首次给出 2027 年约 185 亿美元展望；股价一个月仍 −19%，基本面与价格背离最明显的一家。"
+    },
+    {
+     "t": "BE",
+     "why": "NTT Data 900MW 燃料电池协议（与单一开发商最大的一单），谷歌怀俄明园区也用 Bloom 供电；股价一个月 −37%、热度 24。"
+    },
+    {
+     "t": "MU",
+     "why": "收入同比 +346%、毛利率 85%，股价从高点回撤 43%；新出现的风险是台湾新厂因劳资纠纷暂停施工。12 月 23 日发财报。"
+    },
+    {
+     "t": "CRWV",
+     "why": "11 月 10 日发财报，热度只有 3（极度悲观）；这轮下跌的核心担忧是融资能力，看合同积压和融资安排。"
+    },
+    {
+     "t": "NBIS",
+     "why": "同样 11 月 10 日发财报，一个月 −41%；微软放弃 Nscale 扩容一事会让市场追问新型云的客户集中度。"
+    },
+    {
+     "t": "IONQ",
+     "why": "上调全年收入指引至 5.05~5.15 亿美元，但纯量子收入只占约一半；股价距高点 −55%。"
+    },
+    {
+     "t": "INTC",
+     "why": "财报日跌 31%（客户端业务下滑、指引弱），但数据中心 +78% 验证了 Agent 带动 CPU 需求；热度 9，处于极度悲观区。"
+    },
+    {
+     "t": "RKLB",
+     "why": "11 月 9 日发财报，热度 19；关注 Neutron 首飞进度和积压订单。"
+    },
+    {
+     "t": "AGLT",
+     "why": "Agility Robotics 新上市，首只纯人形机器人股；上市募资 4.65 亿美元用于 Digit 5 量产。"
+    }
+   ],
+   "sources": [
+    [
+     "TechCrunch：AI 支出繁荣出现裂缝（10-30）",
+     "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+    ],
+    [
+     "TechCrunch：Ramp 数据显示 AI 支出停滞（11-06）",
+     "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
+    ],
+    [
+     "SiliconANGLE：Arista 创纪录季度（11-04）",
+     "https://siliconangle.com/2026/11/04/aristas-record-quarter-shows-the-network-has-become-central-to-ai/"
+    ],
+    [
+     "SiliconANGLE：英特尔财报后大跌（10-29）",
+     "https://siliconangle.com/2026/10/29/shares-of-intel-plummet-more-than-20-following-weak-guidance-blamed-on-pc-market-slowdown/"
+    ],
+    [
+     "SiliconANGLE：高通营收不及预期、指引疲弱（11-04）",
+     "https://siliconangle.com/2026/11/04/qualcomms-stock-falls-on-revenue-miss-and-weak-guidance-arm-and-globalfoundries-do-little-better/"
+    ],
+    [
+     "SiliconANGLE：亚马逊财报后下跌（10-29）",
+     "https://siliconangle.com/2026/10/29/despite-cloud-boom-amazons-stock-falls-disappointing-earnings-and-revenue-miss/"
+    ],
+    [
+     "The Quantum Insider：IonQ 上调收入指引（11-05）",
+     "https://thequantuminsider.com/2026/11/05/ionq-raises-revenue-forecast-as-quarterly-sales-climb-to-173-8-million/"
+    ],
+    [
+     "The Quantum Insider：Quantinuum 上调收入展望（11-05）",
+     "https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement/"
+    ],
+    [
+     "DataCenterDynamics：NTT Data 与 Bloom 签 900MW（11-08）",
+     "https://www.datacenterdynamics.com/en/news/ntt-data-signs-900mw-fuel-cell-supply-deal-with-bloom-energy/"
+    ],
+    [
+     "DataCenterDynamics：微软未行使 Nscale 扩容选择权（11-05）",
+     "https://www.datacenterdynamics.com/en/news/microsoft-declined-option-for-expanded-compute-contract-in-texas-with-nscale/"
+    ],
+    [
+     "DataCenterDynamics：近 60 万颗 H200 滞留香港（11-08）",
+     "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
+    ],
+    [
+     "DataCenterDynamics：美光台湾新厂因劳资纠纷暂停施工（11-08）",
+     "https://www.datacenterdynamics.com/en/news/ongoing-labor-dispute-sees-micron-pause-construction-at-its-45bn-memory-fab-in-taoyuan-taiwan-report/"
+    ],
+    [
+     "DataCenterDynamics：过半超大规模数据中心项目面临监管阻力（11-05）",
+     "https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/"
+    ],
+    [
+     "SiliconANGLE：Agility Robotics 经 SPAC 登陆纳斯达克（11-05）",
+     "https://siliconangle.com/2026/11/05/humanoid-robot-maker-agility-robotics-debuts-on-the-nasdaq-after-spac-merger/"
+    ]
+   ]
+  }
+ ],
+ "updated": "2026-11-08T22:35"
+}
