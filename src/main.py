@@ -8,7 +8,7 @@ import logging
 import re
 from datetime import datetime, timezone
 
-from . import alerts, analyze, build_site, config, discover, fetch, universe
+from . import alerts, analyze, build_site, config, discover, fetch, news, universe
 
 log = logging.getLogger("stock-radar")
 
@@ -132,11 +132,13 @@ def build_snapshot(force=False, quick=False):
         fl = filings.get(t, [])
         ex["estimates"] = f.get("estimates") or {}
         ex["reaction"] = _reaction(px[t]["Close"], fl)
+        val = analyze.forward_valuation(f, tc["price"], str(px[t].index[-1].date()))
         companies[t] = {
             "name": info.get("shortName") or info.get("longName") or (profiles.get(t) or {}).get("short") or t,
             "industry": info.get("industry", ""),
             "about": ((profiles.get(t) or {}).get("summary") or "")[:420],
-            "tech": tc, "fund": fu, "expect": ex, "capital": ca, "heat": h, "heat_why": hwhy,
+            "tech": tc, "fund": fu, "expect": ex, "capital": ca, "val": val,
+            "trend": (notes.get("trend") or {}).get(t), "heat": h, "heat_why": hwhy,
             "members": members[t], "news": f.get("news") or [], "filings": [x for x in fl if not x.get("report")],
             "reports": [x for x in fl if x.get("report")], "fetched": (f.get("fetched") or "")[:16], "relations": (rel.get(t) or [])[:12],
             "notes": (notes.get("companies") or {}).get(t, []),
@@ -144,6 +146,18 @@ def build_snapshot(force=False, quick=False):
             "spark_end": str(px[t].index[-1].date()),
         }
 
+    log.info("多来源新闻")
+    focus = [d["t"] for d in (notes.get("daily") or [{}])[0].get("watch", [])] if notes.get("daily") else []
+    focus += sorted((t for t, c in companies.items() if not all(m.get("auto") for m in c["members"])),
+                    key=lambda t: -((funds.get(t) or {}).get("info", {}).get("marketCap") or 0))[:40]
+    feed = news.collect(companies, focus=list(dict.fromkeys(focus)))
+    for x in feed:
+        for t in x["tickers"]:
+            c = companies.get(t)
+            if c is not None:
+                c.setdefault("mnews", []).append({k: x[k] for k in ("title", "url", "src", "date")})
+    for c in companies.values():
+        c["mnews"] = (c.get("mnews") or [])[:10]
     sentiment = analyze.market_sentiment(px, fg, companies, fetch.LEVERAGED, fetch.LEVERAGE_BASE,
                                          notes.get("margin_debt"))
     for c in companies.values():
@@ -176,6 +190,7 @@ def build_snapshot(force=False, quick=False):
         "sectors": out_sectors,
         "companies": companies,
         "daily": (notes.get("daily") or [])[:14],
+        "newsfeed": feed[:250],
         "notes_updated": notes.get("updated", ""),
     }
 

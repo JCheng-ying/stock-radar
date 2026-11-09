@@ -267,6 +267,7 @@ function overview(){
   ${igvCard()}
   <h2>板块资金流向 <small>相对标普500 的强弱 + 成交额变化；按近1个月相对强度排序</small></h2>
   <div class="grid g2">${flowTable("主题 / 产业链 ETF",M.themes)}${flowTable("标普 11 大行业 ETF",M.spdr)}</div>
+  ${valListCard()}
   <h2>点位信号 <small>基本面 × 预期面 × 情绪面 的错配</small></h2>
   <div class="grid g3">
     <div class="card"><h3>关注买点 · 基本面改善 + 预期差为正 + 价格在悲观区</h3>${mini(buy,c=>`<td class="num small">基 ${c.fund.score} · 预 ${c.expect.score}</td><td class="num small" style="color:var(--cold)">热度 ${c.heat}</td>`)}</div>
@@ -286,6 +287,50 @@ function igvCard(){
 }
 function flowTable(title,rows){
   return `<div class="tw"><table><tr><th class="l">${title}</th><th>1周</th><th>1月</th><th>3月</th><th>相对强度(1月)</th><th>成交额变化</th></tr>${rows.map(r=>`<tr><td><span class="tk">${r.sym}</span> <span class="muted small">${esc(r.name)}</span></td><td class="num ${cls(r.r1w)}">${pct(r.r1w,1)}</td><td class="num ${cls(r.r1m)}">${pct(r.r1m,1)}</td><td class="num ${cls(r.r3m)}">${pct(r.r3m,1)}</td><td class="num ${cls(r.rs1m)}">${pct(r.rs1m,1)}</td><td class="num">${has(r.flow)?(r.flow>0.1?"放量 ":r.flow<-0.1?"缩量 ":"")+pct(r.flow):"—"}</td></tr>`).join("")}</table></div>`;
+}
+
+
+/* ---------- 前瞻估值 + 趋势判断 ---------- */
+const TD={"顺风":"sig1","逆风":"sig-1","分化":"sig0"};
+const trendChip=tr=>tr&&tr.dir?`<span class="chip ${TD[tr.dir]||"sig0"}">趋势${esc(tr.dir)}</span>`:"";
+function valBars(v,price){
+  const all=v.years.flatMap(y=>y.px).concat([price]).filter(x=>x>0),mx=Math.max(...all)*1.05,P=x=>Math.max(0,Math.min(100,x/mx*100));
+  return v.years.map(y=>`<div style="display:grid;grid-template-columns:56px 1fr;gap:8px;align-items:center;margin:8px 0"><b class="num">${y.y}</b>
+    <div style="position:relative;height:26px;background:var(--panel2);border-radius:6px">
+      <div style="position:absolute;top:5px;bottom:5px;left:${P(y.px[0])}%;width:${Math.max(.5,P(y.px[2])-P(y.px[0]))}%;background:color-mix(in srgb,var(--w2) 35%,transparent);border:1px solid var(--w2);border-radius:4px"></div>
+      <div style="position:absolute;top:2px;bottom:2px;left:${P(y.px[1])}%;width:2px;background:var(--w2)"></div>
+      <div style="position:absolute;top:-2px;bottom:-2px;left:${P(price)}%;width:2px;background:var(--text)"></div>
+      <span class="small num" style="position:absolute;right:6px;top:4px;color:var(--muted)">${num(y.px[0],0)} ~ ${num(y.px[2],0)}（中值 ${num(y.px[1],0)}）</span></div></div>`).join("")+`<div class="heat-l"><span>白线 = 现价 ${num(price,2)}　· 蓝框 = 区间　· 蓝竖线 = 中值</span><span>美元 / 股</span></div>`;
+}
+function valSection(t,c){
+  const v=c.val,tr=c.trend,price=c.tech.price;
+  let h=`<h2>前瞻估值：2026 / 2027 / 2028 <small>以分析师一致预期为基础，随预期和股价每天更新 · 算法见「判断标准」页</small></h2>`;
+  if(!v)return h+`<div class="card small muted">数据不足（没有分析师一致预期，或缺市值数据），无法计算前瞻区间。</div>`+trendBlock(tr);
+  const unit=v.basis.startsWith("EPS")?(x=>num(x,2)):money;
+  h+=`<div class="card">
+    <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:baseline">${v.zone27?`<span class="chip ${v.below27hi?"sig2":"sig-2"}">${v.below27hi?"现价低于 2027 前瞻上沿":"现价高于 2027 前瞻上沿"}</span><span class="small muted">2027 区间位置：${esc(v.zone27)} · 到中值 <b class="num ${cls(v.up27mid)}">${pct(v.up27mid)}</b> · 到上沿 <b class="num ${cls(v.up27hi)}">${pct(v.up27hi)}</b></span>`:""}${trendChip(tr)}</div>
+    ${valBars(v,price)}
+    <div class="tw" style="margin-top:10px"><table class="fin"><tr><th class="l">年份</th><th class="l">口径</th><th>盈利指标（低 / 平均 / 高）</th><th>估值倍数</th><th>市值区间</th><th>股价区间</th><th>中值相对现价</th></tr>
+    ${v.years.map(y=>`<tr><td class="l num">${y.y}<div class="src">${esc(y.fy_end)}</div></td><td class="l small">${esc(y.kind)}</td><td class="num">${unit(y.metric[0])} / ${unit(y.metric[1])} / ${unit(y.metric[2])}</td><td class="num">${v.mult.map(x=>num(x,1)).join(" / ")}</td><td class="num">${money(y.mcap[0])} ~ ${money(y.mcap[2])}</td><td class="num"><b>${num(y.px[0],0)} ~ ${num(y.px[2],0)}</b></td><td class="num ${cls(y.px[1]/price-1)}">${pct(y.px[1]/price-1)}</td></tr>`).join("")}</table></div>
+    <div class="rule" style="margin-top:6px">口径：${esc(v.basis)}。市场现在给的倍数 ${num(v.market_mult,1)}，按增速应得的倍数 ${num(v.rule_mult,1)}，采用中值 ${num(v.mult[1],1)}（区间 ×0.75 ~ ×1.3）${v.basis.startsWith("收入")?`；已扣除净债务 ${money(v.net_debt)}`:""}。这是“预期兑现 + 市场维持合理倍数”时的价值区间，不是目标价；预期本身会被上修或下修，下修的风险看下面的趋势判断。分析师目标价另见预期面。</div>
+  </div>`;
+  return h+trendBlock(tr);
+}
+function trendBlock(tr){
+  if(!tr)return`<div class="card small muted" style="margin-top:10px"><b style="color:var(--text)">趋势判断：</b>还没做。每日研判任务每天会给一批公司补上“未来发展趋势，以及前瞻估值暂时反映不到的地方”。</div>`;
+  return `<div class="card" style="margin-top:10px"><h3 style="display:flex;gap:8px;align-items:baseline">趋势判断：前瞻估值反映不到的地方 ${trendChip(tr)}<span class="faint" style="font-weight:400">${esc(tr.date||"")}</span></h3>
+    <div>${esc(tr.text||"")}</div>
+    ${tr.miss?`<div class="note"><b>估值里没有体现的：</b>${esc(tr.miss)}</div>`:""}
+    ${tr.watch?`<div class="small muted">用什么验证：${esc(tr.watch)}</div>`:""}
+    ${(tr.src||[]).length?`<div class="src" style="margin-top:6px">依据：${tr.src.map(srcLink).join(" · ")}</div>`:`<div class="src" style="margin-top:6px">这是分析判断，不是事实陈述。</div>`}</div>`;
+}
+function valListCard(){
+  const L=Object.entries(C).filter(([,c])=>c.val&&c.val.below27hi&&!c.members.every(m=>m.auto)).sort((a,b)=>(b[1].val.up27mid||0)-(a[1].val.up27mid||0));
+  const n=Object.values(C).filter(c=>c.val&&c.val.zone27&&!c.members.every(m=>m.auto)).length;
+  return `<h2>现价低于 2027 前瞻估值上沿 <small>人工确认的 ${n} 家里有 ${L.length} 家 · 按到 2027 中值的空间排序 · 趋势逆风的要特别留意：便宜可能有便宜的道理</small></h2>
+  <div class="tw" style="max-height:520px"><table><tr><th class="l">公司</th><th>现价</th><th>2027 区间</th><th>中值</th><th>到中值</th><th class="l">区间位置</th><th class="l">趋势</th><th>点位</th></tr>
+  ${L.slice(0,40).map(([t,c])=>{const y=c.val.years.find(r=>r.y===2027);return`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,18)}</span></td><td class="num" data-lp="${t}">${num(c.tech.price,2)}</td><td class="num">${num(y.px[0],0)} ~ ${num(y.px[2],0)}</td><td class="num">${num(y.px[1],0)}</td><td class="num ${cls(c.val.up27mid)}">${pct(c.val.up27mid)}</td><td class="l small">${esc(c.val.zone27)}</td><td class="l">${trendChip(c.trend)||'<span class="faint small">未判断</span>'}</td><td>${sig(c.signal)}</td></tr>`}).join("")}</table></div>
+  <div class="small" style="margin-top:6px"><a href="#" onclick="event.preventDefault();state.filter.signal='below27';go('all')">在「全部公司」里查看完整清单（含排序）→</a></div>`;
 }
 
 /* ---------- 今日研判 + 信息面 ---------- */
@@ -308,10 +353,10 @@ function newsCard(){
   const seen=new Set();const news=nw.filter(n=>{if(seen.has(n.url))return false;seen.add(n.url);return true}).sort((a,b)=>(b.date||"").localeCompare(a.date||"")).slice(0,25);
   const k8=[];Object.entries(C).forEach(([t,c])=>(c.filings||[]).forEach(f=>{if((f.codes||[]).some(x=>["1.01","2.01","2.02","5.02","8.01","2.05","1.05","4.02"].includes(x)))k8.push({...f,t})}));
   k8.sort((a,b)=>b.date.localeCompare(a.date));
-  return `<h2>信息面 · 最新资讯 <small>每次刷新自动更新：产业消息来自 Summizer 每日文章，公司新闻来自 Yahoo Finance，公告来自 SEC</small></h2>
+  return `<h2>信息面 · 最新资讯 <small>每次刷新自动更新：Summizer 每日文章 + 路透、彭博、CNBC、MarketWatch、DataCenterDynamics、SpaceNews、Quantum Insider、Robot Report、Seeking Alpha、Google 新闻聚合 + SEC 公告</small></h2>
   <div class="grid g3">
     <div class="card"><h3>产业消息（Summizer）</h3><ul class="feed">${sig_.slice(0,14).map(x=>`<li><span class="chip">${esc(x.sec)}</span> ${esc(x.desc)}<div class="m">${esc(x.added)} · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
-    <div class="card"><h3>公司新闻</h3><ul class="feed">${news.map(n=>`<li><a href="#" onclick="event.preventDefault();openCo('${n.t}')" class="tk">${n.t}</a> <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><div class="m">${esc(n.date)} · ${esc(n.src)}</div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
+    <div class="card"><h3>多来源新闻（路透 / 彭博 / CNBC / 行业媒体等）</h3><ul class="feed" style="max-height:640px;overflow:auto">${(DATA.newsfeed||[]).slice(0,40).map(n=>`<li>${(n.tickers||[]).filter(x=>C[x]).map(x=>`<a href="#" onclick="event.preventDefault();openCo('${x}')" class="tk">${x}</a> `).join("")}<a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><div class="m">${esc((n.ts||"").replace("T"," ").slice(0,16))} UTC · ${esc(n.src)}</div></li>`).join("")||news.map(n=>`<li><a href="#" onclick="event.preventDefault();openCo('${n.t}')" class="tk">${n.t}</a> <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><div class="m">${esc(n.date)} · ${esc(n.src)}</div></li>`).join("")}</ul></div>
     <div class="card"><h3>重大公告（SEC 8-K）</h3><ul class="feed">${k8.slice(0,20).map(f=>`<li><a href="#" onclick="event.preventDefault();openCo('${f.t}')" class="tk">${f.t}</a> <a href="${safeUrl(f.url)}" target="_blank" rel="noopener">${esc(f.items.join(" · "))}</a><div class="m">${esc(f.date)}</div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
   </div>`;
 }
@@ -346,6 +391,8 @@ function sectorPage(s){
   <div class="grid g3">${waves}</div>
   <h2>产业面 <small>需求 / 供给 / 资本开支 / 技术进步 / 产业政策</small></h2>
   <div class="grid g5">${ind}</div>${notes}
+  <h2>本板块新闻 <small>多来源，最近几天</small></h2>
+  <div class="card"><ul class="feed">${(DATA.newsfeed||[]).filter(n=>(n.sectors||[]).includes(s.id)).slice(0,25).map(n=>`<li>${(n.tickers||[]).filter(x=>C[x]).map(x=>`<a href="#" onclick="event.preventDefault();openCo('${x}')" class="tk">${x}</a> `).join("")}<a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><div class="m">${esc(n.date)} · ${esc(n.src)}</div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
   <h2>产业消息 <small>来自 Summizer 资讯图谱的利好 / 利空信号</small></h2>
   <div class="card">${s.signals.length?`<ul class="feed">${s.signals.map(x=>`<li>${esc(x.desc)}<div class="m">${esc(x.added)} · ${esc(x.src)} · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div></li>`).join("")}</ul>`:`<div class="empty">Summizer 图谱里暂时没有这个板块的信号。</div>`}</div>`;
 }
@@ -484,21 +531,21 @@ function coRow(t,note,core,auto){
 }
 
 /* ---------- 全部公司 ---------- */
-const COLS=[["t","公司",c=>0],["sec","板块",c=>c.members[0].sector_name],["price","现价",c=>c.tech.price],["chg","日",c=>c.tech.chg1d],["r1m","1月",c=>c.tech.r1m],["r3m","3月",c=>c.tech.r3m],["rev","收入同比",c=>c.fund.rev_yoy],["gm","毛利率",c=>c.fund.gm],["gmd","毛利率Δ",c=>c.fund.gm_yoy],["em","EBITDA率",c=>c.fund.em],["rpo","RPO同比",c=>c.fund.rpo_yoy],["up","目标价空间",c=>c.expect.upside],["fpe","远期PE",c=>c.capital.fpe],["f","基",c=>c.fund.score],["e","预",c=>c.expect.score],["k","资",c=>c.capital.score],["h","热度",c=>c.heat],["sig","点位",c=>c.signal.level],["earn","下次财报",c=>c.expect.next_earnings]];
+const COLS=[["t","公司",c=>0],["sec","板块",c=>c.members[0].sector_name],["price","现价",c=>c.tech.price],["chg","日",c=>c.tech.chg1d],["r1m","1月",c=>c.tech.r1m],["r3m","3月",c=>c.tech.r3m],["rev","收入同比",c=>c.fund.rev_yoy],["gm","毛利率",c=>c.fund.gm],["gmd","毛利率Δ",c=>c.fund.gm_yoy],["em","EBITDA率",c=>c.fund.em],["rpo","RPO同比",c=>c.fund.rpo_yoy],["up","目标价空间",c=>c.expect.upside],["fpe","远期PE",c=>c.capital.fpe],["f","基",c=>c.fund.score],["e","预",c=>c.expect.score],["k","资",c=>c.capital.score],["h","热度",c=>c.heat],["sig","点位",c=>c.signal.level],["v27","27中值空间",c=>(c.val||{}).up27mid],["z27","27区间位置",c=>(c.val||{}).pos27],["earn","下次财报",c=>c.expect.next_earnings]];
 function allCos(){
   const q=($("#q").value||"").trim().toLowerCase(), F=state.filter;
-  let rows=Object.entries(C).filter(([t,c])=>(!q||t.toLowerCase().includes(q)||c.name.toLowerCase().includes(q))&&(!F.sector||c.members.some(m=>m.sector===F.sector))&&(!F.signal||c.signal.label===F.signal));
+  let rows=Object.entries(C).filter(([t,c])=>(!q||t.toLowerCase().includes(q)||c.name.toLowerCase().includes(q))&&(!F.sector||c.members.some(m=>m.sector===F.sector))&&(!F.signal||(F.signal==="below27"?(c.val&&c.val.below27hi):c.signal.label===F.signal)));
   const col=COLS.find(x=>x[0]===state.sort.k)||COLS[17], d=state.sort.d;
   rows.sort((a,b)=>{if(col[0]==="t")return d*a[0].localeCompare(b[0]);const x=col[2](a[1]),y=col[2](b[1]);if(!has(x))return 1;if(!has(y))return -1;return typeof x==="string"?d*x.localeCompare(y):d*(x-y)});
   const labels=["关注买点","观察","趋势中","中性","弱势","谨慎","回调风险"].filter(l=>Object.values(C).some(c=>c.signal.label===l));
   return `<div class="tabs" style="margin-top:6px">
     <button class="${!F.sector?"on":""}" onclick="state.filter.sector='';render()">全部板块</button>${S.map(s=>`<button class="${F.sector===s.id?"on":""}" onclick="state.filter.sector='${s.id}';render()">${s.name}</button>`).join("")}
   </div><div class="tabs">
-    <button class="${!F.signal?"on":""}" onclick="state.filter.signal='';render()">全部信号</button>${labels.map(l=>`<button class="${F.signal===l?"on":""}" onclick="state.filter.signal='${l}';render()">${l}</button>`).join("")}
+    <button class="${!F.signal?"on":""}" onclick="state.filter.signal='';render()">全部信号</button>${labels.map(l=>`<button class="${F.signal===l?"on":""}" onclick="state.filter.signal='${l}';render()">${l}</button>`).join("")}<button class="${F.signal==="below27"?"on":""}" onclick="state.filter.signal='below27';render()">低于 2027 前瞻上沿</button>
   </div>
   <div class="small muted" style="margin-bottom:8px">${rows.length} 家 · 点表头排序 · 点一行看五个面的详情</div>
   <div class="tw" style="max-height:78vh"><table><tr>${COLS.map(([k,n])=>`<th class="s ${k==="t"||k==="sec"?"l":""}" onclick="sortBy('${k}')">${n}${state.sort.k===k?(d>0?" ↑":" ↓"):""}</th>`).join("")}</tr>
-  ${rows.map(([t,c])=>{const k=c.tech,f=c.fund,e=c.expect;return`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,18)}</span></td><td class="l small muted">${[...new Set(c.members.map(m=>m.sector_name))].join(" / ")}</td><td class="num" data-lp="${t}">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}" data-lc="${t}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r1m)}">${pct(k.r1m)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td class="num ${cls(f.gm_yoy)}">${pp(f.gm_yoy)}</td><td class="num">${pct0(f.em)}</td><td class="num ${cls(f.rpo_yoy)}">${pct(f.rpo_yoy)}</td><td class="num ${cls(e.upside)}">${pct(e.upside)}</td><td class="num">${num(c.capital.fpe)}</td><td>${sc(f.score)}</td><td>${sc(e.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td><td class="num small">${e.next_earnings||"—"}</td></tr>`}).join("")}</table></div>`;
+  ${rows.map(([t,c])=>{const k=c.tech,f=c.fund,e=c.expect;return`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,18)}</span></td><td class="l small muted">${[...new Set(c.members.map(m=>m.sector_name))].join(" / ")}</td><td class="num" data-lp="${t}">${num(k.price,2)}</td><td class="num ${cls(k.chg1d)}" data-lc="${t}">${pct(k.chg1d,1)}</td><td class="num ${cls(k.r1m)}">${pct(k.r1m)}</td><td class="num ${cls(k.r3m)}">${pct(k.r3m)}</td><td class="num ${cls(f.rev_yoy)}">${pct(f.rev_yoy)}</td><td class="num">${pct0(f.gm)}</td><td class="num ${cls(f.gm_yoy)}">${pp(f.gm_yoy)}</td><td class="num">${pct0(f.em)}</td><td class="num ${cls(f.rpo_yoy)}">${pct(f.rpo_yoy)}</td><td class="num ${cls(e.upside)}">${pct(e.upside)}</td><td class="num">${num(c.capital.fpe)}</td><td>${sc(f.score)}</td><td>${sc(e.score)}</td><td>${sc(c.capital.score)}</td><td class="num" style="color:${heatColor(c.heat)}">${has(c.heat)?c.heat:"—"}</td><td>${sig(c.signal)}</td><td class="num ${cls((c.val||{}).up27mid)}">${pct((c.val||{}).up27mid)}</td><td class="small">${(c.val||{}).zone27||"—"}</td><td class="num small">${e.next_earnings||"—"}</td></tr>`}).join("")}</table></div>`;
 }
 function sortBy(k){state.sort=state.sort.k===k?{k,d:-state.sort.d}:{k,d:-1};render()}
 
@@ -580,7 +627,8 @@ function methodPage(){
   <tr><td class="l">重大事件（8-K）、10-Q / 10-K 原文链接</td><td class="l">SEC EDGAR submissions</td><td class="l">12 小时缓存，保留近 120 天</td><td class="l"></td></tr>
   <tr><td class="l">恐贪指数、Put/Call</td><td class="l"><a href="https://www.cnn.com/markets/fear-and-greed" target="_blank" rel="noopener">CNN Fear &amp; Greed</a></td><td class="l">每次刷新</td><td class="l">${s.fg?s.fg.score:"—"}</td></tr>
   <tr><td class="l">全市场上市公司名单 + 主营业务描述</td><td class="l"><a href="https://www.nasdaq.com/market-activity/stocks/screener" target="_blank" rel="noopener">Nasdaq Screener</a> + Yahoo Finance</td><td class="l">手动，建议每 30 天</td><td class="l">${Object.keys(C).length} 家进入本页</td></tr>
-  <tr><td class="l">产业消息、公司关系</td><td class="l">你的 Summizer 资讯图谱</td><td class="l">随 Summizer 更新</td><td class="l"></td></tr>
+  <tr><td class="l">多来源新闻</td><td class="l">CNBC、MarketWatch、DataCenterDynamics、Tom's Hardware、SpaceNews、The Quantum Insider、The Robot Report、Electrek 的 RSS；路透、彭博及各板块关键词的 Google 新闻聚合；重点公司的 Seeking Alpha 动态</td><td class="l">每次刷新（2 小时缓存）</td><td class="l">${(DATA.newsfeed||[]).length} 条（最近 4 天）</td></tr>
+  <tr><td class="l">产业消息、公司关系</td><td class="l">Summizer 资讯图谱</td><td class="l">随 Summizer 更新</td><td class="l"></td></tr>
   <tr><td class="l">产品拆解、零件归属、效率 / 触发点说明</td><td class="l">人工整理（data/chains）</td><td class="l">手动，建议每季度</td><td class="l"></td></tr></table></div>
   <p>没接上的：FINRA 融资余额（网站挡爬虫）、联邦基金利率原始序列（FRED 接口不稳定）、期权未平仓和资金流的逐笔数据（需付费源）。</p></div>
 
@@ -628,7 +676,15 @@ function methodPage(){
   <tr><td class="l">热度 39~79，基本面好，预期好</td><td class="l"><span class="chip sig1">趋势中</span></td><td class="l">趋势中段，等回踩均线</td></tr>
   <tr><td class="l">其余</td><td class="l"><span class="chip sig0">中性</span></td><td class="l">没有明显错配</td></tr></table></div></div>
 
-  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">六、推送什么、什么时候推</h3>
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">六、前瞻估值区间（2026 / 2027 / 2028）</h3>
+  <p><b>盈利指标：</b>盈利的公司用每股收益（EPS），还没盈利的用收入。数据是 Yahoo Finance 汇总的分析师一致预期：本财年和下财年，各有最低、平均、最高三个值；已公布的财年用实际值。第三年没有一致预期时，用下财年增速 × 0.7 外推，并把区间上下各放宽 15%。</p>
+  <p><b>财年换算：</b>财年在 1~5 月结束的算作前一年。例如英伟达截至 2027 年 1 月的财年计为 2026 年；苹果截至 2027 年 9 月的财年计为 2027 年。</p>
+  <p><b>估值倍数：</b>以市场现在实际给的倍数为基准（股价 ÷ 下财年 EPS，或 企业价值 ÷ 下财年收入），再向“按增速应得的倍数”靠拢，但最多上下调 22%。按增速应得的倍数：市盈率 = 12 + EPS 增速（百分数），限制在 12~45 倍；市销率 = (1 + 0.2 × 收入增速百分数) × 毛利率修正，限制在 1~20 倍。区间 = 中值 × 0.75 ~ × 1.3。之所以以市场倍数为基准：周期股（如存储）在盈利高点时市场只给很低的倍数，纯按增速给倍数会严重高估。</p>
+  <p><b>市值和股价：</b>市值区间 = 预期最低值 × 低倍数 ~ 预期最高值 × 高倍数。按收入估值时先算企业价值，再扣除净债务（债务 − 现金），避免高负债公司被高估。除以总股本得到股价区间。</p>
+  <p><b>标记：</b>现价低于 2027 年区间上沿，就标“低于 2027 前瞻上沿”，并进入总览页的清单；跌破 2027 年区间下沿时推送提醒。</p>
+  <p><b>它不能告诉你的：</b>前瞻估值假设分析师的预期会兑现。如果一个行业正在被颠覆（例如流媒体面对 AI 生成短剧，报税软件面对 AI 助手），分析师往往要等财报恶化后才下修预期——这部分由“趋势判断”补充：每家公司标注顺风 / 逆风 / 分化，写明估值里没有体现的因素和用什么数据验证。趋势判断由每日研判任务逐步补齐，属于分析判断。</p></div>
+
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">七、推送什么、什么时候推</h3>
   <p>每次定时刷新后，和上一次保存的状态对比，只有发生变化才推：</p>
   <ul><li>新财报落地：数据源里某家公司的“最新季度截止日”变新了 → 推送收入同比、毛利率及变化、EBITDA 利润率、EPS 超预期幅度、RPO 同比、当前信号</li><li>某只股票的点位信号变为「关注买点」或「回调风险」</li><li>某个板块某一浪的阶段发生变化</li><li>VIX 跨入 ≥ 30（极度恐慌）、≥ 22（恐慌升温）、≤ 13（过度平静）；市场综合情绪进入极度悲观 / 极度乐观</li><li>IGV“分化上涨”信号出现或消失</li><li>财报日 3 天内提醒（每个财报日只提醒一次，附一致预期 EPS）</li><li>单日涨跌超过 8%</li></ul>
   <p>单次刷新最多推 12 条，其余合并成一条。及时程度取决于定时任务的频率：默认交易时段每 30 分钟一次，盘后再跑三次（抓盘后财报）。数据源（Yahoo）自身更新新财报通常滞后发布几小时到一天，财报页会同时列出 SEC 8-K 原文链接，那是最快的一手来源。</p></div>
@@ -694,11 +750,12 @@ function openCo(t){
     <div class="card facet" style="grid-column:1/-1"><h3>⑤ 情绪面 · 具体点位 <em>${c.heat??"—"}</em></h3>${heatBar(c.heat)}
       <ul class="why">${c.heat_why.map(w=>`<li>${esc(w)}</li>`).join("")}<li>大盘情绪：${esc(M.sentiment.zone)}（热度 ${M.sentiment.heat}）——${esc(M.sentiment.verdict)}</li></ul></div>
   </div>
+  ${valSection(t,c)}
   ${finSection(t,c)}
   ${(c.notes||[]).length?`<h2>重大消息判断</h2>${c.notes.map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}${n.url?` <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">来源</a>`:""}</div>`).join("")}`:""}
   <div class="grid g2" style="margin-top:12px">
     <div class="card"><h3>重大事件公告（SEC 8-K，近 60 天）</h3>${(c.filings||[]).length?`<ul class="feed">${c.filings.map(x=>`<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.items.join(" · ")||"8-K")}</a><div class="m">${esc(x.date)}</div></li>`).join("")}</ul>`:`<div class="empty">近 60 天没有 8-K（或不是按美国本土公司格式披露）。</div>`}</div>
-    <div class="card"><h3>最新新闻</h3>${c.news.length?`<ul class="feed">${c.news.map(x=>`<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="m">${esc(x.date)} · ${esc(x.src)}</div></li>`).join("")}</ul>`:`<div class="empty">暂无</div>`}</div>
+    <div class="card"><h3>最新新闻（多来源）</h3>${[...(c.mnews||[]),...c.news].length?`<ul class="feed">${[...(c.mnews||[]),...c.news].filter((x,i,a)=>a.findIndex(y=>y.url===x.url)===i).slice(0,14).map(x=>`<li><a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a><div class="m">${esc(x.date)} · ${esc(x.src)}</div></li>`).join("")}</ul>`:`<div class="empty">暂无</div>`}</div>
   </div>
   ${c.relations.length?`<div class="card" style="margin-top:12px"><h3>图谱关系（来自 Summizer，每条都有原文来源）</h3><ul class="feed">${c.relations.map(r=>`<li><span class="chip">${REL[r.type]||esc(r.type)}</span> <b>${esc(r.other)}</b> — ${esc(r.desc)} ${r.url?`<a class="m" href="${safeUrl(r.url)}" target="_blank" rel="noopener">来源</a>`:""}</li>`).join("")}</ul></div>`:""}`;
   $("#modal").classList.add("on");$("#modal").scrollTop=0;document.body.style.overflow="hidden";fetchLive([t]);

@@ -592,3 +592,105 @@ def igv_check(px, holdings, companies):
     else:
         out["verdict"] = "IGV 既没上涨也没分化——二浪的价格信号还没出现。"
     return out
+
+
+# ---------- 前瞻估值：2026 / 2027 / 2028 的市值区间 → 股价区间 ----------
+#
+# 全部是写死的规则，判断标准页上有完整说明：
+#   1. 盈利指标：盈利的公司用 EPS，还没盈利的用收入。数据 = 分析师一致预期（本财年 0y、下财年 +1y，各有
+#      低 / 平均 / 高）。已公布的最近一个财年用实际值。第三年没有一致预期时，用下财年增速 × 0.7 外推，区间放宽 15%。
+#   2. 财年 → 日历年：财年在 1~5 月结束的算作前一年（英伟达截至 2027 年 1 月的财年 = 2026 年）。
+#   3. 估值倍数：以“市场现在给的倍数”为基准（股价 ÷ 下财年 EPS，或 企业价值 ÷ 下财年收入），再按增速
+#      应得的倍数（市盈率 12 + 增速%，限制 12~45 倍；市销率 (1 + 0.2 × 增速%) × 毛利率修正，限制 1~20 倍）
+#      向它靠拢，但最多上下调 22%（= 两者之比限制在 0.67~1.5 后开平方）。区间 = 中值 × 0.75 ~ × 1.3。
+#   4. 市值区间 = 预期低值 × 低倍数 ~ 预期高值 × 高倍数；按收入估值时先算企业价值再扣净债务。除以总股本得股价区间。
+# 含义：“如果分析师预期兑现、市场维持与增速相称的倍数，那一年这家公司值多少”。它不是目标价，
+# 也反映不了预期本身会不会被下修——那部分看“趋势判断”。
+
+def _fy_label(end):
+    y, m = int(end[:4]), int(end[5:7])
+    return y - 1 if m <= 5 else y
+
+
+def forward_valuation(f, price, today):
+    info = f.get("info") or {}
+    est = f.get("estimates") or {}
+    annual = f.get("annual") or []
+    mcap = info.get("marketCap")
+    e0, e1 = est.get("0y") or {}, est.get("+1y") or {}
+    if not price or not mcap or not (e0 or e1):
+        return None
+    shares = mcap / price
+    net_debt = (info.get("totalDebt") or 0) - (info.get("totalCash") or 0)
+    last = annual[-1] if annual else None
+    fy0 = f"{int(last['end'][:4]) + 1}{last['end'][4:]}" if last else f"{today[:4]}-12-31"
+
+    def g(a, b):
+        return (a - b) / abs(b) if a is not None and b not in (None, 0) else None
+
+    eps_g = g(e1.get("eps_avg"), e0.get("eps_avg"))
+    rev_g = g(e1.get("rev_avg"), e0.get("rev_avg"))
+    gm = info.get("grossMargins") or 0.5
+    per_share = (e0.get("eps_avg") or 0) > 0 and (e1.get("eps_avg") or e0.get("eps_avg") or 0) > 0
+    ref = e1 if e1.get("eps_avg" if per_share else "rev_avg") else e0
+    if per_share:
+        basis = "EPS（市盈率）"
+        gg = max(0.0, min(0.6, eps_g if eps_g is not None else (rev_g or 0.1)))
+        rule = _clip(12 + gg * 100, 12, 45)
+        market = price / ref["eps_avg"]
+    else:
+        if not ref.get("rev_avg"):
+            return None
+        basis = "收入（企业价值 / 销售额）"
+        gg = max(0.0, min(0.8, rev_g if rev_g is not None else 0.2))
+        rule = _clip((1 + 0.2 * gg * 100) * _clip(gm / 0.5, 0.4, 1.6), 1, 20)
+        market = (mcap + net_debt) / ref["rev_avg"]
+    if not market or market <= 0:
+        return None
+    mid = market * _clip(rule / market, 0.67, 1.5) ** 0.5
+    mult = (mid * 0.75, mid, mid * 1.3)
+
+    def value(x, m):
+        return x * m * shares if per_share else x * m - net_debt
+
+    def row(label, lo, av, hi, kind, fy_end):
+        caps = [value(x, m) for x, m in zip((lo, av, hi), mult)]
+        nd = 2 if per_share else 0
+        return {"y": label, "fy_end": fy_end, "kind": kind, "metric": [_r(lo, nd), _r(av, nd), _r(hi, nd)],
+                "mcap": [round(c) for c in caps], "px": [_r(max(c, 0) / shares, 2) for c in caps]}
+
+    k = "eps" if per_share else "rev"
+    rows = {}
+    if last and last.get(k) is not None and last.get(k) > 0:
+        v = last[k]
+        rows[_fy_label(last["end"])] = row(_fy_label(last["end"]), v, v, v, "实际（已公布财年）", last["end"][:7])
+    y0 = _fy_label(fy0)
+    for i, e in enumerate((e0, e1)):
+        av = e.get(k + "_avg")
+        if av is None:
+            continue
+        lo = e.get(k + "_lo") if e.get(k + "_lo") is not None else av * 0.9
+        hi = e.get(k + "_hi") if e.get(k + "_hi") is not None else av * 1.1
+        fy = f"{int(fy0[:4]) + i}{fy0[4:7]}"
+        rows[y0 + i] = row(y0 + i, lo, av, hi, f"一致预期（{e.get(k + '_n') and int(e.get(k + '_n')) or '?'} 位分析师）", fy)
+    top = max(rows) if rows else None
+    if top is not None and top < 2028 and rows[top]["kind"].startswith("一致"):
+        g2 = max(-0.1, min(0.5, 0.7 * ((eps_g if per_share else rev_g) or 0.1)))
+        lo, av, hi = rows[top]["metric"]
+        for yy in range(top + 1, 2029):
+            lo, av, hi = lo * (1 + g2) / 1.15, av * (1 + g2), hi * (1 + g2) * 1.15
+            rows[yy] = row(yy, lo, av, hi, f"外推（增速 {g2:+.0%}）", "外推")
+    years = [rows[y] for y in (2026, 2027, 2028) if y in rows]
+    if not years:
+        return None
+    out = {"basis": basis, "mult": [_r(x, 1) for x in mult], "market_mult": _r(market, 1), "rule_mult": _r(rule, 1),
+           "eps_g": _r(eps_g), "rev_g": _r(rev_g), "net_debt": round(net_debt), "years": years}
+    y27 = rows.get(2027)
+    if y27:
+        lo, mid_, hi = y27["px"]
+        out["below27hi"] = bool(price < hi)
+        out["pos27"] = _r((price - lo) / (hi - lo)) if hi > lo else None
+        out["zone27"] = ("低于下沿" if price < lo else "下沿~中值" if price < mid_ else "中值~上沿" if price < hi else "高于上沿")
+        out["up27mid"] = _r(mid_ / price - 1)
+        out["up27hi"] = _r(hi / price - 1)
+    return out

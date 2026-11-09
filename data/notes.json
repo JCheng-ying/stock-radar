@@ -212,5 +212,374 @@
    ]
   }
  ],
- "updated": "2026-11-08T22:35"
+ "updated": "2026-11-08T22:35",
+ "trend": {
+  "NVDA": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "AI 算力需求仍在扩张，下一代 Rubin 平台按计划推进，财报基本面没有转弱。但三股力量在削弱它的定价权：云厂商自研 ASIC（谷歌 TPU、亚马逊 Trainium、OpenAI × 博通）分流增量；中国对 H200 进口审批卡住近 60 万颗；11 月 CEO 个人事件引发董事会调查，市场开始讨论“公司过度依赖一个人”。",
+   "miss": "前瞻区间假设毛利率维持在 70% 以上、份额大体不变。ASIC 份额每扩大一截，英伟达就要在价格上让步，这在分析师预期里通常滞后体现。管理层风险也无法量化进估值。",
+   "watch": "数据中心毛利率、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货、董事会调查结论。",
+   "src": [
+    [
+     "Bloomberg：黄仁勋事件引发董事会调查（11-09）",
+     "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdnRpX0RPT3RRQ3p4THN2ZXU2MHVWRjVrTjBteEM2cEV3RXZuU1pPQWdOdXNrZkZxcWZ"
+    ],
+    [
+     "DataCenterDynamics：近 60 万颗 H200 滞留香港",
+     "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
+    ],
+    [
+     "Tom's Hardware：定制 AI ASIC 现状",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   ]
+  },
+  "AVGO": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "定制 ASIC 是确定的增长方向，公司目标 2027 财年 AI 收入 1150 亿美元、2028 财年 2300 亿美元，自由现金流极强。风险不在自身资产负债表，而在客户：最大的定制芯片客户是 OpenAI 和 Anthropic，它们的付款能力取决于持续融资；博通还通过融资平台替客户承担了一部分信用风险，CDS 在 10 月创了 2009 年以来新高。",
+   "miss": "估值用的是分析师预期，而这些预期默认 OpenAI / Anthropic 的订单全部兑现。客户融资一旦受阻，订单可能推迟，这是一阶风险，但不会提前出现在一致预期里。",
+   "watch": "OpenAI 融资进展、Anthropic IPO、博通 CDS、FQ4 财报（12 月）的 AI 收入指引。",
+   "src": [
+    [
+     "IFRE：超大规模云和芯片公司 CDS 扩至纪录水平",
+     "https://www.ifre.com/people-and-markets/2496665/hyperscaler-and-chipmaker-cds-widen-to-record-levels"
+    ],
+    [
+     "Tom's Hardware：定制 AI ASIC 现状",
+     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
+    ]
+   ]
+  },
+  "AMD": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "数据中心收入近乎翻倍，MI450 / Helios 开始放量，OpenAI、Meta、微软、甲骨文都在部署；评级被上调到 A 级，现金流为正、债务很少。它是“第二供应商”逻辑的直接受益者——任何不想被英伟达锁死的客户都会给它份额。",
+   "miss": "最大的增量订单（OpenAI 6GW）依赖 OpenAI 的融资能力；软件生态（ROCm）与 CUDA 的差距决定它能拿多少份额，这在增速外推里体现不出来。",
+   "watch": "OpenAI 融资、Helios 机柜实际出货量、数据中心 GPU 毛利率。",
+   "src": [
+    [
+     "CNBC：AMD 数据中心收入近乎翻倍",
+     "https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html"
+    ],
+    [
+     "CNBC：OpenAI 与 AMD 芯片协议",
+     "https://www.cnbc.com/2025/10/06/openai-amd-chip-deal-ai.html"
+    ]
+   ]
+  },
+  "TSM": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "所有先进 AI 芯片——不管是英伟达、AMD 还是各家 ASIC——几乎都要它代工，CoWoS 先进封装仍是全行业的供给上限。谁赢都要用它，是这一层最确定的“收费站”。",
+   "miss": "台海地缘风险无法量化进估值；美国新厂的成本更高，长期会压毛利率。",
+   "watch": "月度营收、资本开支指引、美国厂毛利率。",
+   "src": []
+  },
+  "MU": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "AI 带来存储超级周期：收入同比增长数倍、毛利率创纪录。但存储是典型的周期行业，市场只给它约 3 倍的下财年市盈率，说明大家默认现在是盈利高点；台湾新厂因劳资纠纷暂停施工，又可能延长涨价周期。",
+   "miss": "2028 年的区间是用增速外推的，如果周期在 2027~2028 年见顶回落，实际盈利会远低于外推值——周期股的前瞻区间要打折看。",
+   "watch": "DRAM / HBM 合约价、三星和 SK 海力士扩产、HBM4 份额。",
+   "src": [
+    [
+     "DataCenterDynamics：美光台湾新厂暂停施工",
+     "https://www.datacenterdynamics.com/en/news/ongoing-labor-dispute-sees-micron-pause-construction-at-its-45bn-memory-fab-in-taoyuan-taiwan-report/"
+    ]
+   ]
+  },
+  "ANET": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "AI 集群的瓶颈正在从算力转向网络，Arista 三季度收入 +58.5%、经营利润率 49%，第四次上调全年指引，并首次给出 2027 年约 185 亿美元的展望。资产负债表干净（144 亿美元现金、无负债）。",
+   "miss": "客户高度集中在微软和 Meta；如果它们削减资本开支，网络订单会同步放缓。英伟达 Spectrum-X 在抢以太网份额，这在指引里不体现。",
+   "watch": "微软、Meta 的资本开支，Spectrum-X 份额，2027 年展望是否维持。",
+   "src": [
+    [
+     "SiliconANGLE：Arista 创纪录季度",
+     "https://siliconangle.com/2026/11/04/aristas-record-quarter-shows-the-network-has-become-central-to-ai/"
+    ]
+   ]
+  },
+  "GOOGL": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "谷歌云收入 +103%、利润率升到 36%，积压订单超 5000 亿美元，TPU 开始对外销售，AI 业务在加速。但搜索这个现金牛面临聊天机器人分流；资本开支超过经营现金流，连续两个季度自由现金流为负；民主党控制国会后反垄断和数据中心政策风险上升。",
+   "miss": "一致预期里 2027 年 EPS 低于 2026 年（2026 年含大额投资收益），所以前瞻区间偏低；更重要的是搜索份额如果被 AI 助手持续侵蚀，这种变化往往是渐进的，先体现在查询量，晚很久才体现在预期里。",
+   "watch": "搜索收入增速、谷歌云利润率、资本开支与自由现金流、反垄断判决。",
+   "src": [
+    [
+     "Fortune：谷歌云收入翻倍，但自由现金流深度为负",
+     "https://fortune.com/2026/10/28/alphabet-google-stock-drops-cloud-revenue-doubles-free-cash-flow-negative/"
+    ],
+    [
+     "CNBC：民主党横扫国会，交易员押注数据中心建设放缓",
+     "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"
+    ]
+   ]
+  },
+  "MSFT": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "Azure 和 Copilot 双线受益，信用最好（CDS 是同类里最低的），资本开支大但自由现金流仍为正。",
+   "miss": "Copilot 按席位收费，若 Agent 让企业裁员，席位数反而会减少，收费模式需要转向按用量；OpenAI 关系的变化也难量化。",
+   "watch": "Azure 增速、Copilot 付费席位、资本开支 / 经营现金流比。",
+   "src": []
+  },
+  "AMZN": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "AWS 在加速，持有 Anthropic 股份（Anthropic 已申请上市），零售用 AI 降低物流和广告成本。但三季度营收不及预期，市场不再无条件为资本开支买单。",
+   "miss": "Anthropic 上市后的股权价值重估、AWS 被定制芯片（Trainium）拉低的毛利率，都不在 EPS 预期里。",
+   "watch": "AWS 增速和利润率、资本开支、Anthropic IPO 定价。",
+   "src": [
+    [
+     "SiliconANGLE：亚马逊财报后下跌",
+     "https://siliconangle.com/2026/10/29/despite-cloud-boom-amazons-stock-falls-disappointing-earnings-and-revenue-miss/"
+    ]
+   ]
+  },
+  "META": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "AI 推荐算法直接提高广告效果，广告业务是 AI 最确定的变现方式之一。但折旧和资本开支已经开始压利润，三季度净利润明显下滑；中期选举后数据中心面临地方政治阻力，Meta 自己也公开警告过这一点。",
+   "miss": "前瞻区间假设利润率回升；如果资本开支继续上升而广告增速放缓，利润率会被压在低位更久。",
+   "watch": "广告单价、用户时长、资本开支指引、折旧增速。",
+   "src": [
+    [
+     "DataCenterDynamics：过半超大规模数据中心项目面临监管阻力",
+     "https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/"
+    ]
+   ]
+  },
+  "ORCL": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "RPO（长期订单）因 OpenAI 等大单暴增，是云基础设施里增速最高的之一。但建设靠大量借债，客户高度集中在少数 AI 实验室。",
+   "miss": "订单能否转化为收入取决于客户的融资和数据中心建设进度；甲骨文自己的信用成本上升会压利润，这些不在收入预期里。",
+   "watch": "RPO 转化率、自由现金流、债券利差 / CDS。",
+   "src": [
+    [
+     "IFRE：超大规模云和芯片公司 CDS 扩至纪录水平",
+     "https://www.ifre.com/people-and-markets/2496665/hyperscaler-and-chipmaker-cds-widen-to-record-levels"
+    ]
+   ]
+  },
+  "PLTR": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "美国商业收入 +148%，首次超过政府收入，没有债务、没有资本开支压力，2026 年调整后自由现金流指引上调到 48~50 亿美元。",
+   "miss": "市场给的倍数已经远高于按增速应得的倍数，现价在 2027 区间的中值到上沿之间——好公司不等于便宜，增速稍有放缓，倍数的压缩幅度会很大。",
+   "watch": "美国商业收入增速、净留存率、新客户数。",
+   "src": [
+    [
+     "SEC：Palantir 2026 年三季度新闻稿",
+     "https://www.sec.gov/Archives/edgar/data/0001321655/000132165526000045/a2026q3ex991pressrelease.htm"
+    ]
+   ]
+  },
+  "CRWV": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "合同积压超过 1000 亿美元，但几乎全部依赖外部融资建设，CDS 在 10 月达到“信用困境”水平（1000bp 以上）；收入约三分之二来自微软；中期选举后德州新州长承诺限制数据中心。",
+   "miss": "前瞻区间扣了净债务，但没有反映再融资成本上升、股权稀释、以及合同可能被推迟的风险——这些对高杠杆公司是一阶影响。",
+   "watch": "高收益债市场是否重新开放、CDS、新增融资条款、德州政策。",
+   "src": [
+    [
+     "CNBC：CoreWeave 的 CDS 达到困境水平",
+     "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
+    ],
+    [
+     "CNBC：民主党横扫国会，交易员押注数据中心建设放缓",
+     "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"
+    ]
+   ]
+  },
+  "NBIS": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "与微软、Meta 的合同合计约 490 亿美元，两个客户都是投资级。但建设资金依赖可转债和短期贷款；同类公司 Nscale 被微软放弃扩容，说明大客户在挑能确定拿到电的位置。",
+   "miss": "收入预期默认产能按期上线；电力接入或融资延误会直接推迟收入，而这类延误往往在财报当季才披露。",
+   "watch": "季度资本开支与上线容量、现金余额、短期贷款的再融资。",
+   "src": [
+    [
+     "DataCenterDynamics：微软未行使 Nscale 扩容选择权",
+     "https://www.datacenterdynamics.com/en/news/microsoft-declined-option-for-expanded-compute-contract-in-texas-with-nscale/"
+    ]
+   ]
+  },
+  "CRM": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "Agentforce 把 AI Agent 嵌进 CRM，是最早商业化的企业 Agent 之一。但 Agent 的本质是“少用人”，而 Salesforce 按席位收费——客户人少了，席位也会少。",
+   "miss": "如果收费模式不能及时转向按用量或按结果，收入增速会被 Agent 本身侵蚀，这种结构性变化分析师通常要等续约季才下修。",
+   "watch": "Agentforce 单独披露的 ARR、席位数、cRPO 增速。",
+   "src": []
+  },
+  "INTU": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "TurboTax 和 QuickBooks 握有大量个人和小企业的财务数据，这是护城河；但 AI 助手已经能直接帮用户报税和记账，市场担心它被绕开，股价从高点下跌近一半。",
+   "miss": "一致预期仍按历史增速外推；如果 AI 助手分走低端报税用户，客户数会先下滑，预期要等报税季结束才会修正。",
+   "watch": "TurboTax 客户数和份额、QuickBooks 净留存率、AI 功能的付费率。",
+   "src": []
+  },
+  "ADBE": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "生成式 AI 让做图、做视频的门槛大幅降低，Canva 和各家模型公司的图像 / 视频工具在侵蚀创意软件的中低端用户。Adobe 有 Firefly，但定价权在下降。",
+   "miss": "前瞻 EPS 靠回购和利润率支撑；用户数被侵蚀是缓慢过程，先体现在新增订阅放缓。",
+   "watch": "数字媒体 ARR 增速、新增订阅数、Firefly 付费。",
+   "src": []
+  },
+  "APP": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "AI 广告引擎带来远超行业的增速，三季度财报后股价单日 +45%。",
+   "miss": "收入高度依赖移动游戏和电商广告投放，平台政策（苹果、谷歌）或监管变化可能突然改变获客成本，这无法反映在增速外推里。",
+   "watch": "广告主数量、电商广告占比、平台政策。",
+   "src": []
+  },
+  "UBER": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "它在赌“自动驾驶公司需要 Uber 的需求网络”：已接入 Waymo、Zoox、文远知行、小马智行和 Lucid + Nuro。但 Waymo 在多数城市自营，特斯拉也要自建网络；市场认为 Uber 的 Robotaxi 路径太慢。",
+   "miss": "估值基于现有网约车业务的盈利，但如果头部自动驾驶公司选择绕开它，Uber 的长期抽成率会被压低——这是 5 年维度的风险，预期里看不到。",
+   "watch": "接入自动驾驶车辆的城市数和订单占比、Waymo 自营与合作的比例。",
+   "src": [
+    [
+     "Seeking Alpha：Uber 的 Robotaxi 路径太慢",
+     "https://news.google.com/rss/articles/CBMiggFBVV95cUxQc280NEhDT1NFMDhJcUJSUHRtNE5FMU1NbFY0RF9fU191NzNBWTVzWXpaS1RoTlBJZUt"
+    ]
+   ]
+  },
+  "TSLA": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "市场给的倍数远高于按增速应得的倍数，股价的大部分是在给 Robotaxi 和 Optimus 定价，而不是卖车。公司正在把重心从车转向 Robotaxi（明年拆除 Cybertruck 产线），但自营 Robotaxi 规模仍很小、Cybercab 仍待监管豁免。",
+   "miss": "前瞻区间按汽车 EPS 算，反映不了 Robotaxi / Optimus 的期权价值——上下两个方向都是：兑现则远高于区间，失败则倍数会大幅压缩。",
+   "watch": "Robotaxi 车队规模和无安全员城市数、Cybercab 监管豁免、Optimus 外部交付。",
+   "src": [
+    [
+     "Reuters：特斯拉明年拆除 Cybertruck 产线",
+     "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRUhMT1JwanVVTTN4eGhvcXBNTHo3UV80QXFDU2hMWTRuUGppME9ab3RkNVkwZnFOWXh"
+    ]
+   ]
+  },
+  "ISRG": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "达芬奇手术量持续增长，耗材和服务是经常性收入，新一代平台在放量。",
+   "miss": "美敦力 Hugo、强生等的竞争会在新医院招标时体现，价格压力先于收入预期出现。",
+   "watch": "手术量增速、新装机数、耗材单价。",
+   "src": []
+  },
+  "RKLB": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "发射 + 卫星平台 + 部件的垂直整合，国防订单在增加；但市场给的倍数远高于按增速应得的倍数，股价已在为 Neutron 的成功提前定价。",
+   "miss": "Neutron 首飞若再推迟或失败，倍数会大幅压缩；SpaceX 的价格优势是长期压力。",
+   "watch": "Neutron 首飞时间、积压订单、发射成功率。",
+   "src": []
+  },
+  "IONQ": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "收入大增、全年指引上调到 5.05~5.15 亿美元，但约一半来自收购的 SkyWater 晶圆代工，纯量子收入的增长没有总数看起来那么快。",
+   "miss": "市场按“量子公司”给倍数，但收入结构里有相当一部分是传统代工业务；代工部分应该给低得多的倍数。",
+   "watch": "量子平台收入占比、代工客户数、纠错里程碑。",
+   "src": [
+    [
+     "The Quantum Insider：IonQ 上调收入指引",
+     "https://thequantuminsider.com/2026/11/05/ionq-raises-revenue-forecast-as-quarterly-sales-climb-to-173-8-million/"
+    ]
+   ]
+  },
+  "CEG": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "核电是数据中心最理想的电源（全天、零碳），与微软、Meta、谷歌都签了长期协议，是电力里确定性最高的一类。",
+   "miss": "中期选举后数据中心面临地方阻力，FERC 对核电站直供数据中心有限制；这些影响新合同的签约节奏，不影响已签合同。",
+   "watch": "新签购电协议、机组增容进度、FERC 规则。",
+   "src": [
+    [
+     "CNBC：民主党横扫国会，交易员押注数据中心建设放缓",
+     "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"
+    ]
+   ]
+  },
+  "VRT": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "液冷和数据中心电力设备的纯标的，积压订单庞大。",
+   "miss": "伊顿（收购 Boyd）和施耐德（收购 Motivair）都在补齐液冷，竞争加剧会压价；数据中心建设若因政策放缓，订单会推迟。",
+   "watch": "订单出货比、液冷收入增速、毛利率。",
+   "src": []
+  },
+  "BE": {
+   "date": "2026-11-08",
+   "dir": "顺风",
+   "text": "“先有电才有算力”，燃料电池可以绕开电网排队：与 NTT Data 签下 900MW、谷歌怀俄明园区也用它供电。",
+   "miss": "燃料电池用天然气，若天然气价格大涨或碳排放规则收紧，经济性会变；大单多为框架协议，按批次确认。",
+   "watch": "确定订单占比、交付速度、天然气价格。",
+   "src": [
+    [
+     "DataCenterDynamics：NTT Data 与 Bloom 签 900MW",
+     "https://www.datacenterdynamics.com/en/news/ntt-data-signs-900mw-fuel-cell-supply-deal-with-bloom-energy/"
+    ]
+   ]
+  },
+  "INTC": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "数据中心业务 +78%，验证了“Agent 带动 CPU 需求”；但客户端业务在下滑、指引疲弱，财报日股价跌超 30%；代工业务（18A）仍在烧钱。",
+   "miss": "前瞻区间没有区分数据中心和 PC 两块完全不同的业务，也反映不了代工业务成败这个二元结果。",
+   "watch": "数据中心收入、18A 外部客户、代工亏损。",
+   "src": [
+    [
+     "SiliconANGLE：英特尔财报后大跌",
+     "https://siliconangle.com/2026/10/29/shares-of-intel-plummet-more-than-20-following-weak-guidance-blamed-on-pc-market-slowdown/"
+    ]
+   ]
+  },
+  "QCOM": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "内存涨价推高手机成本、压制需求，高通营收不及预期、指引疲弱；苹果自研基带在逐步替代它。",
+   "miss": "手机行业被内存成本反噬是周期性的，但失去苹果是结构性的，一致预期的下修可能还没走完。",
+   "watch": "苹果订单占比、手机出货量、汽车和物联网收入占比。",
+   "src": [
+    [
+     "SiliconANGLE：高通营收不及预期",
+     "https://siliconangle.com/2026/11/04/qualcomms-stock-falls-on-revenue-miss-and-weak-guidance-arm-and-globalfoundries-do-little-better/"
+    ]
+   ]
+  },
+  "GETY": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "生成式 AI 让“买一张库存图片”这件事被直接替代，股价一个月跌超 70%。图片版权授权给模型公司是新收入，但规模远不能抵消主业下滑。",
+   "miss": "前瞻预期在下修过程中，区间很可能继续下移；这是“便宜但有便宜的道理”的典型。",
+   "watch": "订阅收入、数据授权收入、客户流失率。",
+   "src": []
+  },
+  "SSTK": {
+   "date": "2026-11-08",
+   "dir": "逆风",
+   "text": "与 Getty 同样面对 AI 生成图像的替代，财报后单日跌约 32%。",
+   "miss": "同上，预期仍在下修。",
+   "watch": "同上。",
+   "src": []
+  },
+  "RDDT": {
+   "date": "2026-11-08",
+   "dir": "分化",
+   "text": "论坛内容是大模型训练和 AI 搜索最需要的数据之一，数据授权是新增量；但流量高度依赖谷歌搜索导流，AI 搜索改变导流方式会直接影响用户增长。财报后单日跌约 32%。",
+   "miss": "用户增长对谷歌算法的敏感度无法量化进预期。",
+   "watch": "日活用户、来自搜索的流量占比、数据授权收入。",
+   "src": []
+  }
+ }
 }

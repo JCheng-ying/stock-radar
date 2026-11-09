@@ -65,6 +65,7 @@ def detect(snap):
     state = {
         "q_end": {t: c["fund"].get("q_end") for t, c in cos.items()},
         "signal": {t: c["signal"]["label"] for t, c in cos.items()},
+        "val27": {t: (c.get("val") or {}).get("zone27") for t, c in cos.items()},
         "wave": {f"{s['id']}:{w['wave']}": w["stage"] for s in snap["sectors"] for w in s["wave_status"]},
         "vix_zone": _vix_zone((sent.get("vix") or {}).get("last")),
         "mkt_zone": sent.get("zone"),
@@ -99,6 +100,16 @@ def detect(snap):
                 events.append((f"{icon} {t} 进入「{new}」", f"{c['name']}：{c['signal']['text']}（此前：{old}）\n"
                                + "；".join(c["heat_why"][:3]), "high" if new == "关注买点" else "normal",
                                ["dart" if new == "关注买点" else "warning"]))
+        # 2b) 现价跌破 2027 前瞻估值区间下沿
+        for t, c in cos.items():
+            old, new = (prev.get("val27") or {}).get(t), state["val27"].get(t)
+            if old and new == "低于下沿" and old != new:
+                v = c["val"]
+                y = next((r for r in v["years"] if r["y"] == 2027), None)
+                tr = (c.get("trend") or {}).get("dir")
+                events.append((f"💎 {t} 跌破 2027 前瞻估值下沿",
+                               f"{c['name']} 现价 {c['tech']['price']}，2027 前瞻区间 {y['px'][0]}~{y['px'][2]}（中值 {y['px'][1]}，空间 {v['up27mid']:+.0%}）。"
+                               + (f"趋势判断：{tr}。" if tr else "") + "前瞻估值以分析师预期兑现为前提。", "high", ["gem"]))
         # 3) 浪的位置变化
         for s in snap["sectors"]:
             for w in s["wave_status"]:
