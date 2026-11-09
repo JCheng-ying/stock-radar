@@ -8,10 +8,5 @@ cd "$(dirname "$0")"
 source .venv/bin/activate
 python -m src.main "$@"
 
-if git remote get-url origin >/dev/null 2>&1; then
-  git add -A
-  if ! git diff --cached --quiet; then
-    git commit -q -m "刷新数据 $(date '+%Y-%m-%d %H:%M')"
-    git push -q && echo "已推送，GitHub Pages 一两分钟内更新。"
-  fi
-fi
+# 发布网页（gh-pages 分支，覆盖式）；代码和研判记录的提交由每日研判任务负责
+./publish.sh || echo "发布失败（网络或权限问题），下次刷新会重试"

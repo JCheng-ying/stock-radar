@@ -5,3 +5,6 @@ data/cache/
 *.log
 .DS_Store
 data/profiles.json
+data/snapshot.json
+index.html
+data/alert_state.json
