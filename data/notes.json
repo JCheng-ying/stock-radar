@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-09",
+    "text": "管理层风险（情绪面/预期面，负向）：董事会就 CEO 被指成为外国情报目标启动独立调查，股价在芯片普涨日 −4.27%；产业面和基本面未见变化。",
+    "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+   },
+   {
     "date": "2026-11-08",
     "text": "中国对 H200 的进口审批停滞，约 60 万颗芯片滞留香港；美国放行之后卡点转到了中方。影响预期面（中国收入），不影响产品力。",
     "url": "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
@@ -76,10 +81,70 @@
     "text": "经与 Churchill Capital Corp XI 合并在纳斯达克上市，募资 4.65 亿美元，用于推出 Digit 5（续航 20 小时、摆线驱动执行器）并扩产。",
     "url": "https://siliconangle.com/2026/11/05/humanoid-robot-maker-agility-robotics-debuts-on-the-nasdaq-after-spac-merger/"
    }
+  ],
+  "AVGO": [
+   {
+    "date": "2026-11-09",
+    "text": "情绪面修复：芯片股反弹中 +8.8%；英伟达管理层风险让定制 ASIC 路线获得相对关注，但没有新的订单信息。",
+    "url": "https://virginiabusiness.com/us-stocks-rally-oil-prices-ease-inflation-nvidia-slump/"
+   }
+  ],
+  "CRWV": [
+   {
+    "date": "2026-11-09",
+    "text": "预期面（负向压力）：模型公司估值讨论下修（Anthropic IPO 区间降至 1.1~1.75 万亿美元），新型云的客户融资能力是 11-10 财报的核心验证点。",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-targets-november-debut-162209958.html"
+   }
+  ],
+  "RKLB": [
+   {
+    "date": "2026-11-09",
+    "text": "基本面正向（Q3 收入 +73%、积压 36 亿美元、经营现金流转正），产业面/预期面负向（Neutron 首飞推迟到不早于 2027 年）。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm"
+   }
+  ],
+  "ASTS": [
+   {
+    "date": "2026-11-09",
+    "text": "产业面正向：与乐天成立日本合资公司，日本政府最多出资 1480 亿日元建手机直连卫星网络，目标 2029 年 3 月开通。",
+    "url": "https://global.rakuten.com/corp/news/press/2026/1109_01.html"
+   }
+  ],
+  "LUNR": [
+   {
+    "date": "2026-11-09",
+    "text": "产业面正向：入选 NASA CLPS 2（10 年、上限 100 亿美元、8 家），获得后续月球运输任务的竞标资格，但不是确定收入。",
+    "url": "https://www.wisn.com/article/nasa-awards-10b-contracts-moon-base-cargo-nuclear-rover/74371043"
+   }
+  ],
+  "RGTI": [
+   {
+    "date": "2026-11-09",
+    "text": "情绪面：量子股跟随大盘反弹 +10.5%，无新的基本面信息；11-10 财报。",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcHBTalpRTHNHRHBlTzcyTlRBQ1FfOUtFSS1MRXVIVUd6VDVGNThFSVpwc25qeGY4bExpNnQweWtkTDd2SWthQlpPV0VxemVXemR1aUVYdVVtejVjMU42MkRMYzB2UGNYS3p0RV9rUmlCYXJDektaYWloclpCNFg2N0JsNzJBQjZ6THhpMzhneUZ6dG9SY1dmNkgzZ0NiWl80TGE1a0VGV1p4REE1NjZYbWhndlJwVW1FNTQzUlRYWkVXTWFzdHRHeVdoWXJ4QzRTc0E?oc=5"
+   }
+  ],
+  "GOOGL": [
+   {
+    "date": "2026-11-09",
+    "text": "产业面/监管（负向，影响较小）：NHTSA 对 Waymo 开启召回质询，2,895 辆车，因软件修复后仍多次违规超越校车。",
+    "url": "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/"
+   }
+  ],
+  "TSLA": [
+   {
+    "date": "2026-11-09",
+    "text": "产业面正向：Robotaxi 上线圣安东尼奥并扩大奥斯汀服务区；Cybertruck 生产的说法来源有分歧。",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXJMY01yemp1UExHMGRvZzVPTmFlYUREWl91SnhIM2xjbjVXZDJCVGNqOVVUdEdWcWx6LWNSVW9GV0lZOXB5bTNkWEQtMDd1UVpQbm4tRV8zV1hKVzhqcEsxZVNWVDZ1akJjdW0tT2h6bnNDUDNwdGppWTd2d0VkVzA5OUtMS09GcjhZQ2s5cUJoVTFZcW5Eai1xYmZzTUdScEFCV3lGOGUxMXJr?oc=5"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-09",
+    "text": "模型公司估值下修（Anthropic IPO 讨论区间 1.1~1.75 万亿美元，OpenAI 1.25 万亿美元融资），是新型云和数据中心订单的上游变量；英伟达出现管理层风险，芯片板块其余公司普涨。"
+   },
    {
     "date": "2026-11-08",
     "text": "AI 的定价逻辑转向“检验现金流和回报”：资本开支被惩罚，企业端 token 支出增速放缓，数据中心开始面临地方政治阻力。算力需求本身没有消失，网络和现场发电仍在拿新单。"
@@ -96,10 +161,141 @@
     "date": "2026-11-08",
     "text": "Agility Robotics 上市（AGLT），人形机器人首个纯标的；Figure 接手约 10 万块 GPU 的算力租约（报道）。"
    }
+  ],
+  "aerospace": [
+   {
+    "date": "2026-11-09",
+    "text": "NASA 宣布 CLPS 2（10 年、上限 100 亿美元、8 家入选）和约 13 亿美元发射任务单，月球经济从“示范任务”走向“长期采购池”；Rocket Lab 积压 36 亿美元但 Neutron 推迟到 2027 年。二浪升到“启动初期”。"
+   }
+  ],
+  "autonomous": [
+   {
+    "date": "2026-11-09",
+    "text": "NHTSA 对 Waymo 开启召回质询（RQ26006），监管面转负；特斯拉 Robotaxi 进入圣安东尼奥。一浪退回“尚未启动”。"
+   }
   ]
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-09",
+   "market": "今天是一次普涨反弹：标普 500 +2.34% 收于 7549.83，费城半导体指数 +6.9%，路透把原因归于油价回落缓解通胀担忧；唯一逆势的是英伟达（−4.27%，CEO 个人事件引发董事会调查）。资金面没有变化，仍是“钱贵”（27 分：10 年期美债 4.86%，一年 +77bp；路透称市场对 12 月加息的预期仍在 80% 以上），周二公布的 10 月 CPI 是对这轮反弹的第一个检验。情绪面从偏悲观回到中性（热度 35 → 46：VIX 25.6 → 19.9，恐贪指数 32，一周前 19），但三倍杠杆 ETF 成交占比仍在近一年 81% 分位，杠杆没有出清，所以这更像超跌反弹，还不能确认情绪底。浪位：AI 三浪仍都是“财报已改善，价格未反映”（二浪盘中一度翻成“启动初期”又退回），航空航天二浪升到“启动初期”，自动驾驶一浪退回“尚未启动”。",
+   "sectors": {
+    "ai": "预期面出现两股相反的力量：芯片股普遍大涨（AMD +13.3%、博通 +8.8%、Marvell +9.5%），而英伟达因 CEO 事件下跌——这是公司层面的管理层风险，不是产业面变化，CNBC 援引的分析师也认为影响目前限于英伟达本身。另一条线是模型公司的估值在下修：据报道 Anthropic 的 IPO 估值讨论区间从 1.5~2 万亿美元降到 1.1~1.75 万亿美元，最早 11 月 10 日开始路演；OpenAI 新一轮 110 亿美元融资估值 1.25 万亿美元。模型公司的融资价格直接决定新型云和数据中心的订单能否落地，本周 CoreWeave（11-10）和 Nebius（11-12）的财报是验证点。",
+    "quantum": "量子股跟随反弹（IonQ +8.3%、Rigetti +10.5%、D-Wave +7.4%），没有新的基本面信息；Rigetti 和 D-Wave 11 月 10 日发财报。产业面上，Pasqal 三季度收入 330 万欧元（去年同期 570 万），因为本季没有卖出整机，而服务收入 +53%——说明非头部量子公司收入仍是“块状”的。英国追加 1.38 亿英镑采购量子传感，政策重心在传感和网络而不是计算。",
+    "robotics": "无重要新信息。Agility Robotics（AGLT）上市后继续下跌，今天 −11.3%。",
+    "aerospace": "产业面利好集中出现：NASA 宣布 CLPS 2 月球运输合同池（10 年、上限 100 亿美元，8 家入选，包括 Intuitive Machines、Firefly、Voyager、洛马、诺格、SpaceX、蓝色起源、ispace-U.S.），入选只代表有资格竞标后续任务，不是确定收入；另有约 13 亿美元的发射任务单。Rocket Lab 三季度收入 2.678 亿美元（+73%）、积压 36 亿美元（环比 +52%），但 Neutron 首飞推迟到“不早于 2027 年”。AST SpaceMobile 与乐天成立日本合资公司，日本政府最多出资 1480 亿日元。航空航天二浪升到“启动初期”。",
+    "autonomous": "监管面转负：NHTSA 对 Waymo 开启召回质询（RQ26006，涉及 2,895 辆车），原因是 2025 年 11 月软件修复之后大部分“违规超越校车”事件仍在发生；质询是评估，不代表认定修复失败。特斯拉在圣安东尼奥上线 Robotaxi。一浪退回“尚未启动”。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "董事会因 CEO 被指成为外国情报目标而启动独立调查，股价 −4.27%，在芯片普涨日逆势；热度 18。现价 178.67 处于 2027 前瞻区间（132.5~218.8~335.1）下沿到中值之间，距中值 +22%。11 月 17 日财报。"
+    },
+    {
+     "t": "AVGO",
+     "why": "今天 +8.8%，仍处“关注买点”（热度 29）；现价 319.5 处于 2027 区间（263.3~391.3~586.4）下沿附近，距中值 +22%。英伟达管理层风险若持续，定制 ASIC 路线的相对地位会被市场重新比较。12 月 9 日财报。"
+    },
+    {
+     "t": "CRWV",
+     "why": "11 月 10 日财报，热度 7（极度悲观），一个月 −40%。模型公司估值下修是否影响它的合同积压和融资安排是核心问题；现价 48.98，2027 区间 13.6~78.8~167.4，距中值 +61%，区间很宽说明分歧极大。"
+    },
+    {
+     "t": "RKLB",
+     "why": "三季度收入 2.678 亿美元（+73%）、积压 36 亿美元（环比 +52%）、经营现金流转正（720 万美元），但 Neutron 首飞推迟到不早于 2027 年。今天盘中 +10.9%（财报在收盘后）；现价 58.86 已高于 2027 区间中值（48.8）约 21%。"
+    },
+    {
+     "t": "ASTS",
+     "why": "与乐天成立 Rakuten AST（乐天 51%），日本政府最多提供 1480 亿日元（约 10 亿美元），目标 2029 年 3 月底在日本开通手机直连卫星服务；今天 +14.1%。但目前在轨只有 13 颗卫星；现价 36.89 高于 2027 区间中值（29.9）。"
+    },
+    {
+     "t": "LUNR",
+     "why": "入选 NASA CLPS 2 月球运输合同池（8 家之一），今天 +15%；11 月 12 日发财报。现价 12.04 处于 2027 区间（10.6~14.9~20.4）下沿附近，距中值 +24%。入选不等于拿到任务单。"
+    },
+    {
+     "t": "RGTI",
+     "why": "11 月 10 日财报，今天 +10.5%；距高点 −62%。看 108 比特系统之后的路线图和收入是否摆脱“块状”。现价 12.98 已高于 2027 区间中值（10.8）。"
+    },
+    {
+     "t": "GOOGL",
+     "why": "Waymo 被 NHTSA 开启召回质询（2,895 辆），自动驾驶监管面转负；对谷歌整体是小事，但会影响 Waymo 扩城节奏。现价 288.15 高于 2027 区间中值（235.9）约 22%。"
+    },
+    {
+     "t": "TSLA",
+     "why": "Robotaxi 上线圣安东尼奥并扩大奥斯汀服务区，今天 +5.5%；Cybertruck 的消息来源有分歧（Fortune 称准备停产并退订金，另一篇称订单远超产能）。现价 378 高于 2027 区间中值（309）。"
+    }
+   ],
+   "sources": [
+    [
+     "路透（经 Virginia Business）：油价回落带动美股反弹，英伟达下跌（11-09）",
+     "https://virginiabusiness.com/us-stocks-rally-oil-prices-ease-inflation-nvidia-slump/"
+    ],
+    [
+     "CNBC：英伟达因黄仁勋事件下跌 4%（11-09）",
+     "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+    ],
+    [
+     "CNBC：黄仁勋事件与英伟达的接班问题（11-09）",
+     "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html"
+    ],
+    [
+     "CNBC：10 月 CPI 周二公布（11-09）",
+     "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
+    ],
+    [
+     "Rocket Lab 三季度财报新闻稿（SEC 8-K，11-09）",
+     "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm"
+    ],
+    [
+     "NASA：月球基地运输、技术与科学项目授标",
+     "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+    ],
+    [
+     "WISN：NASA 授出 100 亿美元月球基地合同（11-08）",
+     "https://www.wisn.com/article/nasa-awards-10b-contracts-moon-base-cargo-nuclear-rover/74371043"
+    ],
+    [
+     "乐天新闻稿：成立 Rakuten AST（11-09）",
+     "https://global.rakuten.com/corp/news/press/2026/1109_01.html"
+    ],
+    [
+     "Light Reading：乐天与 AST 在日本成立合资公司",
+     "https://www.lightreading.com/satellite/rakuten-and-ast-form-d2d-joint-venture-in-japan"
+    ],
+    [
+     "TechCrunch：Waymo 修复后仍违规超越校车，NHTSA 介入（11-09）",
+     "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/"
+    ],
+    [
+     "FinanceFeeds：Anthropic IPO 路演周仍未披露价格区间",
+     "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
+    ],
+    [
+     "Yahoo Finance：Anthropic IPO 估值预期下调",
+     "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-targets-november-debut-162209958.html"
+    ],
+    [
+     "SiliconANGLE：OpenAI 以 1.25 万亿美元估值融资 110 亿美元（11-06）",
+     "https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/"
+    ],
+    [
+     "The Quantum Insider：Pasqal 三季度收入下降（11-06）",
+     "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/"
+    ],
+    [
+     "The Quantum Insider：英国量子商业化资金（11-06）",
+     "https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation/"
+    ],
+    [
+     "NASASpaceflight：星舰第 15 次飞行等待 FAA 许可",
+     "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+    ],
+    [
+     "Axios：特斯拉在圣安东尼奥上线 Robotaxi（11-09）",
+     "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXJMY01yemp1UExHMGRvZzVPTmFlYUREWl91SnhIM2xjbjVXZDJCVGNqOVVUdEdWcWx6LWNSVW9GV0lZOXB5bTNkWEQtMDd1UVpQbm4tRV8zV1hKVzhqcEsxZVNWVDZ1akJjdW0tT2h6bnNDUDNwdGppWTd2d0VkVzA5OUtMS09GcjhZQ2s5cUJoVTFZcW5Eai1xYmZzTUdScEFCV3lGOGUxMXJr?oc=5"
+    ]
+   ]
+  },
   {
    "date": "2026-11-08",
    "market": "这是一个月来的第一次研判（10 月 8 日后自动刷新没有运行，今天已修复）。一个月里市场的核心变化是：AI 的定价逻辑从“奖励资本开支”转向“检验现金流和回报”——四大云厂商今年资本开支合计超 7400 亿美元，谷歌、英特尔、高通财报后单日大跌，半导体 ETF（SMH）一个月 −24%、纳指 100 −12%，资金流向医疗、必需消费、房地产等防御板块。资金面仍是“钱贵”（29 分；10 年期美债 4.86%，比一年前高 70bp，高收益债相对国债近 3 个月 −2.5%，资金在避险）。情绪面已降到偏悲观（热度 35：VIX 25.6、恐贪指数 22），但杠杆 ETF 成交占比仍在近一年 81% 分位，说明散户杠杆还没出清，这是情绪底还没完全确认的信号。按框架，这正是“利空在被定价”的阶段：基本面仍在改善的公司大批进入“关注买点”（人工确认的公司里有 156 家），但需要等杠杆出清或 VIX 期限结构倒挂来确认情绪底。",
@@ -212,26 +408,26 @@
    ]
   }
  ],
- "updated": "2026-11-08T22:35",
+ "updated": "2026-11-09T14:27",
  "trend": {
   "NVDA": {
-   "date": "2026-11-08",
+   "date": "2026-11-09",
    "dir": "分化",
-   "text": "AI 算力需求仍在扩张，下一代 Rubin 平台按计划推进，财报基本面没有转弱。但三股力量在削弱它的定价权：云厂商自研 ASIC（谷歌 TPU、亚马逊 Trainium、OpenAI × 博通）分流增量；中国对 H200 进口审批卡住近 60 万颗；11 月 CEO 个人事件引发董事会调查，市场开始讨论“公司过度依赖一个人”。",
-   "miss": "前瞻区间假设毛利率维持在 70% 以上、份额大体不变。ASIC 份额每扩大一截，英伟达就要在价格上让步，这在分析师预期里通常滞后体现。管理层风险也无法量化进估值。",
-   "watch": "数据中心毛利率、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货、董事会调查结论。",
+   "text": "AI 算力需求仍在扩张，Rubin 平台按计划推进，财报基本面没有转弱；但定价权被三股力量削弱：云厂商自研 ASIC 分流增量、中国对 H200 进口审批卡住、以及 11 月的 CEO 个人事件——董事会已启动独立调查，CNBC 指出公司没有明确的接班人。11 月 9 日芯片普涨而英伟达 −4.27%，说明市场开始给这家公司单独计入“关键人风险”。",
+   "miss": "前瞻区间假设毛利率维持 70% 以上、份额大体不变，也假设管理层稳定。ASIC 份额扩大会先压价格、后体现在预期里；关键人风险和调查结论无法量化进估值。另据 CNBC 引述，若 CEO 地位被削弱，英伟达对生态伙伴的扶持可能收缩（属分析师推测）。",
+   "watch": "11-17 财报的数据中心毛利率和下季指引、董事会调查结论、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货。",
    "src": [
     [
-     "Bloomberg：黄仁勋事件引发董事会调查（11-09）",
-     "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdnRpX0RPT3RRQ3p4THN2ZXU2MHVWRjVrTjBteEM2cEV3RXZuU1pPQWdOdXNrZkZxcWZ"
+     "CNBC：英伟达因黄仁勋事件下跌 4%（11-09）",
+     "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
+    ],
+    [
+     "CNBC：黄仁勋事件与英伟达接班问题（11-09）",
+     "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html"
     ],
     [
      "DataCenterDynamics：近 60 万颗 H200 滞留香港",
      "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
-    ],
-    [
-     "Tom's Hardware：定制 AI ASIC 现状",
-     "https://tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia"
     ]
    ]
   },
@@ -304,11 +500,11 @@
    ]
   },
   "GOOGL": {
-   "date": "2026-11-08",
+   "date": "2026-11-09",
    "dir": "分化",
-   "text": "谷歌云收入 +103%、利润率升到 36%，积压订单超 5000 亿美元，TPU 开始对外销售，AI 业务在加速。但搜索这个现金牛面临聊天机器人分流；资本开支超过经营现金流，连续两个季度自由现金流为负；民主党控制国会后反垄断和数据中心政策风险上升。",
+   "text": "谷歌云收入 +103%、利润率升到 36%，积压订单超 5000 亿美元，TPU 开始对外销售，AI 业务在加速。但搜索这个现金牛面临聊天机器人分流；资本开支超过经营现金流，连续两个季度自由现金流为负；民主党控制国会后反垄断和数据中心政策风险上升。11 月 9 日 NHTSA 对 Waymo 开启召回质询（2,895 辆），自动驾驶这条期权的监管成本在上升。",
    "miss": "一致预期里 2027 年 EPS 低于 2026 年（2026 年含大额投资收益），所以前瞻区间偏低；更重要的是搜索份额如果被 AI 助手持续侵蚀，这种变化往往是渐进的，先体现在查询量，晚很久才体现在预期里。",
-   "watch": "搜索收入增速、谷歌云利润率、资本开支与自由现金流、反垄断判决。",
+   "watch": "搜索收入增速、谷歌云利润率、资本开支与自由现金流、反垄断判决。 Waymo 召回质询的结论和扩城节奏。",
    "src": [
     [
      "Fortune：谷歌云收入翻倍，但自由现金流深度为负",
@@ -317,6 +513,10 @@
     [
      "CNBC：民主党横扫国会，交易员押注数据中心建设放缓",
      "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"
+    ],
+    [
+     "TechCrunch：NHTSA 对 Waymo 校车问题开启召回质询（11-09）",
+     "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/"
     ]
    ]
   },
@@ -477,12 +677,21 @@
    "src": []
   },
   "RKLB": {
-   "date": "2026-11-08",
+   "date": "2026-11-09",
    "dir": "分化",
-   "text": "发射 + 卫星平台 + 部件的垂直整合，国防订单在增加；但市场给的倍数远高于按增速应得的倍数，股价已在为 Neutron 的成功提前定价。",
-   "miss": "Neutron 首飞若再推迟或失败，倍数会大幅压缩；SpaceX 的价格优势是长期压力。",
-   "watch": "Neutron 首飞时间、积压订单、发射成功率。",
-   "src": []
+   "text": "顺风：发射 + 卫星平台 + 部件的垂直整合在放量，三季度收入 2.678 亿美元（+73%），积压 36 亿美元（环比 +52%），本季签了约 10 亿美元发射合同，其中 Neutron 超过 5.15 亿美元，经营现金流首次转正（720 万美元），账上现金 44.5 亿美元。逆风：Neutron 首飞从“2026 年四季度”推迟到“不早于 2027 年”，而股价早已为 Neutron 的成功定价。",
+   "miss": "现价已高于 2027 前瞻中值约 21%，前瞻区间假设 Neutron 按时投入使用；首飞再推迟或失败会压缩倍数。SpaceX 星舰若在 11 月的第 15 次飞行实现上面级回收，长期价格压力会进一步上升（判断）。",
+   "watch": "Neutron 首飞日期、四季度收入指引 2.7~2.9 亿美元能否兑现、积压中 Neutron 的占比、经营现金流能否持续为正。",
+   "src": [
+    [
+     "Rocket Lab 三季度财报新闻稿（SEC 8-K）",
+     "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm"
+    ],
+    [
+     "NASASpaceflight：星舰第 15 次飞行",
+     "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
+    ]
+   ]
   },
   "IONQ": {
    "date": "2026-11-08",
@@ -580,6 +789,91 @@
    "miss": "用户增长对谷歌算法的敏感度无法量化进预期。",
    "watch": "日活用户、来自搜索的流量占比、数据授权收入。",
    "src": []
+  },
+  "ASTS": {
+   "date": "2026-11-09",
+   "dir": "分化",
+   "text": "顺风：手机直连卫星正在变成各国的“国家备份通信”项目——11 月 9 日与乐天成立 Rakuten AST（乐天 51%、AST 49%），日本总务省最多提供 1480 亿日元（约 10 亿美元），AST 供应卫星，目标 2029 年 3 月底开通。逆风：执行仍在早期，Light Reading 指出目前在轨只有 13 颗卫星；星链直连手机是直接竞争者。",
+   "miss": "前瞻区间按分析师收入预期算，而这些预期依赖卫星按计划发射和运营商分成落地；发射节奏推迟会直接推迟收入。股价距高点 −72%，现价仍高于 2027 前瞻中值，说明市场定价的是远期而非 2027 年的收入。融资需求和股权稀释在估值里也体现不到。",
+   "watch": "每季度发射卫星数量、运营商签约（美国、日本、欧洲）的商业化收入、现金消耗和融资。",
+   "src": [
+    [
+     "乐天新闻稿：成立 Rakuten AST（11-09）",
+     "https://global.rakuten.com/corp/news/press/2026/1109_01.html"
+    ],
+    [
+     "Light Reading：乐天与 AST 在日本成立合资公司",
+     "https://www.lightreading.com/satellite/rakuten-and-ast-form-d2d-joint-venture-in-japan"
+    ]
+   ]
+  },
+  "LUNR": {
+   "date": "2026-11-09",
+   "dir": "顺风",
+   "text": "月球经济从单次示范任务转向长期采购：NASA 的 CLPS 2 是 10 年、上限 100 亿美元的运输合同池，Intuitive Machines 是 8 家入选者之一；NASA 同时把 CLPS 1 上限从 26 亿美元提高到 42 亿美元。竞争也在加剧，同一池子里有 SpaceX、蓝色起源、洛马、诺格等大公司。",
+   "miss": "入选合同池只代表有资格竞标，任务单的数量和价格都不确定；前瞻区间按分析师收入预期算，不反映着陆成功率（这家公司此前的着陆都不完全成功）和大公司低价竞标的压力（判断）。",
+   "watch": "11-12 财报的积压订单、CLPS 2 首批任务单归属、下一次着陆任务的结果。",
+   "src": [
+    [
+     "WISN：NASA 授出 100 亿美元月球基地合同（11-08）",
+     "https://www.wisn.com/article/nasa-awards-10b-contracts-moon-base-cargo-nuclear-rover/74371043"
+    ],
+    [
+     "NASA：月球基地运输、技术与科学项目授标",
+     "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
+    ]
+   ]
+  },
+  "RGTI": {
+   "date": "2026-11-09",
+   "dir": "分化",
+   "text": "超导路线的 Rigetti 在 2026 年一季度让 108 比特 Cepheus 系统通过云平台上线，管理层目标是 2026 年底超过 150 比特、约三年内用约 1000 比特系统实现量子优势。但收入规模仍很小（一季度 440 万美元），主要靠本地部署整机和政府合同，属于“块状”收入；同行 Pasqal 三季度因没卖出整机收入同比下滑，就是这种模式的风险。",
+   "miss": "现价高于 2027 前瞻中值，前瞻区间按收入倍数算，而小公司的收入预期本身很不稳定；更大的风险是路线竞争——离子阱（IonQ、Quantinuum）收入已远超超导小厂，这一点估值反映不到（判断）。",
+   "watch": "11-10 财报的收入和订单、150 比特系统的保真度、政府合同续约、现金消耗。",
+   "src": [
+    [
+     "Zacks：Rigetti 推进 Cepheus 系统",
+     "https://www.zacks.com/stock/news/2934744/rigetti-advances-toward-quantum-advantage-with-cepheus-push"
+    ],
+    [
+     "The Quantum Insider：Pasqal 三季度收入下降（11-06）",
+     "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/"
+    ]
+   ]
+  },
+  "TEAM": {
+   "date": "2026-11-09",
+   "dir": "逆风",
+   "text": "短期数据不差：云收入 +31% 到 13.02 亿美元，Jira / Confluence 的席位还在增加；但公司预计订阅 ARR 增速从 22.5% 降到财年末约 18.5%，全年收入增速约 13.75%，财报后股价跌 12%~17%（来源说法不同）。一部分放缓来自 Data Center 产品退役，另一部分是市场担心 AI Agent 不按人头付费，直接冲击按席位收费的模式。",
+   "miss": "现价 154.9 低于 2027 前瞻区间下沿（244），前瞻估值按一致预期的 EPS 和历史倍数算，假设按席位收费模式不变；如果 AI Agent 替代人工操作 Jira，席位数会从“增长”变成“收缩”，这种变化往往先体现在净留存率，很晚才体现在预期里。",
+   "watch": "云业务净留存率、付费席位数、AI 功能（Rovo）的单独收费收入、订阅 ARR 增速。",
+   "src": [
+    [
+     "SiliconANGLE：Atlassian 订阅增速指引放缓，股价跌 17%（11-05）",
+     "https://siliconangle.com/2026/11/05/atlassian-shares-fall-17-as-slower-subscription-growth-forecast-overshadows-earnings-beat/"
+    ],
+    [
+     "TIKR：Atlassian 增长指引放缓",
+     "https://www.tikr.com/blog/atlassian-sinks-12-as-slower-growth-outlook-overshadows-beat-enterprise-ai-has-hit-an-inflection-point"
+    ]
+   ]
+  },
+  "PANW": {
+   "date": "2026-11-09",
+   "dir": "分化",
+   "text": "顺风：AI Agent 越多，需要管理的机器身份越多，收购 CyberArk 让它补上了身份安全；2026 财年四季度收入 +34% 到 34.1 亿美元，新一代安全 ARR +63% 到 91 亿美元。逆风：2027 财年 ARR 增速指引降到 22%~23%，部分原因是 2026 财年含一次性的大客户迁移；毛利率 74.8%，同比降 100bp；财报后股价跌 13%。",
+   "miss": "现价 330.9 低于 2027 前瞻区间下沿（392.9），前瞻区间按 EPS 一致预期算，但收购带来的股本扩张（据报道超过 13%）和整合风险、以及 AI 原生安全公司的竞争，在估值里体现不足；反过来，如果 AI Agent 安全成为强制采购，预期也可能偏低（判断）。",
+   "watch": "11-18 财报的新一代安全 ARR、身份安全（CyberArk）收入增速、毛利率、平台化客户数。",
+   "src": [
+    [
+     "Palo Alto Networks 2026 财年四季度财报新闻稿",
+     "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results"
+    ],
+    [
+     "TIKR：RPO 突破 200 亿美元但下一年指引放缓",
+     "https://www.tikr.com/blog/palo-alto-networks-q4-earnings-crossed-20-billion-in-rpo-next-years-guide-tells-a-different-story"
+    ]
+   ]
   }
  }
 }

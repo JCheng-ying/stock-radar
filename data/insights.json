@@ -1887,6 +1887,287 @@
    }
   ]
  },
+ "aerospace/defense/prime": {
+  "updated": "2026-11-09",
+  "note": "五家总包的分工差别在“卖什么平台”：洛马是战斗机 + 导弹拦截弹，雷神是发动机 + 雷达 + 拦截弹，诺格是轰炸机 + 洲际导弹 + 太空，L3Harris 是传感器、通信和固体火箭发动机，通用动力是潜艇和公务机。2026 年三季度共同特征是积压订单创纪录，但民主党控制国会后预算节奏是新的不确定性。",
+  "companies": {
+   "LMT": {
+    "products": "F-35 战斗机、PAC-3 MSE 拦截弹、THAAD、下一代拦截弹",
+    "what": "美国最大的军工企业：造战斗机，也造在空中拦截来袭导弹的导弹。“金穹”导弹防御计划的主承包商之一。",
+    "diff": "三季度积压环比 +27% 到创纪录的 2920 亿美元，其中约 525 亿美元来自 PAC-3 MSE 多年期合同；据报道 F-35 第 20 批合同的成本超过已到位资金（来源为 AI 生成摘要，未经公司文件核实）。",
+    "ties": "金穹计划主承包商（与 RTX、诺格一起）",
+    "src": [
+     [
+      "Stocktwits：防务三季度财报回顾",
+      "https://stocktwits.com/news-articles/markets/equity/defense-watch-strong-q3-earnings-new-military-contracts-but-democrats-sweep-poses-spending-hurdles/cNGl8lBR9IT"
+     ],
+     [
+      "MarketBeat：RTX 与洛马财报",
+      "https://www.marketbeat.com/articles/rtx-and-lockheed-earnings-can-strong-guidance-reset-the-defense-trade/"
+     ],
+     [
+      "BNN Bloomberg：金穹成本升至 1850 亿美元，主承包商加入",
+      "https://www.bnnbloomberg.ca/business/2026/03/17/us-expands-golden-dome-cost-estimate-to-us185-billion-enlists-top-defense-firms/"
+     ]
+    ]
+   },
+   "RTX": {
+    "products": "雷神导弹与雷达（爱国者系统）、普惠发动机、柯林斯航电",
+    "what": "一半军工一半民航：给战斗机和客机造发动机，也造爱国者防空系统的雷达和拦截弹。",
+    "diff": "三季度销售额 250 亿美元，积压创纪录 3400 亿美元，上调全年指引；民航发动机售后是它和纯军工公司的最大差别。",
+    "ties": "金穹计划主承包商；天基拦截弹（SBI）项目入选者之一",
+    "src": [
+     [
+      "Finviz：防务财报周三家上调指引",
+      "https://finviz.com/news/405352/defense-earnings-week-opens-with-three-raised-forecasts-and-two-record-backlogs"
+     ],
+     [
+      "Breaking Defense：太空军为金穹天基拦截弹授予 12 家公司合同",
+      "https://breakingdefense.com/2026/04/space-force-tasks-a-dozen-companies-for-golden-dome-space-based-interceptors/"
+     ]
+    ]
+   },
+   "NOC": {
+    "products": "B-21 隐形轰炸机、哨兵（Sentinel）洲际导弹、卫星与太空系统",
+    "what": "造隐形轰炸机和新一代陆基洲际导弹，也做卫星和导弹预警。",
+    "diff": "三季度销售额 111 亿美元（+7%），净订单 164 亿美元、订单出货比 1.5 倍，积压 1096 亿美元；业务更偏战略核力量和太空。",
+    "ties": "金穹主承包商；天基拦截弹入选者；NASA CLPS 2 入选者",
+    "src": [
+     [
+      "Stocktwits：防务三季度财报回顾",
+      "https://stocktwits.com/news-articles/markets/equity/defense-watch-strong-q3-earnings-new-military-contracts-but-democrats-sweep-poses-spending-hurdles/cNGl8lBR9IT"
+     ],
+     [
+      "Breaking Defense：天基拦截弹授标",
+      "https://breakingdefense.com/2026/04/space-force-tasks-a-dozen-companies-for-golden-dome-space-based-interceptors/"
+     ]
+    ]
+   },
+   "LHX": {
+    "products": "战术通信电台、导弹预警卫星、传感器、Aerojet Rocketdyne 固体火箭发动机",
+    "what": "做军用无线电、侦察和预警卫星上的传感器，以及导弹用的固体火箭发动机。",
+    "diff": "三季度订单 193 亿美元、订单出货比 3.2 倍，积压创纪录 532 亿美元；但未拨款部分升到 220 亿美元（占 41%，上季 117 亿），积压质量要看后续拨款。",
+    "ties": "",
+    "src": [
+     [
+      "L3Harris 三季度财报新闻稿",
+      "https://www.financialcontent.com/article/bizwire-2026-10-29-l3harris-delivers-record-backlog-and-strong-third-quarter-results"
+     ],
+     [
+      "Stocktwits：L3Harris、波音积压创纪录",
+      "https://stocktwits.com/news-articles/markets/equity/l3-harris-ba-report-record-backlogs-hii-raises-shipbuilding-revenue/cZUKNB8R9cf"
+     ]
+    ]
+   },
+   "GD": {
+    "products": "弗吉尼亚级 / 哥伦比亚级核潜艇、艾布拉姆斯坦克、湾流公务机、政府 IT",
+    "what": "造核潜艇和坦克，同时有一块湾流公务机业务。",
+    "diff": "潜艇产能是美国海军的瓶颈；本轮未查到三季度具体数字。",
+    "ties": "",
+    "unverified": true
+   },
+   "BA": {
+    "products": "F-47 第六代战斗机、KC-46 加油机、卫星、民航客机",
+    "what": "以民航客机为主，防务部门造加油机、战斗机和卫星。",
+    "diff": "防务只是一部分，三季度积压创纪录（Stocktwits 报道）；防务固定价格合同历史上多次亏损。",
+    "ties": "",
+    "src": [
+     [
+      "Stocktwits：L3Harris、波音积压创纪录",
+      "https://stocktwits.com/news-articles/markets/equity/l3-harris-ba-report-record-backlogs-hii-raises-shipbuilding-revenue/cZUKNB8R9cf"
+     ]
+    ]
+   },
+   "BAESY": {
+    "products": "英国本土与美国子公司的装甲车、舰船、电子战",
+    "what": "欧洲最大的军工企业，在美国有大量子公司业务。",
+    "diff": "受益于欧洲国防开支上升；本轮未查到当日来源。",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "LMT",
+    "b": "RTX",
+    "type": "合作",
+    "desc": "两家与诺格一起作为主承包商加入“金穹”导弹防御计划，官方估计总成本 1850 亿美元。",
+    "src": [
+     "BNN Bloomberg：金穹成本升至 1850 亿美元",
+     "https://www.bnnbloomberg.ca/business/2026/03/17/us-expands-golden-dome-cost-estimate-to-us185-billion-enlists-top-defense-firms/"
+    ]
+   },
+   {
+    "a": "LMT",
+    "b": "NOC",
+    "type": "竞争",
+    "desc": "都在太空军的金穹天基拦截弹项目中拿到合同（共 12 家、20 份合同、潜在总额 32 亿美元）。",
+    "src": [
+     "Breaking Defense：天基拦截弹授标",
+     "https://breakingdefense.com/2026/04/space-force-tasks-a-dozen-companies-for-golden-dome-space-based-interceptors/"
+    ]
+   },
+   {
+    "a": "RTX",
+    "b": "NOC",
+    "type": "竞争",
+    "desc": "雷神同样是天基拦截弹项目入选者之一，与诺格、洛马竞争后续量产。",
+    "src": [
+     "Breaking Defense：天基拦截弹授标",
+     "https://breakingdefense.com/2026/04/space-force-tasks-a-dozen-companies-for-golden-dome-space-based-interceptors/"
+    ]
+   }
+  ]
+ },
+ "aerospace/defense/c2": {
+  "updated": "2026-11-09",
+  "note": "指挥控制软件的路线分歧是“谁当数据层”：陆军下一代指挥控制（NGC2）采用 Palantir Foundry 做云端数据层、Anduril Lattice 做战术边缘层的组合，洛马在另一个师做另一套数据层原型。传统政府 IT 服务商（Leidos、SAIC、CACI、博思艾伦）更多是做集成和运维，正被软件产品公司挤压。",
+  "companies": {
+   "PLTR": {
+    "products": "Foundry / Gotham / Maven Smart System、TITAN 移动地面站",
+    "what": "把各种传感器、情报和后勤数据接到一个平台上，让指挥官在一张图上看到战场并分配目标。",
+    "diff": "陆军企业协议把 75 份合同合并，10 年上限 100 亿美元（2025 年 8 月签）；在 NGC2 中担任云端数据层；TITAN 地面站的主承包商（1.27 亿美元生产合同）。",
+    "ties": "美国陆军；与 Anduril 在 NGC2 和 TITAN 上合作",
+    "src": [
+     [
+      "DefenseScoop：陆军选 Anduril 主导 NGC2 数据层基线",
+      "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/"
+     ],
+     [
+      "Tectonic：陆军授予 Palantir 和 Anduril TITAN 地面站合同",
+      "https://www.tectonicdefense.com/the-army-awards-palantir-and-anduril-192m-for-eight-titan-mobile-ground-stations/"
+     ]
+    ]
+   },
+   "Anduril": {
+    "products": "Lattice 指挥控制操作系统（未上市）",
+    "what": "一套把无人机、传感器、武器连在一起的软件，在前线直接融合数据并下达指令。",
+    "diff": "2026 年 3 月陆军把 120 份合同合并成一个企业协议，10 年上限 200 亿美元；6 月被选为 NGC2 通用数据层基线的牵头方。",
+    "ties": "美国陆军；与 Palantir 合作",
+    "src": [
+     [
+      "Nextgov：陆军与 Anduril 签 200 亿美元企业协议",
+      "https://www.nextgov.com/defense/2026/03/army-anduril-enter-new-20b-enterprise-agreement/412153/"
+     ],
+     [
+      "DefenseScoop：NGC2 数据层基线",
+      "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/"
+     ]
+    ]
+   },
+   "LDOS": {
+    "products": "国防 IT 集成、一体化防空与反无人机系统",
+    "what": "给政府做大型 IT 系统集成，也做防空和反无人机系统的集成。",
+    "diff": "2026 年二季度收入创纪录 45.6 亿美元（+7%），上调全年指引；提到一份超过 10 亿美元、与指挥控制架构相关但尚未入账的国防部框架协议。",
+    "ties": "",
+    "src": [
+     [
+      "Barchart：Leidos 二季度业绩",
+      "https://www.barchart.com/story/news/3630107/leidos-delivers-strong-second-quarter-and-enhances-full-year-guidance"
+     ]
+    ]
+   },
+   "PSN": {
+    "products": "关键基础设施与国防技术服务",
+    "what": "给政府做工程和技术服务，包括导弹防御和空间态势相关的软件。",
+    "diff": "2025 年四季度收入 16.0 亿美元（−7.5%），全年指引在同业中最弱，财报后股价跌 19.5%。",
+    "ties": "",
+    "src": [
+     [
+      "StockStory：国防承包商四季度财报回顾",
+      "https://stocks.observer-reporter.com/observerreporter/article/stockstory-2026-4-15-a-look-back-at-defense-contractors-stocks-q4-earnings-parsons-nysepsn-vs-the-rest-of-the-pack"
+     ]
+    ]
+   },
+   "BBAI": {
+    "products": "决策情报软件、Ask Sage 生成式 AI 平台",
+    "what": "小型国防 AI 软件公司，做预测分析和面向政府的生成式 AI 工具。",
+    "diff": "2026 年三季度收入 4360 万美元（+31%），全年指引上调到 1.5~1.65 亿美元；规模远小于 Palantir。",
+    "ties": "FBI、海岸警卫队、能源部等",
+    "src": [
+     [
+      "BigBear.ai 三季度财报（SEC 8-K/A）",
+      "https://www.sec.gov/Archives/edgar/data/0001836981/000183698126000088/earningsrelease-3q26.htm"
+     ]
+    ]
+   },
+   "BAH": {
+    "products": "国防与情报咨询、系统集成",
+    "what": "给国防部和情报机构做咨询和系统集成。",
+    "diff": "TBR 预测联邦 IT 服务市场近期收缩，民用部门压力至少持续到 2027 年；国防与情报预算相对好。",
+    "ties": "",
+    "src": [
+     [
+      "TBR：联邦 IT 服务市场预测",
+      "https://marketing.tbri.com/hubfs/Press%20Releases/TBR_PR_FederalITServicesMarketForecast_1Q26.pdf"
+     ]
+    ]
+   },
+   "SAIC": {
+    "products": "政府 IT 现代化与集成",
+    "what": "给军方和政府做 IT 系统现代化。",
+    "diff": "本轮未查到当日来源。",
+    "ties": "",
+    "unverified": true
+   },
+   "CACI": {
+    "products": "电子战、情报信号处理、政府 IT",
+    "what": "做情报和电子战相关的软件与硬件，以及政府 IT。",
+    "diff": "本轮未查到当日来源。",
+    "ties": "",
+    "unverified": true
+   },
+   "KBR": {
+    "products": "政府工程与任务支持服务",
+    "what": "给政府做工程、太空和任务支持服务。",
+    "diff": "本轮未查到当日来源。",
+    "ties": "",
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "PLTR",
+    "b": "Anduril",
+    "type": "合作",
+    "desc": "陆军 NGC2 的数据架构：Palantir Foundry 做云端数据层，Anduril Lattice 做战术层；两家也在 TITAN 地面站上合作。",
+    "src": [
+     "DefenseScoop：NGC2 数据层基线",
+     "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/"
+    ]
+   },
+   {
+    "a": "Anduril",
+    "b": "LMT",
+    "type": "竞争",
+    "desc": "洛马与第 25 步兵师在做另一套 NGC2 数据层原型，官方称两者互补而非竞争，但实质上是两条可替代的路线。",
+    "src": [
+     "DefenseScoop：NGC2 数据层基线",
+     "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/"
+    ]
+   },
+   {
+    "a": "PLTR",
+    "b": "美国陆军",
+    "type": "客户",
+    "desc": "陆军企业协议合并 75 份合同，10 年上限 100 亿美元。",
+    "src": [
+     "DefenseScoop：NGC2 数据层基线",
+     "https://defensescoop.com/2026/06/22/army-taps-anduril-lead-ngc2-common-data-layer-baseline/"
+    ]
+   },
+   {
+    "a": "Anduril",
+    "b": "美国陆军",
+    "type": "客户",
+    "desc": "2026 年 3 月企业协议合并 120 份合同，10 年上限 200 亿美元，以 Lattice 为核心。",
+    "src": [
+     "Nextgov：陆军与 Anduril 签 200 亿美元企业协议",
+     "https://www.nextgov.com/defense/2026/03/army-anduril-enter-new-20b-enterprise-agreement/412153/"
+    ]
+   }
+  ]
+ },
  "_skip": {
   "why": "客户型或辅助型零件，公司之间没有产品可比；或与另一个零件内容重复",
   "keys": [
