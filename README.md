@@ -104,7 +104,11 @@ open index.html
 python -m src.main --todo         # 列出还没做人工研究的零件
 ```
 
-### 发布到 GitHub Pages（手机随时能看）
+### 网址
+
+公开网址：https://jcheng-ying.github.io/stock-radar/（有网址的人都能看）。每次刷新后 `publish.sh` 把最新网页覆盖发布到 `gh-pages` 分支；主分支只放代码、知识库和研判记录。
+
+### 发布到 GitHub Pages（已配置）
 
 新建一个 GitHub 仓库，`git remote add origin <地址>`，在仓库 Settings → Pages 里选从 main 分支
 根目录发布。之后 `run.sh` 每次刷新完会自动提交并推送。把网址填到 `.env` 的 `SITE_URL=`，
