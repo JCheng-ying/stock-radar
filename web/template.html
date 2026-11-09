@@ -300,7 +300,7 @@ function valBars(v,price){
       <div style="position:absolute;top:5px;bottom:5px;left:${P(y.px[0])}%;width:${Math.max(.5,P(y.px[2])-P(y.px[0]))}%;background:color-mix(in srgb,var(--w2) 35%,transparent);border:1px solid var(--w2);border-radius:4px"></div>
       <div style="position:absolute;top:2px;bottom:2px;left:${P(y.px[1])}%;width:2px;background:var(--w2)"></div>
       <div style="position:absolute;top:-2px;bottom:-2px;left:${P(price)}%;width:2px;background:var(--text)"></div>
-      <span class="small num" style="position:absolute;right:6px;top:4px;color:var(--muted)">${num(y.px[0],0)} ~ ${num(y.px[2],0)}（中值 ${num(y.px[1],0)}）</span></div></div>`).join("")+`<div class="heat-l"><span>白线 = 现价 ${num(price,2)}　· 蓝框 = 区间　· 蓝竖线 = 中值</span><span>美元 / 股</span></div>`;
+</div></div><div class="small num muted" style="margin:-4px 0 4px 64px">${num(y.px[0],0)} ~ ${num(y.px[2],0)}（中值 ${num(y.px[1],0)}，相对现价 ${pct(y.px[1]/price-1)}）</div>`).join("")+`<div class="heat-l"><span>白线 = 现价 ${num(price,2)}　· 蓝框 = 区间　· 蓝竖线 = 中值</span><span>美元 / 股</span></div>`;
 }
 function valSection(t,c){
   const v=c.val,tr=c.trend,price=c.tech.price;
