@@ -59,7 +59,8 @@ def _pct(x):
 def detect(snap):
     """返回 [(title, body, priority, tags)]，并把新状态写回磁盘。首次运行只建立基线。"""
     prev = _load_state()
-    cos = snap["companies"]
+    # 只对人工确认的公司推送（全市场自动匹配进来的公司只在网页上展示）
+    cos = {t: c for t, c in snap["companies"].items() if not all(m.get("auto") for m in c["members"])}
     sent = snap["market"]["sentiment"]
     state = {
         "q_end": {t: c["fund"].get("q_end") for t, c in cos.items()},
@@ -159,9 +160,18 @@ def _vix_zone(v):
 
 def run(snap, max_push=12):
     events = detect(snap)
-    # 一次刷新里事件太多（比如财报季）就合并，避免手机被刷屏
     order = {"high": 0, "normal": 1, "low": 2}
     events.sort(key=lambda e: order[e[2]])
+    if len(events) > 30:
+        # 很久没刷新后一次性积压的变化：合并成一条分类摘要，而不是按字母顺序推 12 条
+        groups = {}
+        for t, b, p, tags in events:
+            k = t.split(" ")[0]
+            groups.setdefault(k, []).append(t.split(" ", 1)[1] if " " in t else t)
+        body = "\n".join(f"{k} {len(v)} 条：" + "、".join(x.split(" ")[0] for x in v[:12]) + ("…" if len(v) > 12 else "")
+                         for k, v in sorted(groups.items(), key=lambda kv: -len(kv[1])))
+        return [send(f"🔄 数据已追上，期间共 {len(events)} 条变化", body + "\n详情见网页「推送记录」和各公司页面。", "normal",
+                     ["arrows_counterclockwise"], click=os.environ.get("SITE_URL"))]
     out = [send(t, b, p, tags, click=os.environ.get("SITE_URL")) for t, b, p, tags in events[:max_push]]
     rest = events[max_push:]
     if rest:

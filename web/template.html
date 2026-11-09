@@ -238,6 +238,7 @@ function overview(){
   const earn=E.filter(([,c])=>c.expect.next_earnings&&c.expect.next_earnings>=DATA.as_of).sort((a,b)=>a[1].expect.next_earnings.localeCompare(b[1].expect.next_earnings)).slice(0,12);
   const mini=(rows,extra)=>rows.length?`<table>${rows.map(([t,c])=>`<tr class="row" onclick="openCo('${t}')"><td><span class="tk">${t}</span> <span class="muted small">${esc(c.name).slice(0,20)}</span></td>${extra(c)}</tr>`).join("")}</table>`:`<div class="empty">当前没有</div>`;
   return `
+  ${dailyCard()}
   <div class="grid g2">
     <div class="card"><h3>资金面 · 钱贵不贵（以年为周期）</h3>
       <div class="big">${esc(f.regime)} <span class="muted small">流动性友好度 ${f.score}/100</span></div>
@@ -259,6 +260,7 @@ function overview(){
       ${s.margin&&s.margin.text?`<div class="small muted" style="margin-top:8px">融资余额：${esc(s.margin.text)}</div>`:""}
     </div>
   </div>
+  ${newsCard()}
   <h2>五大板块 · 浪的位置 <small>一浪基础设备 → 二浪 B 端应用 → 三浪 C 端应用；点击进入板块</small></h2>
   <div class="tw"><table><tr><th class="l">板块</th>${[1,2,3].map(w=>`<th class="l">${wv(w)}</th>`).join("")}</tr>
   ${S.map(x=>`<tr class="row" onclick="go('s:${x.id}')"><td class="tk">${x.name}</td>${x.wave_status.map(w=>`<td class="l" style="white-space:normal"><b class="lv${w.level}">${esc(w.stage)}</b>${has(w.score)?`<div class="small muted">${w.passed}/${w.total} 项满足 · 近3月 <span class="num ${cls(w.r3m)}">${pct(w.r3m)}</span>${w.diverging?" · 分化上涨":""}</div>`:`<div class="small faint">纯正标的不足 3 家</div>`}</td>`).join("")}</tr>`).join("")}</table></div>
@@ -284,6 +286,34 @@ function igvCard(){
 }
 function flowTable(title,rows){
   return `<div class="tw"><table><tr><th class="l">${title}</th><th>1周</th><th>1月</th><th>3月</th><th>相对强度(1月)</th><th>成交额变化</th></tr>${rows.map(r=>`<tr><td><span class="tk">${r.sym}</span> <span class="muted small">${esc(r.name)}</span></td><td class="num ${cls(r.r1w)}">${pct(r.r1w,1)}</td><td class="num ${cls(r.r1m)}">${pct(r.r1m,1)}</td><td class="num ${cls(r.r3m)}">${pct(r.r3m,1)}</td><td class="num ${cls(r.rs1m)}">${pct(r.rs1m,1)}</td><td class="num">${has(r.flow)?(r.flow>0.1?"放量 ":r.flow<-0.1?"缩量 ":"")+pct(r.flow):"—"}</td></tr>`).join("")}</table></div>`;
+}
+
+/* ---------- 今日研判 + 信息面 ---------- */
+function dailyCard(){
+  const D=DATA.daily||[];if(!D.length)return`<div class="card small muted" style="margin-bottom:12px">还没有每日研判。每天的自动任务会读取新的资讯、财报和信号变化，写下当天的判断。</div>`;
+  const d=D[0],SN=Object.fromEntries(S.map(x=>[x.id,x.name]));
+  return `<div class="card" style="margin-bottom:12px;border-color:var(--accent)">
+    <h3 style="display:flex;justify-content:space-between"><span>今日研判 · ${esc(d.date)}</span><span class="faint">每天根据新资讯、财报、信号变化自动更新</span></h3>
+    <div style="font-size:14px">${esc(d.market||"")}</div>
+    ${d.sectors?`<div class="grid g2" style="margin-top:10px">${Object.entries(d.sectors).map(([k,v])=>`<div class="note" style="margin:0"><b>${esc(SN[k]||k)}</b>　${esc(v)}</div>`).join("")}</div>`:""}
+    ${(d.watch||[]).length?`<h3 style="margin-top:12px">今天值得关注</h3><ul class="feed">${d.watch.map(w=>`<li>${C[w.t]?`<a href="#" onclick="event.preventDefault();openCo('${w.t}')" class="tk">${w.t}</a>`:`<b>${esc(w.t)}</b>`}${C[w.t]?" "+sig(C[w.t].signal):""}　${esc(w.why)}</li>`).join("")}</ul>`:""}
+    ${(d.sources||[]).length?`<div class="src" style="margin-top:8px">依据：${d.sources.map(srcLink).join(" · ")}</div>`:""}
+    ${D.length>1?`<details><summary>往日研判（${D.length-1} 天）</summary>${D.slice(1).map(x=>`<div class="note"><b>${esc(x.date)}</b>　${esc(x.market||"")}</div>`).join("")}</details>`:""}
+  </div>`;
+}
+function newsCard(){
+  const sig_=[];S.forEach(s=>(s.signals||[]).forEach(x=>sig_.push({...x,sec:s.name})));
+  sig_.sort((a,b)=>(b.added||"").localeCompare(a.added||""));
+  const nw=[];Object.entries(C).forEach(([t,c])=>{if(c.members.every(m=>m.auto))return;(c.news||[]).forEach(n=>nw.push({...n,t}))});
+  const seen=new Set();const news=nw.filter(n=>{if(seen.has(n.url))return false;seen.add(n.url);return true}).sort((a,b)=>(b.date||"").localeCompare(a.date||"")).slice(0,25);
+  const k8=[];Object.entries(C).forEach(([t,c])=>(c.filings||[]).forEach(f=>{if((f.codes||[]).some(x=>["1.01","2.01","2.02","5.02","8.01","2.05","1.05","4.02"].includes(x)))k8.push({...f,t})}));
+  k8.sort((a,b)=>b.date.localeCompare(a.date));
+  return `<h2>信息面 · 最新资讯 <small>每次刷新自动更新：产业消息来自 Summizer 每日文章，公司新闻来自 Yahoo Finance，公告来自 SEC</small></h2>
+  <div class="grid g3">
+    <div class="card"><h3>产业消息（Summizer）</h3><ul class="feed">${sig_.slice(0,14).map(x=>`<li><span class="chip">${esc(x.sec)}</span> ${esc(x.desc)}<div class="m">${esc(x.added)} · <a href="${safeUrl(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a></div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
+    <div class="card"><h3>公司新闻</h3><ul class="feed">${news.map(n=>`<li><a href="#" onclick="event.preventDefault();openCo('${n.t}')" class="tk">${n.t}</a> <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">${esc(n.title)}</a><div class="m">${esc(n.date)} · ${esc(n.src)}</div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
+    <div class="card"><h3>重大公告（SEC 8-K）</h3><ul class="feed">${k8.slice(0,20).map(f=>`<li><a href="#" onclick="event.preventDefault();openCo('${f.t}')" class="tk">${f.t}</a> <a href="${safeUrl(f.url)}" target="_blank" rel="noopener">${esc(f.items.join(" · "))}</a><div class="m">${esc(f.date)}</div></li>`).join("")||`<li class="empty">暂无</li>`}</ul></div>
+  </div>`;
 }
 
 /* ---------- 板块页：物品栏 → 3D 拆解 → 零件 → 股票 ---------- */
@@ -681,6 +711,7 @@ $("#q").addEventListener("input",()=>{if(state.tab!=="all"){state.tab="all";hist
 $("#q").addEventListener("keydown",e=>{if(e.key==="Enter"){const t=e.target.value.trim().toUpperCase();if(C[t])openCo(t)}});
 
 const gen=new Date(DATA.generated);
+{const lag=(Date.now()-new Date(DATA.as_of+"T21:00:00Z"))/864e5;if(lag>4)document.querySelector("main").insertAdjacentHTML("beforebegin",`<div style="background:var(--hot);color:#000;text-align:center;padding:6px;font-size:13px">数据已经 ${Math.floor(lag)} 天没有更新（行情截至 ${DATA.as_of}）——自动刷新可能没有在运行，请检查电脑是否开机 / 是否睡眠。</div>`)}
 $("#asof").textContent=`行情截至 ${DATA.as_of} · 生成于 ${gen.toLocaleString("zh-CN",{hour12:false})} · ${Object.keys(C).length} 家公司`;
 const h0=decodeURIComponent(location.hash.slice(1)); if(TABS.some(t=>t[0]===h0))state.tab=h0;
 render();

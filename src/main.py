@@ -175,6 +175,8 @@ def build_snapshot(force=False, quick=False):
         },
         "sectors": out_sectors,
         "companies": companies,
+        "daily": (notes.get("daily") or [])[:14],
+        "notes_updated": notes.get("updated", ""),
     }
 
 
