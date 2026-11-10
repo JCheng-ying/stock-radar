@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-10",
+    "text": "情绪面/预期面继续负向：连续第二天下跌（−5.5%），董事会聘请 Wachtell Lipton 调查 CEO 事件，公司称黄仁勋不中断任职；产业面和基本面没有新变化。",
+    "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+   },
+   {
     "date": "2026-11-09",
     "text": "盘后：管理层风险升级——特朗普称 FBI 在调查，股东提起集体诉讼（情绪面/预期面负向）。",
     "url": "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
@@ -96,6 +101,11 @@
   ],
   "CRWV": [
    {
+    "date": "2026-11-10",
+    "text": "基本面/预期面正向：三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入和经营利润指引上调；资金面仍是约束（债务近 470 亿美元，部分债券收益率超 16%）。",
+    "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+   },
+   {
     "date": "2026-11-09",
     "text": "预期面（负向压力）：模型公司估值讨论下修（Anthropic IPO 区间降至 1.1~1.75 万亿美元），新型云的客户融资能力是 11-10 财报的核心验证点。",
     "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-targets-november-debut-162209958.html"
@@ -134,6 +144,11 @@
   ],
   "RGTI": [
    {
+    "date": "2026-11-10",
+    "text": "基本面负向：三季度收入 141 万美元（同比约 −27%），远低于预期，全年目标依赖 C-DAC 四季度验收——块状收入风险兑现。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm"
+   },
+   {
     "date": "2026-11-09",
     "text": "情绪面：量子股跟随大盘反弹 +10.5%，无新的基本面信息；11-10 财报。",
     "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcHBTalpRTHNHRHBlTzcyTlRBQ1FfOUtFSS1MRXVIVUd6VDVGNThFSVpwc25qeGY4bExpNnQweWtkTDd2SWthQlpPV0VxemVXemR1aUVYdVVtejVjMU42MkRMYzB2UGNYS3p0RV9rUmlCYXJDektaYWloclpCNFg2N0JsNzJBQjZ6THhpMzhneUZ6dG9SY1dmNkgzZ0NiWl80TGE1a0VGV1p4REE1NjZYbWhndlJwVW1FNTQzUlRYWkVXTWFzdHRHeVdoWXJ4QzRTc0E?oc=5"
@@ -152,10 +167,49 @@
     "text": "产业面正向：Robotaxi 上线圣安东尼奥并扩大奥斯汀服务区；Cybertruck 生产的说法来源有分歧。",
     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXJMY01yemp1UExHMGRvZzVPTmFlYUREWl91SnhIM2xjbjVXZDJCVGNqOVVUdEdWcWx6LWNSVW9GV0lZOXB5bTNkWEQtMDd1UVpQbm4tRV8zV1hKVzhqcEsxZVNWVDZ1akJjdW0tT2h6bnNDUDNwdGppWTd2d0VkVzA5OUtMS09GcjhZQ2s5cUJoVTFZcW5Eai1xYmZzTUdScEFCV3lGOGUxMXJr?oc=5"
    }
+  ],
+  "MSFT": [
+   {
+    "date": "2026-11-10",
+    "text": "产业面出现新的竞争变量（负向）：Anthropic 推出 Claude Sheets、Whiteboards 等办公工具，直接对标 Excel，股价 −2.2%；但 Anthropic 也是 Azure 的大客户，影响方向分化。",
+    "url": "https://seekingalpha.com/news/4669998-microsoft-tumbles-as-anthropic-unveils-office-tools-ahead-of-ipo"
+   }
+  ],
+  "QBTS": [
+   {
+    "date": "2026-11-10",
+    "text": "基本面略负向：收入 +21% 但当季订单 −19%、毛利率降到 52.9%；前九个月订单依赖一笔 2000 万美元整机销售。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001907982/000190798226000180/qbts-20261110xexx991.htm"
+   }
+  ],
+  "AAON": [
+   {
+    "date": "2026-11-10",
+    "text": "基本面正向但有治理瑕疵：收入 +84%、数据中心品牌 BASX +218%，全年增速指引上调到 72~75%；同时重述一、二季度财报。",
+    "url": "https://www.prnewswire.com/news-releases/the-aaon-group-reports-record-third-quarter-2026-results-restates-first-and-second-quarter-2026-financial-statements-and-raises-full-year-outlook-302933844.html"
+   }
+  ],
+  "NOVT": [
+   {
+    "date": "2026-11-10",
+    "text": "预期面负向：四季度每股收益指引低于预期、全年下调（光刻出货暂停、英国工厂搬迁），股价 −15.3%；属执行问题，产业面未变。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001076930/000119312526453760/novt-ex99_1.htm"
+   }
+  ],
+  "CSCO": [
+   {
+    "date": "2026-11-10",
+    "text": "预期面待验证：11-12 财报，看超大规模客户 AI 订单能否延续（FY26 合计 93 亿美元）和存储成本对毛利率的挤压。",
+    "url": "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-10",
+    "text": "Anthropic 公布 IPO 区间（70~78 美元，约 1.3~1.4 万亿美元），同日发布 Claude Sheets 等办公工具，微软 −2~3%：模型公司向应用层扩张的产业面风险首次直接落到办公套件上。CoreWeave 积压 1325 亿美元、上调指引，新型云的订单面暂时稳住，融资面仍紧。"
+   },
    {
     "date": "2026-11-09",
     "text": "模型公司估值下修（Anthropic IPO 讨论区间 1.1~1.75 万亿美元，OpenAI 1.25 万亿美元融资），是新型云和数据中心订单的上游变量；英伟达出现管理层风险，芯片板块其余公司普涨。"
@@ -166,6 +220,10 @@
    }
   ],
   "quantum": [
+   {
+    "date": "2026-11-10",
+    "text": "Rigetti（收入 141 万美元，远低于预期）和 D-Wave（当季订单 −19%）三季度都偏弱，非头部量子公司的收入仍高度依赖单笔整机交付。"
+   },
    {
     "date": "2026-11-08",
     "text": "IonQ、Quantinuum 同时上调收入指引；客户开始为尚不存在的容错机器签长期预订合同。"
@@ -192,6 +250,125 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-10",
+   "market": "10 月 CPI 偏热，打断了周一的反弹：CPI 环比 +0.4%（预期 +0.3%），核心 +0.3%（预期 +0.2%），2 年期美债收益率上行约 17bp 到 4.73%；美联储理事沃勒此前表示数据偏热可能让他支持 12 月加息 50bp，据《华尔街日报》CPI 后交易员给 50bp 的概率约 10%。标普 500 −0.38% 收于 7520.93、纳指 −0.74%，英伟达再跌 5.5% 是主要拖累。资金面继续变差（27 → 24 分：10 年期美债 4.86% → 4.98%，一年 +89bp；美元指数 102.2 处于近一年 98% 分位），“钱贵”在加深。情绪面基本持平（热度 46 → 47：VIX 19.5、恐贪指数 34），三倍杠杆 ETF 成交占比仍在 81% 分位，杠杆没有出清。浪位：AI 二浪（B 端应用）从“财报已改善，价格未反映”升到“启动初期”，航空航天二浪在“启动初期”和“财报已改善”之间来回切换，其余不变。整体结论：资金面是当前最大的压制项，基本面仍在改善的公司继续停留在悲观区，本周看 Anthropic 定价（11-18）和英伟达财报（11-17）。",
+   "sectors": {
+    "ai": "预期面两条线：① Anthropic 公布 IPO 区间 70~78 美元、发行 8.25 亿股，按完全稀释口径估值约 1.3~1.4 万亿美元（各家报道口径不同），预计 11-18 定价、11-19 以代码 ANT 上市，据报道谷歌、英伟达等 7 家战略方以 IPO 价认购 260 亿美元——比几周前讨论的 2 万亿美元低，但比市场担心的稳。② Anthropic 同日发布 Claude Sheets、Whiteboards 等办公工具，微软下跌约 2~3%，“AI 模型公司向下吃应用层”的产业面风险第一次直接落在办公套件上。基本面上 CoreWeave 三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元（6 月底 1040 亿），上调全年收入和经营利润指引，缓和了“新型云订单落不了地”的担忧；但净亏损 7.09 亿美元、债务近 470 亿美元，部分债券收益率超过 16%，融资仍是硬约束。英伟达继续受 CEO 事件拖累（−5.5%），董事会聘请 Wachtell Lipton 调查，公司称黄仁勋不中断任职。",
+    "quantum": "两家财报都偏弱，印证“块状收入”：Rigetti 三季度收入 141 万美元（同比约 −27%），远低于约 350 万美元的预期，全年约 2000 万美元的目标依赖印度 C-DAC 在四季度验收整机；D-Wave 收入 450 万美元（+21%），但当季订单 190 万美元（同比 −19%）、毛利率从 71.4% 降到 52.9%，前九个月订单 3740 万美元主要靠一笔 2000 万美元整机销售。两家现金都在 5 亿美元左右，短期不缺钱。产业面没有变化，预期面略向下。",
+    "robotics": "Novanta（精密运动控制 / 激光部件，机器人一浪）三季度收入和利润超预期，但四季度每股收益指引 0.91~0.96 美元低于预期的 1.02，原因是光刻相关出货暂停和英国工厂搬迁，预计压低四季度毛利率约 200bp，股价 −15.3%——这是公司层面的执行问题，不是机器人需求的变化。一浪在“尚未启动”和“财报已改善，价格未反映”之间来回切换。",
+    "aerospace": "无重要新信息。Rocket Lab 财报次日收涨 6.5%，市场更看重积压订单和 Neutron 订单而不是亏损差于预期；AST SpaceMobile 财报次日 −8.7%。二浪在“启动初期”与“财报已改善，价格未反映”之间来回切换，三浪显示“价格先行，财报待验证”。",
+    "autonomous": "无重要新信息。三浪均为“尚未启动”。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "连续第二天下跌（−5.5%，周一 −4.3%），收于 168.89，热度 11，进入“关注买点”；董事会聘请 Wachtell Lipton（由前纽约南区代理检察官领衔）调查，公司称黄仁勋不中断任职，分析师 Dan Ives 估计调查需 4~6 周。现价处于 2027 前瞻区间（125.1~206.9~316.5）下沿到中值之间，距中值 +22%。11-17 财报。"
+    },
+    {
+     "t": "MSFT",
+     "why": "Anthropic 发布 Claude Sheets 等办公工具，股价 −2.2%；产业面上是办公套件被模型公司直接竞争的第一个信号，但 Anthropic 同时是 Azure 的大客户（据报道承诺采购 300 亿美元）。现价 533.16 基本在 2027 区间中值（394.8~538.8~722.1）附近，热度 74。"
+    },
+    {
+     "t": "CRWV",
+     "why": "三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入指引上调到 130~133 亿美元、资本开支 370~390 亿美元；但每股亏损的口径各家不同（CNBC 称差于预期，Seeking Alpha 称好于预期）。盘后小涨。现价 48.73，2027 区间 13.4~78.5~167.0，距中值 +61%，区间极宽，说明融资路径决定一切。"
+    },
+    {
+     "t": "RGTI",
+     "why": "三季度收入 141 万美元，远低于约 350 万美元的预期（各家预期口径 352~368 万），全年约 2000 万美元的目标取决于印度 C-DAC 四季度验收；股价 −6.4%。现价 12.15 仍高于 2027 区间中值（10.16）约 20%。"
+    },
+    {
+     "t": "QBTS",
+     "why": "三季度收入 450 万美元（+21%），当季订单 190 万美元（−19%），毛利率降到 52.9%；现金 5.03 亿美元。股价 −8.6% 至 10.48，仍高于 2027 区间中值（8.82）约 19%。"
+    },
+    {
+     "t": "AAON",
+     "why": "三季度收入 7.07 亿美元（+84%），数据中心冷却品牌 BASX 收入 +218%，全年收入增速指引从 55~60% 上调到 72~75%；但同时重述了一、二季度财报，并有报道提到内控重大缺陷。股价 +19.3%，仍处“关注买点”；现价 75.01，2027 区间 62.0~91.9~134.4，距中值 +22%。"
+    },
+    {
+     "t": "NOVT",
+     "why": "三季度超预期，但四季度每股收益指引 0.91~0.96 美元低于 1.02 的预期（光刻出货暂停、英国工厂搬迁），全年每股收益指引下调，股价 −15.3%。现价 123.71 已接近 2027 区间中值（127.8），前瞻空间只剩约 3%。"
+    },
+    {
+     "t": "CSCO",
+     "why": "11-12 发财报，刚进入“关注买点”（热度 38）。上季给出 FY27 一季度收入 180~182 亿美元指引，超大规模客户 AI 订单 FY26 合计 93 亿美元；验证点是 AI 订单延续和存储成本对毛利率（指引 65~66%）的挤压。现价 98.15 基本在 2027 区间中值（99.1）。"
+    }
+   ],
+   "sources": [
+    [
+     "CNBC：10 月 CPI 环比 +0.4%，高于预期（11-10）",
+     "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
+    ],
+    [
+     "FXStreet：热 CPI 与英伟达拖累纳指 100（11-10）",
+     "https://www.fxstreet.com/news/nasdaq-100-leads-us-indexes-lower-on-hot-cpi-and-nvidia-202611102140"
+    ],
+    [
+     "Quartz：核心 CPI +0.3%（预期 +0.2%），股市下跌（11-10）",
+     "https://qz.com/core-cpi-october-stocks-fall-fed-rate-hike-111026"
+    ],
+    [
+     "CNBC：英伟达因黄仁勋事件连续第二天下跌（11-10）",
+     "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html"
+    ],
+    [
+     "CNBC：英伟达聘请 Wachtell Lipton 主导调查（11-10）",
+     "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+    ],
+    [
+     "CNBC：Anthropic IPO 定价区间 70~78 美元，预计 11-19 上市（11-10）",
+     "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    ],
+    [
+     "Fortune：Anthropic IPO 估值最高 1.4 万亿美元（11-10）",
+     "https://fortune.com/2026/11/10/anthropic-ipo-price-range-ai-stock-sell-off/"
+    ],
+    [
+     "Forbes：Anthropic IPO 按约 1.3 万亿美元估值（11-10）",
+     "https://www.forbes.com/sites/gabrielalinzainescu/2026/11/10/anthropic-ipo-targets-13-trillion-valuation-904-billion-raise/"
+    ],
+    [
+     "Seeking Alpha：Anthropic 发布办公工具，微软下跌（11-10）",
+     "https://seekingalpha.com/news/4669998-microsoft-tumbles-as-anthropic-unveils-office-tools-ahead-of-ipo"
+    ],
+    [
+     "TipRanks：Anthropic 推出 Claude Sheets，微软股价下跌",
+     "https://www.tipranks.com/news/microsoft-stock-msft-drops-as-anthropic-takes-on-excel"
+    ],
+    [
+     "CNBC：CoreWeave 收入超预期并上调指引（11-10）",
+     "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+    ],
+    [
+     "Rigetti 三季度财报（SEC 8-K，11-10）",
+     "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm"
+    ],
+    [
+     "Benzinga：Rigetti 三季度不及预期，股价下跌",
+     "https://www.benzinga.com/markets/earnings/26/11/63125347/rigetti-stock-slumps-after-q3-results-miss-the-mark"
+    ],
+    [
+     "D-Wave 三季度财报（SEC 8-K，11-10）",
+     "https://www.sec.gov/Archives/edgar/data/0001907982/000190798226000180/qbts-20261110xexx991.htm"
+    ],
+    [
+     "AAON 三季度财报（PR Newswire，含重述一、二季度）",
+     "https://www.prnewswire.com/news-releases/the-aaon-group-reports-record-third-quarter-2026-results-restates-first-and-second-quarter-2026-financial-statements-and-raises-full-year-outlook-302933844.html"
+    ],
+    [
+     "Novanta 三季度财报（SEC 8-K）",
+     "https://www.sec.gov/Archives/edgar/data/0001076930/000119312526453760/novt-ex99_1.htm"
+    ],
+    [
+     "Investing.com：Novanta 为何大跌",
+     "https://in.investing.com/news/stock-market-news/why-is-novanta-stock-tumbling-today-93CH-5694477"
+    ],
+    [
+     "Pulse 2.0：思科超大规模客户 AI 订单 93 亿美元、FY27 目标约 75 亿美元收入",
+     "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-09",
    "market": "今天是一次普涨反弹：标普 500 +2.34% 收于 7549.83，费城半导体指数 +6.9%，路透把原因归于油价回落缓解通胀担忧；唯一逆势的是英伟达（−4.27%，CEO 个人事件引发董事会调查）。资金面没有变化，仍是“钱贵”（27 分：10 年期美债 4.86%，一年 +77bp；路透称市场对 12 月加息的预期仍在 80% 以上），周二公布的 10 月 CPI 是对这轮反弹的第一个检验。情绪面从偏悲观回到中性（热度 35 → 46：VIX 25.6 → 19.9，恐贪指数 32，一周前 19），但三倍杠杆 ETF 成交占比仍在近一年 81% 分位，杠杆没有出清，所以这更像超跌反弹，还不能确认情绪底。浪位：AI 三浪仍都是“财报已改善，价格未反映”（二浪盘中一度翻成“启动初期”又退回），航空航天二浪升到“启动初期”，自动驾驶一浪退回“尚未启动”。 【盘后更新】收盘后有两件事改变了 AI 板块的预期面：一是特朗普称 FBI 正在调查黄仁勋事件，且已有股东提起集体诉讼，英伟达的管理层风险从“公司内部调查”升级为“联邦调查 + 诉讼”；二是据路透，Anthropic 向承销商发出又撤回了 IPO 条款（每股 70~80 美元、最多募资 693 亿美元），公司称定价有误、修订版随后发出——IPO 节奏出现不确定性。",
@@ -439,15 +616,23 @@
    ]
   }
  ],
- "updated": "2026-11-09T21:30",
+ "updated": "2026-11-10T14:28",
  "trend": {
   "NVDA": {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "dir": "分化",
-   "text": "AI 算力需求仍在扩张，Rubin 平台按计划推进，财报基本面没有转弱；但定价权被三股力量削弱：云厂商自研 ASIC 分流增量、中国对 H200 进口审批卡住、以及 11 月的 CEO 个人事件——董事会已启动独立调查，CNBC 指出公司没有明确的接班人。11 月 9 日芯片普涨而英伟达 −4.27%，说明市场开始给这家公司单独计入“关键人风险”。 当晚特朗普称 FBI 也在调查，股东已提起集体诉讼。",
-   "miss": "前瞻区间假设毛利率维持 70% 以上、份额大体不变，也假设管理层稳定。ASIC 份额扩大会先压价格、后体现在预期里；关键人风险和调查结论无法量化进估值。另据 CNBC 引述，若 CEO 地位被削弱，英伟达对生态伙伴的扶持可能收缩（属分析师推测）。",
-   "watch": "11-17 财报的数据中心毛利率和下季指引、董事会调查结论、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货。",
+   "text": "AI 算力需求仍在扩张，财报基本面没有转弱；但定价权受三股力量削弱：云厂商自研 ASIC 分流增量、中国对 H200 进口审批卡住、以及 CEO 个人事件。事件在两天内从董事会内部调查升级为 FBI 调查、股东集体诉讼，董事会 11-10 聘请 Wachtell Lipton 领衔调查，公司称黄仁勋不中断任职；股价两天累计约 −10%，而同日 AMD、博通上涨，说明市场在给这家公司单独计入“关键人风险”。",
+   "miss": "前瞻区间假设毛利率维持 70% 以上、份额大体不变、管理层稳定。关键人风险和调查结论（4~6 周，属分析师估计）无法量化进估值；若调查牵出对华出口合规问题，监管风险会直接影响中国收入（判断）。",
+   "watch": "11-17 财报的数据中心毛利率和下季指引、董事会调查结论、出口管制动向、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货。",
    "src": [
+    [
+     "CNBC：英伟达聘请 Wachtell Lipton 主导调查（11-10）",
+     "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+    ],
+    [
+     "CNBC：英伟达因黄仁勋事件连续第二天下跌（11-10）",
+     "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html"
+    ],
     [
      "Al Jazeera（路透）：特朗普称 FBI 调查黄仁勋事件",
      "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
@@ -459,10 +644,6 @@
     [
      "CNBC：黄仁勋事件与英伟达接班问题（11-09）",
      "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html"
-    ],
-    [
-     "DataCenterDynamics：近 60 万颗 H200 滞留香港",
-     "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
     ]
    ]
   },
@@ -556,12 +737,25 @@
    ]
   },
   "MSFT": {
-   "date": "2026-11-08",
-   "dir": "顺风",
-   "text": "Azure 和 Copilot 双线受益，信用最好（CDS 是同类里最低的），资本开支大但自由现金流仍为正。",
-   "miss": "Copilot 按席位收费，若 Agent 让企业裁员，席位数反而会减少，收费模式需要转向按用量；OpenAI 关系的变化也难量化。",
-   "watch": "Azure 增速、Copilot 付费席位、资本开支 / 经营现金流比。",
-   "src": []
+   "date": "2026-11-10",
+   "dir": "分化",
+   "text": "Azure 仍是最强的增长引擎（FY27 一季度 +48%，下季指引 49~50%），信用最好；但应用层出现新竞争：Anthropic 11-10 推出 Claude Sheets、Whiteboards 并把 Dashboards 转正式版，直接对标 Excel 和 Office，股价当天 −2~3%。微软同时是 Anthropic 的算力供应方（据报道 Anthropic 承诺采购 300 亿美元 Azure），所以基础设施端受益、应用端受压——方向分化。",
+   "miss": "Copilot 按席位收费，若 Agent 让企业减员或模型公司直接提供办公工具，席位数和定价都会受压；微软上季未披露新的 Copilot 付费席位数，这块的真实渗透度看不清（判断）。",
+   "watch": "Copilot 付费席位 / ARPU、Microsoft 365 商业席位增速（上季 +5%）、Azure 增速、资本开支 / 经营现金流比。",
+   "src": [
+    [
+     "Seeking Alpha：Anthropic 发布办公工具，微软下跌（11-10）",
+     "https://seekingalpha.com/news/4669998-microsoft-tumbles-as-anthropic-unveils-office-tools-ahead-of-ipo"
+    ],
+    [
+     "TipRanks：Anthropic 推出 Claude Sheets，微软股价下跌",
+     "https://www.tipranks.com/news/microsoft-stock-msft-drops-as-anthropic-takes-on-excel"
+    ],
+    [
+     "Zacks：微软 FY27 一季度 Azure +48%",
+     "https://www.zacks.com/stock/news/3018768/microsoft-q1-earnings-beat-estimates-as-cloud-accelerates"
+    ]
+   ]
   },
   "AMZN": {
    "date": "2026-11-08",
@@ -616,19 +810,19 @@
    ]
   },
   "CRWV": {
-   "date": "2026-11-08",
-   "dir": "逆风",
-   "text": "合同积压超过 1000 亿美元，但几乎全部依赖外部融资建设，CDS 在 10 月达到“信用困境”水平（1000bp 以上）；收入约三分之二来自微软；中期选举后德州新州长承诺限制数据中心。",
-   "miss": "前瞻区间扣了净债务，但没有反映再融资成本上升、股权稀释、以及合同可能被推迟的风险——这些对高杠杆公司是一阶影响。",
-   "watch": "高收益债市场是否重新开放、CDS、新增融资条款、德州政策。",
+   "date": "2026-11-10",
+   "dir": "分化",
+   "text": "订单面在改善：三季度收入 36.6 亿美元（+168%），积压从 6 月底 1040 亿美元增到 1325 亿美元，全年收入指引上调到 130~133 亿美元，Anthropic 是关键客户之一。但融资面仍紧：三季度净亏损 7.09 亿美元、债务近 470 亿美元、部分债券收益率超过 16%，全年资本开支 370~390 亿美元。管理层称 2027 年资金主要来自客户预付款和硬件伙伴融资，只做“有限”的新融资。",
+   "miss": "前瞻区间扣了净债务，但没有反映再融资成本上升、股权稀释和合同推迟的风险；客户集中（大模型公司）意味着 Anthropic / OpenAI 的融资价格直接决定订单能否兑现（判断）。",
+   "watch": "Anthropic IPO 定价（11-18）、新增融资条款与债券收益率、客户预付款金额、1.85GW 年底在运电力目标是否达成。",
    "src": [
+    [
+     "CNBC：CoreWeave 收入超预期并上调指引（11-10）",
+     "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
+    ],
     [
      "CNBC：CoreWeave 的 CDS 达到困境水平",
      "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html"
-    ],
-    [
-     "CNBC：民主党横扫国会，交易员押注数据中心建设放缓",
-     "https://www.cnbc.com/2026/11/03/stock-market-today-live-updates.html"
     ]
    ]
   },
@@ -868,19 +1062,19 @@
    ]
   },
   "RGTI": {
-   "date": "2026-11-09",
-   "dir": "分化",
-   "text": "超导路线的 Rigetti 在 2026 年一季度让 108 比特 Cepheus 系统通过云平台上线，管理层目标是 2026 年底超过 150 比特、约三年内用约 1000 比特系统实现量子优势。但收入规模仍很小（一季度 440 万美元），主要靠本地部署整机和政府合同，属于“块状”收入；同行 Pasqal 三季度因没卖出整机收入同比下滑，就是这种模式的风险。",
-   "miss": "现价高于 2027 前瞻中值，前瞻区间按收入倍数算，而小公司的收入预期本身很不稳定；更大的风险是路线竞争——离子阱（IonQ、Quantinuum）收入已远超超导小厂，这一点估值反映不到（判断）。",
-   "watch": "11-10 财报的收入和订单、150 比特系统的保真度、政府合同续约、现金消耗。",
+   "date": "2026-11-10",
+   "dir": "逆风",
+   "text": "三季度收入只有 141 万美元（同比约 −27%），远低于约 350 万美元的预期，原因是里程碑验收和硬件交付的时点；全年约 2000 万美元的目标需要印度 C-DAC 在四季度验收整机（隐含四季度约 910 万美元）。技术路线上 108 比特 Cepheus 已上线、年底目标 150+ 比特，但离子阱同行的收入规模已远超超导小厂。",
+   "miss": "现价仍高于 2027 前瞻中值约 20%，而前瞻区间按收入倍数算，收入预期本身随单笔订单大幅波动；路线竞争（离子阱 vs 超导）和政府合同续约的不确定性估值反映不到（判断）。",
+   "watch": "C-DAC 验收是否在四季度完成、四季度收入、150 比特系统保真度、现金消耗（经营亏损 3320 万美元 / 季）。",
    "src": [
     [
-     "Zacks：Rigetti 推进 Cepheus 系统",
-     "https://www.zacks.com/stock/news/2934744/rigetti-advances-toward-quantum-advantage-with-cepheus-push"
+     "Rigetti 三季度财报（SEC 8-K，11-10）",
+     "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm"
     ],
     [
-     "The Quantum Insider：Pasqal 三季度收入下降（11-06）",
-     "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/"
+     "Benzinga：Rigetti 三季度不及预期，股价下跌",
+     "https://www.benzinga.com/markets/earnings/26/11/63125347/rigetti-stock-slumps-after-q3-results-miss-the-mark"
     ]
    ]
   },
@@ -915,6 +1109,62 @@
     [
      "TIKR：RPO 突破 200 亿美元但下一年指引放缓",
      "https://www.tikr.com/blog/palo-alto-networks-q4-earnings-crossed-20-billion-in-rpo-next-years-guide-tells-a-different-story"
+    ]
+   ]
+  },
+  "QBTS": {
+   "date": "2026-11-10",
+   "dir": "分化",
+   "text": "退火路线的 D-Wave 三季度收入 450 万美元（+21%），增长来自专业服务和量子云订阅，整机销售下降；当季订单 190 万美元（−19%），前九个月订单 3740 万美元主要靠佛罗里达大西洋大学一笔 2000 万美元整机。RPO 3830 万美元，约 59% 在 12 个月内确认；管道比二季度末增加 75% 以上（公司口径）。",
+   "miss": "毛利率从 71.4% 降到 52.9%，说明收入结构在向低毛利的服务转移；现价高于 2027 前瞻中值约 19%，而订单的块状特征意味着一致预期很容易被单笔交易改写（判断）。",
+   "watch": "季度订单、毛利率、整机销售节奏、现金（5.03 亿美元）消耗速度。",
+   "src": [
+    [
+     "D-Wave 三季度财报（SEC 8-K，11-10）",
+     "https://www.sec.gov/Archives/edgar/data/0001907982/000190798226000180/qbts-20261110xexx991.htm"
+    ]
+   ]
+  },
+  "AAON": {
+   "date": "2026-11-10",
+   "dir": "顺风",
+   "text": "数据中心冷却需求是主驱动：三季度收入 7.07 亿美元（+84%），BASX 品牌（数据中心液冷 / 空气处理）收入 +218%、积压同比 +51%，全年增速指引上调到 72~75%。总积压环比 −5.9%，公司解释为转化加快和大单授予时点。",
+   "miss": "同时重述了 2026 年一、二季度财报，有报道提到内控重大缺陷——这是治理风险，前瞻估值反映不到；毛利率 26.7% 低于去年同期，数据中心订单的大客户集中和 AI 资本开支周期也是风险（判断）。",
+   "watch": "BASX 积压和新授予大单、毛利率能否继续环比改善、内控缺陷整改、10-Q 中的分部口径。",
+   "src": [
+    [
+     "AAON 三季度财报（PR Newswire，含重述一、二季度）",
+     "https://www.prnewswire.com/news-releases/the-aaon-group-reports-record-third-quarter-2026-results-restates-first-and-second-quarter-2026-financial-statements-and-raises-full-year-outlook-302933844.html"
+    ]
+   ]
+  },
+  "NOVT": {
+   "date": "2026-11-10",
+   "dir": "分化",
+   "text": "精密运动控制、激光与医疗部件供应商，受益于机器人、半导体设备和手术机器人。三季度收入 3.05 亿美元、调整后 EPS 1.05 美元都超预期，全年收入指引上调到 11.35~11.40 亿美元；但四季度 EPS 指引 0.91~0.96 美元低于预期，光刻相关出货暂停、英国工厂搬迁预计压低四季度毛利率约 200bp，精准医疗销售 −5%（预计 2027 年末恢复）。",
+   "miss": "现价已接近 2027 前瞻中值（空间约 3%），前瞻估值假设毛利率恢复，而工厂搬迁和光刻客户暂停出货的持续时间不确定（判断）。",
+   "watch": "四季度毛利率、光刻出货恢复时间、英国工厂搬迁进度、机器人相关收入占比。",
+   "src": [
+    [
+     "Novanta 三季度财报（SEC 8-K）",
+     "https://www.sec.gov/Archives/edgar/data/0001076930/000119312526453760/novt-ex99_1.htm"
+    ],
+    [
+     "Investing.com：Novanta 为何大跌",
+     "https://in.investing.com/news/stock-market-news/why-is-novanta-stock-tumbling-today-93CH-5694477"
+    ]
+   ]
+  },
+  "CSCO": {
+   "date": "2026-11-10",
+   "dir": "顺风",
+   "text": "AI 网络正在成为思科的第二增长曲线：FY26 超大规模客户 AI 订单合计 93 亿美元（四季度单季 40 亿），公司预计 FY27 来自超大规模客户的 AI 基础设施收入约 75 亿美元；除超大规模客户外产品订单也在增长。逆风是硬件占比上升和存储成本推高，四季度毛利率下降 210bp，一季度指引 65~66%。",
+   "miss": "前瞻估值按一致预期的 EPS 算，没有反映 AI 网络订单在超大规模客户之间的集中度、与 Arista / 英伟达以太网的份额竞争，以及存储涨价对硬件毛利的持续挤压（判断）。",
+   "watch": "11-12 财报：超大规模客户 AI 订单、产品订单增速、毛利率是否守住 65%、FY27 全年指引。",
+   "src": [
+    [
+     "Pulse 2.0：思科超大规模客户 AI 订单 93 亿美元、FY27 目标约 75 亿美元收入",
+     "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
     ]
    ]
   }

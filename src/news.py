@@ -128,10 +128,11 @@ def collect(companies, days=4, focus=()):
         if x["ts"] < cutoff or key in seen:
             continue
         seen.add(key)
-        tk = set(x.get("tickers") or [])
+        # 行情被限流时部分公司会缺席 companies；只保留本轮有数据的代码，避免 KeyError
+        tk = {t for t in (x.get("tickers") or []) if t in companies}
         tk |= {t for t, p in pats.items() if p.search(x["title"])}
         secs = set(x["sectors"])
         for t in tk:
-            secs |= {m["sector"] for m in companies[t]["members"] if m.get("core") and not m.get("auto")}
+            secs |= {m["sector"] for m in companies[t].get("members", []) if m.get("core") and not m.get("auto")}
         out.append(dict(x, tickers=sorted(tk)[:6], sectors=sorted(secs)))
     return out[:400]
