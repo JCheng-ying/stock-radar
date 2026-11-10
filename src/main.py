@@ -195,6 +195,22 @@ def build_snapshot(force=False, quick=False):
     }
 
 
+def _apply_notes(snap):
+    """把 data/notes.json 和 data/insights.json 的最新内容覆盖到已有 snapshot 上（--rebuild 用）。"""
+    try:
+        notes = json.loads(config.NOTES.read_text())
+    except Exception:
+        notes = {}
+    snap["daily"] = (notes.get("daily") or [])[:14]
+    snap["notes_updated"] = notes.get("updated", "")
+    for t, c in snap.get("companies", {}).items():
+        c["trend"] = (notes.get("trend") or {}).get(t)
+        c["notes"] = (notes.get("companies") or {}).get(t, [])
+    for s in snap.get("sectors", []):
+        s["notes"] = (notes.get("sectors") or {}).get(s.get("id"), [])
+    _attach_insights(snap.get("sectors", []), discover.load_profiles())
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-push", action="store_true", help="只生成网页，不检测变化、不推送")
@@ -221,6 +237,7 @@ def main():
         return
     if args.rebuild:
         snap = json.loads(config.SNAPSHOT.read_text())
+        _apply_notes(snap)          # 研判 / 零件研究写进 json 后，不联网也能更新到网页
     else:
         snap = build_snapshot(force=args.force, quick=args.quick)
         if not args.no_push:
