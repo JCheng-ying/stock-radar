@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-10",
+    "text": "盘后：股东集体诉讼细节公布（覆盖 2025-10-09 至 2026-11-08 买入者，焦点是未披露 CEO 与 Megaspeed 高管的关系）；同时以 IPO 价认购 Anthropic 100 亿美元。",
+    "url": "https://www.datacenterdynamics.com/en/news/nvidia-shareholders-file-class-action-lawsuit-against-chip-giant-and-its-ceo-jensen-huang-following-fall-out-from-chinese-spy-allegations/"
+   },
+   {
+    "date": "2026-11-10",
     "text": "情绪面/预期面继续负向：连续第二天下跌（−5.5%），董事会聘请 Wachtell Lipton 调查 CEO 事件，公司称黄仁勋不中断任职；产业面和基本面没有新变化。",
     "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
    },
@@ -100,6 +105,11 @@
    }
   ],
   "CRWV": [
+   {
+    "date": "2026-11-10",
+    "text": "盘后补充（资金面，略正向）：财报后盘后涨超 5%；CFO 称按目前收益率 2027 年前不再发行母公司无担保债，转向与合同挂钩的担保债，资产层面担保贷款交易接近面值。",
+    "url": "https://siliconangle.com/2026/11/10/coreweave-arrests-stock-slide-after-posting-a-strong-earnings-beat-and-raising-its-full-year-guidance/"
+   },
    {
     "date": "2026-11-10",
     "text": "基本面/预期面正向：三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入和经营利润指引上调；资金面仍是约束（债务近 470 亿美元，部分债券收益率超 16%）。",
@@ -202,10 +212,35 @@
     "text": "预期面待验证：11-12 财报，看超大规模客户 AI 订单能否延续（FY26 合计 93 亿美元）和存储成本对毛利率的挤压。",
     "url": "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
    }
+  ],
+  "AMD": [
+   {
+    "date": "2026-11-10",
+    "text": "产业面正向：发布 Epyc 6（Venice，2nm，最高 256 核），称每瓦 Agent 数为英伟达 Vera 的 3.3 倍（公司自述），已用于 Azure 实例；同时参与 Anthropic 私募，与最大的模型客户之一形成股权绑定。",
+    "url": "https://siliconangle.com/2026/11/10/amd-introduces-epyc-6-processors-for-ai-agent-workloads/"
+   }
+  ],
+  "APLD": [
+   {
+    "date": "2026-11-10",
+    "text": "产业面正向：中期选举中全美 40 多项反数据中心地方提案里，只有其 Polaris Forge 2 所在的北达科他州 Harwood 否决；“社区同意”正在成为稀缺资产。",
+    "url": "https://www.datacenterdynamics.com/en/analysis/data-center-harwood-north-dakota-applied-digital-us-midterm-elections/"
+   }
+  ],
+  "KTOS": [
+   {
+    "date": "2026-11-10",
+    "text": "产业面正向（公司新闻稿）：与 Seagate Space 签长期协议，计划 2027 年起使用海上移动发射平台执行国防试验发射。",
+    "url": "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-10",
+    "text": "盘后：Anthropic 以 IPO 价向 AMD、博通、谷歌、美光、微软、英伟达、台积电私募 260 亿美元（谷歌、英伟达各 100 亿）——供应商成为股东，订单确定性和循环融资风险同时上升。数据中心的地方监管成为新瓶颈（中期选举 40 多项反数据中心提案）。"
+   },
    {
     "date": "2026-11-10",
     "text": "Anthropic 公布 IPO 区间（70~78 美元，约 1.3~1.4 万亿美元），同日发布 Claude Sheets 等办公工具，微软 −2~3%：模型公司向应用层扩张的产业面风险首次直接落到办公套件上。CoreWeave 积压 1325 亿美元、上调指引，新型云的订单面暂时稳住，融资面仍紧。"
@@ -220,6 +255,10 @@
    }
   ],
   "quantum": [
+   {
+    "date": "2026-11-10",
+    "text": "欧盟量子法案草案拟让战略性量子基础设施和公共采购原则上只对欧盟控制的公司开放（草案），美国量子公司的欧洲市场可能收窄。"
+   },
    {
     "date": "2026-11-10",
     "text": "Rigetti（收入 141 万美元，远低于预期）和 D-Wave（当季订单 −19%）三季度都偏弱，非头部量子公司的收入仍高度依赖单笔整机交付。"
@@ -237,6 +276,10 @@
   ],
   "aerospace": [
    {
+    "date": "2026-11-10",
+    "text": "NASA 承认商业月球运输在 2028~2029 年无法端到端替代，SLS 标准化并改用 ULA 加长版 Centaur V——商业替代政府火箭的时间表后移。"
+   },
+   {
     "date": "2026-11-09",
     "text": "NASA 宣布 CLPS 2（10 年、上限 100 亿美元、8 家入选）和约 13 亿美元发射任务单，月球经济从“示范任务”走向“长期采购池”；Rocket Lab 积压 36 亿美元但 Neutron 推迟到 2027 年。二浪升到“启动初期”。"
    }
@@ -252,18 +295,18 @@
  "daily": [
   {
    "date": "2026-11-10",
-   "market": "10 月 CPI 偏热，打断了周一的反弹：CPI 环比 +0.4%（预期 +0.3%），核心 +0.3%（预期 +0.2%），2 年期美债收益率上行约 17bp 到 4.73%；美联储理事沃勒此前表示数据偏热可能让他支持 12 月加息 50bp，据《华尔街日报》CPI 后交易员给 50bp 的概率约 10%。标普 500 −0.38% 收于 7520.93、纳指 −0.74%，英伟达再跌 5.5% 是主要拖累。资金面继续变差（27 → 24 分：10 年期美债 4.86% → 4.98%，一年 +89bp；美元指数 102.2 处于近一年 98% 分位），“钱贵”在加深。情绪面基本持平（热度 46 → 47：VIX 19.5、恐贪指数 34），三倍杠杆 ETF 成交占比仍在 81% 分位，杠杆没有出清。浪位：AI 二浪（B 端应用）从“财报已改善，价格未反映”升到“启动初期”，航空航天二浪在“启动初期”和“财报已改善”之间来回切换，其余不变。整体结论：资金面是当前最大的压制项，基本面仍在改善的公司继续停留在悲观区，本周看 Anthropic 定价（11-18）和英伟达财报（11-17）。",
+   "market": "10 月 CPI 偏热，打断了周一的反弹：CPI 环比 +0.4%（预期 +0.3%），核心 +0.3%（预期 +0.2%），2 年期美债收益率上行约 17bp 到 4.73%；美联储理事沃勒此前表示数据偏热可能让他支持 12 月加息 50bp，据《华尔街日报》CPI 后交易员给 50bp 的概率约 10%。标普 500 −0.38% 收于 7520.93、纳指 −0.74%，英伟达再跌 5.5% 是主要拖累。资金面继续变差（27 → 24 分：10 年期美债 4.86% → 4.98%，一年 +89bp；美元指数 102.2 处于近一年 98% 分位），“钱贵”在加深。情绪面基本持平（热度 46 → 47：VIX 19.5、恐贪指数 34），三倍杠杆 ETF 成交占比仍在 81% 分位，杠杆没有出清。浪位：AI 二浪（B 端应用）从“财报已改善，价格未反映”升到“启动初期”，航空航天二浪在“启动初期”和“财报已改善”之间来回切换，其余不变。整体结论：资金面是当前最大的压制项，基本面仍在改善的公司继续停留在悲观区，本周看 Anthropic 定价（11-18）和英伟达财报（11-17）。 【盘后更新】收盘后两条消息影响 AI 板块预期面：CoreWeave 财报后盘后涨超 5%（SiliconANGLE），CFO 表示按目前收益率，2027 年前不再发行母公司层面的无担保债，改用和具体合同挂钩的资产担保债；Anthropic 更新 IPO 文件，按区间上限完全稀释估值约 1.404 万亿美元，另以 IPO 价向 AMD、博通、谷歌、美光、微软、英伟达、台积电私募 260 亿美元无投票权股（谷歌、英伟达各 100 亿美元），预计 11 月 19 日前后上市。这两条都指向同一个结论：AI 的需求端没有坏，压力集中在融资端，而供应链公司正在用入股的方式给最大客户“输血”。",
    "sectors": {
-    "ai": "预期面两条线：① Anthropic 公布 IPO 区间 70~78 美元、发行 8.25 亿股，按完全稀释口径估值约 1.3~1.4 万亿美元（各家报道口径不同），预计 11-18 定价、11-19 以代码 ANT 上市，据报道谷歌、英伟达等 7 家战略方以 IPO 价认购 260 亿美元——比几周前讨论的 2 万亿美元低，但比市场担心的稳。② Anthropic 同日发布 Claude Sheets、Whiteboards 等办公工具，微软下跌约 2~3%，“AI 模型公司向下吃应用层”的产业面风险第一次直接落在办公套件上。基本面上 CoreWeave 三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元（6 月底 1040 亿），上调全年收入和经营利润指引，缓和了“新型云订单落不了地”的担忧；但净亏损 7.09 亿美元、债务近 470 亿美元，部分债券收益率超过 16%，融资仍是硬约束。英伟达继续受 CEO 事件拖累（−5.5%），董事会聘请 Wachtell Lipton 调查，公司称黄仁勋不中断任职。",
-    "quantum": "两家财报都偏弱，印证“块状收入”：Rigetti 三季度收入 141 万美元（同比约 −27%），远低于约 350 万美元的预期，全年约 2000 万美元的目标依赖印度 C-DAC 在四季度验收整机；D-Wave 收入 450 万美元（+21%），但当季订单 190 万美元（同比 −19%）、毛利率从 71.4% 降到 52.9%，前九个月订单 3740 万美元主要靠一笔 2000 万美元整机销售。两家现金都在 5 亿美元左右，短期不缺钱。产业面没有变化，预期面略向下。",
-    "robotics": "Novanta（精密运动控制 / 激光部件，机器人一浪）三季度收入和利润超预期，但四季度每股收益指引 0.91~0.96 美元低于预期的 1.02，原因是光刻相关出货暂停和英国工厂搬迁，预计压低四季度毛利率约 200bp，股价 −15.3%——这是公司层面的执行问题，不是机器人需求的变化。一浪在“尚未启动”和“财报已改善，价格未反映”之间来回切换。",
-    "aerospace": "无重要新信息。Rocket Lab 财报次日收涨 6.5%，市场更看重积压订单和 Neutron 订单而不是亏损差于预期；AST SpaceMobile 财报次日 −8.7%。二浪在“启动初期”与“财报已改善，价格未反映”之间来回切换，三浪显示“价格先行，财报待验证”。",
+    "ai": "预期面两条线：① Anthropic 公布 IPO 区间 70~78 美元、发行 8.25 亿股，按完全稀释口径估值约 1.3~1.4 万亿美元（各家报道口径不同），预计 11-18 定价、11-19 以代码 ANT 上市，据报道谷歌、英伟达等 7 家战略方以 IPO 价认购 260 亿美元——比几周前讨论的 2 万亿美元低，但比市场担心的稳。② Anthropic 同日发布 Claude Sheets、Whiteboards 等办公工具，微软下跌约 2~3%，“AI 模型公司向下吃应用层”的产业面风险第一次直接落在办公套件上。基本面上 CoreWeave 三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元（6 月底 1040 亿），上调全年收入和经营利润指引，缓和了“新型云订单落不了地”的担忧；但净亏损 7.09 亿美元、债务近 470 亿美元，部分债券收益率超过 16%，融资仍是硬约束。英伟达继续受 CEO 事件拖累（−5.5%），董事会聘请 Wachtell Lipton 调查，公司称黄仁勋不中断任职。 盘后：① Anthropic 私募名单把 7 家供应链公司（AMD、博通、谷歌、美光、微软、英伟达、台积电）和它绑在一起，供应商同时是股东，订单和股权互相支撑——利好订单确定性，但也放大了循环融资的风险（判断）。② AMD 发布 Epyc 6（Venice，台积电 2nm，最高 256 核），称每瓦可支持的 AI Agent 数量是英伟达 Vera CPU 的 3.3 倍（公司自述），已用于两款 Azure 实例——Agent 带动 CPU 需求的逻辑在延续。③ 据一篇观点文章汇总，AWS 三季度收入 460 亿美元（+39.3%）、积压 5780 亿美元（2025 年底 2440 亿），计划 2027 年底起对外销售 Trainium。④ 数据中心的“社区同意”成为新瓶颈：中期选举中全美 40 多项反数据中心地方提案，只有北达科他州 Harwood 否决，Applied Digital 正在那里建 1GW 园区。纽约 RAISE 法案明年初生效，前沿 AI 公司须在 2027-01-01 前注册。",
+    "quantum": "两家财报都偏弱，印证“块状收入”：Rigetti 三季度收入 141 万美元（同比约 −27%），远低于约 350 万美元的预期，全年约 2000 万美元的目标依赖印度 C-DAC 在四季度验收整机；D-Wave 收入 450 万美元（+21%），但当季订单 190 万美元（同比 −19%）、毛利率从 71.4% 降到 52.9%，前九个月订单 3740 万美元主要靠一笔 2000 万美元整机销售。两家现金都在 5 亿美元左右，短期不缺钱。产业面没有变化，预期面略向下。 盘后：政策面两条——欧盟量子法案草案拟让战略性量子基础设施和公共采购原则上只对欧盟控制的公司开放（草案，可能修改），对美国量子公司的欧洲市场是负面；美国量子主导权委员会（两党参议员共同主持）初步报告呼吁持续投资，担心中国规模化更快。技术面：QuEra、哈佛与 Anthropic 用 Claude 设计量子电路，在 8 个常用模块中有 7 个同时减少了门数和比特数（预印本、资源估算，未上真机）——算法变便宜同样会让实用化提前。D-Wave 补充：NTT DOCOMO 部署了第二个基于其混合量子技术的生产应用。",
+    "robotics": "Novanta（精密运动控制 / 激光部件，机器人一浪）三季度收入和利润超预期，但四季度每股收益指引 0.91~0.96 美元低于预期的 1.02，原因是光刻相关出货暂停和英国工厂搬迁，预计压低四季度毛利率约 200bp，股价 −15.3%——这是公司层面的执行问题，不是机器人需求的变化。一浪在“尚未启动”和“财报已改善，价格未反映”之间来回切换。 盘后：工业焊接自动化公司 Path Robotics 融资 3 亿美元，投后估值 24.5 亿美元，私募市场对“处理工件变形的 AI 焊接”仍愿意给高估值；亚马逊旗下 Ring 成立 Ring Robotics，推出 270 美元的室内安防无人机（1 月上市）和 1000 美元的企业巡逻机器人（12 月上市）——消费级移动机器人先从安防切入。",
+    "aerospace": "无重要新信息。Rocket Lab 财报次日收涨 6.5%，市场更看重积压订单和 Neutron 订单而不是亏损差于预期；AST SpaceMobile 财报次日 −8.7%。二浪在“启动初期”与“财报已改善，价格未反映”之间来回切换，三浪显示“价格先行，财报待验证”。 盘后：NASA 局长 Isaacman 说明 SLS 将标准化为接近 Block 1 的构型、放弃 EUS 上面级改用 ULA 加长版 Centaur V、停掉第二座移动发射塔，并承认商业月球运输在 2028~2029 年无法端到端替代——“商业航天全面替代政府火箭”的时间表往后推，属产业面的降温信号。Kratos 与 Seagate Space 签长期协议，计划 2027 年起使用海上移动发射平台执行国防试验发射（公司新闻稿）。",
     "autonomous": "无重要新信息。三浪均为“尚未启动”。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "连续第二天下跌（−5.5%，周一 −4.3%），收于 168.89，热度 11，进入“关注买点”；董事会聘请 Wachtell Lipton（由前纽约南区代理检察官领衔）调查，公司称黄仁勋不中断任职，分析师 Dan Ives 估计调查需 4~6 周。现价处于 2027 前瞻区间（125.1~206.9~316.5）下沿到中值之间，距中值 +22%。11-17 财报。"
+     "why": "连续第二天下跌（−5.5%，周一 −4.3%），收于 168.89，热度 11，进入“关注买点”；董事会聘请 Wachtell Lipton（由前纽约南区代理检察官领衔）调查，公司称黄仁勋不中断任职，分析师 Dan Ives 估计调查需 4~6 周。现价处于 2027 前瞻区间（125.1~206.9~316.5）下沿到中值之间，距中值 +22%。11-17 财报。 盘后：股东集体诉讼的覆盖期为 2025-10-09 至 2026-11-08 买入的投资者；同时英伟达以 IPO 价认购 Anthropic 100 亿美元。"
     },
     {
      "t": "MSFT",
@@ -271,7 +314,7 @@
     },
     {
      "t": "CRWV",
-     "why": "三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入指引上调到 130~133 亿美元、资本开支 370~390 亿美元；但每股亏损的口径各家不同（CNBC 称差于预期，Seeking Alpha 称好于预期）。盘后小涨。现价 48.73，2027 区间 13.4~78.5~167.0，距中值 +61%，区间极宽，说明融资路径决定一切。"
+     "why": "三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入指引上调到 130~133 亿美元、资本开支 370~390 亿美元；每股亏损 1.27 美元差于预期的 1.16（CNBC、SiliconANGLE；Seeking Alpha 的口径称好于预期）。盘后涨超 5%，CFO 称 2027 年前不再发母公司层面无担保债。现价 48.73，2027 区间 13.4~78.5~167.0，距中值 +61%，区间极宽，说明融资路径决定一切。"
     },
     {
      "t": "RGTI",
@@ -292,6 +335,10 @@
     {
      "t": "CSCO",
      "why": "11-12 发财报，刚进入“关注买点”（热度 38）。上季给出 FY27 一季度收入 180~182 亿美元指引，超大规模客户 AI 订单 FY26 合计 93 亿美元；验证点是 AI 订单延续和存储成本对毛利率（指引 65~66%）的挤压。现价 98.15 基本在 2027 区间中值（99.1）。"
+    },
+    {
+     "t": "AMD",
+     "why": "发布 Epyc 6 服务器 CPU（台积电 2nm、最高 256 核），称每瓦 Agent 数是英伟达 Vera 的 3.3 倍（公司自述），并参与 Anthropic 260 亿美元私募；英伟达受 CEO 事件拖累期间，AMD 周一 +13%、周二 +1.3%。现价 515.21 处于 2027 区间（389.0~631.0~1099.5）下沿到中值之间，距中值 +22%。"
     }
    ],
    "sources": [
@@ -366,6 +413,62 @@
     [
      "Pulse 2.0：思科超大规模客户 AI 订单 93 亿美元、FY27 目标约 75 亿美元收入",
      "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
+    ],
+    [
+     "TechCrunch：Anthropic IPO 区间 70~78 美元，估值约 1.404 万亿美元（11-10）",
+     "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/"
+    ],
+    [
+     "SiliconANGLE：CoreWeave 财报后止跌（11-10）",
+     "https://siliconangle.com/2026/11/10/coreweave-arrests-stock-slide-after-posting-a-strong-earnings-beat-and-raising-its-full-year-guidance/"
+    ],
+    [
+     "SiliconANGLE：AMD 发布面向 AI Agent 的 Epyc 6（11-10）",
+     "https://siliconangle.com/2026/11/10/amd-introduces-epyc-6-processors-for-ai-agent-workloads/"
+    ],
+    [
+     "SiliconANGLE（ZK Research 观点）：财报季看三大云厂商（11-10）",
+     "https://siliconangle.com/2026/11/10/what-we-learned-about-the-hyperscalers-from-earnings-season/"
+    ],
+    [
+     "DataCenterDynamics：Applied Digital 在唯一同意数据中心的小镇建设（11-10）",
+     "https://www.datacenterdynamics.com/en/analysis/data-center-harwood-north-dakota-applied-digital-us-midterm-elections/"
+    ],
+    [
+     "TechCrunch：纽约 AI 安全法生效，前沿实验室须注册（11-10）",
+     "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/"
+    ],
+    [
+     "DataCenterDynamics：英伟达股东提起集体诉讼（11-10）",
+     "https://www.datacenterdynamics.com/en/news/nvidia-shareholders-file-class-action-lawsuit-against-chip-giant-and-its-ceo-jensen-huang-following-fall-out-from-chinese-spy-allegations/"
+    ],
+    [
+     "The Quantum Insider：欧盟量子法案草案偏向欧洲供应商（11-10）",
+     "https://thequantuminsider.com/2026/11/10/draft-eu-quantum-act-would-favor-european-suppliers-set-computing-and-security-targets/"
+    ],
+    [
+     "The Quantum Insider：QuEra、哈佛与 Anthropic 用 AI 降低量子电路资源（11-10）",
+     "https://thequantuminsider.com/2026/11/10/quera-harvard-anthropic-ai-quantum-circuit-resource-requirements/"
+    ],
+    [
+     "The Quantum Insider：美国量子主导权委员会初步报告（11-10）",
+     "https://thequantuminsider.com/2026/11/10/commission-on-u-s-quantum-primacy-urges-sustained-investment-to-turn-quantum-discovery-into-american-advantage/"
+    ],
+    [
+     "SiliconANGLE：Path Robotics 融资 3 亿美元（11-10）",
+     "https://siliconangle.com/2026/11/10/industrial-automation-startup-path-robotics-raises-300m-in-funding/"
+    ],
+    [
+     "TechCrunch：Ring 推出家用安防无人机和企业巡逻机器人（11-10）",
+     "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/"
+    ],
+    [
+     "NASASpaceflight：Isaacman 规划 SLS 到 2030 年代的路径",
+     "https://www.nasaspaceflight.com/2026/11/isaacman-sls-2030s/"
+    ],
+    [
+     "SpaceNews：Kratos 与 Seagate Space 合作海上移动发射（11-10）",
+     "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/"
     ]
    ]
   },
@@ -616,7 +719,7 @@
    ]
   }
  ],
- "updated": "2026-11-10T14:28",
+ "updated": "2026-11-10T22:25",
  "trend": {
   "NVDA": {
    "date": "2026-11-10",
@@ -812,10 +915,14 @@
   "CRWV": {
    "date": "2026-11-10",
    "dir": "分化",
-   "text": "订单面在改善：三季度收入 36.6 亿美元（+168%），积压从 6 月底 1040 亿美元增到 1325 亿美元，全年收入指引上调到 130~133 亿美元，Anthropic 是关键客户之一。但融资面仍紧：三季度净亏损 7.09 亿美元、债务近 470 亿美元、部分债券收益率超过 16%，全年资本开支 370~390 亿美元。管理层称 2027 年资金主要来自客户预付款和硬件伙伴融资，只做“有限”的新融资。",
+   "text": "订单面在改善：三季度收入 36.6 亿美元（+168%），积压从 6 月底 1040 亿美元增到 1325 亿美元，全年收入指引上调到 130~133 亿美元，Anthropic 是关键客户之一。但融资面仍紧：三季度净亏损 7.09 亿美元、债务近 470 亿美元、部分债券收益率超过 16%，全年资本开支 370~390 亿美元。管理层称 2027 年资金主要来自客户预付款和硬件伙伴融资，只做“有限”的新融资。 盘后股价涨超 5%；CFO 表示按目前收益率 2027 年前不再发母公司层面无担保债，改用与具体合同挂钩的担保债，资产层面担保贷款交易接近面值。",
    "miss": "前瞻区间扣了净债务，但没有反映再融资成本上升、股权稀释和合同推迟的风险；客户集中（大模型公司）意味着 Anthropic / OpenAI 的融资价格直接决定订单能否兑现（判断）。",
-   "watch": "Anthropic IPO 定价（11-18）、新增融资条款与债券收益率、客户预付款金额、1.85GW 年底在运电力目标是否达成。",
+   "watch": "Anthropic IPO 定价（约 11-19 上市）、合同挂钩担保债的发行条款与收益率、客户预付款金额、1.85GW 年底在运电力目标。",
    "src": [
+    [
+     "SiliconANGLE：CoreWeave 财报后止跌（11-10）",
+     "https://siliconangle.com/2026/11/10/coreweave-arrests-stock-slide-after-posting-a-strong-earnings-beat-and-raising-its-full-year-guidance/"
+    ],
     [
      "CNBC：CoreWeave 收入超预期并上调指引（11-10）",
      "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
