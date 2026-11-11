@@ -189,3 +189,109 @@
 {"ts": "2026-11-11T04:11:43+00:00", "title": "🟢 FSLR 进入「关注买点」", "body": "First Solar, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 9% 位置；偏离200日线 -15%", "priority": "high", "sent": true}
 {"ts": "2026-11-11T04:11:43+00:00", "title": "🟢 KRMN 进入「关注买点」", "body": "Karman Holdings Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 60；处于52周区间的 16% 位置；偏离200日线 -29%", "priority": "high", "sent": true}
 {"ts": "2026-11-11T04:11:44+00:00", "title": "🟢 NOVT 进入「关注买点」", "body": "Novanta Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 35% 位置；偏离200日线 -13%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T06:25:54+00:00", "title": "📝 研判盘后更新 2026-11-10", "body": "CoreWeave 盘后涨超 5%，CFO 称 2027 年前不再发母公司无担保债。Anthropic 估值上限约 1.404 万亿美元，并向 AMD、博通、谷歌、美光、微软、英伟达、台积电私募 260 亿美元（谷歌、英伟达各 100 亿）。AMD 发布 Epyc 6。欧盟量子法案草案偏向欧洲供应商；NASA 承认商业月球运输 2030 年代前接不住。关注新增：AMD", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T14:44:51+00:00", "title": "🔄 数据已追上，期间共 33 条变化", "body": "🚀 11 条：AXTI、BE、COHR、CRWV、DELL、DOCN、EOSE、LITE、NBIS、SATL、TTEC\n📊 6 条：INOD、KVHI、OLYMY、SMCI、SOUN、WERN\n🔴 6 条：AAPL、ALSN、S、SAIL、TTC、TTEC\n💥 5 条：ATRO、INVZ、LWLG、STXS、VELO\n🌊 3 条：AI、机器人、自动驾驶\n🟢 2 条：ATRO、WERN\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:12:22+00:00", "title": "🟢 CGNX 进入「关注买点」", "body": "Cognex Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 46% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T15:12:22+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T15:12:22+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T15:12:23+00:00", "title": "🌊 自动驾驶 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T15:12:23+00:00", "title": "🔴 AJG 进入「回调风险」", "body": "Arthur J. Gallagher & Co.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 61；处于52周区间的 89% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:12:23+00:00", "title": "🔴 SMRT 进入「回调风险」", "body": "SmartRent, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 75；处于52周区间的 60% 位置；偏离200日线 +24%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:12:24+00:00", "title": "📅 LWLG 今天发财报", "body": "Lightwave Logic, Inc. 2026-11-11，一致预期 EPS -0.05。当前信号：弱势，情绪热度 8。", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:12:24+00:00", "title": "🚀 AAOI 单日 +10.7%", "body": "Applied Optoelectronics, Inc. 收于 53.47。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:12:25+00:00", "title": "🚀 AEHR 单日 +9.8%", "body": "Aehr Test Systems 收于 65.43。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:12:25+00:00", "title": "💥 AIRG 单日 -9.0%", "body": "Airgain, Inc. 收于 3.75。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:12:25+00:00", "title": "🚀 AMKR 单日 +8.5%", "body": "Amkor Technology, Inc. 收于 37.39。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:12:25+00:00", "title": "🚀 BTDR 单日 +9.4%", "body": "Bitdeer Technologies Group 收于 7.01。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:12:26+00:00", "title": "还有 13 条更新", "body": "🚀 CIFR 单日 +8.0%\n🚀 FLY 单日 +8.6%\n🚀 FSLY 单日 +9.6%\n🚀 GLXY 单日 +8.8%\n🚀 INOD 单日 +10.1%\n🚀 MRVL 单日 +8.1%\n🚀 MTSI 单日 +8.1%\n🚀 MU 单日 +9.9%\n🚀 POET 单日 +8.9%\n🚀 SMTC 单日 +9.8%\n🚀 SNDK 单日 +12.9%\n🚀 STX 单日 +9.2%\n🚀 TTMI 单日 +8.1%", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:26+00:00", "title": "🟢 AAON 进入「关注买点」", "body": "AAON, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 55；处于52周区间的 25% 位置；偏离200日线 -20%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T15:41:26+00:00", "title": "🔴 DOCU 进入「回调风险」", "body": "DocuSign, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 53；处于52周区间的 85% 位置；偏离200日线 +42%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:41:27+00:00", "title": "🔴 TTC 进入「回调风险」", "body": "Toro Company (The)：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 95% 位置；偏离200日线 +12%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:41:27+00:00", "title": "🔴 UPS 进入「回调风险」", "body": "United Parcel Service, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 67；处于52周区间的 86% 位置；偏离200日线 +9%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T15:41:27+00:00", "title": "🚀 ACMR 单日 +8.0%", "body": "ACM Research, Inc. 收于 52.58。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:28+00:00", "title": "🚀 ARM 单日 +9.1%", "body": "Arm Holdings plc 收于 198.07。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:28+00:00", "title": "🚀 CEVA 单日 +8.1%", "body": "CEVA, Inc. 收于 26.43。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:28+00:00", "title": "🚀 CIEN 单日 +8.8%", "body": "Ciena Corporation 收于 296.12。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:28+00:00", "title": "🚀 CORZ 单日 +9.2%", "body": "Core Scientific, Inc. 收于 14.34。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:29+00:00", "title": "🚀 CRDO 单日 +10.0%", "body": "Credo Technology Group Holding  收于 142.76。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:29+00:00", "title": "🚀 FORM 单日 +11.2%", "body": "FormFactor, Inc. 收于 95.2。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:29+00:00", "title": "🚀 KOPN 单日 +11.6%", "body": "Kopin Corporation 收于 3.7。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T15:41:30+00:00", "title": "还有 13 条更新", "body": "🚀 KSCP 单日 +9.0%\n🚀 NVTS 单日 +8.3%\n🚀 ONTO 单日 +9.0%\n🚀 RNECY 单日 +8.6%\n🚀 RR 单日 +11.8%\n🚀 SIMO 单日 +8.9%\n🚀 SITM 单日 +8.9%\n🚀 SMCI 单日 +8.9%\n🚀 STRL 单日 +8.2%\n🚀 USAR 单日 +8.0%\n🚀 VICR 单日 +8.2%\n🚀 VPG 单日 +10.2%\n🚀 WDC 单日 +8.1%", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:52+00:00", "title": "🟢 NWSA 进入「关注买点」", "body": "News Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 35；处于52周区间的 51% 位置；偏离200日线 -1%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T16:16:52+00:00", "title": "🚀 ACLS 单日 +8.9%", "body": "Axcelis Technologies, Inc. 收于 116.33。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:53+00:00", "title": "🚀 ALAB 单日 +8.8%", "body": "Astera Labs, Inc. 收于 235.21。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:53+00:00", "title": "🚀 APLD 单日 +9.2%", "body": "Applied Digital Corporation 收于 18.22。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:53+00:00", "title": "🚀 CBRS 单日 +8.2%", "body": "Cerebras Systems Inc. 收于 101.31。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:53+00:00", "title": "🚀 CCOI 单日 +9.1%", "body": "Cogent Communications Holdings, 收于 4.74。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:54+00:00", "title": "🚀 CLS 单日 +8.7%", "body": "Celestica, Inc. 收于 243.3。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:54+00:00", "title": "🚀 COHU 单日 +9.5%", "body": "Cohu, Inc. 收于 47.71。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:54+00:00", "title": "🚀 ENTG 单日 +8.2%", "body": "Entegris, Inc. 收于 149.88。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:55+00:00", "title": "🚀 FN 单日 +8.2%", "body": "Fabrinet 收于 377.06。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:55+00:00", "title": "🚀 ICHR 单日 +8.1%", "body": "Ichor Holdings 收于 38.11。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:55+00:00", "title": "🚀 ORCL 单日 +8.5%", "body": "Oracle Corporation 收于 128.02。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:16:55+00:00", "title": "还有 3 条更新", "body": "🚀 RKLB 单日 +8.2%\n🚀 TER 单日 +8.1%\n🚀 WULF 单日 +9.1%", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:37+00:00", "title": "🔴 AJG 进入「回调风险」", "body": "Arthur J. Gallagher & Co.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 61；处于52周区间的 90% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T16:43:37+00:00", "title": "🔴 DE 进入「回调风险」", "body": "Deere & Company：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 93% 位置；偏离200日线 +13%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T16:43:38+00:00", "title": "🔴 SWKS 进入「回调风险」", "body": "Skyworks Solutions, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 87% 位置；偏离200日线 +26%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T16:43:38+00:00", "title": "🔴 TXN 进入「回调风险」", "body": "Texas Instruments Incorporated：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 60；处于52周区间的 90% 位置；偏离200日线 +19%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T16:43:38+00:00", "title": "🚀 GLW 单日 +8.5%", "body": "Corning Incorporated 收于 121.68。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:39+00:00", "title": "🚀 HIMX 单日 +8.1%", "body": "Himax Technologies, Inc. 收于 9.23。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:39+00:00", "title": "🚀 INTC 单日 +9.3%", "body": "Intel Corporation 收于 63.56。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:39+00:00", "title": "🚀 IREN 单日 +8.6%", "body": "IREN LIMITED 收于 21.43。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:39+00:00", "title": "🚀 MPWR 单日 +9.3%", "body": "Monolithic Power Systems, Inc. 收于 1483.64。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:40+00:00", "title": "🚀 TSEM 单日 +9.8%", "body": "Tower Semiconductor Ltd. 收于 162.11。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T16:43:40+00:00", "title": "🚀 VSH 单日 +9.3%", "body": "Vishay Intertechnology, Inc. 收于 29.27。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:11:58+00:00", "title": "🔴 SONO 进入「回调风险」", "body": "Sonos, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 62；处于52周区间的 87% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T17:11:58+00:00", "title": "🔴 TTC 进入「回调风险」", "body": "Toro Company (The)：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 96% 位置；偏离200日线 +12%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T17:11:58+00:00", "title": "🚀 ARBE 单日 +9.1%", "body": "Arbe Robotics Ltd. 收于 0.51。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:11:59+00:00", "title": "🚀 ASTS 单日 +8.1%", "body": "AST SpaceMobile, Inc. 收于 36.43。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:11:59+00:00", "title": "🚀 RMBS 单日 +8.2%", "body": "Rambus, Inc. 收于 87.34。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:11:59+00:00", "title": "🚀 SONO 单日 +8.5%", "body": "Sonos, Inc. 收于 18.33。信号：回调风险。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:11:59+00:00", "title": "🚀 UCTT 单日 +8.8%", "body": "Ultra Clean Holdings, Inc. 收于 50.82。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:10+00:00", "title": "🌊 机器人 三浪：价格先行，财报待验证", "body": "此前：尚未启动。已满足：上涨广度、毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T17:41:10+00:00", "title": "🚀 AEVA 单日 +8.2%", "body": "Aeva Technologies, Inc. 收于 13.27。信号：中性。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:11+00:00", "title": "🚀 AMAT 单日 +8.4%", "body": "Applied Materials, Inc. 收于 403.88。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:11+00:00", "title": "🚀 AMD 单日 +8.3%", "body": "Advanced Micro Devices, Inc. 收于 558.04。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:11+00:00", "title": "🚀 FROG 单日 +9.2%", "body": "JFrog Ltd. 收于 113.02。信号：回调风险。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:12+00:00", "title": "🚀 LRCX 单日 +8.4%", "body": "Lam Research Corporation 收于 241.01。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:12+00:00", "title": "🚀 LSCC 单日 +8.2%", "body": "Lattice Semiconductor Corporati 收于 120.37。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:12+00:00", "title": "🚀 POWL 单日 +8.3%", "body": "Powell Industries, Inc. 收于 149.7。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T17:41:12+00:00", "title": "🚀 VRT 单日 +8.7%", "body": "Vertiv Holdings, LLC 收于 211.18。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T18:12:05+00:00", "title": "🟢 SMCI 进入「关注买点」", "body": "Super Micro Computer, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 35% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T18:12:05+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T18:42:15+00:00", "title": "🟢 AAON 进入「关注买点」", "body": "AAON, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 55；处于52周区间的 24% 位置；偏离200日线 -20%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T18:42:15+00:00", "title": "🟢 COHR 进入「关注买点」", "body": "Coherent Corp.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 51；处于52周区间的 36% 位置；偏离200日线 -19%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T18:42:15+00:00", "title": "🟢 HUBB 进入「关注买点」", "body": "Hubbell Inc：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 28% 位置；偏离200日线 -8%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T18:42:16+00:00", "title": "🚀 HUT 单日 +8.1%", "body": "Hut 8 Corp. 收于 61.36。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T19:12:16+00:00", "title": "🟢 ETN 进入「关注买点」", "body": "Eaton Corporation, PLC：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 46；处于52周区间的 36% 位置；偏离200日线 -8%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:16+00:00", "title": "🟢 KLIC 进入「关注买点」", "body": "Kulicke and Soffa Industries, I：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 40% 位置；偏离200日线 -15%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:17+00:00", "title": "🟢 ONTO 进入「关注买点」", "body": "Onto Innovation Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 37% 位置；偏离200日线 -16%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:17+00:00", "title": "🟢 SMCI 进入「关注买点」", "body": "Super Micro Computer, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 35% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:17+00:00", "title": "🟢 VECO 进入「关注买点」", "body": "Veeco Instruments Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 50；处于52周区间的 28% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:18+00:00", "title": "🟢 VST 进入「关注买点」", "body": "Vistra Corp.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 33% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:18+00:00", "title": "🌊 机器人 三浪：价格先行，财报待验证", "body": "此前：尚未启动。已满足：上涨广度、毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:12:18+00:00", "title": "🚀 HTZ 单日 +8.7%", "body": "Hertz Global Holdings, Inc 收于 1.63。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-11T19:41:19+00:00", "title": "🟢 DCO 进入「关注买点」", "body": "Ducommun Incorporated：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 39；处于52周区间的 49% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:41:19+00:00", "title": "🟢 GNRC 进入「关注买点」", "body": "Generac Holdlings Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 35% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:41:19+00:00", "title": "🟢 IFNNY 进入「关注买点」", "body": "Infineon Technologies AG：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 33% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:41:20+00:00", "title": "🟢 KLAC 进入「关注买点」", "body": "KLA Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 50；处于52周区间的 28% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:41:20+00:00", "title": "🟢 MKSI 进入「关注买点」", "body": "MKS Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 53；处于52周区间的 29% 位置；偏离200日线 -18%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T19:41:20+00:00", "title": "🔴 JNJ 进入「回调风险」", "body": "Johnson & Johnson：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 98% 位置；偏离200日线 +13%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:11:28+00:00", "title": "🟢 CGNX 进入「关注买点」", "body": "Cognex Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 46% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:11:29+00:00", "title": "🟢 SITM 进入「关注买点」", "body": "SiTime Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 35% 位置；偏离200日线 -13%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:11:29+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:11:29+00:00", "title": "🔴 PAG 进入「回调风险」", "body": "Penske Automotive Group, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 90% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:43:35+00:00", "title": "🟢 FORM 进入「关注买点」", "body": "FormFactor, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 43% 位置；偏离200日线 -16%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:43:36+00:00", "title": "🟢 HUBB 进入「关注买点」", "body": "Hubbell Inc：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 28% 位置；偏离200日线 -8%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:43:36+00:00", "title": "🟢 NWSA 进入「关注买点」", "body": "News Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 36；处于52周区间的 52% 位置；偏离200日线 -0%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:43:36+00:00", "title": "🔴 DE 进入「回调风险」", "body": "Deere & Company：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 93% 位置；偏离200日线 +13%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:43:37+00:00", "title": "🔴 LIN 进入「回调风险」", "body": "Linde plc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 67；处于52周区间的 88% 位置；偏离200日线 +7%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:43:37+00:00", "title": "🔴 MDT 进入「回调风险」", "body": "Medtronic plc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 62；处于52周区间的 90% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:43:37+00:00", "title": "🔴 PGR 进入「回调风险」", "body": "Progressive Corporation (The)：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 98% 位置；偏离200日线 +11%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T20:44:14+00:00", "title": "🟢 AMAT 进入「关注买点」", "body": "Applied Materials, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 35% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T20:44:14+00:00", "title": "🟢 DCO 进入「关注买点」", "body": "Ducommun Incorporated：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 39；处于52周区间的 49% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T21:10:10+00:00", "title": "🟢 FORM 进入「关注买点」", "body": "FormFactor, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 42% 位置；偏离200日线 -16%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T21:10:11+00:00", "title": "🟢 IDCC 进入「关注买点」", "body": "InterDigital, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 40% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-11T21:10:11+00:00", "title": "🔴 HEI 进入「回调风险」", "body": "Heico Corporation：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 70；处于52周区间的 78% 位置；偏离200日线 +10%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T21:10:11+00:00", "title": "🔴 LIN 进入「回调风险」", "body": "Linde plc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 67；处于52周区间的 89% 位置；偏离200日线 +7%", "priority": "normal", "sent": true}
+{"ts": "2026-11-11T21:10:12+00:00", "title": "💥 RGTI 单日 -8.6%", "body": "Rigetti Computing, Inc. 收于 11.11。信号：观察。", "priority": "low", "sent": true}

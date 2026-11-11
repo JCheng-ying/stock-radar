@@ -2625,5 +2625,263 @@
     ]
    }
   ]
+ },
+ "aerospace/defense/lunar": {
+  "updated": "2026-11-11",
+  "note": "月球赛道正在从“单次着陆”转向“基础设施”：Intuitive Machines 用通信中继 + 卫星平台把收入做大，Firefly 靠着陆器 + 轨道转移飞行器积累积压（17 亿美元），Voyager 收购 Astrobotic 进入着陆器。共同问题是任务时间表一再推迟、亏损随规模扩大。",
+  "companies": {
+   "LUNR": {
+    "products": "Nova-C 月球着陆器（IM-3 任务）、月球数据网络（NASA 近空间网络合同）、Lanteris 卫星平台（2026-01 收购）",
+    "what": "把科学仪器和设备送上月球表面，并在月球轨道放中继卫星，让月面设备能和地球通信；收购 Lanteris 后也能整星制造卫星。",
+    "diff": "唯一同时拿到月面着陆和月球通信中继两类 NASA 合同的上市公司；近空间网络合同最高 48.2 亿美元（2024-09 授予，执行到 2029，可延到 2034）。收购 Lanteris（8 亿美元，现金 4.5 亿 + 股票 3.5 亿）后收入规模跳升，一致预期三季度收入约 2.4~2.5 亿美元（+364%），11-12 盘前发财报。IM-3 发射时间各来源不一：年初说 2026 下半年，Wikipedia 现列为不早于 2027 一季度。",
+    "ties": "NASA（CLPS、近空间网络）、Golden Dome / 太空发展局（通过 Lanteris）",
+    "src": [
+     [
+      "Intuitive Machines：完成收购 Lanteris Space Systems",
+      "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-completes-acquisition-lanteris-space-systems"
+     ],
+     [
+      "NASA：选定 Intuitive Machines 提供近空间网络月球中继服务",
+      "https://www.nasa.gov/news-release/nasa-selects-lunar-relay-contractor-for-near-space-network-services/"
+     ],
+     [
+      "Yahoo / Zacks：Intuitive Machines 三季度财报前瞻（11-12 发布）",
+      "https://finance.yahoo.com/markets/stocks/articles/intuitive-machines-post-q3-earnings-133100120.html"
+     ],
+     [
+      "Wikipedia：IM-3 任务",
+      "https://en.wikipedia.org/wiki/IM-3"
+     ]
+    ]
+   },
+   "FLY": {
+    "products": "Blue Ghost 月球着陆器、Elytra 轨道转移飞行器、Alpha 火箭",
+    "what": "Blue Ghost 把载荷送上月面（2025 年首次任务成功着陆），Elytra 在轨道上把卫星或着陆器推到目标轨道，Alpha 是小型运载火箭。",
+    "diff": "三季度收入 1.107 亿美元（+259%），积压创纪录 17 亿美元（上季 15 亿），全年收入指引收窄到 4.4~4.5 亿美元；但每股亏损 0.45 美元，远差于预期的 −0.09。Blue Ghost 2 号任务（月球背面）已完成验证测试并和 Elytra 合体，预计 2027 年发射；南极任务完成关键设计评审，Gruithuisen 穹丘任务目标 2028 年。",
+    "ties": "NASA（CLPS）",
+    "src": [
+     [
+      "Firefly Aerospace 三季度财报（积压 17 亿美元，11-10）",
+      "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announces-third-quarter-2026-financial-results"
+     ],
+     [
+      "The Motley Fool：Firefly 三季度电话会纪要（11-11）",
+      "https://www.fool.com/earnings/call-transcripts/2026/11/11/firefly-aerospace-fly-q3-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "VOYG": {
+    "products": "Astrobotic（月球着陆器，2026 年并入）",
+    "what": "Astrobotic 做 Griffin 等月球着陆器，承接 NASA 的月面运输任务。",
+    "diff": "Astrobotic 三季度为 Voyager 贡献约 3100 万美元收入；月球业务在 Voyager 内部还是小块，主业是国防和 Starlab。",
+    "ties": "NASA（CLPS）",
+    "src": [
+     [
+      "SpaceQ：Voyager 三季度业绩与 Starlab 进展",
+      "https://spaceq.ca/voyager-technologies-q3-2026-results/"
+     ]
+    ]
+   },
+   "RDW": {
+    "products": "着陆器和航天器结构件、太阳翼、相机",
+    "what": "给着陆器和深空飞行器提供结构、能源和成像部件，本身不运营着陆器。",
+    "diff": "以部件供应商身份参与月球任务，太空积压 3.796 亿美元。",
+    "ties": "多家航天器主承包商",
+    "src": [
+     [
+      "Redwire 三季度财报新闻稿",
+      "https://ir.rdw.com/news-events/press-releases/detail/250/redwire-corporation-reports-third-quarter-2026-financial"
+     ]
+    ]
+   },
+   "KBR": {
+    "products": "太空态势感知技术与工程服务（空军 ASTRO 合同等）",
+    "what": "替空军和太空军运维望远镜、超级计算和数据分析，跟踪在轨物体、判断哪颗卫星在做什么。",
+    "diff": "以政府服务合同为主：2025 年获空军研究实验室 ASTRO 合同（上限 1.76 亿美元，毛伊岛光学站）；2026 年 7 月入选国家航空航天情报中心多授标合同（总上限 8.66 亿美元）。太空只是 KBR 业务的一小部分。",
+    "ties": "美国空军、太空军、国家航空航天情报中心",
+    "src": [
+     [
+      "GovConWire：KBR 获空军太空态势感知技术合同（2025）",
+      "https://www.govconwire.com/articles/kbr-air-force-contract-space-domain-awareness-tech-maintenanance"
+     ],
+     [
+      "Barchart：KBR 入选国家航空航天情报中心多授标合同",
+      "https://www.barchart.com/story/news/3268333/kbrs-mission-technology-solutions-selected-for-multiple-award-advisory-contract-for-national-air-and-space-intelligence-center"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "LUNR",
+    "b": "NASA",
+    "type": "供应",
+    "desc": "近空间网络月球中继服务合同，最高 48.2 亿美元，基础期到 2029 年。",
+    "src": [
+     "NASA：选定 Intuitive Machines 提供近空间网络月球中继服务",
+     "https://www.nasa.gov/news-release/nasa-selects-lunar-relay-contractor-for-near-space-network-services/"
+    ]
+   },
+   {
+    "a": "LUNR",
+    "b": "Lanteris",
+    "type": "收购",
+    "desc": "2026-01 以 8 亿美元（现金 + 股票）完成收购，补齐卫星平台制造能力。",
+    "src": [
+     "Intuitive Machines：完成收购 Lanteris Space Systems",
+     "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-completes-acquisition-lanteris-space-systems"
+    ]
+   },
+   {
+    "a": "VOYG",
+    "b": "Astrobotic",
+    "type": "收购",
+    "desc": "Voyager 收购月球着陆器公司 Astrobotic，三季度贡献约 3100 万美元收入。",
+    "src": [
+     "SpaceQ：Voyager 三季度业绩与 Starlab 进展",
+     "https://spaceq.ca/voyager-technologies-q3-2026-results/"
+    ]
+   },
+   {
+    "a": "FLY",
+    "b": "NASA",
+    "type": "供应",
+    "desc": "Blue Ghost 承接 NASA 月面运输任务，2 号任务预计 2027 年发射。",
+    "src": [
+     "Firefly Aerospace 三季度财报（积压 17 亿美元，11-10）",
+     "https://investors.fireflyspace.com/news-releases/news-release-details/firefly-aerospace-announces-third-quarter-2026-financial-results"
+    ]
+   }
+  ]
+ },
+ "aerospace/sat/inorbit": {
+  "updated": "2026-11-11",
+  "note": "在轨服务有两条路线：Northrop Grumman 用机械臂给老卫星装“延寿背包”（GEO 大卫星，客户付得起），Momentus 等小公司做低轨“太空拖船”托管载荷（单价低、规模小）；空间站方向 Voyager（Starlab）在等 NASA 2027 年春的 CLD 二期授标，与 Axiom 等未上市对手竞争。",
+  "companies": {
+   "VOYG": {
+    "products": "Starlab 商业空间站（持股 61% 的合资公司）、Astrobotic（2026 年收购，月球着陆器）、国防与太空系统",
+    "what": "Starlab 准备接替国际空间站，给 NASA、科研机构和企业提供在轨实验和驻留空间；Voyager 本身还卖国防系统和航天器部件。",
+    "diff": "三季度收入约 8900 万美元（+124%，其中 Astrobotic 贡献 3100 万），订单 1.16 亿美元（+135%），全年收入指引下限上调到 2.85 亿美元。Starlab 尚无收入、当季调整后 EBITDA −750 万美元，累计拿到 NASA 里程碑款 2.125 亿美元，签约预订约 7 亿美元（8 月约 5 亿）。主打单次发射入轨、无需在轨组装。NASA 商业近地轨道目的地（CLD）二期征标 10 月发布，12 月交方案，预计 2027 年春授标。",
+    "ties": "NASA（CLD 里程碑）、Starlab 合资方",
+    "src": [
+     [
+      "Voyager 三季度新闻稿：收入、订单、积压创纪录",
+      "https://voyagertechnologies.com/press-releases/voyager-reports-record-third-quarter-2026-revenue-bookings-and-backlog/"
+     ],
+     [
+      "SpaceQ：Voyager 三季度业绩与 Starlab 进展",
+      "https://spaceq.ca/voyager-technologies-q3-2026-results/"
+     ]
+    ]
+   },
+   "RDW": {
+    "products": "微重力制造与在轨实验设备（ISS 载荷）、太阳翼 / 结构部件、Edge Autonomy 无人机（国防）",
+    "what": "在空间站上做微重力条件下的材料和生物制造实验，并提供卫星、着陆器用的结构件和太阳翼；国防业务卖小型无人机。",
+    "diff": "三季度收入约 1.09 亿美元（+5.4%，低于约 1.27 亿美元的预期），毛利率创纪录 32.3%（去年 16.3%）；积压 6.197 亿美元（太空 3.796 亿、国防 2.401 亿），订单出货比 1.73；太空板块有机增长超过 30%，在印第安纳州新开载荷运营中心和微重力设施。净亏损 2320 万美元。",
+    "ties": "NASA / 国际空间站载荷、美国国防客户",
+    "src": [
+     [
+      "Redwire 三季度财报新闻稿",
+      "https://ir.rdw.com/news-events/press-releases/detail/250/redwire-corporation-reports-third-quarter-2026-financial"
+     ],
+     [
+      "The Motley Fool：Redwire 三季度电话会纪要（11-06）",
+      "https://www.fool.com/earnings/call-transcripts/2026/11/06/redwire-corp-rdw-q3-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "NOC": {
+    "products": "SpaceLogistics：Mission Robotic Vehicle（MRV）+ Mission Extension Pods（MEP）；早期的 MEV",
+    "what": "MRV 带两条机械臂飞到地球同步轨道，把推进“背包”（MEP）装到燃料快用完的老卫星上，让它们多工作几年。",
+    "diff": "MRV 和三个 MEP 于 2026-07-21 由猎鹰 9 号发射，正在约一年的路程中前往地球同步轨道；机械臂载荷来自 DARPA 的 RSGS 项目（海军研究实验室制造）。后续计划为更多客户发射 MEP。在轨服务对 Northrop 体量很小。",
+    "ties": "DARPA、海军研究实验室、GEO 卫星运营商",
+    "src": [
+     [
+      "Northrop Grumman：Mission Robotic Vehicle 发射",
+      "https://news.northropgrumman.com/launch/northrop-grummans-mission-robotic-vehicle-launches-ushering-in-a-new-era-of-in-space-servicing"
+     ],
+     [
+      "DARPA：地球同步轨道机器人服务（RSGS）发射",
+      "https://www.darpa.mil/news/2026/robotic-servicing-of-geosynchronous-satellites-lifts-off"
+     ]
+    ]
+   },
+   "LUNR": {
+    "products": "Lanteris 卫星平台",
+    "what": "整星和卫星平台制造，可作为在轨服务或空间站相关航天器的底盘。",
+    "diff": "在轨服务不是主业；Lanteris 让它具备整星制造能力。",
+    "ties": "",
+    "src": [
+     [
+      "Intuitive Machines：完成收购 Lanteris Space Systems",
+      "https://investors.intuitivemachines.com/news-releases/news-release-details/intuitive-machines-completes-acquisition-lanteris-space-systems"
+     ]
+    ]
+   },
+   "MNTS": {
+    "products": "Vigoride 轨道服务飞行器",
+    "what": "像“太空拖船”：搭拼车火箭上天后，把多个小载荷送到各自需要的轨道，或长期托管载荷做实验。",
+    "diff": "Vigoride 7 于 2026-03-30 随 Transporter-16 发射，携带 10 个载荷（NASA、国防、商业），7 月完成又一个关键里程碑；6 月获 LASP 的 Vigoride-9 托管合同；与 NASA 签署 Space Act 协议做交会与编队飞行演示。规模很小。",
+    "ties": "NASA、LASP、美国国防客户",
+    "src": [
+     [
+      "Momentus：Vigoride 7 任务更新",
+      "https://investors.momentus.space/news-releases/news-release-details/momentus-delivering-orbit-success-vigoride-7-maneuvers-cleanly"
+     ],
+     [
+      "Momentus：Vigoride-9 新商业合同（LASP）",
+      "https://www.morningstar.com/news/business-wire/20260617536189/momentus-secures-new-commercial-contract-for-vigoride-9-orbital-service-vehicle"
+     ],
+     [
+      "Momentus：与 NASA 签署在轨服务 Space Act 协议",
+      "https://investors.momentus.space/news-releases/news-release-details/momentus-and-nasa-partner-advance-orbit-servicing-and-space"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "NOC",
+    "b": "DARPA",
+    "type": "合作",
+    "desc": "MRV 搭载 DARPA 的地球同步轨道机器人服务（RSGS）载荷，由 Northrop 拥有和运营。",
+    "src": [
+     "DARPA：地球同步轨道机器人服务（RSGS）发射",
+     "https://www.darpa.mil/news/2026/robotic-servicing-of-geosynchronous-satellites-lifts-off"
+    ]
+   },
+   {
+    "a": "VOYG",
+    "b": "NASA",
+    "type": "客户",
+    "desc": "Starlab 累计拿到 NASA 里程碑款约 2.125 亿美元，正在竞标 CLD 二期（2027 年春授标）。",
+    "src": [
+     "Voyager 三季度新闻稿：收入、订单、积压创纪录",
+     "https://voyagertechnologies.com/press-releases/voyager-reports-record-third-quarter-2026-revenue-bookings-and-backlog/"
+    ]
+   },
+   {
+    "a": "MNTS",
+    "b": "NASA",
+    "type": "合作",
+    "desc": "Space Act 协议：在 Vigoride 7 上演示交会与编队飞行。",
+    "src": [
+     "Momentus：与 NASA 签署在轨服务 Space Act 协议",
+     "https://investors.momentus.space/news-releases/news-release-details/momentus-and-nasa-partner-advance-orbit-servicing-and-space"
+    ]
+   },
+   {
+    "a": "RDW",
+    "b": "NASA",
+    "type": "供应",
+    "desc": "为国际空间站提供微重力实验载荷和运营，新开载荷运营中心。",
+    "src": [
+     "The Motley Fool：Redwire 三季度电话会纪要（11-06）",
+     "https://www.fool.com/earnings/call-transcripts/2026/11/06/redwire-corp-rdw-q3-2026-earnings-call-transcript/"
+    ]
+   }
+  ]
  }
 }

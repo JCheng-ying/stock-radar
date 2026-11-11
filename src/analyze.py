@@ -641,6 +641,10 @@ def forward_valuation(f, price, today):
     else:
         if not ref.get("rev_avg"):
             return None
+        # 日韩等 ADR：Yahoo 的收入预期是本币（日元 / 韩元），市值却是美元，直接相除会得到 0.01 倍这种
+        # 不可能的估值、把“到中值空间”放大几百倍。市值 / 收入 < 0.03 视为币种不一致，不出区间。
+        if mcap / ref["rev_avg"] < 0.03:
+            return None
         basis = "收入（企业价值 / 销售额）"
         gg = max(0.0, min(0.8, rev_g if rev_g is not None else 0.2))
         rule = _clip((1 + 0.2 * gg * 100) * _clip(gm / 0.5, 0.4, 1.6), 1, 20)
