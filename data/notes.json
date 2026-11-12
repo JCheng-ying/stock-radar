@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-12",
+    "text": "CEO 黄仁勋辞职、CFO Kress 兼任临时 CEO、董事会启动内外部继任者搜寻——管理层风险从“调查中”落地为“已离任”（情绪面 / 预期面向下，产业面未变）；盘中 −14%、收盘 −4.3%。",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
+   },
+   {
     "date": "2026-11-11",
     "text": "晚间：联邦调查已由司法部接手，焦点是 Megaspeed 是否帮助中国绕过出口管制——监管风险向公司层面蔓延（情绪面 / 预期面向下）。",
     "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
@@ -20,11 +25,6 @@
     "date": "2026-11-10",
     "text": "情绪面/预期面继续负向：连续第二天下跌（−5.5%），董事会聘请 Wachtell Lipton 调查 CEO 事件，公司称黄仁勋不中断任职；产业面和基本面没有新变化。",
     "url": "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
-   },
-   {
-    "date": "2026-11-09",
-    "text": "盘后：管理层风险升级——特朗普称 FBI 在调查，股东提起集体诉讼（情绪面/预期面负向）。",
-    "url": "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
    }
   ],
   "ANET": [
@@ -111,6 +111,11 @@
   ],
   "CRWV": [
    {
+    "date": "2026-11-12",
+    "text": "据彭博计划再借至少 40 亿美元投资级贷款，继续用债务扩产（资金面不变偏紧）；财报后次日回吐 −6.9%。",
+    "url": "https://seekingalpha.com/article/4967334-coreweave-still-a-volatile-debate?source=feed_symbol_CRWV"
+   },
+   {
     "date": "2026-11-11",
     "text": "晚间：融资方式转向客户预付款（未来三个月约 90 亿美元）和短期高价合同——提升利润但加大续约和定价风险（基本面 / 资金面）。",
     "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
@@ -129,11 +134,6 @@
     "date": "2026-11-10",
     "text": "基本面/预期面正向：三季度收入 36.6 亿美元（+168%）超预期，积压 1325 亿美元，全年收入和经营利润指引上调；资金面仍是约束（债务近 470 亿美元，部分债券收益率超 16%）。",
     "url": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html"
-   },
-   {
-    "date": "2026-11-09",
-    "text": "预期面（负向压力）：模型公司估值讨论下修（Anthropic IPO 区间降至 1.1~1.75 万亿美元），新型云的客户融资能力是 11-10 财报的核心验证点。",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-targets-november-debut-162209958.html"
    }
   ],
   "RKLB": [
@@ -253,6 +253,11 @@
   ],
   "CSCO": [
    {
+    "date": "2026-11-12",
+    "text": "一季度收入 +24%、网络 +43%，FY27 收入指引上调到 748~758 亿，超大规模客户 AI 基础设施收入预期上调到约 90 亿——基本面 / 预期面向上；毛利率 65.6%（同比 −2.5pp）仍是代价。",
+    "url": "https://www.stocktitan.net/news/CSCO/cisco-reports-first-quarter-42972jcsdwos.html"
+   },
+   {
     "date": "2026-11-11",
     "text": "预期面待验证：11-12 财报，一致预期收入约 181.3 亿美元、EPS 1.33；现价已在 2027 前瞻中值附近。",
     "url": "https://seekingalpha.com/symbol/CSCO/news?source=feed_symbol_CSCO"
@@ -264,6 +269,11 @@
    }
   ],
   "AMD": [
+   {
+    "date": "2026-11-12",
+    "text": "英伟达 CEO 离任当天 AMD +5.9%，市场把对手的管理层风险计为份额机会（情绪面向上）；份额是否真的转移要看后续订单，分析师有分歧。",
+    "url": "https://www.morningstar.com/news/marketwatch/2026110986/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal"
+   },
    {
     "date": "2026-11-10",
     "text": "产业面正向：发布 Epyc 6（Venice，2nm，最高 256 核），称每瓦 Agent 数为英伟达 Vera 的 3.3 倍（公司自述），已用于 Azure 实例；同时参与 Anthropic 私募，与最大的模型客户之一形成股权绑定。",
@@ -286,12 +296,22 @@
   ],
   "NBIS": [
    {
+    "date": "2026-11-12",
+    "text": "三季度收入 9.81 亿美元超预期，但 2026 收入落在区间下沿（产能延迟），2026/2027 资本开支上调到约 270 亿 / 400~450 亿美元——基本面兑现变慢、资金面压力加大（预期面向下），股价 −16.8%。",
+    "url": "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+   },
+   {
     "date": "2026-11-11",
     "text": "情绪面向上：跟随 CoreWeave +15.4%；预期面待 11-12 财报验证。",
     "url": "https://www.detroitnews.com/story/business/2026/11/11/sp-500-nasdaq-rise-as-coreweave-results-ease-ai-spending-worries/92724217007/"
    }
   ],
   "AMAT": [
+   {
+    "date": "2026-11-12",
+    "text": "FY26 四季度收入 104.1 亿美元（+53%），一季度指引 111 亿 ±5 亿，高于市场约 108.9 亿——预期面向上；EPS 是否超预期各家口径有分歧。",
+    "url": "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
+   },
    {
     "date": "2026-11-11",
     "text": "预期面待验证：11-12 财报，公司指引收入约 102.5 亿美元、EPS 4.02；对华出口新限制是主要风险，期权隐含波动约 8.8%。",
@@ -304,10 +324,28 @@
     "text": "Nighthawk r3：520 个可编程比特上 1 万次操作，2027 年 1040 比特系统（厂商口径）——量子路线图领先，产业面向上。",
     "url": "https://thequantuminsider.com/2026/11/11/ibm-nighthawk-r3-processor-520-programmable-qubits/"
    }
+  ],
+  "SMCI": [
+   {
+    "date": "2026-11-12",
+    "text": "据彭博，司法部在查与 Alice Huang 有关的实体是否走私超微产品到中国；公司不是被告——监管风险重新上升（情绪面向下），股价 −11.3%。",
+    "url": "https://qz.com/justice-department-alice-huang-super-micro-smuggling-china-111226"
+   }
+  ],
+  "SPCX": [
+   {
+    "date": "2026-11-12",
+    "text": "据彭博与特斯拉合并谈判推进、最快 12 月宣布——若成行将改变 SpaceX 的业务结构和估值口径（产业面 / 预期面，方向待定）。",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-12",
+    "text": "英伟达 CEO 黄仁勋离任，市场当作关键人风险而非需求问题：AMD、博通、Arista 同日大涨；应用材料、思科财报和指引都向上，Nebius 因资本开支大增、收入落在下沿大跌——需求端仍强，压力集中在管理层和融资两端。"
+   },
    {
     "date": "2026-11-11",
     "text": "CoreWeave 财报（积压 1325 亿美元、全年指引上调、2028 上半年调整后盈利）+ Anthropic 10 月底年化收入约 810 亿美元：需求端证据增强，AI 硬件全线反弹；但资金面（10 年期美债 5.0%）没有变化，压力仍在融资端。微软承诺电费自付，电力成本向云厂商内部化。"
@@ -323,10 +361,6 @@
    {
     "date": "2026-11-09",
     "text": "模型公司估值下修（Anthropic IPO 讨论区间 1.1~1.75 万亿美元，OpenAI 1.25 万亿美元融资），是新型云和数据中心订单的上游变量；英伟达出现管理层风险，芯片板块其余公司普涨。"
-   },
-   {
-    "date": "2026-11-08",
-    "text": "AI 的定价逻辑转向“检验现金流和回报”：资本开支被惩罚，企业端 token 支出增速放缓，数据中心开始面临地方政治阻力。算力需求本身没有消失，网络和现场发电仍在拿新单。"
    }
   ],
   "quantum": [
@@ -367,6 +401,10 @@
   ],
   "aerospace": [
    {
+    "date": "2026-11-12",
+    "text": "据彭博，SpaceX 与特斯拉合并谈判推进，最快 12 月宣布；Mercury、TransDigm 财报稳健。三浪回到“尚未启动”。"
+   },
+   {
     "date": "2026-11-10",
     "text": "NASA 承认商业月球运输在 2028~2029 年无法端到端替代，SLS 标准化并改用 ULA 加长版 Centaur V——商业替代政府火箭的时间表后移。"
    },
@@ -384,6 +422,113 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-12",
+   "market": "今天的主线是英伟达管理层突变：董事会公告黄仁勋辞去 CEO 和董事职务、即时生效，CFO Colette Kress 兼任临时 CEO，前 Synopsys CEO Harvey Jones 出任首任董事长；英伟达盘中一度跌约 14%，收盘 −4.3%（166.19），一个月累计 −25%。但据 MarketWatch，标普 500 基本没有跟跌——资金从英伟达转向 AMD（+5.9%）、博通（+5.5%）、Arista（+5.1%），同时投机小盘股普遍大跌（量子、eVTOL、加密矿企、机器人小票多数 −7%~−17%），说明是风险偏好收缩加板块内轮动，不是 AI 需求逻辑被否定。资金面从 24 分降到 22 分（10 年期美债 5.10%、一年 +98bp；美元指数 103.2 处于近一年最高分位），仍是“钱贵”；情绪面热度 51（中性）：VIX 18.7、CNN 恐贪 40（一周前 20），三倍杠杆 ETF 成交占比 87% 分位，杠杆仍偏高。浪位：AI 二浪重新回到“启动初期”，机器人一浪在“尚未启动”和“财报已改善，价格未反映”之间来回，航空航天三浪回到“尚未启动”。盘后应用材料、思科财报都超预期并上调指引，Nebius 则因 2026 收入落在区间下沿、资本开支大幅上调而 −16.8%。结论：预期面（设备、网络）继续向上，个股层面的管理层和融资风险在上升；接下来的验证点是英伟达 11-17 财报和 Anthropic 11-19 上市（据彭博认购约 6 倍）。上次研判后 Summizer 没有新增文章。",
+   "sectors": {
+    "ai": "产业面不变、情绪面和个股风险上升：英伟达 CEO 离任（临时 CEO 由 CFO 兼任，董事会内外部同时物色继任者），市场把它当作“关键人风险”而不是需求问题——同日 AMD、博通、Arista 逆势大涨。预期面向上：应用材料 FY26 四季度收入 104.1 亿美元（+53%）、一季度指引 111 亿 ±5 亿；思科一季度收入 185 亿美元（+24%，网络 +43%），FY27 收入指引上调到 748~758 亿、超大规模客户 AI 基础设施收入预期从 75 亿上调到约 90 亿。资金面分化：Nebius 把 2026 资本开支提到约 270 亿、2027 年 400~450 亿美元，收入却因产能延迟落在区间下沿——新云厂商“先花钱、后收入”的压力在加大；据彭博 CoreWeave 计划再借至少 40 亿美元投资级贷款。",
+    "quantum": "无重要新信息（IonQ −9.4%、D-Wave −7.6%、Rigetti −7.0%、Quantinuum −7.7%，随投机股整体回落，未查到公司层面消息）。",
+    "robotics": "无重要产业新信息。基本面：发那科季度收入同比 +15%、毛利率 42.3%（+4.9pp）、EPS 超预期 31%，进入“关注买点”；罗克韦尔也进入“关注买点”。Agility Robotics（11-5 经 SPAC 上市，PIPE 价 10 美元）今天 −17% 收于 7.58，属于投机股普跌的一部分，未查到公司层面消息。",
+    "aerospace": "产业面：据彭博，SpaceX 与特斯拉的合并谈判在推进，最快 12 月宣布（也可能拖到 2027 年初），结构是 SpaceX 吸收特斯拉；星舰第 15 次试飞定在 11-13。基本面：Mercury 季度收入 +12%、毛利率 +7.3pp、RPO +52%；TransDigm 收入 +23%。浪位：三浪回到“尚未启动”。",
+    "autonomous": "据当地媒体，Zoox 把拉斯维加斯 Robotaxi 服务扩到大道以外区域并投放新一代车型（产业面小幅向上）；Lucid −11.3%、Aeva −8.1%、Pony −6.1%，随投机股回落。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "黄仁勋辞职（8-K），CFO Kress 兼任临时 CEO、Harvey Jones 任董事长；盘中一度 −14%、收盘 −4.3% 至 166.19，一个月 −25%；伯恩斯坦目标价 400 → 200。热度 10、信号“关注买点”；2027 前瞻区间 123.2~203.5~311.4，现价在下沿到中值之间、距中值 +22%。11-17 财报是管理层变动后的第一次检验。"
+    },
+    {
+     "t": "NBIS",
+     "why": "三季度收入 9.81 亿美元（+571%，高于预期 9.08 亿），但 2026 收入指向 30~34 亿区间下沿（路透称因产能延迟），2026 资本开支上调到约 270 亿、2027 年 400~450 亿美元（FactSet 预期约 288 亿），2027 收入指引 120~130 亿；股价 −16.8% 至 128.64。2027 前瞻区间 81.9~159.5~311.3，距中值 +24%。"
+    },
+    {
+     "t": "AMAT",
+     "why": "盘后：FY26 四季度收入 104.1 亿美元（+53%）、非 GAAP EPS 4.16、毛利率 50.6%；一季度收入指引 111 亿 ±5 亿（市场约 108.9 亿）。各家一致预期口径不同，EPS 是否超预期说法有分歧。收盘 380.95（−3.6%），2027 前瞻区间 300.4~466.6~707.5，距中值 +22%。"
+    },
+    {
+     "t": "CSCO",
+     "why": "盘后：一季度收入 185.2 亿美元（+24%）、非 GAAP EPS 1.40，网络收入 +43% 至 111.3 亿；FY27 收入指引从 722~734 亿上调到 748~758 亿，超大规模客户 AI 基础设施收入预期约 90 亿（8 月为 75 亿）；毛利率 65.6%（去年 68.1%）。收盘 102.01，正好在 2027 前瞻中值附近（区间 74.3~101.1~143.1）。"
+    },
+    {
+     "t": "SMCI",
+     "why": "据彭博，司法部（纽约南区）在查与 Alice Huang 有关的实体（含 Megaspeed）是否把超微产品走私到中国；超微不是被告、否认指控并配合调查。股价 −11.3% 至 26.99，一个月 −25%。基本面 93 分、信号“关注买点”，但这是规则信号，监管风险不在分数里。2027 前瞻区间 22.1~31.0~43.8，距中值 +15%。"
+    },
+    {
+     "t": "AMD",
+     "why": "英伟达管理层真空被市场当作竞争对手的机会：AMD +5.9% 至 585.3（热度 84、“回调风险”），博通 +5.5%、Arista +5.1%。11-9 的 MarketWatch 分析已提示 Melius 不认为份额会持续转移、对手也可能面临销售合规审视。2027 前瞻区间 419.9~682.6~1186.9，距中值 +17%。"
+    },
+    {
+     "t": "CRWV",
+     "why": "财报后 +24.7% 的第二天回吐 −6.9% 至 56.6；据彭博，公司计划再借至少 40 亿美元投资级贷款（继续靠债务扩产）。同行 Nebius 上调资本开支、收入落在下沿，市场对新云厂商的融资节奏更敏感。2027 前瞻区间 30.2~94.6~200.4，距中值 +67%。"
+    },
+    {
+     "t": "SPCX",
+     "why": "据彭博，SpaceX 与特斯拉合并谈判推进、最快 12 月宣布（也可能拖到 2027 年初），双方特别委员会在谈换股比例和治理；马斯克此前称不应视为确定。SpaceX 收于 139.94（+0.1%），特斯拉 +1.7%；星舰 11-13 第 15 次试飞。2027 前瞻区间 10.0~160.7~687.3（分析师分歧极大），距中值 +15%。"
+    }
+   ],
+   "sources": [
+    [
+     "英伟达公告：CEO 交接",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
+    ],
+    [
+     "CNBC：英伟达收跌逾 4%，黄仁勋辞职",
+     "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
+    ],
+    [
+     "TechCrunch：黄仁勋辞职，CFO Kress 任临时 CEO",
+     "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"
+    ],
+    [
+     "MarketWatch：标普 500 没有跟随英伟达下跌",
+     "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories"
+    ],
+    [
+     "CNBC：Nebius 跌 16%，资本开支上调、指引偏弱",
+     "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+    ],
+    [
+     "DataCenterDynamics：Nebius 三季度签约 120 亿美元",
+     "https://www.datacenterdynamics.com/en/news/nebius-signs-12bn-in-deals-for-q3-all-deals-reportedly-cover-its-capex/"
+    ],
+    [
+     "应用材料 FY26 四季度新闻稿",
+     "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
+    ],
+    [
+     "Benzinga：应用材料四季度与一季度指引",
+     "https://www.benzinga.com/markets/earnings/26/11/63224703/applied-materials-reports-q4-earnings-raises-guidance-as-ai-drives-strong-chip-demand"
+    ],
+    [
+     "InvestingLive：应用材料指引与一致预期对比",
+     "https://investinglive.com/stocks/applied-materials-beats-on-q4-and-guides-above-forecasts-as-chip-equipment-demand-holds/"
+    ],
+    [
+     "Seeking Alpha：思科一季度超预期并上调全年指引",
+     "https://seekingalpha.com/news/4671741-cisco-edges-up-after-surpassing-q1-estimates-and-raising-full-year-guidance?feed_item_type=news"
+    ],
+    [
+     "StockTitan：思科一季度新闻稿",
+     "https://www.stocktitan.net/news/CSCO/cisco-reports-first-quarter-42972jcsdwos.html"
+    ],
+    [
+     "Quartz：司法部调查与 Alice Huang 有关的实体走私超微产品",
+     "https://qz.com/justice-department-alice-huang-super-micro-smuggling-china-111226"
+    ],
+    [
+     "MarketWatch（Morningstar 转载）：AMD 和博通是英伟达事件的赢家吗",
+     "https://www.morningstar.com/news/marketwatch/2026110986/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal"
+    ],
+    [
+     "彭博：SpaceX 与特斯拉合并谈判推进",
+     "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+    ],
+    [
+     "Investing.com（路透）：SpaceX-特斯拉谈判进展",
+     "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+    ]
+   ]
+  },
   {
    "date": "2026-11-11",
    "market": "CoreWeave 财报（收入 36.6 亿美元、+168%，积压 1325 亿美元，全年指引上调）缓解了“AI 需求放缓”的担心，AI 硬件全线反弹：CoreWeave +24.7%、美光 +11.9%、Arm +12%、英伟达 +2.9%；据路透初步收盘数据，标普 500 +1.29% 收于 7617.84、纳指 +1.59%，标普科技板块涨近 4%（韩国时报报道的涨幅更大，为 +1.6% / +2.2%，口径不一）。资金面没有改善（24 分不变：10 年期美债 5.00%、一年 +89bp；美元指数 102.9 处于近一年最高分位），这次是预期面驱动的反弹，不是“钱变便宜”。情绪面从 47 升到 52（中性）：VIX 19.5 → 17.5、恐贪指数 37，但三倍杠杆 ETF 成交占比从 81% 分位升到 88% 分位——杠杆在反弹里加得更快。浪位：AI 二浪从“启动初期”回到“财报已改善，价格未反映”（三个月相对强度仍弱，一天反弹不够），机器人一浪从“尚未启动”升到“财报已改善，价格未反映”，机器人三浪和自动驾驶三浪回到“尚未启动”。整体结论：需求端的证据又多了一条，压制仍在融资端和利率端；本周三个验证点是应用材料 / 思科 / Nebius 财报（11-12）、英伟达财报（11-17）和 Anthropic 上市（约 11-19）。今天 Summizer 没有新增文章。 【晚间更新，含当晚 Summizer 新增的 14 篇】需求端又多了两条证据：据彭博，OpenAI 三季度收入首次超过 100 亿美元（二季度约 67 亿，环比近 +50%），调整后经营利润率从 −150% 收窄到 −109%；Anthropic 新增与微软最多 43 亿美元的算力协议，承诺支出合计约 8954 亿美元。但融资和选址两端的约束也更具体了：CoreWeave 未来三个月预计收到约 90 亿美元客户预付款、转向更短期、更高价的合同（短期售价每兆瓦每年超过 4000 万美元），Anthropic 与 Lambda 的 349 亿美元合同因 Lambda 没按期拿到机房租约而变成双方可终止；堪萨斯州 Ottawa 以 71.85% 赞成票通过 25MW 以上数据中心十年禁令。结论不变：需求在加速，瓶颈在钱、电和地。",
@@ -957,30 +1102,26 @@
    ]
   }
  ],
- "updated": "2026-11-11T20:22",
+ "updated": "2026-11-12T14:28",
  "trend": {
   "NVDA": {
-   "date": "2026-11-11",
+   "date": "2026-11-12",
    "dir": "分化",
-   "text": "AI 算力需求仍在扩张，CoreWeave 积压 1325 亿美元是 11-11 的新证据；但定价权受三股力量削弱：云厂商自研 ASIC 分流增量、中国市场受限、CEO 个人事件。事件已从董事会内部调查（聘请 Wachtell Lipton）升级到国会层面（众议院中国委员会主席要求说明），摩根士丹利 11-11 将其移出首选股名单；股价两天约 −10% 后反弹 +2.9%，同日 AMD +7.3%、博通 +4.0%，市场仍在单独计入“关键人风险”。",
-   "miss": "前瞻区间假设毛利率维持 70% 以上、份额大体不变、管理层稳定。关键人风险和调查结论（4~6 周，属分析师估计）无法量化进估值；若调查牵出对华出口合规问题，监管风险会直接影响中国收入（判断）。",
-   "watch": "11-17 财报的数据中心毛利率和下季指引、董事会调查结论、对华出口管制动向、云厂商资本开支指引、博通 / Marvell 的 ASIC 出货。",
+   "text": "需求面仍是顺风：云厂商资本开支、CoreWeave 积压 1325 亿美元、思科把超大规模客户 AI 基础设施收入预期上调到约 90 亿，都说明 AI 算力在扩张。逆风从“CEO 被调查”升级为“CEO 已离任”：临时 CEO 由 CFO 兼任，董事会内外部同时找继任者；同日 AMD、博通逆势大涨，说明市场在重新评估英伟达的份额溢价。",
+   "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定。创始人离任后的产品路线和客户关系（尤其与 OpenAI、Anthropic 等的战略投资承诺）、继任者的不确定性、调查若扩展到出口合规对中国收入的影响，都没有进入一致预期（判断）。伯恩斯坦把目标价从 400 砍到 200，分析师之间分歧在扩大。",
+   "watch": "11-17 财报：数据中心收入和毛利率、下季指引、管理层是否重申路线图；董事会继任人选；司法部调查进展；博通 / AMD 的 AI 订单是否真的加速。",
    "src": [
     [
-     "CNBC：英伟达反弹，黄仁勋仍受审视（11-11）",
-     "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
+     "英伟达公告：CEO 交接",
+     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
     ],
     [
-     "CNBC：英伟达聘请 Wachtell Lipton 主导调查（11-10）",
-     "https://www.cnbc.com/2026/11/10/nvidia-wachtell-lipton-huang-affair.html"
+     "CNBC：英伟达收跌逾 4%，伯恩斯坦下调目标价",
+     "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
     ],
     [
-     "CNBC：英伟达因黄仁勋事件连续第二天下跌（11-10）",
-     "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html"
-    ],
-    [
-     "Al Jazeera（路透）：特朗普称 FBI 调查黄仁勋事件",
-     "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
+     "TechCrunch：黄仁勋辞职，Kress 任临时 CEO",
+     "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"
     ]
    ]
   },
@@ -1168,15 +1309,19 @@
    ]
   },
   "NBIS": {
-   "date": "2026-11-08",
+   "date": "2026-11-12",
    "dir": "分化",
-   "text": "与微软、Meta 的合同合计约 490 亿美元，两个客户都是投资级。但建设资金依赖可转债和短期贷款；同类公司 Nscale 被微软放弃扩容，说明大客户在挑能确定拿到电的位置。",
-   "miss": "收入预期默认产能按期上线；电力接入或融资延误会直接推迟收入，而这类延误往往在财报当季才披露。",
-   "watch": "季度资本开支与上线容量、现金余额、短期贷款的再融资。",
+   "text": "需求端顺风：三季度收入 9.81 亿美元（+571%），据 DataCenterDynamics 当季签约约 120 亿美元，2027 收入指引 120~130 亿高于一致预期。逆风在交付和融资：2026 收入因产能延迟落到 30~34 亿区间下沿，2026 资本开支上调到约 270 亿、2027 年 400~450 亿美元，当季新借债 57.5 亿美元，CEO 也承认资本市场“近来不稳”。",
+   "miss": "前瞻估值按 2027 收入一致预期算，默认产能按期上线、融资顺畅；没有反映资本开支远超预期带来的股权稀释 / 债务成本，以及“签约 → 上线 → 确认收入”之间越来越长的时滞（判断）。",
+   "watch": "每季上线兆瓦数、资本开支与经营现金流的缺口、新增债务利率和股权融资、2027 收入指引是否维持。",
    "src": [
     [
-     "DataCenterDynamics：微软未行使 Nscale 扩容选择权",
-     "https://www.datacenterdynamics.com/en/news/microsoft-declined-option-for-expanded-compute-contract-in-texas-with-nscale/"
+     "CNBC：Nebius 跌 16%，资本开支上调、指引偏弱",
+     "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
+    ],
+    [
+     "DataCenterDynamics：Nebius 三季度签约 120 亿美元",
+     "https://www.datacenterdynamics.com/en/news/nebius-signs-12bn-in-deals-for-q3-all-deals-reportedly-cover-its-capex/"
     ]
    ]
   },
@@ -1497,32 +1642,44 @@
    ]
   },
   "CSCO": {
-   "date": "2026-11-10",
+   "date": "2026-11-12",
    "dir": "顺风",
-   "text": "AI 网络正在成为思科的第二增长曲线：FY26 超大规模客户 AI 订单合计 93 亿美元（四季度单季 40 亿），公司预计 FY27 来自超大规模客户的 AI 基础设施收入约 75 亿美元；除超大规模客户外产品订单也在增长。逆风是硬件占比上升和存储成本推高，四季度毛利率下降 210bp，一季度指引 65~66%。",
-   "miss": "前瞻估值按一致预期的 EPS 算，没有反映 AI 网络订单在超大规模客户之间的集中度、与 Arista / 英伟达以太网的份额竞争，以及存储涨价对硬件毛利的持续挤压（判断）。",
-   "watch": "11-12 财报：超大规模客户 AI 订单、产品订单增速、毛利率是否守住 65%、FY27 全年指引。",
+   "text": "AI 网络已成为思科的第二增长曲线并在加速：一季度收入 185 亿美元（+24%），网络 +43% 至 111 亿，FY27 收入指引上调到 748~758 亿，超大规模客户 AI 基础设施收入预期从 75 亿上调到约 90 亿。逆风是硬件占比上升和存储成本推高，毛利率 65.6%（去年 68.1%）。",
+   "miss": "前瞻估值按 EPS 一致预期算，没有反映 AI 网络收入在少数超大规模客户之间的集中度、与 Arista / 英伟达以太网的份额竞争，以及毛利率继续下滑的可能（判断）。",
+   "watch": "超大规模客户 AI 订单 / 收入、产品订单增速、毛利率能否守住 65%、下季营业利润率指引 36~37% 是否兑现。",
    "src": [
     [
-     "Pulse 2.0：思科超大规模客户 AI 订单 93 亿美元、FY27 目标约 75 亿美元收入",
-     "https://pulse2.com/cisco-ai-infrastructure-revenue-targets-7-5-billion-after-hyperscaler-orders-reach-9-3-billion/"
+     "Seeking Alpha：思科一季度超预期并上调全年指引",
+     "https://seekingalpha.com/news/4671741-cisco-edges-up-after-surpassing-q1-estimates-and-raising-full-year-guidance?feed_item_type=news"
+    ],
+    [
+     "StockTitan：思科一季度新闻稿",
+     "https://www.stocktitan.net/news/CSCO/cisco-reports-first-quarter-42972jcsdwos.html"
+    ],
+    [
+     "FourWeekMBA：思科毛利率下降 2.5 个百分点",
+     "https://fourweekmba.com/ai-cisco-gross-margin-fell-2-5-points-as-op-margin-rose-3-4/"
     ]
    ]
   },
   "AMAT": {
-   "date": "2026-11-11",
-   "dir": "分化",
-   "text": "AI 芯片和先进封装拉动设备需求，毛利率过去三个季度从 48.0% 升到 50.3%；公司指引四季度收入约 102.5 亿美元、调整后 EPS 4.02 美元。逆风是中国：上季中国占半导体系统 + 服务收入约 26%，美国据报道在评估新的对华设备出口限制，公司尚未量化影响。上次财报后虽创纪录仍跌 7.5%。",
-   "miss": "前瞻区间按一致预期 EPS（2027 财年约 18.6 美元）算，没有扣除可能的对华限制；设备行业跟随晶圆厂资本开支周期，2027 年存储厂扩产能否延续是关键假设（判断）。",
-   "watch": "11-12 财报的 2027 财年指引、中国收入占比、毛利率能否站稳 50%、DRAM / 先进逻辑订单。",
+   "date": "2026-11-12",
+   "dir": "顺风",
+   "text": "AI 芯片和先进封装带动设备需求：FY26 四季度收入 104.1 亿美元（+53%），半导体系统部门据报道 +64%，全年收入 344.5 亿（+21%），一季度指引 111 亿 ±5 亿继续环比增长。逆风是对华销售受出口管制和中国客户需求放缓的影响，以及设备周期本身的波动。",
+   "miss": "一致预期按目前的晶圆厂资本开支外推；没有充分反映 AI 资本开支一旦放缓时设备订单的弹性（设备是周期放大器），也没有反映出口管制收紧对中国收入的下行风险（判断）。",
+   "watch": "一季度实际收入与指引、半导体系统部门增速、中国收入占比、存储和先进逻辑客户的资本开支指引。",
    "src": [
     [
-     "Yahoo：应用材料四季度财报前瞻",
-     "https://finance.yahoo.com/markets/stocks/articles/applied-materials-fiscal-q4-2026-180759731.html"
+     "应用材料 FY26 四季度新闻稿",
+     "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
     ],
     [
-     "Benzinga：应用材料周四财报看点",
-     "https://www.benzinga.com/trading-ideas/movers/26/11/63141048/applied-materials-earnings-due-thursday-what-investors-need-to-know"
+     "Benzinga：应用材料四季度与一季度指引",
+     "https://www.benzinga.com/markets/earnings/26/11/63224703/applied-materials-reports-q4-earnings-raises-guidance-as-ai-drives-strong-chip-demand"
+    ],
+    [
+     "InvestingLive：指引与一致预期对比",
+     "https://investinglive.com/stocks/applied-materials-beats-on-q4-and-guides-above-forecasts-as-chip-equipment-demand-holds/"
     ]
    ]
   },
@@ -1579,6 +1736,74 @@
     [
      "安川电机 2026 财年二季度说明资料",
      "https://www.yaskawa-global.com/wp-content/uploads/2026/10/20261009_haifu_en.pdf"
+    ]
+   ]
+  },
+  "SMCI": {
+   "date": "2026-11-12",
+   "dir": "逆风",
+   "text": "AI 服务器需求本身是顺风，基本面分数 93；但合规风险反复出现：3 月联合创始人因走私英伟达服务器到中国被起诉，11-12 据彭博司法部又在查与 Alice Huang 有关的实体（含 Megaspeed）是否走私超微产品。公司不是被告并配合调查，但客户和供应商（英伟达配货）可能因此更谨慎。",
+   "miss": "前瞻区间按 EPS 一致预期算，没有反映出口管制调查可能带来的罚款、客户流失或英伟达配货收紧；AI 服务器组装本身毛利率低、同质化强，竞争对手（戴尔、HPE、富士康等）在抢份额（判断）。",
+   "watch": "司法部调查是否把公司列为对象、季度毛利率、来自大客户的订单集中度、英伟达新平台的配货节奏。",
+   "src": [
+    [
+     "Quartz：司法部调查与 Alice Huang 有关的实体走私超微产品",
+     "https://qz.com/justice-department-alice-huang-super-micro-smuggling-china-111226"
+    ],
+    [
+     "Investing.com：超微因司法部调查扩大而下跌",
+     "https://uk.investing.com/news/stock-market-news/super-micro-shares-tumble-as-doj-probes-widen-to-nvidia-semafor-reports-4978383"
+    ]
+   ]
+  },
+  "SPCX": {
+   "date": "2026-11-12",
+   "dir": "分化",
+   "text": "顺风：星链用户和发射业务现金流、星舰进展（第 15 次试飞定在 11-13），以及据报道在德州和亚利桑那州规划的大型 AI 园区。不确定性：据彭博与特斯拉的合并谈判在推进、最快 12 月宣布，若成行公司会变成“航天 + 电动车 + AI”的混合体；星链在乌克兰的限速争议也在增加客户对单一控制人的顾虑。",
+   "miss": "34 位分析师的 2027 EPS 预期分歧极大（前瞻区间 10~161~687），中值没有意义；合并的换股比例和治理结构、马斯克个人的关键人风险、星链地缘政治声誉风险都没有在一致预期里（判断）。",
+   "watch": "合并条款是否公布、星舰试飞结果、星链用户数和 ARPU、AI 园区资本开支的融资方式。",
+   "src": [
+    [
+     "彭博：SpaceX 与特斯拉合并谈判推进",
+     "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
+    ],
+    [
+     "Electrek：SpaceX 可能 12 月宣布合并",
+     "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/"
+    ],
+    [
+     "Investing.com（路透）：谈判进展",
+     "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+    ]
+   ]
+  },
+  "GT": {
+   "date": "2026-11-12",
+   "dir": "逆风",
+   "text": "固特异在自动驾驶链里是卡车 / 挂车轮胎供应商，但公司本身在转型泥潭：三季度净亏损 2.38 亿美元，分部营业利润 1.74 亿（去年 2.87 亿），管理层自己说表现“低于预期”；2026 自由现金流指引从流出 2~3 亿扩大到流出 3~4 亿，长期债务从年初 53.3 亿升到 60.3 亿，CFO 仍是临时。亮点是 18 寸以上高端轮胎占比升到 44%。",
+   "miss": "前瞻区间按企业价值 / 销售额算，债务多、股本薄，所以区间下沿为 0、到中值空间 +170% 只是杠杆的放大效果，不代表低估；现金持续流出和再融资风险没有体现（判断）。",
+   "watch": "自由现金流是否转正、长期债务和利息、北美分部利润率、正式 CFO 人选。",
+   "src": [
+    [
+     "Finviz：固特异三季度不及预期、现金流出扩大",
+     "https://finviz.com/news/417338/goodyear-misses-as-sequential-rebound-falls-short-wider-cash-burn-and-target-free-transformation-reset-the-story"
+    ],
+    [
+     "Tyre Press：固特异三季度净亏损 2.38 亿美元",
+     "https://www.tyrepress.com/2026/11/goodyear-reports-238-million-net-loss/"
+    ]
+   ]
+  },
+  "CMTL": {
+   "date": "2026-11-12",
+   "dir": "分化",
+   "text": "Comtech 在做“瘦身转型”：把大部分卫星与空间通信业务以 1.575 亿美元卖给 Gilat 来降债，聚焦公共安全（Allerium）业务；FY26 收入 2.496 亿美元（去年 3.009 亿，主要因低毛利陆军合同结束），持续经营调整后 EBITDA +26% 至 2060 万，年末流动性 6130 万，连续六个季度经营现金流为正。",
+   "miss": "只有 2 位分析师覆盖，前瞻区间（0.23~2.49~5.27）可信度低；出售卫星业务后它在航天地面站零件里的位置已经变弱，剩下的公共安全业务受地方政府预算节奏影响；优先股和次级债条款的稀释风险没有进入估值（判断）。",
+   "watch": "公共安全业务的订单和积压（各来源口径不一）、剩余债务和优先股条款、年度降本 1600~1800 万是否兑现。",
+   "src": [
+    [
+     "Benzinga：Comtech FY26 四季度电话会纪要",
+     "https://www.benzinga.com/node/62372667"
     ]
    ]
   }

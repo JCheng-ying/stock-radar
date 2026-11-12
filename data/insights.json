@@ -2883,5 +2883,391 @@
     ]
    }
   ]
+ },
+ "ai/agent/sec": {
+  "also": [
+   "ai/assistant/aisec"
+  ],
+  "updated": "2026-11-12",
+  "note": "Agent 安全分成三条路线：① 身份派（Okta、SailPoint、Palo Alto 收购的 CyberArk）认为 Agent 首先是一个“非人身份”，要发凭证、限权限、能一键吊销；② 网络 / 边界派（Zscaler、Cloudflare、Palo Alto Prisma AIRS、Fortinet）在流量经过的地方检查提示词、拦截数据外泄；③ 终端 / 数据派（CrowdStrike、SentinelOne、Rubrik、Varonis）盯住 Agent 在机器和数据上实际做了什么、出事能回滚。目前各家披露的 AI 安全收入都还很小（Prisma AIRS、Zscaler AI Protect 各约 1 亿美元量级），主要靠老业务带动。",
+  "companies": {
+   "CRWD": {
+    "products": "Falcon 平台、Charlotte AI（安全 Agent）、Charlotte AI AgentWorks（无代码构建安全 Agent）、AIDR、Agentic MDR",
+    "what": "装在电脑和服务器上的安全软件，实时看每台机器上发生了什么；现在把监控对象扩展到 AI Agent 的行为，并用自己的 AI Agent 帮安全团队自动处理告警。",
+    "diff": "终端数据最多，定位“AI 安全基础设施”；FY27 一季度 ARR 55.1 亿美元（+24%），上调全年净新增 ARR 增速指引；与 OpenAI、Anthropic 发起 QuiltWorks 安全联盟。",
+    "ties": "OpenAI、Anthropic（QuiltWorks）、AWS、英伟达（AgentWorks）、IBM（ATOM 平台集成）",
+    "src": [
+     [
+      "CrowdStrike FY27 一季度新闻稿",
+      "https://www.01net.it/crowdstrike-reports-first-quarter-fiscal-year-2027-financial-results/"
+     ]
+    ]
+   },
+   "PANW": {
+    "products": "Prisma AIRS（AI 运行时安全，含收购的 Protect AI）、CyberArk 身份安全（2026 年 2 月完成收购）、防火墙与 SASE",
+    "what": "在企业网络和云上检查进出 AI 模型和 Agent 的流量，拦截提示词注入和数据外泄；CyberArk 管“谁有特权账号”，延伸到给 Agent 的权限。",
+    "diff": "唯一同时覆盖网络、云和特权身份的大平台；Prisma AIRS 据公司称上线四个季度 ARR 超过 1 亿美元，已与 Google Vertex AI / Agent Engine、Salesforce、IBM 集成；FY27 收入指引 141~142 亿美元（+23~24%），CyberArk 并入后从 FY27 起单列身份安全分部。",
+    "ties": "Google Cloud、Salesforce、IBM（Prisma AIRS 集成）",
+    "src": [
+     [
+      "Zacks：Prisma AIRS 能否成为 Palo Alto 的下一个增长引擎",
+      "https://www.zacks.com/stock/news/2823352/can-prisma-airs-become-palo-alto-networks-next-major-growth-engine"
+     ],
+     [
+      "Calcalist：Palo Alto 整合 CyberArk 进展",
+      "https://www.calcalistech.com/ctechnews/article/sjcth26lml"
+     ]
+    ]
+   },
+   "ZS": {
+    "products": "Zero Trust Exchange、AI Protect、数据安全",
+    "what": "把企业员工和应用之间的网络流量都绕经 Zscaler 的云端检查站，现在也检查员工和 Agent 调用 AI 服务时传了什么数据。",
+    "diff": "FY26 收入 33.5 亿美元（+25%），ARR 37.7 亿；AI Protect 过去 12 个月订单超过 1 亿美元；入选微软 Entra Agent ID 早期合作伙伴。",
+    "ties": "微软（Entra Agent ID）",
+    "src": [
+     [
+      "Pulse 2.0：Zscaler FY26 收入 33.5 亿美元、ARR 37.7 亿",
+      "https://pulse2.com/zscaler-fiscal-2026-revenue-jumps-25-to-3-35-billion-as-arr-reaches-3-77-billion/"
+     ],
+     [
+      "Nasdaq（Zacks）：Zscaler 押注 AI Agent 安全",
+      "https://www.nasdaq.com/articles/zscaler-bets-ai-agents-can-it-become-major-growth-catalyst"
+     ]
+    ]
+   },
+   "NET": {
+    "products": "Workers（边缘计算 / Agent 运行环境）、Zero Trust、AI Gateway、为 Claude Managed Agents 提供的隔离沙箱",
+    "what": "在全球边缘网络上既给 Agent 提供运行的地方，又在流量入口做安全和限流；相当于“Agent 的高速公路 + 收费站”。",
+    "diff": "三季度收入 7.825 亿美元（+39%，近四年最快），年化收入首次超过 30 亿；公司称 Agent 工作负载是增长原因之一，但没有单独披露 Agent 收入；GAAP 毛利率从 74.0% 降到 71.2%。",
+    "ties": "Anthropic（Claude Managed Agents 沙箱）、某 AI 公司 1100 万美元 Workers 合同（未具名）",
+    "src": [
+     [
+      "Cloudflare 三季度财报（SEC 8-K 附件）",
+      "https://www.sec.gov/Archives/edgar/data/0001477333/000147733326000060/q326exhibit991.htm"
+     ],
+     [
+      "PPC Land：Cloudflare 收入 +39%，近四年最快",
+      "https://ppc.land/cloudflare-revenue-gains-39-to-782-5m-fastest-growth-in-nearly-four-years/"
+     ]
+    ]
+   },
+   "OKTA": {
+    "products": "Agent SSO（基于 Cross App Access 开放标准）、Agent Gateway、Universal Directory、Auth0",
+    "what": "给每个 AI Agent 发一个“工牌”：登记在目录里、用短时效令牌代替写死的密码，权限只给到需要的范围，出事能一键吊销。",
+    "diff": "身份派的代表，Agent SSO 并入核心 SSO 套餐、不额外收费（先抢标准）；把 XAA 与 MCP 结合，Agent Gateway 做运行时策略执行点。以上主要是公司自己的说法，缺少独立客户数据。",
+    "ties": "Cross App Access 生态伙伴",
+    "src": [
+     [
+      "Okta：Agent SSO 正式发布",
+      "https://okta.com/newsroom/press-releases/okta-brings-first-class-identity-to-ai-agents-with-agent-sso/"
+     ],
+     [
+      "SiliconANGLE：Okta 扩大 Cross App Access 生态",
+      "https://siliconangle.com/2026/06/23/okta-expands-cross-app-access-ecosystem-secure-ai-agent-connections/"
+     ]
+    ]
+   },
+   "S": {
+    "products": "Singularity 平台、Purple AI、Prompt Security（2025 年以 1.8 亿美元收购）",
+    "what": "终端安全软件，加上专门管“员工和 Agent 怎么用 AI”的 Prompt Security，防止敏感数据被贴进 AI 工具。",
+    "diff": "FY27 一季度总 ARR +23%、净新增 ARR 4400 万美元（创纪录），AI 安全 ARR 据公司称“又接近翻倍”（基数未披露）；二季度做了约 2500 万美元的重组。",
+    "ties": "—",
+    "src": [
+     [
+      "Nasdaq：SentinelOne 一季度电话会要点",
+      "https://www.nasdaq.com/articles/sentinelone-q1-earnings-call-highlights"
+     ]
+    ]
+   },
+   "RBRK": {
+    "products": "Rubrik Security Cloud、Rubrik Agent Cloud（RAC）、Agent Rewind",
+    "what": "原本做数据备份和勒索软件恢复；现在自动发现企业里的 AI Agent、给它们加实时护栏，Agent 改错了数据可以回滚。",
+    "diff": "FY27 二季度收入 4.273 亿美元（约 +38%），大幅超指引；Agent Cloud 已上架 Google Gemini Enterprise Agent 平台，但公司称对 FY27 指引影响不大。",
+    "ties": "Google Cloud（Gemini Enterprise Agent Platform）",
+    "src": [
+     [
+      "Blocks and Files：Rubrik 收入大幅超指引",
+      "https://www.blocksandfiles.com/data-protection/2026/08/28/rubrik-revenues-roar-ahead/5293217"
+     ]
+    ]
+   },
+   "FTNT": {
+    "products": "FortiGate 防火墙、FortiSASE、FortiAI",
+    "what": "卖硬件防火墙和云端安全服务，靠自研芯片把成本压低；AI 主要用在自己的安全运营产品里。",
+    "diff": "三季度收入 20.8 亿美元（+20%）、账单 23.4 亿（+29%），上调全年账单指引；但服务收入增长放缓、下调全年服务指引，盘后一度 −25%。Agent 安全不是它的主要叙事。",
+    "ties": "—",
+    "src": [
+     [
+      "Zacks：Fortinet 三季度收入超预期",
+      "https://www.zacks.com/stock/news/3018782/fortinet-q3-earnings-revenues-beat-estimates-increase-yy"
+     ],
+     [
+      "科技新报：Fortinet 产品收入放缓、盘后跌 25%",
+      "https://finance.technews.tw/2026/10/29/fortinet-shares-plunge-25-after-hours-as-growth-slows/"
+     ]
+    ]
+   },
+   "VRNS": {
+    "products": "Varonis 数据安全平台（SaaS）",
+    "what": "盯住企业文件和数据库里“谁能看什么、谁动了什么”；Copilot 一类 AI 助手能读的数据越多，越需要先把权限理清。",
+    "diff": "三季度 SaaS ARR 7.746 亿美元（+42%，剔除本地版转换后 +24%）；Proofpoint 以每股 49.75 美元现金收购待完成，公司不再开电话会。",
+    "ties": "Proofpoint（收购方）",
+    "src": [
+     [
+      "Finviz：Varonis 三季度财报",
+      "https://finviz.com/news/414720/varonis-announces-third-quarter-2026-financial-results"
+     ],
+     [
+      "Panabee：Varonis SaaS ARR 7.75 亿美元，Proofpoint 收购待完成",
+      "https://www.panabee.com/news/varonis-earnings-q3-2026"
+     ]
+    ]
+   },
+   "SAIL": {
+    "products": "Agent Identity Security、Machine Identity Security、身份治理",
+    "what": "管理“谁该有什么权限”的审批和定期复核；现在把 AI Agent 也纳入同一套账本，找出每个 Agent 归谁负责。",
+    "diff": "强在治理和归属关系，但据 IDMWorks 评估它不是大多数 Agent 实时访问的“发证方”（Okta、微软 Entra 才是）。",
+    "ties": "—",
+    "src": [
+     [
+      "IDMWorks：在 Okta、Ping、SailPoint、Saviynt 里治理 AI Agent",
+      "https://www.idmworks.com/insight/governing-ai-agents/"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "PANW",
+    "b": "CYBR",
+    "type": "收购",
+    "desc": "Palo Alto 2026 年 2 月完成收购 CyberArk，把特权身份安全并入平台，FY27 起单列身份安全分部。",
+    "src": [
+     "Calcalist：Palo Alto 整合 CyberArk 进展",
+     "https://www.calcalistech.com/ctechnews/article/sjcth26lml"
+    ]
+   },
+   {
+    "a": "CRWD",
+    "b": "OpenAI",
+    "type": "合作",
+    "desc": "CrowdStrike 与 OpenAI、Anthropic 发起 Project QuiltWorks 网络安全联盟，并与 AWS、英伟达、OpenAI 共建 Charlotte AI AgentWorks。",
+    "src": [
+     "CrowdStrike FY27 一季度新闻稿",
+     "https://www.01net.it/crowdstrike-reports-first-quarter-fiscal-year-2027-financial-results/"
+    ]
+   },
+   {
+    "a": "CRWD",
+    "b": "IBM",
+    "type": "合作",
+    "desc": "CrowdStrike 把 Charlotte AI 集成进 IBM 的 ATOM 安全运营平台。",
+    "src": [
+     "CrowdStrike FY27 一季度新闻稿",
+     "https://www.01net.it/crowdstrike-reports-first-quarter-fiscal-year-2027-financial-results/"
+    ]
+   },
+   {
+    "a": "PANW",
+    "b": "GOOGL",
+    "type": "合作",
+    "desc": "Prisma AIRS 与 Google Cloud 的 Vertex AI 和 Agent Engine 集成。",
+    "src": [
+     "Zacks：Prisma AIRS 能否成为 Palo Alto 的下一个增长引擎",
+     "https://www.zacks.com/stock/news/2823352/can-prisma-airs-become-palo-alto-networks-next-major-growth-engine"
+    ]
+   },
+   {
+    "a": "ZS",
+    "b": "MSFT",
+    "type": "合作",
+    "desc": "Zscaler 是微软 Entra Agent ID 生态的早期合作伙伴。",
+    "src": [
+     "Nasdaq（Zacks）：Zscaler 押注 AI Agent 安全",
+     "https://www.nasdaq.com/articles/zscaler-bets-ai-agents-can-it-become-major-growth-catalyst"
+    ]
+   },
+   {
+    "a": "NET",
+    "b": "Anthropic",
+    "type": "供应",
+    "desc": "Cloudflare 为 Claude Managed Agents 提供边缘隔离沙箱。",
+    "src": [
+     "Rallies：Cloudflare 为 Claude Agent 推出沙箱",
+     "https://rallies.ai/news/cloudflare-launches-secure-scalable-sandboxes-for-claude-agents-zscaler-logs-26-q2-growth"
+    ]
+   },
+   {
+    "a": "RBRK",
+    "b": "GOOGL",
+    "type": "合作",
+    "desc": "Rubrik Agent Cloud 上架 Google Gemini Enterprise Agent 平台。",
+    "src": [
+     "Blocks and Files：Rubrik 收入大幅超指引",
+     "https://www.blocksandfiles.com/data-protection/2026/08/28/rubrik-revenues-roar-ahead/5293217"
+    ]
+   },
+   {
+    "a": "OKTA",
+    "b": "SAIL",
+    "type": "竞争",
+    "desc": "Agent 身份两种路线：Okta 发凭证、做实时访问代理；SailPoint 治理它不签发的 Agent 身份。",
+    "src": [
+     "IDMWorks：在 Okta、Ping、SailPoint、Saviynt 里治理 AI Agent",
+     "https://www.idmworks.com/insight/governing-ai-agents/"
+    ]
+   },
+   {
+    "a": "Proofpoint",
+    "b": "VRNS",
+    "type": "收购",
+    "desc": "Proofpoint 以每股 49.75 美元现金收购 Varonis，交易待完成。",
+    "src": [
+     "Panabee：Varonis SaaS ARR 7.75 亿美元，Proofpoint 收购待完成",
+     "https://www.panabee.com/news/varonis-earnings-q3-2026"
+    ]
+   }
+  ]
+ },
+ "ai/agent/svc": {
+  "updated": "2026-11-12",
+  "note": "IT 服务商面对的是“AI 同时是订单和替代者”：一边帮企业把 AI 接进流程拿新项目，一边 AI 编程让按人头计价的老业务降价。目前大多数公司总收入只有个位数增长（埃森哲 +7%、Cognizant 约 +5%、EPAM +2%、IBM 咨询持平），AI 收入多不再单独披露或占比约 10%~13%；分歧在于谁能把计价方式从“人天”换成“成果 / 平台订阅”。",
+  "companies": {
+   "ACN": {
+    "products": "咨询 + 系统集成 + 托管服务，Accenture 的高级 AI 业务",
+    "what": "最大的 IT 服务商，帮大企业规划和实施 AI 项目，从战略到写代码再到长期运维。",
+    "diff": "FY26 四季度收入 187 亿美元（本币 +7%），全年订单创纪录 845 亿美元，四季度订单出货比 1.2；FY26 新增 400 多家首次做高级 AI 项目的客户，但从 FY26 一季度起不再单独披露 AI 订单和收入。财报前股价年内跌约 32%（担心被 AI 替代），财报后单日大涨。",
+    "ties": "—",
+    "src": [
+     [
+      "Constellation Research：埃森哲四季度显示企业 AI 在扩散",
+      "https://www.constellationr.com/insights/news/accentures-q4-results-indicate-enterprise-ai-broadening"
+     ],
+     [
+      "Stocktwits：埃森哲全年订单创纪录 845 亿美元",
+      "https://stocktwits.com/news-articles/markets/equity/acn-stock-7-month-high-record-booking-q4-earnings-beat/cZD0cMTRBiV"
+     ]
+    ]
+   },
+   "IBM": {
+    "products": "IBM Consulting、watsonx、与 CrowdStrike 等合作的安全服务",
+    "what": "IBM 的咨询部门帮企业落地 AI，并顺带卖 IBM 自己的软件和混合云平台。",
+    "diff": "三季度咨询收入约 53 亿美元（持平，本币 +2%），签约 50 亿美元（本币 −2%）；生成式 AI 已嵌入占咨询积压 35% 的项目，但 AI 订单增长连续两个季度没有带动咨询总收入。",
+    "ties": "CrowdStrike（Charlotte AI 集成 ATOM 平台）",
+    "src": [
+     [
+      "Constellation Research：IBM 三季度",
+      "https://www.constellationr.com/insights/news/ibm-delivers-strong-q3-sees-4-5-revenue-growth-2026"
+     ],
+     [
+      "FourWeekMBA：生成式 AI 占 IBM 咨询积压 35%",
+      "https://fourweekmba.com/ai-ibm-raises-cash-goal-genai-in-35-of-its-consulting-backlog/"
+     ]
+    ]
+   },
+   "CTSH": {
+    "products": "应用开发与维护、Agentic AI 服务",
+    "what": "以印度交付团队为主的 IT 外包商，帮美国企业维护系统，现在用 AI 编程提高交付效率、并承接 Agent 项目。",
+    "diff": "三季度收入 56.6 亿美元（+4.6%），全年本币增速指引收窄到 4%~4.4%（年初 4%~6.5%），称客户决策推迟；超过一半代码由 AI 辅助，8500 多个 AI 项目，但不单独披露 AI 收入；财报日股价约 −5.5%。",
+    "ties": "—",
+    "src": [
+     [
+      "YourStory：Cognizant 三季度收入 +4.6%、下调全年增速",
+      "https://yourstory.com/enterprise-story/2026/10/cognizant-records-46-rise-in-revenues-in-q3-but-lowers-annual-growth-guidance"
+     ],
+     [
+      "CRN Asia：Cognizant CEO 谈 Agentic AI",
+      "https://www.crnasia.com/india/news/2026/cognizant-q3-earnings-we-view-agentic-ai-as-the-most-significant-enterprise-opportunity-since-digitisation-ceo-says"
+     ]
+    ]
+   },
+   "EPAM": {
+    "products": "软件工程服务、AI 原生（AI-native）服务",
+    "what": "高端软件工程外包，替客户写复杂系统；现在把 AI 原生项目单独统计。",
+    "diff": "三季度收入约 14.3 亿美元（+2.3%），AI 原生收入超过 1.85 亿（约占 13%），全年 AI 原生目标从 6 亿上调到至少 6.5 亿，并公布 18 亿美元回购；四季度收入指引略低于预期。Susquehanna 认为三笔大单改善了 2027 能见度。",
+    "ties": "—",
+    "src": [
+     [
+      "StockStory：EPAM 三季度深度解读",
+      "https://stockstory.org/us/stocks/nyse/epam/news/earnings-call/epam-q3-2026-deep-dive-ai-native-services-drive-growth-as-north-america-stabilizes"
+     ],
+     [
+      "BigGo：EPAM 上调 AI 原生收入目标到 6.5 亿美元",
+      "https://finance.biggo.com/news/US_EPAM_2026-11-05"
+     ],
+     [
+      "Investing.com：Susquehanna 列出 AI 时代的 9 只 IT 股",
+      "https://uk.investing.com/news/stock-market-news/susquehanna-financial-names-its-aiera-winners-9-it-stocks-to-watch-4975956"
+     ]
+    ]
+   },
+   "GLOB": {
+    "products": "AI Pods（按 AI 产能订阅的交付模式）、数字化工作室",
+    "what": "拉美为主的数字化服务商，在试“按 AI 交付单元订阅”代替按人头收费。",
+    "diff": "二季度下调 2026 收入指引到 24.28~24.62 亿美元；预计年底 AI 年化收入超过 1.1 亿（原 0.6~1 亿）。三季度结果未查到。",
+    "ties": "—",
+    "src": [
+     [
+      "Investing.com：Globant 二季度电话会，下调 2026 指引",
+      "https://www.investing.com/news/transcripts/earnings-call-transcript-globant-trims-2026-outlook-as-ai-pods-gain-traction-in-q2-2026-93CH-4859486"
+     ]
+    ],
+    "unverified": true
+   },
+   "INFY": {
+    "products": "Topaz（AI 平台）、应用服务、大额外包",
+    "what": "印度第二大 IT 服务商，靠大额多年外包合同；用 AI 提效的同时被客户要求降价。",
+    "diff": "据 Susquehanna 报告，二季度大单合同额 52 亿美元，AI 收入环比 +29%、占收入 10.5%，但定价压缩抵消了 AI 新业务，FY27 本币增速指引下调到 1%~2%（一季度时为 1.5%~3%，两处口径未能核实一致）。",
+    "ties": "—",
+    "src": [
+     [
+      "Investing.com：Susquehanna 列出 AI 时代的 9 只 IT 股",
+      "https://uk.investing.com/news/stock-market-news/susquehanna-financial-names-its-aiera-winners-9-it-stocks-to-watch-4975956"
+     ]
+    ],
+    "unverified": true
+   },
+   "GIB": {
+    "products": "系统集成、业务流程外包（加拿大 CGI）",
+    "what": "加拿大最大的 IT 服务商，政府和金融客户多。",
+    "diff": "未查到当日来源。",
+    "ties": "—",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "IBM",
+    "b": "CRWD",
+    "type": "合作",
+    "desc": "IBM 把 CrowdStrike 的 Charlotte AI 集成进自己的 ATOM 安全运营服务。",
+    "src": [
+     "CrowdStrike FY27 一季度新闻稿",
+     "https://www.01net.it/crowdstrike-reports-first-quarter-fiscal-year-2027-financial-results/"
+    ]
+   },
+   {
+    "a": "ACN",
+    "b": "CTSH",
+    "type": "竞争",
+    "desc": "两家都在用 AI 订单对冲按人头计价业务的降价；埃森哲订单创纪录，Cognizant 则下调全年增速。",
+    "src": [
+     "YourStory：Cognizant 三季度收入 +4.6%、下调全年增速",
+     "https://yourstory.com/enterprise-story/2026/10/cognizant-records-46-rise-in-revenues-in-q3-but-lowers-annual-growth-guidance"
+    ]
+   },
+   {
+    "a": "EPAM",
+    "b": "GLOB",
+    "type": "竞争",
+    "desc": "都在把 AI 原生 / AI Pods 收入单独统计以证明转型，EPAM 上调了目标，Globant 下调了总收入指引。",
+    "src": [
+     "StockStory：EPAM 三季度深度解读",
+     "https://stockstory.org/us/stocks/nyse/epam/news/earnings-call/epam-q3-2026-deep-dive-ai-native-services-drive-growth-as-north-america-stabilizes"
+    ]
+   }
+  ]
  }
 }
