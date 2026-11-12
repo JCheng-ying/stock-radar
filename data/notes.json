@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-11",
+    "text": "晚间：联邦调查已由司法部接手，焦点是 Megaspeed 是否帮助中国绕过出口管制——监管风险向公司层面蔓延（情绪面 / 预期面向下）。",
+    "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+   },
+   {
+    "date": "2026-11-11",
     "text": "情绪面小幅修复（+2.9%），但 CEO 事件仍在发酵：众议院中国委员会主席要求说明，摩根士丹利移出首选股；预期面要等 11-17 财报。",
     "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-09",
     "text": "盘后：管理层风险升级——特朗普称 FBI 在调查，股东提起集体诉讼（情绪面/预期面负向）。",
     "url": "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
-   },
-   {
-    "date": "2026-11-09",
-    "text": "管理层风险（情绪面/预期面，负向）：董事会就 CEO 被指成为外国情报目标启动独立调查，股价在芯片普涨日 −4.27%；产业面和基本面未见变化。",
-    "url": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
    }
   ],
   "ANET": [
@@ -112,6 +112,11 @@
   "CRWV": [
    {
     "date": "2026-11-11",
+    "text": "晚间：融资方式转向客户预付款（未来三个月约 90 亿美元）和短期高价合同——提升利润但加大续约和定价风险（基本面 / 资金面）。",
+    "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+   },
+   {
+    "date": "2026-11-11",
     "text": "预期面向上：财报后单日 +24.7%，市场接受了“2027 年前不发母公司无担保债、改用合同挂钩担保债”的融资方案和 2028 年上半年调整后盈利的目标；基本面（债务近 470 亿美元）未变。",
     "url": "https://www.detroitnews.com/story/business/2026/11/11/sp-500-nasdaq-rise-as-coreweave-results-ease-ai-spending-worries/92724217007/"
    },
@@ -165,6 +170,11 @@
   "RGTI": [
    {
     "date": "2026-11-11",
+    "text": "晚间：108 比特系统两比特门保真度 99.5%，2028 年中目标 300+ 比特；商务部 CHIPS 资助最高 1 亿美元并取得少数股权（产业面）。",
+    "url": "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/"
+   },
+   {
+    "date": "2026-11-11",
     "text": "基本面向下：三季度收入 141 万美元（同比约 −27%），远低于预期，全年目标取决于 C-DAC 四季度验收，财报后 −8.6%。",
     "url": "https://www.sec.gov/Archives/edgar/data/0001838359/000110465926125152/rgti-ex99d1.htm"
    },
@@ -181,6 +191,11 @@
   ],
   "GOOGL": [
    {
+    "date": "2026-11-11",
+    "text": "Gemini Robotics 2.5 发布，奔驰产线概念验证成功率 96%——机器人模型层的产业面向上。",
+    "url": "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/"
+   },
+   {
     "date": "2026-11-09",
     "text": "产业面/监管（负向，影响较小）：NHTSA 对 Waymo 开启召回质询，2,895 辆车，因软件修复后仍多次违规超越校车。",
     "url": "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/"
@@ -194,6 +209,11 @@
    }
   ],
   "MSFT": [
+   {
+    "date": "2026-11-11",
+    "text": "晚间：Anthropic 新增最多 43 亿美元微软算力协议，合同总额 472~492 亿美元——Azure 的模型客户订单继续增加（基本面向上）。",
+    "url": "https://www.datacenterdynamics.com/en/news/anthropic-signs-another-43bn-in-compute-agreements-with-microsoft/"
+   },
    {
     "date": "2026-11-11",
     "text": "产业面 / 基本面：承诺数据中心电费自付、不要补贴——电力从公共成本变为自有资本开支，利润率承压的方向（判断）。",
@@ -277,6 +297,13 @@
     "text": "预期面待验证：11-12 财报，公司指引收入约 102.5 亿美元、EPS 4.02；对华出口新限制是主要风险，期权隐含波动约 8.8%。",
     "url": "https://finance.yahoo.com/markets/stocks/articles/applied-materials-fiscal-q4-2026-180759731.html"
    }
+  ],
+  "IBM": [
+   {
+    "date": "2026-11-11",
+    "text": "Nighthawk r3：520 个可编程比特上 1 万次操作，2027 年 1040 比特系统（厂商口径）——量子路线图领先，产业面向上。",
+    "url": "https://thequantuminsider.com/2026/11/11/ibm-nighthawk-r3-processor-520-programmable-qubits/"
+   }
   ]
  },
  "sectors": {
@@ -305,6 +332,10 @@
   "quantum": [
    {
     "date": "2026-11-11",
+    "text": "晚间：IBM 公布 2027 年 1040 比特计划，Quantinuum 与软银研究把量子计算机接入 AI 数据中心——量子正在“数据中心化”，大厂在路线图和渠道上领先纯量子小厂。"
+   },
+   {
+    "date": "2026-11-11",
     "text": "三季度财报分化：Rigetti 收入 141 万美元（−27%）远低于预期；D-Wave 收入 +21% 但当季订单 −19%。纯量子公司仍靠单笔大单撑收入。"
    },
    {
@@ -321,6 +352,10 @@
    }
   ],
   "robotics": [
+   {
+    "date": "2026-11-11",
+    "text": "Gemini Robotics 2.5 在奔驰产线概念验证中成功率 96%，机器人模型能力进步，瓶颈向硬件量产和成本转移。"
+   },
    {
     "date": "2026-11-11",
     "text": "一浪（基础设备）升到“财报已改善，价格未反映”：收入、毛利率、EBITDA 利润率、RPO 四项财报检查全部满足，只差价格确认。"
@@ -351,22 +386,22 @@
  "daily": [
   {
    "date": "2026-11-11",
-   "market": "CoreWeave 财报（收入 36.6 亿美元、+168%，积压 1325 亿美元，全年指引上调）缓解了“AI 需求放缓”的担心，AI 硬件全线反弹：CoreWeave +24.7%、美光 +11.9%、Arm +12%、英伟达 +2.9%；据路透初步收盘数据，标普 500 +1.29% 收于 7617.84、纳指 +1.59%，标普科技板块涨近 4%（韩国时报报道的涨幅更大，为 +1.6% / +2.2%，口径不一）。资金面没有改善（24 分不变：10 年期美债 5.00%、一年 +89bp；美元指数 102.9 处于近一年最高分位），这次是预期面驱动的反弹，不是“钱变便宜”。情绪面从 47 升到 52（中性）：VIX 19.5 → 17.5、恐贪指数 37，但三倍杠杆 ETF 成交占比从 81% 分位升到 88% 分位——杠杆在反弹里加得更快。浪位：AI 二浪从“启动初期”回到“财报已改善，价格未反映”（三个月相对强度仍弱，一天反弹不够），机器人一浪从“尚未启动”升到“财报已改善，价格未反映”，机器人三浪和自动驾驶三浪回到“尚未启动”。整体结论：需求端的证据又多了一条，压制仍在融资端和利率端；本周三个验证点是应用材料 / 思科 / Nebius 财报（11-12）、英伟达财报（11-17）和 Anthropic 上市（约 11-19）。今天 Summizer 没有新增文章。",
+   "market": "CoreWeave 财报（收入 36.6 亿美元、+168%，积压 1325 亿美元，全年指引上调）缓解了“AI 需求放缓”的担心，AI 硬件全线反弹：CoreWeave +24.7%、美光 +11.9%、Arm +12%、英伟达 +2.9%；据路透初步收盘数据，标普 500 +1.29% 收于 7617.84、纳指 +1.59%，标普科技板块涨近 4%（韩国时报报道的涨幅更大，为 +1.6% / +2.2%，口径不一）。资金面没有改善（24 分不变：10 年期美债 5.00%、一年 +89bp；美元指数 102.9 处于近一年最高分位），这次是预期面驱动的反弹，不是“钱变便宜”。情绪面从 47 升到 52（中性）：VIX 19.5 → 17.5、恐贪指数 37，但三倍杠杆 ETF 成交占比从 81% 分位升到 88% 分位——杠杆在反弹里加得更快。浪位：AI 二浪从“启动初期”回到“财报已改善，价格未反映”（三个月相对强度仍弱，一天反弹不够），机器人一浪从“尚未启动”升到“财报已改善，价格未反映”，机器人三浪和自动驾驶三浪回到“尚未启动”。整体结论：需求端的证据又多了一条，压制仍在融资端和利率端；本周三个验证点是应用材料 / 思科 / Nebius 财报（11-12）、英伟达财报（11-17）和 Anthropic 上市（约 11-19）。今天 Summizer 没有新增文章。 【晚间更新，含当晚 Summizer 新增的 14 篇】需求端又多了两条证据：据彭博，OpenAI 三季度收入首次超过 100 亿美元（二季度约 67 亿，环比近 +50%），调整后经营利润率从 −150% 收窄到 −109%；Anthropic 新增与微软最多 43 亿美元的算力协议，承诺支出合计约 8954 亿美元。但融资和选址两端的约束也更具体了：CoreWeave 未来三个月预计收到约 90 亿美元客户预付款、转向更短期、更高价的合同（短期售价每兆瓦每年超过 4000 万美元），Anthropic 与 Lambda 的 349 亿美元合同因 Lambda 没按期拿到机房租约而变成双方可终止；堪萨斯州 Ottawa 以 71.85% 赞成票通过 25MW 以上数据中心十年禁令。结论不变：需求在加速，瓶颈在钱、电和地。",
    "sectors": {
-    "ai": "预期面向上：CoreWeave 三季度收入超预期、全年收入指引上调到 130~133 亿美元、调整后营业利润指引上调到 12.75~13.75 亿美元，并称 2028 年上半年实现调整后盈利；Anthropic 修订的 IPO 文件显示 10 月底年化收入约 810 亿美元（9 月底约 710 亿），定价区间 70~78 美元。产业面：微软承诺数据中心电费“自己付”、不让其他用户分摊，说明电力成本正在从公共电网转回云厂商自己的资本开支。融资面未变：CoreWeave 债务近 470 亿美元、部分债券收益率超过 16%。",
-    "quantum": "基本面偏弱、分化：Rigetti 三季度收入 141 万美元（同比约 −27%，远低于预期），全年约 2000 万美元的目标取决于印度 C-DAC 四季度验收，股价 −8.6%；D-Wave 三季度收入 450 万美元（+21%），但当季订单只有 190 万美元（−19%），RPO 3830 万美元，现金 5.03 亿美元。两家都还处在“靠单笔大单撑收入”的阶段，产业面没有新变化。",
-    "robotics": "浪位变化：一浪（基础设备）从“尚未启动”升到“财报已改善，价格未反映”——收入、毛利率、EBITDA 利润率、RPO 四项都满足，只差价格；三浪在盘中来回切换后收于“尚未启动”。Cognex 进入“关注买点”。今天没有查证到改变产业面的新闻。",
-    "aerospace": "Rocket Lab 收购 Iridium（约 80 亿美元）仍在等 FCC 批准，据 Broadband Breakfast 报道其他卫星公司对这笔交易并不积极；Rocket Lab 三季度电话会称已通过 ATM 融资 24 亿美元、无需再融资即可完成交易。二浪维持“启动初期”。",
+    "ai": "预期面向上：CoreWeave 三季度收入超预期、全年收入指引上调到 130~133 亿美元、调整后营业利润指引上调到 12.75~13.75 亿美元，并称 2028 年上半年实现调整后盈利；Anthropic 修订的 IPO 文件显示 10 月底年化收入约 810 亿美元（9 月底约 710 亿），定价区间 70~78 美元。产业面：微软承诺数据中心电费“自己付”、不让其他用户分摊，说明电力成本正在从公共电网转回云厂商自己的资本开支。融资面未变：CoreWeave 债务近 470 亿美元、部分债券收益率超过 16%。 【晚间】OpenAI 季度收入首次超过 100 亿美元（彭博，未经公司确认）；Anthropic 三季度出现 5.67 亿美元经营亏损（上季为 9.74 亿美元经营利润），公司归因于短期算力合同；CoreWeave 7 月以来两次提价（约 25%、约 10%），说明算力仍是卖方市场；Lambda 合同变为可终止，说明瓶颈在机房交付而非 GPU。地方禁令和阿曼 400MW、马萨诸塞 900MW 新园区同时出现，选址在向愿意招商的地方转移。",
+    "quantum": "基本面偏弱、分化：Rigetti 三季度收入 141 万美元（同比约 −27%，远低于预期），全年约 2000 万美元的目标取决于印度 C-DAC 四季度验收，股价 −8.6%；D-Wave 三季度收入 450 万美元（+21%），但当季订单只有 190 万美元（−19%），RPO 3830 万美元，现金 5.03 亿美元。两家都还处在“靠单笔大单撑收入”的阶段，产业面没有新变化。 【晚间】IBM 公布 Nighthawk r3：520 个可编程比特上执行 1 万次操作，2027 年两颗互联成 1040 比特系统（厂商口径）；Quantinuum 把 RIKEN 的系统升级到 56 比特 H2，并与软银研究把量子计算机接入 AI 数据中心。Rigetti 公布路线图：108 比特 Cepheus 两比特门中位保真度 99.5%，2028 年中 300+ 比特，另获商务部最高 1 亿美元 CHIPS 资助（商务部获少数股权）。大厂在路线图和渠道上都领先纯量子小厂。",
+    "robotics": "Google DeepMind 发布 Gemini Robotics 2.5（视觉-语言-动作模型），在奔驰产线概念验证中打包零部件成功率 96%，通过 Apptronik、Boston Dynamics、Agile Robots 推出——产业面向上：机器人“大脑”在进步，瓶颈继续向硬件量产和成本转移。 浪位：一浪（基础设备）从“尚未启动”升到“财报已改善，价格未反映”，收入、毛利率、EBITDA 利润率、RPO 四项都满足；三浪收于“尚未启动”。Cognex 进入“关注买点”。",
+    "aerospace": "Rocket Lab 收购 Iridium（约 80 亿美元）仍在等 FCC 批准，据 Broadband Breakfast 报道其他卫星公司对这笔交易并不积极；Rocket Lab 三季度电话会称已通过 ATM 融资 24 亿美元、无需再融资即可完成交易。二浪维持“启动初期”。 【晚间】据《金融时报》，BT 推迟与 Starlink 的合作上线，要等乌克兰断网争议平息——Starlink 的瓶颈开始包括客户对单一控制人的信任（声誉风险，非技术原因）。",
     "autonomous": "无重要新信息（三浪从“价格先行，财报待验证”回到“尚未启动”，属于价格指标的摆动）。"
    },
    "watch": [
     {
      "t": "CRWV",
-     "why": "财报后单日 +24.7% 收于 60.77（四月以来最大单日涨幅）：收入 36.6 亿美元超预期 1.1 亿、积压 1325 亿美元、全年指引上调，并称 2028 年上半年调整后盈利。仍处 2027 前瞻区间（34.3~99.7~209.4）下沿到中值之间，距中值 +64%；债务近 470 亿美元，热度 26。"
+     "why": "财报后单日 +24.7% 收于 60.77（四月以来最大单日涨幅）：收入 36.6 亿美元超预期 1.1 亿、积压 1325 亿美元、全年指引上调，并称 2028 年上半年调整后盈利。仍处 2027 前瞻区间（34.3~99.7~209.4）下沿到中值之间，距中值 +64%；债务近 470 亿美元，热度 26。 晚间：未来三个月预计收到约 90 亿美元客户预付款，转向更短期、更高价合同（短期每兆瓦每年 4000 万美元以上，长期 2000~2500 万），单季利息 8.46 亿美元。"
     },
     {
      "t": "NVDA",
-     "why": "两天累计约 −10% 后反弹 +2.9% 收于 173.73，热度 14，仍在“关注买点”；CEO 事件仍在发酵（众议院中国委员会主席要求说明），摩根士丹利把它移出首选股名单。2027 前瞻区间 128.7~212.8~325.5，距中值 +22%。11-17 财报。"
+     "why": "两天累计约 −10% 后反弹 +2.9% 收于 173.73，热度 14，仍在“关注买点”；CEO 事件仍在发酵（众议院中国委员会主席要求说明），摩根士丹利把它移出首选股名单。2027 前瞻区间 128.7~212.8~325.5，距中值 +22%。11-17 财报。 晚间：TechCrunch 时间线显示联邦调查已由司法部接手，涉及据报道两年采购 48 亿美元英伟达芯片的 Megaspeed 是否帮助绕过出口管制。"
     },
     {
      "t": "MU",
@@ -386,7 +421,7 @@
     },
     {
      "t": "RGTI",
-     "why": "财报后 −8.6% 收于 11.11：三季度收入 141 万美元（同比约 −27%），远低于约 350 万美元的预期，全年约 2000 万美元目标押在 C-DAC 四季度验收；现金 4.97 亿美元、无负债。现价高于 2027 前瞻中值（5.5~9.3~14.5），距中值 −16%。"
+     "why": "财报后 −8.6% 收于 11.11：三季度收入 141 万美元（同比约 −27%），远低于约 350 万美元的预期，全年约 2000 万美元目标押在 C-DAC 四季度验收；现金 4.97 亿美元、无负债。现价高于 2027 前瞻中值（5.5~9.3~14.5），距中值 −16%。 晚间：路线图为 2028 年中 300+ 比特、约 3 年内约 1000 比特；获商务部最高 1 亿美元 CHIPS 资助。"
     },
     {
      "t": "QBTS",
@@ -394,7 +429,15 @@
     },
     {
      "t": "MSFT",
-     "why": "−2.3% 收于 521.12（AI 硬件大涨日逆势下跌）：在彭博新能源财经会议上承诺数据中心电费“自己付”、不要政府补贴、不推高其他用户电价。电力成本内部化会抬高资本开支；同时 Anthropic 发布办公工具直接对标微软。现价在 2027 前瞻中值附近（386.8~527.9~707.4）。"
+     "why": "−2.3% 收于 521.12（AI 硬件大涨日逆势下跌）：在彭博新能源财经会议上承诺数据中心电费“自己付”、不要政府补贴、不推高其他用户电价。电力成本内部化会抬高资本开支；同时 Anthropic 发布办公工具直接对标微软。现价在 2027 前瞻中值附近（386.8~527.9~707.4）。 晚间：Anthropic 新增最多 43 亿美元微软算力协议，合同总额至少 472 亿美元。"
+    },
+    {
+     "t": "IBM",
+     "why": "Nighthawk r3 计划在 520 个可编程比特上执行 1 万次操作，2027 年两颗互联成 1040 比特系统；E.ON、橡树岭国家实验室等客户报告 8~15 倍加速（厂商口径）。大厂路线图对 Rigetti、D-Wave 等纯量子公司形成对比。"
+    },
+    {
+     "t": "GOOGL",
+     "why": "Gemini Robotics 2.5 在奔驰产线概念验证中成功率 96%，通过 Apptronik、Boston Dynamics 等伙伴推出；同日 DeepMind 发布 AlphaGenome 2。机器人模型层的进展主要落在 Google 体内。"
     }
    ],
    "sources": [
@@ -445,6 +488,46 @@
     [
      "Yahoo：应用材料四季度财报前瞻",
      "https://finance.yahoo.com/markets/stocks/articles/applied-materials-fiscal-q4-2026-180759731.html"
+    ],
+    [
+     "TechCrunch：OpenAI 季度收入据报道首次超过 100 亿美元（11-11）",
+     "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/"
+    ],
+    [
+     "DCD：Anthropic 与微软新增 43 亿美元算力协议（11-11）",
+     "https://www.datacenterdynamics.com/en/news/anthropic-signs-another-43bn-in-compute-agreements-with-microsoft/"
+    ],
+    [
+     "TechCrunch：CoreWeave 转向客户预付款和短期合同融资（11-11）",
+     "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/"
+    ],
+    [
+     "DCD：堪萨斯州 Ottawa 通过十年数据中心禁令",
+     "https://www.datacenterdynamics.com/en/news/10-year-data-center-moratorium-approved-in-ottawa-kansas/"
+    ],
+    [
+     "TechCrunch：黄仁勋事件时间线（11-11）",
+     "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+    ],
+    [
+     "The Quantum Insider：IBM Nighthawk r3 与 1040 比特计划",
+     "https://thequantuminsider.com/2026/11/11/ibm-nighthawk-r3-processor-520-programmable-qubits/"
+    ],
+    [
+     "The Quantum Insider：Rigetti 三季度与路线图",
+     "https://thequantuminsider.com/2026/11/11/rigetti-q3-2026-results-quantum-computing-roadmap/"
+    ],
+    [
+     "SiliconANGLE：Gemini Robotics 2.5 发布",
+     "https://siliconangle.com/2026/11/11/google-deepmind-releases-new-advanced-robotics-ai-model-and-next-generation-gene-prediction-model/"
+    ],
+    [
+     "DCD：Quantinuum 升级 RIKEN 系统并与软银合作",
+     "https://www.datacenterdynamics.com/en/news/quantinuum-upgrades-quantum-computer-at-riken-partners-with-softbank-for-ai-data-center-deployments/"
+    ],
+    [
+     "DCD：BT 推迟 Starlink 合作",
+     "https://www.datacenterdynamics.com/en/news/bt-delays-starlink-partnership-amid-recent-ukrainian-disruption-report/"
     ]
    ]
   },
@@ -874,7 +957,7 @@
    ]
   }
  ],
- "updated": "2026-11-11T14:28",
+ "updated": "2026-11-11T20:22",
  "trend": {
   "NVDA": {
    "date": "2026-11-11",
