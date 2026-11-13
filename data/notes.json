@@ -150,6 +150,11 @@
   ],
   "ASTS": [
    {
+    "date": "2026-11-12",
+    "text": "宣布自研三级火箭 Blacklift（首飞目标 2028 年底），原因是拿不到准时的发射；未展示硬件，新增研发支出和执行风险（基本面向下的风险）。",
+    "url": "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/"
+   },
+   {
     "date": "2026-11-09",
     "text": "基本面：Q3 收入 4230 万美元（+187%）低于预期，维持全年指引 1.5~2 亿美元；现金 32 亿美元，资本开支降到 3.1 亿美元。",
     "url": "https://www.gurufocus.com/news/9186263/ast-spacemobile-inc-reports-q3-2026-loss-of-044-per-share-on-revenue-of-423-million-missing-estimates"
@@ -271,6 +276,11 @@
   "AMD": [
    {
     "date": "2026-11-12",
+    "text": "与 PsiQuantum 扩大合作并计划入股，把 Instinct / EPYC / ROCm 放进容错量子计算的经典控制层（产业面向上，金额未披露）。",
+    "url": "https://thequantuminsider.com/2026/11/12/psiquantum-amd-expand-quantum-computing-infrastructure-partnership/"
+   },
+   {
+    "date": "2026-11-12",
     "text": "英伟达 CEO 离任当天 AMD +5.9%，市场把对手的管理层风险计为份额机会（情绪面向上）；份额是否真的转移要看后续订单，分析师有分歧。",
     "url": "https://www.morningstar.com/news/marketwatch/2026110986/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal"
    },
@@ -295,6 +305,11 @@
    }
   ],
   "NBIS": [
+   {
+    "date": "2026-11-12",
+    "text": "晚间细节：收入下调的直接原因是微软 Vineland 数据中心的第三方运营商改用燃料电池，约一半微软容量推迟到 2027 年二季度；2027 资本开支最高 85% 由客户预付款和合同抵押融资覆盖——瓶颈在电和许可，不在需求（基本面兑现推迟，产业面不变）。",
+    "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+   },
    {
     "date": "2026-11-12",
     "text": "三季度收入 9.81 亿美元超预期，但 2026 收入落在区间下沿（产能延迟），2026/2027 资本开支上调到约 270 亿 / 400~450 亿美元——基本面兑现变慢、资金面压力加大（预期面向下），股价 −16.8%。",
@@ -338,6 +353,20 @@
     "text": "据彭博与特斯拉合并谈判推进、最快 12 月宣布——若成行将改变 SpaceX 的业务结构和估值口径（产业面 / 预期面，方向待定）。",
     "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
    }
+  ],
+  "CBRS": [
+   {
+    "date": "2026-11-12",
+    "text": "三季度核心收入 2.31 亿美元（+70%）超预期，宣布微软为客户，盘后涨约 17%——客户集中度下降（基本面 / 预期面向上）；积压增量小、需要融资仍是风险。",
+    "url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html"
+   }
+  ],
+  "GEV": [
+   {
+    "date": "2026-11-12",
+    "text": "软银因多订近 50% 的燃气轮机计提大额损失——AI 电力需求出现首个超额订货的反例，需观察轮机厂订单取消率（预期面潜在向下，尚无 GEV 自身数据）。",
+    "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ai-s-natural-gas-ambitions/"
+   }
   ]
  },
  "sectors": {
@@ -365,6 +394,10 @@
   ],
   "quantum": [
    {
+    "date": "2026-11-12",
+    "text": "PsiQuantum 与 AMD 扩大合作、AMD 计划入股；Q-CTRL 完成 2.9 亿美元 C 轮——资本和大厂在押注量子的经典控制层和软件层，而上市纯量子公司当天随投机股普跌。"
+   },
+   {
     "date": "2026-11-11",
     "text": "晚间：IBM 公布 2027 年 1040 比特计划，Quantinuum 与软银研究把量子计算机接入 AI 数据中心——量子正在“数据中心化”，大厂在路线图和渠道上领先纯量子小厂。"
    },
@@ -379,10 +412,6 @@
    {
     "date": "2026-11-10",
     "text": "Rigetti（收入 141 万美元，远低于预期）和 D-Wave（当季订单 −19%）三季度都偏弱，非头部量子公司的收入仍高度依赖单笔整机交付。"
-   },
-   {
-    "date": "2026-11-08",
-    "text": "IonQ、Quantinuum 同时上调收入指引；客户开始为尚不存在的容错机器签长期预订合同。"
    }
   ],
   "robotics": [
@@ -424,12 +453,12 @@
  "daily": [
   {
    "date": "2026-11-12",
-   "market": "今天的主线是英伟达管理层突变：董事会公告黄仁勋辞去 CEO 和董事职务、即时生效，CFO Colette Kress 兼任临时 CEO，前 Synopsys CEO Harvey Jones 出任首任董事长；英伟达盘中一度跌约 14%，收盘 −4.3%（166.19），一个月累计 −25%。但据 MarketWatch，标普 500 基本没有跟跌——资金从英伟达转向 AMD（+5.9%）、博通（+5.5%）、Arista（+5.1%），同时投机小盘股普遍大跌（量子、eVTOL、加密矿企、机器人小票多数 −7%~−17%），说明是风险偏好收缩加板块内轮动，不是 AI 需求逻辑被否定。资金面从 24 分降到 22 分（10 年期美债 5.10%、一年 +98bp；美元指数 103.2 处于近一年最高分位），仍是“钱贵”；情绪面热度 51（中性）：VIX 18.7、CNN 恐贪 40（一周前 20），三倍杠杆 ETF 成交占比 87% 分位，杠杆仍偏高。浪位：AI 二浪重新回到“启动初期”，机器人一浪在“尚未启动”和“财报已改善，价格未反映”之间来回，航空航天三浪回到“尚未启动”。盘后应用材料、思科财报都超预期并上调指引，Nebius 则因 2026 收入落在区间下沿、资本开支大幅上调而 −16.8%。结论：预期面（设备、网络）继续向上，个股层面的管理层和融资风险在上升；接下来的验证点是英伟达 11-17 财报和 Anthropic 11-19 上市（据彭博认购约 6 倍）。上次研判后 Summizer 没有新增文章。",
+   "market": "今天的主线是英伟达管理层突变：董事会公告黄仁勋辞去 CEO 和董事职务、即时生效，CFO Colette Kress 兼任临时 CEO，前 Synopsys CEO Harvey Jones 出任首任董事长；英伟达盘中一度跌约 14%，收盘 −4.3%（166.19），一个月累计 −25%。但据 MarketWatch，标普 500 基本没有跟跌——资金从英伟达转向 AMD（+5.9%）、博通（+5.5%）、Arista（+5.1%），同时投机小盘股普遍大跌（量子、eVTOL、加密矿企、机器人小票多数 −7%~−17%），说明是风险偏好收缩加板块内轮动，不是 AI 需求逻辑被否定。资金面从 24 分降到 22 分（10 年期美债 5.10%、一年 +98bp；美元指数 103.2 处于近一年最高分位），仍是“钱贵”；情绪面热度 51（中性）：VIX 18.7、CNN 恐贪 40（一周前 20），三倍杠杆 ETF 成交占比 87% 分位，杠杆仍偏高。浪位：AI 二浪重新回到“启动初期”，机器人一浪在“尚未启动”和“财报已改善，价格未反映”之间来回，航空航天三浪回到“尚未启动”。盘后应用材料、思科财报都超预期并上调指引，Nebius 则因 2026 收入落在区间下沿、资本开支大幅上调而 −16.8%。结论：预期面（设备、网络）继续向上，个股层面的管理层和融资风险在上升；接下来的验证点是英伟达 11-17 财报和 Anthropic 11-19 上市（据彭博认购约 6 倍）。上次研判后 Summizer 没有新增文章。 【晚间更新，含当晚 Summizer 新增的 16 篇】盘后两条新证据指向同一个结论——需求不缺，缺的是电、许可和融资：Nebius 下调 2026 收入的直接原因是为微软建设的新泽西 Vineland 数据中心由第三方运营商从临时发电机改用 Bloom Energy 燃料电池，约一半微软容量推迟到 2027 年二季度；2027 年 400~450 亿美元资本开支计划用客户预付款和以投资级合同抵押的融资覆盖最高 85%。软银季度亏损 71 亿美元，一半以上来自多订了近 50% 的燃气轮机定金——AI 电力链第一次出现“囤货过度”的价格发现。Cerebras 三季度核心收入 2.31 亿美元（+70%，高于预期 2.15 亿），宣布微软成为客户，盘后据 CNBC 涨约 17%，但积压增量小、仍需融资。据 CNBC，英伟达正走向 2012 年以来最长的周线连跌。整体结论不变。",
    "sectors": {
-    "ai": "产业面不变、情绪面和个股风险上升：英伟达 CEO 离任（临时 CEO 由 CFO 兼任，董事会内外部同时物色继任者），市场把它当作“关键人风险”而不是需求问题——同日 AMD、博通、Arista 逆势大涨。预期面向上：应用材料 FY26 四季度收入 104.1 亿美元（+53%）、一季度指引 111 亿 ±5 亿；思科一季度收入 185 亿美元（+24%，网络 +43%），FY27 收入指引上调到 748~758 亿、超大规模客户 AI 基础设施收入预期从 75 亿上调到约 90 亿。资金面分化：Nebius 把 2026 资本开支提到约 270 亿、2027 年 400~450 亿美元，收入却因产能延迟落在区间下沿——新云厂商“先花钱、后收入”的压力在加大；据彭博 CoreWeave 计划再借至少 40 亿美元投资级贷款。",
-    "quantum": "无重要新信息（IonQ −9.4%、D-Wave −7.6%、Rigetti −7.0%、Quantinuum −7.7%，随投机股整体回落，未查到公司层面消息）。",
-    "robotics": "无重要产业新信息。基本面：发那科季度收入同比 +15%、毛利率 42.3%（+4.9pp）、EPS 超预期 31%，进入“关注买点”；罗克韦尔也进入“关注买点”。Agility Robotics（11-5 经 SPAC 上市，PIPE 价 10 美元）今天 −17% 收于 7.58，属于投机股普跌的一部分，未查到公司层面消息。",
-    "aerospace": "产业面：据彭博，SpaceX 与特斯拉的合并谈判在推进，最快 12 月宣布（也可能拖到 2027 年初），结构是 SpaceX 吸收特斯拉；星舰第 15 次试飞定在 11-13。基本面：Mercury 季度收入 +12%、毛利率 +7.3pp、RPO +52%；TransDigm 收入 +23%。浪位：三浪回到“尚未启动”。",
+    "ai": "产业面不变、情绪面和个股风险上升：英伟达 CEO 离任（临时 CEO 由 CFO 兼任，董事会内外部同时物色继任者），市场把它当作“关键人风险”而不是需求问题——同日 AMD、博通、Arista 逆势大涨。预期面向上：应用材料 FY26 四季度收入 104.1 亿美元（+53%）、一季度指引 111 亿 ±5 亿；思科一季度收入 185 亿美元（+24%，网络 +43%），FY27 收入指引上调到 748~758 亿、超大规模客户 AI 基础设施收入预期从 75 亿上调到约 90 亿。资金面分化：Nebius 把 2026 资本开支提到约 270 亿、2027 年 400~450 亿美元，收入却因产能延迟落在区间下沿——新云厂商“先花钱、后收入”的压力在加大；据彭博 CoreWeave 计划再借至少 40 亿美元投资级贷款。 【晚间】替代路线在英伟达动荡期得到更多验证：Cerebras 拿下微软；初创公司 Luminal 融资 2300 万美元做跨芯片编译器，针对的是 CUDA 软件迁移成本这一真正的护城河；谷歌发布低价模型 Gemini 4 Hydrogen，智能指数反超自家旗舰，竞争从“谁最聪明”转向“单位任务成本”。据 SemiAnalysis（经 DataCenterDynamics），SpaceX 在开发基于 Vera Rubin NVL72 的定制机柜 Kessel，用于地面和轨道数据中心（未经官方确认）。据彭博标题，三星在谈收购数据中心冷却公司 Modine（细节未查证）。",
+    "quantum": "【晚间更新】产业面向上但集中在“经典层和软件层”：PsiQuantum 与 AMD 扩大合作，从 FPGA 扩到 Instinct GPU、EPYC 和 ROCm，AMD 计划入股（联合新闻稿，性能说法未经独立验证）；量子软件公司 Q-CTRL 完成 2.9 亿美元 C 轮（Salesforce Ventures 领投），估值逻辑主要在量子传感的国防 / 航空订单；IBM 在 QDC26 把目标从“科学优势”转向 2028 年证明产业影响。上市纯量子公司股价今天随投机股普跌，与产业消息背离。",
+    "robotics": "无重要产业新信息。基本面：发那科季度收入同比 +15%、毛利率 42.3%（+4.9pp）、EPS 超预期 31%，进入“关注买点”；罗克韦尔也进入“关注买点”。Agility Robotics（11-5 经 SPAC 上市，PIPE 价 10 美元）今天 −17% 收于 7.58，属于投机股普跌的一部分，未查到公司层面消息。 【晚间】德国 Agile Robots 完成 5 亿美元 F 轮、估值 85 亿美元（软银领投、英伟达和日立跟投），卖点是全关节力矩传感——资本在流向有工业部署和硬件产线的公司，而不只是人形概念（一级市场，非上市公司）。",
+    "aerospace": "产业面：据彭博，SpaceX 与特斯拉的合并谈判在推进，最快 12 月宣布（也可能拖到 2027 年初），结构是 SpaceX 吸收特斯拉；星舰第 15 次试飞定在 11-13。基本面：Mercury 季度收入 +12%、毛利率 +7.3pp、RPO +52%；TransDigm 收入 +23%。浪位：三浪回到“尚未启动”。 【晚间】发射运力是共同瓶颈：AST SpaceMobile 宣布自研三级火箭 Blacklift（低轨 20 吨、首飞目标 2028 年底，发布会未展示硬件，可行性存疑）；ULA 的 Vulcan 将在停飞后以 Amazon Leo 40 颗卫星复飞，若再出问题会拖累太空军和 NASA 任务。日本三菱日联与三菱电机、NTT 等签署卫星巨型星座可行性备忘录（无预算和时间表）。",
     "autonomous": "据当地媒体，Zoox 把拉斯维加斯 Robotaxi 服务扩到大道以外区域并投放新一代车型（产业面小幅向上）；Lucid −11.3%、Aeva −8.1%、Pony −6.1%，随投机股回落。"
    },
    "watch": [
@@ -464,6 +493,14 @@
     {
      "t": "SPCX",
      "why": "据彭博，SpaceX 与特斯拉合并谈判推进、最快 12 月宣布（也可能拖到 2027 年初），双方特别委员会在谈换股比例和治理；马斯克此前称不应视为确定。SpaceX 收于 139.94（+0.1%），特斯拉 +1.7%；星舰 11-13 第 15 次试飞。2027 前瞻区间 10.0~160.7~687.3（分析师分歧极大），距中值 +15%。"
+    },
+    {
+     "t": "CBRS",
+     "why": "盘后：三季度核心收入 2.31 亿美元（+70%，预期 2.15 亿），调整后经营利润率 −14%（指引 −24% 左右），宣布微软成为客户，据 CNBC 盘后涨约 17%；但积压增量小、正在评估融资方式。常规时段收于 97.75，2027 前瞻区间 84.8~113.6~164.7，距中值 +16%。"
+    },
+    {
+     "t": "GEV",
+     "why": "软银因多订燃气轮机（多出近 50%）计提大额损失，是 AI 电力链第一个“囤货过度”的反面证据；需要看 GE Vernova 等轮机厂的新订单和取消率是否受影响。现价 818.49，高于 2027 前瞻中值（区间 392.7~670.0~1074.0），信号“关注买点”。"
     }
    ],
    "sources": [
@@ -526,6 +563,42 @@
     [
      "Investing.com（路透）：SpaceX-特斯拉谈判进展",
      "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
+    ],
+    [
+     "TechCrunch：Nebius 用 400 亿美元资本开支检验新云模式",
+     "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+    ],
+    [
+     "CNBC：Cerebras 盘后涨 17%，收入超预期并宣布微软合作",
+     "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html"
+    ],
+    [
+     "TechCrunch：软银燃气轮机损失",
+     "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ai-s-natural-gas-ambitions/"
+    ],
+    [
+     "DataCenterDynamics：SpaceX 定制 Vera Rubin 机柜 Kessel",
+     "https://www.datacenterdynamics.com/en/news/spacex-developing-custom-nvidia-vera-rubin-rack-dubbed-kessel-for-its-orbital-data-centers-report/"
+    ],
+    [
+     "The Quantum Insider：PsiQuantum 与 AMD 扩大合作",
+     "https://thequantuminsider.com/2026/11/12/psiquantum-amd-expand-quantum-computing-infrastructure-partnership/"
+    ],
+    [
+     "The Quantum Insider：Q-CTRL 2.9 亿美元 C 轮",
+     "https://thequantuminsider.com/2026/11/12/q-ctrl-secures-us290-million-series-c-funding-led-by-salesforce-ventures/"
+    ],
+    [
+     "SpaceNews：AST SpaceMobile 自研火箭",
+     "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/"
+    ],
+    [
+     "NASASpaceflight：Vulcan 携 Amazon Leo 复飞",
+     "https://www.nasaspaceflight.com/2026/11/amazon-leo-lv-01/"
+    ],
+    [
+     "CNBC：英伟达走向 2012 年来最长周线连跌",
+     "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
     ]
    ]
   },
@@ -1102,7 +1175,7 @@
    ]
   }
  ],
- "updated": "2026-11-12T14:28",
+ "updated": "2026-11-12T22:37",
  "trend": {
   "NVDA": {
    "date": "2026-11-12",

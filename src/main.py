@@ -211,6 +211,26 @@ def _apply_notes(snap):
     _attach_insights(snap.get("sectors", []), discover.load_profiles())
 
 
+def refresh_news(snap):
+    """只重抓新闻：更新 snapshot 的 newsfeed 和各公司 mnews（行情 / 财报不动）。"""
+    from datetime import datetime, timezone
+    companies = snap["companies"]
+    focus = [d["t"] for d in (snap.get("daily") or [{}])[0].get("watch", [])] if snap.get("daily") else []
+    focus += [t for t, c in companies.items() if not all(m.get("auto") for m in c.get("members", []))][:40]
+    feed = news.collect(companies, focus=list(dict.fromkeys(focus)), cache_hours=0.3)
+    for c in companies.values():
+        c["mnews"] = []
+    for x in feed:
+        for t in x["tickers"]:
+            if t in companies:
+                companies[t]["mnews"].append({k: x[k] for k in ("title", "url", "src", "date")})
+    for c in companies.values():
+        c["mnews"] = c["mnews"][:10]
+    snap["newsfeed"] = feed[:250]
+    snap["news_refreshed"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    log.info("新闻已刷新：%d 条", len(feed))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-push", action="store_true", help="只生成网页，不检测变化、不推送")
@@ -218,6 +238,7 @@ def main():
     ap.add_argument("--quick", action="store_true", help="只刷新行情和 SEC，财报/预期用现有缓存（几分钟内跑完）")
     ap.add_argument("--todo", action="store_true", help="列出还没做人工研究的零件")
     ap.add_argument("--rebuild", action="store_true", help="不联网，用上次的 snapshot.json 重新生成网页")
+    ap.add_argument("--news", action="store_true", help="只刷新多来源新闻（约 1 分钟），其余用上次的 snapshot.json")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s", datefmt="%H:%M:%S")
     config.load_env()
@@ -235,7 +256,12 @@ def main():
             print(f"{key:38s} {name}（{-k} 家，浪位等级 {-a_}）")
         print(f"共 {len(rows)} 个零件待研究")
         return
-    if args.rebuild:
+    if args.news:
+        snap = json.loads(config.SNAPSHOT.read_text())
+        _apply_notes(snap)
+        refresh_news(snap)
+        config.SNAPSHOT.write_text(json.dumps(snap, ensure_ascii=False))
+    elif args.rebuild:
         snap = json.loads(config.SNAPSHOT.read_text())
         _apply_notes(snap)          # 研判 / 零件研究写进 json 后，不联网也能更新到网页
     else:

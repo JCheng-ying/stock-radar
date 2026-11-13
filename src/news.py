@@ -4,6 +4,7 @@ Summizer 只覆盖一部分行业媒体，这里补上综合财经和公司层�
 每条新闻会按标题里出现的公司名 / 代码打上公司标签，按来源 / 查询打上板块标签。
 全部只取标题和链接，不抓正文；缓存 2 小时。
 """
+import hashlib
 import json
 import logging
 import re
@@ -106,14 +107,14 @@ def _company_patterns(companies):
     return pats
 
 
-def collect(companies, days=4, focus=()):
+def collect(companies, days=4, focus=(), cache_hours=2):
     """返回去重后的新闻列表（最近 days 天，新的在前），并给每条打上公司 / 板块标签。"""
     items = []
     jobs = [(s, u, tg) for s, u, tg in FEEDS]
     for t in list(focus)[:60]:   # 重点公司：Seeking Alpha 的公司动态
         jobs.append((f"Seeking Alpha", f"https://seekingalpha.com/api/sa/combined/{t}.xml", [], ))
     with ThreadPoolExecutor(8) as ex:
-        res = ex.map(lambda j: (j, _cache(f"news_{abs(hash(j[1])) % 10**10}.json", 2, lambda: _parse(*j))), jobs)
+        res = ex.map(lambda j: (j, _cache(f"news_{hashlib.md5(j[1].encode()).hexdigest()[:12]}.json", cache_hours, lambda: _parse(*j))), jobs)
         for (s, u, tg), lst in res:
             focus_t = u.split("/combined/")[1].split(".")[0] if "/combined/" in u else None
             for x in lst:

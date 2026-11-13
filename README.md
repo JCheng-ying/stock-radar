@@ -102,7 +102,12 @@ open index.html
 
 ```bash
 python -m src.main --todo         # 列出还没做人工研究的零件
+python -m src.main --news         # 只刷新多来源新闻（约 10 秒），其余用上次数据
+python -m src.newscheck           # 列出上次研判以来的新信息（Summizer 新文章 / 重要推送 / 主流新闻），末行 MATERIAL 或 NOTHING
 ```
+
+Claude 端另有两个定时任务：每天 14:20 的完整研判，以及每小时 :25 的“即时增量研判”
+（先跑 `--news` 和 `newscheck`，有重要新信息才补写研判并发布，没有就不动网页）。
 
 ### 网址
 
