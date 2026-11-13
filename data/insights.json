@@ -3269,5 +3269,364 @@
     ]
    }
   ]
+ },
+ "ai/assistant/content": {
+  "updated": "2026-11-13",
+  "note": "训练数据授权是“有收入、但很小”的生意：Reddit 季度其他收入（含数据授权）约 4,800 万美元，Wiley 全年 AI 授权 4,910 万美元，纽约时报与亚马逊据报每年 2,000~2,500 万美元，都只占总收入的个位数百分比。分歧在于：拥有持续更新的独家内容（论坛、新闻、专业数据库）的一方能续约涨价，而图库类内容正在被 AI 生成图片直接替代——Getty 已破产重组退市，Shutterstock 与 Getty 的合并也已终止。",
+  "companies": {
+   "RDDT": {
+    "products": "Reddit 数据 API 授权（实时帖子与评论流）",
+    "what": "把用户在 Reddit 上的讨论内容按年打包卖给模型公司，用来训练模型和让 AI 搜索引用最新讨论。",
+    "diff": "三季度“其他收入”（含数据授权）4,800 万美元、同比 +35%，广告 8.47 亿；最大两家买方是 OpenAI 和谷歌。与谷歌的协议据报每年约 6,000 万美元、Cantor 预计 2027 年上半年到期，CEO 称仍在谈判；各方对 OpenAI 支付额估计为每年 7,000 万~8,000 万美元，口径不一。",
+    "ties": "谷歌、OpenAI",
+    "src": [
+     [
+      "CNBC：Reddit 三季报",
+      "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html"
+     ],
+     [
+      "Yahoo Finance：Reddit 数据授权收入为何这么小",
+      "https://finance.yahoo.com/media-advertising/articles/reddits-data-licensing-revenue-grew-125000998.html"
+     ]
+    ]
+   },
+   "NYT": {
+    "products": "新闻、NYT Cooking、The Athletic 内容授权",
+    "what": "把报道和菜谱等内容授权给 AI 产品引用摘要，也允许用于训练模型，同时起诉未经授权使用其内容的模型公司。",
+    "diff": "2025 年 5 月与亚马逊签下首个 AI 授权（据《华尔街日报》每年 2,000~2,500 万美元，约占总收入 1%，公司未确认）；对 OpenAI / 微软的版权诉讼仍未判决。走“诉讼 + 选择性授权”路线。",
+    "ties": "亚马逊（授权）；OpenAI、微软（诉讼对手）",
+    "src": [
+     [
+      "Axios：纽约时报与亚马逊达成 AI 授权",
+      "https://www.axios.com/2025/05/30/nyt-amazon-ai-licensing-deal"
+     ],
+     [
+      "Press Gazette：新闻出版商 AI 协议与诉讼汇总",
+      "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+     ]
+    ]
+   },
+   "NWSA": {
+    "products": "《华尔街日报》、道琼斯、《泰晤士报》等内容授权",
+    "what": "把旗下报纸和财经数据的内容授权给模型公司，用于训练和在聊天回答中引用。",
+    "diff": "与 OpenAI 的五年协议据《华尔街日报》报道价值超过 2.5 亿美元（现金加额度，双方未确认），是已知最大的出版商 AI 协议；今年 3 月又与 Meta 签多年协议，据报每年最多 5,000 万美元、至少三年。",
+    "ties": "OpenAI、Meta",
+    "src": [
+     [
+      "Press Gazette：新闻出版商 AI 协议与诉讼汇总",
+      "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+     ],
+     [
+      "Futureweek：新闻集团与 Meta 5,000 万美元 AI 协议",
+      "https://futureweek.com/news-corp-and-meta-strike-50m-ai-licensing-deal/"
+     ]
+    ]
+   },
+   "TRI": {
+    "products": "CoCounsel（法律 / 税务 / 审计 AI 助手）、自研模型 Thomson",
+    "what": "不是把数据卖给别人，而是用自己独有的法律和税务数据库做 AI 产品，直接卖给律师和会计师。",
+    "diff": "2 月称 CoCounsel 用户达 100 万；8 月发布用自有数据训练的前沿模型 Thomson（公司称早期评估与最新前沿模型相当），10 月推出智能体化的 CoCounsel 税务审计版；公司承诺不用客户输入训练第三方模型。走“数据自用、卖应用”路线，与其他几家卖授权的不同。",
+    "ties": "—",
+    "src": [
+     [
+      "汤森路透：CoCounsel 用户达 100 万",
+      "https://www.thomsonreuters.com/en/press-releases/2026/february/one-million-professionals-turn-to-cocounsel-as-thomson-reuters-scales-ai-for-regulated-industries"
+     ],
+     [
+      "汤森路透：发布自有前沿模型",
+      "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model"
+     ]
+    ]
+   },
+   "WLY": {
+    "products": "学术图书和期刊的 AI 训练 / 检索授权",
+    "what": "把学术书籍和论文授权给模型公司，并开始替其他出版商代办 AI 授权。",
+    "diff": "2026 财年（截至 4 月）AI 授权收入 4,910 万美元（上年约 4,000 万），累计超过 1.1 亿美元；已与 Anthropic、AWS、Perplexity、Mistral 签约；季度数字各来源口径不一，以 10-K 为准。",
+    "ties": "Anthropic、AWS、Perplexity、Mistral",
+    "src": [
+     [
+      "Publishers Weekly：AI 和研究业务推动 Wiley 2026 财年增长",
+      "https://www.publishersweekly.com/pw/by-topic/industry-news/financial-reporting/article/100650-ai-research-drive-gains-at-wiley-in-fiscal-2026.html"
+     ],
+     [
+      "CASRAI：学术出版商 AI 授权 2026 数据",
+      "https://casrai.org/news/scholarly-publisher-ai-licensing-deals-2026"
+     ]
+    ]
+   },
+   "GETY": {
+    "products": "图片 / 视频图库授权（含 AI 训练数据授权）",
+    "what": "出售新闻和创意图片的使用权，也把图库授权给 AI 公司训练图像模型。",
+    "diff": "与 Shutterstock 的合并因英国 CMA 要求剥离编辑业务而在 7 月终止；股价跌破 1 美元后从纽交所退市，10-21 申请预重整式破产，Getty 家族和 Koch 投入最多 5.33 亿美元新股权、重组后持有 100%——原普通股的回收取决于重组条款。数据授权在“其他”收入里，一季度只占 3.8%。",
+    "ties": "Koch Equity（重组出资方）",
+    "src": [
+     [
+      "CNBC：Getty Images 申请破产",
+      "https://www.cnbc.com/2026/10/21/getty-images-files-for-bankruptcy-advances-restructuring-plan.html"
+     ],
+     [
+      "Getty Images 2026 一季度 10-Q",
+      "https://www.sec.gov/Archives/edgar/data/0001898496/000162828026033481/gety-20260331.htm"
+     ]
+    ]
+   },
+   "SSTK": {
+    "products": "图库授权、AI 训练数据授权、生成式图片工具",
+    "what": "卖图片 / 视频的使用权，同时把带授权的素材库卖给模型公司做训练数据。",
+    "diff": "合并终止当天股价跌 29%；7 月下旬暂停分红以降债、首席会计官离职，CEO 此前也已离任；公司不单独披露数据授权收入。AI 生成图片对图库需求的替代是长期逆风。",
+    "ties": "—",
+    "src": [
+     [
+      "Invezz：Getty 终止 37 亿美元合并，Shutterstock 跌 30%",
+      "https://invezz.com/news/2026/07/01/shutterstock-stock-plunges-30-as-getty-images-scraps-3-7b-merger/"
+     ],
+     [
+      "Shutterstock 2026 年 8 月 10-Q",
+      "https://investor.shutterstock.com/static-files/4ddaf1c8-7a25-4b93-a5db-a28ff036fa87"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "GOOGL",
+    "b": "RDDT",
+    "type": "客户",
+    "desc": "谷歌购买 Reddit 数据授权（据报每年约 6,000 万美元），续约谈判进行中。",
+    "src": [
+     "Yahoo Finance：Reddit 数据授权收入",
+     "https://finance.yahoo.com/media-advertising/articles/reddits-data-licensing-revenue-grew-125000998.html"
+    ]
+   },
+   {
+    "a": "OpenAI",
+    "b": "RDDT",
+    "type": "客户",
+    "desc": "OpenAI 是 Reddit 两大数据授权买方之一（金额未披露）。",
+    "src": [
+     "Yahoo Finance：Reddit 数据授权收入",
+     "https://finance.yahoo.com/media-advertising/articles/reddits-data-licensing-revenue-grew-125000998.html"
+    ]
+   },
+   {
+    "a": "AMZN",
+    "b": "NYT",
+    "type": "技术授权",
+    "desc": "纽约时报授权亚马逊在 Alexa 等产品中使用内容并训练模型（据报每年 2,000~2,500 万美元）。",
+    "src": [
+     "Axios：纽约时报与亚马逊达成 AI 授权",
+     "https://www.axios.com/2025/05/30/nyt-amazon-ai-licensing-deal"
+    ]
+   },
+   {
+    "a": "OpenAI",
+    "b": "NWSA",
+    "type": "技术授权",
+    "desc": "新闻集团五年授权协议，据报价值超过 2.5 亿美元。",
+    "src": [
+     "Press Gazette：新闻出版商 AI 协议汇总",
+     "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    ]
+   },
+   {
+    "a": "META",
+    "b": "NWSA",
+    "type": "技术授权",
+    "desc": "Meta 与新闻集团多年授权，据报每年最多 5,000 万美元。",
+    "src": [
+     "Futureweek：新闻集团与 Meta AI 协议",
+     "https://futureweek.com/news-corp-and-meta-strike-50m-ai-licensing-deal/"
+    ]
+   },
+   {
+    "a": "Anthropic",
+    "b": "WLY",
+    "type": "技术授权",
+    "desc": "Wiley 向 Anthropic 授权学术内容。",
+    "src": [
+     "CASRAI：学术出版商 AI 授权",
+     "https://casrai.org/news/scholarly-publisher-ai-licensing-deals-2026"
+    ]
+   },
+   {
+    "a": "GETY",
+    "b": "SSTK",
+    "type": "收购",
+    "desc": "37 亿美元合并因英国 CMA 要求剥离编辑业务，于 2026 年 7 月终止。",
+    "src": [
+     "Invezz：Getty 终止合并",
+     "https://invezz.com/news/2026/07/01/shutterstock-stock-plunges-30-as-getty-images-scraps-3-7b-merger/"
+    ]
+   },
+   {
+    "a": "Koch Equity",
+    "b": "GETY",
+    "type": "收购",
+    "desc": "破产重组中与 Getty 家族出资最多 5.33 亿美元，重组后持有 100% 股权。",
+    "src": [
+     "CNBC：Getty Images 申请破产",
+     "https://www.cnbc.com/2026/10/21/getty-images-files-for-bankruptcy-advances-restructuring-plan.html"
+    ]
+   }
+  ]
+ },
+ "ai/agent/dev": {
+  "updated": "2026-11-13",
+  "note": "AI 编程是目前收入最大的 Agent 场景，但钱主要流向未上市或被并购的“智能体编辑器”（Cursor 已被 SpaceX 以约 600 亿美元股票收购，据报年化收入约 40 亿；Claude Code 收入数字只有 Anthropic 口径）；上市公司里 GitHub Copilot 用户最多但收入不披露，GitLab、JFrog、Dynatrace 卖的是 AI 写出更多代码之后的“下游”——代码托管、制品管理、可观测性。分歧在于：AI 写的代码越多，下游工具的用量越大（JFrog 云收入 +60% 支持这一点），还是按人头收费的席位被压缩。",
+  "companies": {
+   "MSFT": {
+    "products": "GitHub Copilot（编辑器助手 + Copilot 编程智能体）",
+    "what": "在程序员写代码时自动补全、回答问题，也能接收任务后自己改代码、提交合并请求。",
+    "diff": "1 月披露付费订阅 470 万（同比约 +75%）；7 月称总用户 5,000 万、改按用量计费后收入环比增长超过 60%；收入从未单独披露，第三方估计年化 4.5 亿~11 亿美元，口径分歧很大。",
+    "ties": "OpenAI、Anthropic 等多模型接入",
+    "src": [
+     [
+      "Panto：GitHub Copilot 2026 统计",
+      "https://www.getpanto.ai/blog/github-copilot-statistics"
+     ]
+    ]
+   },
+   "Cursor": {
+    "products": "Cursor 智能体代码编辑器",
+    "what": "把 AI 做进编辑器本身，能一次读懂整个代码库、跨多个文件自动修改。",
+    "diff": "SpaceX 6 月宣布以约 600 亿美元全股票收购母公司 Anysphere，据 Techzine 8 月完成（单一来源），并入 SpaceXAI；据报年化收入约 40 亿美元。",
+    "ties": "SpaceX / xAI",
+    "src": [
+     [
+      "CNBC：SpaceX 以 600 亿美元收购 Cursor",
+      "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+     ],
+     [
+      "Techzine：SpaceX 完成收购 Cursor",
+      "https://www.techzine.eu/news/devops/143619/spacex-completes-acquisition-of-cursor/"
+     ]
+    ]
+   },
+   "Anthropic": {
+    "products": "Claude Code（命令行编程智能体）",
+    "what": "在终端里接收任务后自己读代码、改代码、跑测试，偏向长时间自主完成整块工作。",
+    "diff": "常被引用的年化收入约 25 亿美元（2026 年初）只有公司口径、缺少一手出处；Anthropic 即将上市，招股书可能给出更正式的数字。",
+    "ties": "AWS、谷歌云（算力）",
+    "src": [
+     [
+      "New Market Pitch：Cursor、Claude Code、Copilot 谁在赢",
+      "https://newmarketpitch.com/blogs/news/ai-code-assistant-cursor-claude-code-copilot"
+     ]
+    ],
+    "unverified": true
+   },
+   "GTLB": {
+    "products": "GitLab Duo / Duo Agent Platform",
+    "what": "把 AI 助手和智能体接进 GitLab 的代码托管、CI/CD 和安全扫描流程。",
+    "diff": "2027 财年三季度（截至 10-31）尚未发布财报，今天没有查到当期数据；它的风险在于按开发者席位收费，AI 提效可能压缩席位数（判断）。",
+    "ties": "—",
+    "src": [
+     [
+      "GitLab 投资者关系",
+      "https://ir.gitlab.com/"
+     ]
+    ],
+    "unverified": true
+   },
+   "FROG": {
+    "products": "JFrog 软件供应链平台（Artifactory、安全扫描、AI 制品管理）",
+    "what": "存放和管理软件构建出来的各种“成品包”，并检查它们有没有安全问题；现在也管理 AI 模型、MCP 服务器和插件。",
+    "diff": "三季度收入 1.792 亿美元（+31%），高于指引上沿；云收入 +60%，管理层称开发者使用 AI 工具和智能体加速了平台用量——按用量收费，直接受益于“AI 写更多代码”。",
+    "ties": "—",
+    "src": [
+     [
+      "Benzinga：JFrog 三季度电话会纪要",
+      "https://www.benzinga.com/news/26/11/62960658/jfrog-q3-2026-earnings-call-transcript"
+     ],
+     [
+      "Motley Fool：JFrog 三季度电话会纪要",
+      "https://www.fool.com/earnings/call-transcripts/2026/11/06/jfrog-frog-q3-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "DT": {
+    "products": "Dynatrace 可观测性平台（含收购的 Arize AI 模型监控）",
+    "what": "实时监控软件系统和 AI 应用是否正常、哪里出错，帮运维团队定位问题。",
+    "diff": "2027 财年二季度 ARR 22.07 亿美元（+16%）、收入 5.8 亿（+17%）；收购 Arize 让 ARR 增速多约 2 个百分点、但非 GAAP 营业利润率指引降到 28%~28.25%；70% 续约集中在下半年，时间风险较高。",
+    "ties": "Arize（已收购）",
+    "src": [
+     [
+      "Dynatrace：2027 财年二季度财报",
+      "https://ir.dynatrace.com/news-events/press-releases/detail/445/dynatrace-reports-second-quarter-fiscal-year-2027-financial-results"
+     ]
+    ]
+   },
+   "FIG": {
+    "products": "Figma 智能体、Figma Make、MCP 服务器、Code Layers",
+    "what": "让设计稿和代码之间可以互相生成：用自然语言生成可交互原型，或让编程智能体直接读取设计稿。",
+    "diff": "三季度收入 3.914 亿美元（+43%），净收入留存 131%；ARR 超 1 万美元的付费客户中 65% 每周使用 Figma 智能体、超过 80% 在消耗 AI 额度；非 GAAP 毛利率 82%、同比降 400bp（AI 推理成本）。",
+    "ties": "—",
+    "src": [
+     [
+      "Figma 三季度财报（8-K）",
+      "https://www.sec.gov/Archives/edgar/data/0001579878/000162828026070133/q326pressrelease.htm"
+     ],
+     [
+      "Motley Fool：Figma 三季度电话会纪要",
+      "https://www.fool.com/earnings/call-transcripts/2026/11/05/figma-fig-q3-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "U": {
+    "products": "Unity 引擎内的 AI 助手 / 生成工具",
+    "what": "帮游戏开发者用 AI 生成代码、素材，加速做游戏。",
+    "diff": "今天没有查到 2026 年三季度 AI 相关的当期数据；它在这个零件里属于“开发工具被 AI 增强”的边缘位置。",
+    "ties": "—",
+    "src": [
+     [
+      "Unity 投资者关系",
+      "https://investors.unity.com/"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "SPCX",
+    "b": "Cursor",
+    "type": "收购",
+    "desc": "SpaceX 以约 600 亿美元全股票收购 Cursor 母公司 Anysphere，并入 SpaceXAI。",
+    "src": [
+     "CNBC：SpaceX 收购 Cursor",
+     "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    ]
+   },
+   {
+    "a": "DT",
+    "b": "Arize",
+    "type": "收购",
+    "desc": "Dynatrace 收购 AI 模型可观测性公司 Arize，补上 AI 应用监控。",
+    "src": [
+     "Dynatrace：2027 财年二季度财报",
+     "https://ir.dynatrace.com/news-events/press-releases/detail/445/dynatrace-reports-second-quarter-fiscal-year-2027-financial-results"
+    ]
+   },
+   {
+    "a": "MSFT",
+    "b": "Cursor",
+    "type": "竞争",
+    "desc": "GitHub Copilot 用户最多，Cursor、Claude Code 在收入上领先（Copilot 收入未披露，比较基于估计）。",
+    "src": [
+     "New Market Pitch：AI 编程工具竞争",
+     "https://newmarketpitch.com/blogs/news/ai-code-assistant-cursor-claude-code-copilot"
+    ]
+   },
+   {
+    "a": "MSFT",
+    "b": "Anthropic",
+    "type": "竞争",
+    "desc": "Claude Code 与 GitHub Copilot 编程智能体争夺开发者。",
+    "src": [
+     "New Market Pitch：AI 编程工具竞争",
+     "https://newmarketpitch.com/blogs/news/ai-code-assistant-cursor-claude-code-copilot"
+    ]
+   }
+  ]
  }
 }
