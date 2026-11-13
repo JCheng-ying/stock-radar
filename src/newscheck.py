@@ -17,6 +17,21 @@ from datetime import datetime, timezone
 from . import config
 
 SUMMIZER = os.path.expanduser(os.environ.get("SUMMIZER_ARTICLES", "~/Desktop/Summizer/data/articles"))
+RHINO = os.path.expanduser(os.environ.get("RHINO_NOTES", "~/Desktop/Summizer/data/youtube/rhino/notes"))
+
+
+def blogger_pending():
+    """视野环球财经笔记里，还没整理进 data/blogger.json、或整理后又被改过的日期文件。"""
+    try:
+        done = {d["date"]: d.get("note_mtime", 0) for d in json.loads((config.DATA / "blogger.json").read_text())["days"]}
+    except Exception:
+        done = {}
+    out = []
+    for f in sorted(glob.glob(os.path.join(RHINO, "*.md"))):
+        day = os.path.basename(f)[:-3]
+        if int(os.path.getmtime(f)) > done.get(day, -1):
+            out.append(f)
+    return out
 MAJOR = ("Reuters", "Bloomberg", "CNBC", "WSJ", "Wall Street Journal", "Financial Times", "FT", "MarketWatch",
          "Barron", "DataCenterDynamics", "SpaceNews", "Quantum Insider", "Robot Report", "Electrek",
          "Tom's Hardware", "The Information", "TechCrunch", "Axios", "Seeking Alpha")
@@ -69,10 +84,11 @@ def check():
         if (tk and big) or (set(tk) & watch) or (big and x.get("sectors")):
             news.append({"ts": ts.astimezone().strftime("%m-%d %H:%M"), "src": x["src"], "title": x["title"],
                          "url": x["url"], "tickers": tk, "big": big})
-    material = bool(arts) or bool(alerts) or sum(1 for n in news if n["big"]) >= 2 or len(news) >= 4
+    blog = blogger_pending()
+    material = bool(blog) or bool(arts) or bool(alerts) or sum(1 for n in news if n["big"]) >= 2 or len(news) >= 4
     return {"since": wm.strftime("%Y-%m-%dT%H:%M"), "now": datetime.now().strftime("%Y-%m-%dT%H:%M"),
             "snapshot_generated": snap.get("generated"), "news_refreshed": snap.get("news_refreshed"),
-            "summizer_articles": arts, "alerts": alerts, "news": news[:60], "material": material}
+            "summizer_articles": arts, "blogger_notes": blog, "alerts": alerts, "news": news[:60], "material": material}
 
 
 def main():
@@ -84,6 +100,9 @@ def main():
     print(f"上次研判：{r['since']}  现在：{r['now']}  行情快照：{r['snapshot_generated']}  新闻刷新：{r['news_refreshed']}")
     print(f"Summizer 新文章 {len(r['summizer_articles'])} 篇")
     for f in r["summizer_articles"]:
+        print("  ", f)
+    print(f"博主笔记待整理 {len(r['blogger_notes'])} 个")
+    for f in r["blogger_notes"]:
         print("  ", f)
     print(f"重要推送 {len(r['alerts'])} 条")
     for a in r["alerts"]:

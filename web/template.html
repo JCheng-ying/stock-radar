@@ -216,13 +216,13 @@ function bars(vals,{w=150,h=46,color="var(--accent)",signed=false}={}){
 }
 
 /* ---------- 导航 ---------- */
-const TABS=[["overview","总览"],...S.map(s=>["s:"+s.id,s.name]),["earn","财报"],["all","全部公司"],["alerts","推送记录"],["method","判断标准"]];
+const TABS=[["overview","总览"],...S.map(s=>["s:"+s.id,s.name]),["blog","博主观点"],["earn","财报"],["all","全部公司"],["alerts","推送记录"],["method","判断标准"]];
 let state={tab:"overview",chain:{},node:{},prod:{},part:{},sort:{k:"sig",d:-1},filter:{sector:"",signal:""}};
 function go(tab){state.tab=tab;history.replaceState(null,"","#"+tab);render();window.scrollTo(0,0)}
 function render(){
   $("#nav").innerHTML=TABS.map(([k,n])=>`<button class="${state.tab===k?"on":""}" onclick="go('${k}')">${n}</button>`).join("");
   const t=state.tab;
-  $("#app").innerHTML=(t==="overview"?overview():t==="all"?allCos():t==="alerts"?alertsPage():t==="earn"?earnPage():t==="method"?methodPage():sectorPage(S.find(s=>"s:"+s.id===t)||S[0]))+legend();
+  $("#app").innerHTML=(t==="overview"?overview():t==="all"?allCos():t==="alerts"?alertsPage():t==="earn"?earnPage():t==="method"?methodPage():t==="blog"?blogPage():sectorPage(S.find(s=>"s:"+s.id===t)||S[0]))+legend();
   mountViewer();applyLive();
 }
 function legend(){return `<div class="legend">颜色约定：<span class="up">红涨</span> / <span class="down">绿跌</span>；情绪热度 <span style="color:var(--cold)">蓝 = 悲观</span>、<span style="color:var(--hot)">橙 = 乐观</span>。所有分数和信号都是按固定规则从公开数据算出来的信息整理，每一项都附有依据，仅供个人研究参考，不构成投资建议。数据来源：Yahoo Finance（行情 / 财报 / 一致预期）、SEC EDGAR（RPO、8-K）、CNN（恐贪指数）、Summizer 图谱（产业消息）。</div>`}
@@ -691,6 +691,49 @@ function methodPage(){
   </div>`;
 }
 
+/* ---------- 博主观点（视野环球财经） ---------- */
+const STC={"看多":"sig2","偏多":"sig1","中性":"sig0","观望":"sig0","谨慎":"sig-1","偏空":"sig-1","看空":"sig-2","减仓":"sig-1","清仓":"sig-2"};
+const stanceChip=x=>x?`<span class="chip ${STC[x]||"sig0"}">${esc(x)}</span>`:"";
+const bList=(title,L)=>(L||[]).length?`<div style="margin-top:8px"><div class="faint small" style="font-weight:600">${title}</div><ul class="why">${L.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:"";
+function blogStock(x,d){
+  const c=C[x.t],y=c&&c.val&&c.val.years.find(r=>r.y===2027);
+  const head=`<div style="display:flex;gap:8px;align-items:baseline;flex-wrap:wrap">${tkLink(x.t)}${c?`<span class="muted small">${esc(c.name).slice(0,22)}</span><span class="num" data-lp="${x.t}">${num(c.tech.price,2)}</span><span class="num small ${cls(c.tech.chg1d)}" data-lc="${x.t}">${pct(c.tech.chg1d,1)}</span>`:""}${stanceChip(x.stance)}</div>`;
+  const ours=y?`<div class="src" style="margin-top:8px">对照本站：2027 前瞻区间 ${num(y.px[0],0)} ~ ${num(y.px[1],0)} ~ ${num(y.px[2],0)}（${esc(c.val.zone27||"")}，到中值 <span class="${cls(c.val.up27mid)}">${pct(c.val.up27mid)}</span>）· 点位信号 ${esc(c.signal.label)}${c.trend&&c.trend.dir?" · 趋势"+esc(c.trend.dir):""}</div>`:"";
+  return `<div class="card">${head}
+    <div style="margin-top:8px;font-size:14px">${esc(x.verdict||"")}</div>
+    ${bList("信息支持",x.evidence)}${bList("后续走势",x.outlook)}${bList("估值 / 前瞻估值",x.valuation)}${bList("他的操作计划",x.plan)}${bList("其他看法",x.views)}
+    ${ours}</div>`;
+}
+function blogDay(d,open){
+  const m=d.market||{};
+  return `<div class="card" style="margin-bottom:14px;${open?"border-color:var(--accent)":""}">
+    <h3 style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span>${esc(d.date)} · 当天框架</span><a href="${safeUrl(d.video)}" target="_blank" rel="noopener" class="small">视频：${esc(d.title||"")}</a></h3>
+    ${m.summary?`<div style="font-size:14px">${esc(m.summary)}</div>`:""}
+    ${(m.levels||[]).length?`<div class="tw" style="margin-top:10px"><table><tr><th class="l">指数 / 指标</th><th class="l">他给的关键位置和判断</th></tr>${m.levels.map(([k,v])=>`<tr><td class="l"><b>${esc(k)}</b></td><td class="l wrap" style="color:var(--text)">${esc(v)}</td></tr>`).join("")}</table></div>`:""}
+    ${bList("资金面与市场结构",m.points)}
+    ${(d.stocks||[]).length?`<h3 style="margin-top:14px">当天提到的股票（${d.stocks.length}）</h3><div class="grid g2">${d.stocks.map(x=>blogStock(x,d)).join("")}</div>`:""}
+    ${(d.others||[]).length?`<div class="note" style="margin-top:10px"><b>其他提及：</b>${d.others.map(([t,v])=>`${tkLink(t)} ${esc(v)}`).join("；")}</div>`:""}
+    ${(d.positions||[]).length?`<div class="note" style="margin-top:10px"><b>他的仓位变动：</b>${d.positions.map(esc).join("；")}</div>`:""}
+  </div>`;
+}
+function blogPage(){
+  const B=DATA.blogger;
+  const intro=`<h2 style="margin-top:6px">博主观点 · ${esc(B?B.source:"视野环球财经")} <small>每天的视频整理成笔记后按股票拆开：他的评价、依据、对后续走势和估值的看法、他自己的操作计划。只记录博主说了什么，本站不加判断；卡片底部单独列出本站的前瞻区间作对照。不构成投资建议</small></h2>`;
+  if(!B||!(B.days||[]).length)return intro+`<div class="card small muted">还没有整理好的笔记。</div>`;
+  const days=B.days, idx=Math.min(state.blogDay||0,days.length-1);
+  const nav=days.length>1?`<div class="tabs" style="margin-bottom:10px">${days.map((d,i)=>`<button class="${i===idx?"on":""}" onclick="state.blogDay=${i};render()">${esc(d.date)}</button>`).join("")}</div>`:"";
+  const mentions={};days.forEach(d=>(d.stocks||[]).forEach(x=>{(mentions[x.t]=mentions[x.t]||[]).push(d.date)}));
+  const idxCard=`<div class="card small" style="margin-top:4px"><b>按股票查：</b>${Object.entries(mentions).sort((a,b)=>b[1].length-a[1].length).map(([t,ds])=>`${tkLink(t)}<span class="faint">×${ds.length}</span>`).join("　")}<div class="faint" style="margin-top:4px">点代码打开公司详情，里面的「博主观点」一节列出他每天对这只股票说过的话。</div></div>`;
+  return intro+nav+blogDay(days[idx],true)+idxCard+`<div class="src" style="margin-top:8px">来源：<a href="${safeUrl(B.channel)}" target="_blank" rel="noopener">${esc(B.source)}</a> 公开视频，本地转写后整理；转写不清的数字已标注。更新于 ${esc(B.updated||"")}</div>`;
+}
+function blogForCo(t){
+  const B=DATA.blogger;if(!B)return"";
+  const L=(B.days||[]).flatMap(d=>(d.stocks||[]).filter(x=>x.t===t).map(x=>[d,x]));
+  const O=(B.days||[]).flatMap(d=>(d.others||[]).filter(x=>x[0]===t).map(x=>[d,x[1]]));
+  if(!L.length&&!O.length)return"";
+  return `<h2>博主观点 <small>${esc(B.source)} · 只记录他说了什么</small></h2>${L.map(([d,x])=>`<div class="card" style="margin-bottom:8px"><div style="display:flex;gap:8px;align-items:baseline"><b>${esc(d.date)}</b>${stanceChip(x.stance)}<a class="small" href="${safeUrl(d.video)}" target="_blank" rel="noopener">视频</a></div><div style="margin-top:6px">${esc(x.verdict||"")}</div>${bList("信息支持",x.evidence)}${bList("后续走势",x.outlook)}${bList("估值 / 前瞻估值",x.valuation)}${bList("他的操作计划",x.plan)}${bList("其他看法",x.views)}</div>`).join("")}${O.map(([d,v])=>`<div class="note"><b>${esc(d.date)}</b> ${esc(v)}</div>`).join("")}`;
+}
+
 /* ---------- 推送记录 ---------- */
 function alertsPage(){
   const a=DATA.alerts||[];
@@ -751,6 +794,7 @@ function openCo(t){
       <ul class="why">${c.heat_why.map(w=>`<li>${esc(w)}</li>`).join("")}<li>大盘情绪：${esc(M.sentiment.zone)}（热度 ${M.sentiment.heat}）——${esc(M.sentiment.verdict)}</li></ul></div>
   </div>
   ${valSection(t,c)}
+  ${blogForCo(t)}
   ${finSection(t,c)}
   ${(c.notes||[]).length?`<h2>重大消息判断</h2>${c.notes.map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}${n.url?` <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">来源</a>`:""}</div>`).join("")}`:""}
   <div class="grid g2" style="margin-top:12px">

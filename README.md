@@ -108,6 +108,8 @@ python -m src.newscheck           # 列出上次研判以来的新信息（Summi
 
 Claude 端另有两个定时任务：每天 14:20 的完整研判，以及每小时 :25 的“即时增量研判”
 （先跑 `--news` 和 `newscheck`，有重要新信息才补写研判并发布，没有就不动网页）。
+「博主观点」页的数据在 `data/blogger.json`：同一个每小时任务发现 Summizer 里视野环球财经的新笔记
+（`~/Desktop/Summizer/data/youtube/rhino/notes/日期.md`）后，按股票拆成 评价 / 信息支持 / 后续走势 / 估值 / 操作计划 / 其他看法 写进去。
 
 ### 网址
 

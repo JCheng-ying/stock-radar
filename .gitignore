@@ -8,3 +8,4 @@ data/profiles.json
 data/snapshot.json
 index.html
 data/alert_state.json
+.claude/launch.json
