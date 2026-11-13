@@ -473,3 +473,7 @@
 {"ts": "2026-11-13T18:48:39+00:00", "title": "🔴 SAIL 进入「回调风险」", "body": "SailPoint, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 55；处于52周区间的 89% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
 {"ts": "2026-11-13T18:48:39+00:00", "title": "💥 LCID 单日 -8.3%", "body": "Lucid Group, Inc. 收于 2.98。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-13T19:10:24+00:00", "title": "💥 ALNT 单日 -8.1%", "body": "Allient Inc. 收于 77.53。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-13T19:40:30+00:00", "title": "🟢 DELL 进入「关注买点」", "body": "Dell Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 36；处于52周区间的 49% 位置；偏离200日线 +0%", "priority": "high", "sent": true}
+{"ts": "2026-11-13T19:40:30+00:00", "title": "🌊 航空航天 二浪：财报已改善，价格未反映", "body": "此前：启动初期。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-13T19:40:30+00:00", "title": "💥 BBAI 单日 -8.2%", "body": "BigBear.ai, Inc. 收于 1.9。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-13T20:10:19+00:00", "title": "🌊 航空航天 二浪：启动初期", "body": "此前：财报已改善，价格未反映。已满足：上涨广度、毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
