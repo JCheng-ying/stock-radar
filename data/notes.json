@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-13",
+    "text": "盘中：盘前反弹未守住、日内约 −3%；据 CNBC 标题财长 Bessent 公开批评芯片向中国“泄漏”并指向商务部（细节未查证）——出口管制从公司问题上升为内阁层面分歧，监管 / 情绪面继续偏负，产业面未变。",
+    "url": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+   },
+   {
+    "date": "2026-11-13",
     "text": "监管面继续偏负：Lutnick 据报将就对华芯片销售作证、约 30 亿美元中国 AI 项目受威胁（路透标题）；据 WSJ，临时 CEO Kress 曾质疑为客户提供数十亿美元担保——资金面上“卖方融资”可能收紧，短期压制新云订单节奏，长期改善资产质量（判断）。",
     "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-11",
     "text": "晚间：联邦调查已由司法部接手，焦点是 Megaspeed 是否帮助中国绕过出口管制——监管风险向公司层面蔓延（情绪面 / 预期面向下）。",
     "url": "https://techcrunch.com/2026/11/11/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
-   },
-   {
-    "date": "2026-11-11",
-    "text": "情绪面小幅修复（+2.9%），但 CEO 事件仍在发酵：众议院中国委员会主席要求说明，摩根士丹利移出首选股；预期面要等 11-17 财报。",
-    "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
    }
   ],
   "ANET": [
@@ -463,10 +463,10 @@
  "daily": [
   {
    "date": "2026-11-13",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:30 更新，含 Summizer 新增的 12 篇】隔夜没有新的公司公告，主线仍是英伟达管理层真空的余波，但信息从“谁接班”转向“出口管制和资产负债表”两条线。监管 / 情绪面继续偏负：据 CNBC，商务部长 Lutnick 据报同意就对华芯片销售作证；据路透标题，黄仁勋离任和美国审查使约 30 亿美元依赖英伟达芯片的中国 AI 项目受威胁；Tom's Hardware 援引分析称可能有大量（按功率口径约 1.5GW）禁运芯片流入中国（分析机构估算，未经官方证实）。资金面出现一个值得跟踪的变化：据《华尔街日报》（经 TechCrunch），临时 CEO Kress 此前质疑英伟达用自身资产负债表为无力预付的数据中心运营商提供数十亿美元担保——如果新管理层收紧这类“卖方融资”，最先受影响的是依赖英伟达背书的新云厂商（Nscale 新版招股书显示活跃 GPU 约 5 万块、计划 46.1 万块，上半年亏损 10.2 亿美元）。同时“有电才有客户”继续被验证：Fermi 与一家未具名投资级超大规模云厂商签下得州 600MW 电力开发协议（客户预付 2 亿美元、尚未签租约），但 TensorWave 650MW 租约正式终止；Rowan 拿到首笔公司级银团融资超 15 亿美元；澳大利亚三个数据中心项目因社区反对取消或暂停。结论：产业面需求判断不变，资金面（新云融资成本）和情绪面（英伟达监管）偏负；盘前英伟达小幅反弹（据 CNBC 标题），11-17 财报对担保 / 融资承诺的披露口径是新增的验证点。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:30 更新，含 Summizer 新增的 12 篇】隔夜没有新的公司公告，主线仍是英伟达管理层真空的余波，但信息从“谁接班”转向“出口管制和资产负债表”两条线。监管 / 情绪面继续偏负：据 CNBC，商务部长 Lutnick 据报同意就对华芯片销售作证；据路透标题，黄仁勋离任和美国审查使约 30 亿美元依赖英伟达芯片的中国 AI 项目受威胁；Tom's Hardware 援引分析称可能有大量（按功率口径约 1.5GW）禁运芯片流入中国（分析机构估算，未经官方证实）。资金面出现一个值得跟踪的变化：据《华尔街日报》（经 TechCrunch），临时 CEO Kress 此前质疑英伟达用自身资产负债表为无力预付的数据中心运营商提供数十亿美元担保——如果新管理层收紧这类“卖方融资”，最先受影响的是依赖英伟达背书的新云厂商（Nscale 新版招股书显示活跃 GPU 约 5 万块、计划 46.1 万块，上半年亏损 10.2 亿美元）。同时“有电才有客户”继续被验证：Fermi 与一家未具名投资级超大规模云厂商签下得州 600MW 电力开发协议（客户预付 2 亿美元、尚未签租约），但 TensorWave 650MW 租约正式终止；Rowan 拿到首笔公司级银团融资超 15 亿美元；澳大利亚三个数据中心项目因社区反对取消或暂停。结论：产业面需求判断不变，资金面（新云融资成本）和情绪面（英伟达监管）偏负；盘前英伟达小幅反弹（据 CNBC 标题），11-17 财报对担保 / 融资承诺的披露口径是新增的验证点。\n【07:28 更新，含 Summizer 新增的 1 篇】盘前的小幅反弹没有守住：快照显示英伟达现价 160.75、当日 −3.3%（CNBC 标题称“因黄仁勋辞职余波下跌 2%”），处在 2027 前瞻区间 110~303 的下沿到中值之间。监管面再添一笔：据 CNBC 标题，财长 Bessent 批评英伟达芯片向中国“泄漏”并把矛头指向 Lutnick 领导的商务部（细节未查证）——出口管制问题从公司层面上升到内阁层面的公开分歧，情绪面继续偏负。电力侧：上市土地公司 LandBridge 旗下 PowerBridge 在得州 Waha 天然气枢纽旁动工约 2GW 规划的“带电园区”，首期 300MW、2027 年四季度首次供电，但尚无锚定租户——产业面上“现场燃气发电绕开电网排队”多了一个供给方。整体结论不变：产业面需求判断不变，英伟达的情绪面 / 监管面仍是主要压力，11-17 财报是下一个验证点。",
    "sectors": {
-    "ai": "【06:30】英伟达：Lutnick 据报将就对华芯片销售作证（CNBC）、约 30 亿美元中国 AI 项目受威胁（路透标题），监管面继续偏负；《华尔街日报》称临时 CEO Kress 曾质疑为客户提供数十亿美元担保——资金面上新云“靠芯片商背书融资”的模式可能收紧。电力 / 融资：Fermi 600MW 电力协议靠客户预付 2 亿美元推进、TensorWave 租约终止；Rowan 首笔公司级银团融资超 15 亿美元；Nscale 已上线约 5 万块 GPU（计划 46.1 万）。澳大利亚 3 个数据中心项目因社区反对取消 / 暂停——约束从电网扩展到社区许可。思科盘前维持财报后热度（CNBC：AI 基础设施收入本财年翻倍）。",
-    "quantum": "无重要新信息。",
+    "ai": "【06:30】英伟达：Lutnick 据报将就对华芯片销售作证（CNBC）、约 30 亿美元中国 AI 项目受威胁（路透标题），监管面继续偏负；《华尔街日报》称临时 CEO Kress 曾质疑为客户提供数十亿美元担保——资金面上新云“靠芯片商背书融资”的模式可能收紧。电力 / 融资：Fermi 600MW 电力协议靠客户预付 2 亿美元推进、TensorWave 租约终止；Rowan 首笔公司级银团融资超 15 亿美元；Nscale 已上线约 5 万块 GPU（计划 46.1 万）。澳大利亚 3 个数据中心项目因社区反对取消 / 暂停——约束从电网扩展到社区许可。思科盘前维持财报后热度（CNBC：AI 基础设施收入本财年翻倍）。 【07:28】英伟达日内转跌约 3%；据 CNBC 标题 Bessent 公开批评对华芯片“泄漏”、点名商务部（细节未查证），监管面偏负。PowerBridge（LandBridge 子公司）得州带电园区动工：规划超 2GW、首期 300MW、2027Q4 供电，Liberty Energy 合资做模块化燃气发电，无租户——供电瓶颈的又一条解法，但仍是“为需求备货”。",
+    "quantum": "【07:28】DCD 汇总了 D-Wave、IonQ、IQM、Quantinuum、Rigetti、Xanadu 三季报及新上市的 Pasqal，个股要点此前已逐一记录（IonQ 收入 1.738 亿、全年指引上调；D-Wave 订单 −19%；Rigetti 获 CHIPS 资助），汇总稿本身无新增事实。",
     "robotics": "无重要新信息。",
     "aerospace": "【06:30】据 CNBC，Rocket Lab 第 100 次发射，CEO 称其为最快达到 100 次的商业火箭（产业面小幅向上，Neutron 推迟仍是主要变量）。据彭博标题，得州候任总检察长表示将对特斯拉-SpaceX 合并交易进行“严格审查”（细节未查证）——合并的监管不确定性上升。卫星侧：卢森堡初创公司 OwlO Cloud 与 Thales Alenia Space 签备忘录，计划 2030 年前建十多颗轨道计算节点（无融资披露）。",
     "autonomous": "无重要新信息。"
@@ -474,7 +474,7 @@
    "watch": [
     {
      "t": "NVDA",
-     "why": "现价 166.19（11-12 收盘 −4.3%），处于 2027 前瞻区间 123~204~311 的下沿~中值之间；隔夜新增 Lutnick 作证、约 30 亿美元中国项目受威胁、Kress 曾反对客户担保等报道，11-17 财报关注担保 / 融资承诺披露。"
+     "why": "现价 166.19（11-12 收盘 −4.3%），处于 2027 前瞻区间 123~204~311 的下沿~中值之间；隔夜新增 Lutnick 作证、约 30 亿美元中国项目受威胁、Kress 曾反对客户担保等报道，11-17 财报关注担保 / 融资承诺披露。 07:28：盘前反弹未守住，现价 160.75（当日 −3.3%），位于 2027 前瞻区间下沿 110~中值 197 之间；Bessent 公开批评芯片“泄漏”（CNBC 标题）。"
     },
     {
      "t": "CSCO",
@@ -529,6 +529,22 @@
     [
      "CNBC：Rocket Lab 100 launches",
      "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ1lGaWRDSTF6OThFZ0JmLUt4SWtGcDhaY0hRWTRDNHhEMVNQb2x6eTQ2SFZ3eHZNeTRhZTZCRS1ZVGRmWXpranF0cHk5dEVyQTlnQzJKUU1oTDY2LW5HM3hvQnJEdTBlY2ltZmhXNGprak8tXzQ2QkFjQzJaTnA4ZkpQOGRlOWdlVWtuNzh0V2FGWXZ2T084b1gybzBDSFh5WVBocU5vRVFCUFNVa2pjY2tqV1doQjQ?oc=5"
+    ],
+    [
+     "CNBC：英伟达因黄仁勋辞职余波下跌",
+     "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html"
+    ],
+    [
+     "CNBC：Bessent 批评英伟达芯片“泄漏”到中国",
+     "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html"
+    ],
+    [
+     "DCD：PowerBridge 得州吉瓦级带电园区动工",
+     "https://www.datacenterdynamics.com/en/news/powerbridge-breaks-ground-on-gigawatt-scale-powered-land-campus-in-texas/"
+    ],
+    [
+     "DCD：量子公司三季报汇总",
+     "https://www.datacenterdynamics.com/en/news/quantum-earnings-q3-2026-d-wave-ionq-iqm-quantinuum-rigetti-and-xanadu-publish-third-quarter-results-alongside-newly-public-pasqal/"
     ]
    ]
   },
@@ -1264,7 +1280,7 @@
    ]
   }
  ],
- "updated": "2026-11-13T06:28",
+ "updated": "2026-11-13T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-12",
