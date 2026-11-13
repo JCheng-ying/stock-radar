@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-13",
+    "text": "监管面继续偏负：Lutnick 据报将就对华芯片销售作证、约 30 亿美元中国 AI 项目受威胁（路透标题）；据 WSJ，临时 CEO Kress 曾质疑为客户提供数十亿美元担保——资金面上“卖方融资”可能收紧，短期压制新云订单节奏，长期改善资产质量（判断）。",
+    "url": "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html"
+   },
+   {
     "date": "2026-11-12",
     "text": "深夜：据彭博标题新加坡起诉第 5 名芯片案相关人员、与 Alice Huang 有关的公司被指在中国采购禁运芯片（细节未查证）——出口管制监管风险继续累积（情绪面向下，产业面未变）。",
     "url": "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html"
@@ -20,11 +25,6 @@
     "date": "2026-11-11",
     "text": "情绪面小幅修复（+2.9%），但 CEO 事件仍在发酵：众议院中国委员会主席要求说明，摩根士丹利移出首选股；预期面要等 11-17 财报。",
     "url": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html"
-   },
-   {
-    "date": "2026-11-10",
-    "text": "盘后：股东集体诉讼细节公布（覆盖 2025-10-09 至 2026-11-08 买入者，焦点是未披露 CEO 与 Megaspeed 高管的关系）；同时以 IPO 价认购 Anthropic 100 亿美元。",
-    "url": "https://www.datacenterdynamics.com/en/news/nvidia-shareholders-file-class-action-lawsuit-against-chip-giant-and-its-ceo-jensen-huang-following-fall-out-from-chinese-spy-allegations/"
    }
   ],
   "ANET": [
@@ -138,6 +138,11 @@
   ],
   "RKLB": [
    {
+    "date": "2026-11-13",
+    "text": "完成第 100 次发射（据 CNBC，最快达到 100 次的商业火箭）——产业面执行力小幅向上，Neutron 推迟未变。",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ1lGaWRDSTF6OThFZ0JmLUt4SWtGcDhaY0hRWTRDNHhEMVNQb2x6eTQ2SFZ3eHZNeTRhZTZCRS1ZVGRmWXpranF0cHk5dEVyQTlnQzJKUU1oTDY2LW5HM3hvQnJEdTBlY2ltZmhXNGprak8tXzQ2QkFjQzJaTnA4ZkpQOGRlOWdlVWtuNzh0V2FGWXZ2T084b1gybzBDSFh5WVBocU5vRVFCUFNVa2pjY2tqV1doQjQ?oc=5"
+   },
+   {
     "date": "2026-11-09",
     "text": "预期面：盘后约 −6.5%，因每股亏损差于预期和 Neutron 推迟；Neutron 基础价提至 7000 万美元，前 16 次发射订满。",
     "url": "https://finance.yahoo.com/markets/stocks/articles/rklb-stock-sinks-hours-q3-023023465.html"
@@ -207,6 +212,11 @@
    }
   ],
   "TSLA": [
+   {
+    "date": "2026-11-13",
+    "text": "据彭博标题，得州候任总检察长表示将严格审查特斯拉-SpaceX 合并（细节未查证）——预期面上的合并监管不确定性上升。",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUFXZS1pa0g5RjNoLW5MUmMzUF9IQkNDWGxsYkFvczU4SDN4MlZVUFZVS0szdnlsQTE5NzFOV2pxWjFoTjNTUDlPaXF3YWtVSzR1MlBFVXZWd0s3MVBMbUs4aG5pbG1IS3RscDBaM3luRk9NMEdiY3hlVzNJdWdpVERsX2hzaGZ2QVMwTWwtaDdfdDJiUzUwaGk1Rnd3VGZQZWFzVkZSUjJCaGpySldV?oc=5"
+   },
    {
     "date": "2026-11-09",
     "text": "产业面正向：Robotaxi 上线圣安东尼奥并扩大奥斯汀服务区；Cybertruck 生产的说法来源有分歧。",
@@ -372,6 +382,10 @@
  "sectors": {
   "ai": [
    {
+    "date": "2026-11-13",
+    "text": "新云融资链出现两个信号：WSJ 称英伟达临时 CEO 曾反对为客户提供数十亿美元担保；Fermi 得州 600MW 靠超大规模客户预付 2 亿美元推进但 TensorWave 租约终止，Rowan 拿到首笔公司级银团融资超 15 亿美元——资本在向“有电 + 有投资级租户”的项目集中。"
+   },
+   {
     "date": "2026-11-12",
     "text": "英伟达 CEO 黄仁勋离任，市场当作关键人风险而非需求问题：AMD、博通、Arista 同日大涨；应用材料、思科财报和指引都向上，Nebius 因资本开支大增、收入落在下沿大跌——需求端仍强，压力集中在管理层和融资两端。"
    },
@@ -386,10 +400,6 @@
    {
     "date": "2026-11-10",
     "text": "Anthropic 公布 IPO 区间（70~78 美元，约 1.3~1.4 万亿美元），同日发布 Claude Sheets 等办公工具，微软 −2~3%：模型公司向应用层扩张的产业面风险首次直接落到办公套件上。CoreWeave 积压 1325 亿美元、上调指引，新型云的订单面暂时稳住，融资面仍紧。"
-   },
-   {
-    "date": "2026-11-09",
-    "text": "模型公司估值下修（Anthropic IPO 讨论区间 1.1~1.75 万亿美元，OpenAI 1.25 万亿美元融资），是新型云和数据中心订单的上游变量；英伟达出现管理层风险，芯片板块其余公司普涨。"
    }
   ],
   "quantum": [
@@ -451,6 +461,77 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-13",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:30 更新，含 Summizer 新增的 12 篇】隔夜没有新的公司公告，主线仍是英伟达管理层真空的余波，但信息从“谁接班”转向“出口管制和资产负债表”两条线。监管 / 情绪面继续偏负：据 CNBC，商务部长 Lutnick 据报同意就对华芯片销售作证；据路透标题，黄仁勋离任和美国审查使约 30 亿美元依赖英伟达芯片的中国 AI 项目受威胁；Tom's Hardware 援引分析称可能有大量（按功率口径约 1.5GW）禁运芯片流入中国（分析机构估算，未经官方证实）。资金面出现一个值得跟踪的变化：据《华尔街日报》（经 TechCrunch），临时 CEO Kress 此前质疑英伟达用自身资产负债表为无力预付的数据中心运营商提供数十亿美元担保——如果新管理层收紧这类“卖方融资”，最先受影响的是依赖英伟达背书的新云厂商（Nscale 新版招股书显示活跃 GPU 约 5 万块、计划 46.1 万块，上半年亏损 10.2 亿美元）。同时“有电才有客户”继续被验证：Fermi 与一家未具名投资级超大规模云厂商签下得州 600MW 电力开发协议（客户预付 2 亿美元、尚未签租约），但 TensorWave 650MW 租约正式终止；Rowan 拿到首笔公司级银团融资超 15 亿美元；澳大利亚三个数据中心项目因社区反对取消或暂停。结论：产业面需求判断不变，资金面（新云融资成本）和情绪面（英伟达监管）偏负；盘前英伟达小幅反弹（据 CNBC 标题），11-17 财报对担保 / 融资承诺的披露口径是新增的验证点。",
+   "sectors": {
+    "ai": "【06:30】英伟达：Lutnick 据报将就对华芯片销售作证（CNBC）、约 30 亿美元中国 AI 项目受威胁（路透标题），监管面继续偏负；《华尔街日报》称临时 CEO Kress 曾质疑为客户提供数十亿美元担保——资金面上新云“靠芯片商背书融资”的模式可能收紧。电力 / 融资：Fermi 600MW 电力协议靠客户预付 2 亿美元推进、TensorWave 租约终止；Rowan 首笔公司级银团融资超 15 亿美元；Nscale 已上线约 5 万块 GPU（计划 46.1 万）。澳大利亚 3 个数据中心项目因社区反对取消 / 暂停——约束从电网扩展到社区许可。思科盘前维持财报后热度（CNBC：AI 基础设施收入本财年翻倍）。",
+    "quantum": "无重要新信息。",
+    "robotics": "无重要新信息。",
+    "aerospace": "【06:30】据 CNBC，Rocket Lab 第 100 次发射，CEO 称其为最快达到 100 次的商业火箭（产业面小幅向上，Neutron 推迟仍是主要变量）。据彭博标题，得州候任总检察长表示将对特斯拉-SpaceX 合并交易进行“严格审查”（细节未查证）——合并的监管不确定性上升。卫星侧：卢森堡初创公司 OwlO Cloud 与 Thales Alenia Space 签备忘录，计划 2030 年前建十多颗轨道计算节点（无融资披露）。",
+    "autonomous": "无重要新信息。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "现价 166.19（11-12 收盘 −4.3%），处于 2027 前瞻区间 123~204~311 的下沿~中值之间；隔夜新增 Lutnick 作证、约 30 亿美元中国项目受威胁、Kress 曾反对客户担保等报道，11-17 财报关注担保 / 融资承诺披露。"
+    },
+    {
+     "t": "CSCO",
+     "why": "现价 102.01，已在 2027 前瞻中值 101 附近（区间 74~143）；FY27 指引上调后据 CNBC 称 AI 基础设施收入本财年翻倍，毛利率是分歧点。"
+    },
+    {
+     "t": "TSLA",
+     "why": "现价 397.45，高于 2027 前瞻中值 325（区间 116~809）；据彭博标题得州候任总检察长将严格审查与 SpaceX 的合并（细节未查证）。"
+    },
+    {
+     "t": "RKLB",
+     "why": "现价 64.07，处于 2027 前瞻中值~上沿（54~77）；完成第 100 次发射，Neutron 推迟仍未解决。"
+    }
+   ],
+   "sources": [
+    [
+     "CNBC：Nvidia scandal draws in Commerce Secretary Lutnick",
+     "https://www.cnbc.com/2026/11/13/nvidia-scandal-lutnick-chip-sales.html"
+    ],
+    [
+     "Reuters（标题）：Huang exit and US scrutiny imperil $3 billion in Chinese AI projects",
+     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcGIzcVZhWDU2cVlTWlhGZFZUMGlCcldoTU4wc2Z2UUpqUzJiNWp3Sy1kTVFQTnRKbHVnY2cwWHh0WEx3YkV5ZVMxOUFnMmVIc0kzaHdHc0NEVm9NS3hsVTdfTHR1ZWR4OTc2NUNpXzUteWZvblRYcEFVRDBIVTQyanVZTGdDYVFTaDJLTWFYdWNmSzBtU09Dd1RZVkhLUjB0WkR2Rm0tVTZnXzctWTREMXF3QjhZNTUxMHhDWjJZMHc?oc=5"
+    ],
+    [
+     "Tom's Hardware：Mass smuggling of Nvidia AI GPUs",
+     "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls"
+    ],
+    [
+     "TechCrunch（转述 WSJ）：Jensen Huang didn't show confidence in his successor",
+     "https://techcrunch.com/2026/11/13/jensen-huang-didnt-show-confidence-in-his-successor-report-says/"
+    ],
+    [
+     "DCD：Fermi 600MW power deal / TensorWave lease dead",
+     "https://www.datacenterdynamics.com/en/news/fermi-does-600mw-power-deal-with-hyperscaler-but-tensorwave-lease-is-officially-dead/"
+    ],
+    [
+     "DCD：Rowan secures $1.5bn in financing",
+     "https://www.datacenterdynamics.com/en/news/rowan-secures-15bn-in-financing-for-data-center-build-out/"
+    ],
+    [
+     "DCD：Nscale brings online two data centers",
+     "https://www.datacenterdynamics.com/en/news/nscale-brings-online-two-data-centers-and-25000-gpus-in-25-months/"
+    ],
+    [
+     "DCD：Australia data center developments change course",
+     "https://www.datacenterdynamics.com/en/news/three-data-center-developments-in-australia-change-course-after-community-backlash/"
+    ],
+    [
+     "Bloomberg（标题）：Texas' Next AG vows scrutiny of Tesla-SpaceX deal",
+     "https://news.google.com/rss/articles/CBMirwFBVV95cUxPSUFXZS1pa0g5RjNoLW5MUmMzUF9IQkNDWGxsYkFvczU4SDN4MlZVUFZVS0szdnlsQTE5NzFOV2pxWjFoTjNTUDlPaXF3YWtVSzR1MlBFVXZWd0s3MVBMbUs4aG5pbG1IS3RscDBaM3luRk9NMEdiY3hlVzNJdWdpVERsX2hzaGZ2QVMwTWwtaDdfdDJiUzUwaGk1Rnd3VGZQZWFzVkZSUjJCaGpySldV?oc=5"
+    ],
+    [
+     "CNBC：Rocket Lab 100 launches",
+     "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ1lGaWRDSTF6OThFZ0JmLUt4SWtGcDhaY0hRWTRDNHhEMVNQb2x6eTQ2SFZ3eHZNeTRhZTZCRS1ZVGRmWXpranF0cHk5dEVyQTlnQzJKUU1oTDY2LW5HM3hvQnJEdTBlY2ltZmhXNGprak8tXzQ2QkFjQzJaTnA4ZkpQOGRlOWdlVWtuNzh0V2FGWXZ2T084b1gybzBDSFh5WVBocU5vRVFCUFNVa2pjY2tqV1doQjQ?oc=5"
+    ]
+   ]
+  },
   {
    "date": "2026-11-12",
    "market": "今天的主线是英伟达管理层突变：董事会公告黄仁勋辞去 CEO 和董事职务、即时生效，CFO Colette Kress 兼任临时 CEO，前 Synopsys CEO Harvey Jones 出任首任董事长；英伟达盘中一度跌约 14%，收盘 −4.3%（166.19），一个月累计 −25%。但据 MarketWatch，标普 500 基本没有跟跌——资金从英伟达转向 AMD（+5.9%）、博通（+5.5%）、Arista（+5.1%），同时投机小盘股普遍大跌（量子、eVTOL、加密矿企、机器人小票多数 −7%~−17%），说明是风险偏好收缩加板块内轮动，不是 AI 需求逻辑被否定。资金面从 24 分降到 22 分（10 年期美债 5.10%、一年 +98bp；美元指数 103.2 处于近一年最高分位），仍是“钱贵”；情绪面热度 51（中性）：VIX 18.7、CNN 恐贪 40（一周前 20），三倍杠杆 ETF 成交占比 87% 分位，杠杆仍偏高。浪位：AI 二浪重新回到“启动初期”，机器人一浪在“尚未启动”和“财报已改善，价格未反映”之间来回，航空航天三浪回到“尚未启动”。盘后应用材料、思科财报都超预期并上调指引，Nebius 则因 2026 收入落在区间下沿、资本开支大幅上调而 −16.8%。结论：预期面（设备、网络）继续向上，个股层面的管理层和融资风险在上升；接下来的验证点是英伟达 11-17 财报和 Anthropic 11-19 上市（据彭博认购约 6 倍）。上次研判后 Summizer 没有新增文章。 【晚间更新，含当晚 Summizer 新增的 16 篇】盘后两条新证据指向同一个结论——需求不缺，缺的是电、许可和融资：Nebius 下调 2026 收入的直接原因是为微软建设的新泽西 Vineland 数据中心由第三方运营商从临时发电机改用 Bloom Energy 燃料电池，约一半微软容量推迟到 2027 年二季度；2027 年 400~450 亿美元资本开支计划用客户预付款和以投资级合同抵押的融资覆盖最高 85%。软银季度亏损 71 亿美元，一半以上来自多订了近 50% 的燃气轮机定金——AI 电力链第一次出现“囤货过度”的价格发现。Cerebras 三季度核心收入 2.31 亿美元（+70%，高于预期 2.15 亿），宣布微软成为客户，盘后据 CNBC 涨约 17%，但积压增量小、仍需融资。据 CNBC，英伟达正走向 2012 年以来最长的周线连跌。整体结论不变。 【23:28 更新】英伟达芯片走私案在新加坡继续发酵：据彭博标题，新加坡已起诉第 5 名与该案有关的人员，另一篇彭博标题称与 Alice Huang 有关的公司在中国采购了被禁的英伟达芯片（两条细节均未查证）；CNBC 刊文梳理新加坡为何反复出现在这场争端中。这属于前两天监管风险的延续，进一步压低英伟达的情绪面，但没有新的公司层面处罚或需求变化，产业面和整体结论不变。另据 CNBC 标题，微软 Outlook 等 365 服务出现大范围宕机（细节未查证），属运营事件，暂不改变微软的五面判断。",
@@ -1183,7 +1264,7 @@
    ]
   }
  ],
- "updated": "2026-11-12T23:28",
+ "updated": "2026-11-13T06:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-12",
