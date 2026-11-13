@@ -470,3 +470,6 @@
 {"ts": "2026-11-13T17:40:49+00:00", "title": "🔴 APD 进入「回调风险」", "body": "Air Products and Chemicals, Inc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 97% 位置；偏离200日线 +9%", "priority": "normal", "sent": true}
 {"ts": "2026-11-13T18:12:08+00:00", "title": "🔴 DUK 进入「回调风险」", "body": "Duke Energy Corporation (Holdin：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 66；处于52周区间的 93% 位置；偏离200日线 +5%", "priority": "normal", "sent": true}
 {"ts": "2026-11-13T18:12:09+00:00", "title": "🔴 ECL 进入「回调风险」", "body": "Ecolab Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 63；处于52周区间的 93% 位置；偏离200日线 +12%", "priority": "normal", "sent": true}
+{"ts": "2026-11-13T18:48:39+00:00", "title": "🔴 SAIL 进入「回调风险」", "body": "SailPoint, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 55；处于52周区间的 89% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
+{"ts": "2026-11-13T18:48:39+00:00", "title": "💥 LCID 单日 -8.3%", "body": "Lucid Group, Inc. 收于 2.98。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-13T19:10:24+00:00", "title": "💥 ALNT 单日 -8.1%", "body": "Allient Inc. 收于 77.53。信号：关注买点。", "priority": "low", "sent": true}
