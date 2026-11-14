@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-14",
+    "text": "预期面 / 监管：据 Tom's Hardware 标题，研究人员通过权重统计分析指称 DeepSeek、Kimi 等中国模型用受管制的 Blackwell 训练（细节未查证），走私和出口管制执法可能更受关注，监管不确定性小幅偏负。",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware"
+   },
+   {
     "date": "2026-11-13",
     "text": "资金面：据纽约时报（转述），英伟达与六家华尔街机构的 5000 亿美元 AI 融资平台至今未完成任何贷款，黄仁勋离职后至少一家贷方讨论退出；担保 / 循环融资战略能否延续成为新的不确定性，资金面和预期面偏负。",
     "url": "https://fourweekmba.com/ai-nvidia-ceo-exit-500b-ai-lending-plan-has-closed-no-loans/"
@@ -20,11 +25,6 @@
     "date": "2026-11-13",
     "text": "情绪面 / 资金面继续向下：本周约 −13%、六连周跌、市值跌破 4 万亿美元；抛压当天扩散到 AMD、戴尔等算力链，管理层真空的折价从个股变成板块因素。",
     "url": "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "情绪面 / 资金面：收于 162.85（−2.0%），据 CNBC 市值自 2025 年 7 月以来首次收在 4 万亿美元以下、周线为 2012 年以来最长连跌（市值蒸发约 1.7 万亿美元）；继任方面据 Tom's Hardware 标题董事会曾接触 Arm CEO Rene Haas（细节未查证）。",
-    "url": "https://www.cnbc.com/2026/11/13/nvidia-nvda-stock-jensen-huang-transition.html"
    }
   ],
   "ANET": [
@@ -574,19 +574,28 @@
  "daily": [
   {
    "date": "2026-11-14",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布；今天周六休市）【06:27 更新，含 Summizer 新增的 1 篇】①浪位：量子计算一浪从“尚未启动”切换为“财报已改善，价格未反映”——财报侧 3/4 项满足（收入同比中位数 +50%、57% 的公司毛利率改善、6 家披露 RPO 的同比中位数 +119%），但价格侧 0/2（篮子近 3 个月 −41%、相对标普 −39%，仅 7% 站上 50 日线、0% 站上 200 日线）；毛利率改善占比 57% 只略高于 55% 阈值，属于边界翻转，可能来回切换。基本面偏正、资金面和情绪面仍偏负。②据 DataCenterDynamics，AirTrunk（黑石与加拿大养老金计划所有）与印度安得拉邦签署 MoU，在维沙卡帕特南附近规划 400MW + 1.4GW 两个园区；只是备忘录，投资额、电源方案和时间表都未公开。产业面（海外 AI 数据中心需求）小幅偏正，电力仍是瓶颈。整体结论不变，下周验证点仍是 11-17 英伟达财报。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布；今天周六休市）【06:27 更新，含 Summizer 新增的 1 篇】①浪位：量子计算一浪从“尚未启动”切换为“财报已改善，价格未反映”——财报侧 3/4 项满足（收入同比中位数 +50%、57% 的公司毛利率改善、6 家披露 RPO 的同比中位数 +119%），但价格侧 0/2（篮子近 3 个月 −41%、相对标普 −39%，仅 7% 站上 50 日线、0% 站上 200 日线）；毛利率改善占比 57% 只略高于 55% 阈值，属于边界翻转，可能来回切换。基本面偏正、资金面和情绪面仍偏负。②据 DataCenterDynamics，AirTrunk（黑石与加拿大养老金计划所有）与印度安得拉邦签署 MoU，在维沙卡帕特南附近规划 400MW + 1.4GW 两个园区；只是备忘录，投资额、电源方案和时间表都未公开。产业面（海外 AI 数据中心需求）小幅偏正，电力仍是瓶颈。整体结论不变，下周验证点仍是 11-17 英伟达财报。【07:28 更新】据 Tom's Hardware 标题，研究人员通过对模型权重做统计分析，指称 DeepSeek、Kimi 等中国模型是用受出口管制的英伟达 Blackwell 训练的（细节未查证；此前美方官员在 2 月、7 月也提过类似指控，公司均未证实）。这会让上周已被政治化的出口管制更受关注，英伟达的预期面和监管不确定性小幅偏负；产业面（需求）不变，整体结论不变，验证点仍是 11-17 英伟达财报。",
    "sectors": {
-    "ai": "【06:27】AirTrunk 在印度安得拉邦签署 1.8GW 数据中心 MoU（400MW + 1.4GW），单份备忘录规模就是其印度平台最初 600MW 规划的三倍；未披露电源方案，落地进度待验证。对电力 / 散热设备（VRT、ETN 等）和 GPU 是远期的产业面偏正。",
+    "ai": "【06:27】AirTrunk 在印度安得拉邦签署 1.8GW 数据中心 MoU（400MW + 1.4GW），单份备忘录规模就是其印度平台最初 600MW 规划的三倍；未披露电源方案，落地进度待验证。对电力 / 散热设备（VRT、ETN 等）和 GPU 是远期的产业面偏正。【07:28】据 Tom's Hardware 标题，研究人员指称多家中国模型用 Blackwell 训练（细节未查证），出口管制执法可能收紧，监管面小幅偏负。",
     "quantum": "【06:27】一浪信号从“尚未启动”变为“财报已改善，价格未反映”：财报 3/4 项满足，价格 0/2 项满足（篮子近 3 个月 −41%），属于“基本面先改善、股价还没反映”的典型状态；毛利率改善占比 57% 贴近 55% 阈值，信号稳定性一般。",
     "robotics": "无重要新信息",
     "aerospace": "无重要新信息",
     "autonomous": "无重要新信息"
    },
-   "watch": [],
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "现价 162.85（周五 −2.0%），位于 2027 前瞻区间 111.84 / 199.45 / 306.67 的下沿到中值之间；新增中国模型用 Blackwell 训练的指控（未查证），监管不确定性上升。"
+    }
+   ],
    "sources": [
     [
      "AirTrunk signs MoU for 1.8GW of data center capacity in Andhra Pradesh, India（DCD，经 Summizer）",
      "https://www.datacenterdynamics.com/en/news/airtrunk-signs-mou-for-1-8gw-of-data-center-capacity-in-andhra-pradesh-india/"
+    ],
+    [
+     "Researchers allege DeepSeek, Kimi, and other Chinese AI models were trained using banned Nvidia Blackwell GPUs (Tom's Hardware)",
+     "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware"
     ]
    ]
   },
@@ -1585,7 +1594,7 @@
    ]
   }
  ],
- "updated": "2026-11-14T06:30",
+ "updated": "2026-11-14T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-13",
