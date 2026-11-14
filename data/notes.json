@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-14",
+    "text": "预期面 / 治理：据 TechCrunch，要求恢复黄仁勋职务的请愿签名超过 11.5 万（网站自述，含约 6 千名现任员工），马斯克公开署名；继任路径更不确定，调查未结前回归可能性低（判断），风险溢价可能持续到财报之后。",
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+   },
+   {
+    "date": "2026-11-14",
     "text": "预期面 / 管理层：据 CNBC 标题，两家主要投资者致信董事会要求考虑黄仁勋可能回归（细节未查证）；CEO 更替不再是定局，继任路径不确定性上升，短期情绪面波动加大、方向不定。",
     "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-14",
     "text": "预期面 / 监管：据 Tom's Hardware 标题，研究人员通过权重统计分析指称 DeepSeek、Kimi 等中国模型用受管制的 Blackwell 训练（细节未查证），走私和出口管制执法可能更受关注，监管不确定性小幅偏负。",
     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "资金面：据纽约时报（转述），英伟达与六家华尔街机构的 5000 亿美元 AI 融资平台至今未完成任何贷款，黄仁勋离职后至少一家贷方讨论退出；担保 / 循环融资战略能否延续成为新的不确定性，资金面和预期面偏负。",
-    "url": "https://fourweekmba.com/ai-nvidia-ceo-exit-500b-ai-lending-plan-has-closed-no-loans/"
    }
   ],
   "ANET": [
@@ -408,6 +408,11 @@
   "SMCI": [
    {
     "date": "2026-11-14",
+    "text": "监管面偏负：新加坡称美方在 Supermicro 相关信息上配合有限，出口管制追查可能延伸到服务器整机层（未见对公司的指控）。",
+    "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
+   },
+   {
+    "date": "2026-11-14",
     "text": "监管面：据 TechCrunch，新加坡内政部称在调查 Megaspeed 服务器经马来西亚转运的申报问题时，美方在 Supermicro 相关信息上提供协助有限，针对 Megaspeed 及另外六人的调查仍在进行；目前未见对公司的指控，但服务器整机层的合规风险上升，监管面小幅偏负。",
     "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
    },
@@ -418,6 +423,11 @@
    }
   ],
   "SPCX": [
+   {
+    "date": "2026-11-14",
+    "text": "产业面向上：Starship 第 15 次试飞上面级 Ship 42 在轨约 22.5 小时后被塔架接住，首次实现上面级回收；助推器未回收、据报道溅落前爆炸（更正此前“可控溅落”的说法）。",
+    "url": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
+   },
    {
     "date": "2026-11-13",
     "text": "情绪面 / 监管（小幅）：据 Reuters 转 WSJ 标题，民主党参议员要求马斯克保留乌克兰星链接入相关的 SpaceX 记录，参议院助手称这是标准程序，暂无实质影响。",
@@ -485,10 +495,49 @@
     "text": "基本面向上：三季度收入 3,910 万美元、同比 +83%，毛利率约 27%（去年 15%），全年收入指引从至少 1.40 亿上调到 1.45 亿美元；现价 8.35，位于 2027 前瞻区间中值（8.15）略上方。",
     "url": "https://www.sec.gov/Archives/edgar/data/0001899287/000189928726000071/ampx-20260930.htm"
    }
+  ],
+  "TSM": [
+   {
+    "date": "2026-11-14",
+    "text": "产业面 / 资本配置：董事会批准对 Anthropic、OpenAI 各最多 5 亿美元投资（上限，未完成），并批准约 409 亿美元资本拨款，台积电开始在客户的模型层持股，绑定加深。",
+    "url": "https://focustaiwan.tw/business/202611110009"
+   }
+  ],
+  "XPEV": [
+   {
+    "date": "2026-11-14",
+    "text": "预期面：11-16 盘前发三季报；交付 118,390 辆创纪录、10 月首破 5 万辆，市场焦点从销量转向车辆毛利率和亏损收窄。",
+    "url": "https://cnevpost.com/2026/11/02/xpeng-q3-2026-results-nov-16/"
+   }
+  ],
+  "BIDU": [
+   {
+    "date": "2026-11-14",
+    "text": "基本面分化：二季度总收入 −4%、在线营销 −19%，AI 云基础设施 +50%、GPU 云 +283%，资本开支环比近翻倍；三季报（日历显示 11-16）看广告降幅是否收窄。",
+    "url": "https://thenextweb.com/news/baidu-q2-2026-earnings-revenue-fifth-drop-ai-cloud"
+   }
+  ],
+  "PONY": [
+   {
+    "date": "2026-11-14",
+    "text": "预期面：据财报预览 11-18 发三季报；二季度末车队 1,975 辆、年底目标 3,000 辆，看车队扩张速度和现金消耗。",
+    "url": "https://www.panabee.com/news/pony-ai-earnings-q3-2026"
+   }
+  ],
+  "VUZI": [
+   {
+    "date": "2026-11-14",
+    "text": "基本面向下：三季度收入约 71.4 万美元（−38%）远低于预期，毛亏损扩大，现金 920 万美元；业务转向 OEM 与数据中心光连接，财报后股价连跌（11-13 −26.6%）。",
+    "url": "https://www.stocktitan.net/news/VUZI/vuzix-reports-third-quarter-2026-1ee49uowygo3.html"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-14",
+    "text": "Anthropic 定于 11-18 定价、11-19 上市（区间 70~78 美元，最多约 644 亿美元），台积电批准最多 5 亿美元认购；模型层能否在二级市场顺利融资，决定算力链资本开支的下一段资金来源。"
+   },
    {
     "date": "2026-11-13",
     "text": "英伟达管理层真空的折价扩散到算力链（AMD −8.8%、戴尔 −7.2%、Nebius −9.9%）；美联储调查 87% 受访者把 AI 列为首要金融风险。需求侧 SpaceX 约 740 亿美元自带电源的数据中心计划说明产业面需求未变，压力在资金面和预期面。据 TechCrunch，英伟达后续可能收缩对新云和开源模型创业公司的投资，新云融资的资金面进一步转紧。 另据纽约时报（转述），英伟达 5000 亿美元 AI 融资平台尚无贷款落地、至少一家贷方讨论退出，新云融资通道的不确定性从“投资收缩”扩展到“债务融资”。"
@@ -504,10 +553,6 @@
    {
     "date": "2026-11-11",
     "text": "CoreWeave 财报（积压 1325 亿美元、全年指引上调、2028 上半年调整后盈利）+ Anthropic 10 月底年化收入约 810 亿美元：需求端证据增强，AI 硬件全线反弹；但资金面（10 年期美债 5.0%）没有变化，压力仍在融资端。微软承诺电费自付，电力成本向云厂商内部化。"
-   },
-   {
-    "date": "2026-11-10",
-    "text": "盘后：Anthropic 以 IPO 价向 AMD、博通、谷歌、美光、微软、英伟达、台积电私募 260 亿美元（谷歌、英伟达各 100 亿）——供应商成为股东，订单确定性和循环融资风险同时上升。数据中心的地方监管成为新瓶颈（中期选举 40 多项反数据中心提案）。"
    }
   ],
   "quantum": [
@@ -552,6 +597,10 @@
   ],
   "aerospace": [
    {
+    "date": "2026-11-14",
+    "text": "Starship 上面级首次塔架回收成功（11-14），助推器未回收；“完全可复用”完成一半，重型运力成本曲线继续下移。"
+   },
+   {
     "date": "2026-11-13",
     "text": "Starship 第 15 次试飞上面级入轨，但助推器取消回收、改为溅落，首次双回收未完成；SpaceX 的 740 亿美元数据中心计划和与特斯拉的合并审查是另外两条线。"
    },
@@ -579,44 +628,108 @@
  "daily": [
   {
    "date": "2026-11-14",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布；今天周六休市）【06:27 更新，含 Summizer 新增的 1 篇】①浪位：量子计算一浪从“尚未启动”切换为“财报已改善，价格未反映”——财报侧 3/4 项满足（收入同比中位数 +50%、57% 的公司毛利率改善、6 家披露 RPO 的同比中位数 +119%），但价格侧 0/2（篮子近 3 个月 −41%、相对标普 −39%，仅 7% 站上 50 日线、0% 站上 200 日线）；毛利率改善占比 57% 只略高于 55% 阈值，属于边界翻转，可能来回切换。基本面偏正、资金面和情绪面仍偏负。②据 DataCenterDynamics，AirTrunk（黑石与加拿大养老金计划所有）与印度安得拉邦签署 MoU，在维沙卡帕特南附近规划 400MW + 1.4GW 两个园区；只是备忘录，投资额、电源方案和时间表都未公开。产业面（海外 AI 数据中心需求）小幅偏正，电力仍是瓶颈。整体结论不变，下周验证点仍是 11-17 英伟达财报。【07:28 更新】据 Tom's Hardware 标题，研究人员通过对模型权重做统计分析，指称 DeepSeek、Kimi 等中国模型是用受出口管制的英伟达 Blackwell 训练的（细节未查证；此前美方官员在 2 月、7 月也提过类似指控，公司均未证实）。这会让上周已被政治化的出口管制更受关注，英伟达的预期面和监管不确定性小幅偏负；产业面（需求）不变，整体结论不变，验证点仍是 11-17 英伟达财报。【08:28 更新】据 Tom's Hardware 标题，美国财政部长公开质疑英伟达是否“明知”把 AI GPU 卖给空壳公司，并称公司本身负有责任、相关人员应被追责（细节未查证；目前未见对公司的正式指控）。这是继商务部、财政部在 Megaspeed 上分歧之后，财政部层面首次把矛头指向公司本身，监管面 / 预期面进一步偏负；另据 Seeking Alpha 标题，有报道称前 CEO 黄仁勋曾就私人关系误导高管、马斯克则公开为其辩护——属于已知的管理层变动事件的延续，不改变判断。产业面需求不变，整体结论不变，验证点仍是 11-17 英伟达财报（管理层是否回应出口管制调查）。【09:28 更新，含 Summizer 新增的 1 篇】据 TechCrunch 梳理，亚洲各国政府对黄仁勋离职的反应分三类：韩国科学部称英伟达已重申 26 万颗先进 GPU 的供应和联合 AI 项目（但韩国 AI 战略委员会周五开紧急会议评估影响），台湾经济部长认为不会显著改变 AI 产业增长、台北海外总部按计划推进；日本称“评估为时尚早”；新加坡披露自 2025 年 6 月起就在查 Megaspeed 相关服务器转运申报，并称美方在 Supermicro 相关信息上配合有限，针对 Megaspeed 及另外六人的调查仍在进行。产业面（订单 / 交付）得到大客户侧的“止血”确认，监管面风险则可能从芯片设计方延伸到服务器整机层；整体结论不变。另：量子计算一浪信号又切回“尚未启动”，印证早间所说的毛利率改善占比贴近阈值、信号来回切换。【10:28 更新，含 Summizer 新增的 1 篇】据 CNBC 标题，两家主要投资者致信英伟达董事会，要求考虑“黄仁勋可能回归”（细节未查证：投资者名称、持股比例和董事会是否回应均未见正文）。这说明 CEO 更替并非定局，管理层不确定性从“继任人选”扩展为“是否回归”，短期内预期面和情绪面的波动来源增多，方向不定；产业面需求不变，整体结论不变，验证点仍是 11-17 财报和董事会表态。另据 TechCrunch 梳理的 AI 失败项目清单（引 S&P Global 数据称约 42% 的 AI 项目被母公司放弃），单点功能型应用层更易被平台吸收，属于对“价值留在算力 / 平台层”判断的旁证，不改变结论。【12:27 更新，含 Summizer 新增的 1 篇】据 SiliconANGLE 报道（AT&T 高管在 AWS 活动上的自述，未经独立验证），AT&T 每天处理约 450 亿个 AI token，近 500 个 agentic 工作流已投入生产、计划明年翻三倍，自称生产环境 AI 投入一年约 5 倍回报；瓶颈在数据整合和遗留系统而非模型。这是企业端从“任务提效”走向“流程重构”的正面样本，对推理算力需求的持续性（产业面）小幅偏正。另：Seeking Alpha 跟进报道投资者要求董事会考虑黄仁勋回归，与 10:28 所记为同一事件，CNBC 的“领导层危机冲击 AI 交易”属评论文章，均不改变判断。整体结论不变，验证点仍是 11-17 英伟达财报和董事会表态。",
+   "market": "【14:30 完整研判，周六休市，行情截至 11-13；含 12:27 之后 Summizer 新增的 1 篇】资金面 21 分（钱贵 / 紧缩）不变：10 年期美债 5.15%、一年上行 109bp，美元指数 103.4，高收益债相对长债近 3 个月 −0.6%；情绪热度 51（中性），CNN 恐贪 39（一周前 24），VIX 19.3，三倍杠杆 ETF 成交占比仍在近一年 93% 分位。浪位：量子一浪和机器人一浪都在“尚未启动”与“财报已改善，价格未反映”之间来回切换（毛利率改善占比贴近 55% 阈值，属边界摆动，不是基本面变化）；AI 二浪、航空航天二浪仍为“启动初期”。周末的主线仍是英伟达治理：据 TechCrunch，要求恢复黄仁勋职务的请愿书签名超过 11.5 万（网站自述含约 6 千名现任员工，马斯克公开署名，未经核实），加上 CNBC 报道的两家大投资者致信董事会，CEO 更替“不是定局”，但 FBI / 出口管制调查未结，治理不确定性大概率拖到财报之后；产业面的好消息来自航天：Starship 第 15 次试飞的上面级 Ship 42 在轨约 22.5 小时后被发射塔“筷子”接住，是上面级首次塔架回收（CNBC、Teslarati），但助推器没有回收、据报道在溅落前爆炸（更正 11-13 记录里的“可控溅落”）。结论：需求侧没有转弱，压力集中在资金面偏紧和英伟达治理 / 监管；下周三个验证点：11-16 小鹏、百度财报，11-17 英伟达财报，11-18 Anthropic IPO 定价（区间 70~78 美元、最多融资约 644 亿美元，据 CNBC）——后者是 AI 资产一级到二级市场定价的直接测试。\n【今日早间增量摘要】06:27 AirTrunk 印度 1.8GW MoU；07:28~08:28 据 Tom's Hardware，研究人员指称中国模型用 Blackwell 训练、财政部长质疑英伟达是否明知向空壳公司出货（均未查证）；09:28 韩国重申 26 万颗 GPU 供应、新加坡点名美方在 Supermicro 相关信息上配合有限；10:28 两家大投资者要求董事会考虑黄仁勋回归；12:27 AT&T 日处理约 450 亿 AI token（公司自述）。",
    "sectors": {
-    "ai": "【06:27】AirTrunk 在印度安得拉邦签署 1.8GW 数据中心 MoU（400MW + 1.4GW），单份备忘录规模就是其印度平台最初 600MW 规划的三倍；未披露电源方案，落地进度待验证。对电力 / 散热设备（VRT、ETN 等）和 GPU 是远期的产业面偏正。【07:28】据 Tom's Hardware 标题，研究人员指称多家中国模型用 Blackwell 训练（细节未查证），出口管制执法可能收紧，监管面小幅偏负。【08:28】据 Tom's Hardware 标题，财政部长质疑英伟达是否明知向空壳公司出货（细节未查证），出口管制执法风险从“渠道走私”向“公司责任”延伸，监管面偏负。【09:28】据 TechCrunch，韩国重申 26 万颗 GPU 供应不变、台湾称产业增长不受影响，需求和制造排期侧未松动（HBM、晶圆代工相对稳）；新加坡调查点名美方在 Supermicro 相关信息上配合有限，出口管制追查可能延伸到服务器 / 整机层，监管面偏负。中国约 30 亿美元以上依赖受限芯片的算力项目不确定性上升。【10:28】据 CNBC 标题，两家大投资者要求英伟达董事会考虑黄仁勋回归（细节未查证），管理层路径重新打开，预期面 / 情绪面波动加大、方向不定；TechCrunch 的 AI 失败清单显示应用层单点产品易被平台吸收，价值仍偏向算力和平台层。【12:27】据 SiliconANGLE，AT&T 日处理约 450 亿 AI token、近 500 个生产级 agent 工作流且明年计划翻三倍（公司自述），企业推理需求偏持续性，利好算力 / 云层；数据整合与 agent 治理是落地瓶颈。",
-    "quantum": "【06:27】一浪信号从“尚未启动”变为“财报已改善，价格未反映”：财报 3/4 项满足，价格 0/2 项满足（篮子近 3 个月 −41%），属于“基本面先改善、股价还没反映”的典型状态；毛利率改善占比 57% 贴近 55% 阈值，信号稳定性一般。【09:28】一浪信号从“财报已改善，价格未反映”回到“尚未启动”，属于毛利率改善占比在 55% 阈值附近的边界摆动，不代表基本面变化。",
-    "robotics": "无重要新信息",
-    "aerospace": "无重要新信息",
-    "autonomous": "无重要新信息"
+    "ai": "预期面 / 治理：黄仁勋回归请愿（TechCrunch，签名数据为网站自述）和投资者来信让继任路径重新打开，但调查未结束前董事会让其回归的可能性低（判断），英伟达风险溢价可能拖得更久；新云依赖英伟达信用背书的融资谈判继续受影响，资金面对新云偏负。资金面 / 产业面：Anthropic 定于 11-18 定价、11-19 上市（CNBC：区间 70~78 美元，825 百万股，最多约 644 亿美元；估值口径从约 9,000 亿到 1.4 万亿美元不等，来源分歧）；台积电董事会批准对 Anthropic、OpenAI 各最多 5 亿美元投资（Focus Taiwan，只是上限）。若定价顺利，等于给模型层的资本开支续上融资渠道，对算力链偏正；若破发或下调，将强化“AI 交易拥挤”的担忧。早间增量：AirTrunk 印度 1.8GW MoU、AT&T 企业推理用量（产业面小幅偏正）；出口管制执法向“公司责任”和服务器整机层延伸（监管面偏负）。",
+    "quantum": "无重要新信息；一浪信号在“尚未启动”与“财报已改善，价格未反映”之间来回切换，属于毛利率改善占比贴近阈值的边界摆动。",
+    "robotics": "无重要新信息；一浪信号同样在两个状态之间来回切换（周五夜间先切到“尚未启动”又切回），原因同量子，不代表基本面变化。",
+    "aerospace": "产业面向上：Starship Ship 42 在轨约 22.5 小时后被塔架接住，上面级首次回收成功（CNBC、Teslarati），是“完全可复用”最难的一半；助推器未回收、据报道溅落前爆炸，说明双回收仍未打通。对 SPCX 的发射成本曲线和星链 V3 部署节奏是正面验证，对 Rocket Lab 等竞争者意味着重型运力的成本差可能继续拉大（判断）。",
+    "autonomous": "无重要新信息；下周两场中国自动驾驶相关财报：小鹏 11-16 盘前（三季度交付 118,390 辆创纪录、10 月首次过 5 万辆，市场关注车辆毛利率，CnEVPost），小马智行 11-18（据财报预览）。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "现价 162.85（周五 −2.0%），位于 2027 前瞻区间 111.84 / 199.45 / 306.67 的下沿到中值之间；新增中国模型用 Blackwell 训练的指控（未查证），监管不确定性上升。 08:28：财政部长公开质疑其是否明知向空壳公司出货（据标题，未查证），现价 162.85 仍在 2027 前瞻区间下沿 111.84 与中值 199.45 之间。 09:28：亚洲政府表态显示韩国 26 万颗 GPU 供应被重申、台湾项目照常，需求侧未松动；现价 162.85 美元，位于 2027 前瞻区间（111.84 / 199.45 / 306.67）下沿至中值之间。 10:28：据 CNBC 标题，两家大投资者要求董事会考虑黄仁勋回归（细节未查证）。"
+     "why": "现价 162.85（周五 −2.0%，本周 −12.8%），位于 2027 前瞻区间 111.84 / 199.45 / 306.67 的下沿到中值之间；周末黄仁勋回归请愿 + 投资者来信让继任问题悬而未决，11-17 财报看数据中心收入、毛利率和对客户融资担保的口径。"
+    },
+    {
+     "t": "SPCX",
+     "why": "Starship 上面级首次被塔架接住（在轨约 22.5 小时），助推器未回收；现价 139.11，位于 2027 前瞻区间 9.96 / 160.22 / 685.20 的下沿~中值，但分析师分歧极大，中值参考意义有限。"
+    },
+    {
+     "t": "TSM",
+     "why": "董事会批准对 Anthropic（按 IPO 价认购普通股）、OpenAI（优先股）各最多 5 亿美元投资，并批准约 409 亿美元资本拨款；现价 398.73，位于 2027 前瞻区间 335.95 / 488.34 / 702.30 的下沿~中值。"
+    },
+    {
+     "t": "XPEV",
+     "why": "11-16 盘前发三季报：交付 118,390 辆创纪录、10 月 50,237 辆；此前三季度收入指引 217~234 亿元低于当时市场预期，焦点在车辆毛利率（二季度 12.1%）；现价 9.37，位于 2027 前瞻区间 7.39 / 11.20 / 15.95 的下沿~中值。"
+    },
+    {
+     "t": "BIDU",
+     "why": "日历显示 11-16 发三季报（公司官方日期未查到）；二季度收入 −4%、在线营销 −19%，AI 云基础设施 +50%、GPU 云 +283%，资本开支 113.9 亿元。现价 78.14，位于 2027 前瞻区间 47.23 / 95.70 / 180.00 的下沿~中值。"
+    },
+    {
+     "t": "PONY",
+     "why": "据财报预览 11-18 发三季报；二季度末车队 1,975 辆，年底目标 3,000 辆，看第七代车型单车经济性和现金消耗；现价 4.46，位于 2027 前瞻区间 3.81 / 4.89 / 6.39 的下沿~中值。"
+    },
+    {
+     "t": "VUZI",
+     "why": "三季度收入约 71.4 万美元（−38%，远低于约 130 万美元预期），毛亏损扩大，季末现金 920 万美元；股价财报后连跌，11-13 单日 −26.6%、收于 1.35，一周 −28.9%。公司在从自有品牌眼镜转向 OEM / 数据中心光连接，现金跑道是核心约束。"
     },
     {
      "t": "SMCI",
-     "why": "新加坡调查 Megaspeed 服务器转运时称美方在 Supermicro 相关信息上配合有限，出口管制追查可能延伸到服务器整机层（未见对公司指控）；现价 26.87 美元，位于 2027 前瞻区间（22.00 / 30.91 / 43.61）下沿至中值之间。"
+     "why": "新加坡调查 Megaspeed 时称美方在 Supermicro 相关信息上配合有限（未见对公司指控）；英伟达治理与出口管制执法收紧对整机层是持续的监管面风险。现价 26.87，位于 2027 前瞻区间 22.00 / 30.91 / 43.61 的下沿~中值。"
     }
    ],
    "sources": [
     [
-     "AirTrunk signs MoU for 1.8GW of data center capacity in Andhra Pradesh, India（DCD，经 Summizer）",
-     "https://www.datacenterdynamics.com/en/news/airtrunk-signs-mou-for-1-8gw-of-data-center-capacity-in-andhra-pradesh-india/"
+     "CNBC：SpaceX 首次塔架回收 Starship 上面级",
+     "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
     ],
     [
-     "Researchers allege DeepSeek, Kimi, and other Chinese AI models were trained using banned Nvidia Blackwell GPUs (Tom's Hardware)",
-     "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware"
+     "Teslarati：SpaceX catches Starship from orbit",
+     "https://www.teslarati.com/spacex-catches-starship-first/"
     ],
     [
-     "Tom's Hardware：财政部长质疑英伟达是否明知向空壳公司出售 AI GPU",
-     "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-treasury-secretary-questions-whether-nvidia-knowingly-sold-ai-gpus-to-shell-companies-says-company-itself-is-responsible-i-think-it-is-important-that-anyone-at-the-company-there-be-held-accountable-for-that"
+     "TechCrunch（经 Summizer）：马斯克等签署请愿要求恢复黄仁勋职务",
+     "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+    ],
+    [
+     "CNBC：投资者要求英伟达董事会考虑黄仁勋回归",
+     "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html"
     ],
     [
      "TechCrunch：亚洲各国政府对黄仁勋离职的反应",
      "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
     ],
     [
-     "CNBC：投资者要求英伟达董事会考虑黄仁勋回归（标题）",
-     "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html"
+     "CNBC：Anthropic IPO 定价区间 70~78 美元",
+     "https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html"
+    ],
+    [
+     "The Next Web：Anthropic IPO 条款",
+     "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
+    ],
+    [
+     "Focus Taiwan：台积电董事会批准投资与资本拨款",
+     "https://focustaiwan.tw/business/202611110009"
+    ],
+    [
+     "StockTitan：Vuzix 三季报",
+     "https://www.stocktitan.net/news/VUZI/vuzix-reports-third-quarter-2026-1ee49uowygo3.html"
+    ],
+    [
+     "CnEVPost：小鹏 11-16 发三季报",
+     "https://cnevpost.com/2026/11/02/xpeng-q3-2026-results-nov-16/"
+    ],
+    [
+     "Panabee：小马智行三季报预览",
+     "https://www.panabee.com/news/pony-ai-earnings-q3-2026"
+    ],
+    [
+     "The Next Web：百度二季报",
+     "https://thenextweb.com/news/baidu-q2-2026-earnings-revenue-fifth-drop-ai-cloud"
+    ],
+    [
+     "DCD：AirTrunk 印度 1.8GW MoU",
+     "https://www.datacenterdynamics.com/en/news/airtrunk-signs-mou-for-1-8gw-of-data-center-capacity-in-andhra-pradesh-india/"
+    ],
+    [
+     "Tom's Hardware：财政部长质疑英伟达",
+     "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-treasury-secretary-questions-whether-nvidia-knowingly-sold-ai-gpus-to-shell-companies-says-company-itself-is-responsible-i-think-it-is-important-that-anyone-at-the-company-there-be-held-accountable-for-that"
+    ],
+    [
+     "Researchers allege DeepSeek, Kimi, and other Chinese AI models were trained using banned Nvidia Blackwell GPUs (Tom's Hardware)",
+     "https://www.tomshardware.com/tech-industry/artificial-intelligence/researchers-allege-deepseek-kimi-and-other-chinese-ai-models-were-trained-on-export-controlled-nvidia-blackwell-chips-statistical-analysis-on-model-weights-reveals-high-correlation-to-nvidia-hardware"
     ],
     [
      "TechCrunch：AI graveyard",
@@ -1623,15 +1736,19 @@
    ]
   }
  ],
- "updated": "2026-11-14T12:27",
+ "updated": "2026-11-14T14:27",
  "trend": {
   "NVDA": {
-   "date": "2026-11-13",
+   "date": "2026-11-14",
    "dir": "分化",
-   "text": "需求面仍是顺风：Dell 950 亿美元 AI 积压、SpaceX 约 740 亿美元数据中心计划、云厂商资本开支都在扩张，11-17 财报一致预期收入约 1,089 亿美元（+91%）。逆风已从“CEO 离任”扩展为周线级别的资金撤离（六连周跌、市值跌破 4 万亿）和出口管制的政治化（商务部、财政部公开分歧），以及临时 CEO 对客户融资担保的保守态度。",
+   "text": "需求面仍是顺风：Dell 950 亿美元 AI 积压、SpaceX 约 740 亿美元数据中心计划、云厂商资本开支都在扩张，11-17 财报一致预期收入约 1,089 亿美元（+91%）。逆风已从“CEO 离任”扩展为周线级别的资金撤离（六连周跌、市值跌破 4 万亿）和出口管制的政治化（商务部、财政部公开分歧），以及临时 CEO 对客户融资担保的保守态度。 11-14：据 TechCrunch，回归请愿签名超过 11.5 万（网站自述），叠加投资者来信，继任路径重新打开，治理不确定性更可能拖长（判断）。",
    "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定；没有反映继任期的产品 / 客户关系风险、出口管制若改为“管使用者”对中国及东南亚收入的影响，以及收紧客户担保后新云下单能力下降（判断）。分析师分歧扩大：据 CNBC，分析师 Gil Luria 把目标价从 300 降到 200 仍维持买入。",
    "watch": "11-17 财报：数据中心收入和毛利率、下季指引、对客户担保 / 融资承诺的披露；董事会继任人选；出口管制调查进展。",
    "src": [
+    [
+     "TechCrunch：请愿要求恢复黄仁勋职务",
+     "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+    ],
     [
      "CNBC：英伟达周线 2012 年以来最长连跌",
      "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
@@ -1677,12 +1794,17 @@
    ]
   },
   "TSM": {
-   "date": "2026-11-08",
+   "date": "2026-11-14",
    "dir": "顺风",
-   "text": "所有先进 AI 芯片——不管是英伟达、AMD 还是各家 ASIC——几乎都要它代工，CoWoS 先进封装仍是全行业的供给上限。谁赢都要用它，是这一层最确定的“收费站”。",
-   "miss": "台海地缘风险无法量化进估值；美国新厂的成本更高，长期会压毛利率。",
-   "watch": "月度营收、资本开支指引、美国厂毛利率。",
-   "src": []
+   "text": "所有先进 AI 芯片（英伟达、AMD、各家 ASIC）几乎都要它代工，CoWoS 先进封装仍是全行业供给上限，谁赢都要用它。11-10 董事会批准对 Anthropic、OpenAI 各最多 5 亿美元投资和约 409 亿美元资本拨款，开始在模型层持股。",
+   "miss": "台海地缘风险无法量化进估值；美国新厂成本更高，长期压毛利率；对模型公司的股权投资让它和客户的估值波动更绑定（判断）。",
+   "watch": "月度营收、资本开支指引、美国厂毛利率、Anthropic IPO 后的投资执行。",
+   "src": [
+    [
+     "Focus Taiwan：台积电董事会决议",
+     "https://focustaiwan.tw/business/202611110009"
+    ]
+   ]
   },
   "MU": {
    "date": "2026-11-11",
@@ -2270,12 +2392,16 @@
    ]
   },
   "SPCX": {
-   "date": "2026-11-12",
+   "date": "2026-11-14",
    "dir": "分化",
-   "text": "顺风：星链用户和发射业务现金流、星舰进展（第 15 次试飞定在 11-13），以及据报道在德州和亚利桑那州规划的大型 AI 园区。不确定性：据彭博与特斯拉的合并谈判在推进、最快 12 月宣布，若成行公司会变成“航天 + 电动车 + AI”的混合体；星链在乌克兰的限速争议也在增加客户对单一控制人的顾虑。",
+   "text": "顺风：Starship 上面级首次被塔架接住（11-14，在轨约 22.5 小时），完全可复用完成一半，叠加星链现金流和据报道约 740 亿美元的 AI 数据中心计划。不确定性：助推器本次未回收、据报道爆炸；与特斯拉的合并谈判和得州监管审查、星链在乌克兰的争议。",
    "miss": "34 位分析师的 2027 EPS 预期分歧极大（前瞻区间 10~161~687），中值没有意义；合并的换股比例和治理结构、马斯克个人的关键人风险、星链地缘政治声誉风险都没有在一致预期里（判断）。",
-   "watch": "合并条款是否公布、星舰试飞结果、星链用户数和 ARPU、AI 园区资本开支的融资方式。",
+   "watch": "下一次试飞能否实现双回收、合并条款、星链用户数和 ARPU、AI 园区融资方式。",
    "src": [
+    [
+     "CNBC：首次塔架回收 Starship 上面级",
+     "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html"
+    ],
     [
      "彭博：SpaceX 与特斯拉合并谈判推进",
      "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
@@ -2360,6 +2486,71 @@
     [
      "CNBC：Cerebras 三季报与微软合作",
      "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html"
+    ]
+   ]
+  },
+  "XPEV": {
+   "date": "2026-11-14",
+   "dir": "分化",
+   "text": "顺风：销量连创纪录（三季度 118,390 辆、10 月 50,237 辆），智驾和自研芯片是差异化卖点。逆风：中国车市价格战持续，二季度收入仅 +8%、净亏损扩大、车辆毛利率 12.1%（去年 14.3%），三季度收入指引曾低于市场预期。",
+   "miss": "前瞻区间按收入一致预期算，假设销量增长能转化为利润；没有反映价格战下毛利率继续被压、补贴退坡和出海关税的影响（判断）。",
+   "watch": "11-16 三季报：车辆毛利率、净亏损、四季度交付和收入指引、现金。",
+   "src": [
+    [
+     "CnEVPost：小鹏 11-16 发三季报",
+     "https://cnevpost.com/2026/11/02/xpeng-q3-2026-results-nov-16/"
+    ]
+   ]
+  },
+  "BIDU": {
+   "date": "2026-11-14",
+   "dir": "分化",
+   "text": "顺风：AI 云基础设施 +50%、GPU 云 +283%，AI 相关业务已占一般业务收入一半；萝卜快跑无人驾驶出行规模在扩大。逆风：在线营销连续下滑（二季度 −19%），总收入连续五个季度下降，资本开支大增压利润。",
+   "miss": "广告业务可能被 AI 搜索 / 聊天助手结构性替代，而不只是周期性疲软；GPU 云的芯片来源受出口管制约束（判断）。",
+   "watch": "在线营销降幅是否收窄、AI 云增速与利润率、资本开支、萝卜快跑单季订单量。",
+   "src": [
+    [
+     "The Next Web：百度二季报",
+     "https://thenextweb.com/news/baidu-q2-2026-earnings-revenue-fifth-drop-ai-cloud"
+    ]
+   ]
+  },
+  "PONY": {
+   "date": "2026-11-14",
+   "dir": "顺风",
+   "text": "顺风：第七代 Robotaxi 成本下降，广州已实现城市级单车盈亏平衡（公司口径），车队从二季度末 1,975 辆向年底 3,000 辆扩张。逆风：亏损和现金消耗仍大，同城竞争（百度萝卜快跑、文远知行）和监管节奏决定扩张上限。",
+   "miss": "收入预期假设车队扩张顺利；没有反映单城补贴退出后的真实单价、事故后的监管收紧风险（判断）。",
+   "watch": "11-18 三季报：车队规模、Robotaxi 收入、单车经济性、现金跑道。",
+   "src": [
+    [
+     "Panabee：小马智行三季报预览",
+     "https://www.panabee.com/news/pony-ai-earnings-q3-2026"
+    ]
+   ]
+  },
+  "VUZI": {
+   "date": "2026-11-14",
+   "dir": "逆风",
+   "text": "自有品牌智能眼镜收入萎缩（三季度收入约 71.4 万美元，−38%，产品销售 −45%），公司转向 OEM 显示模组和数据中心光连接，但新业务尚无规模收入。",
+   "miss": "现金只有 920 万美元、季度净亏损 840 万美元，现金跑道很短，股权融资摊薄风险高；前瞻区间基于少数分析师的收入预期，不确定性极大（判断）。",
+   "watch": "下一季现金余额、是否融资、OEM / 光连接订单是否落地。",
+   "src": [
+    [
+     "StockTitan：Vuzix 三季报",
+     "https://www.stocktitan.net/news/VUZI/vuzix-reports-third-quarter-2026-1ee49uowygo3.html"
+    ]
+   ]
+  },
+  "LCID": {
+   "date": "2026-11-14",
+   "dir": "逆风",
+   "text": "三季度收入 3.5 亿美元（+4%）、净亏损 8.3 亿美元，交付 3,806 辆、产量 2,954 辆（在去库存）；自由现金流消耗环比降 30% 至约 10.4 亿美元，PIF 追加 17.5 亿美元贷款额度，形式上流动性约 37.5 亿美元。中型车平台要到 2027 年下半年量产。",
+   "miss": "“到 2027 中值空间”最大，但前瞻区间按收入倍数算，没有反映持续依赖大股东输血、可能的摊薄以及高端电动车需求疲软（判断）。",
+   "watch": "季度现金消耗、交付量、中型车平台进度、PIF 的后续支持。",
+   "src": [
+    [
+     "Lucid 三季报新闻稿（经 Finviz）",
+     "https://finviz.com/news/419418/lucid-announces-third-quarter-2026-results-reduces-cash-consumption-by-30-transformation-on-track-liquidity-increased-by-175-billion"
     ]
    ]
   }

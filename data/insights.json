@@ -3628,5 +3628,144 @@
     ]
    }
   ]
+ },
+ "ai/agent/data": {
+  "also": [
+   "ai/assistant/dataplat"
+  ],
+  "updated": "2026-11-14",
+  "note": "路线分歧在“数据放在哪一层被 Agent 读取”：独立数据仓库 / 湖仓（Snowflake、Databricks）想把 Agent 和语义层做进平台；数据库厂商（MongoDB、Oracle）把向量检索和 Agent 内嵌进数据库、主打“数据不搬家”；可观测性 / 搜索（Datadog、Elastic）卖的是 AI 应用跑起来之后的监控和检索。消耗型收入增速是 AI 是否真实落地的先行指标——Snowflake 和 MongoDB 2026 年都出现了加速。",
+  "companies": {
+   "SNOW": {
+    "products": "Snowflake AI Data Cloud；Cortex AI（Snowflake Intelligence 企业 Agent、Cortex Code 编程 Agent）",
+    "what": "一个放在云上的企业数据仓库：公司把销售、财务、用户等数据都放进去，按查询用量付费。现在它在仓库里直接加了 AI 助手，员工用自然语言就能问数据、让 Agent 跑分析。",
+    "diff": "按用量计费、跨三大云中立；二季度（FY2027）产品收入 14.9 亿美元、+37%，净留存 126%，全年产品收入指引上调到约 60.7 亿美元（+36%）；为承载 AI 功能，毛利率指引下调。",
+    "ties": "同时跑在 AWS、Azure、谷歌云上，按客户所在云计费",
+    "src": [
+     [
+      "Snowflake 二季度（FY2027）财报：产品收入 +37%",
+      "https://seekingalpha.com/pr/20639002"
+     ]
+    ]
+   },
+   "MDB": {
+    "products": "MongoDB Atlas（云数据库）、Atlas Vector Search、Voyage AI 嵌入模型",
+    "what": "一种存“文档型”数据的数据库，应用程序的后台常用。它把向量检索和嵌入模型做进数据库，开发 AI 应用时不必再单独买一个向量库。",
+    "diff": "二季度（FY2027）收入 7.72 亿美元、+30%，Atlas 约 +29%（连续五个季度在这一水平），全年 Atlas 增速指引上调到约 27%；管理层此前承认 AI 带来的收入仍处早期。财报后股价曾下跌（beat-and-raise 但市场对 AI 叙事存疑）。",
+    "ties": "自有 Voyage AI 嵌入模型；在三大云上销售",
+    "src": [
+     [
+      "MongoDB 二季度（FY2027）财报：收入 +30%、Atlas 约 +29%",
+      "https://investors.mongodb.com/news-releases/news-release-details/mongodb-inc-announces-second-quarter-fiscal-2027-financial"
+     ]
+    ]
+   },
+   "ORCL": {
+    "products": "Oracle AI Database 26ai（内置 AI Vector Search、Select AI Agent）、Exadata for AI",
+    "what": "老牌企业数据库把向量检索和 AI Agent 直接内置进数据库，用 SQL 就能做语义搜索，Agent 在数据库的权限和安全规则内运行。",
+    "diff": "向量检索不额外收费、可本地部署（适合受监管行业）；从 23ai 升级不需要迁移数据。性能和 Agent 能力多为厂商自述，缺少独立基准。",
+    "ties": "甲骨文自有云 OCI，以及在 AWS / Azure / 谷歌云内的多云数据库服务",
+    "src": [
+     [
+      "Oracle 官方博客：Oracle AI Database 26ai 发布",
+      "https://blogs.oracle.com/database/oracle-announces-oracle-ai-database-26ai"
+     ]
+    ]
+   },
+   "DDOG": {
+    "products": "Datadog 可观测性平台（监控、日志、APM）、LLM Observability、Bits AI / Scout 1.0",
+    "what": "给软件系统装“体检仪表盘”：服务器、应用、AI 模型调用出了问题能马上看到并定位。AI 应用越多，需要监控的调用和成本就越多。",
+    "diff": "2026 年三季度收入约 11.97 亿美元、+35%，非 AI 客户群增速连续五个季度加速；但最大客户用量下降，四季度指引只假设其最低承诺额，指引增速 25~26%——客户集中度是主要风险。",
+    "ties": "AI 原生公司客户群在扩大（公司未点名最大客户）",
+    "src": [
+     [
+      "Datadog 2026 年三季报（8-K）：收入 +35%",
+      "https://www.sec.gov/Archives/edgar/data/0001561550/000162828026069792/ex-991x20260930x8k.htm"
+     ],
+     [
+      "MarketBeat：Datadog 三季报电话会要点（最大客户用量下降）",
+      "https://www.marketbeat.com/instant-alerts/transcript-datadog-q3-earnings-call-highlights-2026-11-04/"
+     ]
+    ]
+   },
+   "ESTC": {
+    "products": "Elasticsearch（搜索 / 向量检索）、Elastic Observability 与 Security、Jina 嵌入与重排模型",
+    "what": "一个搜索引擎底座：企业用它搜自己的文档、日志和代码。AI 时代它做“检索增强”，先帮大模型找到相关资料再回答。",
+    "diff": "FY2026 收入 17.4 亿美元、+17%，增速低于 Snowflake / MongoDB；收购 Jina AI 补上多模态嵌入；与英伟达 cuVS 合作用 GPU 建索引（技术预览，公司称最高快 12 倍）。",
+    "ties": "英伟达（cuVS GPU 向量索引）；三大云托管服务",
+    "src": [
+     [
+      "Elastic FY2026 四季报：收入 +16%，AI 渗透超三分之一大客户",
+      "https://businesswire.com/news/home/20260527847546/en/Elastic-Reports-Fourth-Quarter-and-Fiscal-2026-Financial-Results"
+     ]
+    ]
+   },
+   "Databricks": {
+    "products": "Data Intelligence Platform（湖仓）、Lakebase（面向 Agent 的无服务器 Postgres）、Genie、Unity AI Gateway",
+    "what": "和 Snowflake 抢同一块地：既能存数据，又能训练和部署模型。Lakebase 是给 AI Agent 用的业务数据库，让 Agent 能直接读写实时数据。",
+    "diff": "未上市；据公司 2026-08 公告，收入年化超 70 亿美元、同比 +80% 以上，Lakebase 年化超 1 亿美元，同轮以 1,900 亿美元估值融资 50 亿美元。增速高于 Snowflake，但数字为公司口径。",
+    "ties": "本轮由 Coatue 领投，黑石、MGX 等参与；与各大云和模型厂商都有合作",
+    "src": [
+     [
+      "Databricks 新闻稿：收入年化超 70 亿美元、增速超 80%",
+      "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+     ]
+    ]
+   },
+   "Confluent": {
+    "products": "Confluent 数据流平台（Kafka / Flink）",
+    "what": "把企业各系统里实时发生的数据像水管一样不断输送出去，让 Agent 用到的是最新数据而不是昨天的快照。",
+    "diff": "已被 IBM 以约 110 亿美元（每股 31 美元现金）收购，2026-03-17 完成，不再单独上市。",
+    "ties": "IBM（watsonx 与混合云整合）",
+    "src": [
+     [
+      "IBM 完成收购 Confluent（2026-03-17）",
+      "https://pulse2.com/ibm-11-billion-acquisition-of-confluent-completed/"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "SNOW",
+    "b": "Databricks",
+    "type": "竞争",
+    "desc": "湖仓 / 数据仓库正面竞争，双方都把 Agent 和语义层做进平台；Databricks 公司口径增速 80%+，高于 Snowflake 的 37%。",
+    "src": [
+     "Databricks 新闻稿：收入年化超 70 亿美元、增速超 80%",
+     "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales"
+    ]
+   },
+   {
+    "a": "MDB",
+    "b": "ORCL",
+    "type": "竞争",
+    "desc": "都把向量检索内嵌进业务数据库，争夺“数据不搬家就能做 AI 应用”的预算。",
+    "src": [
+     "Oracle 官方博客：Oracle AI Database 26ai 发布",
+     "https://blogs.oracle.com/database/oracle-announces-oracle-ai-database-26ai"
+    ]
+   },
+   {
+    "a": "IBM",
+    "b": "Confluent",
+    "type": "收购",
+    "desc": "IBM 以约 110 亿美元收购 Confluent，2026-03-17 完成，补齐实时数据流。",
+    "src": [
+     "IBM 完成收购 Confluent（2026-03-17）",
+     "https://pulse2.com/ibm-11-billion-acquisition-of-confluent-completed/"
+    ]
+   },
+   {
+    "a": "ESTC",
+    "b": "NVDA",
+    "type": "合作",
+    "desc": "Elasticsearch 集成英伟达 cuVS，用 GPU 加速向量索引构建（技术预览）。",
+    "src": [
+     "Elastic FY2026 四季报：收入 +16%，AI 渗透超三分之一大客户",
+     "https://businesswire.com/news/home/20260527847546/en/Elastic-Reports-Fourth-Quarter-and-Fiscal-2026-Financial-Results"
+    ]
+   }
+  ]
  }
 }
