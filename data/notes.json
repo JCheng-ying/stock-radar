@@ -43,6 +43,11 @@
   ],
   "MU": [
    {
+    "date": "2026-11-15",
+    "text": "预期面向下（监管 / 诉讼）：据 Tom's Hardware 标题，法官驳回 DRAM 价格操纵集体诉讼的撤诉动议、认为串谋指控可信（细节未查证）；案件进入取证，不是违法认定，但为涨价周期增加潜在赔偿与监管折价，需求面不变。",
+    "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
+   },
+   {
     "date": "2026-11-11",
     "text": "预期面 / 情绪面向上：CoreWeave 积压 1325 亿美元被解读为 HBM / DRAM 需求的证据，叠加以 IPO 价认购 Anthropic 约 10 亿美元，单日 +11.9%；但距 52 周高点仍低约 35%。",
     "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-jump-11-2-165403817.html"
@@ -628,9 +633,9 @@
  "daily": [
   {
    "date": "2026-11-15",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:28 更新，含 Summizer 新增的 1 篇】周日休市，行情仍截至 11-13。英伟达治理线有两条新标题：据 Tom's Hardware 标题，董事 Mark Stevens 在事件曝光前累计卖出约 420 万股、约 10 亿美元且未见交易计划（细节未查证；此前公开报道里单轮约 4.1 亿美元，口径有分歧）；据 CNBC 标题，Megaspeed 称 Alice Huang 已于 2025 年离开并启动内部调查（细节未查证）。两者都只加重预期面的治理风险溢价，不涉及需求和财报数字；英伟达现价 162.85 美元，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。其余是 Anthropic IPO 的评论文章（WSJ、FT），以及 Summizer 一篇液冷“数字锅炉”融资（Airsys 投资 ThermAI，pre-seed 规模，产业面信号很小）。整体结论不变：下周看 11-16 小鹏 / 百度、11-17 英伟达财报、11-18 Anthropic 定价。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:28 更新，含 Summizer 新增的 1 篇】周日休市，行情仍截至 11-13。英伟达治理线有两条新标题：据 Tom's Hardware 标题，董事 Mark Stevens 在事件曝光前累计卖出约 420 万股、约 10 亿美元且未见交易计划（细节未查证；此前公开报道里单轮约 4.1 亿美元，口径有分歧）；据 CNBC 标题，Megaspeed 称 Alice Huang 已于 2025 年离开并启动内部调查（细节未查证）。两者都只加重预期面的治理风险溢价，不涉及需求和财报数字；英伟达现价 162.85 美元，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。其余是 Anthropic IPO 的评论文章（WSJ、FT），以及 Summizer 一篇液冷“数字锅炉”融资（Airsys 投资 ThermAI，pre-seed 规模，产业面信号很小）。整体结论不变：下周看 11-16 小鹏 / 百度、11-17 英伟达财报、11-18 Anthropic 定价。\n【07:28 更新】监管 / 诉讼线有新进展：据 Tom's Hardware 标题，美国法官驳回美光、三星、SK 海力士对 DRAM 价格操纵集体诉讼的撤诉动议，认为在价格上涨约 500% 的背景下串谋指控“可信”（细节未查证；此前 MLex 报道 9 月原告已反对撤诉，2026 年案件在加州北区法院）。这只意味着案件进入取证阶段、不是认定违法，但给内存涨价周期加了一层预期面的监管折价；美光现价 778.31 美元，处于 2027 前瞻区间 554.0~809.8~1280.6 的下沿到中值之间、接近中值。英伟达方面据 Seeking Alpha 转述 FT 标题，股东诉讼可能带来保险覆盖不了的成本（细节未查证），另有东南亚业务被查中国 AI 接触、卢特尼克支持收窄芯片管制的标题，均属治理 / 政策噪音。整体结论不变，下周主线仍是 11-17 英伟达财报。",
    "sectors": {
-    "ai": "【06:28】英伟达治理：董事售股（Tom's Hardware 标题，约 10 亿美元，未查证）与 Megaspeed 内部调查（CNBC 标题）；治理风险溢价延续，算力需求面无变化。液冷余热利用小样本：Airsys 领投 ThermAI（喷淋液冷、出水最高 60°C，公司自述），不改集中式数据中心主线。",
+    "ai": "【06:28】英伟达治理：董事售股（Tom's Hardware 标题，约 10 亿美元，未查证）与 Megaspeed 内部调查（CNBC 标题）；治理风险溢价延续，算力需求面无变化。液冷余热利用小样本：Airsys 领投 ThermAI（喷淋液冷、出水最高 60°C，公司自述），不改集中式数据中心主线。\n【07:28】内存：DRAM 价格操纵集体诉讼撤诉动议被驳回（Tom's Hardware 标题，未查证），美光 / 三星 / 海力士面临取证与潜在赔偿，涨价叙事多一层监管风险，产业需求面不变。英伟达：股东诉讼潜在未保险成本（FT 标题，未查证）。",
     "quantum": "无重要新信息",
     "robotics": "无重要新信息",
     "aerospace": "无重要新信息",
@@ -640,6 +645,10 @@
     {
      "t": "NVDA",
      "why": "现价 162.85 美元，位于 2027 前瞻区间 111.8~199.5~306.7 的下沿~中值之间、距中值约 +22%；周末新增董事售股和 Megaspeed 内部调查两条治理标题，11-17 财报是验证点。"
+    },
+    {
+     "t": "MU",
+     "why": "DRAM 价格操纵集体诉讼撤诉动议被驳回（据 Tom's Hardware 标题），进入取证；现价 778.31 美元、11-13 跌 2.5%，在 2027 前瞻区间 554.0~809.8~1280.6 中值下方不远。"
     }
    ],
    "sources": [
@@ -654,6 +663,14 @@
     [
      "DCD：Airsys invests in digital boiler startup ThermAI",
      "https://www.datacenterdynamics.com/en/news/airsys-invests-in-digital-boiler-startup-thermai/"
+    ],
+    [
+     "Tom's Hardware：Judge denies motion to dismiss DRAM price-fixing lawsuit against Micron, Samsung, and SK hynix",
+     "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
+    ],
+    [
+     "MLex：Samsung, SK Hynix, Micron move to dismiss US DRAM price-fixing claims",
+     "https://www.mlex.com/mlex/antitrust/articles/2521308"
     ]
    ]
   },
@@ -1771,7 +1788,7 @@
    ]
   }
  ],
- "updated": "2026-11-15T06:28",
+ "updated": "2026-11-15T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-14",
