@@ -3767,5 +3767,209 @@
     ]
    }
   ]
+ },
+ "aerospace/sat/eo": {
+  "updated": "2026-11-15",
+  "note": "路线分歧在“卖什么”：Planet 走大批量中分辨率每日全球覆盖 + 订阅数据和 AI 分析；BlackSky 走高频高分辨率“按需重访”、主打国防的 Gen-3 星座；Spire 卖的是天气 / 射频等非图像数据，主要客户是 NOAA 等气象机构；Satellogic 一半收入来自给主权国家造卫星（Space Systems），数据业务偏小。共同点是政府（尤其国防情报）是最大买家，大额多年期合同和调整后 EBITDA 转正是这一浪的触发点——Planet、BlackSky、Satellogic 都已出现正的调整后 EBITDA，Spire 仍为负。",
+  "companies": {
+   "PL": {
+    "products": "PlanetScope（约 200 颗 Dove 小卫星每日全球成像）、SkySat / Pelican 高分辨率星座、Global Monitoring Service、Planet Insights Platform",
+    "what": "每天把整个地球陆地拍一遍，把图像和变化检测结果按订阅卖给政府、农业、保险和 AI 公司，客户不用自己买卫星就能看到地面每天的变化。",
+    "diff": "覆盖广、重访频率高，分辨率不如 BlackSky / Maxar；FY2027 二季度（截至 2026-07-31）收入 1.161 亿美元、+58%，调整后 EBITDA 1390 万美元，积压约 8.15 亿美元，现金及短投约 8.65 亿美元；全年收入指引上调到 4.30~4.41 亿美元（据 MarketBeat 摘要，与此前 4.25~4.41 亿的口径略有差异）。",
+    "ties": "美国 NGA（新 800 万美元 OTA）、德国政府招标（最高 2500 万欧元 / 5 年）、卢旺达航天局；一家超大规模 AI 开发商续约用于数据中心监测（公司未披露名称）",
+    "src": [
+     [
+      "Planet FY2027 二季度财报新闻稿",
+      "https://s29.q4cdn.com/903184914/files/doc_earnings/2027/q2/earnings-result/PL-Q2-27-Press-Release.pdf"
+     ],
+     [
+      "MarketBeat：Planet 二季度电话会要点",
+      "https://www.marketbeat.com/instant-alerts/transcript-planet-labs-pbc-q2-earnings-call-highlights-2026-09-03/"
+     ]
+    ]
+   },
+   "BKSY": {
+    "products": "Gen-3 高分辨率成像卫星（约 35 厘米级）、Spectra AI 分析平台、Gen-3 Assured 订阅服务",
+    "what": "用一群小卫星对同一个地点一天拍很多次，配合 AI 自动识别舰船、飞机、车辆的变化，主要卖给军方和情报机构做实时监视。",
+    "diff": "强调“重访频率 + 分辨率 + 快速交付”，比 Planet 更偏国防；2026 年三季度收入 4280 万美元、+118%，调整后 EBITDA 创纪录 1280 万美元（利润率 29.9%），全年指引上调；第 5 颗 Gen-3 已部署，年底目标从 8 颗降到 7 颗（据 Earnings Whispers）；积压口径来源有分歧（约 3.55 亿美元 vs 另一来源 3.23 亿美元，后者疑为旧数据）。管理层称四季度 EBITDA 将持平或环比下滑（任务方案交付占比上升）。",
+    "ties": "美国政府大客户（七位数 Gen-3 试点）、一家国际防务客户从 Gen-2 试点扩展到七位数 Gen-3 合同；美国预算削减有影响，国际需求在抵消",
+    "src": [
+     [
+      "BlackSky 2026 年三季度财报 8-K",
+      "https://www.sec.gov/Archives/edgar/data/0001753539/000175353926000154/exhibit991-blackskyq32026e.htm"
+     ],
+     [
+      "Finviz：BlackSky Gen-3 季度利润率突破但积压与卫星进度存疑",
+      "https://finviz.com/news/417260/blackskys-record-gen-3-quarter-delivers-margin-breakout-and-higher-guidance-but-backlog-satellite-timing-and-a-soft-q4-setup-keep-the-market-skeptical"
+     ]
+    ]
+   },
+   "SPIR": {
+    "products": "LEMUR 小卫星星座的无线电掩星（GNSS-RO）天气数据、射频地理定位、太空即服务（为客户托管载荷）",
+    "what": "卫星不拍照片，而是测量 GPS 信号穿过大气时的弯曲，算出温度、湿度，卖给气象机构改进天气预报；也能定位地面的无线电信号源。",
+    "diff": "已出售海事 AIS 业务，专注天气与政府数据；2026 年三季度收入 1800 万美元、+42%（剔除海事 +77%），调整后 EBITDA −860 万美元（改善 27%），无负债、现金 7800 万美元；全年收入指引 7500~8000 万美元，2027 年初步指引 0.96~1.06 亿美元；有分析认为本季不及预期、全年指引被下调。",
+    "ties": "NOAA（本季获 3320 万美元任务单和另一份两年 2800 万美元合同）",
+    "src": [
+     [
+      "Spire 2026 年三季度财报 8-K",
+      "https://www.sec.gov/Archives/edgar/data/0001816017/000162828026072744/spir-20260930xexx991.htm"
+     ],
+     [
+      "Panabee：Spire 三季度收入 +42%、新合同 6100 万美元",
+      "https://www.panabee.com/news/spire-spir-earnings-q3-2026"
+     ]
+    ]
+   },
+   "SATL": {
+    "products": "NewSat 亚米级成像卫星星座、Aleph 数据平台、Space Systems（给主权客户造卫星 / 专属星座）",
+    "what": "一方面卖卫星图像，另一方面替没有航天工业的国家造整颗卫星并配套数据服务，让对方拥有“自己的”遥感能力。",
+    "diff": "成本导向、主打主权客户；2026 年三季度收入 1600 万美元、+342%，其中 Space Systems 950 万美元（第二颗 CEiiA 卫星里程碑交付）、数据与分析 660 万美元（环比下降），调整后 EBITDA 120 万美元、连续第二个季度为正；收入随大合同里程碑起伏，积压在被消耗。对一致预期是超还是不及，Earnings Whispers 与 Quiver 说法相反。",
+    "ties": "葡萄牙 CEiiA（卫星制造合同）",
+    "src": [
+     [
+      "Panabee：Satellogic 三季度收入 +342%、调整后 EBITDA 转正",
+      "https://www.panabee.com/news/satellogic-earnings-q3-2026"
+     ],
+     [
+      "Finviz：Satellogic 收入超预期但 EPS 不及、积压下降",
+      "https://finviz.com/news/420742/satellogic-beats-on-revenue-but-misses-on-eps-as-q2s-profit-inflection-fades-and-backlog-draws-down"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "PL",
+    "b": "NGA",
+    "type": "客户",
+    "desc": "美国国家地理空间情报局给 Planet 新的 800 万美元 OTA，部署 Global Monitoring Service。",
+    "src": [
+     "Planet FY2027 二季度财报新闻稿",
+     "https://s29.q4cdn.com/903184914/files/doc_earnings/2027/q2/earnings-result/PL-Q2-27-Press-Release.pdf"
+    ]
+   },
+   {
+    "a": "SPIR",
+    "b": "NOAA",
+    "type": "客户",
+    "desc": "NOAA 本季给 Spire 3320 万美元任务单和一份两年 2800 万美元合同，用于天气数据。",
+    "src": [
+     "Spire 2026 年三季度财报 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0001816017/000162828026072744/spir-20260930xexx991.htm"
+    ]
+   },
+   {
+    "a": "SATL",
+    "b": "CEiiA",
+    "type": "客户",
+    "desc": "Satellogic 为葡萄牙 CEiiA 制造卫星，第二颗卫星的里程碑交付贡献了三季度 Space Systems 收入。",
+    "src": [
+     "Panabee：Satellogic 三季度财报",
+     "https://www.panabee.com/news/satellogic-earnings-q3-2026"
+    ]
+   },
+   {
+    "a": "BKSY",
+    "b": "美国政府",
+    "type": "客户",
+    "desc": "BlackSky 完成一项七位数、为期两个月的 Gen-3 Assured 服务试点，客户为美国政府大客户（未具名）。",
+    "src": [
+     "BlackSky 2026 年三季度财报 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0001753539/000175353926000154/exhibit991-blackskyq32026e.htm"
+    ]
+   }
+  ]
+ },
+ "ai/agent/auto": {
+  "updated": "2026-11-15",
+  "note": "路线分歧在“Agent 从哪一层切进企业流程”：UiPath 从 RPA 机器人往上加 Agent 编排（Maestro）；Appian 和 Pega 从低代码 / 业务流程平台切入，把 AI 嵌进案件管理和工作流；SoundHound 从语音交互切入，靠收购 LivePerson 拿到客服对话入口。2026 年三季度的分化很明显：Appian 云订阅 +20%、净扩张率 120%，UiPath ARR 稳定在 +12%，Pega 总 ACV 只有 +6% 并放弃 15% 增长目标，SoundHound 收入增长主要靠并购、毛利率下滑。",
+  "companies": {
+   "PATH": {
+    "products": "UiPath Platform（RPA 机器人）、Agentic Automation、Maestro（Case / Flow 编排）",
+    "what": "让软件机器人代替人点鼠标、填表、搬数据；现在加上 AI Agent，让机器人能读懂邮件和文件、自己判断下一步，再由 Maestro 把人、机器人和 Agent 串成一条完整业务流程。",
+    "diff": "RPA 装机量最大，Agent 是在存量客户上加售；FY2027 二季度（截至 2026-07-31）收入 4.10 亿美元、+13%，ARR 19.38 亿美元、+12%，净新增 ARR 3700 万美元，云 ARR 超 13 亿美元、+19%，非 GAAP 经营利润率 22%；前 20 大订单中 18 单含 AI；全年收入指引上调到 17.89~17.94 亿美元。",
+    "ties": "一家加拿大头部银行选用其 Agent 工作流（公司未具名）",
+    "src": [
+     [
+      "UiPath FY2027 二季度财报",
+      "https://seekingalpha.com/pr/20640625"
+     ],
+     [
+      "MarketBeat：UiPath 二季度电话会要点",
+      "https://www.marketbeat.com/instant-alerts/transcript-uipath-q2-earnings-call-highlights-2026-09-03/"
+     ]
+    ]
+   },
+   "APPN": {
+    "products": "Appian Platform（低代码流程平台、数据织物 Data Fabric、AI Agent）",
+    "what": "一个让企业不写多少代码就能搭业务应用和审批流程的平台，现在在流程里嵌入 AI Agent 处理文档、审核等步骤，政府和金融客户多。",
+    "diff": "2026 年三季度云订阅收入 1.364 亿美元、+20%，总收入 2.346 亿美元、+25.5%，云净 ARR 扩张率 120%（五年多来最高），全年云订阅指引上调到 5.36~5.38 亿美元（第三次上调）；经营现金流本季 −1540 万美元（公司称收款时点）。",
+    "ties": "美国联邦政府订单增长（CEO 称政府在拥抱 AI 提效）",
+    "src": [
+     [
+      "Zacks：Appian 三季度超预期",
+      "https://www.zacks.com/stock/news/3025717/appian-q3-earnings-beat-estimates-revenues-increase-yy"
+     ],
+     [
+      "Finviz：Appian 第三次上调指引但现金流偏弱",
+      "https://finviz.com/news/417236/appian-crushes-estimates-and-raises-guidance-a-third-time-but-lumpy-on-prem-revenue-and-a-cash-drain-complicate-a-65-rally"
+     ]
+    ]
+   },
+   "PEGA": {
+    "products": "Pega Infinity（案件管理 / 决策引擎）、Pega Blueprint（GenAI 设计应用）、Pega Cloud",
+    "what": "给银行、保险、电信等大企业做客户服务和后台流程的“规则 + 决策”平台，用 Blueprint 让 AI 先把老系统的流程画出来再生成新应用，帮客户做系统现代化。",
+    "diff": "2026 年三季度总 ACV 16.53 亿美元、+6%（固定汇率 +7%），Pega Cloud ACV +20%、占总 ACV 59%，净新增 ACV 3200 万美元是今年最强季度；收入 3.934 亿美元、+3%；据 Earnings Whispers，公司放弃了 15% 的 ACV 增长目标。",
+    "ties": "大型金融 / 保险客户，加大与系统集成商合作（公司表述）",
+    "src": [
+     [
+      "Quiver：Pegasystems 三季度收入 +3%",
+      "https://www.quiverquant.com/news/Pegasystems+Q3+Revenue+Rises+3%25+to+%24393.4+Million"
+     ],
+     [
+      "Finviz：Pega 放弃 15% ACV 目标",
+      "https://finviz.com/news/405548/pegasystems-misses-badly-and-abandons-its-15-acv-target-as-best-bookings-quarter-of-2026-arrives-too-late"
+     ]
+    ]
+   },
+   "SOUN": {
+    "products": "OASYS Agent 平台、语音 AI（汽车、餐饮点单、客服）、LivePerson（2026-09 收购完成）",
+    "what": "让企业搭建能听、能说、能办事的对话式 AI 客服和语音助手，比如餐厅电话点餐、车载语音、银行客服。",
+    "diff": "2026 年三季度收入 6240 万美元、+48.5%，略低于一致预期；其中 LivePerson 贡献约 1400 万美元，有机收入环比明显下滑（据 Finviz 分析）；非 GAAP 毛利率降到 50.3%（上年 59.3%），调整后 EBITDA −2070 万美元；2026 年收入指引 2.5~2.6 亿美元、2027 年 3.5~4 亿美元，目标 2027 下半年调整后 EBITDA 持续为正。",
+    "ties": "收购 LivePerson（客服对话平台）；数百家客户迁移到其自有模型架构（公司自述）",
+    "src": [
+     [
+      "SoundHound 2026 年三季度财报 8-K",
+      "https://www.sec.gov/Archives/edgar/data/0001840856/000184085626000025/soun-20261105ex991earnings.htm"
+     ],
+     [
+      "Finviz：SoundHound 有机业务收缩被 LivePerson 掩盖",
+      "https://finviz.com/news/418161/soundhound-ai-beats-on-eps-and-offers-first-profitability-target-but-liveperson-masks-a-shrinking-legacy-business"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "SOUN",
+    "b": "LivePerson",
+    "type": "收购",
+    "desc": "SoundHound 于 2026-09-04 完成收购 LivePerson，三季度贡献约 1400 万美元收入。",
+    "src": [
+     "Finviz：SoundHound 三季度分析",
+     "https://finviz.com/news/418161/soundhound-ai-beats-on-eps-and-offers-first-profitability-target-but-liveperson-masks-a-shrinking-legacy-business"
+    ]
+   },
+   {
+    "a": "APPN",
+    "b": "美国联邦政府",
+    "type": "客户",
+    "desc": "Appian CEO 称联邦政府订单在增长，政府在用 AI 提效。",
+    "src": [
+     "Webull：Appian CEO 谈联邦订单增长",
+     "https://www.webull.com/news/15872292364510209"
+    ]
+   }
+  ]
  }
 }

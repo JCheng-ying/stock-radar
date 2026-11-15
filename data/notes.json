@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-15",
+    "text": "预期面 / 治理向下：财长贝森特 11-15 在福克斯新闻呼吁“大幅改组”、外部 CEO，并质疑是否靠可疑销售拉高营收、新加坡营收激增（CNBC）；政策压力叠加董事会继任分歧，需求面无变化。",
+    "url": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
+   },
+   {
+    "date": "2026-11-15",
     "text": "预期面 / 治理：据 Seeking Alpha 标题，黄仁勋同意就涉华关联接受国会非公开问询（此前三委员会主席要求 11-18 闭门简报）；据 FT 标题，他在与盟友讨论回归 CEO（均未查证正文）。继任方向在“回归”与“外部 CEO”之间分歧加大，治理不确定性上升，需求面无变化。",
     "url": "https://axios.com/2026/11/05/jensen-huang-nvidia-congress-china"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-14",
     "text": "预期面 / 治理：据 TechCrunch，首席安全官 David Reber 8 月以健康原因离职、Saša Zdjelar 接任，未见与 Megaspeed 事件相关的公开证据；文章追问安全与法务体系知情情况，治理风险溢价延续，无新的硬事实。",
     "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
-   },
-   {
-    "date": "2026-11-14",
-    "text": "预期面 / 治理：据 TechCrunch，要求恢复黄仁勋职务的请愿签名超过 11.5 万（网站自述，含约 6 千名现任员工），马斯克公开署名；继任路径更不确定，调查未结前回归可能性低（判断），风险溢价可能持续到财报之后。",
-    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
    }
   ],
   "ANET": [
@@ -42,6 +42,11 @@
    }
   ],
   "MU": [
+   {
+    "date": "2026-11-15",
+    "text": "预期面向下（监管折价）：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证），不改 HBM / DRAM 需求面。",
+    "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
+   },
    {
     "date": "2026-11-15",
     "text": "预期面向下（监管 / 诉讼）：据 Tom's Hardware 标题，法官驳回 DRAM 价格操纵集体诉讼的撤诉动议、认为串谋指控可信（细节未查证）；案件进入取证，不是违法认定，但为涨价周期增加潜在赔偿与监管折价，需求面不变。",
@@ -494,6 +499,11 @@
   ],
   "PANW": [
    {
+    "date": "2026-11-15",
+    "text": "预期面：11-18 财报；股价 322.24 美元已低于 2027 前瞻下沿 382.6，看平台化（platformization）转换和下一财年指引是否被下修。",
+    "url": "https://seekingalpha.com/article/4967934-palo-alto-networks-solid-fundamentals-but-expectations-are-"
+   },
+   {
     "date": "2026-11-13",
     "text": "预期面待验证：现价仍低于 2027 前瞻区间下沿，11-18 一季报前评论分歧（Seeking Alpha 认为预期高于现实）。",
     "url": "https://seekingalpha.com/article/4967934-palo-alto-networks-solid-fundamentals-but-expectations-are-"
@@ -515,12 +525,22 @@
   ],
   "XPEV": [
    {
+    "date": "2026-11-15",
+    "text": "预期面：11-16 盘前财报，三季度交付 118,390 辆创纪录、10 月首次过 5 万辆，市场看车辆毛利率（CnEVPost 前瞻已在 11-14 记录）。",
+    "url": "https://cnevpost.com/2026/11/02/xpeng-q3-2026-results-nov-16/"
+   },
+   {
     "date": "2026-11-14",
     "text": "预期面：11-16 盘前发三季报；交付 118,390 辆创纪录、10 月首破 5 万辆，市场焦点从销量转向车辆毛利率和亏损收窄。",
     "url": "https://cnevpost.com/2026/11/02/xpeng-q3-2026-results-nov-16/"
    }
   ],
   "BIDU": [
+   {
+    "date": "2026-11-15",
+    "text": "预期面：11-16 财报，一致预期 EPS 6.16 美元；看 AI 云收入能否抵消广告下滑。",
+    "url": "https://thenextweb.com/news/baidu-q2-2026-earnings-revenue-fifth-drop-ai-cloud"
+   },
    {
     "date": "2026-11-14",
     "text": "基本面分化：二季度总收入 −4%、在线营销 −19%，AI 云基础设施 +50%、GPU 云 +283%，资本开支环比近翻倍；三季报（日历显示 11-16）看广告降幅是否收窄。",
@@ -540,10 +560,35 @@
     "text": "基本面向下：三季度收入约 71.4 万美元（−38%）远低于预期，毛亏损扩大，现金 920 万美元；业务转向 OEM 与数据中心光连接，财报后股价连跌（11-13 −26.6%）。",
     "url": "https://www.stocktitan.net/news/VUZI/vuzix-reports-third-quarter-2026-1ee49uowygo3.html"
    }
+  ],
+  "POWL": [
+   {
+    "date": "2026-11-15",
+    "text": "基本面向上待验证：FY2026 三季度拿下史上最大单笔数据中心订单（超 4 亿美元）等三张超大订单，11-16 发四季度财报看积压与毛利率。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
+   }
+  ],
+  "KLIC": [
+   {
+    "date": "2026-11-15",
+    "text": "基本面向上待验证：FY 四季度指引收入 3.55~3.95 亿美元（MarketBeat），热压键合（TCB）产能扩到年 4 亿美元系统销售规模；11-18 财报验证先进封装放量。",
+    "url": "https://www.marketbeat.com/instant-alerts/kulicke-and-soffa-industries-nasdaqklic-releases-q4-2026-earnings-guidance-2026-08-05/"
+   }
+  ],
+  "BABA": [
+   {
+    "date": "2026-11-15",
+    "text": "预期面：11-19 财报前 Jefferies 预计云与算力业务增速超 50%（上季 45%，SCMP）；三年 3800 亿元 AI 资本开支已完成一半。",
+    "url": "https://www.scmp.com/tech/big-tech/article/3370209/alibabas-ai-cloud-revenue-set-surge-over-50-investment-blitz-pays-analysts"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-15",
+    "text": "英伟达治理升级到政策层面：财长贝森特公开主张外部 CEO、质疑可疑销售（CNBC），与黄仁勋讨论回归的报道并存；11-17 财报与国会问询是验证点。DRAM 价格操纵集体诉讼进入取证（标题未查证），存储周期多一层监管折价。"
+   },
    {
     "date": "2026-11-14",
     "text": "Anthropic 定于 11-18 定价、11-19 上市（区间 70~78 美元，最多约 644 亿美元），台积电批准最多 5 亿美元认购；模型层能否在二级市场顺利融资，决定算力链资本开支的下一段资金来源。"
@@ -559,10 +604,6 @@
    {
     "date": "2026-11-12",
     "text": "英伟达 CEO 黄仁勋离任，市场当作关键人风险而非需求问题：AMD、博通、Arista 同日大涨；应用材料、思科财报和指引都向上，Nebius 因资本开支大增、收入落在下沿大跌——需求端仍强，压力集中在管理层和融资两端。"
-   },
-   {
-    "date": "2026-11-11",
-    "text": "CoreWeave 财报（积压 1325 亿美元、全年指引上调、2028 上半年调整后盈利）+ Anthropic 10 月底年化收入约 810 亿美元：需求端证据增强，AI 硬件全线反弹；但资金面（10 年期美债 5.0%）没有变化，压力仍在融资端。微软承诺电费自付，电力成本向云厂商内部化。"
    }
   ],
   "quantum": [
@@ -608,6 +649,10 @@
   "aerospace": [
    {
     "date": "2026-11-15",
+    "text": "Vulcan 11-15 复飞失败、40 颗亚马逊 Leo 卫星损失（SpaceNews），ULA 再度停飞；与 11-14 Starship 上面级首次塔架回收对照，西方重型运力进一步向 SpaceX 集中（判断）。"
+   },
+   {
+    "date": "2026-11-15",
     "text": "Vulcan 复飞失败、40 颗亚马逊 Leo 卫星损失，ULA 成立以来首次彻底失败并再度停飞；叠加 New Glenn 发射台 5 月爆炸，西方非 SpaceX 重型运力紧张，SpaceX 相对优势扩大。"
    },
    {
@@ -621,10 +666,6 @@
    {
     "date": "2026-11-12",
     "text": "据彭博，SpaceX 与特斯拉合并谈判推进，最快 12 月宣布；Mercury、TransDigm 财报稳健。三浪回到“尚未启动”。"
-   },
-   {
-    "date": "2026-11-10",
-    "text": "NASA 承认商业月球运输在 2028~2029 年无法端到端替代，SLS 标准化并改用 ULA 加长版 Centaur V——商业替代政府火箭的时间表后移。"
    }
   ],
   "autonomous": [
@@ -638,29 +679,77 @@
  "daily": [
   {
    "date": "2026-11-15",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:28 更新，含 Summizer 新增的 1 篇】周日休市，行情仍截至 11-13。英伟达治理线有两条新标题：据 Tom's Hardware 标题，董事 Mark Stevens 在事件曝光前累计卖出约 420 万股、约 10 亿美元且未见交易计划（细节未查证；此前公开报道里单轮约 4.1 亿美元，口径有分歧）；据 CNBC 标题，Megaspeed 称 Alice Huang 已于 2025 年离开并启动内部调查（细节未查证）。两者都只加重预期面的治理风险溢价，不涉及需求和财报数字；英伟达现价 162.85 美元，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。其余是 Anthropic IPO 的评论文章（WSJ、FT），以及 Summizer 一篇液冷“数字锅炉”融资（Airsys 投资 ThermAI，pre-seed 规模，产业面信号很小）。整体结论不变：下周看 11-16 小鹏 / 百度、11-17 英伟达财报、11-18 Anthropic 定价。\n【07:28 更新】监管 / 诉讼线有新进展：据 Tom's Hardware 标题，美国法官驳回美光、三星、SK 海力士对 DRAM 价格操纵集体诉讼的撤诉动议，认为在价格上涨约 500% 的背景下串谋指控“可信”（细节未查证；此前 MLex 报道 9 月原告已反对撤诉，2026 年案件在加州北区法院）。这只意味着案件进入取证阶段、不是认定违法，但给内存涨价周期加了一层预期面的监管折价；美光现价 778.31 美元，处于 2027 前瞻区间 554.0~809.8~1280.6 的下沿到中值之间、接近中值。英伟达方面据 Seeking Alpha 转述 FT 标题，股东诉讼可能带来保险覆盖不了的成本（细节未查证），另有东南亚业务被查中国 AI 接触、卢特尼克支持收窄芯片管制的标题，均属治理 / 政策噪音。整体结论不变，下周主线仍是 11-17 英伟达财报。\n【09:28 更新】英伟达治理线升级到政策层面：据 CNBC、Bloomberg、Seeking Alpha 标题，财长贝森特称英伟达需要“大幅改组”、并主张从外部找 CEO（细节未查证，搜索暂未查到正文）；另据 Seeking Alpha 标题，英伟达为台湾 AI 芯片走私案中的一名员工辩护（细节未查证）。这把继任问题从董事会内部事务变成带有政府压力的议题，预期面的治理风险溢价加重、黄仁勋回归的可能性进一步下降（判断），需求面和财报数字没有变化。英伟达现价 162.85 美元，仍处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。整体结论不变，11-17 财报和董事会继任人选是下一步验证点。\n【12:28 更新】英伟达治理线两条新标题：据 Seeking Alpha 标题，黄仁勋同意就涉华关联接受国会非公开问询（细节未查证；此前 Axios 等报道众议院外交、对华特设、情报三委员会主席要求他 11-18 出席闭门简报，正好在 11-17 财报后一天）；据 Bloomberg 转述 FT 标题，黄仁勋在与盟友讨论重返 CEO 的可能（细节未查证），与上午贝森特主张外部 CEO 的标题方向相反。另有 CNBC 标题称商务部长卢特尼克因此事受质询、其儿子掌管的公司与英伟达有关联（细节未查证；搜索只查到 Axios 报道他曾收到相关机密备忘录，以及 Cantor Fitzgerald 的另一项利益冲突争议）。这些都只加重预期面的治理 / 政策不确定性，继任路径变成“回归 vs 外部”两种方向同时存在（判断），需求面和财报数字没有变化。英伟达现价 162.85 美元，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。整体结论不变，11-17 财报、11-18 闭门问询是接下来两个验证点。\n【13:28 更新，含 Summizer 新增的 1 篇】航天板块出现产业面事件：据 SpaceNews，ULA 的 Vulcan 火箭在停飞约 9 个月后复飞，发射约 10 分钟时出现异常（报道指向 Centaur 上面级点火阶段），40 颗亚马逊 Leo（原 Kuiper）卫星未能入轨，这是 ULA 成立以来首次彻底失败、也是亚马逊购买的 38 次 Vulcan 发射中的第一次；原因仍在调查，美军方面表示问题解决前不会用 Vulcan 发射（发射日期各报道有 11-13 / 11-15 的口径差异）。这对亚马逊是产业面 / 预期面的进度打击（已在轨约 398 颗，部署本就落后，New Glenn 发射台 5 月爆炸后也在修复），西方非 SpaceX 运力进一步紧张，反向强化 SpaceX 的垄断地位（判断）；对亚马逊整体基本面影响有限，现价 266.66 美元，处于 2027 前瞻区间 138.4~218.3~358.3 的中值到上沿之间。英伟达方面 Seeking Alpha 新标题“黄仁勋权衡回归”与 12:28 已写的 FT 标题同一事件，不再重复。Summizer 新增一篇 Skydio F10 固定翼无人机（翼尖摄像头 + MegaDock 机械臂空中回收、全自主机队），属机器人 / 无人机系统化趋势的小样本，Skydio 未上市。整体结论不变。",
+   "market": "【14:30 完整研判，周日休市，行情截至 11-13；整合今日 06:28~13:28 增量，含 Summizer 新增的 2 篇】资金面 21 分（钱贵 / 紧缩）不变：10 年期美债 5.15%、一年上行 109bp，3 个月美债 4.12%，美元指数 103.4，高收益债相对长债近 3 个月 −0.6%，资金仍在避险。情绪热度 51（中性）：CNN 恐贪 39（一周前 24、一月前 46），VIX 19.3（期限结构 0.94，未倒挂），三倍杠杆 ETF 成交占比仍在近一年 93% 分位——指数层面情绪不极端，但杠杆资金偏激进，遇到利空时放大波动的风险仍在。浪位与昨天相同：AI 一浪、量子二浪、机器人一浪、航空航天一浪、自动驾驶一浪为“财报已改善，价格未反映”，AI 二浪、航空航天二浪为“启动初期”。周末新增的硬事实有两件：①财长贝森特 11-15 在福克斯新闻上呼吁英伟达“大幅改组”、由外部人出任 CEO，并质疑公司是否靠可疑销售拉高营收（CNBC；黄仁勋 11-12 辞职，CFO Colette Kress 暂代 CEO），同时又有黄仁勋与盟友讨论回归、同意国会闭门问询但未定日期的标题（FT / Bloomberg 标题，未查证）——继任路径出现“外部 CEO vs 回归”两种方向，治理风险溢价加重，但没有涉及需求数字；②ULA Vulcan 11-15 复飞约 10 分钟后出现异常、发射失败，40 颗亚马逊 Leo 卫星损失（SpaceNews），西方非 SpaceX 运力更紧。另有 DRAM 价格操纵集体诉讼撤诉动议被驳回（Tom's Hardware 标题，细节未查证），给存储涨价周期加一层监管折价。结论：需求侧仍未见转弱，压力集中在资金面偏紧和英伟达治理 / 政策；本周验证点依次为 11-16 小鹏、百度、Powell，11-17 英伟达，11-18 Palo Alto、K&S、小马智行、Anthropic 定价，11-19 阿里、Intuit。\n【今日增量记录】06:28 董事售股与 Megaspeed 内部调查标题；07:28 DRAM 诉讼撤诉动议被驳回；09:28 贝森特呼吁外部 CEO；12:28 黄仁勋同意国会闭门问询、FT 称其讨论回归；13:28 Vulcan 失败、Skydio F10 无人机（Summizer）。",
    "sectors": {
-    "ai": "【06:28】英伟达治理：董事售股（Tom's Hardware 标题，约 10 亿美元，未查证）与 Megaspeed 内部调查（CNBC 标题）；治理风险溢价延续，算力需求面无变化。液冷余热利用小样本：Airsys 领投 ThermAI（喷淋液冷、出水最高 60°C，公司自述），不改集中式数据中心主线。\n【07:28】内存：DRAM 价格操纵集体诉讼撤诉动议被驳回（Tom's Hardware 标题，未查证），美光 / 三星 / 海力士面临取证与潜在赔偿，涨价叙事多一层监管风险，产业需求面不变。英伟达：股东诉讼潜在未保险成本（FT 标题，未查证）。\n【09:28】英伟达：财长贝森特公开呼吁“大幅改组”、外部 CEO（CNBC / Bloomberg 标题，未查证），治理风险从公司内部扩展到政策压力；另有台湾走私案员工辩护标题。算力需求面不变。\n【12:28】英伟达：黄仁勋同意国会非公开问询（Seeking Alpha 标题）、FT 称其与盟友讨论回归（标题），与外部 CEO 主张并存；治理不确定性上升，算力需求面不变。",
+    "ai": "预期面 / 治理向下：贝森特公开主张英伟达外部 CEO 并质疑新加坡营收与可疑销售（CNBC），把治理问题推到政策层面；黄仁勋回归与外部 CEO 两种方向并存，11-17 财报和之后的国会问询是验证点。需求面无新数字。存储：DRAM 价格操纵集体诉讼进入取证（标题未查证），属预期面的监管折价，不改 HBM / DRAM 需求。资金面：Anthropic 11-18 定价是 AI 资产一级到二级定价的直接测试（Barron's / Nikkei 等周末前瞻）。",
     "quantum": "无重要新信息",
-    "robotics": "【13:28】Summizer：Skydio F10 固定翼无人机 + MegaDock 机械臂空中回收（一个机库 5 架、3 架在空），竞争单位从单机转向“机库 + 自主调度”系统；厂商自述指标，Skydio 未上市。",
-    "aerospace": "【13:28】Vulcan 复飞失败，40 颗亚马逊 Leo 卫星损失（SpaceNews）；ULA 首次彻底失败，Vulcan 再度停飞，亚马逊星座部署进一步延后，西方可用重型运力更紧，SpaceX 相对优势扩大（判断）。",
-    "autonomous": "无重要新信息"
+    "robotics": "无重要新信息；Summizer 一篇 Skydio F10 固定翼无人机 + 机库机械臂回收（IEEE Spectrum），属“机库 + 自主调度”系统化趋势的小样本，Skydio 未上市。",
+    "aerospace": "产业面分化：Starship 上面级首次塔架回收（11-14）抬高 SpaceX 的成本优势，Vulcan 11-15 失败（SpaceNews）让 ULA 再度停飞、亚马逊 Leo 部署再延后，西方重型运力进一步向 SpaceX 集中（判断）。据 Startup Fortune 标题，Rocket Lab 完成第 100 次 Electron 发射（细节未查证）。",
+    "autonomous": "无重要新信息；11-16 小鹏、11-18 小马智行财报是本周验证点。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "现价 162.85 美元，位于 2027 前瞻区间 111.8~199.5~306.7 的下沿~中值之间、距中值约 +22%；周末新增董事售股和 Megaspeed 内部调查两条治理标题，11-17 财报是验证点。15 日财长贝森特公开主张外部 CEO（标题，未查证），继任不确定性加重。 12:28：黄仁勋同意国会闭门问询（预计 11-18）、FT 称其讨论回归，继任方向分歧加大。"
+     "why": "11-17 财报（一致预期 EPS 2.47 美元、营收约 1088 亿美元）；财长贝森特 11-15 公开主张外部 CEO 并质疑可疑销售（CNBC），继任路径分化。现价 162.85 美元，一个月 −25%，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿~中值之间、距中值约 +22%。"
     },
     {
      "t": "MU",
-     "why": "DRAM 价格操纵集体诉讼撤诉动议被驳回（据 Tom's Hardware 标题），进入取证；现价 778.31 美元、11-13 跌 2.5%，在 2027 前瞻区间 554.0~809.8~1280.6 中值下方不远。"
+     "why": "DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，未查证）；现价 778.31 美元，处于 2027 前瞻区间 554.0~809.8~1280.6 的下沿~中值之间、距中值约 +4%。"
     },
     {
      "t": "AMZN",
-     "why": "Vulcan 失败损失 40 颗 Leo 卫星，星座进度再受挫（已在轨约 398 颗）；现价 266.66 美元，处于 2027 前瞻区间 138.4~218.3~358.3 的中值到上沿之间。"
+     "why": "Vulcan 失败损失 40 颗 Leo 卫星（SpaceNews），星座部署再延后；对整体利润影响有限。现价 266.66 美元，处于 2027 前瞻区间 138.4~218.3~358.3 的中值~上沿之间，已高于中值约 22%。"
+    },
+    {
+     "t": "XPEV",
+     "why": "11-16 盘前财报，三季度交付 118,390 辆创纪录，看车辆毛利率；现价 9.37 美元，处于 2027 前瞻区间 7.39~11.2~15.95 的下沿~中值之间。"
+    },
+    {
+     "t": "BIDU",
+     "why": "11-16 财报，一致预期 EPS 6.16 美元；现价 78.14 美元，处于 2027 前瞻区间 47.2~95.7~180.0 的下沿~中值之间，距中值约 +22%。"
+    },
+    {
+     "t": "POWL",
+     "why": "11-16 财报（FY2026 四季度），三季度曾拿下史上最大 4 亿美元以上数据中心订单；现价 142.72 美元，一个月 −16%，处于 2027 前瞻区间 117.9~174.8~244.5 的下沿~中值之间，信号为「关注买点」。"
+    },
+    {
+     "t": "PANW",
+     "why": "11-18 财报；现价 322.24 美元，低于 2027 前瞻区间下沿 382.6（中值 513.8），是关注清单里少数处于“低于下沿”的公司，看平台化转换与 CyberArk 整合。"
+    },
+    {
+     "t": "KLIC",
+     "why": "11-18 财报（FY 四季度指引收入 3.55~3.95 亿美元，据 MarketBeat）；现价 69.07 美元、一个月 −17%，处于 2027 前瞻区间 51.6~84.6~125.7 的下沿~中值之间，信号「关注买点」。"
+    },
+    {
+     "t": "BABA",
+     "why": "11-19 财报，Jefferies 预计云与算力业务增速超 50%（SCMP）；现价 94.38 美元，一个月 −15%，处于 2027 前瞻区间 57.6~115.6~196.1 的下沿~中值之间。"
     }
    ],
    "sources": [
+    [
+     "CNBC：Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+     "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
+    ],
+    [
+     "SpaceNews：Vulcan launch of Amazon Leo satellites fails",
+     "https://spacenews.com/vulcan-launch-of-amazon-leo-satellites-fails/"
+    ],
+    [
+     "Tom's Hardware：Judge denies motion to dismiss DRAM price-fixing lawsuit",
+     "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
+    ],
+    [
+     "SCMP：Alibaba’s AI cloud revenue set to surge over 50%",
+     "https://www.scmp.com/tech/big-tech/article/3370209/alibabas-ai-cloud-revenue-set-surge-over-50-investment-blitz-pays-analysts"
+    ],
+    [
+     "Powell Industries FY2026 三季度 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
+    ],
+    [
+     "MarketBeat：Kulicke and Soffa Q4 2026 guidance",
+     "https://www.marketbeat.com/instant-alerts/kulicke-and-soffa-industries-nasdaqklic-releases-q4-2026-earnings-guidance-2026-08-05/"
+    ],
     [
      "Tom's Hardware：Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal",
      "https://www.tomshardware.com/tech-industry/nvidia-board-director-cashed-out-usd1-billion-in-stock-before-jensen-huang-scandal-mark-stevens-sold-4-2-million-shares-without-a-trading-plan"
@@ -674,16 +763,8 @@
      "https://www.datacenterdynamics.com/en/news/airsys-invests-in-digital-boiler-startup-thermai/"
     ],
     [
-     "Tom's Hardware：Judge denies motion to dismiss DRAM price-fixing lawsuit against Micron, Samsung, and SK hynix",
-     "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
-    ],
-    [
      "MLex：Samsung, SK Hynix, Micron move to dismiss US DRAM price-fixing claims",
      "https://www.mlex.com/mlex/antitrust/articles/2521308"
-    ],
-    [
-     "CNBC：Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
-     "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html"
     ],
     [
      "Axios：国会要求黄仁勋就涉嫌间谍关联出席闭门简报",
@@ -692,10 +773,6 @@
     [
      "Axios：卢特尼克曾收到关于黄仁勋关系的机密备忘录",
      "https://axios.com/2026/11/10/lutnick-nvidia-jensen-huang-china-memo"
-    ],
-    [
-     "SpaceNews: Vulcan launch of Amazon Leo satellites fails",
-     "https://spacenews.com/vulcan-launch-of-amazon-leo-satellites-fails/"
     ],
     [
      "Spaceflight Now: ULA delays to Sunday Vulcan launch of 40 Leo satellites",
@@ -1821,7 +1898,7 @@
    ]
   }
  ],
- "updated": "2026-11-15T13:28",
+ "updated": "2026-11-15T14:27",
  "trend": {
   "NVDA": {
    "date": "2026-11-15",
@@ -1896,10 +1973,10 @@
    ]
   },
   "MU": {
-   "date": "2026-11-11",
+   "date": "2026-11-15",
    "dir": "顺风",
-   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。",
-   "miss": "前瞻区间按一致预期 EPS 算，隐含高盈利能持续到 2027 年；存储是强周期行业，周期高点时市盈率看起来最便宜（判断）。客户自研 / 换供应商、三星 HBM 认证进度也影响份额。",
+   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。 11-15 新增逆风：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证）。",
+   "miss": "前瞻区间按一致预期 EPS 算，隐含高盈利能持续到 2027 年；存储是强周期行业，周期高点时市盈率看起来最便宜（判断）。客户自研 / 换供应商、三星 HBM 认证进度也影响份额。 反垄断诉讼的潜在赔偿和价格行为约束（集体诉讼刚进入取证，不代表认定违法）也不在前瞻估值里。",
    "watch": "12-23 财报的 HBM 收入和毛利率、DRAM 合约价、三星 / SK 海力士扩产计划、云厂商资本开支。",
    "src": [
     [
@@ -1909,6 +1986,10 @@
     [
      "TradingKey：摩根士丹利称回调改善存储股风险收益（11-11）",
      "https://www.tradingkey.com/analysis/stocks/us-stocks/262300967-memory-stocks-morgan-stanley-micron-sandisk-ai-demand-buying-opportunity-tradingkey"
+    ],
+    [
+     "Tom's Hardware：DRAM 价格操纵诉讼撤诉动议被驳回",
+     "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
     ]
    ]
   },
@@ -1968,15 +2049,19 @@
    ]
   },
   "AMZN": {
-   "date": "2026-11-08",
+   "date": "2026-11-15",
    "dir": "分化",
-   "text": "AWS 在加速，持有 Anthropic 股份（Anthropic 已申请上市），零售用 AI 降低物流和广告成本。但三季度营收不及预期，市场不再无条件为资本开支买单。",
-   "miss": "Anthropic 上市后的股权价值重估、AWS 被定制芯片（Trainium）拉低的毛利率，都不在 EPS 预期里。",
-   "watch": "AWS 增速和利润率、资本开支、Anthropic IPO 定价。",
+   "text": "AWS 在加速、持有 Anthropic 股份（11-18 定价），零售用 AI 降本；但三季度营收不及预期，市场不再无条件为资本开支买单。卫星宽带 Leo 再受挫：Vulcan 11-15 失败损失 40 颗卫星，New Glenn 发射台 5 月爆炸后仍在修复，两条主力运力同时受阻。",
+   "miss": "Anthropic 上市后的股权价值重估、Trainium 拉低的 AWS 毛利率不在 EPS 预期里；Leo 部署延期带来的额外资本开支和 FCC 部署期限风险也不在一致预期中（判断）。",
+   "watch": "AWS 增速和利润率、资本开支、Anthropic IPO 定价、Vulcan 事故调查结论与 Leo 在轨数量。",
    "src": [
     [
      "SiliconANGLE：亚马逊财报后下跌",
      "https://siliconangle.com/2026/10/29/despite-cloud-boom-amazons-stock-falls-disappointing-earnings-and-revenue-miss/"
+    ],
+    [
+     "SpaceNews：Vulcan launch of Amazon Leo satellites fails",
+     "https://spacenews.com/vulcan-launch-of-amazon-leo-satellites-fails/"
     ]
    ]
   },
@@ -2640,6 +2725,108 @@
     [
      "Lucid 三季报新闻稿（经 Finviz）",
      "https://finviz.com/news/419418/lucid-announces-third-quarter-2026-results-reduces-cash-consumption-by-30-transformation-on-track-liquidity-increased-by-175-billion"
+    ]
+   ]
+  },
+  "BABA": {
+   "date": "2026-11-15",
+   "dir": "分化",
+   "text": "顺风：阿里云连续加速（2026 年 6 月季度云收入约 71 亿美元、+45%，AI 相关收入连续 12 个季度三位数增长），Jefferies 预计 9 月季度云与算力增速超 50%；Qwen 下载超 30 亿次。逆风：三年 3800 亿元 AI 资本开支已花一半，即时零售补贴拖累利润和现金流。",
+   "miss": "前瞻 EPS 隐含补贴战收敛和资本开支回报如期兑现；管理层称算力投资 2~3 年回本是自述目标。中美芯片管制（能否买到先进 GPU、自研 T-Head 芯片进度）和 ADR 地缘折价不在估值模型里（判断）。",
+   "watch": "11-19 财报：云与算力收入增速、AI 收入占比、即时零售亏损、自由现金流、资本开支指引。",
+   "src": [
+    [
+     "SCMP：阿里 AI 云收入预计增长超 50%",
+     "https://www.scmp.com/tech/big-tech/article/3370209/alibabas-ai-cloud-revenue-set-surge-over-50-investment-blitz-pays-analysts"
+    ],
+    [
+     "阿里巴巴：6 月季度云增速 22 个季度新高",
+     "https://www.alibabagroup.com/document-2027233133950140416"
+    ]
+   ]
+  },
+  "POWL": {
+   "date": "2026-11-15",
+   "dir": "顺风",
+   "text": "配电开关柜受益于数据中心和电力基建：FY2026 一季度拿下首张数据中心超大订单（约 7500 万美元），三季度再获史上最大单笔数据中心订单（超 4 亿美元）等三张超大订单，二季度订单 4.9 亿美元、订单出货比 1.7。传统油气 / 化工客户周期偏弱是逆风。",
+   "miss": "前瞻 EPS 隐含高毛利率持续；超大订单集中度上升、数据中心项目可能延期或砍单（客户融资能力）、产能扩张后的毛利回落，估值模型都反映不了（判断）。",
+   "watch": "11-16 财报：积压金额、订单出货比、数据中心订单占比、毛利率。",
+   "src": [
+    [
+     "Powell FY2026 三季度 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
+    ],
+    [
+     "Powell FY2026 一季度 8-K",
+     "https://www.sec.gov/Archives/edgar/data/80420/000008042026000013/ex991-powlq1xfy2026earning.htm"
+    ]
+   ]
+  },
+  "KLIC": {
+   "date": "2026-11-15",
+   "dir": "顺风",
+   "text": "传统引线键合仍是主业，但增量来自先进封装：热压键合（TCB，含无助焊剂 TCB）、垂直引线、早期 HBM 设备；公司在扩产到年约 4 亿美元 TCB 系统销售能力，订单能见度延伸到 FY2027 二季度，管理层预计需求至少在 FY2027 上半年维持高于平均水平。",
+   "miss": "前瞻 EPS 隐含 TCB 在 HBM / 先进封装客户的认证顺利；与 BESI 混合键合、ASMPT / Hanmi TCB 的竞争和客户认证延期是估值反映不到的风险；主业仍有消费电子周期（判断）。",
+   "watch": "11-18 财报：Advanced Solutions 收入（全年目标超 1 亿美元）、TCB 订单、毛利率、FY2027 一季度指引。",
+   "src": [
+    [
+     "MarketBeat：K&S 四季度指引",
+     "https://www.marketbeat.com/instant-alerts/kulicke-and-soffa-industries-nasdaqklic-releases-q4-2026-earnings-guidance-2026-08-05/"
+    ],
+    [
+     "Zacks：K&S 三季度后的看法",
+     "https://www.zacks.com/stock/news/2979879/should-you-include-klic-stock-in-portfolio-after-solid-q3-results"
+    ]
+   ]
+  },
+  "VLEEY": {
+   "date": "2026-11-15",
+   "dir": "分化",
+   "text": "法雷奥整体随欧洲汽车产量走弱：2026 年三季度销售 49 亿欧元、同口径 −2.6%，全年 200~210 亿欧元目标维持；但含 ADAS 的 BRAIN 事业部三季度销售 11.98 亿欧元、+8.3%，并与英伟达合作开发 L4 自动驾驶计算平台。",
+   "miss": "前瞻区间按收入倍数算，不区分增长的 ADAS 与下滑的传统零部件；欧洲车企电动化放缓、中国车企出海挤压欧洲供应链份额、美国关税是估值反映不到的逆风（判断）。",
+   "watch": "BRAIN 事业部增速和订单、全年利润率、欧洲轻型车产量。",
+   "src": [
+    [
+     "Idéal Investisseur：法雷奥三季度收入 −2.6%、维持全年目标",
+     "https://www.ideal-investisseur.fr/en/stock-news/valeo-maintains-its-2026-targets-despite-a-2-6-decline-in-third-quarter-revenue/27779.html"
+    ],
+    [
+     "capital.com：Valeo Q3 2026 Sales",
+     "https://capital.com/en-gb/news/valeo-q3-2026-sales"
+    ]
+   ]
+  },
+  "BTDR": {
+   "date": "2026-11-15",
+   "dir": "逆风",
+   "text": "矿企向 AI 云转型进行中但资金吃紧：三季度收入 3.207 亿美元、+89%，但毛利率从 23.4% 降到 3.4%、净亏损 1.255 亿美元；AI 云收入 2040 万美元（环比 +46%），积压约 29 亿美元、已锁定约 332 IT MW；资本开支 4.78 亿美元，借款约 19.5 亿美元。Knoxville 55MW 转换因电力设备延误推迟到 2027 年四季度。",
+   "miss": "前瞻区间按收入倍数算，看不到融资能力和稀释风险（借款高、管理层把 2027 指引推迟到四季度财报）；比特币价格和算力难度决定主业现金流，电力设备交期决定 AI 云转换进度（判断）。",
+   "watch": "AI 云收入和毛利率、积压转化进度、融资 / 增发、Tydal 和 Knoxville 交付时间。",
+   "src": [
+    [
+     "The Block：Bitdeer 三季度收入创新高、亏损扩大",
+     "https://theblock.co/news/business/2026-11-10-bitdeer-reports-record-q3-revenue-as-net-loss-widens-to-125-5-million-437217"
+    ],
+    [
+     "Blockspace：Bitdeer AI 云积压 29 亿美元",
+     "https://blockspace.media/insight/bitdeer-reports-ai-cloud-backlog/"
+    ]
+   ]
+  },
+  "WNC": {
+   "date": "2026-11-15",
+   "dir": "分化",
+   "text": "挂车周期从底部回升：三季度收入 4.764 亿美元、+24.8%，新挂车出货 9,563 台、+43%，积压约 11.98 亿美元、环比增加 2.42 亿；但仍在亏损（GAAP 每股 −0.51 美元），四季度指引收入 4.2~4.5 亿美元、调整后每股 −0.75~−0.55，自由现金流前九个月约 −7500 万美元；厢式货车车身需求仍弱。",
+   "miss": "前瞻区间按收入倍数算，假设 2027 年复苏兑现；ACT 预测 2027 年约 26.2 万台、FTR 约 22.7 万台，两家机构分歧大；货运运价、关税下的钢铝成本、现金消耗都不在模型里（判断）。",
+   "watch": "订单与积压、毛利率转正时间、自由现金流、ACT / FTR 挂车订单数据。",
+   "src": [
+    [
+     "Wabash 三季度 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0000879526/000087952626000101/wnc-20260930xex991.htm"
+    ],
+    [
+     "finsee：Wabash Q3 2026 earnings review",
+     "https://finsee.ai/earnings/wnc/2026/q3/en/"
     ]
    ]
   }
