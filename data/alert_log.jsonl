@@ -502,3 +502,8 @@
 {"ts": "2026-11-14T17:15:41+00:00", "title": "🌊 量子计算 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速", "priority": "high", "sent": true}
 {"ts": "2026-11-14T18:28:14+00:00", "title": "📝 研判更新 10:28", "body": "据 CNBC 标题，两家主要投资者致信英伟达董事会，要求考虑黄仁勋回归（细节未查证），管理层路径不确定性上升。涉及：NVDA", "priority": "normal", "sent": true}
 {"ts": "2026-11-14T22:30:07+00:00", "title": "📝 今日研判 2026-11-14", "body": "资金面 21 分（钱贵 / 紧缩）不变，情绪热度 51（中性），量子和机器人一浪在阈值附近来回切换。周末主线：黄仁勋回归请愿和投资者来信让英伟达继任悬而未决；Starship 上面级首次被塔架接住，助推器未回收。下周验证点：11-16 小鹏 / 百度财报、11-17 英伟达财报、11-18 Anthropic IPO 定价。 关注：NVDA, SPCX, TSM, XPEV, BIDU, PONY, VUZI, SMCI", "priority": "normal", "sent": true}
+{"ts": "2026-11-15T11:21:48+00:00", "title": "📅 CRNC 3 天后发财报", "body": "Cerence Inc. 2026-11-18，一致预期 EPS 0.22。当前信号：关注买点，情绪热度 32。", "priority": "normal", "sent": true}
+{"ts": "2026-11-15T11:21:48+00:00", "title": "📅 KLIC 3 天后发财报", "body": "Kulicke and Soffa Industries, I 2026-11-18，一致预期 EPS 1.43。当前信号：关注买点，情绪热度 29。", "priority": "normal", "sent": true}
+{"ts": "2026-11-15T11:21:48+00:00", "title": "📅 PANW 3 天后发财报", "body": "Palo Alto Networks, Inc. 2026-11-18，一致预期 EPS 0.97。当前信号：中性，情绪热度 52。", "priority": "normal", "sent": true}
+{"ts": "2026-11-15T11:21:49+00:00", "title": "📅 PONY 3 天后发财报", "body": "Pony AI Inc. 2026-11-18，一致预期 EPS -0.18。当前信号：观察，情绪热度 4。", "priority": "normal", "sent": true}
+{"ts": "2026-11-15T11:21:49+00:00", "title": "📅 WWD 3 天后发财报", "body": "Woodward, Inc. 2026-11-18，一致预期 EPS 2.52。当前信号：趋势中，情绪热度 45。", "priority": "normal", "sent": true}

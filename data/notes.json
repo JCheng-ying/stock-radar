@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-15",
+    "text": "预期面 / 治理：据 Tom's Hardware 标题，董事 Mark Stevens 事件前累计卖出约 420 万股、约 10 亿美元且未见交易计划（细节未查证，与此前报道的单轮约 4.1 亿美元口径不同）；据 CNBC 标题，Megaspeed 称 Alice Huang 2025 年已离开并启动内部调查。治理风险溢价延续，需求面无新变化。",
+    "url": "https://www.tomshardware.com/tech-industry/nvidia-board-director-cashed-out-usd1-billion-in-stock-before-jensen-huang-scandal-mark-stevens-sold-4-2-million-shares-without-a-trading-plan"
+   },
+   {
     "date": "2026-11-14",
     "text": "预期面 / 治理：据 TechCrunch，首席安全官 David Reber 8 月以健康原因离职、Saša Zdjelar 接任，未见与 Megaspeed 事件相关的公开证据；文章追问安全与法务体系知情情况，治理风险溢价延续，无新的硬事实。",
     "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/"
@@ -20,11 +25,6 @@
     "date": "2026-11-14",
     "text": "产业面 / 监管：据 TechCrunch，韩国称英伟达重申 26 万颗 GPU 供应和联合项目、台北海外总部按计划推进，说明大客户关系更多由合同和排期驱动，需求侧未因 CEO 更替松动（产业面稳定）；但新加坡、中国两侧的出口管制调查仍在扩大，监管面偏负。",
     "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/"
-   },
-   {
-    "date": "2026-11-14",
-    "text": "预期面 / 监管：据 Tom's Hardware 标题，美国财政部长质疑英伟达是否明知把 AI GPU 卖给空壳公司，称公司本身负有责任（细节未查证，未见正式指控）；出口管制风险从渠道走私延伸到公司责任层面，监管不确定性继续偏负。",
-    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-treasury-secretary-questions-whether-nvidia-knowingly-sold-ai-gpus-to-shell-companies-says-company-itself-is-responsible-i-think-it-is-important-that-anyone-at-the-company-there-be-held-accountable-for-that"
    }
   ],
   "ANET": [
@@ -626,6 +626,37 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-15",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:28 更新，含 Summizer 新增的 1 篇】周日休市，行情仍截至 11-13。英伟达治理线有两条新标题：据 Tom's Hardware 标题，董事 Mark Stevens 在事件曝光前累计卖出约 420 万股、约 10 亿美元且未见交易计划（细节未查证；此前公开报道里单轮约 4.1 亿美元，口径有分歧）；据 CNBC 标题，Megaspeed 称 Alice Huang 已于 2025 年离开并启动内部调查（细节未查证）。两者都只加重预期面的治理风险溢价，不涉及需求和财报数字；英伟达现价 162.85 美元，处于 2027 前瞻区间 111.8~199.5~306.7 的下沿到中值之间。其余是 Anthropic IPO 的评论文章（WSJ、FT），以及 Summizer 一篇液冷“数字锅炉”融资（Airsys 投资 ThermAI，pre-seed 规模，产业面信号很小）。整体结论不变：下周看 11-16 小鹏 / 百度、11-17 英伟达财报、11-18 Anthropic 定价。",
+   "sectors": {
+    "ai": "【06:28】英伟达治理：董事售股（Tom's Hardware 标题，约 10 亿美元，未查证）与 Megaspeed 内部调查（CNBC 标题）；治理风险溢价延续，算力需求面无变化。液冷余热利用小样本：Airsys 领投 ThermAI（喷淋液冷、出水最高 60°C，公司自述），不改集中式数据中心主线。",
+    "quantum": "无重要新信息",
+    "robotics": "无重要新信息",
+    "aerospace": "无重要新信息",
+    "autonomous": "无重要新信息"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "现价 162.85 美元，位于 2027 前瞻区间 111.8~199.5~306.7 的下沿~中值之间、距中值约 +22%；周末新增董事售股和 Megaspeed 内部调查两条治理标题，11-17 财报是验证点。"
+    }
+   ],
+   "sources": [
+    [
+     "Tom's Hardware：Nvidia board director cashed out $1 billion in stock before Jensen Huang scandal",
+     "https://www.tomshardware.com/tech-industry/nvidia-board-director-cashed-out-usd1-billion-in-stock-before-jensen-huang-scandal-mark-stevens-sold-4-2-million-shares-without-a-trading-plan"
+    ],
+    [
+     "CNBC：Megaspeed says Alice Huang left in 2025, launches internal probe",
+     "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html"
+    ],
+    [
+     "DCD：Airsys invests in digital boiler startup ThermAI",
+     "https://www.datacenterdynamics.com/en/news/airsys-invests-in-digital-boiler-startup-thermai/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-14",
    "market": "【14:30 完整研判，周六休市，行情截至 11-13；含 12:27 之后 Summizer 新增的 1 篇】资金面 21 分（钱贵 / 紧缩）不变：10 年期美债 5.15%、一年上行 109bp，美元指数 103.4，高收益债相对长债近 3 个月 −0.6%；情绪热度 51（中性），CNN 恐贪 39（一周前 24），VIX 19.3，三倍杠杆 ETF 成交占比仍在近一年 93% 分位。浪位：量子一浪和机器人一浪都在“尚未启动”与“财报已改善，价格未反映”之间来回切换（毛利率改善占比贴近 55% 阈值，属边界摆动，不是基本面变化）；AI 二浪、航空航天二浪仍为“启动初期”。周末的主线仍是英伟达治理：据 TechCrunch，要求恢复黄仁勋职务的请愿书签名超过 11.5 万（网站自述含约 6 千名现任员工，马斯克公开署名，未经核实），加上 CNBC 报道的两家大投资者致信董事会，CEO 更替“不是定局”，但 FBI / 出口管制调查未结，治理不确定性大概率拖到财报之后；产业面的好消息来自航天：Starship 第 15 次试飞的上面级 Ship 42 在轨约 22.5 小时后被发射塔“筷子”接住，是上面级首次塔架回收（CNBC、Teslarati），但助推器没有回收、据报道在溅落前爆炸（更正 11-13 记录里的“可控溅落”）。结论：需求侧没有转弱，压力集中在资金面偏紧和英伟达治理 / 监管；下周三个验证点：11-16 小鹏、百度财报，11-17 英伟达财报，11-18 Anthropic IPO 定价（区间 70~78 美元、最多融资约 644 亿美元，据 CNBC）——后者是 AI 资产一级到二级市场定价的直接测试。\n【今日早间增量摘要】06:27 AirTrunk 印度 1.8GW MoU；07:28~08:28 据 Tom's Hardware，研究人员指称中国模型用 Blackwell 训练、财政部长质疑英伟达是否明知向空壳公司出货（均未查证）；09:28 韩国重申 26 万颗 GPU 供应、新加坡点名美方在 Supermicro 相关信息上配合有限；10:28 两家大投资者要求董事会考虑黄仁勋回归；12:27 AT&T 日处理约 450 亿 AI token（公司自述）。\n【16:27 更新，含 Summizer 新增的 1 篇】据 TechCrunch 评论文章，英伟达任职四年的首席安全官 David Reber 今年 8 月以健康原因离职、由 Saša Zdjelar 接任；文章称没有公开信息把这次人事变动与 Megaspeed 事件联系起来，主要是追问安全与法务体系的知情情况。没有新的硬事实，只是让“治理 / 内控”这条线多了一个董事会调查需要回答的问题；预期面的治理风险溢价方向不变，整体结论不变。百度 11-16 财报前瞻（Seeking Alpha）已在观察名单内，无新增。",
@@ -1740,7 +1771,7 @@
    ]
   }
  ],
- "updated": "2026-11-14T21:27",
+ "updated": "2026-11-15T06:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-14",
