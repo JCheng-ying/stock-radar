@@ -611,3 +611,18 @@
 {"ts": "2026-11-16T18:16:06+00:00", "title": "😱 VIX 22.0：恐慌升温(≥22)", "body": "VIX 22.0，处于近一年 88% 分位——恐慌升温", "priority": "high", "sent": true}
 {"ts": "2026-11-16T18:16:07+00:00", "title": "🔴 AAPL 进入「回调风险」", "body": "Apple Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 97% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
 {"ts": "2026-11-16T18:16:07+00:00", "title": "💥 QBTS 单日 -8.1%", "body": "D-Wave Quantum Inc. 收于 8.78。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:28:35+00:00", "title": "📝 研判更新 10:28", "body": "据 CNBC，英伟达董事会不考虑请黄仁勋回归，治理不确定性延续，盘中跌约 4%；新云 Firmus 转向客户预付款融资。涉及：NVDA", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T18:40:23+00:00", "title": "🟢 MU 进入「关注买点」", "body": "Micron Technology, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 51% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:40:23+00:00", "title": "🟢 ODFL 进入「关注买点」", "body": "Old Dominion Freight Line, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 40% 位置；偏离200日线 -13%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:40:24+00:00", "title": "🟢 SNDR 进入「关注买点」", "body": "Schneider National, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 48% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:40:24+00:00", "title": "🟢 TKR 进入「关注买点」", "body": "Timken Company (The)：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 46% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:40:24+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:40:24+00:00", "title": "💥 DDD 单日 -8.5%", "body": "3D Systems Corporation 收于 1.4。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:40:25+00:00", "title": "💥 SOUN 单日 -8.0%", "body": "SoundHound AI, Inc. 收于 3.21。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:40:25+00:00", "title": "💥 TMC 单日 -8.0%", "body": "TMC the metals company Inc. 收于 2.12。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T19:09:05+00:00", "title": "🟢 GRAB 进入「关注买点」", "body": "Grab Holdings Limited：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 54；处于52周区间的 18% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T19:09:05+00:00", "title": "🟢 NWSA 进入「关注买点」", "body": "News Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 37；处于52周区间的 48% 位置；偏离200日线 -1%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T19:09:05+00:00", "title": "🔴 ACN 进入「回调风险」", "body": "Accenture plc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 57；处于52周区间的 81% 位置；偏离200日线 +33%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T19:09:06+00:00", "title": "💥 CMTL 单日 -8.3%", "body": "Comtech Telecommunications Corp 收于 1.1。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T19:16:47+00:00", "title": "🌊 AI 二浪：价格先行，财报待验证", "body": "此前：启动初期。已满足：相对强度、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T19:16:47+00:00", "title": "🌊 自动驾驶 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：无", "priority": "high", "sent": true}
