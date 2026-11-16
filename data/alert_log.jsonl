@@ -584,3 +584,16 @@
 {"ts": "2026-11-16T16:17:03+00:00", "title": "💥 ONDS 单日 -8.1%", "body": "Ondas Inc 收于 4.74。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-16T16:17:03+00:00", "title": "💥 RR 单日 -8.1%", "body": "Richtech Robotics Inc. 收于 0.69。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-16T16:17:04+00:00", "title": "💥 UUUU 单日 -8.3%", "body": "Energy Fuels Inc 收于 6.04。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:41:57+00:00", "title": "🟢 LHX 进入「关注买点」", "body": "L3Harris Technologies, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 53；处于52周区间的 23% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T16:41:57+00:00", "title": "🌊 AI 二浪：启动初期", "body": "此前：价格先行，财报待验证。已满足：相对强度、收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T16:41:58+00:00", "title": "🔴 VEEV 进入「回调风险」", "body": "Veeva Systems Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 50；处于52周区间的 88% 位置；偏离200日线 +42%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T16:41:58+00:00", "title": "💥 CCOI 单日 -9.3%", "body": "Cogent Communications Holdings, 收于 3.63。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:41:58+00:00", "title": "💥 CHPT 单日 -9.0%", "body": "ChargePoint Holdings, Inc. 收于 10.61。信号：谨慎。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T17:11:36+00:00", "title": "🟢 KEYS 进入「关注买点」", "body": "Keysight Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 53% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:11:36+00:00", "title": "🟢 OUST 进入「关注买点」", "body": "Ouster, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 45；处于52周区间的 33% 位置；偏离200日线 -4%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:11:37+00:00", "title": "🌊 机器人 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:11:37+00:00", "title": "🌊 航空航天 二浪：财报已改善，价格未反映", "body": "此前：启动初期。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:11:37+00:00", "title": "🚀 POWL 单日 +8.5%", "body": "Powell Industries, Inc. 收于 154.88。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T17:15:34+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:15:35+00:00", "title": "🌊 航空航天 二浪：启动初期", "body": "此前：财报已改善，价格未反映。已满足：上涨广度、毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:15:35+00:00", "title": "💥 LUNR 单日 -8.0%", "body": "Intuitive Machines, Inc. 收于 11.96。信号：关注买点。", "priority": "low", "sent": true}
