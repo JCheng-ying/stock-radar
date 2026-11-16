@@ -643,3 +643,23 @@
 {"ts": "2026-11-16T20:11:42+00:00", "title": "🌊 机器人 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
 {"ts": "2026-11-16T20:17:19+00:00", "title": "🟢 MU 进入「关注买点」", "body": "Micron Technology, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 51% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
 {"ts": "2026-11-16T20:17:19+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T20:41:05+00:00", "title": "🟢 AAON 进入「关注买点」", "body": "AAON, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 55；处于52周区间的 25% 位置；偏离200日线 -19%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T20:41:05+00:00", "title": "🟢 ODFL 进入「关注买点」", "body": "Old Dominion Freight Line, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 40% 位置；偏离200日线 -13%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T20:41:05+00:00", "title": "🟢 OUST 进入「关注买点」", "body": "Ouster, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 32% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T20:41:06+00:00", "title": "🟢 TKR 进入「关注买点」", "body": "Timken Company (The)：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 46% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T20:41:06+00:00", "title": "🔴 HCA 进入「回调风险」", "body": "HCA Healthcare, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 65；处于52周区间的 82% 位置；偏离200日线 +15%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T20:41:06+00:00", "title": "💥 CRNC 单日 -8.1%", "body": "Cerence Inc. 收于 7.28。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:07+00:00", "title": "💥 DOCN 单日 -8.3%", "body": "DigitalOcean Holdings, Inc. 收于 79.14。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:07+00:00", "title": "💥 EOSE 单日 -9.8%", "body": "Eos Energy Enterprises, Inc. 收于 1.72。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:07+00:00", "title": "💥 HTZ 单日 -8.0%", "body": "Hertz Global Holdings, Inc 收于 1.38。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:08+00:00", "title": "🚀 KSCP 单日 +15.6%", "body": "Knightscope, Inc. 收于 0.49。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:08+00:00", "title": "💥 LASR 单日 -8.1%", "body": "nLIGHT, Inc. 收于 37.93。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T20:41:08+00:00", "title": "💥 ZPTA 单日 -21.9%", "body": "Zapata Quantum Inc 收于 0.47。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:27+00:00", "title": "📊 XPEV 财报更新", "body": "XPeng Inc. 截至 2026-09-30 的季度：收入同比 +19%；毛利率 18.9%（同比 -1.2pp）；EBITDA 利润率 -3.0%；EPS 较预期 -32%；当前信号：弱势（基本面 47 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T21:10:27+00:00", "title": "🔴 SAIL 进入「回调风险」", "body": "SailPoint, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 55；处于52周区间的 89% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T21:10:27+00:00", "title": "💥 ACMR 单日 -8.2%", "body": "ACM Research, Inc. 收于 44.0。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:28+00:00", "title": "💥 AI 单日 -9.6%", "body": "C3.ai, Inc. 收于 10.69。信号：中性。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:28+00:00", "title": "💥 AMBA 单日 -8.5%", "body": "Ambarella, Inc. 收于 55.03。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:28+00:00", "title": "💥 ARM 单日 -8.1%", "body": "Arm Holdings plc 收于 175.05。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:29+00:00", "title": "💥 INOD 单日 -8.1%", "body": "Innodata Inc. 收于 32.59。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T21:10:29+00:00", "title": "💥 SMR 单日 -8.2%", "body": "NuScale Power Corporation 收于 4.28。信号：观察。", "priority": "low", "sent": true}
