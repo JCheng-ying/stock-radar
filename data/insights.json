@@ -3971,5 +3971,357 @@
     ]
    }
   ]
+ },
+ "robotics/humanoid/driver": {
+  "updated": "2026-11-16",
+  "note": "人形机器人一台有 40~70 多个关节电机，每个关节都需要“MCU + 栅极驱动 + 功率管 + 电流 / 位置传感”。路线分歧在功率管材料：英飞凌、ST、TI 和私营的 EPC 主推 GaN（体积小、可塞进关节里），安森美、Microchip、ADI 等以硅 MOSFET + 成熟 MCU / 隔离器件为主；Allegro 则押注传感器而非功率管（每台高端人形最多 150 颗传感 IC + 50 颗电源 IC，公司口径）。目前这块收入对所有上市公司都还很小（Allegro 预计机器人占 2027 财年收入 3%~4%）。",
+  "companies": {
+   "IFNNY": {
+    "products": "CoolGaN 晶体管、OptiMOS 硅功率 MOSFET、电机控制 MCU 与人形机器人参考方案",
+    "what": "把电池的直流电变成驱动关节电机的三相电，并精确控制电流大小；GaN 管开关更快、发热更少，能把驱动板做小直接塞进关节。",
+    "diff": "同时提供 GaN 和硅两条路线；方案页称一台人形可能有 70 多个关节、最多 600 个功率开关，主打降低母线电容和逆变器损耗。",
+    "ties": "通过 Mouser 等分销面向人形整机厂（未披露具名客户）",
+    "src": [
+     [
+      "Mouser：英飞凌人形机器人电机控制方案",
+      "https://www.mouser.com/new/infineon/infineon-motor-control-for-humanoid-robots/"
+     ]
+    ]
+   },
+   "STM": {
+    "products": "MasterGaN（集成驱动的 GaN 功率级）、STM32 电机控制 MCU、传感器",
+    "what": "把“驱动芯片 + GaN 功率管”做成一颗，再配自家 MCU，组成一个完整的关节控制器。",
+    "diff": "ST 估算一台典型人形机器人约有 600 美元可服务的半导体含量（公司口径），从传感器、MCU 到功率级全栈覆盖。",
+    "ties": "未披露具名人形客户",
+    "src": [
+     [
+      "ST 博客：人形机器人从传感器开始",
+      "https://blog.st.com/?p=48759"
+     ]
+    ]
+   },
+   "TXN": {
+    "products": "LMG2100 系列 GaN 半桥功率级、C2000 实时控制 MCU",
+    "what": "TI 的 GaN 功率级加实时控制芯片，用来驱动机械臂的肘部、手指等关节电机。",
+    "diff": "公开过 GaN 关节驱动演示与应用文档，模拟 / 嵌入式产品线最宽、自有 300mm 晶圆厂成本优势；人形专用产品与客户未单独披露。",
+    "ties": "未披露具名人形客户",
+    "src": [
+     [
+      "Electronic Design：TI 用 GaN 功率器件驱动人形机器人关节",
+      "https://www.electronicdesign.com/technologies/power/video/55360272/electronic-design-ti-pushes-gan-power-devices-to-drive-motor-joints-in-humanoid-robots"
+     ],
+     [
+      "TI 应用文档 SNOAAB3（LMG2100 GaN 电机驱动）",
+      "https://www.ti.com/document-viewer/lit/html/SNOAAB3/GUID-DB8BE9CF-C2DF-4E85-8740-17D714772D8C"
+     ]
+    ],
+    "unverified": true
+   },
+   "ALGM": {
+    "products": "电流传感器、感应式位置传感器、电机驱动 IC、SiC 隔离栅极驱动（送样中）",
+    "what": "测量每个关节电机里流过多少电流、转子转到哪个角度，让控制器知道“该用多大力”；同时也卖驱动风扇、泵等小电机的驱动芯片。",
+    "diff": "押注传感器而非功率管：机器人与自动化收入 2026 财年翻倍，管理层预计占 2027 财年收入 3%~4%，2030 年单台人形含量可能超过 150 美元；电流传感器毛利率高于公司平均，电机驱动略低。",
+    "ties": "中国人形整机厂电流传感器订单、一家北美人形公司的感应式位置传感器定点（未具名）",
+    "src": [
+     [
+      "MarketBeat：Allegro 一季度电话会要点（2026-07-30）",
+      "https://www.marketbeat.com/instant-alerts/allegro-microsystems-q1-earnings-call-highlights-2026-07-30/"
+     ]
+    ]
+   },
+   "MPWR": {
+    "products": "MP6530 系列 55~100V 栅极驱动、DrMOS、编码器与电流检测方案、电池管理",
+    "what": "给关节电机的功率管提供“开关指令”，并给机器人里的计算芯片供电。",
+    "diff": "MPS 材料指出人形多数关节电机工作在 48V、手部可能 12V；公司的强项是算力供电（DrMOS、负载点电源），关节驱动属于新拓展方向。",
+    "ties": "未披露具名人形客户（材料为厂商营销口径）",
+    "src": [
+     [
+      "MPS：MPS Powers Global Humanoid Robotics（网络研讨会）",
+      "https://www.monolithicpower.com/en/support/webinars/mps-powers-global-humanoid-robotics.html"
+     ],
+     [
+      "MPS：人形机器人电源方案演示（2025-09）",
+      "https://media.monolithicpower.cn/mps_cms_document/m/p/mps_powers_humanoid_robots_9-23-2025.pdf"
+     ]
+    ],
+    "unverified": true
+   },
+   "NVTS": {
+    "products": "GaNFast 单片 GaN 功率 IC（集成驱动与保护）",
+    "what": "把 GaN 功率管、驱动和保护电路做在一颗芯片里，主要用于快充和数据中心电源，100V 产品理论上可用于机器人。",
+    "diff": "当前重心在充电器和数据中心电源，人形机器人尚无公开产品或客户。",
+    "ties": "无公开人形客户",
+    "src": [
+     [
+      "SemiconductorX：人形机器人用 GaN 电机驱动 IC（行业汇总）",
+      "https://semiconductorx.com/gan-motor-drive-ics.html"
+     ]
+    ],
+    "unverified": true
+   },
+   "ON": {
+    "products": "硅功率 MOSFET、栅极驱动、图像传感器",
+    "what": "关节逆变器里的功率开关，加上给机器人“眼睛”用的图像传感器。",
+    "diff": "本次未查到人形专用产品或客户的当日来源；在本站另属 AI 机柜电源链。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Utmel：人形机器人 BOM 芯片拆解",
+      "https://www.utmel.com/blog/categories/technology/humanoid-robot-bom-breakdown-every-chip-inside-a-physical-ai-platform"
+     ]
+    ],
+    "unverified": true
+   },
+   "MCHP": {
+    "products": "dsPIC 数字信号控制器、电机控制 MCU、栅极驱动",
+    "what": "每个关节需要一颗 MCU 跑电机控制算法，Microchip 的 dsPIC 是工业伺服常用方案。",
+    "diff": "行业拆解称一台全尺寸人形约 56 颗电机控制 MCU（Utmel 引 EEWORLD），MCU 数量是 Microchip / NXP / ST 的共同受益点；具体人形客户未查到。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Utmel：人形机器人 BOM 芯片拆解",
+      "https://www.utmel.com/blog/categories/technology/humanoid-robot-bom-breakdown-every-chip-inside-a-physical-ai-platform"
+     ]
+    ],
+    "unverified": true
+   },
+   "NXPI": {
+    "products": "i.MX RT 跨界 MCU、电机控制 MCU",
+    "what": "同上，提供关节和整机控制用的 MCU。",
+    "diff": "未查到人形专用产品的当日来源。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Utmel：人形机器人 BOM 芯片拆解",
+      "https://www.utmel.com/blog/categories/technology/humanoid-robot-bom-breakdown-every-chip-inside-a-physical-ai-platform"
+     ]
+    ],
+    "unverified": true
+   },
+   "ADI": {
+    "products": "隔离器、精密信号链、Trinamic 电机控制 IC",
+    "what": "给电机控制提供精确的电流 / 位置测量和电气隔离。",
+    "diff": "未查到人形专用产品的当日来源。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Utmel：人形机器人 BOM 芯片拆解",
+      "https://www.utmel.com/blog/categories/technology/humanoid-robot-bom-breakdown-every-chip-inside-a-physical-ai-platform"
+     ]
+    ],
+    "unverified": true
+   },
+   "POWI": {
+    "products": "高压开关电源 IC、BridgeSwitch 电机驱动",
+    "what": "主要做高压电机驱动和电源转换，适合家电和工业电机。",
+    "diff": "未查到人形相关来源；人形关节多在 48V 低压，与其高压强项匹配度不高（判断）。",
+    "ties": "未查证",
+    "src": [
+     [
+      "MPS：人形机器人电源方案演示（2025-09）",
+      "https://media.monolithicpower.cn/mps_cms_document/m/p/mps_powers_humanoid_robots_9-23-2025.pdf"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "IFNNY",
+    "b": "STM",
+    "type": "竞争",
+    "desc": "都主推 GaN 关节驱动方案：英飞凌 CoolGaN + 硅 MOSFET 双路线，ST 用集成驱动的 MasterGaN + STM32 打包。",
+    "src": [
+     "ST 博客：人形机器人从传感器开始",
+     "https://blog.st.com/?p=48759"
+    ]
+   },
+   {
+    "a": "EPC",
+    "b": "TXN",
+    "type": "竞争",
+    "desc": "私营 GaN 公司 EPC 推出可直接装进关节电机的三相逆变器 EPC91122，与 TI 的 LMG2100 GaN 关节驱动方案正面竞争。",
+    "src": [
+     "EPC：EPC91122 三相 BLDC 关节逆变器",
+     "https://epc-co.com/epc/about-epc/events-and-news/news/artmid/1627/articleid/3261/epc-accelerates-robotics-innovation-with-integrated-3-phase-bldc-motor-drive-inverter"
+    ]
+   },
+   {
+    "a": "ALGM",
+    "b": "中国人形整机厂（未具名）",
+    "type": "供应",
+    "desc": "Allegro 向中国人形机器人整机厂供应电流传感器（公司电话会口径）。",
+    "src": [
+     "MarketBeat：Allegro 一季度电话会要点（2026-07-30）",
+     "https://www.marketbeat.com/instant-alerts/allegro-microsystems-q1-earnings-call-highlights-2026-07-30/"
+    ]
+   }
+  ]
+ },
+ "aerospace/defense/elec": {
+  "updated": "2026-11-16",
+  "note": "军用电子分两类：一类是“子系统 / 处理模块”（Mercury 的雷达与电子战处理板、Curtiss-Wright 的加固计算与数据采集），直接吃国防预算里电子战、导弹、雷达的增量，订单先于收入；另一类是“零件 / 连接器 / 被动元件”（TransDigm、HEICO、Amphenol、TE、Vishay、TTM），靠专有件定价权和售后（TransDigm、HEICO）或靠量（连接器、PCB、电阻电容）。2026 年下半年的共同点是订单强于收入：Mercury 订单出货比 1.46、Curtiss-Wright 国防电子订单 +27% 但当季利润率下降。",
+  "companies": {
+   "MRCY": {
+    "products": "雷达 / 电子战信号处理模块、加固计算机、微电子与射频组件",
+    "what": "给雷达、电子战吊舱和导弹做“大脑”：把天线收到的海量信号实时处理成目标信息，做成能扛震动、高温的加固板卡。",
+    "diff": "2027 财年一季度收入 2.53 亿美元（+12%），订单 3.70 亿美元、订单出货比 1.46，积压接近 21 亿美元，调整后 EPS 0.52 美元（上年 0.26），自由现金流 −2400 万美元；全年指引连续第三次上调，但分析认为本季 22.3% 利润率受有利产品组合推动，可能是近期高点。",
+    "ties": "美国国防部及主承包商（具体项目未在来源中逐一列出）",
+    "src": [
+     [
+      "Mercury Systems 2027 财年一季报（SEC 8-K）",
+      "https://www.sec.gov/Archives/edgar/data/0001049521/000104952126000096/a2027q1earningsreleaseex.htm"
+     ],
+     [
+      "Barchart：Mercury 一季报电话会五个问题",
+      "https://www.barchart.com/story/news/1868418/5-insightful-analyst-questions-from-mercury-systemss-q1-earnings-call"
+     ]
+    ]
+   },
+   "CW": {
+    "products": "国防电子（加固嵌入式计算、战术通信、数据采集）、海军核动力与执行机构",
+    "what": "把商用计算芯片做成能装进战车、舰艇、飞机里的加固计算机和网络设备，同时为海军核潜艇提供泵和阀门。",
+    "diff": "三季度总收入 9.53 亿美元（+10%）并上调全年指引；国防电子收入 2.59 亿美元仅 +2%，利润率降 220bp 至 27.0%（组合不利、研发增加），但该部门订单 +27%；总积压约 46 亿美元（+12%）。",
+    "ties": "美国国防部、海军（核动力）",
+    "src": [
+     [
+      "Curtiss-Wright 2026 年三季度业绩并上调全年指引",
+      "https://finviz.com/news/416130/curtiss-wright-reports-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+     ],
+     [
+      "Panabee：Curtiss-Wright 三季度订单 11 亿美元",
+      "https://www.panabee.com/news/curtiss-wright-earnings-q3-2026"
+     ]
+    ]
+   },
+   "TDG": {
+    "products": "专有航空零部件（作动器、泵阀、点火系统、连接器、电源与控制组件）",
+    "what": "做飞机和导弹上几千种“只有它能供”的小零件，靠独家认证和售后替换赚取高利润。",
+    "diff": "2026 财年四季度销售 29.88 亿美元（+23%）、调整后 EPS 12.44 美元，全年 EBITDA As Defined 利润率约 52.7%；2027 财年调整后 EPS 指引 47.09~47.94 美元，低于约 48.66 美元的一致预期，股价约 −4%；利息成本上升压 GAAP 利润。",
+    "ties": "波音、空客及其一级供应商、美国国防部（售后为主）",
+    "src": [
+     [
+      "TransDigm 2026 财年四季度业绩（SEC 8-K）",
+      "https://www.sec.gov/Archives/edgar/data/0001260221/000126022126000073/exhibit991tdg2026q4earning.htm"
+     ],
+     [
+      "Finviz：TransDigm 2027 财年指引低于预期，股价 −4%",
+      "https://finviz.com/news/420228/transdigm-shares-fall-4-as-fy2027-earnings-outlook-misses-estimates-despite-q4-revenue-growth"
+     ]
+    ]
+   },
+   "HEI": {
+    "products": "电子技术集团（ETG：国防电子、射频 / 微波、电源、太空电子）、飞行支持集团（FSG：PMA 替代件与维修）",
+    "what": "一半业务做国防与太空用的电子模块，另一半做比原厂便宜的飞机替换件。",
+    "diff": "2026 财年三季度 ETG 营业利润 +55%、销售 +36%、内生增长 18%，利润率扩张 320bp（来源标题）；四季度（截至 10 月 31 日）业绩预计 12 月发布。",
+    "ties": "国防、太空与航空公司售后客户",
+    "src": [
+     [
+      "Pulse 2.0：HEICO 电子技术集团营业利润 +55%",
+      "https://pulse2.com/heico-electronic-technologies-operating-income-jumps-55-as-margin-expands-320-basis-points/"
+     ]
+    ]
+   },
+   "APH": {
+    "products": "军用与航空高可靠连接器、线缆组件",
+    "what": "把各个电子模块连在一起的“插头插座”，军用级要耐振动、耐高温。",
+    "diff": "本次未查到当日来源；在本站另属 AI 机柜高速互连链，国防是其传统高毛利业务之一。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Curtiss-Wright 2026 年三季度业绩并上调全年指引",
+      "https://finviz.com/news/416130/curtiss-wright-reports-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+     ]
+    ],
+    "unverified": true
+   },
+   "TEL": {
+    "products": "航空航天与国防连接器、传感器",
+    "what": "同上，提供飞机和武器系统里的连接器与传感器。",
+    "diff": "未查到当日来源。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Curtiss-Wright 2026 年三季度业绩并上调全年指引",
+      "https://finviz.com/news/416130/curtiss-wright-reports-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+     ]
+    ],
+    "unverified": true
+   },
+   "TTMI": {
+    "products": "国防用高可靠 PCB、射频组件与雷达子系统",
+    "what": "做雷达和导弹里用的多层电路板和射频模块。",
+    "diff": "未查到当日来源；本站信号为“关注买点”。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Barchart：Mercury 一季报电话会五个问题",
+      "https://www.barchart.com/story/news/1868418/5-insightful-analyst-questions-from-mercury-systemss-q1-earnings-call"
+     ]
+    ],
+    "unverified": true
+   },
+   "VSH": {
+    "products": "军规级电阻、电容、功率器件",
+    "what": "最基础的电子元件，军规版要通过更严格的可靠性认证。",
+    "diff": "未查到当日来源。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Barchart：Mercury 一季报电话会五个问题",
+      "https://www.barchart.com/story/news/1868418/5-insightful-analyst-questions-from-mercury-systemss-q1-earnings-call"
+     ]
+    ],
+    "unverified": true
+   },
+   "DCO": {
+    "products": "电子系统（线束、电路板组装）、结构件",
+    "what": "为军机和导弹做线束、电路板组装和结构件，是主承包商的二级供应商。",
+    "diff": "本次未查到 2026 年三季度业绩来源。",
+    "ties": "雷神、波音等（未在当日来源中查证）",
+    "src": [
+     [
+      "Curtiss-Wright 2026 年三季度业绩并上调全年指引",
+      "https://finviz.com/news/416130/curtiss-wright-reports-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+     ]
+    ],
+    "unverified": true
+   },
+   "ATRO": {
+    "products": "机载电源、照明、测试系统",
+    "what": "给飞机舱内供电、照明，并做军用测试设备。",
+    "diff": "本次未查到 2026 年三季度业绩来源。",
+    "ties": "未查证",
+    "src": [
+     [
+      "Curtiss-Wright 2026 年三季度业绩并上调全年指引",
+      "https://finviz.com/news/416130/curtiss-wright-reports-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "MRCY",
+    "b": "CW",
+    "type": "竞争",
+    "desc": "都做加固嵌入式计算与信号处理板卡，同时争夺雷达、电子战和指挥控制项目；本季 Mercury 订单出货比 1.46、Curtiss-Wright 国防电子订单 +27%。",
+    "src": [
+     "Panabee：Curtiss-Wright 三季度订单 11 亿美元",
+     "https://www.panabee.com/news/curtiss-wright-earnings-q3-2026"
+    ]
+   },
+   {
+    "a": "TDG",
+    "b": "HEI",
+    "type": "竞争",
+    "desc": "TransDigm 以原厂专有件和售后定价为主，HEICO 的 FSG 用 PMA 替代件切入同一售后市场，是直接的价格竞争关系。",
+    "src": [
+     "Finviz：TransDigm 2027 财年指引低于预期，股价 −4%",
+     "https://finviz.com/news/420228/transdigm-shares-fall-4-as-fy2027-earnings-outlook-misses-estimates-despite-q4-revenue-growth"
+    ]
+   }
+  ]
  }
 }
