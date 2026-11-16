@@ -559,3 +559,28 @@
 {"ts": "2026-11-16T15:17:39+00:00", "title": "💥 BE 单日 -8.1%", "body": "Bloom Energy Corporation 收于 176.53。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-16T15:17:39+00:00", "title": "💥 CAMT 单日 -8.3%", "body": "Camtek Ltd. 收于 93.29。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-16T15:17:39+00:00", "title": "💥 FORM 单日 -8.1%", "body": "FormFactor, Inc. 收于 80.42。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:29:00+00:00", "title": "📝 研判更新 07:28", "body": "美国商务部远程算力出口管制规则落地（TechCrunch）：海外数据中心向中国等 22 国企业提供大规模算力须许可证，东南亚五国新增许可要求，英伟达预期面转负；机器人一浪、航空航天二浪浪位上调。涉及：NVDA AMD ASML", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T15:44:00+00:00", "title": "📊 ENS 财报更新", "body": "EnerSys 截至 2026-09-30 的季度：收入同比 -0%；毛利率 29.9%（同比 +0.8pp）；EBITDA 利润率 14.9%；EPS 较预期 +1%；RPO 同比 +2%；当前信号：关注买点（基本面 70 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T15:44:00+00:00", "title": "📊 NBIS 财报更新", "body": "Nebius Group N.V. 截至 2026-09-30 的季度：收入同比 +571%；毛利率 77.6%（同比 +7.0pp）；EBITDA 利润率 47.9%；EPS 较预期 +90%；当前信号：观察（基本面 78 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T15:44:00+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T15:44:00+00:00", "title": "🔴 LIN 进入「回调风险」", "body": "Linde plc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 67；处于52周区间的 90% 位置；偏离200日线 +7%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T15:44:01+00:00", "title": "💥 BTQ 单日 -8.4%", "body": "BTQ Technologies Corp. 收于 1.31。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:01+00:00", "title": "💥 CIEN 单日 -8.3%", "body": "Ciena Corporation 收于 257.12。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:01+00:00", "title": "💥 CORZ 单日 -8.1%", "body": "Core Scientific, Inc. 收于 13.34。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:02+00:00", "title": "💥 FLNC 单日 -8.3%", "body": "Fluence Energy, Inc. 收于 4.29。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:02+00:00", "title": "💥 IONQ 单日 -8.2%", "body": "IonQ, Inc. 收于 26.5。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:02+00:00", "title": "💥 KDK 单日 -8.1%", "body": "Kodiak AI, Inc. 收于 1.02。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:02+00:00", "title": "💥 LAES 单日 -8.4%", "body": "SEALSQ Corp 收于 1.14。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:03+00:00", "title": "💥 NBIS 单日 -8.7%", "body": "Nebius Group N.V. 收于 105.83。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T15:44:03+00:00", "title": "还有 4 条更新", "body": "💥 QNT 单日 -8.0%\n💥 TTMI 单日 -8.5%\n💥 VELO 单日 -8.4%\n💥 WULF 单日 -9.0%", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:10:03+00:00", "title": "🌊 机器人 三浪：价格先行，财报待验证", "body": "此前：尚未启动。已满足：上涨广度、毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T16:10:03+00:00", "title": "🔴 DUOL 进入「回调风险」", "body": "Duolingo, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 66% 位置；偏离200日线 +35%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T16:10:04+00:00", "title": "💥 INVZ 单日 -9.3%", "body": "Innoviz Technologies Ltd. 收于 0.16。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:10:04+00:00", "title": "💥 SSTK 单日 -8.2%", "body": "Shutterstock, Inc. 收于 2.68。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:17:02+00:00", "title": "🟢 STM 进入「关注买点」", "body": "STMicroelectronics N.V.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 45；处于52周区间的 41% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T16:17:02+00:00", "title": "🌊 AI 二浪：价格先行，财报待验证", "body": "此前：启动初期。已满足：相对强度、收入增速、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T16:17:02+00:00", "title": "🔴 LIN 进入「回调风险」", "body": "Linde plc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 66；处于52周区间的 90% 位置；偏离200日线 +7%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T16:17:03+00:00", "title": "💥 MNTS 单日 -8.3%", "body": "Momentus Inc. 收于 1.65。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:17:03+00:00", "title": "💥 ONDS 单日 -8.1%", "body": "Ondas Inc 收于 4.74。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:17:03+00:00", "title": "💥 RR 单日 -8.1%", "body": "Richtech Robotics Inc. 收于 0.69。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T16:17:04+00:00", "title": "💥 UUUU 单日 -8.3%", "body": "Energy Fuels Inc 收于 6.04。信号：观察。", "priority": "low", "sent": true}
