@@ -597,3 +597,17 @@
 {"ts": "2026-11-16T17:15:34+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
 {"ts": "2026-11-16T17:15:35+00:00", "title": "🌊 航空航天 二浪：启动初期", "body": "此前：财报已改善，价格未反映。已满足：上涨广度、毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
 {"ts": "2026-11-16T17:15:35+00:00", "title": "💥 LUNR 单日 -8.0%", "body": "Intuitive Machines, Inc. 收于 11.96。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T17:41:58+00:00", "title": "🟢 AAON 进入「关注买点」", "body": "AAON, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 55；处于52周区间的 25% 位置；偏离200日线 -19%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:41:58+00:00", "title": "🟢 PCAR 进入「关注买点」", "body": "PACCAR Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 32% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:41:59+00:00", "title": "🟢 TSM 进入「关注买点」", "body": "Taiwan Semiconductor Manufactur：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 39；处于52周区间的 49% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-16T17:41:59+00:00", "title": "💥 ASTS 单日 -8.5%", "body": "AST SpaceMobile, Inc. 收于 29.82。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:10:39+00:00", "title": "🌊 机器人 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:10:39+00:00", "title": "💥 FLY 单日 -8.7%", "body": "Firefly Aerospace Inc. 收于 23.03。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:10:39+00:00", "title": "💥 RDW 单日 -8.2%", "body": "Redwire Corporation 收于 7.1。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:10:40+00:00", "title": "💥 SATL 单日 -8.5%", "body": "Satellogic Inc. 收于 3.02。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:10:41+00:00", "title": "💥 SLDP 单日 -8.5%", "body": "Solid Power, Inc. 收于 1.61。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:10:41+00:00", "title": "💥 TEM 单日 -8.0%", "body": "Tempus AI, Inc. 收于 65.86。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-16T18:16:06+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:16:06+00:00", "title": "😱 VIX 22.0：恐慌升温(≥22)", "body": "VIX 22.0，处于近一年 88% 分位——恐慌升温", "priority": "high", "sent": true}
+{"ts": "2026-11-16T18:16:07+00:00", "title": "🔴 AAPL 进入「回调风险」", "body": "Apple Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 97% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-16T18:16:07+00:00", "title": "💥 QBTS 单日 -8.1%", "body": "D-Wave Quantum Inc. 收于 8.78。信号：观察。", "priority": "low", "sent": true}
