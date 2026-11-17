@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-17",
+    "text": "情绪面偏负：财报前据 Seeking Alpha 标题 Muddy Waters 发布新空头观点（细节未查证），当日跌约 2%。",
+    "url": "https://seekingalpha.com/symbol/NVDA/news?source=feed_symbol_NVDA"
+   },
+   {
+    "date": "2026-11-17",
     "text": "政策面 / 治理面偏负：司法部就 Megaspeed 表示若发现犯罪行为将“依法全力追究”（Seeking Alpha 标题，细节未查证），口径比早间“不评论”更明确，但尚未涉及对英伟达本身的指控。",
     "url": "https://seekingalpha.com/symbol/NVDA/news?source=feed_symbol_NVDA"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-17",
     "text": "情绪面 / 治理面：据众议院外委会主席 Mast，前 CEO 黄仁勋已同意作证（英伟达与本人未确认，时间有“感恩节前”与 12-01 两种说法），财报后仍有治理事件悬而未决。",
     "url": "https://fourweekmba.com/ai-ex-nvidia-ceo-huang-to-testify-within-14-days-mast-says/"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "政策面 / 治理面继续偏负：董事会成立国家安全与出口管制监督委员会，公司向客户提示远程算力临时规则的诉讼风险，并据报道限制向对华出租占比过半的云客户供货；Megaspeed 刑事调查报道升级（司法部不置评，信源为 NYT / NBC，表述有分歧）。东南亚相关收入确定性下降，财报前预期面承压。",
-    "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-warns-customers-of-new-us-rule-that-could-expose-them-to-lawsuits-for-serving-chinese-clients-commerce-department-releases-interim-regulations-preventing-foreign-actors-from-using-advanced-compute-based-on-american-tech"
    }
   ],
   "ANET": [
@@ -260,6 +260,11 @@
    }
   ],
   "GOOGL": [
+   {
+    "date": "2026-11-17",
+    "text": "政策面 / 情绪面偏负：据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速公路载客（细节未查证），高速场景商业化时间表可能后移。",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM2RxbVZ5blJRckk1YnNWVFRGOE56R1VPdDlTM2F6QVI0YjFvN0ZqWnBIenY2d21DdXBaNFhSM2ZkamF0a2h5X0ljS0N1blFGSTZ5aXhDbnB1ck1IT3JHa3VvWkhkZlJoOTBoNjc3MU0zdTlCdDlBNWZuSXJJWVRSVDRZdVllRXU3c3hFSUdGZGdWTE9TMmRXM0xiLUpZVWNvM3Bn?oc=5"
+   },
    {
     "date": "2026-11-11",
     "text": "Gemini Robotics 2.5 发布，奔驰产线概念验证成功率 96%——机器人模型层的产业面向上。",
@@ -816,6 +821,10 @@
   ],
   "autonomous": [
    {
+    "date": "2026-11-17",
+    "text": "政策面转负：据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速公路载客（细节未查证），L4 高速场景监管不确定性上升。"
+   },
+   {
     "date": "2026-11-09",
     "text": "NHTSA 对 Waymo 开启召回质询（RQ26006），监管面转负；特斯拉 Robotaxi 进入圣安东尼奥。一浪退回“尚未启动”。"
    }
@@ -825,18 +834,18 @@
  "daily": [
   {
    "date": "2026-11-17",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 17 篇】隔夜新信息几乎全部集中在英伟达的政策与治理面，需求面没有新增负面：①董事会成立“国家安全与出口管制监督委员会”（Suzanne Nora Johnson 任主席，Tom's Hardware / DCD）；②英伟达据 CNBC / Tom's Hardware 向客户提示商务部远程算力临时规则带来的诉讼风险，并据报道限制向把超过一半 GPU 租给中国企业的客户供货（FT 早前报道为“非中国客户至少 51%”，DCD）；③ Megaspeed 刑事调查：Tom's Hardware 标题称美国政府已确认，但其它报道称司法部不评论在办案件、主要依据 NYT / NBC 信源，两者表述有分歧；DCD 援引 FT 称黄仁勋在讨论重新争取 CEO，财长贝森特公开要求对英伟达“大幅整顿”。五面上：政策面 / 预期面继续偏负（东南亚转口相关收入确定性下降、合规成本上升），情绪面在财报前略有修复（CNBC 标题称盘前小幅上涨）。AI 一级市场方向偏正：Anthropic IPO 据 Bloomberg / CNBC 标题将定价在 70~78 美元区间顶部或以上（11-18 定价、11-19 交易），认购倍数高。存储链出现预期面负向变量：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测、认为将出现过剩（细节未查证），MU 前一日 −7.6%、SNDK −8.6%（快照）。整体结论不变：需求未转弱，压力在资金面（利率）与英伟达的政策 / 治理面，今天盘后英伟达财报（首次由临时 CEO Kress 主持）是关键验证点。【07:28 更新，含 Summizer 新增的 4 篇】英伟达治理面再添一项待落地事件：多方报道称黄仁勋已同意向众议院作证（外委会主席 Mast 口径，英伟达及本人未确认，时间有“感恩节前”与“12-01 转录访谈”两种说法），三位委员会主席原请求的闭门简报日期为财报次日 11-18——财报后情绪面仍有一个治理变量。产业面继续偏正：AMD 与 DOE 公私合营的 Lux 超算（MI355X，220.79 PF、Top500 第 14）登场，AMD 在 SC26 主打原生 FP64 对抗英伟达仿真路线；欧洲 Nokia / Nscale 等组建 AI Gigafactory 联合体争取 EuroHPC 资金；Google 再签 50MW 地热 PPA，电力仍是算力瓶颈。光通信上游 AXTI 三季度财报数据入库（收入 7,340 万美元、同比约 +163%，InP 积压订单超 5 亿美元），基本面强但受中国出口许可约束。整体结论不变：今天盘后英伟达财报仍是关键验证点。【08:28 更新，含 Summizer 新增的 3 篇】英伟达治理面出现反向变量：黄仁勋发出离任后首份书面声明，称若董事会认为符合股东、员工和国家利益，愿意回任 CEO（CNN / Bloomberg），而此前据 CNBC 董事会不考虑其回归，两者尚未对上；据 Seeking Alpha 标题，芯片股因此收窄跌幅，快照中 NVDA 现价 155.0、基本持平（−0.7%），处于 2027 前瞻区间下沿~中值。政策面对光通信是结构性正向：据 Reuters（经 Investing.com 转述），政府不顾微软、亚马逊、谷歌、Meta 等游说，继续推进禁止进口新型中国光模块（可能只覆盖 3.2T），COHR / LITE 盘中报道涨约 10% / 8%，快照时点为 +2.5% / +2.1%（不同时点差异较大），但正式规则尚未发布。整体结论不变：需求面未转弱，今天盘后财报仍是关键验证点，治理不确定性从“回归路径关闭”变成“董事会如何回应”。【10:28 更新，含 Summizer 新增的 4 篇】本小时没有改变整体结论的新事件，黄仁勋愿意回任的声明已在 08:28 写入。新增变量偏结构性：产业面上，Arista 在 SC26 发布面向“分布式推理”的 Etherlink R4 路由平台和数据中心互联光线路系统，称其 AI 业务约 30% 已是跨站点，说明网络需求正从训练后端向推理前端和站点间延伸（SiliconANGLE 分析文章，厂商口径）；政策面上，据 Seeking Alpha 标题，分析师认为新的海外数据中心芯片规则可能影响英伟达 2027 年收入（细节未查证），与早间远程算力规则的担忧同向。情绪面上，Vals 报告称主流大模型可被“游戏”话术诱导标注军事目标、Anthropic 模型表现最差，Anthropic 承认结果不可接受，赶在其 IPO 定价前，属于情绪面小幅负向。整体结论不变：盘后英伟达财报仍是关键验证点。【11:28 更新，含 Summizer 新增的 2 篇】本小时没有改变整体结论的新事件。Megaspeed 一事有新表述：据 Seeking Alpha 标题，司法部称若发现犯罪行为将“依法全力追究”（细节未查证），相比早间“不评论在办案件”的口径更明确，政策面 / 治理面对英伟达维持偏负，但仍未落到对公司本身的指控。产业面两条边缘信息：Q.ANT 在 SC26 演示光子 NPU 作为 GPU 协处理器跑语言模型（公司新闻稿，无性能数字），以及“决策模型”这类低成本判断型模型调用量快速上升（TechCrunch），说明推理需求在向海量廉价调用分层，不改变算力总需求判断。整体结论不变：盘后英伟达财报仍是关键验证点。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 17 篇】隔夜新信息几乎全部集中在英伟达的政策与治理面，需求面没有新增负面：①董事会成立“国家安全与出口管制监督委员会”（Suzanne Nora Johnson 任主席，Tom's Hardware / DCD）；②英伟达据 CNBC / Tom's Hardware 向客户提示商务部远程算力临时规则带来的诉讼风险，并据报道限制向把超过一半 GPU 租给中国企业的客户供货（FT 早前报道为“非中国客户至少 51%”，DCD）；③ Megaspeed 刑事调查：Tom's Hardware 标题称美国政府已确认，但其它报道称司法部不评论在办案件、主要依据 NYT / NBC 信源，两者表述有分歧；DCD 援引 FT 称黄仁勋在讨论重新争取 CEO，财长贝森特公开要求对英伟达“大幅整顿”。五面上：政策面 / 预期面继续偏负（东南亚转口相关收入确定性下降、合规成本上升），情绪面在财报前略有修复（CNBC 标题称盘前小幅上涨）。AI 一级市场方向偏正：Anthropic IPO 据 Bloomberg / CNBC 标题将定价在 70~78 美元区间顶部或以上（11-18 定价、11-19 交易），认购倍数高。存储链出现预期面负向变量：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测、认为将出现过剩（细节未查证），MU 前一日 −7.6%、SNDK −8.6%（快照）。整体结论不变：需求未转弱，压力在资金面（利率）与英伟达的政策 / 治理面，今天盘后英伟达财报（首次由临时 CEO Kress 主持）是关键验证点。【07:28 更新，含 Summizer 新增的 4 篇】英伟达治理面再添一项待落地事件：多方报道称黄仁勋已同意向众议院作证（外委会主席 Mast 口径，英伟达及本人未确认，时间有“感恩节前”与“12-01 转录访谈”两种说法），三位委员会主席原请求的闭门简报日期为财报次日 11-18——财报后情绪面仍有一个治理变量。产业面继续偏正：AMD 与 DOE 公私合营的 Lux 超算（MI355X，220.79 PF、Top500 第 14）登场，AMD 在 SC26 主打原生 FP64 对抗英伟达仿真路线；欧洲 Nokia / Nscale 等组建 AI Gigafactory 联合体争取 EuroHPC 资金；Google 再签 50MW 地热 PPA，电力仍是算力瓶颈。光通信上游 AXTI 三季度财报数据入库（收入 7,340 万美元、同比约 +163%，InP 积压订单超 5 亿美元），基本面强但受中国出口许可约束。整体结论不变：今天盘后英伟达财报仍是关键验证点。【08:28 更新，含 Summizer 新增的 3 篇】英伟达治理面出现反向变量：黄仁勋发出离任后首份书面声明，称若董事会认为符合股东、员工和国家利益，愿意回任 CEO（CNN / Bloomberg），而此前据 CNBC 董事会不考虑其回归，两者尚未对上；据 Seeking Alpha 标题，芯片股因此收窄跌幅，快照中 NVDA 现价 155.0、基本持平（−0.7%），处于 2027 前瞻区间下沿~中值。政策面对光通信是结构性正向：据 Reuters（经 Investing.com 转述），政府不顾微软、亚马逊、谷歌、Meta 等游说，继续推进禁止进口新型中国光模块（可能只覆盖 3.2T），COHR / LITE 盘中报道涨约 10% / 8%，快照时点为 +2.5% / +2.1%（不同时点差异较大），但正式规则尚未发布。整体结论不变：需求面未转弱，今天盘后财报仍是关键验证点，治理不确定性从“回归路径关闭”变成“董事会如何回应”。【10:28 更新，含 Summizer 新增的 4 篇】本小时没有改变整体结论的新事件，黄仁勋愿意回任的声明已在 08:28 写入。新增变量偏结构性：产业面上，Arista 在 SC26 发布面向“分布式推理”的 Etherlink R4 路由平台和数据中心互联光线路系统，称其 AI 业务约 30% 已是跨站点，说明网络需求正从训练后端向推理前端和站点间延伸（SiliconANGLE 分析文章，厂商口径）；政策面上，据 Seeking Alpha 标题，分析师认为新的海外数据中心芯片规则可能影响英伟达 2027 年收入（细节未查证），与早间远程算力规则的担忧同向。情绪面上，Vals 报告称主流大模型可被“游戏”话术诱导标注军事目标、Anthropic 模型表现最差，Anthropic 承认结果不可接受，赶在其 IPO 定价前，属于情绪面小幅负向。整体结论不变：盘后英伟达财报仍是关键验证点。【11:28 更新，含 Summizer 新增的 2 篇】本小时没有改变整体结论的新事件。Megaspeed 一事有新表述：据 Seeking Alpha 标题，司法部称若发现犯罪行为将“依法全力追究”（细节未查证），相比早间“不评论在办案件”的口径更明确，政策面 / 治理面对英伟达维持偏负，但仍未落到对公司本身的指控。产业面两条边缘信息：Q.ANT 在 SC26 演示光子 NPU 作为 GPU 协处理器跑语言模型（公司新闻稿，无性能数字），以及“决策模型”这类低成本判断型模型调用量快速上升（TechCrunch），说明推理需求在向海量廉价调用分层，不改变算力总需求判断。整体结论不变：盘后英伟达财报仍是关键验证点。【12:28 更新，含 Summizer 新增的 3 篇】自动驾驶出现监管面负向变量：据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速公路载客（细节未查证；今年 5 月 Waymo 曾因施工区处理问题自行暂停高速服务，此次若属监管命令则性质更重），自动驾驶板块政策面 / 情绪面转负，GOOGL 快照 280.05（−1.3%），处于 2027 前瞻区间中值~上沿。英伟达财报前情绪面再添负向：据 Seeking Alpha 标题，Muddy Waters 发布新的做空观点（细节未查证，网络检索未找到正文），叠加 Reuters 标题“华尔街在英伟达财报与 Anthropic 上市前走软”，NVDA 快照 153.09（−2.0%），处于 2027 前瞻区间下沿~中值。Summizer 3 篇（微软 Foundry 决策模型 Decision-1.1 改用 Gemma 底座、Dell SC26 数据网关、Model ML 融资 2.5 亿美元）均属应用 / 平台层，印证推理需求向低成本模型分层，不改变算力需求判断。整体结论不变：盘后英伟达财报仍是关键验证点。",
    "sectors": {
-    "ai": "【06:29】政策面继续收紧但已部分在价格里：英伟达董事会设国家安全与出口管制监督委员会、向客户提示远程算力规则诉讼风险并限制向对华出租占比过半的云客户供货——东南亚新云（neocloud）的需求确定性下降，Steve Eisman 称新云股因此“麻烦大了”（CNBC 标题）。预期面上 Anthropic IPO 据报道指向区间顶部或以上，一级市场对 AI 的定价仍强；存储链方面广发证券据报道看 NAND 过剩（标题，细节未查证），与前一日 MU / SNDK 大跌相呼应，属预期面负向。Top500 新上榜系统仅 27 台、为历史最低（DCD），公共超算投资让位于私有 AI 集群。【07:28】产业面小幅正向：AMD 与 DOE 共建 Lux 超算（MI355X、一半机时对外收费），AMD 在 SC26 质疑英伟达 FP64 仿真方案；Nokia / Nscale / Telia 等组建北欧 AI Gigafactory 联合体（瞄准 EuroHPC 招标，需求由政策驱动）；Google 与 Quaise 签 50MW 地热 PPA（2030 年供电）。光通信上游 AXTI 财报数据显示 InP 衬底需求强劲（积压超 5 亿美元），但出口许可是关键不确定性。治理面：黄仁勋据报道同意赴国会作证，日期未定。【08:28】治理面：黄仁勋公开表示愿意回任（需董事会同意），与董事会此前立场形成张力，情绪面短线偏正但不确定性未消。政策面：中国光模块进口禁令据 Reuters 继续推进（可能限 3.2T，最终规则未出），对 COHR / LITE 等美国光模块供应商是预期面正向，对云厂商是成本 / 供应面负向（中旭创全球份额约 27%，Counterpoint）。产业面：CBRE 称欧洲托管去化量首次超过当期新增供给（1.34GW 对 1.26GW），年底空置率预计 10.3%；Alphabet 旗下 Intersect 预留 1.5GW Heron 固态变压器（2028 年起交付），电力仍是选址与交付的瓶颈。【10:28】产业面：Arista 推出 7020R4 / 7280R4 等分布式推理路由器（Broadcom Jericho / Qumran 芯片，多数已上市，7020HR4 2027 年初出货），押注推理流量向边缘和跨站点迁移，是网络环节需求外延的正向信号；电力面：Enlight 与 Shemen 计划在以色列海法建 150MW 数据中心园区（仅有协议和并网申请，未披露客户与投资额），Vattenfall 选用 Kraken 调度德国储能和新能源，能源开发商向数据中心上游延伸的趋势延续。政策面：海外数据中心芯片规则可能影响英伟达 2027 年收入（Seeking Alpha 标题，细节未查证）。情绪面：Vals 军事目标测试报告对前沿模型厂商形成舆论压力。【11:28】政策面：司法部就 Megaspeed 表态“依法全力追究”（Seeking Alpha 标题，细节未查证）。产业面：Q.ANT NPU Gen 2+ 加入片上光学 DFT，在 SC26 演示光子-GPU 混合系统跑语言模型（公司口径、无量化数据）；决策模型在 Vercel 路由器上占比超四分之一请求（TechCrunch），推理需求结构向低成本调用分层。",
-    "quantum": "【06:29】生态层小幅正向，多为新闻稿：IonQ 与 IDEMIA 完成 QKD 与企业安全平台互操作验证（联合新闻稿，无性能数据）；Telia / 诺基亚 / Qmill 在 5G 网络演示量子加密、NEC 与 IBM 日本演示 QKD+PQC；DOE 发布低温与量子-HPC 集成测试平台 RFI（只是征询、不承诺出资，12-17 截止）；欧洲 Qluster 融资 470 万欧元、Planckian 获 EIC 1,000 万欧元支持。不改变板块浪位。【08:28】QUDORA 将 NVIDIA CUDA-Q 接入其 SDK（公司新闻稿），量子软件入口继续向英伟达生态收敛，属生态层小幅正向，不改变浪位。",
+    "ai": "【06:29】政策面继续收紧但已部分在价格里：英伟达董事会设国家安全与出口管制监督委员会、向客户提示远程算力规则诉讼风险并限制向对华出租占比过半的云客户供货——东南亚新云（neocloud）的需求确定性下降，Steve Eisman 称新云股因此“麻烦大了”（CNBC 标题）。预期面上 Anthropic IPO 据报道指向区间顶部或以上，一级市场对 AI 的定价仍强；存储链方面广发证券据报道看 NAND 过剩（标题，细节未查证），与前一日 MU / SNDK 大跌相呼应，属预期面负向。Top500 新上榜系统仅 27 台、为历史最低（DCD），公共超算投资让位于私有 AI 集群。【07:28】产业面小幅正向：AMD 与 DOE 共建 Lux 超算（MI355X、一半机时对外收费），AMD 在 SC26 质疑英伟达 FP64 仿真方案；Nokia / Nscale / Telia 等组建北欧 AI Gigafactory 联合体（瞄准 EuroHPC 招标，需求由政策驱动）；Google 与 Quaise 签 50MW 地热 PPA（2030 年供电）。光通信上游 AXTI 财报数据显示 InP 衬底需求强劲（积压超 5 亿美元），但出口许可是关键不确定性。治理面：黄仁勋据报道同意赴国会作证，日期未定。【08:28】治理面：黄仁勋公开表示愿意回任（需董事会同意），与董事会此前立场形成张力，情绪面短线偏正但不确定性未消。政策面：中国光模块进口禁令据 Reuters 继续推进（可能限 3.2T，最终规则未出），对 COHR / LITE 等美国光模块供应商是预期面正向，对云厂商是成本 / 供应面负向（中旭创全球份额约 27%，Counterpoint）。产业面：CBRE 称欧洲托管去化量首次超过当期新增供给（1.34GW 对 1.26GW），年底空置率预计 10.3%；Alphabet 旗下 Intersect 预留 1.5GW Heron 固态变压器（2028 年起交付），电力仍是选址与交付的瓶颈。【10:28】产业面：Arista 推出 7020R4 / 7280R4 等分布式推理路由器（Broadcom Jericho / Qumran 芯片，多数已上市，7020HR4 2027 年初出货），押注推理流量向边缘和跨站点迁移，是网络环节需求外延的正向信号；电力面：Enlight 与 Shemen 计划在以色列海法建 150MW 数据中心园区（仅有协议和并网申请，未披露客户与投资额），Vattenfall 选用 Kraken 调度德国储能和新能源，能源开发商向数据中心上游延伸的趋势延续。政策面：海外数据中心芯片规则可能影响英伟达 2027 年收入（Seeking Alpha 标题，细节未查证）。情绪面：Vals 军事目标测试报告对前沿模型厂商形成舆论压力。【11:28】政策面：司法部就 Megaspeed 表态“依法全力追究”（Seeking Alpha 标题，细节未查证）。产业面：Q.ANT NPU Gen 2+ 加入片上光学 DFT，在 SC26 演示光子-GPU 混合系统跑语言模型（公司口径、无量化数据）；决策模型在 Vercel 路由器上占比超四分之一请求（TechCrunch），推理需求结构向低成本调用分层。【12:28】情绪面：据 Seeking Alpha 标题 Muddy Waters 对英伟达发布新空头观点（细节未查证），NVDA 财报前跌 2.0%（快照）。应用层：微软 Decision-1.1 换用 Google Gemma 4 底座、Model ML 称基于开源模型成本约为前沿模型 2%（公司口径），推理调用继续向低成本模型分层。",
+    "quantum": "【06:29】生态层小幅正向，多为新闻稿：IonQ 与 IDEMIA 完成 QKD 与企业安全平台互操作验证（联合新闻稿，无性能数据）；Telia / 诺基亚 / Qmill 在 5G 网络演示量子加密、NEC 与 IBM 日本演示 QKD+PQC；DOE 发布低温与量子-HPC 集成测试平台 RFI（只是征询、不承诺出资，12-17 截止）；欧洲 Qluster 融资 470 万欧元、Planckian 获 EIC 1,000 万欧元支持。不改变板块浪位。【08:28】QUDORA 将 NVIDIA CUDA-Q 接入其 SDK（公司新闻稿），量子软件入口继续向英伟达生态收敛，属生态层小幅正向，不改变浪位。【12:28】IQM 推出 Halocene 系统升级计划（The Quantum Insider，公司新闻），属生态层，不改变浪位。",
     "robotics": "【06:29】无重要新信息；浪位提醒再次在一浪“尚未启动”切换（此前为“财报已改善，价格未反映”），仍视为阈值噪声。SiMa.ai 发布 Palette 3.0（单芯片多模型并发、吞吐最高 3.5 倍，公司口径），端侧物理 AI 软件栈竞争加剧。",
     "aerospace": "【06:29】无重要新信息。Cosmo Bee 计划 2027 年与 D-Orbit 飞行测试霍尔推进器（Summizer），属早期产业面。",
-    "autonomous": "【06:29】无重要新信息。Electrek 评论称特斯拉 Cybercab 缺少无线充电将限制家庭充电场景（评论文章）；Barron's 标题称 Robotaxi 进展不足以推动股价。"
+    "autonomous": "【06:29】无重要新信息。Electrek 评论称特斯拉 Cybercab 缺少无线充电将限制家庭充电场景（评论文章）；Barron's 标题称 Robotaxi 进展不足以推动股价。【12:28】政策面转负：据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速公路载客（细节未查证）；此前 5 月为施工区问题的自愿暂停，若本次为监管命令，L4 商业化在高速场景的时间表将后移，对 Robotaxi 估值叙事（GOOGL / TSLA）情绪偏负。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "今日盘后财报（临时 CEO Kress 首次主持）；隔夜新增监督委员会、客户诉讼风险提示与“对华出租不过半”供货限制，Megaspeed 刑事调查报道升级。前收 156.14（−4.1%），位于 2027 前瞻区间下沿~中值（107.28 / 191.23 / 294.15），距中值约 +22%。 另据众议院外委会主席 Mast，黄仁勋已同意作证（英伟达未确认、时间未定），财报后仍有治理面事件。 08:28：黄仁勋声明愿意回任（需董事会同意），现价 155.0 位于 2027 前瞻区间下沿~中值（106.5/189.8/292.0）。10:28：据 Seeking Alpha 标题，分析师认为海外数据中心芯片新规可能影响 2027 年收入（细节未查证）；快照现价 153.71（−1.6%），仍在 2027 前瞻区间下沿~中值（105.61 / 188.26 / 289.58）。"
+     "why": "今日盘后财报（临时 CEO Kress 首次主持）；隔夜新增监督委员会、客户诉讼风险提示与“对华出租不过半”供货限制，Megaspeed 刑事调查报道升级。前收 156.14（−4.1%），位于 2027 前瞻区间下沿~中值（107.28 / 191.23 / 294.15），距中值约 +22%。 另据众议院外委会主席 Mast，黄仁勋已同意作证（英伟达未确认、时间未定），财报后仍有治理面事件。 08:28：黄仁勋声明愿意回任（需董事会同意），现价 155.0 位于 2027 前瞻区间下沿~中值（106.5/189.8/292.0）。10:28：据 Seeking Alpha 标题，分析师认为海外数据中心芯片新规可能影响 2027 年收入（细节未查证）；快照现价 153.71（−1.6%），仍在 2027 前瞻区间下沿~中值（105.61 / 188.26 / 289.58）。 12:28：据 Seeking Alpha 标题 Muddy Waters 发布新空头观点（细节未查证），现价 153.09（−2.0%），仍在 2027 前瞻区间下沿~中值。"
     },
     {
      "t": "MU",
@@ -865,6 +874,10 @@
     {
      "t": "ANET",
      "why": "SC26 发布分布式推理路由平台（Etherlink R4）与数据中心互联光线路系统，称 AI 业务约 30% 已是跨站点；快照现价 184.85（−1.2%），处于 2027 前瞻区间下沿~中值（143.65 / 224.09 / 311.25），距中值约 +21%。"
+    },
+    {
+     "t": "GOOGL",
+     "why": "据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速载客（细节未查证），自动驾驶政策面转负；现价 280.05（−1.3%），处于 2027 前瞻区间中值~上沿（中值 229.23、上沿 381.36）。"
     }
    ],
    "sources": [
@@ -967,6 +980,22 @@
     [
      "As decision model use skyrockets, is customization the next frontier?",
      "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/"
+    ],
+    [
+     "Waymo suspends freeway rides nationwide after California DMV order（TechCrunch 标题，经 Google 新闻）",
+     "https://news.google.com/rss/articles/CBMiowFBVV95cUxOM2RxbVZ5blJRckk1YnNWVFRGOE56R1VPdDlTM2F6QVI0YjFvN0ZqWnBIenY2d21DdXBaNFhSM2ZkamF0a2h5X0ljS0N1blFGSTZ5aXhDbnB1ck1IT3JHa3VvWkhkZlJoOTBoNjc3MU0zdTlCdDlBNWZuSXJJWVRSVDRZdVllRXU3c3hFSUdGZGdWTE9TMmRXM0xiLUpZVWNvM3Bn?oc=5"
+    ],
+    [
+     "Nvidia a new short call at Muddy Waters（Seeking Alpha 标题）",
+     "https://seekingalpha.com/symbol/NVDA/news?source=feed_symbol_NVDA"
+    ],
+    [
+     "Microsoft rolls out new first-party models（SiliconANGLE）",
+     "https://siliconangle.com/2026/11/17/microsoft-rolls-out-new-first-party-models-and-updates-to-agentic-ai-continuous-improvement/"
+    ],
+    [
+     "IQM Introduces Upgrade Programme for Halocene Quantum Systems",
+     "https://thequantuminsider.com/2026/11/17/iqm-halocene-quantum-systems-upgrade-programme/"
     ]
    ]
   },
@@ -2442,7 +2471,7 @@
    ]
   }
  ],
- "updated": "2026-11-17T11:28",
+ "updated": "2026-11-17T12:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-17",
