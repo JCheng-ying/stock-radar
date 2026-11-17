@@ -745,3 +745,16 @@
 {"ts": "2026-11-17T16:11:55+00:00", "title": "💥 SIDU 单日 -8.3%", "body": "Sidus Space, Inc. 收于 0.83。信号：弱势。", "priority": "low", "sent": true}
 {"ts": "2026-11-17T16:16:32+00:00", "title": "💥 ARBE 单日 -8.2%", "body": "Arbe Robotics Ltd. 收于 0.4。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-17T16:16:32+00:00", "title": "💥 VELO 单日 -8.3%", "body": "Velo3D, Inc. 收于 3.25。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T16:28:43+00:00", "title": "📝 研判更新 08:28", "body": "黄仁勋书面声明愿在董事会同意下回任英伟达 CEO，与董事会此前立场相左；中国光模块进口禁令据 Reuters 继续推进，COHR/LITE 受益。 涉及：NVDA COHR LITE", "priority": "normal", "sent": true}
+{"ts": "2026-11-17T16:42:20+00:00", "title": "🟢 AVGO 进入「关注买点」", "body": "Broadcom Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 50；处于52周区间的 23% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T16:42:20+00:00", "title": "🌊 航空航天 二浪：价格先行，财报待验证", "body": "此前：启动初期。已满足：上涨广度、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-17T16:42:21+00:00", "title": "💥 ARQQ 单日 -8.2%", "body": "Arqit Quantum Inc. 收于 12.35。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T16:42:21+00:00", "title": "💥 AXTI 单日 -8.4%", "body": "AXT Inc 收于 35.22。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T16:42:21+00:00", "title": "💥 QBTS 单日 -8.1%", "body": "D-Wave Quantum Inc. 收于 7.97。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T16:42:21+00:00", "title": "💥 RGTI 单日 -8.5%", "body": "Rigetti Computing, Inc. 收于 8.29。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T17:11:37+00:00", "title": "🌊 航空航天 二浪：启动初期", "body": "此前：价格先行，财报待验证。已满足：上涨广度、毛利率（产品力）、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-17T17:11:38+00:00", "title": "🔴 UPS 进入「回调风险」", "body": "United Parcel Service, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 65；处于52周区间的 90% 位置；偏离200日线 +10%", "priority": "normal", "sent": true}
+{"ts": "2026-11-17T17:14:14+00:00", "title": "🟢 OLED 进入「关注买点」", "body": "Universal Display Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 23% 位置；偏离200日线 -4%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T17:14:14+00:00", "title": "🔴 SAIC 进入「回调风险」", "body": "Science Applications Internatio：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 54；处于52周区间的 91% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
+{"ts": "2026-11-17T17:14:15+00:00", "title": "🔴 TRV 进入「回调风险」", "body": "The Travelers Companies, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 94% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-17T17:14:15+00:00", "title": "🚀 TSAT 单日 +8.3%", "body": "Telesat Corporation 收于 46.69。信号：中性。", "priority": "low", "sent": true}
