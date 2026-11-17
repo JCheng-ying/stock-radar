@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-17",
+    "text": "情绪面 / 治理面：据众议院外委会主席 Mast，前 CEO 黄仁勋已同意作证（英伟达与本人未确认，时间有“感恩节前”与 12-01 两种说法），财报后仍有治理事件悬而未决。",
+    "url": "https://fourweekmba.com/ai-ex-nvidia-ceo-huang-to-testify-within-14-days-mast-says/"
+   },
+   {
+    "date": "2026-11-17",
     "text": "政策面 / 治理面继续偏负：董事会成立国家安全与出口管制监督委员会，公司向客户提示远程算力临时规则的诉讼风险，并据报道限制向对华出租占比过半的云客户供货；Megaspeed 刑事调查报道升级（司法部不置评，信源为 NYT / NBC，表述有分歧）。东南亚相关收入确定性下降，财报前预期面承压。",
     "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-warns-customers-of-new-us-rule-that-could-expose-them-to-lawsuits-for-serving-chinese-clients-commerce-department-releases-interim-regulations-preventing-foreign-actors-from-using-advanced-compute-based-on-american-tech"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-16",
     "text": "治理面 / 情绪面向下：CNBC 援引知情人士称董事会不考虑请黄仁勋回归、重心在国家安全调查，早间“回归呼声”带来的缓和消退，盘中跌幅扩大至约 −4.2%；产业面上 Rubin HPC GPU 发布（厂商口径），需求侧无变化。",
     "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "情绪面边际缓和：CNBC、Reuters 称科技界呼吁黄仁勋回归，Seeking Alpha 标题称特朗普“不介意”其回归；属舆论层面，治理不确定性未解除，11-17 财报是验证点。",
-    "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
    }
   ],
   "ANET": [
@@ -370,6 +370,11 @@
   ],
   "AMD": [
    {
+    "date": "2026-11-17",
+    "text": "产业面偏正：与 DOE 公私合营的 Lux 超算（MI355X，220.79 PF、Top500 第 14）在 ORNL 上线，一半机时对外收费；SC26 上主打 MI430X 原生 FP64，对标英伟达 FP64 仿真方案。",
+    "url": "https://www.datacenterdynamics.com/en/news/oak-ridge-national-laboratory-unveils-lux-supercomputer/"
+   },
+   {
     "date": "2026-11-16",
     "text": "产业面：据 Tom's Hardware 标题，AMD 在最新 TOP500 新上榜系统中占比超过 40%，DOE 合作的 Lux 系统（EPYC + MI355X）排第 14；叠加 OpenAI–TensorWave 订单，产业面偏正，股价 −5.6% 属资金面。",
     "url": "https://www.tomshardware.com/tech-industry/supercomputers/amd-grabs-over-40-percent-of-new-top500-list-for-supercomputers-up-14-percent-since-last-year-new-lux-system-developed-between-amd-and-department-of-energy-debuts-at-no-14-with-epyc-cpus-and-instinct-mi355x-gpus"
@@ -388,11 +393,6 @@
     "date": "2026-11-13",
     "text": "预期面偏负（情绪传导）：−8.8%，公司无新公告，MarketWatch 标题称华尔街在重估“没有黄仁勋的 AI 交易”；“第二供应商”逻辑没变，但板块风险偏好下降。",
     "url": "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547?mod=mw_rss_topstories"
-   },
-   {
-    "date": "2026-11-12",
-    "text": "与 PsiQuantum 扩大合作并计划入股，把 Instinct / EPYC / ROCm 放进容错量子计算的经典控制层（产业面向上，金额未披露）。",
-    "url": "https://thequantuminsider.com/2026/11/12/psiquantum-amd-expand-quantum-computing-infrastructure-partnership/"
    }
   ],
   "APLD": [
@@ -694,6 +694,20 @@
     "text": "预期面偏负：广发证券据报道下调 NAND 价格预测、看过剩（标题，细节未查证），前一日 −8.6%；NAND 纯度高，受价格周期影响最直接。",
     "url": "https://www.webull.com/news/15571214812185600"
    }
+  ],
+  "AXTI": [
+   {
+    "date": "2026-11-17",
+    "text": "基本面偏正：三季度收入 7,340 万美元（同比约 +163%），GAAP 毛利率 56.0%（同比 +33.7pp），InP 积压订单超 5 亿美元、产能 2027 年再翻倍；政策面风险是中国出口许可，财报后股价据报道下跌约 9.6%。",
+    "url": "https://zacks.com/stock/news/3019890/axti-q3-earnings-beat-on-record-inp-sales-and-margin-gains"
+   }
+  ],
+  "NOK": [
+   {
+    "date": "2026-11-17",
+    "text": "产业面小幅正向：与 Nscale、Telia 等组建 AI Gigafactory Northern 联合体，提供网络基础设施，争取 EuroHPC 招标（需求由政策驱动、尚未中标）。",
+    "url": "https://www.datacenterdynamics.com/en/news/nokia-nscale-skeleton-telia-and-verda-form-gigafactory-consortium/"
+   }
   ]
  },
  "sectors": {
@@ -792,9 +806,9 @@
  "daily": [
   {
    "date": "2026-11-17",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 17 篇】隔夜新信息几乎全部集中在英伟达的政策与治理面，需求面没有新增负面：①董事会成立“国家安全与出口管制监督委员会”（Suzanne Nora Johnson 任主席，Tom's Hardware / DCD）；②英伟达据 CNBC / Tom's Hardware 向客户提示商务部远程算力临时规则带来的诉讼风险，并据报道限制向把超过一半 GPU 租给中国企业的客户供货（FT 早前报道为“非中国客户至少 51%”，DCD）；③ Megaspeed 刑事调查：Tom's Hardware 标题称美国政府已确认，但其它报道称司法部不评论在办案件、主要依据 NYT / NBC 信源，两者表述有分歧；DCD 援引 FT 称黄仁勋在讨论重新争取 CEO，财长贝森特公开要求对英伟达“大幅整顿”。五面上：政策面 / 预期面继续偏负（东南亚转口相关收入确定性下降、合规成本上升），情绪面在财报前略有修复（CNBC 标题称盘前小幅上涨）。AI 一级市场方向偏正：Anthropic IPO 据 Bloomberg / CNBC 标题将定价在 70~78 美元区间顶部或以上（11-18 定价、11-19 交易），认购倍数高。存储链出现预期面负向变量：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测、认为将出现过剩（细节未查证），MU 前一日 −7.6%、SNDK −8.6%（快照）。整体结论不变：需求未转弱，压力在资金面（利率）与英伟达的政策 / 治理面，今天盘后英伟达财报（首次由临时 CEO Kress 主持）是关键验证点。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 17 篇】隔夜新信息几乎全部集中在英伟达的政策与治理面，需求面没有新增负面：①董事会成立“国家安全与出口管制监督委员会”（Suzanne Nora Johnson 任主席，Tom's Hardware / DCD）；②英伟达据 CNBC / Tom's Hardware 向客户提示商务部远程算力临时规则带来的诉讼风险，并据报道限制向把超过一半 GPU 租给中国企业的客户供货（FT 早前报道为“非中国客户至少 51%”，DCD）；③ Megaspeed 刑事调查：Tom's Hardware 标题称美国政府已确认，但其它报道称司法部不评论在办案件、主要依据 NYT / NBC 信源，两者表述有分歧；DCD 援引 FT 称黄仁勋在讨论重新争取 CEO，财长贝森特公开要求对英伟达“大幅整顿”。五面上：政策面 / 预期面继续偏负（东南亚转口相关收入确定性下降、合规成本上升），情绪面在财报前略有修复（CNBC 标题称盘前小幅上涨）。AI 一级市场方向偏正：Anthropic IPO 据 Bloomberg / CNBC 标题将定价在 70~78 美元区间顶部或以上（11-18 定价、11-19 交易），认购倍数高。存储链出现预期面负向变量：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测、认为将出现过剩（细节未查证），MU 前一日 −7.6%、SNDK −8.6%（快照）。整体结论不变：需求未转弱，压力在资金面（利率）与英伟达的政策 / 治理面，今天盘后英伟达财报（首次由临时 CEO Kress 主持）是关键验证点。【07:28 更新，含 Summizer 新增的 4 篇】英伟达治理面再添一项待落地事件：多方报道称黄仁勋已同意向众议院作证（外委会主席 Mast 口径，英伟达及本人未确认，时间有“感恩节前”与“12-01 转录访谈”两种说法），三位委员会主席原请求的闭门简报日期为财报次日 11-18——财报后情绪面仍有一个治理变量。产业面继续偏正：AMD 与 DOE 公私合营的 Lux 超算（MI355X，220.79 PF、Top500 第 14）登场，AMD 在 SC26 主打原生 FP64 对抗英伟达仿真路线；欧洲 Nokia / Nscale 等组建 AI Gigafactory 联合体争取 EuroHPC 资金；Google 再签 50MW 地热 PPA，电力仍是算力瓶颈。光通信上游 AXTI 三季度财报数据入库（收入 7,340 万美元、同比约 +163%，InP 积压订单超 5 亿美元），基本面强但受中国出口许可约束。整体结论不变：今天盘后英伟达财报仍是关键验证点。",
    "sectors": {
-    "ai": "【06:29】政策面继续收紧但已部分在价格里：英伟达董事会设国家安全与出口管制监督委员会、向客户提示远程算力规则诉讼风险并限制向对华出租占比过半的云客户供货——东南亚新云（neocloud）的需求确定性下降，Steve Eisman 称新云股因此“麻烦大了”（CNBC 标题）。预期面上 Anthropic IPO 据报道指向区间顶部或以上，一级市场对 AI 的定价仍强；存储链方面广发证券据报道看 NAND 过剩（标题，细节未查证），与前一日 MU / SNDK 大跌相呼应，属预期面负向。Top500 新上榜系统仅 27 台、为历史最低（DCD），公共超算投资让位于私有 AI 集群。",
+    "ai": "【06:29】政策面继续收紧但已部分在价格里：英伟达董事会设国家安全与出口管制监督委员会、向客户提示远程算力规则诉讼风险并限制向对华出租占比过半的云客户供货——东南亚新云（neocloud）的需求确定性下降，Steve Eisman 称新云股因此“麻烦大了”（CNBC 标题）。预期面上 Anthropic IPO 据报道指向区间顶部或以上，一级市场对 AI 的定价仍强；存储链方面广发证券据报道看 NAND 过剩（标题，细节未查证），与前一日 MU / SNDK 大跌相呼应，属预期面负向。Top500 新上榜系统仅 27 台、为历史最低（DCD），公共超算投资让位于私有 AI 集群。【07:28】产业面小幅正向：AMD 与 DOE 共建 Lux 超算（MI355X、一半机时对外收费），AMD 在 SC26 质疑英伟达 FP64 仿真方案；Nokia / Nscale / Telia 等组建北欧 AI Gigafactory 联合体（瞄准 EuroHPC 招标，需求由政策驱动）；Google 与 Quaise 签 50MW 地热 PPA（2030 年供电）。光通信上游 AXTI 财报数据显示 InP 衬底需求强劲（积压超 5 亿美元），但出口许可是关键不确定性。治理面：黄仁勋据报道同意赴国会作证，日期未定。",
     "quantum": "【06:29】生态层小幅正向，多为新闻稿：IonQ 与 IDEMIA 完成 QKD 与企业安全平台互操作验证（联合新闻稿，无性能数据）；Telia / 诺基亚 / Qmill 在 5G 网络演示量子加密、NEC 与 IBM 日本演示 QKD+PQC；DOE 发布低温与量子-HPC 集成测试平台 RFI（只是征询、不承诺出资，12-17 截止）；欧洲 Qluster 融资 470 万欧元、Planckian 获 EIC 1,000 万欧元支持。不改变板块浪位。",
     "robotics": "【06:29】无重要新信息；浪位提醒再次在一浪“尚未启动”切换（此前为“财报已改善，价格未反映”），仍视为阈值噪声。SiMa.ai 发布 Palette 3.0（单芯片多模型并发、吞吐最高 3.5 倍，公司口径），端侧物理 AI 软件栈竞争加剧。",
     "aerospace": "【06:29】无重要新信息。Cosmo Bee 计划 2027 年与 D-Orbit 飞行测试霍尔推进器（Summizer），属早期产业面。",
@@ -803,7 +817,7 @@
    "watch": [
     {
      "t": "NVDA",
-     "why": "今日盘后财报（临时 CEO Kress 首次主持）；隔夜新增监督委员会、客户诉讼风险提示与“对华出租不过半”供货限制，Megaspeed 刑事调查报道升级。前收 156.14（−4.1%），位于 2027 前瞻区间下沿~中值（107.28 / 191.23 / 294.15），距中值约 +22%。"
+     "why": "今日盘后财报（临时 CEO Kress 首次主持）；隔夜新增监督委员会、客户诉讼风险提示与“对华出租不过半”供货限制，Megaspeed 刑事调查报道升级。前收 156.14（−4.1%），位于 2027 前瞻区间下沿~中值（107.28 / 191.23 / 294.15），距中值约 +22%。 另据众议院外委会主席 Mast，黄仁勋已同意作证（英伟达未确认、时间未定），财报后仍有治理面事件。"
     },
     {
      "t": "MU",
@@ -816,6 +830,10 @@
     {
      "t": "IONQ",
      "why": "与 IDEMIA 完成 QKD 互操作验证（联合新闻稿，无性能数据）；前收 26.45（−8.4%），位于 2027 前瞻区间中值~上沿（14.06 / 22.0 / 31.25），高于中值约 17%。"
+    },
+    {
+     "t": "AXTI",
+     "why": "三季度收入 7,340 万美元（环比 4,760 万、同比约 +163%），GAAP 毛利率 56.0%，InP 积压订单超 5 亿美元、2027 年再翻倍产能；风险在中国出口许可。现价 37.88 美元，处 2027 前瞻区间（27.58 / 46.39 / 73.37）下沿~中值之间，距中值约 +22%。"
     }
    ],
    "sources": [
@@ -850,6 +868,26 @@
     [
      "DOE Seeks Input on Cryogenic and Quantum Supercomputing Testbeds (The Quantum Insider)",
      "https://thequantuminsider.com/2026/11/17/doe-seeks-input-on-cryogenic-and-quantum-supercomputing-testbeds/"
+    ],
+    [
+     "Ex-Nvidia CEO Huang to Testify Within 14 Days, Mast Says",
+     "https://fourweekmba.com/ai-ex-nvidia-ceo-huang-to-testify-within-14-days-mast-says/"
+    ],
+    [
+     "AXTI Q3 earnings beat on record InP sales and margin gains (Zacks)",
+     "https://zacks.com/stock/news/3019890/axti-q3-earnings-beat-on-record-inp-sales-and-margin-gains"
+    ],
+    [
+     "Oak Ridge National Laboratory unveils Lux supercomputer (DCD)",
+     "https://www.datacenterdynamics.com/en/news/oak-ridge-national-laboratory-unveils-lux-supercomputer/"
+    ],
+    [
+     "Nokia, Nscale, Skeleton, Telia, and Verda form gigafactory consortium (DCD)",
+     "https://www.datacenterdynamics.com/en/news/nokia-nscale-skeleton-telia-and-verda-form-gigafactory-consortium/"
+    ],
+    [
+     "Google inks 50MW geothermal PPA with Quaise in Oregon (DCD)",
+     "https://www.datacenterdynamics.com/en/news/google-inks-50mw-geothermal-ppa-with-quaise-in-oregon/"
     ]
    ]
   },
@@ -2325,7 +2363,7 @@
    ]
   }
  ],
- "updated": "2026-11-17T06:29",
+ "updated": "2026-11-17T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-16",
