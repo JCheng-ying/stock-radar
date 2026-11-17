@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-17",
+    "text": "政策面 / 治理面继续偏负：董事会成立国家安全与出口管制监督委员会，公司向客户提示远程算力临时规则的诉讼风险，并据报道限制向对华出租占比过半的云客户供货；Megaspeed 刑事调查报道升级（司法部不置评，信源为 NYT / NBC，表述有分歧）。东南亚相关收入确定性下降，财报前预期面承压。",
+    "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-warns-customers-of-new-us-rule-that-could-expose-them-to-lawsuits-for-serving-chinese-clients-commerce-department-releases-interim-regulations-preventing-foreign-actors-from-using-advanced-compute-based-on-american-tech"
+   },
+   {
     "date": "2026-11-16",
     "text": "预期面：财报前的“可见度风险”被点名——TechCrunch 指出公司曾把收入地区口径从发货地改为客户总部，新加坡（2025 年二季度占 22%）相关敞口在报表上不可见；叠加董事会不考虑黄仁勋回归（CNBC），11-17 财报的问题从需求转向披露与治理，偏负。",
     "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
@@ -20,11 +25,6 @@
     "date": "2026-11-16",
     "text": "情绪面边际缓和：CNBC、Reuters 称科技界呼吁黄仁勋回归，Seeking Alpha 标题称特朗普“不介意”其回归；属舆论层面，治理不确定性未解除，11-17 财报是验证点。",
     "url": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "预期面 / 政策面向下：商务部远程算力出口管制规则落地（TechCrunch），算力租给中国等 22 国企业的海外数据中心须申请许可证，马来西亚 / 新加坡等五国新增许可要求，东南亚新云渠道合规成本上升；开盘约 −1.7%。",
-    "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
    }
   ],
   "ANET": [
@@ -42,6 +42,11 @@
    }
   ],
   "MU": [
+   {
+    "date": "2026-11-17",
+    "text": "预期面偏负：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测并看过剩（细节未查证），与前一日 −7.6% 呼应；HBM / DRAM 端未见新变化。",
+    "url": "https://www.webull.com/news/15571214812185600"
+   },
    {
     "date": "2026-11-16",
     "text": "资金面：芯片抛售中收跌 7.6% 至 719.02（MarketWatch 标题称板块抛售加剧），属财报 / IPO 前去风险，需求面无新负面信息。",
@@ -61,11 +66,6 @@
     "date": "2026-11-15",
     "text": "预期面向下（监管 / 诉讼）：据 Tom's Hardware 标题，法官驳回 DRAM 价格操纵集体诉讼的撤诉动议、认为串谋指控可信（细节未查证）；案件进入取证，不是违法认定，但为涨价周期增加潜在赔偿与监管折价，需求面不变。",
     "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
-   },
-   {
-    "date": "2026-11-11",
-    "text": "预期面 / 情绪面向上：CoreWeave 积压 1325 亿美元被解读为 HBM / DRAM 需求的证据，叠加以 IPO 价认购 Anthropic 约 10 亿美元，单日 +11.9%；但距 52 周高点仍低约 35%。",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-jump-11-2-165403817.html"
    }
   ],
   "INTC": [
@@ -76,6 +76,11 @@
    }
   ],
   "IONQ": [
+   {
+    "date": "2026-11-17",
+    "text": "产业面小幅正向：与 IDEMIA 完成 QKD 与企业安全平台 IDEMIA Sphere 的互操作验证（联合新闻稿，无性能 / 客户数据），属生态层进展。",
+    "url": "https://thequantuminsider.com/2026/11/17/idemia-ionq-validate-qkd-interoperability-enterprise-security/"
+   },
    {
     "date": "2026-11-16",
     "text": "管理层：任命 Gary Merrill 为 CFO、Thomas Austin 为首席会计官（The Quantum Insider），常规调整，基本面无变化。",
@@ -682,10 +687,21 @@
     "text": "无新消息；现价 149.94 仍低于 2027 前瞻下沿 225，按席位收费受 AI Agent 冲击的担忧未消（延续 11-09 判断）。",
     "url": "https://seekingalpha.com/symbol/TEAM/news"
    }
+  ],
+  "SNDK": [
+   {
+    "date": "2026-11-17",
+    "text": "预期面偏负：广发证券据报道下调 NAND 价格预测、看过剩（标题，细节未查证），前一日 −8.6%；NAND 纯度高，受价格周期影响最直接。",
+    "url": "https://www.webull.com/news/15571214812185600"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-17",
+    "text": "政策面：英伟达把出口管制合规上升到董事会层面（监督委员会），并向客户传导远程算力规则风险、限制对华出租占比过半的云客户——东南亚新云渠道需求确定性下降；需求面暂无负向信号，一级市场（Anthropic IPO 据报道指向区间顶部以上）仍强。"
+   },
    {
     "date": "2026-11-16",
     "text": "产业面：数据中心约束从“芯片”转向“电和社会许可”——AWS 紧邻电厂建园区、矿企转 AI 托管兑现收入（Core Scientific 托管占 92.5%），同时 Telus 撤出温哥华项目、联邦土地禁建法案提出，选址不确定性上升。 出口管制从“芯片运往哪里”扩展到“算力卖给谁”：数据中心若可能向中国等 D:5 组国家企业提供 1200 万 TPP 以上算力即需许可，东南亚五国新增许可要求，撤销 AI 扩散规则（TechCrunch）；同时数据中心社会许可风险升级为公投 + 联邦诉讼（Prologis v. Trenton）。 午间：英伟达董事会据 CNBC 不考虑请黄仁勋回归；新云融资转向客户预付款（Firmus 30 亿美元私募 + 预付款，AFR 经 DCD）。 收盘补充：阿里 Qwen4-Max 代表的“用架构换算力”路线（token 最多省 35%~49%，内部基准）与远程算力管制同日出现——管制收紧的同时，效率路线削弱管制效果、也可能压低单位任务算力需求（判断）；英伟达财报的焦点转向地区口径与担保交易的披露（TechCrunch）。"
@@ -701,10 +717,6 @@
    {
     "date": "2026-11-13",
     "text": "英伟达管理层真空的折价扩散到算力链（AMD −8.8%、戴尔 −7.2%、Nebius −9.9%）；美联储调查 87% 受访者把 AI 列为首要金融风险。需求侧 SpaceX 约 740 亿美元自带电源的数据中心计划说明产业面需求未变，压力在资金面和预期面。据 TechCrunch，英伟达后续可能收缩对新云和开源模型创业公司的投资，新云融资的资金面进一步转紧。 另据纽约时报（转述），英伟达 5000 亿美元 AI 融资平台尚无贷款落地、至少一家贷方讨论退出，新云融资通道的不确定性从“投资收缩”扩展到“债务融资”。"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "新云融资链出现两个信号：WSJ 称英伟达临时 CEO 曾反对为客户提供数十亿美元担保；Fermi 得州 600MW 靠超大规模客户预付 2 亿美元推进但 TensorWave 租约终止，Rowan 拿到首笔公司级银团融资超 15 亿美元——资本在向“有电 + 有投资级租户”的项目集中。 散热成为被产业资本定价的瓶颈：三星继收购 FläktGroup 后据报洽购 Modine（早期谈判），MOD 当日约 +30%；同时 ASIC（亚马逊定制芯片年化超 250 亿美元、OpenAI-博通推理芯片）分流 GPU 的预期增强。"
    }
   ],
   "quantum": [
@@ -778,6 +790,69 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-17",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 17 篇】隔夜新信息几乎全部集中在英伟达的政策与治理面，需求面没有新增负面：①董事会成立“国家安全与出口管制监督委员会”（Suzanne Nora Johnson 任主席，Tom's Hardware / DCD）；②英伟达据 CNBC / Tom's Hardware 向客户提示商务部远程算力临时规则带来的诉讼风险，并据报道限制向把超过一半 GPU 租给中国企业的客户供货（FT 早前报道为“非中国客户至少 51%”，DCD）；③ Megaspeed 刑事调查：Tom's Hardware 标题称美国政府已确认，但其它报道称司法部不评论在办案件、主要依据 NYT / NBC 信源，两者表述有分歧；DCD 援引 FT 称黄仁勋在讨论重新争取 CEO，财长贝森特公开要求对英伟达“大幅整顿”。五面上：政策面 / 预期面继续偏负（东南亚转口相关收入确定性下降、合规成本上升），情绪面在财报前略有修复（CNBC 标题称盘前小幅上涨）。AI 一级市场方向偏正：Anthropic IPO 据 Bloomberg / CNBC 标题将定价在 70~78 美元区间顶部或以上（11-18 定价、11-19 交易），认购倍数高。存储链出现预期面负向变量：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测、认为将出现过剩（细节未查证），MU 前一日 −7.6%、SNDK −8.6%（快照）。整体结论不变：需求未转弱，压力在资金面（利率）与英伟达的政策 / 治理面，今天盘后英伟达财报（首次由临时 CEO Kress 主持）是关键验证点。",
+   "sectors": {
+    "ai": "【06:29】政策面继续收紧但已部分在价格里：英伟达董事会设国家安全与出口管制监督委员会、向客户提示远程算力规则诉讼风险并限制向对华出租占比过半的云客户供货——东南亚新云（neocloud）的需求确定性下降，Steve Eisman 称新云股因此“麻烦大了”（CNBC 标题）。预期面上 Anthropic IPO 据报道指向区间顶部或以上，一级市场对 AI 的定价仍强；存储链方面广发证券据报道看 NAND 过剩（标题，细节未查证），与前一日 MU / SNDK 大跌相呼应，属预期面负向。Top500 新上榜系统仅 27 台、为历史最低（DCD），公共超算投资让位于私有 AI 集群。",
+    "quantum": "【06:29】生态层小幅正向，多为新闻稿：IonQ 与 IDEMIA 完成 QKD 与企业安全平台互操作验证（联合新闻稿，无性能数据）；Telia / 诺基亚 / Qmill 在 5G 网络演示量子加密、NEC 与 IBM 日本演示 QKD+PQC；DOE 发布低温与量子-HPC 集成测试平台 RFI（只是征询、不承诺出资，12-17 截止）；欧洲 Qluster 融资 470 万欧元、Planckian 获 EIC 1,000 万欧元支持。不改变板块浪位。",
+    "robotics": "【06:29】无重要新信息；浪位提醒再次在一浪“尚未启动”切换（此前为“财报已改善，价格未反映”），仍视为阈值噪声。SiMa.ai 发布 Palette 3.0（单芯片多模型并发、吞吐最高 3.5 倍，公司口径），端侧物理 AI 软件栈竞争加剧。",
+    "aerospace": "【06:29】无重要新信息。Cosmo Bee 计划 2027 年与 D-Orbit 飞行测试霍尔推进器（Summizer），属早期产业面。",
+    "autonomous": "【06:29】无重要新信息。Electrek 评论称特斯拉 Cybercab 缺少无线充电将限制家庭充电场景（评论文章）；Barron's 标题称 Robotaxi 进展不足以推动股价。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "今日盘后财报（临时 CEO Kress 首次主持）；隔夜新增监督委员会、客户诉讼风险提示与“对华出租不过半”供货限制，Megaspeed 刑事调查报道升级。前收 156.14（−4.1%），位于 2027 前瞻区间下沿~中值（107.28 / 191.23 / 294.15），距中值约 +22%。"
+    },
+    {
+     "t": "MU",
+     "why": "存储链预期面转弱：广发证券据报道下调 NAND 价格预测、看过剩（标题未查证）；前收 719.02（−7.6%），位于 2027 前瞻区间下沿~中值（511.81 / 748.12 / 1183.04），距中值约 +4%。"
+    },
+    {
+     "t": "SNDK",
+     "why": "NAND 纯度最高，受广发证券过剩判断影响最直接（标题未查证）；前收 809.11（−8.6%），位于 2027 前瞻区间中值~上沿（563.86 / 779.86 / 1075.11），已高于中值约 4%。"
+    },
+    {
+     "t": "IONQ",
+     "why": "与 IDEMIA 完成 QKD 互操作验证（联合新闻稿，无性能数据）；前收 26.45（−8.4%），位于 2027 前瞻区间中值~上沿（14.06 / 22.0 / 31.25），高于中值约 17%。"
+    }
+   ],
+   "sources": [
+    [
+     "Nvidia board establishes National Security and Export Control Oversight Committee (Tom's Hardware)",
+     "https://www.tomshardware.com/tech-industry/policy/nvidia-board-establishes-national-security-and-export-control-oversight-committee-in-wake-of-jensen-huang-scandal-group-to-work-with-independent-law-national-security-and-trade-compliance-experts"
+    ],
+    [
+     "Nvidia warns customers of new US rule that could expose them to lawsuits (Tom's Hardware)",
+     "https://www.tomshardware.com/tech-industry/policy/nvidia-warns-customers-of-new-us-rule-that-could-expose-them-to-lawsuits-for-serving-chinese-clients-commerce-department-releases-interim-regulations-preventing-foreign-actors-from-using-advanced-compute-based-on-american-tech"
+    ],
+    [
+     "US government confirms criminal investigation into Megaspeed (Tom's Hardware)",
+     "https://www.tomshardware.com/tech-industry/data-centers/us-government-confirms-criminal-investigation-into-singapore-company-at-the-heart-of-jensen-huang-scandal-megaspeed-identified-over-suspicious-activity-company-placed-on-no-sell-list-by-nvidia"
+    ],
+    [
+     "Jensen Huang plots return as Nvidia CEO (DCD)",
+     "https://www.datacenterdynamics.com/en/news/jensen-huang-plots-return-as-nvidia-ceo-as-doubt-raised-on-whether-alice-huang-was-a-chinese-spy/"
+    ],
+    [
+     "Nvidia tells data center partners to cut China exposure (DCD)",
+     "https://www.datacenterdynamics.com/en/news/nvidia-tells-data-center-partners-to-cut-china-exposure-limits-rtx-chip-sales-to-mainland"
+    ],
+    [
+     "Anthropic's IPO is said to be multiple times oversubscribed (StockAnalysis)",
+     "https://stockanalysis.com/news/anthropic-ipo-multiple-times-oversubscribed/"
+    ],
+    [
+     "IDEMIA and IonQ Validate QKD Interoperability (The Quantum Insider)",
+     "https://thequantuminsider.com/2026/11/17/idemia-ionq-validate-qkd-interoperability-enterprise-security/"
+    ],
+    [
+     "DOE Seeks Input on Cryogenic and Quantum Supercomputing Testbeds (The Quantum Insider)",
+     "https://thequantuminsider.com/2026/11/17/doe-seeks-input-on-cryogenic-and-quantum-supercomputing-testbeds/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-16",
    "market": "【收盘完整研判，含今日盘中 8 次增量与收盘后 Summizer 新增 3 篇】资金面继续“钱贵（紧缩）”：得分 21，10 年期美债 5.12%（近一年 93% 分位、一年 +101bp），美元指数 103.58（一年 +4.4%），高收益债相对长债近 3 个月 −0.4%，资金在避险。情绪面转弱但未到极端：VIX 22.9（近一年 88% 分位，期限结构 0.995 接近倒挂）、CNN 恐贪指数 31（恐惧）、本页 746 家公司只有 32% 站上 200 日线，综合热度 43（中性）；Reuters 标题称华尔街在英伟达财报和 Anthropic IPO 前因 AI 担忧大幅收低，美光 −7.6%、AMD −5.6%、英伟达 −4.1%、博通 −3.9%，比特币一度跌到 6.2 万美元（CNBC 标题）。今天真正的新事件集中在政策与治理：商务部远程算力出口管制落地（东南亚五国新增许可，TechCrunch）、英伟达董事会据 CNBC 不考虑请黄仁勋回归、加州总检察长起诉 OpenAI agent 失控事件；需求侧反而有增量（OpenAI–TensorWave 450MW 以上 AMD 算力、AWS 印第安纳 70 亿美元园区、微软考察 1.4GW 地块）。浪位：AI 二浪“价格先行，财报待验证”，航空航天二浪“启动初期”，机器人一浪在“尚未启动”和“财报已改善”之间反复切换（阈值噪声），自动驾驶三浪回到“尚未启动”。整体结论：需求面未转弱，压力在资金面（利率）、政策面（出口管制）和英伟达治理三处叠加；本周验证点 11-17 英伟达（首次由临时 CEO Kress 主持，TechCrunch 列出地区口径变更、担保交易等五个待答问题）、11-18 Anthropic 定价与 Palo Alto / 小马智行财报、11-19 阿里财报。\n【16:28 更新，含 Summizer 新增的 2 篇】两条都是一级市场 AI 融资，不改变五面结论：Corma 以 10 亿美元估值完成 1.25 亿美元 A 轮（NEA 领投），主张网络安全需要专门训练的防守模型（其自测 LLM 只找到自己植入恶意文件的 12%，公司口径未经独立验证）；Noeri 获 1.1 亿美元（Menlo 领投，Snowflake、Cisco Ventures 参投），做企业多模型、可自我改进的编排层。对产业面是小幅正向（垂直模型与编排层持续获得资金），对 PANW 等安全公司属预期面的竞争变量，需看 11-18 财报验证。整体结论不变。",
@@ -2250,7 +2325,7 @@
    ]
   }
  ],
- "updated": "2026-11-16T21:28",
+ "updated": "2026-11-17T06:29",
  "trend": {
   "NVDA": {
    "date": "2026-11-16",
