@@ -758,3 +758,10 @@
 {"ts": "2026-11-17T17:14:14+00:00", "title": "🔴 SAIC 进入「回调风险」", "body": "Science Applications Internatio：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 54；处于52周区间的 91% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
 {"ts": "2026-11-17T17:14:15+00:00", "title": "🔴 TRV 进入「回调风险」", "body": "The Travelers Companies, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 94% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
 {"ts": "2026-11-17T17:14:15+00:00", "title": "🚀 TSAT 单日 +8.3%", "body": "Telesat Corporation 收于 46.69。信号：中性。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T17:39:50+00:00", "title": "💥 EVGO 单日 -8.1%", "body": "EVgo Inc. 收于 1.53。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T17:39:50+00:00", "title": "🚀 LUMN 单日 +8.3%", "body": "Lumen Technologies, Inc. 收于 4.36。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-17T18:08:53+00:00", "title": "🟢 BKSY 进入「关注买点」", "body": "BlackSky Technology Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 54；处于52周区间的 23% 位置；偏离200日线 -19%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T18:08:53+00:00", "title": "🟢 NWSA 进入「关注买点」", "body": "News Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 37；处于52周区间的 49% 位置；偏离200日线 -1%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T18:08:53+00:00", "title": "🟢 OLED 进入「关注买点」", "body": "Universal Display Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 22% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T18:08:54+00:00", "title": "🟢 SNDR 进入「关注买点」", "body": "Schneider National, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 47% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-17T18:17:03+00:00", "title": "🟢 AIT 进入「关注买点」", "body": "Applied Industrial Technologies：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 45% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
