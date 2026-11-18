@@ -833,3 +833,18 @@
 {"ts": "2026-11-18T15:17:49+00:00", "title": "🚀 CCOI 单日 +8.0%", "body": "Cogent Communications Holdings, 收于 3.43。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-18T15:17:49+00:00", "title": "🚀 FSLY 单日 +8.4%", "body": "Fastly, Inc. 收于 17.23。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-18T15:17:50+00:00", "title": "💥 YSS 单日 -8.9%", "body": "York Space Systems Inc. 收于 3.87。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T15:42:51+00:00", "title": "📊 QBTS 财报更新", "body": "D-Wave Quantum Inc. 截至 2026-09-30 的季度：收入同比 +21%；毛利率 52.9%（同比 -18.5pp）；EBITDA 利润率 -943.4%；EPS 较预期 -30%；RPO 同比 +668%；当前信号：观察（基本面 67 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:51+00:00", "title": "📊 STXS 财报更新", "body": "Stereotaxis, Inc. 截至 2026-09-30 的季度：收入同比 +20%；毛利率 44.3%（同比 -10.6pp）；EBITDA 利润率 -66.5%；EPS 较预期 -27%；RPO 同比 -35%；当前信号：观察（基本面 51 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:51+00:00", "title": "📊 USAR 财报更新", "body": "USA Rare Earth, Inc. 截至 2026-09-30 的季度：收入同比 —；毛利率 -662.3%（同比 +0.0pp）；EBITDA 利润率 391.0%；EPS 较预期 -201%；当前信号：观察（基本面 42 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:52+00:00", "title": "🟢 CEG 进入「关注买点」", "body": "Constellation Energy Corporatio：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 49；处于52周区间的 21% 位置；偏离200日线 -4%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:52+00:00", "title": "🟢 GRAB 进入「关注买点」", "body": "Grab Holdings Limited：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 53；处于52周区间的 17% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:52+00:00", "title": "🟢 KEYS 进入「关注买点」", "body": "Keysight Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 53% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:53+00:00", "title": "🟢 TEAM 进入「关注买点」", "body": "Atlassian Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 24；处于52周区间的 47% 位置；偏离200日线 +14%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:53+00:00", "title": "🌊 自动驾驶 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:53+00:00", "title": "🌊 自动驾驶 三浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T15:42:53+00:00", "title": "🔴 DUK 进入「回调风险」", "body": "Duke Energy Corporation (Holdin：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 66；处于52周区间的 95% 位置；偏离200日线 +6%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T15:42:54+00:00", "title": "🔴 GEHC 进入「回调风险」", "body": "GE HealthCare Technologies Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 65；处于52周区间的 81% 位置；偏离200日线 +18%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T15:42:54+00:00", "title": "💥 AGLT 单日 -8.3%", "body": "Agility Robotics, Inc. 收于 6.57。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T16:16:56+00:00", "title": "✅ stock-radar 已建立基线", "body": "开始跟踪 510 家公司、5 个板块。之后只在财报、信号、浪位、情绪发生变化时推送。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T16:16:56+00:00", "title": "🟢 SNDR 进入「关注买点」", "body": "Schneider National, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 47% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T16:16:56+00:00", "title": "🚀 S 单日 +8.2%", "body": "SentinelOne, Inc. 收于 22.88。信号：趋势中。", "priority": "low", "sent": true}
