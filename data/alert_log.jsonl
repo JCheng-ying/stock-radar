@@ -848,3 +848,15 @@
 {"ts": "2026-11-18T16:16:56+00:00", "title": "✅ stock-radar 已建立基线", "body": "开始跟踪 510 家公司、5 个板块。之后只在财报、信号、浪位、情绪发生变化时推送。", "priority": "low", "sent": true}
 {"ts": "2026-11-18T16:16:56+00:00", "title": "🟢 SNDR 进入「关注买点」", "body": "Schneider National, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 47% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
 {"ts": "2026-11-18T16:16:56+00:00", "title": "🚀 S 单日 +8.2%", "body": "SentinelOne, Inc. 收于 22.88。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T16:40:09+00:00", "title": "🟢 CTSH 进入「关注买点」", "body": "Cognizant Technology Solutions ：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 37；处于52周区间的 44% 位置；偏离200日线 +3%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T16:40:09+00:00", "title": "🟢 FTNT 进入「关注买点」", "body": "Fortinet, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 46% 位置；偏离200日线 -1%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T16:40:10+00:00", "title": "🟢 KEYS 进入「关注买点」", "body": "Keysight Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 39；处于52周区间的 53% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T16:40:10+00:00", "title": "🟢 TEAM 进入「关注买点」", "body": "Atlassian Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 23；处于52周区间的 46% 位置；偏离200日线 +13%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T16:40:10+00:00", "title": "🔴 AJG 进入「回调风险」", "body": "Arthur J. Gallagher & Co.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 59；处于52周区间的 92% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T16:40:10+00:00", "title": "💥 LWLG 单日 -11.2%", "body": "Lightwave Logic, Inc. 收于 2.81。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T16:40:11+00:00", "title": "💥 MVIS 单日 -10.9%", "body": "Microvision, Inc. 收于 0.86。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T16:40:11+00:00", "title": "🚀 VUZI 单日 +9.5%", "body": "Vuzix Corporation 收于 1.33。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T17:09:17+00:00", "title": "🔴 DUK 进入「回调风险」", "body": "Duke Energy Corporation (Holdin：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 66；处于52周区间的 96% 位置；偏离200日线 +6%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T17:09:17+00:00", "title": "🔴 J 进入「回调风险」", "body": "Jacobs Solutions Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 96% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T17:09:17+00:00", "title": "💥 RCAT 单日 -8.9%", "body": "Red Cat Holdings, Inc. 收于 2.19。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T17:14:40+00:00", "title": "🟢 SNPS 进入「关注买点」", "body": "Synopsys, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 39% 位置；偏离200日线 -2%", "priority": "high", "sent": true}
