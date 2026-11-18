@@ -801,3 +801,5 @@
 {"ts": "2026-11-18T00:28:45+00:00", "title": "📝 研判更新 16:28", "body": "英伟达退出对华 H200 并设出口管制委员会（Jefferies 估计新规影响 440~620 亿美元，公司称无影响）；全年增长预测上调至 75%。涉及：NVDA", "priority": "normal", "sent": true}
 {"ts": "2026-11-18T01:34:04+00:00", "title": "🔄 数据已追上，期间共 32 条变化", "body": "🔴 14 条：DOCU、DSGX、DUOL、EPAM、GEHC、HCA、JNJ、PGR、SAIC、SAIL、THC、TRV…\n💥 11 条：ARQQ、AXTI、BTDR、DRSHF、EOSE、QBTS、SSTK、TMC、VELO、YSS、ZPTA\n🌊 3 条：AI、机器人、航空航天\n🚀 2 条：KSCP、MNTS\n📊 1 条：BIDU\n🟢 1 条：AVGO\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
 {"ts": "2026-11-18T04:11:50+00:00", "title": "🔄 数据已追上，期间共 34 条变化", "body": "🟢 18 条：ADBE、ASX、BKSY、CRM、GRAB、GWRE、HII、HUBS、IBM、INTU、NTNX、NWSA…\n💥 10 条：ARQQ、BTDR、DRSHF、EOSE、KSCP、MNTS、SSTK、TMC、VELO、YSS\n🌊 5 条：AI、机器人、机器人、航空航天、自动驾驶\n📊 1 条：INFQ\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T06:14:03+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T06:14:03+00:00", "title": "🌊 自动驾驶 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
