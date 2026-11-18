@@ -892,3 +892,9 @@
 {"ts": "2026-11-18T19:39:09+00:00", "title": "🟢 CSCO 进入「关注买点」", "body": "Cisco Systems, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 43% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
 {"ts": "2026-11-18T19:39:09+00:00", "title": "🚀 MNTS 单日 +10.8%", "body": "Momentus Inc. 收于 1.95。信号：弱势。", "priority": "low", "sent": true}
 {"ts": "2026-11-18T20:08:51+00:00", "title": "🟢 WWD 进入「关注买点」", "body": "Woodward, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 34% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T21:10:15+00:00", "title": "🟢 ISRG 进入「关注买点」", "body": "Intuitive Surgical, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 34% 位置；偏离200日线 -2%", "priority": "high", "sent": true}
+{"ts": "2026-11-18T21:10:16+00:00", "title": "🌊 机器人 三浪：尚未启动", "body": "此前：价格先行，财报待验证。已满足：无", "priority": "high", "sent": true}
+{"ts": "2026-11-18T21:10:16+00:00", "title": "🔴 A 进入「回调风险」", "body": "Agilent Technologies, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 55；处于52周区间的 94% 位置；偏离200日线 +28%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T21:10:16+00:00", "title": "🔴 SAIC 进入「回调风险」", "body": "Science Applications Internatio：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 54；处于52周区间的 92% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
+{"ts": "2026-11-18T21:10:16+00:00", "title": "💥 ACHR 单日 -8.1%", "body": "Archer Aviation Inc. 收于 3.23。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-18T21:10:17+00:00", "title": "💥 LUNR 单日 -8.4%", "body": "Intuitive Machines, Inc. 收于 10.12。信号：关注买点。", "priority": "low", "sent": true}
