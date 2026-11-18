@@ -4606,5 +4606,228 @@
     ]
    }
   ]
+ },
+ "autonomous/adas/chip": {
+  "also": [
+   "autonomous/robotaxi/compute"
+  ],
+  "updated": "2026-11-18",
+  "note": "车载 AI 芯片分成两条路：Mobileye 卖“芯片 + 算法”的黑盒方案，量大但单价低、增长放缓；英伟达、高通卖开放的高算力平台，让车企自己写算法，高通凭座舱 + 智驾一体化增长最快；Ambarella、indie 等中小厂只做视觉 / 雷达处理等细分。特斯拉自研 AI5 不对外销售。",
+  "companies": {
+   "MBLY": {
+    "products": "EyeQ6 Lite / EyeQ6 High，SuperVision / Chauffeur / Drive 方案",
+    "what": "EyeQ 是装在挡风玻璃后面摄像头里的芯片，负责识别车道、行人、车辆，实现自动刹车、车道保持等辅助驾驶。Mobileye 把芯片和识别算法一起卖给车企。",
+    "diff": "出货量最大：2026 年三季度 EyeQ 出货 950 万颗（+3%），但收入 4.92 亿美元（−2%），全年收入指引 19.95~20.2 亿美元、仅 +5%~7%，四季度预计环比回落到约 4.5 亿美元；黑盒模式让车企难以自定义，高端方案推广慢于预期。",
+    "ties": "前十大客户 2026 年出货预计 +7%（其产量预计 −5%）；英特尔控股",
+    "src": [
+     [
+      "Mobileye 2026 年三季度业绩新闻稿",
+      "https://ir.mobileye.com/news-releases/news-release-details/mobileye-releases-third-quarter-2026-results-updates-guidance"
+     ]
+    ]
+   },
+   "NVDA": {
+    "products": "DRIVE AGX Thor（SoC）、DRIVE Hyperion 参考平台、DriveOS",
+    "what": "Thor 是给车用的大算力 AI 芯片，可同时跑智驾和座舱，车企在上面运行自己的自动驾驶模型。Hyperion 是一套“芯片 + 传感器 + 软件”的参考设计，车企可以直接拿来改。",
+    "diff": "算力最高、开放平台，偏高端和 Robotaxi；汽车业务规模小，2026 财年二季度汽车收入 5.86 亿美元（+69%），同期开始出货 Thor；之后的单独数字未查到当期来源。",
+    "ties": "激光雷达等传感器伙伴（如禾赛）进入 Hyperion 参考平台",
+    "src": [
+     [
+      "英伟达 2026 财年二季度财报（SEC 8-K，开始出货 DRIVE AGX Thor）",
+      "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm"
+     ]
+    ]
+   },
+   "QCOM": {
+    "products": "Snapdragon Ride（智驾）、Snapdragon Cockpit（座舱）、Ride Flex（座舱 + 智驾单芯片）",
+    "what": "高通把手机芯片的经验搬到车上：一颗芯片同时管仪表盘 / 中控屏幕和辅助驾驶，车企省掉一个盒子。",
+    "diff": "增长最快：2026 财年四季度汽车收入首次超过 20 亿美元（+89%），年化约 80 亿美元；超过 100 万辆车在用 Snapdragon Ride 做辅助驾驶。收入口径包含座舱和连接芯片，不全是智驾。",
+    "ties": "座舱芯片覆盖大量全球车企；与 Mobileye 在中端辅助驾驶直接竞争",
+    "src": [
+     [
+      "Motley Fool：高通 2026 财年四季度电话会实录",
+      "https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "AMBA": {
+    "products": "CV3-AD 系列（智驾域控）、CV2 / CV5 系列（摄像头 / 边缘 AI）",
+    "what": "Ambarella 做视频处理和视觉 AI 芯片，最早用在运动相机和行车记录仪，现在做车上的摄像头感知和集中式智驾芯片。",
+    "diff": "车载收入在 2027 财年二季度创纪录，但公司整体规模小（三季度收入指引 1.15~1.24 亿美元），并提示内存供应紧张、成本上升；CV3-AD 收入按此前口径从 2026 年开始（较早的指引）。三季报 11-24 发布。",
+    "ties": "",
+    "src": [
+     [
+      "Yahoo Finance：Ambarella 2027 财年二季度电话会要点",
+      "https://finance.yahoo.com/markets/stocks/articles/ambarella-inc-amba-q2-2027-110050166.html"
+     ]
+    ]
+   },
+   "INDI": {
+    "products": "毫米波雷达芯片组、视觉处理器、激光雷达 / 用户体验芯片",
+    "what": "indie 做辅助驾驶传感器里的专用芯片：雷达芯片让车“看”到远处的车和障碍物，视觉芯片处理摄像头画面。",
+    "diff": "2026 年三季度收入 7,020 万美元（+31%），雷达芯片组已大规模量产并被北美前三车企之一选中；年内视觉设计订单 40 多个，含人形机器人和无人机；毛利率环比降至约 41.6%（第三方电话会摘要），中国无锡业务出售仍待审批。",
+    "ties": "北美前三车企之一（雷达）",
+    "src": [
+     [
+      "indie Semiconductor 2026 年三季度业绩（SEC 8-K）",
+      "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526449794/indi-ex99_1.htm"
+     ]
+    ]
+   },
+   "TSLA": {
+    "products": "AI5 / AI6（自研 FSD 芯片）",
+    "what": "特斯拉自己设计的车载 AI 芯片，只装在自家车和 Robotaxi 上，跑 FSD 端到端模型。",
+    "diff": "不对外销售，属于自用；对第三方芯片厂的影响是少了一个大客户。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "NXPI": {
+    "products": "S32 系列车规处理器、雷达芯片",
+    "what": "恩智浦做车里大量“非 AI”的控制芯片和雷达芯片，负责把各个传感器和执行器连起来。",
+    "diff": "偏中低算力和安全控制，不和英伟达 / 高通比大算力。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "QCOM",
+    "b": "MBLY",
+    "type": "竞争",
+    "desc": "两家在中端辅助驾驶芯片正面竞争：高通汽车收入 +89%，Mobileye 收入同比下滑、全年仅 +5%~7%。",
+    "src": [
+     "Motley Fool：高通 2026 财年四季度电话会实录",
+     "https://www.fool.com/earnings/call-transcripts/2026/11/05/qualcomm-qcom-q4-2026-earnings-call-transcript/"
+    ]
+   },
+   {
+    "a": "NVDA",
+    "b": "QCOM",
+    "type": "竞争",
+    "desc": "两家都卖开放的高算力车载平台（Thor vs Ride / Ride Flex），争夺高端智驾与座舱一体化订单。",
+    "src": [
+     "英伟达 2026 财年二季度财报（SEC 8-K，开始出货 DRIVE AGX Thor）",
+     "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000207/q2fy26pr.htm"
+    ]
+   },
+   {
+    "a": "INDI",
+    "b": "MBLY",
+    "type": "替代",
+    "desc": "indie 的雷达和视觉芯片走“传感器端专用芯片”路线，与 Mobileye 一体化黑盒方案代表两种架构。",
+    "src": [
+     "indie Semiconductor 2026 年三季度业绩（SEC 8-K）",
+     "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526449794/indi-ex99_1.htm"
+    ]
+   }
+  ]
+ },
+ "autonomous/robotaxi/ee": {
+  "updated": "2026-11-18",
+  "note": "智能车把几十个分散的小控制器合并成少数“域控制器 / 中央计算机”，线束随之变短、变高速（车载以太网）、变高压（电动车）。连接器厂（TE、安费诺）赚“单车含量提升”的钱，跑赢汽车产量；线束本身是劳动密集、利润薄的生意，Aptiv 已在 2026 年把线束业务分拆出去。",
+  "companies": {
+   "APTV": {
+    "products": "智能车架构（SVA）、域控制器 / 中央计算平台、高速连接器、ADAS 软件",
+    "what": "安波福设计车里的“神经系统”：把传感器、计算机、执行器连起来的电子电气架构和高端连接器。原来的线束业务已分拆。",
+    "diff": "2026-04-01 把电气分配系统（线束）业务分拆为独立上市公司 Versigent，不再并表，剩下的是利润率更高的电子 / 软件部分；三季度 GAAP 收入约 32 亿美元。8 月以约 2,500 万美元收购光纤封装公司 OFP。",
+    "ties": "",
+    "src": [
+     [
+      "Aptiv 2026 年三季度 10-Q（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000075/aptv-20260930.htm"
+     ]
+    ]
+   },
+   "~Versigent": {
+    "products": "线束、电气分配系统（原 Aptiv EDS）",
+    "what": "线束就是车里成捆的电线，把电和信号送到每个部件；电动车需要高压线束。",
+    "diff": "2026 年 4 月从 Aptiv 分拆独立上市，代码与当期业绩本次未查到。",
+    "ties": "",
+    "src": [
+     [
+      "Aptiv 2026 年三季度 10-Q（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000075/aptv-20260930.htm"
+     ]
+    ]
+   },
+   "TEL": {
+    "products": "汽车连接器、高压连接器、车载数据连接器、传感器",
+    "what": "泰科做车里各种插头插座：电线和部件之间靠它连接，电动车高压和高速数据传输都需要专门的连接器。",
+    "diff": "单车含量持续提升：2026 财年汽车收入 75.2 亿美元（+5.9%），四季度汽车有机增长约 6%（同期全球汽车产量下降），交通板块订单 +13%；2027 财年预计汽车业务跑赢产量 4~6 个百分点，但全球产量预计仍小幅下降。",
+    "ties": "竞争对手包括 Aptiv、住友、Molex、安费诺（TE 10-K 自述）",
+    "src": [
+     [
+      "TE Connectivity 2026 财年四季度新闻稿",
+      "https://www.te.com/en/about-te/news-center/corporate-news/2026/2026-10-28-te-connectivity-delivers-12-sales-increase-and-over-20-eps-growth-in-fiscal-fourth-quarter.html"
+     ],
+     [
+      "TE Connectivity 2026 财年 10-K（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/0001385157/000110465926124497/tel-20260925x10k.htm"
+     ]
+    ]
+   },
+   "VC": {
+    "products": "SmartCore 座舱域控制器 / 高性能计算（HPC）、数字仪表、显示屏",
+    "what": "伟世通做仪表盘和中控屏背后的“座舱电脑”，一台电脑驱动多块屏幕。",
+    "diff": "2026 年三季度销售 9.7 亿美元（+6%，跑赢客户产量约 10 个百分点），首款 SmartCore HPC 座舱域控制器在奇瑞上量产；但两个仪表项目计提 7,700 万美元保修费用，全年调整后 EBITDA 指引从 4.55~4.95 亿下调到 3.7~4.1 亿美元。",
+    "ties": "奇瑞（SmartCore HPC 首发）",
+    "src": [
+     [
+      "Visteon 2026 年三季度业绩（PR Newswire）",
+      "https://www.prnewswire.com/news-releases/visteon-announces-third-quarter-2026-financial-results-302916099.html"
+     ]
+    ]
+   },
+   "APH": {
+    "products": "汽车连接器、高速线缆组件",
+    "what": "安费诺和泰科类似，做高速和高压连接器，近年增长主要来自 AI 数据中心，汽车是其中一块。",
+    "diff": "汽车业务 2026 年单独数字本次未查到。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "LEA": {
+    "products": "座椅、E-Systems（线束、电气分配、连接器）",
+    "what": "李尔主要做座椅，另一块业务做线束和电气分配盒。",
+    "diff": "E-Systems 2026 年三季度数字本次未查到。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "TEL",
+    "b": "APTV",
+    "type": "竞争",
+    "desc": "TE 在 10-K 中把 Aptiv、住友、Molex 等列为交通连接器业务的主要竞争对手。",
+    "src": [
+     "TE Connectivity 2026 财年 10-K（SEC）",
+     "https://www.sec.gov/Archives/edgar/data/0001385157/000110465926124497/tel-20260925x10k.htm"
+    ]
+   },
+   {
+    "a": "APTV",
+    "b": "Versigent",
+    "type": "合作",
+    "desc": "2026-04-01 Aptiv 把线束 / 电气分配业务分拆为 Versigent，分拆后不再持股、不再并表。",
+    "src": [
+     "Aptiv 2026 年三季度 10-Q（SEC）",
+     "https://www.sec.gov/Archives/edgar/data/0001521332/000152133226000075/aptv-20260930.htm"
+    ]
+   },
+   {
+    "a": "VC",
+    "b": "奇瑞",
+    "type": "客户",
+    "desc": "伟世通首款 SmartCore 座舱高性能计算平台在奇瑞车型上量产。",
+    "src": [
+     "Visteon 2026 年三季度业绩（PR Newswire）",
+     "https://www.prnewswire.com/news-releases/visteon-announces-third-quarter-2026-financial-results-302916099.html"
+    ]
+   }
+  ]
  }
 }
