@@ -803,3 +803,5 @@
 {"ts": "2026-11-18T04:11:50+00:00", "title": "🔄 数据已追上，期间共 34 条变化", "body": "🟢 18 条：ADBE、ASX、BKSY、CRM、GRAB、GWRE、HII、HUBS、IBM、INTU、NTNX、NWSA…\n💥 10 条：ARQQ、BTDR、DRSHF、EOSE、KSCP、MNTS、SSTK、TMC、VELO、YSS\n🌊 5 条：AI、机器人、机器人、航空航天、自动驾驶\n📊 1 条：INFQ\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
 {"ts": "2026-11-18T06:14:03+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
 {"ts": "2026-11-18T06:14:03+00:00", "title": "🌊 自动驾驶 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T13:17:56+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-18T14:17:16+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
