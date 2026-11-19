@@ -1032,3 +1032,9 @@
 {"ts": "2026-11-19T20:17:27+00:00", "title": "🟢 SNPS 进入「关注买点」", "body": "Synopsys, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 39% 位置；偏离200日线 -2%", "priority": "high", "sent": true}
 {"ts": "2026-11-19T20:17:28+00:00", "title": "🌊 机器人 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
 {"ts": "2026-11-19T20:17:28+00:00", "title": "💥 EOSE 单日 -8.1%", "body": "Eos Energy Enterprises, Inc. 收于 1.36。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-19T20:40:45+00:00", "title": "🟢 ODFL 进入「关注买点」", "body": "Old Dominion Freight Line, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 47；处于52周区间的 39% 位置；偏离200日线 -14%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T20:40:45+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-19T21:10:37+00:00", "title": "🟢 NTNX 进入「关注买点」", "body": "Nutanix, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 30；处于52周区间的 57% 位置；偏离200日线 +7%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T21:10:37+00:00", "title": "🟢 TEM 进入「关注买点」", "body": "Tempus AI, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 37；处于52周区间的 41% 位置；偏离200日线 +4%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T21:10:38+00:00", "title": "💥 ESTC 单日 -8.3%", "body": "Elastic N.V. 收于 76.09。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-19T21:10:38+00:00", "title": "💥 TSAT 单日 -8.9%", "body": "Telesat Corporation 收于 41.31。信号：中性。", "priority": "low", "sent": true}
