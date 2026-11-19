@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-19",
+    "text": "情绪面向下：大盘 −2% 当天收 145.98（−3.3%），财报后需求面数据未变，按电力 / 资本 / 承购证明分配供货的表述让新云资金面成为下游约束。",
+    "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
+   },
+   {
+    "date": "2026-11-19",
     "text": "产业面 / 资金面：电话会上 Kress 明确供货分配看电力与机房就绪、资本和承购证明（非投资级客户），价格统一；监管面：已不再向中国发运获许可的 Hopper；需求面：Vera CPU 获 CoreWeave、Meta、Nscale、OpenAI 采用，CPO 进入量产。",
     "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-18",
     "text": "资金面向下（待查证）：据 Seeking Alpha 标题，Michael Burry 质疑华尔街为英伟达客户搭建的大规模融资安排的进展，客户融资链条的可持续性受到公开质疑。",
     "url": "https://seekingalpha.com/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "治理面向下：未按惯例在财报当天提交 10-Q，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220；10-Q 的法律诉讼与风险因素章节成为下一个信息窗口。",
-    "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/"
    }
   ],
   "ANET": [
@@ -74,6 +74,11 @@
    }
   ],
   "INTC": [
+   {
+    "date": "2026-11-19",
+    "text": "产业面向上：18A-P 首个外部客户，大盘 −2% 时逆势 +1.9%，接近 2027 前瞻中值。",
+    "url": "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/"
+   },
    {
     "date": "2026-11-19",
     "text": "产业面 / 预期面向上：CEO 宣布 18A 系列首个外部客户、CTO 确认签的是 18A-P（客户未具名），代工业务从零到一，但离填满产能还远。",
@@ -411,6 +416,11 @@
   "AMD": [
    {
     "date": "2026-11-19",
+    "text": "合规 / 情绪面向下：Hunterbrook 做空报告指称对华敞口（2025 年中国大陆 / 香港开票约占 22%）与固件流向实体清单企业，AMD 否认，报告方承认不构成违规证据；收盘 −7.7%。",
+    "url": "https://finance.yahoo.com/technology/articles/amd-shares-slide-over-9-171600324.html"
+   },
+   {
+    "date": "2026-11-19",
     "text": "情绪面向下 / 监管面待定：据 CNBC 标题，一份做空报告指称 AMD 存在对华敞口，午盘 −9.5% 至 480.00（报告细节未查证）；若指控涉及出口管制合规会触及监管面，目前为做空方单方说法，基本面未变。",
     "url": "https://www.cnbc.com/technology/"
    },
@@ -428,11 +438,6 @@
     "date": "2026-11-17",
     "text": "产业面偏正（未查证细节）：据 Fortune 标题 OpenAI 继续推进与 AMD 的合作、分散对英伟达的依赖；英伟达治理风波强化了客户“第二供应商”的动机（判断）。",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNVVleXlRV2xxdHo2ams5NWFBWUlNdzF1VlNJWWJCX201T0VqVTAyejZFY3ZsVDhGb0FSSDZyUEI3Rk83MjM3SjdBTW1XZHNKckY2eVdjS01yVGk4UWRXeVFYUUM4bGFvUG5VRXphTXEzdU53QUg4S0xiS1ZlZ283eVRwQnhUckNXYjNlWkZDVm96R0EweFFLT1hwZjZmT1pqaTNWcXBtc2FDakdPWUpDLUdIMW96Y0VEejZIajMxelZ"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "产业面偏正：与 DOE 公私合营的 Lux 超算（MI355X，220.79 PF、Top500 第 14）在 ORNL 上线，一半机时对外收费；SC26 上主打 MI430X 原生 FP64，对标英伟达 FP64 仿真方案。",
-    "url": "https://www.datacenterdynamics.com/en/news/oak-ridge-national-laboratory-unveils-lux-supercomputer/"
    }
   ],
   "APLD": [
@@ -450,6 +455,11 @@
    }
   ],
   "NBIS": [
+   {
+    "date": "2026-11-19",
+    "text": "资金面 / 情绪面向下：收盘 −9.4%，未见公司层面新消息，新云在风险偏好下降时跌幅最大。",
+    "url": "https://www.bnnbloomberg.ca/markets/2026/11/19/wall-street-looks-set-to-halt-its-losing-streak-after-anthropics-ipo-revives-ai-stocks/"
+   },
    {
     "date": "2026-11-18",
     "text": "资金面：据 CNBC 标题与 CoreWeave 一同在英伟达财报后下跌（细节未查证），但快照为 +2.9%，来源与快照不一致。",
@@ -469,11 +479,6 @@
     "date": "2026-11-13",
     "text": "资金面偏负：财报后连续两日大跌（今日 −9.9%），资本开支大幅上调叠加 10 年期美债 5.15%，市场在给依赖融资的新云厂商加折价。",
     "url": "https://www.securities.io/nebius-raises-capex-to-27-billion-as-capacity-delays-shift-revenue/"
-   },
-   {
-    "date": "2026-11-12",
-    "text": "晚间细节：收入下调的直接原因是微软 Vineland 数据中心的第三方运营商改用燃料电池，约一半微软容量推迟到 2027 年二季度；2027 资本开支最高 85% 由客户预付款和合同抵押融资覆盖——瓶颈在电和许可，不在需求（基本面兑现推迟，产业面不变）。",
-    "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
    }
   ],
   "AMAT": [
@@ -590,6 +595,11 @@
   "PANW": [
    {
     "date": "2026-11-19",
+    "text": "预期面修复：财报次日 +6.4% 至 361.73，大盘下跌中逆势，但仍低于 2027 前瞻下沿 448.59。",
+    "url": "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html"
+   },
+   {
+    "date": "2026-11-19",
     "text": "情绪面向上：财报次日 +6.4%（快照 361.73），据 CNBC 标题市场认可季报超预期与“开源权重模型安全”方向；价格仍低于 2027 前瞻区间下沿 448.59，修复尚未确认新一浪。",
     "url": "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html"
    },
@@ -607,11 +617,6 @@
     "date": "2026-11-16",
     "text": "预期面：11-18 盘后一季报（公司公告），一致预期 EPS 约 0.97~0.99 美元，上年 LLM 客户迁移带来的一次性 ARR 本季退出，可能压低新一代安全 ARR 增速；现价低于 2027 前瞻下沿。",
     "url": "https://www.earningswhispers.com/article/PANW/23140"
-   },
-   {
-    "date": "2026-11-15",
-    "text": "预期面：11-18 财报；股价 322.24 美元已低于 2027 前瞻下沿 382.6，看平台化（platformization）转换和下一财年指引是否被下修。",
-    "url": "https://seekingalpha.com/article/4967934-palo-alto-networks-solid-fundamentals-but-expectations-are-"
    }
   ],
   "AMPX": [
@@ -829,6 +834,11 @@
   ],
   "INTU": [
    {
+    "date": "2026-11-19",
+    "text": "预期面向下：一季度超预期，但下季 EPS 指引 3.17~3.22 美元远低于 FactSet 3.73 美元，盘后约 −13%；出售 Mailchimp（约 36.8 亿美元）收缩到报税与小企业财务主业。",
+    "url": "https://www.benzinga.com/markets/earnings/26/11/63460648/intuit-stock-tumbles-on-q1-earnings-soft-outlook-mailchimp-divestiture"
+   },
+   {
     "date": "2026-11-17",
     "text": "预期面：11-19 财报前 −7.2%，处于 2027 前瞻区间下沿~中值；软件股集体走弱放大了财报前的不确定性。",
     "url": "https://www.marketwatch.com/story/why-salesforces-stock-is-leading-s-p-500-decliners-amid-tech-jitters-17510caf?mod=mw_rss_topstories"
@@ -914,6 +924,11 @@
   "AMBA": [
    {
     "date": "2026-11-19",
+    "text": "预期面（并购）：据 Seeking Alpha 标题与 NXP 收购谈判或进入最后阶段（未查证），+7.8% 至 58.93、高于 2027 前瞻中值；FT 7-31 首报谈判。",
+    "url": "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
+   },
+   {
+    "date": "2026-11-19",
     "text": "预期面向上（待查证）：据 Seeking Alpha 标题，NXP 收购 Ambarella 的谈判可能进入最后阶段；FT 7 月首次报道谈判时 AMBA 市值约 33 亿美元。",
     "url": "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
    }
@@ -926,6 +941,11 @@
    }
   ],
   "SANM": [
+   {
+    "date": "2026-11-19",
+    "text": "基本面向上但价格未反映：FY27 指引 175~195 亿美元、Helios 开始出货，收盘 154.75 贴近 2027 前瞻下沿 153.36。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
+   },
    {
     "date": "2026-11-19",
     "text": "基本面向上：FY26 收入 +79%、FY27 收入指引 175~195 亿美元，AI 机柜（Helios）开始出货，产业面从 EMS 转向 AI 整柜组装。",
@@ -945,10 +965,28 @@
     "text": "监管面边际向下：据 Reuters 所见内部员工帖子，Meta 的 AI Agent Muse 跨账户串话、暴露他人银行余额等私人数据（TechCrunch 转述），消费级 Agent 的数据隔离成隐私监管风险点。",
     "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
    }
+  ],
+  "KEYS": [
+   {
+    "date": "2026-11-19",
+    "text": "基本面向上：四季度收入约 19.9 亿美元（去年 14.2 亿）、非 GAAP EPS 3.61 美元高于自身指引上沿 3.40，AI 数据中心测试需求兑现；FY27 指引待查。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001601046/000160104626000040/exhibit991-q426pressrelease.htm"
+   }
+  ],
+  "ESTC": [
+   {
+    "date": "2026-11-19",
+    "text": "预期面待定：财报前一天 −8.1%，11-19 盘后发布财报，结果待下次研判补充。",
+    "url": "https://www.barchart.com/story/news/34488552/why-elastic-estc-shares-are-sliding-today"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-19",
+    "text": "11-19 收盘：ANT 首日 +17% 没有带动大盘，纳指 −2.25%、VIX 28.4，AMD（做空报告）、NBIS、CRWV 领跌；INTU 下季指引大幅低于预期并出售 Mailchimp，应用软件被 AI 压缩预期的逆风再坐实一步；KEYS 四季度超指引，AI 测试测量需求向上——硬件需求面与软件预期面继续分化。"
+   },
    {
     "date": "2026-11-19",
     "text": "电力约束从“有没有电”进入“谁承担风险”：北卡 Duke 数据中心电价要求 15 年合约、75% 保底与预付扩建成本，西班牙 Merlin 因拿不到电暂停在建楼（Nebius 为客户）；供给侧英特尔 18A-P 拿到首个外部客户、Vera Rubin 机柜开始在多家云上线，特斯拉以固态变压器切入 800VDC 供电。"
@@ -964,13 +1002,13 @@
    {
     "date": "2026-11-17",
     "text": "英伟达三季报确认需求面（收入 +103%、四季度指引 1,300 亿美元不含中国），同日 SEC 调查报道与员工人才流失警告让治理面继续承压；应用层 Anthropic 上市前软件股集体下跌，“AI 原生替代 SaaS”进入资金面定价。 晚间补充：英伟达全年增长预测上调至 75%、退出对华 H200；瓶颈从 GPU 转到下游机房、电力和客户融资能力。 资金面：英伟达股权投资 / 担保规模达 655 亿 / 1,180 亿美元后，Kress 转向“严格评估 + 多余现金回馈股东”，下游“供应商融资”来源收缩，早期实验室与小型新云融资压力上升。"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "政策面：英伟达把出口管制合规上升到董事会层面（监督委员会），并向客户传导远程算力规则风险、限制对华出租占比过半的云客户——东南亚新云渠道需求确定性下降；需求面暂无负向信号，一级市场（Anthropic IPO 据报道指向区间顶部以上）仍强。 英伟达三季度收入 1,158 亿美元（+103%）、四季度指引 1,300 亿美元，AI 算力需求面得到确认；治理 / 政策面（SEC 调查、出口管制）仍是主要压力，软件股在 Anthropic 上市前承压。"
    }
   ],
   "quantum": [
+   {
+    "date": "2026-11-19",
+    "text": "Google 在《Science》用 Willow 做量子语境性实验：魔方阵游戏胜率 98.3%（经典上限 88.9%），71 名玩家的 GHZ 游戏仍超经典上限、确认 45 比特整体纠缠——用经典上限数学上写死的任务做基准，硬件验证更扎实，但仍非商业应用。"
+   },
    {
     "date": "2026-11-16",
     "text": "量子测量 / 传感路线出现新玩家：GenQ 结束隐身，做室温、可嵌入现有光网络的量子测量产品（新闻稿，未披露融资额），这条路径比量子计算更早产生收入，但单个市场更小。"
@@ -986,10 +1024,6 @@
    {
     "date": "2026-11-13",
     "text": "PsiQuantum 与 AMD 据报共同设计混合量子-经典基础设施（标题，细节未查证），GPU / CPU 厂商在量子-经典接口层的合作继续扩大。"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "产业面：FAI 政策报告指出制冷、激光器、硅-28、氦-3、光开关等使能层供应商拿到的联邦量子资金不到 12%，AI 基础设施还在挤占光子芯片和光纤供给——供应链是比 qubit 数更现实的商业化约束，政策可能转向预先市场承诺和产能投资。"
    }
   ],
   "robotics": [
@@ -1016,6 +1050,10 @@
   ],
   "aerospace": [
    {
+    "date": "2026-11-19",
+    "text": "Relativity Terran R 首飞二级完成 400 秒以上全时长点火、首飞主结构鉴定全部关闭（NASASpaceflight）：SpaceX 之外的中重型运力在靠近，对 Neutron 是竞争、对卫星运营商是议价改善。"
+   },
+   {
     "date": "2026-11-18",
     "text": "太空军 NSSL Lane 2 最高 9.85 亿美元合同修改授予 SpaceX、ULA、Blue Origin，Rocket Lab 未入选；太空股普遍回落（RKLB −3.6%、ASTS −7.6%、LUNR −8.4%）。"
    },
@@ -1030,10 +1068,6 @@
    {
     "date": "2026-11-14",
     "text": "Starship 上面级首次塔架回收成功（11-14），助推器未回收；“完全可复用”完成一半，重型运力成本曲线继续下移。"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "Starship 第 15 次试飞上面级入轨，但助推器取消回收、改为溅落，首次双回收未完成；SpaceX 的 740 亿美元数据中心计划和与特斯拉的合并审查是另外两条线。"
    }
   ],
   "autonomous": [
@@ -1055,53 +1089,97 @@
  "daily": [
   {
    "date": "2026-11-19",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。【07:28 更新，含 Summizer 新增的 2 篇】资金面：TechCrunch 梳理 Anthropic 上市前的“循环融资”结构——英伟达、AMD、微软、博通、美光、台积电与谷歌以 83 美元 IPO 价私募认购 260 亿美元，除台积电外均为其供应商；Q3 收入 170 亿美元，监管文件显示已承诺约 9,000 亿美元支出（主要为算力），上市后现金约 2,200 亿美元——买单方从供应商换成公开市场，供应链订单的资金来源更稳，资金面向上。情绪面：盘中 MU 快照 753.87（+6.9%）、INTC 58.80（+7.6%），据 MarketWatch 标题为 AI 芯片股集体反弹（细节未查证）；ANT 首日开盘价暂未查到可靠报道。另据 DCD，倡导组织 Better Data Center Project 估算 Anthropic 已测绘美国站点约 60% 电力需求与天然气挂钩（未经独立验证），电力约束仍指向燃气。整体结论不变。【08:28 更新，含 Summizer 新增的 3 篇】基本面：Powell（POWL）FY26 四季度收入 3.97 亿美元（+33%）、毛利率 34.9%、新订单 7.1 亿美元（订单出货比 1.8，含约 8,500 万美元数据中心大单）、积压 27 亿美元（同比 +96%）（公司 8-K），数据中心供配电链条的基本面继续向上。产业面：据 DCD 转述 OpenAI 博客，其模型参与芯片设计，自研推理芯片 Jalapeño 向量 / 矩阵单元面积分别减少 13% / 10%，与 AMD 合作在 GPU IP 上实现最高 14% 的 PPA 改进（OpenAI 单方披露，AMD 部分未查证到独立来源）。航天面：Telesat 与 GEO 子公司债权人签订停滞协议至 2027-01-18，12-6 到期的贷款与票据暂缓强制执行、继续付息，Q3 GEO 收入同比 −21%（DCD）——GEO 旧资产的再融资压力与 LEO 的增长形成分化。ANT 首日开盘价仍未查到可靠报道。整体结论不变。【09:28 更新，含 Summizer 新增的 5 篇】预期面：ANT 周四开盘 111.50 美元、较 83 美元发行价 +34%，对应估值约 2 万亿美元；IPO + 260 亿美元私募合计超 940 亿美元，超过 SpaceX 6 月的 860 亿美元（SiliconANGLE）。招股文件显示前 9 个月收入 332.4 亿美元、净亏损 1,040 亿美元（据 FT 主要来自可转债与衍生负债公允价值变动，属会计效应），10 月底年化收入 810 亿美元——模型层的预期面继续向上。资金面 / 情绪面：据 Seeking Alpha 标题，Anthropic 带动的芯片股反弹回落（细节未查证），快照 AMD 481.33（−9.2%）、MU 694.59（−1.5%）、NVDA 148.09（−1.9%），资金在模型层与硬件层之间来回切换，芯片情绪的第二浪仍未确认。产业面：中国首个华为 Ascend 950DT 集群在汕头海缆登陆站投运，以“token 出口”为模式，称海外需求超每天 3 万亿 token（DCD）——出口管制限住了硬件，限不住跨境算力服务。整体结论不变。【10:29 更新，含 Summizer 新增的 2 篇】情绪面 / 监管面：据 CNBC 标题，AMD 午盘大跌源于一份做空报告指称其存在对华敞口（报告方与具体指控细节未查证；今年 5 月 Culper Research 曾以经东南亚中间商转运为由做空英伟达，英伟达称未发现转运证据），快照 AMD 480.00（−9.5%）——此前把 AMD 的跌幅归为“芯片反弹回落”需修正为以个股事件为主。该指控若被证实会触及监管面（出口管制合规），目前仅是做空方单方说法，基本面数据未变。另据 TechCrunch 转述 Reuters 所见的 Meta 内部员工帖子，Meta 的 AI Agent Muse 出现跨账户串话、暴露他人银行余额等隐私问题，消费级 Agent 的瓶颈在数据隔离而非模型能力，META 监管面边际向下（快照 601.76，−2.4%）。整体结论不变：算力需求面确定，压力集中在治理 / 合规与资金面。【11:28 更新，含 Summizer 新增的 1 篇】产业面：Google 在 Mac 版 Gemini 中加入 computer use（操作本机原生应用、后台浏览网页，执行前可人工批准；仅美国英文付费订阅，TechCrunch）——Agent 从云端隔离环境走向用户本机，每一步都要处理截屏这类多模态输入，推理算力的需求面再添一个场景，但没有使用量数据，属于追赶 OpenAI / Anthropic 的产品补齐。情绪面：据 Reuters 标题，特朗普 9 月披露买入最多 26.5 万美元英伟达股票（细节未查证），属于小额披露、不改变基本面。其余新增为 ANT 上市与英伟达 CEO 离任的评论文章，已在前几次更新中覆盖。整体结论不变。【12:28 更新，含 Summizer 新增的 4 篇】产业面 / 资金面：SiliconANGLE 复盘英伟达首次无黄仁勋的财报电话会——Kress 把供货分配标准讲得更明确：先看土地、电力和机房能否当季接收，其次看资本，非投资级客户还需“承购证明”，并称价格对所有客户一致；这意味着瓶颈已从芯片转到电力与资产负债表，新云的资金面约束会直接决定能拿到多少货。监管面：Kress 披露已不再向中国发运获许可的 Hopper 数据中心产品。需求面：引用 OpenRouter 称智能体约占 80% token，CPU 需求远超供给，Vera CPU 已被 CoreWeave、Meta、Nscale、OpenAI 采用；共封装光学（CPO）已进入量产。另据 TechCrunch，Anthropic 公益基金约 8.5 亿股 + 员工捐赠配捐预留超 5.5 亿股，未来变现节奏是 ANT 筹码面的长期变量。整体结论不变。【13:28 更新】预期面 / 情绪面：PANW 财报次日快照 361.73（+6.4%），据 CNBC 标题，市场在消化季报超预期与公司押注“保护开源权重模型”安全的方向（以全股票收购 Applied Compute 为载体，细节未查证）；股价仍低于 2027 前瞻区间下沿（448.59），属于基本面改善后的情绪修复，尚不足以确认新一浪。量子面：据 The Quantum Insider 标题，Google 量子芯片在“协作类”测试中超越经典极限（细节未查证），延续硬件里程碑叙事、不改变浪位。另：系统今天的机器人板块一浪信号在“尚未启动 / 财报已改善”之间反复切换（收入增速一项处于阈值边缘），以收盘数据为准。其余为英伟达 / AMD / ANT 的评论与已覆盖事件。整体结论不变。",
+   "market": "【收盘完整研判，含 13:28 后 Summizer 新增的 3 篇】资金面没有改善：系统资金面得分 21（钱贵 / 紧缩），10 年期美债 5.05%（一年 +93bp）、美元指数 103.93（一年 +4.4%）、高收益债相对长期国债近 3 个月 −1.5%，资金在避险。情绪面明显转冷：Anthropic（ANT）首日开盘较 83 美元发行价 +34%、收盘约 +17%，但没有带动大盘——道指跌约 1,100 点、纳指 −2.25% 至 23,879、标普 −2.0% 连跌第 6 天（AP 称为 2024 年以来最长连跌），超过 90% 的标普成分股下跌；VIX 收 28.4（近一年 99% 分位，期限结构倒挂）、CNN 恐贪指数 19（极度恐惧，一周前 40），而三倍做多 ETF 成交占比仍在 87% 分位，杠杆还没出清。报道把下跌归因于 AI 估值担忧、通胀与联储利率路径、英伟达管理层变动；个股层面 AMD −7.7%（Hunterbrook 做空报告指称对华敞口，AMD 否认）、NBIS −9.4%、CRWV −6.1%，盘后 INTU 因下季指引远低于预期跌约 13%。浪位：AI 一浪、三浪仍是“财报已改善，价格未反映”，二浪“尚未启动”，今天的抛售是价格层面的，没有看到基本面数据被下修；整体结论不变——需求面确定，压力在资金面（利率）、治理 / 合规面与情绪面，本页 735 家中只有 28% 站上 200 日线。",
    "sectors": {
-    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。【07:28】资金面：Anthropic 260 亿美元 IPO 私募的认购方（NVDA/AMD/MSFT/AVGO/MU/TSM/GOOGL）同时是其供应商，SemiAnalysis 估算其未来四年需约 2,800 亿美元累计收入覆盖算力账单（TechCrunch），IPO 把循环融资交给公开市场检验。产业面：Sanmina（SANM）11-9 公布 FY26 收入 145.3 亿美元（+79%），FY27 收入指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K），快照 SANM 165.64，位于 2027 前瞻区间（158.67/218.05/303.99）下沿附近。政策面：商务部 11-16 公布 33 个 AI 出口联盟，据报道锚定方含 NVDA、OpenAI、英特尔、AMD 等；Seeking Alpha 标题称 Salesforce 也在其中（未查证到 Salesforce 入选原文）。据 Tom's Hardware 标题英特尔继续裁员（IT 部门数百人，细节未查证），不影响今天 18A 外部客户的产业面判断。【08:28】基本面：POWL 四季度积压 27 亿美元（+96%）、订单出货比 1.8，快照 161.85（+4.5%），位于 2027 前瞻区间（119.66/165.78/224.01）中值下方附近。产业面：OpenAI 称模型辅助芯片设计带来 Jalapeño 面积改进、AMD GPU IP 最高 14% PPA 提升（OpenAI 单方披露，DCD）；“AI 设计芯片”若成立会压缩设计周期，对 EDA 与定制芯片生态是边际变量。【09:28】ANT 首日开盘 +34%（SiliconANGLE），模型层预期面向上，但芯片股午盘回落（AMD −9.2%，原因细节未查证）。产业面：Vultr 在 SC26 称 agentic AI 重新拉动 CPU 需求、已下 12 亿美元 AMD Helios 机架订单（厂商赞助访谈）；华为 Ascend 950DT 集群在汕头投运做 token 出口（DCD）。据 Bloomberg 标题阿里巴巴收入超预期（细节未查证）。【10:29】AMD −9.5% 据 CNBC 标题为做空报告指称对华敞口（细节未查证），属个股合规 / 情绪事件，非板块需求变化；Meta AI Agent Muse 据 Reuters 内部帖子出现跨账户数据泄露（TechCrunch），消费级 Agent 的数据隔离成为监管风险点。【11:28】Gemini Mac 版上线 computer use（TechCrunch），桌面 Agent 竞争从模型方转向平台方（macOS 系统层在苹果手里，Google 只能走截屏 + 模拟操作路线）；可靠性与权限隔离仍是瓶颈，与上午 Meta Muse 串话事件指向同一风险点。快照 GOOGL 278.18（−1.5%），位于 2027 前瞻区间（147.21/227.7/363.06）中值~上沿。【12:28】英伟达电话会复盘（SiliconANGLE）：供货按“电力 / 机房就绪 → 资本 → 承购证明”分配，Vera CPU 被 CoreWeave、Meta 等采用，CPO 量产，对华已停发 Hopper。推理芯片创业公司继续绕开 HBM：d-Matrix 下一代 Raptor 用 3D 堆叠 DRAM 并接入 NVLink Fusion，Axelera Titania 主打 20~30kW 风冷机柜（均为厂商赞助访谈，数据未经独立验证）——推理瓶颈在内存墙与每瓦性能，英伟达通过开放 NVLink Fusion 把异构系统层留在自己手里。据 Seeking Alpha 标题，Q3 13F 显示部分对冲基金减持 AMD、两家清仓（细节未查证）。快照 NVDA 147.09（−2.6%），位于 2027 前瞻区间（99.84/180.15/264.93）下沿~中值；AMD 479.41（−9.6%），位于（362.26/587.15/1023.89）下沿~中值。【13:28】AI 安全层：PANW 财报次日 +6.4%（快照 361.73，低于 2027 前瞻下沿 448.59），CNBC 标题称其押注“开源权重模型安全”。",
-    "quantum": "【06:35】BMO 称与希腊 DUTH 在 IBM 量子计算机（含 Nighthawk r2）上完成机器学习特征选择并实现“量子效用”，样本量少一到两个数量级（BMO 新闻稿、经 IBM 审阅，非独立同行评审）；IOSCO 报告称金融市场抗量子准备仍处早期、部分业内人士建议按“五年内可能破解主流加密”做准备（The Quantum Insider）——后量子密码迁移是比量子硬件更确定的支出；SK Broadband 将在韩国—新加坡海缆测试量子安全，Quandela 与汉民科技签 MoU。产业面偏正但均为早期，不改变浪位。【09:28】英伟达 SC26 发布的 Slurm 26.11 新增分层资源 HRES，Pasqal 让其 QPU 可被超算调度器原生调度（经 QRMI，厂商中立，也适用于 IBM），目前在模拟环境与 Pasqal Cloud 验证、CINECA 落地中（Pasqal 新闻稿）——量子进超算的“调度层”打通，产业面小幅向上，不改变浪位。【10:29】私营公司 Delta Gold 设立量子传感专项（金纳米团簇，Penn State / 多伦多大学两条路线；公司通稿性质，未经独立验证），延续“传感先于计算商业化”的趋势。【13:28】据 The Quantum Insider 标题，Google 量子芯片在多比特“协作”测试中超越经典模拟极限（细节未查证），产业面里程碑延续，不改变浪位。",
-    "robotics": "【09:28】MegaRobo（AI 驱动的实验室机器人）完成 2 亿美元融资、累计 6 亿美元（SiliconANGLE）——“AI for Science”把实验执行交给机器人，属一级市场的产业面信号，不涉及本站上市公司浪位。",
-    "aerospace": "【06:35】英伟达 SEC 文件显示同期增持 SpaceX 770 万股、持股总值约 196.8 亿美元（DCD），轨道 / 太空算力叙事的股东绑定加深；不改变板块浪位。【08:28】Telesat 就 GEO 子公司债务签停滞协议至 2027-01-18（12-6 本金到期、继续付息），Q3 GEO 收入 −21%（DCD）；GEO 传统运营商资产负债表承压，板块内部向 LEO 分化，不改变浪位。快照 TSAT 45.04，位于 2027 前瞻区间（0/25.23/70.27）中值~上沿。",
-    "autonomous": "【06:35】据 Seeking Alpha 标题，Ambarella（AMBA，车载 / 边缘视觉芯片）因 NXP 收购谈判或进入最后阶段而上涨（细节未查证），快照 AMBA 54.64，高于 2027 前瞻区间中值（29.09/49.94/86.09 的中值~上沿），自动驾驶感知芯片的并购估值锚值得跟踪。"
+    "ai": "产业面（全天汇总）：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名）、Vera Rubin NVL72 在 Nscale / CoreWeave / Oracle / Google Cloud 上线，英伟达电话会明确按“电力 / 机房能否当季接收 → 资本 → 承购证明”分配供货，瓶颈从芯片转到电力与客户资产负债表；北卡 Duke 数据中心电价（15 年合约、75% 保底）把电力风险转给用电方。预期面分化：KEYS 四季度收入约 19.9 亿美元（去年同期 14.2 亿）、非 GAAP EPS 3.61 美元高于自身 3.34~3.40 指引（公司 8-K），AI 测试测量需求向上；INTU 一季度超预期但下季 EPS 指引 3.17~3.22 美元远低于 FactSet 预期 3.73 美元，并以约 36.8 亿美元把 Mailchimp 卖给 Bending Spoons（Benzinga），“AI 冲击应用软件”的逆风被财报指引坐实了一步。合规面：Hunterbrook（自称持有 AMD 空头）指称被列入实体清单的浪潮信息仍收到 AMD 固件更新、AMD 2025 年对中国大陆 / 香港开票 77.5 亿美元约占 22%，Hunterbrook 自己也承认记录本身不构成违规，AMD 否认其表述。一级市场：AI 药物发现工具 Boltz 完成 1.1 亿美元 A 轮，按 token 计费的 API 自 6 月以来客户消耗增长 50 倍（公司口径，SiliconANGLE），垂直模型推理需求延续。",
+    "quantum": "产业面小幅向上：Google 在《Science》发表基于 Willow 的量子语境性实验——“魔方阵游戏”胜率 98.3%（经典上限 88.9%），多人 GHZ 游戏直到 71 名玩家仍超经典上限，确认最多 45 个量子比特处于整体纠缠（The Quantum Insider）。意义在于用“经典上限数学上写死”的任务做硬件基准，比随机线路采样更难被经典算法追平，但仍是物理验证而非商业应用，不改变浪位。另有 BMO 在 IBM 机器上做的金融机器学习“量子效用”（非独立同行评审）、Pasqal 接入 Slurm 调度器，均属早期。",
+    "robotics": "无重要新信息（仅一级市场：MegaRobo 实验室机器人融资 2 亿美元，不涉及本站上市公司）；系统机器人一浪在“尚未启动 / 财报已改善”之间反复切换，以收盘数据为准当前为“财报已改善，价格未反映”。",
+    "aerospace": "产业面：Relativity 的 Terran R 首飞二级在斯坦尼斯完成超过 400 秒全时长点火，级间段完成结构鉴定，首飞所有主结构鉴定关闭，LC-16 发射台在改造（NASASpaceflight）——SpaceX 之外的中重型运力供给在靠近，对 RKLB Neutron 是竞争、对卫星运营商是议价改善（私营公司，判断）。资金面：Telesat GEO 债务停滞协议至 2027-01-18，TSAT 今天 −8.9%；BKSY −9.0%、VOYG −6.8%，跌幅与大盘风险偏好下降一致，未见公司层面新事件。",
+    "autonomous": "无重要新信息。AMBA +7.8% 至 58.93，据 Seeking Alpha 标题与 NXP 的收购谈判或进入最后阶段（未查证到 11 月的独立报道；FT 7-31 首次报道谈判）；INVZ −22.6%、ARBE −11.6% 为激光雷达 / 雷达小盘股随风险偏好下跌，未查证到公司层面原因。"
    },
    "watch": [
     {
-     "t": "INTC",
-     "why": "18A-P 拿到首个外部客户（客户未具名，DCD），代工“从零到一”；快照 54.67，2027 前瞻区间 29.98/56.35/116.19 的下沿~中值、接近中值。 07:28 快照 58.80（+7.6%），已略高于 2027 前瞻中值 58.44，同时有 IT 部门裁员报道。"
+     "t": "INTU",
+     "why": "一季度 EPS 2.91 美元、收入 43.5 亿美元均超预期，但下季调整后 EPS 指引 3.17~3.22 美元远低于 FactSet 的 3.73 美元，盘后约 −13% 至约 267（Benzinga / CNBC）；同时 36.8 亿美元出售 Mailchimp。按盘后价，处于 2027 前瞻区间 230.89 / 335.84 / 535.62 的下沿~中值、更靠下沿。"
     },
     {
-     "t": "NVDA",
-     "why": "治理面持续：7~9 月卖出过半诺基亚持股、增持 SpaceX（SEC 文件），超微股东诉讼标题牵涉英伟达高管家属（未查证）；快照 150.96（−2.9%），2027 前瞻区间 102.85/184.89/272.94 的下沿~中值。 11-19 午盘快照 148.09（−1.9%），位于 2027 前瞻区间（100.52/181.37/266.73）中值下方。 12:28：电话会明确按电力 / 资本 / 承购证明分配供货，对华已停发 Hopper，CPO 量产；现价 147.09 位于 2027 前瞻区间下沿~中值。"
-    },
-    {
-     "t": "SMCI",
-     "why": "据 Tom's Hardware 标题遭股东起诉、指称英伟达高管妻子知悉违规对华销售（细节未查证），今年 3 月已有同类集体诉讼；快照 24.37，2027 前瞻区间 19.95/28.03/39.56 的下沿~中值。"
-    },
-    {
-     "t": "AMBA",
-     "why": "NXP 收购谈判或进入最后阶段（Seeking Alpha 标题，未查证）；快照 54.64，2027 前瞻区间 29.09/49.94/86.09 的中值~上沿。"
-    },
-    {
-     "t": "TSLA",
-     "why": "发布 Powercore 固态变压器平台进入数据中心供电（最高 7.4MW，明年投运，厂商自述）；快照 383.72，2027 前瞻区间 112.37/314.09/781.0 的中值~上沿。"
-    },
-    {
-     "t": "DUK",
-     "why": "北卡批准数据中心专属电价类别（15 年合约、75% 保底、预付扩建成本，1-1 生效）；快照 130.05，约在 2027 前瞻区间中值（95.99/130.28/172.29）。"
-    },
-    {
-     "t": "SANM",
-     "why": "FY26 收入 145.3 亿美元（+79%）、FY27 指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K）；快照 165.64（+5.1%），位于 2027 前瞻区间 158.67/218.05/303.99 的下沿附近，信号“关注买点”。"
-    },
-    {
-     "t": "POWL",
-     "why": "FY26 Q4 收入 +33%、毛利率 34.9%、积压 27 亿美元（+96%）、订单出货比 1.8；现价 161.85 位于 2027 前瞻区间（119.66/165.78/224.01）中值下方附近。"
+     "t": "KEYS",
+     "why": "四季度收入约 19.9 亿美元（去年同期 14.2 亿）、非 GAAP EPS 3.61 美元，超出自身指引 3.34~3.40（公司 8-K）；盘后反应和 FY27 指引未查到可靠报道。收盘 281.42，位于 2027 前瞻区间 236.84 / 344.67 / 506.79 的下沿~中值。"
     },
     {
      "t": "AMD",
-     "why": "11-19 快照 481.33（−9.2%），位于 2027 前瞻区间（363.72/589.51/1028.0）下沿~中值之间；同日 Vultr 披露 12 亿美元 Helios 机架订单（厂商访谈），下跌原因细节未查证，据 Seeking Alpha 标题为 Anthropic 带动的芯片反弹回落。 【10:29】据 CNBC 标题，午盘跌约 9.5% 至 480.00 源于做空报告指称对华敞口（细节未查证），现价处 2027 前瞻区间 362.71 / 587.88 / 1,025.15 的下沿~中值之间。"
+     "why": "收盘 489.19（−7.7%）：Hunterbrook 做空报告指称对华敞口与固件流向实体清单企业，AMD 否认，Hunterbrook 承认不构成违规证据；位于 2027 前瞻区间 369.65 / 599.13 / 1,044.78 的下沿~中值。"
+    },
+    {
+     "t": "NVDA",
+     "why": "收盘 145.98（−3.3%），财报后两天累计下跌；电话会明确按电力 / 资本 / 承购证明分配供货、对华停发 Hopper。位于 2027 前瞻区间 99.08 / 178.79 / 262.93 的下沿~中值，信号“关注买点”。"
+    },
+    {
+     "t": "PANW",
+     "why": "本页唯一“低于 2027 前瞻下沿”的人工确认公司：财报后 +6.4% 至 361.73，仍低于下沿 448.59；CNBC 称季报超预期并以全股票收购 Applied Compute 押注开源权重模型安全。大盘 −2% 当天逆势上涨，预期面修复。"
+    },
+    {
+     "t": "NBIS",
+     "why": "收盘 96.92（−9.4%），CRWV 44.91（−6.1%），新云在风险偏好下降时跌幅最大；未查证到公司层面新消息，压力来自资金面（英伟达供货按资产负债表分配、Duke 电价保底条款）。NBIS 位于 2027 前瞻区间 78.13 / 124.83 / 189.9 的下沿~中值。"
+    },
+    {
+     "t": "SANM",
+     "why": "FY27 收入指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K），但收盘 154.75 已贴近 2027 前瞻下沿 153.36（中值 210.76），到中值空间约 36%，是“低于上沿”名单里空间最大的人工确认公司。"
+    },
+    {
+     "t": "ESTC",
+     "why": "财报前一天 −8.1% 至 76.33，财报于 11-19 盘后发布，结果与盘后反应未查到可靠报道；位于 2027 前瞻区间 64.73 / 93.48 / 135.43 的下沿~中值，和 INTU 一起检验“AI 是否压缩软件预期”。"
+    },
+    {
+     "t": "AMBA",
+     "why": "大盘 −2% 时 +7.8% 至 58.93，据 Seeking Alpha 标题与 NXP 的收购谈判或进入最后阶段（未查证）；已高于 2027 前瞻中值 51.86（上沿 89.41），价格开始反映并购溢价。"
+    },
+    {
+     "t": "INTC",
+     "why": "18A-P 首个外部客户（DCD，客户未具名）后，大盘 −2% 时收 55.72（+1.9%），贴近 2027 前瞻中值 56.89（下沿 30.26、上沿 117.3）。"
     }
    ],
    "sources": [
+    [
+     "AP/BNN Bloomberg：Wall Street tumbles to its longest losing streak since 2024 as the Dow drops 1,100 points",
+     "https://www.bnnbloomberg.ca/markets/2026/11/19/wall-street-looks-set-to-halt-its-losing-streak-after-anthropics-ipo-revives-ai-stocks/"
+    ],
+    [
+     "Motley Fool：Dow Plunges 1,100 Points as the S&P 500 Suffers Its 6th Straight Day of Losses",
+     "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/"
+    ],
+    [
+     "Benzinga：Intuit Stock Tumbles On Q1 Earnings, Soft Outlook, Mailchimp Divestiture",
+     "https://www.benzinga.com/markets/earnings/26/11/63460648/intuit-stock-tumbles-on-q1-earnings-soft-outlook-mailchimp-divestiture"
+    ],
+    [
+     "CNBC：Stocks making the biggest moves after hours: Intuit, Gap, Anthropic, Ross Stores",
+     "https://www.cnbc.com/2026/11/19/stocks-moving-the-most-today-live-updates.html"
+    ],
+    [
+     "Keysight Q4 FY2026 press release (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0001601046/000160104626000040/exhibit991-q426pressrelease.htm"
+    ],
+    [
+     "Yahoo Finance：AMD shares slide over 9% after short seller raises concerns over China exposure",
+     "https://finance.yahoo.com/technology/articles/amd-shares-slide-over-9-171600324.html"
+    ],
+    [
+     "Motley Fool：First Nvidia, Now AMD: A Short Seller Just Put Its China Business Under the Microscope",
+     "https://www.fool.com/investing/2026/11/19/first-nvidia-now-amd-a-short-seller-just-put-its-china-business-under-the-microscope/"
+    ],
+    [
+     "The Quantum Insider：Google’s Quantum Chip Beats Classical Limits in Tests of Teamwork",
+     "https://thequantuminsider.com/2026/11/19/googles-quantum-chip-beats-classical-limits-in-tests-of-teamwork/"
+    ],
+    [
+     "NASASpaceflight：Relativity tests Terran R second stage, completes structural qualifications",
+     "https://www.nasaspaceflight.com/2026/11/relativity-update-1116/"
+    ],
+    [
+     "SiliconANGLE：Medical AI startup Boltz raises $110M",
+     "https://siliconangle.com/2026/11/19/medical-ai-startup-boltz-raises-110m-to-speed-up-small-molecule-research/"
+    ],
     [
      "Intel secures first external customer for 18A-P process node (DCD)",
      "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/"
@@ -1119,28 +1197,8 @@
      "https://www.datacenterdynamics.com/en/news/north-carolina-utility-duke-energy-secures-regulatory-approval-for-new-data-center-rate-class/"
     ],
     [
-     "Nscale brings Nvidia Vera Rubin NVL72 rack online (DCD)",
-     "https://www.datacenterdynamics.com/en/news/nscale-brings-nvidia-vera-rubin-nvl72-rack-online/"
-    ],
-    [
-     "Merlin pauses two data centers near Bilbao (DCD)",
-     "https://www.datacenterdynamics.com/en/news/merlin-pauses-development-on-two-data-centers-near-bilbao-spain-due-to-grid-issues/"
-    ],
-    [
-     "ChronoScale and STN form JV in Odessa, Texas (DCD)",
-     "https://www.datacenterdynamics.com/en/news/chronoscale-and-stn-form-jv-to-develop-data-center-campus-in-odessa-texas/"
-    ],
-    [
      "BMO reports quantum utility using IBM quantum computers (The Quantum Insider)",
      "https://thequantuminsider.com/2026/11/19/bmo-reports-quantum-utility-in-machine-learning-application-using-ibm-quantum-computers/"
-    ],
-    [
-     "Securities regulators warn on quantum security (The Quantum Insider)",
-     "https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake/"
-    ],
-    [
-     "Super Micro sued by shareholders over China-related criminal case (Reuters / Yahoo, 2026-03)",
-     "https://finance.yahoo.com/markets/stocks/articles/super-micro-sued-shareholders-over-221915002.html"
     ],
     [
      "NXP reportedly in talks to buy Ambarella (Investing.com)",
@@ -1151,24 +1209,12 @@
      "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
     ],
     [
-     "Non-profit claims 60% of Anthropic’s mapped US data center power demand is tied to natural gas (DCD)",
-     "https://www.datacenterdynamics.com/en/news/non-profit-claims-60-of-anthropics-mapped-us-data-center-power-demand-is-tied-to-natural-gas/"
-    ],
-    [
      "Sanmina Reports Fourth Quarter and Fiscal 2026 Financial Results (SEC 8-K)",
      "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
     ],
     [
-     "American AI Exports Program consortia (aiexports.gov)",
-     "https://aiexports.gov/ai-consortia"
-    ],
-    [
      "Powell Industries FY2026 Q4 8-K",
      "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000139/ex991-powlq4xfy2026earning.htm"
-    ],
-    [
-     "OpenAI claims its models have delivered chip design improvements (DCD)",
-     "https://www.datacenterdynamics.com/en/news/openai-claims-its-models-have-delivered-chip-design-improvements-across-both-in-house-and-amd-designed-hardware/"
     ],
     [
      "Telesat pauses debt repayments to GEO subsidiary creditors (DCD)",
@@ -1177,10 +1223,6 @@
     [
      "After Anthropic prices IPO higher than expected, shares shoot up 34% in trading debut",
      "https://siliconangle.com/2026/11/18/after-anthropic-prices-ipo-higher-than-expected-shares-shoot-up-34-trading-debut/"
-    ],
-    [
-     "Agentic AI pushes the neocloud race beyond GPU counts toward global platforms",
-     "https://siliconangle.com/2026/11/19/global-cloud-availability-sets-neocloud-platforms-apart-sc26/"
     ],
     [
      "Data center powered by Huawei Ascend chips launches in China",
@@ -1195,22 +1237,6 @@
      "https://siliconangle.com/2026/11/19/china-based-ai-robotics-biotech-firm-megarobo-raises-200m-to-accelerate-scientif/"
     ],
     [
-     "CNBC 科技：AMD dives on short-seller report of alleged China exposure（标题）",
-     "https://www.cnbc.com/technology/"
-    ],
-    [
-     "TechCrunch：Meta 的 AI Agent Muse 混淆对话并暴露隐私数据",
-     "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
-    ],
-    [
-     "The Quantum Insider：Delta Gold 设立量子传感专项",
-     "https://thequantuminsider.com/2026/11/19/delta-gold-launches-dedicated-quantum-sensing-program/"
-    ],
-    [
-     "Stocktwits：Culper Research 做空英伟达（2026-05 背景）",
-     "https://stocktwits.com/news-articles/markets/equity/nvidia-stock-draws-attention-as-culper-research-takes-short-position-over-china-ties/cZXLrSBReKF"
-    ],
-    [
      "Google gives Gemini the ability to use your Mac for you (TechCrunch)",
      "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
     ],
@@ -1219,24 +1245,8 @@
      "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
     ],
     [
-     "D-Matrix bets stacked DRAM can solve inference's memory bandwidth problem",
-     "https://siliconangle.com/2026/11/19/raptor-chip-stacks-3d-dram-tackle-inference-memory-limits-sc26/"
-    ],
-    [
-     "AI inference servers shrink to fit the air-cooled racks enterprises already run",
-     "https://siliconangle.com/2026/11/19/power-efficient-inference-chips-let-enterprises-own-ai-hardware-sc26/"
-    ],
-    [
-     "Anthropic's IPO could deliver $156 billion to charity",
-     "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/"
-    ],
-    [
      "CNBC：Palo Alto stock jumps on earnings beat and big bet on securing open-weight models",
      "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html"
-    ],
-    [
-     "The Quantum Insider：Google’s Quantum Chip Beats Classical Limits in Tests of Teamwork",
-     "https://thequantuminsider.com/2026/11/19/googles-quantum-chip-beats-classical-limits-in-tests-of-teamwork/"
     ]
    ]
   },
@@ -3222,7 +3232,7 @@
    ]
   }
  ],
- "updated": "2026-11-19T13:28",
+ "updated": "2026-11-19T14:26",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
@@ -3283,15 +3293,19 @@
    ]
   },
   "AMD": {
-   "date": "2026-11-13",
+   "date": "2026-11-19",
    "dir": "分化",
-   "text": "基本面顺风不变：数据中心收入近乎翻倍，MI450 / Helios 放量，OpenAI、Meta、微软、甲骨文在部署，“第二供应商”逻辑受益于客户不想被英伟达锁死。新增逆风是板块层面的：英伟达管理层真空让市场整体下调 AI 算力的风险偏好，11-13 单日 −8.8%，跌幅大于英伟达本身。",
-   "miss": "最大的增量订单（OpenAI 6GW）依赖 OpenAI 的融资能力；ROCm 与 CUDA 的生态差距决定份额上限；资金面紧缩（10 年期 5.15%）时高估值算力股的估值压缩，前瞻区间都反映不了（判断）。",
-   "watch": "OpenAI 融资进展、Helios 机柜实际出货量、数据中心 GPU 毛利率、英伟达 11-17 财报对板块情绪的影响。",
+   "text": "基本面顺风不变：数据中心收入近乎翻倍，MI450 / Helios 放量，Vultr 等新云下单 Helios 机架。新增逆风在合规面：Hunterbrook（自称持有空头）指称被列入实体清单的浪潮信息仍收到 AMD 固件更新、2025 年对中国大陆 / 香港开票 77.5 亿美元约占收入 22%，封测高度依赖通富微电控股的合资厂；AMD 否认其表述，Hunterbrook 也承认记录不构成违规证据。11-19 收盘 −7.7%。",
+   "miss": "出口管制合规若被监管跟进，影响的是中国区收入与封测供应链，前瞻区间完全不反映；最大的增量订单（OpenAI 6GW）依赖 OpenAI 的融资能力；ROCm 与 CUDA 的生态差距决定份额上限；10 年期 5% 以上时高估值算力股的估值压缩（判断）。",
+   "watch": "商务部 / 国会是否就做空报告跟进问询、AMD 下季中国区收入占比、Helios 机柜实际出货量、数据中心 GPU 毛利率。",
    "src": [
     [
-     "MarketWatch：AMD 等芯片股下跌（标题）",
-     "https://www.marketwatch.com/story/amd-and-other-chip-stocks-slide-as-wall-street-rethinks-the-ai-trade-without-jensen-huang-2fb74547?mod=mw_rss_topstories"
+     "Yahoo Finance：AMD shares slide over 9% after short seller raises concerns over China exposure",
+     "https://finance.yahoo.com/technology/articles/amd-shares-slide-over-9-171600324.html"
+    ],
+    [
+     "Motley Fool：First Nvidia, Now AMD: A Short Seller Just Put Its China Business Under the Microscope",
+     "https://www.fool.com/investing/2026/11/19/first-nvidia-now-amd-a-short-seller-just-put-its-china-business-under-the-microscope/"
     ],
     [
      "CNBC：AMD 数据中心收入近乎翻倍",
@@ -3512,12 +3526,25 @@
    ]
   },
   "INTU": {
-   "date": "2026-11-08",
+   "date": "2026-11-19",
    "dir": "逆风",
-   "text": "TurboTax 和 QuickBooks 握有大量个人和小企业的财务数据，这是护城河；但 AI 助手已经能直接帮用户报税和记账，市场担心它被绕开，股价从高点下跌近一半。",
-   "miss": "一致预期仍按历史增速外推；如果 AI 助手分走低端报税用户，客户数会先下滑，预期要等报税季结束才会修正。",
-   "watch": "TurboTax 客户数和份额、QuickBooks 净留存率、AI 功能的付费率。",
-   "src": []
+   "text": "一季度收入 43.5 亿美元、EPS 2.91 美元仍超预期，说明存量 TurboTax / QuickBooks 客户还在付费；但下季 EPS 指引 3.17~3.22 美元远低于 FactSet 的 3.73 美元，盘后约 −13%，叠加出售 Mailchimp（约 36.8 亿美元给 Bending Spoons），公司在收缩到报税与小企业财务两条主线。顺风是数据护城河与 AI 助手功能，逆风是 AI 通用助手直接替代低端报税 / 记账（判断）。",
+   "miss": "前瞻区间按一致预期算，而一致预期还没按新指引下修，盘后价对应的区间位置会随预期下修而上移（即“看起来便宜”可能是预期滞后）；出售 Mailchimp 后收入基数变小、2027 年数字需要重估；报税季（1~4 月）的客户数才是 AI 替代是否发生的真正检验。",
+   "watch": "下季指引的拆分（TurboTax 与 Credit Karma 各自增速）、FY27 全年指引是否随之下调、2027 报税季客户数与份额、QuickBooks Online 净留存率。",
+   "src": [
+    [
+     "Benzinga：Intuit Stock Tumbles On Q1 Earnings, Soft Outlook, Mailchimp Divestiture",
+     "https://www.benzinga.com/markets/earnings/26/11/63460648/intuit-stock-tumbles-on-q1-earnings-soft-outlook-mailchimp-divestiture"
+    ],
+    [
+     "CNBC：Stocks making the biggest moves after hours: Intuit",
+     "https://www.cnbc.com/2026/11/19/stocks-moving-the-most-today-live-updates.html"
+    ],
+    [
+     "Intuit 重申 Q1 / FY27 指引（RTTNews）",
+     "https://www.rttnews.com/3691925/intuit-reiterates-q1-fy27-outlook.aspx"
+    ]
+   ]
   },
   "ADBE": {
    "date": "2026-11-08",
@@ -4448,6 +4475,104 @@
     [
      "TeraWulf 10-Q（SEC）",
      "https://www.sec.gov/Archives/edgar/data/0001083301/000162828026071671/wulf-20260930.htm"
+    ]
+   ]
+  },
+  "KEYS": {
+   "date": "2026-11-19",
+   "dir": "顺风",
+   "text": "四季度收入约 19.9 亿美元（去年同期 14.2 亿）、非 GAAP EPS 3.61 美元，高于自身 3.34~3.40 指引（公司 8-K）；管理层在三季度就说进入 FY27 的约束是供给而不是需求。AI 数据中心的光互连、1.6T 以太网、PCIe / CXL 和 6G 研发都需要新一代测试测量仪器，代际切换越快越受益（判断）。",
+   "miss": "测试测量是研发预算驱动，客户研发开支在周期高点后会先砍仪器；供给受限意味着收入确认节奏可能低于订单；收购 Spirent 等带来的整合与无形资产摊销让 GAAP 利润与非 GAAP 差距较大。",
+   "watch": "FY27 一季度收入 / EPS 指引、订单出货比、通信解决方案集团（含 AI 数据中心）的订单增速、供给约束何时缓解。",
+   "src": [
+    [
+     "Keysight Q4 FY2026 press release (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0001601046/000160104626000040/exhibit991-q426pressrelease.htm"
+    ],
+    [
+     "Chartmill：KEYS Q3 Earnings Call Spotlights AI Demand and Supply Limits",
+     "https://www.chartmill.com/news/external/127399/keys-q3-earnings-call-spotlights-ai-demand-and-supply-limits"
+    ]
+   ]
+  },
+  "SANM": {
+   "date": "2026-11-19",
+   "dir": "顺风",
+   "text": "FY26 收入 145.3 亿美元（+79%，含并购 ZT Systems 制造业务），FY27 收入指引 175~195 亿美元，AMD Helios 机柜开始出货（公司 8-K）——从传统 EMS 变成 AI 机柜整机制造商。股价 154.75 却贴近 2027 前瞻下沿 153.36，市场在给“代工整机”的低利润率和客户集中度打折（判断）。",
+   "miss": "机柜整机收入高、毛利率低，收入增速不等于利润增速；客户高度集中于 AMD 及其云客户，Helios 放量节奏取决于 AMD 份额和 OpenAI 等客户的融资能力；新云资金面收紧会直接传导到机柜订单。",
+   "watch": "季度毛利率与营业利润率、Helios 出货量、前五大客户占比、经营现金流与存货周转。",
+   "src": [
+    [
+     "Sanmina Reports Fourth Quarter and Fiscal 2026 Financial Results (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
+    ]
+   ]
+  },
+  "CHPT": {
+   "date": "2026-11-19",
+   "dir": "分化",
+   "text": "二季度（FY27）收入 1.161 亿美元（+18%）、非 GAAP 毛利率创纪录 38%、调整后 EBITDA 亏损收窄到 480 万美元，成本端改善明显；但三季度收入指引 1.05~1.15 亿美元，中值同比仅约 +4%，管理层称二季度北美家充高销量不会重复。顺风是毛利率与亏损改善，逆风是北美电动车渗透放缓和补贴退坡（判断）。",
+   "miss": "前瞻区间按一致预期给出较大上行空间，但收入基数小、对单季硬件销量敏感；持续亏损下的现金消耗与可能的再融资摊薄前瞻估值反映不了。",
+   "watch": "三季度（12 月初发布）收入是否落在指引内、订阅收入占比、调整后 EBITDA 何时转正、现金余额。",
+   "src": [
+    [
+     "Pulse 2.0：ChargePoint Q2 Fiscal 2027 Revenue Rises 18% To $116.1 Million",
+     "https://pulse2.com/chargepoint-q2-fiscal-2027-revenue-rises-18-to-116-1-million-as-non-gaap-gross-margin-hits-record-38/"
+    ],
+    [
+     "ChargePoint Q2 FY2027 results（公司 PDF）",
+     "https://s22.q4cdn.com/779683160/files/doc_news/ChargePoint-Reports-Second-Quarter-Fiscal-Year-2027-Financial-Results-2026.pdf"
+    ]
+   ]
+  },
+  "EVGO": {
+   "date": "2026-11-19",
+   "dir": "分化",
+   "text": "三季度总收入约 9,140 万美元（−1%），但充电网络收入 7,200 万美元（+29%），调整后 EBITDA 亏损收窄到 350 万美元；全年收入指引下调到 3.75~4.0 亿美元（中值低于此前约 4.15 亿、低于一致预期约 4.9%）。另有 LS Power 提出每股 2.00 美元的非约束性收购提议，特别委员会在评估（公司 8-K）。核心充电业务顺风，外围业务拖累。",
+   "miss": "LS Power 的 2.00 美元提议给了价格锚，若被接受，前瞻区间的远期上行无从兑现；全年指引已下调、一致预期可能还要跟着下修；新建桩依赖政府贷款与补贴。",
+   "watch": "特别委员会对 LS Power 提议的决定、充电网络收入增速、单桩利用率、新增桩数是否落在 1,075~1,275 区间。",
+   "src": [
+    [
+     "EVgo Q3 2026 results (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0001821159/000182115926000032/exhibit991evgoearningsrele.htm"
+    ],
+    [
+     "Webull：EVgo reports sales below analyst estimates in Q3 2026",
+     "https://www.webull.com/news/15893612975681536"
+    ]
+   ]
+  },
+  "INDI": {
+   "date": "2026-11-19",
+   "dir": "顺风",
+   "text": "三季度收入 7,020 万美元（+31%），高于指引中值，核心业务收入环比 +14% 至 4,070 万美元；四季度指引同比 +33%、核心收入 +64%（公司 8-K）。ADAS 雷达 / 摄像头 / 激光雷达芯片的设计订单开始转成收入（判断）。",
+   "miss": "GAAP 营业亏损仍有 3,900 万美元，非 GAAP 盈利时点（据第三方转述为 2027 年二季度）未经公司原文确认；出售无锡 indie Micro 会改变收入结构；汽车客户的车型量产节奏可能推迟。",
+   "watch": "四季度收入是否兑现 +33%、核心收入占比、非 GAAP 营业亏损收窄速度、无锡业务出售进展。",
+   "src": [
+    [
+     "indie Semiconductor Q3 2026 results (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0001841925/000119312526449794/indi-ex99_1.htm"
+    ],
+    [
+     "Panabee：indie Q3 Revenue Grows 31% to $70.2 Million",
+     "https://www.panabee.com/news/indie-semiconductor-earnings-q3-2026"
+    ]
+   ]
+  },
+  "AMBA": {
+   "date": "2026-11-19",
+   "dir": "分化",
+   "text": "FT 7-31 报道 NXP 在洽谈收购 Ambarella（当时市值约 33 亿美元），NXP 想补齐车载视觉 / 边缘 AI 能力；11-19 据 Seeking Alpha 标题谈判或进入最后阶段，股价 +7.8% 至 58.93、已高于 2027 前瞻中值。自身业务顺风是安防与车载边缘 AI 推理芯片，逆风是汽车客户份额集中和中国安防市场下滑（判断）。",
+   "miss": "股价已经部分反映并购溢价，若谈判破裂会回到基本面估值；即便成交，也需要多国反垄断审批（NXP 2016 年被高通收购就因中国审批失败）。",
+   "watch": "NXP / Ambarella 是否发布正式公告及价格、下次财报（11-24）的车载与边缘 AI 收入、毛利率。",
+   "src": [
+    [
+     "Investing.com：Ambarella reportedly in talks to be acquired by NXP",
+     "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
+    ],
+    [
+     "SiliconANGLE：NXP reportedly in talks to acquire vehicle chip supplier Ambarella",
+     "https://siliconangle.com/2026/07/31/nxp-reportedly-talks-acquire-vehicle-chip-supplier-ambarella/"
     ]
    ]
   }

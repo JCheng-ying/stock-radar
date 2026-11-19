@@ -4829,5 +4829,276 @@
     ]
    }
   ]
+ },
+ "aerospace/defense/sensor": {
+  "updated": "2026-11-19",
+  "note": "导弹预警 / 跟踪卫星正在从“少量大卫星（SBIRS / Next-Gen OPIR）”转向 SDA 的“大量低轨小卫星分批采购”：每批（Tranche）按固定价格分给 3~4 家主承包商各造一个轨道面。好处是供应商分散、更新快；坏处是固定价合同把成本超支风险压给承包商，且单家公司的收入高度依赖下一批是否中标。Golden Dome 让 SDA 在 2026 年 7 月又追加了“加速导弹防御”批次。",
+  "companies": {
+   "LHX": {
+    "products": "SDA Tracking Layer Tranche 1/2/3 跟踪卫星、Tranche 3 加速导弹防御（AMDT3）卫星、红外载荷",
+    "what": "L3Harris 既造整颗卫星也造卫星上的红外“眼睛”：在低轨用红外相机盯住导弹发射时的尾焰，并持续跟踪高超音速目标。",
+    "diff": "Tranche 3 跟踪层两次都中标：2025-12 拿到 18 颗约 8.43 亿美元（固定价），2026-07 又在 AMDT3 中拿到约 9.55 亿美元，是目前该环节拿单最多的上市公司。",
+    "ties": "客户 SDA / 美国太空军；数据记录器选用 Mercury（2026-04）",
+    "src": [
+     [
+      "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+      "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+     ],
+     [
+      "L3Harris and Sierra Space Receive $1.75B for SDA Tranche 3（Via Satellite，2026-07-13）",
+      "https://www.satellitetoday.com/government-military/2026/07/13/l3harris-and-sierra-space-receive-1-75b-for-sda-tranche-3-tracking-layer/"
+     ]
+    ]
+   },
+   "RKLB": {
+    "products": "Tranche 3 跟踪层 18 颗卫星、Phoenix 宽视场红外载荷（来自 2025 年收购的 Geost）",
+    "what": "火箭实验室原来主要发射小卫星，收购红外传感器公司 Geost 后，可以自己造带红外相机的导弹跟踪卫星，从“运输”变成“整星 + 载荷”供应商。",
+    "diff": "2025-12 中标 18 颗，金额报道有分歧（8.05 亿或 8.16 亿美元）；2026-07 的 AMDT3 加速批次未中标；据报道首批发射预计在 2029 财年。",
+    "ties": "客户 SDA；Geost 的 StarLite 传感器此前被诺格等主承包商采购（据报道）",
+    "src": [
+     [
+      "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+      "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+     ],
+     [
+      "Rocket lab snags IR sensor maker in $275M deal（Payload）",
+      "https://payloadspace.com/rocket-lab-snags-ir-sensor-maker-in-275m-deal/"
+     ]
+    ]
+   },
+   "NOC": {
+    "products": "Tranche 3 跟踪层 18 颗导弹预警 / 跟踪卫星、Next-Gen OPIR 极轨预警卫星",
+    "what": "诺斯罗普·格鲁曼造的是“宽视场发现 + 持续跟踪机动目标”的低轨预警卫星，也负责高轨道的新一代红外预警卫星。",
+    "diff": "2025-12 中标 18 颗约 7.64 亿美元（固定价）；2026-07 AMDT3 未中标。",
+    "ties": "客户 SDA / 太空军",
+    "src": [
+     [
+      "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+      "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+     ]
+    ]
+   },
+   "?RTX": {
+    "products": "雷神的天基红外与导弹预警载荷",
+    "what": "雷神做导弹预警用的红外传感器和地面处理系统。",
+    "diff": "本次未查到 Tranche 3 跟踪层的中标记录（四家为 L3Harris、Rocket Lab、诺格、洛马；AMDT3 为 L3Harris、Sierra Space）。",
+    "ties": "",
+    "src": [
+     [
+      "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+      "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+     ]
+    ],
+    "unverified": true
+   },
+   "YSS": {
+    "products": "SDA 运输层（Transport Layer）卫星平台：Tranche 1 已部署 21 颗、Tranche 2 Alpha 62 颗、Gamma 10 颗",
+    "what": "York 造的是标准化小卫星“底盘”，SDA 星座里负责传数据的运输层卫星大量用它；跟踪层不是它的主业。",
+    "diff": "2026-01 以 34 美元 IPO 募资 6.29 亿美元；2026-05 做空机构 Wolfpack 指称 Tranche 3 运输层合同被终止、该合同约占年收入 96%（做空方说法，未查到一手来源确认）。",
+    "ties": "客户 SDA",
+    "src": [
+     [
+      "York Space Systems raises $629M in upsized IPO（SatNews）",
+      "https://satnews.com/2026/01/29/york-space-systems-raises-629m-in-upsized-ipo-to-scale-defense-production/"
+     ],
+     [
+      "York Space Systems 10-K（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/2086587/000162828026019923/yorkspacesystemsinc10-k.htm"
+     ]
+    ]
+   },
+   "?TDY": {
+    "products": "红外焦平面探测器（FLIR / Teledyne 成像传感器）",
+    "what": "Teledyne 做红外相机里最核心的“感光芯片”，卖给造预警卫星的主承包商。",
+    "diff": "本次未查到与 Tranche 3 具体项目的公开供货关系。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "?LDOS": {
+    "products": "导弹预警地面处理与系统集成",
+    "what": "Leidos 做的是卫星数据落地后的处理和指挥系统集成，不造卫星。",
+    "diff": "本次未查到当期来源。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "SIDU": {
+    "products": "LizzieSat 小卫星平台、MDA SHIELD IDIQ 入围",
+    "what": "Sidus Space 是做小卫星平台和在轨数据服务的小公司，入围了导弹防御局 SHIELD 合同框架。",
+    "diff": "2025-12 入围 SHIELD（上限 1,510 亿美元的 IDIQ），入围时没有拨付资金，需竞争具体任务单；本次未查到 2026 年获得的具体任务单。",
+    "ties": "客户 MDA（框架合同）",
+    "src": [
+     [
+      "MDA taps Sidus, Ursa Space for $151B Golden Dome SHIELD contract（SatNews）",
+      "https://satnews.com/2025/12/22/mda-taps-sidus-ursa-space-for-151-billion-golden-dome-shield-contract/"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "LHX",
+    "b": "RKLB",
+    "type": "竞争",
+    "desc": "Tranche 3 跟踪层两家各造 18 颗；2026-07 AMDT3 加速批次只有 L3Harris 和 Sierra Space 中标。",
+    "src": [
+     "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+     "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+    ]
+   },
+   {
+    "a": "LHX",
+    "b": "NOC",
+    "type": "竞争",
+    "desc": "同一批 Tranche 3 跟踪层，各 18 颗、均为固定价合同。",
+    "src": [
+     "SDA Awards $3.5B in Tranche 3 Tracking Layer Contracts（Payload）",
+     "https://payloadspace.com/sda-awards-3-5b-in-tranche-3-tracking-layer-contracts/"
+    ]
+   },
+   {
+    "a": "LHX",
+    "b": "~Sierra Space",
+    "type": "竞争",
+    "desc": "AMDT3 加速导弹防御批次 36 颗，L3Harris 约 9.55 亿美元、Sierra Space 约 7.98 亿美元，目标 2028 年底前发射。",
+    "src": [
+     "L3Harris and Sierra Space Receive $1.75B for SDA Tranche 3（Via Satellite）",
+     "https://www.satellitetoday.com/government-military/2026/07/13/l3harris-and-sierra-space-receive-1-75b-for-sda-tranche-3-tracking-layer/"
+    ]
+   },
+   {
+    "a": "MRCY",
+    "b": "LHX",
+    "type": "供应",
+    "desc": "L3Harris 选用 Mercury 的固态数据记录器用于 Tranche 3 跟踪层卫星（2026-04）。",
+    "src": [
+     "L3Harris selects Mercury to provide solid-state data recorders（Mercury 新闻稿）",
+     "https://newsroom.mrcy.com/posts/pressreleases/l3harris-selects-mercury-to-provide-solid-sta-1"
+    ]
+   },
+   {
+    "a": "RKLB",
+    "b": "~Geost",
+    "type": "收购",
+    "desc": "Rocket Lab 以约 2.75 亿美元收购红外载荷公司 Geost，获得 Phoenix 等导弹预警传感器能力。",
+    "src": [
+     "Rocket lab snags IR sensor maker in $275M deal（Payload）",
+     "https://payloadspace.com/rocket-lab-snags-ir-sensor-maker-in-275m-deal/"
+    ]
+   }
+  ]
+ },
+ "aerospace/rocket/avion": {
+  "updated": "2026-11-19",
+  "note": "火箭航电（飞行计算机、惯导、遥测）分两条路线：SpaceX、Rocket Lab 等新火箭公司大多自研航电以控制成本和迭代速度；传统国防航天主承包商则向 L3Harris、柯林斯、霍尼韦尔、Mercury 等外购抗辐射计算机和惯导。上市公司里真正以“航天级电子”收入可见的是 Mercury 和 TTM，但航天占它们收入的比例都不高。",
+  "companies": {
+   "MRCY": {
+    "products": "抗辐射 / 抗辐照处理与存储子系统、6U SpaceVPX 处理板（AMD Versal）、固态数据记录器",
+    "what": "Mercury 做“能在太空和导弹上用的电脑零件”：经得起辐射和剧烈震动的处理板和存储设备，卖给造卫星、导弹的主承包商。",
+    "diff": "自称已支持 75 个以上航天器、交付 2 万多件航天部件无在轨失效；2026-01 宣布两个航天与战略武器项目合计超过 6,000 万美元订单；2026-04 拿到 L3Harris 跟踪层卫星的数据记录器订单。主要在卫星和战略导弹，而不是商业运载火箭。",
+    "ties": "客户 L3Harris 等主承包商",
+    "src": [
+     [
+      "Mercury Awarded Contracts for U.S. Space and Strategic Weapons Programs（2026-01-15）",
+      "https://www.nasdaq.com/press-release/mercury-awarded-contracts-us-space-and-strategic-weapons-programs-2026-01-15"
+     ],
+     [
+      "L3Harris selects Mercury to provide solid-state data recorders（2026-04-02）",
+      "https://newsroom.mrcy.com/posts/pressreleases/l3harris-selects-mercury-to-provide-solid-sta-1"
+     ]
+    ]
+   },
+   "TTMI": {
+    "products": "航天 / 国防用印制电路板、微电子组件、射频组件",
+    "what": "TTM 做电子设备里的电路板和组件，国防航天版本要求更高可靠性。",
+    "diff": "国防航天约占收入四成；Q3 2026 公司收入约 12 亿美元、A&D 积压约 20 亿美元、订单出货比 2.13；管理层称 A&D 管线中航天仅约 5%（雷达约 50%）；为 Artemis II 的 SLS 火箭和猎户座飞船提供微电子与电路板。",
+    "ties": "客户 NASA 项目主承包商、雷达系统商",
+    "src": [
+     [
+      "TTM Tech Q1 2026 earnings call transcript（Motley Fool）",
+      "https://www.fool.com/earnings/call-transcripts/2026/04/29/ttm-tech-ttmi-q1-2026-earnings-transcript/"
+     ],
+     [
+      "TTM Investor Relations",
+      "https://investors.ttm.com/"
+     ]
+    ]
+   },
+   "?HON": {
+    "products": "惯性导航（IMU / 环形激光陀螺）、飞行控制与航电",
+    "what": "霍尼韦尔的惯导告诉火箭“我在哪、朝哪个方向、速度多少”，没有 GPS 也能用。",
+    "diff": "2026-06 董事会批准分拆航空航天业务为独立上市公司 Honeywell Aerospace（代码 HONA，按每 2 股 HON 分 1 股）；航电与导航业务随之归入 HONA，本站代码仍挂在 HON 下，需要复核。",
+    "ties": "",
+    "src": [
+     [
+      "Honeywell Board of Directors Approves Spin-Off of Honeywell Aerospace（2026-06）",
+      "https://www.honeywell.com/us/en/press/2026/06/honeywell-board-of-directors-approves-spin-off-of-honeywell-aerospace"
+     ]
+    ]
+   },
+   "?LHX": {
+    "products": "遥测、通信与航电子系统；Aerojet Rocketdyne 发动机",
+    "what": "L3Harris 给火箭和导弹提供遥测、通信电子，以及通过 Aerojet 提供发动机。",
+    "diff": "本次未查到 2026 年火箭航电的当期具体合同。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "?RTX": {
+    "products": "柯林斯宇航航电、惯导",
+    "what": "柯林斯做飞机和航天器的航电系统。",
+    "diff": "本次未查到 2026 年运载火箭航电的当期来源。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "?CW": {
+    "products": "加固型嵌入式计算、飞行测试仪器与遥测",
+    "what": "Curtiss-Wright 做国防级的加固电脑和飞行测试数据采集设备。",
+    "diff": "本次未查到当期来源。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "?TDY": {
+    "products": "航天级成像与电子组件",
+    "what": "Teledyne 提供航天用传感器和电子组件。",
+    "diff": "本次未查到当期来源。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   },
+   "?NOC": {
+    "products": "运载火箭与导弹航电（含固体火箭项目）",
+    "what": "诺格自己造固体火箭和导弹，航电以自研为主。",
+    "diff": "本次未查到当期来源。",
+    "ties": "",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "MRCY",
+    "b": "LHX",
+    "type": "供应",
+    "desc": "Mercury 为 L3Harris 的 SDA Tranche 3 跟踪层卫星提供固态数据记录器。",
+    "src": [
+     "L3Harris selects Mercury to provide solid-state data recorders（Mercury 新闻稿）",
+     "https://newsroom.mrcy.com/posts/pressreleases/l3harris-selects-mercury-to-provide-solid-sta-1"
+    ]
+   },
+   {
+    "a": "HON",
+    "b": "~Honeywell Aerospace（HONA）",
+    "type": "收购",
+    "desc": "霍尼韦尔把航空航天业务（含航电与导航）分拆为独立上市公司，每 2 股 HON 分 1 股 HONA（关系类型为分拆，按最接近的“收购”类目记录）。",
+    "src": [
+     "Honeywell Board of Directors Approves Spin-Off of Honeywell Aerospace",
+     "https://www.honeywell.com/us/en/press/2026/06/honeywell-board-of-directors-approves-spin-off-of-honeywell-aerospace"
+    ]
+   }
+  ]
  }
 }
