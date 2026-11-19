@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-19",
+    "text": "政策面偏正：商务部 11-16 公布 33 个 AI 出口联盟，据报道英伟达为锚定方之一（获优先出口管制沟通与联邦融资对接）。",
+    "url": "https://aiexports.gov/ai-consortia"
+   },
+   {
+    "date": "2026-11-19",
     "text": "治理面 / 生态面偏负：SEC 文件显示 7~9 月卖出 9,353 万股诺基亚（过半持股）、减持英特尔 25%、增持 SpaceX 770 万股——卖出早于黄仁勋离任，但 AI-RAN 等技术路线绑定在减弱。",
     "url": "https://www.datacenterdynamics.com/en/news/nvidia-sells-more-than-half-of-nokia-stake/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-18",
     "text": "情绪面继续回落：MarketWatch / Reuters 标题称强劲指引未能消除不确定性、被市场“耸肩以对”，快照 150.96（−2.9%），资金面向 Anthropic IPO 等模型层轮动。",
     "url": "https://www.marketwatch.com/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "治理面：临时 CEO Kress 首次全员会，并承诺 12 月前加薪、发股权以平息员工不满（据 CNBC / Tom's Hardware 标题，细节未查证）——减轻了人才流失风险，代价是运营费用和稀释上升；同日财报后的反弹熄火，情绪面回落。",
-    "url": "https://www.tomshardware.com/"
    }
   ],
   "ANET": [
@@ -48,6 +48,11 @@
   ],
   "MU": [
    {
+    "date": "2026-11-19",
+    "text": "资金面向上：美光以 IPO 价参与 Anthropic 260 亿美元私募，同时是其存储供应商（循环融资结构）；盘中 +6.9%。",
+    "url": "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
+   },
+   {
     "date": "2026-11-18",
     "text": "产业面偏正（重申）：据 Seeking Alpha 标题，美光预计 2027~28 年供给比 2026 年更紧并继续与英伟达合作，与 9 月财报会“看不到供需恢复平衡”的口径一致；快照 705.27，位于 2027 前瞻中值下方。",
     "url": "https://tech-insider.org/micron-memory-crunch-20-percent-supply-growth-2026/"
@@ -66,11 +71,6 @@
     "date": "2026-11-16",
     "text": "资金面向下：芯片板块抛售加剧（MarketWatch 标题），盘中 −6.5%、收盘 −7.6% 至 719.02，落到 2027 前瞻区间中值下方；产业面无新消息。",
     "url": ""
-   },
-   {
-    "date": "2026-11-15",
-    "text": "预期面向下（监管折价）：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证），不改 HBM / DRAM 需求面。",
-    "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
    }
   ],
   "INTC": [
@@ -914,6 +914,13 @@
     "text": "基本面偏正：北卡批准数据中心专属电价类别（>100MW 须签 15 年、75% 保底计费、预付电网扩建与搁浅发电费，1-1 生效），电网扩建风险转给数据中心运营方。",
     "url": "https://www.datacenterdynamics.com/en/news/north-carolina-utility-duke-energy-secures-regulatory-approval-for-new-data-center-rate-class/"
    }
+  ],
+  "SANM": [
+   {
+    "date": "2026-11-19",
+    "text": "基本面向上：FY26 收入 +79%、FY27 收入指引 175~195 亿美元，AI 机柜（Helios）开始出货，产业面从 EMS 转向 AI 整柜组装。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
+   }
   ]
  },
  "sectors": {
@@ -1024,9 +1031,9 @@
  "daily": [
   {
    "date": "2026-11-19",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。【07:28 更新，含 Summizer 新增的 2 篇】资金面：TechCrunch 梳理 Anthropic 上市前的“循环融资”结构——英伟达、AMD、微软、博通、美光、台积电与谷歌以 83 美元 IPO 价私募认购 260 亿美元，除台积电外均为其供应商；Q3 收入 170 亿美元，监管文件显示已承诺约 9,000 亿美元支出（主要为算力），上市后现金约 2,200 亿美元——买单方从供应商换成公开市场，供应链订单的资金来源更稳，资金面向上。情绪面：盘中 MU 快照 753.87（+6.9%）、INTC 58.80（+7.6%），据 MarketWatch 标题为 AI 芯片股集体反弹（细节未查证）；ANT 首日开盘价暂未查到可靠报道。另据 DCD，倡导组织 Better Data Center Project 估算 Anthropic 已测绘美国站点约 60% 电力需求与天然气挂钩（未经独立验证），电力约束仍指向燃气。整体结论不变。",
    "sectors": {
-    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。",
+    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。【07:28】资金面：Anthropic 260 亿美元 IPO 私募的认购方（NVDA/AMD/MSFT/AVGO/MU/TSM/GOOGL）同时是其供应商，SemiAnalysis 估算其未来四年需约 2,800 亿美元累计收入覆盖算力账单（TechCrunch），IPO 把循环融资交给公开市场检验。产业面：Sanmina（SANM）11-9 公布 FY26 收入 145.3 亿美元（+79%），FY27 收入指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K），快照 SANM 165.64，位于 2027 前瞻区间（158.67/218.05/303.99）下沿附近。政策面：商务部 11-16 公布 33 个 AI 出口联盟，据报道锚定方含 NVDA、OpenAI、英特尔、AMD 等；Seeking Alpha 标题称 Salesforce 也在其中（未查证到 Salesforce 入选原文）。据 Tom's Hardware 标题英特尔继续裁员（IT 部门数百人，细节未查证），不影响今天 18A 外部客户的产业面判断。",
     "quantum": "【06:35】BMO 称与希腊 DUTH 在 IBM 量子计算机（含 Nighthawk r2）上完成机器学习特征选择并实现“量子效用”，样本量少一到两个数量级（BMO 新闻稿、经 IBM 审阅，非独立同行评审）；IOSCO 报告称金融市场抗量子准备仍处早期、部分业内人士建议按“五年内可能破解主流加密”做准备（The Quantum Insider）——后量子密码迁移是比量子硬件更确定的支出；SK Broadband 将在韩国—新加坡海缆测试量子安全，Quandela 与汉民科技签 MoU。产业面偏正但均为早期，不改变浪位。",
     "robotics": "无重要新信息。",
     "aerospace": "【06:35】英伟达 SEC 文件显示同期增持 SpaceX 770 万股、持股总值约 196.8 亿美元（DCD），轨道 / 太空算力叙事的股东绑定加深；不改变板块浪位。",
@@ -1035,7 +1042,7 @@
    "watch": [
     {
      "t": "INTC",
-     "why": "18A-P 拿到首个外部客户（客户未具名，DCD），代工“从零到一”；快照 54.67，2027 前瞻区间 29.98/56.35/116.19 的下沿~中值、接近中值。"
+     "why": "18A-P 拿到首个外部客户（客户未具名，DCD），代工“从零到一”；快照 54.67，2027 前瞻区间 29.98/56.35/116.19 的下沿~中值、接近中值。 07:28 快照 58.80（+7.6%），已略高于 2027 前瞻中值 58.44，同时有 IT 部门裁员报道。"
     },
     {
      "t": "NVDA",
@@ -1056,6 +1063,10 @@
     {
      "t": "DUK",
      "why": "北卡批准数据中心专属电价类别（15 年合约、75% 保底、预付扩建成本，1-1 生效）；快照 130.05，约在 2027 前瞻区间中值（95.99/130.28/172.29）。"
+    },
+    {
+     "t": "SANM",
+     "why": "FY26 收入 145.3 亿美元（+79%）、FY27 指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K）；快照 165.64（+5.1%），位于 2027 前瞻区间 158.67/218.05/303.99 的下沿附近，信号“关注买点”。"
     }
    ],
    "sources": [
@@ -1102,6 +1113,22 @@
     [
      "NXP reportedly in talks to buy Ambarella (Investing.com)",
      "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
+    ],
+    [
+     "Anthropic’s IPO puts AI’s circular financing boom to the test (TechCrunch)",
+     "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
+    ],
+    [
+     "Non-profit claims 60% of Anthropic’s mapped US data center power demand is tied to natural gas (DCD)",
+     "https://www.datacenterdynamics.com/en/news/non-profit-claims-60-of-anthropics-mapped-us-data-center-power-demand-is-tied-to-natural-gas/"
+    ],
+    [
+     "Sanmina Reports Fourth Quarter and Fiscal 2026 Financial Results (SEC 8-K)",
+     "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
+    ],
+    [
+     "American AI Exports Program consortia (aiexports.gov)",
+     "https://aiexports.gov/ai-consortia"
     ]
    ]
   },
@@ -3087,7 +3114,7 @@
    ]
   }
  ],
- "updated": "2026-11-19T06:35",
+ "updated": "2026-11-19T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
