@@ -992,3 +992,13 @@
 {"ts": "2026-11-19T17:11:08+00:00", "title": "还有 11 条更新", "body": "🟢 ROG 进入「关注买点」\n🟢 STM 进入「关注买点」\n🟢 TDG 进入「关注买点」\n🟢 TEAM 进入「关注买点」\n🟢 ZM 进入「关注买点」\n💥 AMD 单日 -8.8%\n💥 ENVX 单日 -8.5%\n💥 KLIC 单日 -9.3%\n💥 RCAT 单日 -9.1%\n💥 SIDU 单日 -8.5%\n💥 WRD 单日 -9.3%", "priority": "low", "sent": true}
 {"ts": "2026-11-19T17:16:19+00:00", "title": "🟢 MTRN 进入「关注买点」", "body": "Materion Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 43% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
 {"ts": "2026-11-19T17:16:19+00:00", "title": "🚀 STXS 单日 +8.9%", "body": "Stereotaxis, Inc. 收于 1.03。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-19T17:29:34+00:00", "title": "📝 研判更新 09:35", "body": "ANT 首日开盘 111.50（+34%，估值约 2 万亿）；芯片反弹回落，AMD 快照 −9.2%（原因未查证）；华为 Ascend 集群在汕头做 token 出口。涉及：AMD AMZN GOOGL BABA", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T17:40:18+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-19T17:40:19+00:00", "title": "🔴 BSY 进入「回调风险」", "body": "Bentley Systems, Incorporated：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 61；处于52周区间的 87% 位置；偏离200日线 +24%", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T17:40:19+00:00", "title": "🔴 RBRK 进入「回调风险」", "body": "Rubrik, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 54；处于52周区间的 81% 位置；偏离200日线 +48%", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T17:40:19+00:00", "title": "🔴 S 进入「回调风险」", "body": "SentinelOne, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 57；处于52周区间的 89% 位置；偏离200日线 +36%", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T17:40:20+00:00", "title": "🔴 SONY 进入「回调风险」", "body": "Sony Group Corporation：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 65；处于52周区间的 80% 位置；偏离200日线 +21%", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T18:09:56+00:00", "title": "🟢 DT 进入「关注买点」", "body": "Dynatrace, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 36；处于52周区间的 42% 位置；偏离200日线 +2%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T18:09:56+00:00", "title": "🟢 KEYS 进入「关注买点」", "body": "Keysight Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 53% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T18:09:56+00:00", "title": "🟢 PLTR 进入「关注买点」", "body": "Palantir Technologies Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 32；处于52周区间的 48% 位置；偏离200日线 +1%", "priority": "high", "sent": true}
+{"ts": "2026-11-19T18:09:56+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
