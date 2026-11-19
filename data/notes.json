@@ -410,6 +410,11 @@
   ],
   "AMD": [
    {
+    "date": "2026-11-19",
+    "text": "产业面偏正（OpenAI 单方披露）：OpenAI 称其模型在 AMD 旗舰 GPU IP 上带来最高 14% PPA 改进、即将推出的 CPU 关键模块个位数提升，深化双方设计层合作。",
+    "url": "https://www.datacenterdynamics.com/en/news/openai-claims-its-models-have-delivered-chip-design-improvements-across-both-in-house-and-amd-designed-hardware/"
+   },
+   {
     "date": "2026-11-17",
     "text": "产业面偏正（未查证细节）：据 Fortune 标题 OpenAI 继续推进与 AMD 的合作、分散对英伟达的依赖；英伟达治理风波强化了客户“第二供应商”的动机（判断）。",
     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNVVleXlRV2xxdHo2ams5NWFBWUlNdzF1VlNJWWJCX201T0VqVTAyejZFY3ZsVDhGb0FSSDZyUEI3Rk83MjM3SjdBTW1XZHNKckY2eVdjS01yVGk4UWRXeVFYUUM4bGFvUG5VRXphTXEzdU53QUg4S0xiS1ZlZ283eVRwQnhUckNXYjNlWkZDVm96R0EweFFLT1hwZjZmT1pqaTNWcXBtc2FDakdPWUpDLUdIMW96Y0VEejZIajMxelZ"
@@ -428,11 +433,6 @@
     "date": "2026-11-16",
     "text": "产业面 / 预期面偏正：OpenAI 与 TensorWave 签约 450MW 以上 AMD 算力（Seeking Alpha 标题称六年期），在 6GW 直接合作之外又多一条新云渠道；当日仍随板块 −4.8%，情绪面偏弱。",
     "url": "https://www.datacenterdynamics.com/en/news/openai-signs-on-for-457mw-ai-capacity-with-tensorwave/"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "产业面：据 Seeking Alpha 标题完成收购 World Labs（9 月公告约 82 亿美元全股票交易，交割未独立查证）；同受远程算力管制影响，开盘约 −4.8%，情绪面偏弱。",
-    "url": "https://ir.amd.com/news-events/press-releases/detail/1299/amd-acquire-world-labs-to-advance-the-future-of-ai-compute"
    }
   ],
   "APLD": [
@@ -703,6 +703,11 @@
   ],
   "POWL": [
    {
+    "date": "2026-11-19",
+    "text": "基本面向上：FY26 四季度收入 3.97 亿美元（+33%）、毛利率 34.9%、新订单 7.1 亿美元（含约 8,500 万美元数据中心大单）、积压 27 亿美元（同比 +96%）；未给 FY27 数字指引，积压可被取消。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000139/ex991-powlq4xfy2026earning.htm"
+   },
+   {
     "date": "2026-11-15",
     "text": "基本面向上待验证：FY2026 三季度拿下史上最大单笔数据中心订单（超 4 亿美元）等三张超大订单，11-16 发四季度财报看积压与毛利率。",
     "url": "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000103/ex991-powlq3xfy2026earning.htm"
@@ -921,6 +926,13 @@
     "text": "基本面向上：FY26 收入 +79%、FY27 收入指引 175~195 亿美元，AI 机柜（Helios）开始出货，产业面从 EMS 转向 AI 整柜组装。",
     "url": "https://www.sec.gov/Archives/edgar/data/0000897723/000089772326000044/sanmina_exx991xoctober32026.htm"
    }
+  ],
+  "TSAT": [
+   {
+    "date": "2026-11-19",
+    "text": "基本面 / 资金面转弱：GEO 子公司与债权人签停滞协议至 2027-01-18，12-6 到期本金暂缓、继续付息；Q3 GEO 收入 −21%、EBITDA −43%（DCD），再融资是关键。",
+    "url": "https://www.datacenterdynamics.com/en/news/telesat-pauses-debt-repayments-to-geo-subsidiary-creditors/"
+   }
   ]
  },
  "sectors": {
@@ -1031,12 +1043,12 @@
  "daily": [
   {
    "date": "2026-11-19",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。【07:28 更新，含 Summizer 新增的 2 篇】资金面：TechCrunch 梳理 Anthropic 上市前的“循环融资”结构——英伟达、AMD、微软、博通、美光、台积电与谷歌以 83 美元 IPO 价私募认购 260 亿美元，除台积电外均为其供应商；Q3 收入 170 亿美元，监管文件显示已承诺约 9,000 亿美元支出（主要为算力），上市后现金约 2,200 亿美元——买单方从供应商换成公开市场，供应链订单的资金来源更稳，资金面向上。情绪面：盘中 MU 快照 753.87（+6.9%）、INTC 58.80（+7.6%），据 MarketWatch 标题为 AI 芯片股集体反弹（细节未查证）；ANT 首日开盘价暂未查到可靠报道。另据 DCD，倡导组织 Better Data Center Project 估算 Anthropic 已测绘美国站点约 60% 电力需求与天然气挂钩（未经独立验证），电力约束仍指向燃气。整体结论不变。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。【07:28 更新，含 Summizer 新增的 2 篇】资金面：TechCrunch 梳理 Anthropic 上市前的“循环融资”结构——英伟达、AMD、微软、博通、美光、台积电与谷歌以 83 美元 IPO 价私募认购 260 亿美元，除台积电外均为其供应商；Q3 收入 170 亿美元，监管文件显示已承诺约 9,000 亿美元支出（主要为算力），上市后现金约 2,200 亿美元——买单方从供应商换成公开市场，供应链订单的资金来源更稳，资金面向上。情绪面：盘中 MU 快照 753.87（+6.9%）、INTC 58.80（+7.6%），据 MarketWatch 标题为 AI 芯片股集体反弹（细节未查证）；ANT 首日开盘价暂未查到可靠报道。另据 DCD，倡导组织 Better Data Center Project 估算 Anthropic 已测绘美国站点约 60% 电力需求与天然气挂钩（未经独立验证），电力约束仍指向燃气。整体结论不变。【08:28 更新，含 Summizer 新增的 3 篇】基本面：Powell（POWL）FY26 四季度收入 3.97 亿美元（+33%）、毛利率 34.9%、新订单 7.1 亿美元（订单出货比 1.8，含约 8,500 万美元数据中心大单）、积压 27 亿美元（同比 +96%）（公司 8-K），数据中心供配电链条的基本面继续向上。产业面：据 DCD 转述 OpenAI 博客，其模型参与芯片设计，自研推理芯片 Jalapeño 向量 / 矩阵单元面积分别减少 13% / 10%，与 AMD 合作在 GPU IP 上实现最高 14% 的 PPA 改进（OpenAI 单方披露，AMD 部分未查证到独立来源）。航天面：Telesat 与 GEO 子公司债权人签订停滞协议至 2027-01-18，12-6 到期的贷款与票据暂缓强制执行、继续付息，Q3 GEO 收入同比 −21%（DCD）——GEO 旧资产的再融资压力与 LEO 的增长形成分化。ANT 首日开盘价仍未查到可靠报道。整体结论不变。",
    "sectors": {
-    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。【07:28】资金面：Anthropic 260 亿美元 IPO 私募的认购方（NVDA/AMD/MSFT/AVGO/MU/TSM/GOOGL）同时是其供应商，SemiAnalysis 估算其未来四年需约 2,800 亿美元累计收入覆盖算力账单（TechCrunch），IPO 把循环融资交给公开市场检验。产业面：Sanmina（SANM）11-9 公布 FY26 收入 145.3 亿美元（+79%），FY27 收入指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K），快照 SANM 165.64，位于 2027 前瞻区间（158.67/218.05/303.99）下沿附近。政策面：商务部 11-16 公布 33 个 AI 出口联盟，据报道锚定方含 NVDA、OpenAI、英特尔、AMD 等；Seeking Alpha 标题称 Salesforce 也在其中（未查证到 Salesforce 入选原文）。据 Tom's Hardware 标题英特尔继续裁员（IT 部门数百人，细节未查证），不影响今天 18A 外部客户的产业面判断。",
+    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。【07:28】资金面：Anthropic 260 亿美元 IPO 私募的认购方（NVDA/AMD/MSFT/AVGO/MU/TSM/GOOGL）同时是其供应商，SemiAnalysis 估算其未来四年需约 2,800 亿美元累计收入覆盖算力账单（TechCrunch），IPO 把循环融资交给公开市场检验。产业面：Sanmina（SANM）11-9 公布 FY26 收入 145.3 亿美元（+79%），FY27 收入指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K），快照 SANM 165.64，位于 2027 前瞻区间（158.67/218.05/303.99）下沿附近。政策面：商务部 11-16 公布 33 个 AI 出口联盟，据报道锚定方含 NVDA、OpenAI、英特尔、AMD 等；Seeking Alpha 标题称 Salesforce 也在其中（未查证到 Salesforce 入选原文）。据 Tom's Hardware 标题英特尔继续裁员（IT 部门数百人，细节未查证），不影响今天 18A 外部客户的产业面判断。【08:28】基本面：POWL 四季度积压 27 亿美元（+96%）、订单出货比 1.8，快照 161.85（+4.5%），位于 2027 前瞻区间（119.66/165.78/224.01）中值下方附近。产业面：OpenAI 称模型辅助芯片设计带来 Jalapeño 面积改进、AMD GPU IP 最高 14% PPA 提升（OpenAI 单方披露，DCD）；“AI 设计芯片”若成立会压缩设计周期，对 EDA 与定制芯片生态是边际变量。",
     "quantum": "【06:35】BMO 称与希腊 DUTH 在 IBM 量子计算机（含 Nighthawk r2）上完成机器学习特征选择并实现“量子效用”，样本量少一到两个数量级（BMO 新闻稿、经 IBM 审阅，非独立同行评审）；IOSCO 报告称金融市场抗量子准备仍处早期、部分业内人士建议按“五年内可能破解主流加密”做准备（The Quantum Insider）——后量子密码迁移是比量子硬件更确定的支出；SK Broadband 将在韩国—新加坡海缆测试量子安全，Quandela 与汉民科技签 MoU。产业面偏正但均为早期，不改变浪位。",
     "robotics": "无重要新信息。",
-    "aerospace": "【06:35】英伟达 SEC 文件显示同期增持 SpaceX 770 万股、持股总值约 196.8 亿美元（DCD），轨道 / 太空算力叙事的股东绑定加深；不改变板块浪位。",
+    "aerospace": "【06:35】英伟达 SEC 文件显示同期增持 SpaceX 770 万股、持股总值约 196.8 亿美元（DCD），轨道 / 太空算力叙事的股东绑定加深；不改变板块浪位。【08:28】Telesat 就 GEO 子公司债务签停滞协议至 2027-01-18（12-6 本金到期、继续付息），Q3 GEO 收入 −21%（DCD）；GEO 传统运营商资产负债表承压，板块内部向 LEO 分化，不改变浪位。快照 TSAT 45.04，位于 2027 前瞻区间（0/25.23/70.27）中值~上沿。",
     "autonomous": "【06:35】据 Seeking Alpha 标题，Ambarella（AMBA，车载 / 边缘视觉芯片）因 NXP 收购谈判或进入最后阶段而上涨（细节未查证），快照 AMBA 54.64，高于 2027 前瞻区间中值（29.09/49.94/86.09 的中值~上沿），自动驾驶感知芯片的并购估值锚值得跟踪。"
    },
    "watch": [
@@ -1067,6 +1079,10 @@
     {
      "t": "SANM",
      "why": "FY26 收入 145.3 亿美元（+79%）、FY27 指引 175~195 亿美元、Helios 机柜开始出货（公司 8-K）；快照 165.64（+5.1%），位于 2027 前瞻区间 158.67/218.05/303.99 的下沿附近，信号“关注买点”。"
+    },
+    {
+     "t": "POWL",
+     "why": "FY26 Q4 收入 +33%、毛利率 34.9%、积压 27 亿美元（+96%）、订单出货比 1.8；现价 161.85 位于 2027 前瞻区间（119.66/165.78/224.01）中值下方附近。"
     }
    ],
    "sources": [
@@ -1129,6 +1145,18 @@
     [
      "American AI Exports Program consortia (aiexports.gov)",
      "https://aiexports.gov/ai-consortia"
+    ],
+    [
+     "Powell Industries FY2026 Q4 8-K",
+     "https://www.sec.gov/Archives/edgar/data/0000080420/000008042026000139/ex991-powlq4xfy2026earning.htm"
+    ],
+    [
+     "OpenAI claims its models have delivered chip design improvements (DCD)",
+     "https://www.datacenterdynamics.com/en/news/openai-claims-its-models-have-delivered-chip-design-improvements-across-both-in-house-and-amd-designed-hardware/"
+    ],
+    [
+     "Telesat pauses debt repayments to GEO subsidiary creditors (DCD)",
+     "https://www.datacenterdynamics.com/en/news/telesat-pauses-debt-repayments-to-geo-subsidiary-creditors/"
     ]
    ]
   },
@@ -3114,7 +3142,7 @@
    ]
   }
  ],
- "updated": "2026-11-19T07:28",
+ "updated": "2026-11-19T08:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
