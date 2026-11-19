@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-19",
+    "text": "治理 / 合规面向下：据 Seeking Alpha 标题（细节未查证）加州总检察长就涉华问题发出调查传票；11/17 时 Bonta 仍称在评估是否行动，属于在 SEC 调查之外再加一层州级监管压力，需求面未变。",
+    "url": "https://stocktwits.com/news-articles/markets/equity/california-ag-rob-bonta-highlights-red-flags-in-his-investigation-into-nvidia-and-jensen-huang/cNbO44MR9hO"
+   },
+   {
+    "date": "2026-11-19",
     "text": "情绪面向下：大盘 −2% 当天收 145.98（−3.3%），财报后需求面数据未变，按电力 / 资本 / 承购证明分配供货的表述让新云资金面成为下游约束。",
     "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-19",
     "text": "治理面 / 生态面偏负：SEC 文件显示 7~9 月卖出 9,353 万股诺基亚（过半持股）、减持英特尔 25%、增持 SpaceX 770 万股——卖出早于黄仁勋离任，但 AI-RAN 等技术路线绑定在减弱。",
     "url": "https://www.datacenterdynamics.com/en/news/nvidia-sells-more-than-half-of-nokia-stake/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "资金面向下（待查证）：据 Seeking Alpha 标题，Michael Burry 质疑华尔街为英伟达客户搭建的大规模融资安排的进展，客户融资链条的可持续性受到公开质疑。",
-    "url": "https://seekingalpha.com/"
    }
   ],
   "ANET": [
@@ -340,6 +340,11 @@
   ],
   "MSFT": [
    {
+    "date": "2026-11-19",
+    "text": "产业面 / 情绪面小幅向下：Agent Framework 官方 PyPI 包被用内部发布证书推送两个窃取凭证的恶意版本（约 1 小时撤下，确认 3 次成功窃取），企业 agent 推广中的信任成本上升，单一事件不改基本面。",
+    "url": "https://siliconangle.com/2026/11/19/wiz-ties-microsoft-agent-framework-package-compromise-to-release-pipeline-certificate/"
+   },
+   {
     "date": "2026-11-18",
     "text": "政策面偏负（待查证）：据 Reuters 标题，美国议员要求微软就其与字节跳动 AI 合作谈判的报道做简报（细节未查证）；同日微软参与认购 Anthropic 同步私募（TechCrunch），模型层敞口增加。",
     "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/"
@@ -358,11 +363,6 @@
     "date": "2026-11-13",
     "text": "基本面（小幅）：周四 Exchange Online 全球宕机，Teams、Copilot 365、Intune 连带受影响，微软称原因是网络扩容升级引入的缺陷，不是攻击；短期有声誉和 SLA 成本，但迁移成本高，订阅业务受到的影响预计有限。现价 523.88，接近 2027 前瞻中值 530.72。",
     "url": "https://siliconangle.com/2026/11/13/massive-microsoft-outage-disrupts-businesses-government-agencies-worldwide/"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "据 CNBC 标题，微软为 Outlook 等 365 服务大规模中断道歉（细节未查证）；当日股价基本持平，属运营 / 情绪面小幅负面，基本面未变。",
-    "url": "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html"
    }
   ],
   "QBTS": [
@@ -1089,9 +1089,9 @@
  "daily": [
   {
    "date": "2026-11-19",
-   "market": "【收盘完整研判，含 13:28 后 Summizer 新增的 3 篇】资金面没有改善：系统资金面得分 21（钱贵 / 紧缩），10 年期美债 5.05%（一年 +93bp）、美元指数 103.93（一年 +4.4%）、高收益债相对长期国债近 3 个月 −1.5%，资金在避险。情绪面明显转冷：Anthropic（ANT）首日开盘较 83 美元发行价 +34%、收盘约 +17%，但没有带动大盘——道指跌约 1,100 点、纳指 −2.25% 至 23,879、标普 −2.0% 连跌第 6 天（AP 称为 2024 年以来最长连跌），超过 90% 的标普成分股下跌；VIX 收 28.4（近一年 99% 分位，期限结构倒挂）、CNN 恐贪指数 19（极度恐惧，一周前 40），而三倍做多 ETF 成交占比仍在 87% 分位，杠杆还没出清。报道把下跌归因于 AI 估值担忧、通胀与联储利率路径、英伟达管理层变动；个股层面 AMD −7.7%（Hunterbrook 做空报告指称对华敞口，AMD 否认）、NBIS −9.4%、CRWV −6.1%，盘后 INTU 因下季指引远低于预期跌约 13%。浪位：AI 一浪、三浪仍是“财报已改善，价格未反映”，二浪“尚未启动”，今天的抛售是价格层面的，没有看到基本面数据被下修；整体结论不变——需求面确定，压力在资金面（利率）、治理 / 合规面与情绪面，本页 735 家中只有 28% 站上 200 日线。",
+   "market": "【收盘完整研判，含 13:28 后 Summizer 新增的 3 篇】资金面没有改善：系统资金面得分 21（钱贵 / 紧缩），10 年期美债 5.05%（一年 +93bp）、美元指数 103.93（一年 +4.4%）、高收益债相对长期国债近 3 个月 −1.5%，资金在避险。情绪面明显转冷：Anthropic（ANT）首日开盘较 83 美元发行价 +34%、收盘约 +17%，但没有带动大盘——道指跌约 1,100 点、纳指 −2.25% 至 23,879、标普 −2.0% 连跌第 6 天（AP 称为 2024 年以来最长连跌），超过 90% 的标普成分股下跌；VIX 收 28.4（近一年 99% 分位，期限结构倒挂）、CNN 恐贪指数 19（极度恐惧，一周前 40），而三倍做多 ETF 成交占比仍在 87% 分位，杠杆还没出清。报道把下跌归因于 AI 估值担忧、通胀与联储利率路径、英伟达管理层变动；个股层面 AMD −7.7%（Hunterbrook 做空报告指称对华敞口，AMD 否认）、NBIS −9.4%、CRWV −6.1%，盘后 INTU 因下季指引远低于预期跌约 13%。浪位：AI 一浪、三浪仍是“财报已改善，价格未反映”，二浪“尚未启动”，今天的抛售是价格层面的，没有看到基本面数据被下修；整体结论不变——需求面确定，压力在资金面（利率）、治理 / 合规面与情绪面，本页 735 家中只有 28% 站上 200 日线。\n\n【15:28 更新，含 Summizer 新增的 2 篇】合规面再添一项：据 Seeking Alpha 标题（细节未查证），加州总检察长已就涉华问题向英伟达送达调查传票；此前 11 月 17 日总检察长 Bonta 只表示在评估、称芯片流向中国方面“出现了危险信号”，并未公布立案（Stocktwits 转述 Bloomberg），两者口径有差异，以后续正式公告为准。另据 SiliconANGLE，微软 Agent Framework 的官方 PyPI 包被人用内部发布证书推送了两个窃取凭证的恶意版本（约一小时后撤下，Wiz 只确认 3 次成功窃取），agent 落地的瓶颈之一是安全和信任，价值向供应链 / 身份安全层倾斜。这两件都落在治理 / 合规面与情绪面，不改变需求面和产业面，整体结论不变；INTU 指引与 Mailchimp 出售此前已写入。",
    "sectors": {
-    "ai": "产业面（全天汇总）：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名）、Vera Rubin NVL72 在 Nscale / CoreWeave / Oracle / Google Cloud 上线，英伟达电话会明确按“电力 / 机房能否当季接收 → 资本 → 承购证明”分配供货，瓶颈从芯片转到电力与客户资产负债表；北卡 Duke 数据中心电价（15 年合约、75% 保底）把电力风险转给用电方。预期面分化：KEYS 四季度收入约 19.9 亿美元（去年同期 14.2 亿）、非 GAAP EPS 3.61 美元高于自身 3.34~3.40 指引（公司 8-K），AI 测试测量需求向上；INTU 一季度超预期但下季 EPS 指引 3.17~3.22 美元远低于 FactSet 预期 3.73 美元，并以约 36.8 亿美元把 Mailchimp 卖给 Bending Spoons（Benzinga），“AI 冲击应用软件”的逆风被财报指引坐实了一步。合规面：Hunterbrook（自称持有 AMD 空头）指称被列入实体清单的浪潮信息仍收到 AMD 固件更新、AMD 2025 年对中国大陆 / 香港开票 77.5 亿美元约占 22%，Hunterbrook 自己也承认记录本身不构成违规，AMD 否认其表述。一级市场：AI 药物发现工具 Boltz 完成 1.1 亿美元 A 轮，按 token 计费的 API 自 6 月以来客户消耗增长 50 倍（公司口径，SiliconANGLE），垂直模型推理需求延续。",
+    "ai": "产业面（全天汇总）：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名）、Vera Rubin NVL72 在 Nscale / CoreWeave / Oracle / Google Cloud 上线，英伟达电话会明确按“电力 / 机房能否当季接收 → 资本 → 承购证明”分配供货，瓶颈从芯片转到电力与客户资产负债表；北卡 Duke 数据中心电价（15 年合约、75% 保底）把电力风险转给用电方。预期面分化：KEYS 四季度收入约 19.9 亿美元（去年同期 14.2 亿）、非 GAAP EPS 3.61 美元高于自身 3.34~3.40 指引（公司 8-K），AI 测试测量需求向上；INTU 一季度超预期但下季 EPS 指引 3.17~3.22 美元远低于 FactSet 预期 3.73 美元，并以约 36.8 亿美元把 Mailchimp 卖给 Bending Spoons（Benzinga），“AI 冲击应用软件”的逆风被财报指引坐实了一步。合规面：Hunterbrook（自称持有 AMD 空头）指称被列入实体清单的浪潮信息仍收到 AMD 固件更新、AMD 2025 年对中国大陆 / 香港开票 77.5 亿美元约占 22%，Hunterbrook 自己也承认记录本身不构成违规，AMD 否认其表述。一级市场：AI 药物发现工具 Boltz 完成 1.1 亿美元 A 轮，按 token 计费的 API 自 6 月以来客户消耗增长 50 倍（公司口径，SiliconANGLE），垂直模型推理需求延续。【15:28】英伟达合规压力加码：据 Seeking Alpha 标题（细节未查证）加州总检察长就涉华问题发出调查传票，叠加此前报道的 SEC 调查，治理面仍是压在估值上的主要变量；微软 Agent Framework 发布链被攻破（SiliconANGLE），agent 权限越大、发布链越成攻击目标，安全层受关注。",
     "quantum": "产业面小幅向上：Google 在《Science》发表基于 Willow 的量子语境性实验——“魔方阵游戏”胜率 98.3%（经典上限 88.9%），多人 GHZ 游戏直到 71 名玩家仍超经典上限，确认最多 45 个量子比特处于整体纠缠（The Quantum Insider）。意义在于用“经典上限数学上写死”的任务做硬件基准，比随机线路采样更难被经典算法追平，但仍是物理验证而非商业应用，不改变浪位。另有 BMO 在 IBM 机器上做的金融机器学习“量子效用”（非独立同行评审）、Pasqal 接入 Slurm 调度器，均属早期。",
     "robotics": "无重要新信息（仅一级市场：MegaRobo 实验室机器人融资 2 亿美元，不涉及本站上市公司）；系统机器人一浪在“尚未启动 / 财报已改善”之间反复切换，以收盘数据为准当前为“财报已改善，价格未反映”。",
     "aerospace": "产业面：Relativity 的 Terran R 首飞二级在斯坦尼斯完成超过 400 秒全时长点火，级间段完成结构鉴定，首飞所有主结构鉴定关闭，LC-16 发射台在改造（NASASpaceflight）——SpaceX 之外的中重型运力供给在靠近，对 RKLB Neutron 是竞争、对卫星运营商是议价改善（私营公司，判断）。资金面：Telesat GEO 债务停滞协议至 2027-01-18，TSAT 今天 −8.9%；BKSY −9.0%、VOYG −6.8%，跌幅与大盘风险偏好下降一致，未见公司层面新事件。",
@@ -1112,7 +1112,7 @@
     },
     {
      "t": "NVDA",
-     "why": "收盘 145.98（−3.3%），财报后两天累计下跌；电话会明确按电力 / 资本 / 承购证明分配供货、对华停发 Hopper。位于 2027 前瞻区间 99.08 / 178.79 / 262.93 的下沿~中值，信号“关注买点”。"
+     "why": "收盘 145.98（−3.3%），财报后两天累计下跌；电话会明确按电力 / 资本 / 承购证明分配供货、对华停发 Hopper。位于 2027 前瞻区间 99.08 / 178.79 / 262.93 的下沿~中值，信号“关注买点”。 15:28：据标题加州总检察长发出涉华调查传票（细节未查证）。"
     },
     {
      "t": "PANW",
@@ -1247,6 +1247,14 @@
     [
      "CNBC：Palo Alto stock jumps on earnings beat and big bet on securing open-weight models",
      "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html"
+    ],
+    [
+     "California AG Bonta highlights 'red flags' in Nvidia investigation (Stocktwits)",
+     "https://stocktwits.com/news-articles/markets/equity/california-ag-rob-bonta-highlights-red-flags-in-his-investigation-into-nvidia-and-jensen-huang/cNbO44MR9hO"
+    ],
+    [
+     "Wiz ties Microsoft Agent Framework package compromise to release pipeline certificate",
+     "https://siliconangle.com/2026/11/19/wiz-ties-microsoft-agent-framework-package-compromise-to-release-pipeline-certificate/"
     ]
    ]
   },
@@ -3232,7 +3240,7 @@
    ]
   }
  ],
- "updated": "2026-11-19T14:26",
+ "updated": "2026-11-19T15:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
