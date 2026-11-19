@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-19",
+    "text": "治理面 / 生态面偏负：SEC 文件显示 7~9 月卖出 9,353 万股诺基亚（过半持股）、减持英特尔 25%、增持 SpaceX 770 万股——卖出早于黄仁勋离任，但 AI-RAN 等技术路线绑定在减弱。",
+    "url": "https://www.datacenterdynamics.com/en/news/nvidia-sells-more-than-half-of-nokia-stake/"
+   },
+   {
     "date": "2026-11-18",
     "text": "资金面向下（待查证）：据 Seeking Alpha 标题，Michael Burry 质疑华尔街为英伟达客户搭建的大规模融资安排的进展，客户融资链条的可持续性受到公开质疑。",
     "url": "https://seekingalpha.com/"
@@ -20,11 +25,6 @@
     "date": "2026-11-18",
     "text": "治理面：临时 CEO Kress 首次全员会，并承诺 12 月前加薪、发股权以平息员工不满（据 CNBC / Tom's Hardware 标题，细节未查证）——减轻了人才流失风险，代价是运营费用和稀释上升；同日财报后的反弹熄火，情绪面回落。",
     "url": "https://www.tomshardware.com/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "治理面偏负：据 Seeking Alpha 标题，Bill Ackman 称董事会未以股东最佳利益行事（细节未查证），CNBC 标题称员工在 Kress 与黄仁勋回任之间分裂；大股东与员工两端的压力同时存在。",
-    "url": "https://seekingalpha.com/"
    }
   ],
   "ANET": [
@@ -74,6 +74,11 @@
    }
   ],
   "INTC": [
+   {
+    "date": "2026-11-19",
+    "text": "产业面 / 预期面向上：CEO 宣布 18A 系列首个外部客户、CTO 确认签的是 18A-P（客户未具名），代工业务从零到一，但离填满产能还远。",
+    "url": "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/"
+   },
    {
     "date": "2026-11-08",
     "text": "三季度调整后 EPS 0.52 美元（预期 0.40），收入 165.1 亿美元（+21%）；但客户端业务 −5%、指引弱，股价单日跌超 30%。数据中心业务 +78%。",
@@ -303,6 +308,11 @@
   ],
   "TSLA": [
    {
+    "date": "2026-11-19",
+    "text": "产业面向上（厂商自述）：发布 Powercore 中压固态变压器平台（最高 7.4MW、800VDC 输出、内置固态断路器），正与英伟达做 DSX Ready 认证，明年投运，能源业务切入数据中心供电。",
+    "url": "https://www.datacenterdynamics.com/en/news/tesla-unveils-powercore-solid-state-transformer-platform-aimed-at-data-centers/"
+   },
+   {
     "date": "2026-11-16",
     "text": "产业面：Robotaxi 已于 11-02 扩展到沃斯堡（143 平方英里、无安全员，第七个付费城市），柏林 Cybercab 产线据 Electrek 为 30 亿欧元（未独立查证）；监管面有致命事故报道（细节未查证），方向分化。",
     "url": "https://teslanorth.com/2026/11/01/tesla-robotaxi-fort-worth-launch/"
@@ -321,11 +331,6 @@
     "date": "2026-11-13",
     "text": "产业面 / 预期面小幅向上：据 Electrek 标题，Cybercab 开放个人订购（29,990 美元 + 每月 299 美元订阅，仅限 Robotaxi 运营区域，细节未查证），无人驾驶开始尝试个人付费模式；NHTSA 评估仍是监管约束。",
     "url": "https://electrek.co/2026/11/13/tesla-cybercab-personal-use-orders-299-subscription-geofence/"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "产业面 / 监管面：SpaceX 约 740 亿美元数据中心计划与合并预期同日发酵，得州候任总检察长称将严格审查合并（细节未查证）。",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-12/spacex-plans-74-billion-data-center-projects-in-arizona-texas"
    }
   ],
   "MSFT": [
@@ -485,6 +490,11 @@
   ],
   "IBM": [
    {
+    "date": "2026-11-19",
+    "text": "产业面偏正（厂商自述）：BMO 称在 IBM 量子计算机（含 Nighthawk r2）上实现机器学习特征选择的“量子效用”，样本量少一到两个数量级，经 IBM 审阅、非独立同行评审。",
+    "url": "https://thequantuminsider.com/2026/11/19/bmo-reports-quantum-utility-in-machine-learning-application-using-ibm-quantum-computers/"
+   },
+   {
     "date": "2026-11-16",
     "text": "产业面偏正：与英伟达、Fermilab 计划共建模块化量子计算协同设计平台（The Quantum Insider），量子 + 经典混合路线再添国家实验室合作。",
     "url": "https://thequantuminsider.com/2026/11/16/ibm-nvidia-fermilab-modular-quantum-computing-platform/"
@@ -496,6 +506,11 @@
    }
   ],
   "SMCI": [
+   {
+    "date": "2026-11-19",
+    "text": "治理面 / 法律面偏负（待查证）：据 Tom's Hardware 标题，超微被股东起诉，指称英伟达一名高管的妻子知悉违规对华销售；今年 3 月超微已因联合创始人涉对华刑事案遭集体诉讼（Reuters）。",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-sued-shareholders-over-221915002.html"
+   },
    {
     "date": "2026-11-14",
     "text": "监管面偏负：新加坡称美方在 Supermicro 相关信息上配合有限，出口管制追查可能延伸到服务器整机层（未见对公司的指控）。",
@@ -885,10 +900,28 @@
     "text": "资金面向下：拟发行 1.25 亿美元 2031 年到期可转债偿还定期贷款，股价大跌（快照 −41.1%），利润未恢复前融资成本上升。",
     "url": "https://www.investing.com/news/stock-market-news/hysteryale-stock-plunges-on-125m-debt-offering-plan-5036643"
    }
+  ],
+  "AMBA": [
+   {
+    "date": "2026-11-19",
+    "text": "预期面向上（待查证）：据 Seeking Alpha 标题，NXP 收购 Ambarella 的谈判可能进入最后阶段；FT 7 月首次报道谈判时 AMBA 市值约 33 亿美元。",
+    "url": "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
+   }
+  ],
+  "DUK": [
+   {
+    "date": "2026-11-19",
+    "text": "基本面偏正：北卡批准数据中心专属电价类别（>100MW 须签 15 年、75% 保底计费、预付电网扩建与搁浅发电费，1-1 生效），电网扩建风险转给数据中心运营方。",
+    "url": "https://www.datacenterdynamics.com/en/news/north-carolina-utility-duke-energy-secures-regulatory-approval-for-new-data-center-rate-class/"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-19",
+    "text": "电力约束从“有没有电”进入“谁承担风险”：北卡 Duke 数据中心电价要求 15 年合约、75% 保底与预付扩建成本，西班牙 Merlin 因拿不到电暂停在建楼（Nebius 为客户）；供给侧英特尔 18A-P 拿到首个外部客户、Vera Rubin 机柜开始在多家云上线，特斯拉以固态变压器切入 800VDC 供电。"
+   },
    {
     "date": "2026-11-18",
     "text": "FOMC 纪要：几乎所有与会者认为后续加息可能合适，“许多与会者”把 AI 建设视为实质性通胀风险——资金面对 AI 资本开支的约束首次被联储点名；同日 Anthropic 以 83 美元定价高于区间，模型层预期面向上，英伟达 10-Q 推迟让治理面再添不确定性。存储环节：Everpure 营收增速连续五季加快至 +51%，拿下前五大云厂商设计合同，AI 资本开支向存储层扩散（部分来自闪存涨价，周期性需区分）。"
@@ -904,10 +937,6 @@
    {
     "date": "2026-11-17",
     "text": "政策面：英伟达把出口管制合规上升到董事会层面（监督委员会），并向客户传导远程算力规则风险、限制对华出租占比过半的云客户——东南亚新云渠道需求确定性下降；需求面暂无负向信号，一级市场（Anthropic IPO 据报道指向区间顶部以上）仍强。 英伟达三季度收入 1,158 亿美元（+103%）、四季度指引 1,300 亿美元，AI 算力需求面得到确认；治理 / 政策面（SEC 调查、出口管制）仍是主要压力，软件股在 Anthropic 上市前承压。"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "产业面：数据中心约束从“芯片”转向“电和社会许可”——AWS 紧邻电厂建园区、矿企转 AI 托管兑现收入（Core Scientific 托管占 92.5%），同时 Telus 撤出温哥华项目、联邦土地禁建法案提出，选址不确定性上升。 出口管制从“芯片运往哪里”扩展到“算力卖给谁”：数据中心若可能向中国等 D:5 组国家企业提供 1200 万 TPP 以上算力即需许可，东南亚五国新增许可要求，撤销 AI 扩散规则（TechCrunch）；同时数据中心社会许可风险升级为公投 + 联邦诉讼（Prologis v. Trenton）。 午间：英伟达董事会据 CNBC 不考虑请黄仁勋回归；新云融资转向客户预付款（Firmus 30 亿美元私募 + 预付款，AFR 经 DCD）。 收盘补充：阿里 Qwen4-Max 代表的“用架构换算力”路线（token 最多省 35%~49%，内部基准）与远程算力管制同日出现——管制收紧的同时，效率路线削弱管制效果、也可能压低单位任务算力需求（判断）；英伟达财报的焦点转向地区口径与担保交易的披露（TechCrunch）。"
    }
   ],
   "quantum": [
@@ -993,6 +1022,89 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-19",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:35 更新，含 Summizer 新增的 18 篇】今天的关键事件是 Anthropic 以 ANT 在纳斯达克首日交易（昨晚定价 83 美元，Bloomberg / Axios 标题称募资与估值均创纪录，募资口径 685 亿 / 1,073 亿美元仍有分歧），模型层预期面向上，资金从芯片 / 新云向模型层轮动的格局延续；VIX 22.0（近一年 88% 分位）提示情绪面仍偏悲观。产业面三条增量：英特尔 CEO 宣布 18A 系列拿到第一个外部客户、签的是 18A-P（CTO 确认，客户未具名，DCD）——先进制程“第二供应商”从零到一；特斯拉发布集成固态变压器的中压供电平台 Powercore（最高 7.4MW、输出 800VDC，正与英伟达做 DSX Ready 认证，明年投运，厂商自述）；北卡批准 Duke Energy 数据中心专属电价（>100MW 须签 15 年、75% 保底计费、预付电网扩建成本，1-1 生效，DCD）——电力约束从“有没有电”转为“谁来承担风险”，新云资金面再添成本。英伟达治理面：SEC 文件显示 7~9 月卖出过半诺基亚持股、同期增持 SpaceX（DCD，卖出早于黄仁勋离任）；据 Tom's Hardware 标题，超微被股东起诉、指称英伟达一名高管妻子知悉违规对华销售（细节未查证；超微今年 3 月已因对华相关刑事案遭集体诉讼，Reuters/Yahoo）。整体结论不变：需求面确定，压力在治理面与新云的资金面。",
+   "sectors": {
+    "ai": "【06:35】产业面：英特尔 18A-P 拿到首个外部客户（DCD，客户未具名，此前 WSJ 报道过与苹果洽谈，不能等同），快照 INTC 54.67，位于 2027 前瞻区间（29.98/56.35/116.19）下沿~中值、接近中值；Nscale 上线首套 Vera Rubin NVL72（Dell XE9812，100% 液冷，CoreWeave / Oracle / Google Cloud 也已上线，DCD），新一代机柜开始交付。电力：特斯拉 Powercore 固态变压器瞄准 800VDC 机柜供电（厂商自述）；Duke Energy 数据中心电价类别获批（15 年合约、75% 保底），西班牙 Merlin 因拿不到电暂停毕尔巴鄂附近两栋楼（Nebius 为确认客户，DCD）。资金面：ChronoScale（Applied Digital 分拆）与 STN 各出资 3.9 亿美元在德州敖德萨组合资，为未具名前沿实验室供算力（DCD）。治理面：英伟达 7~9 月卖出 9,353 万股诺基亚、同期减持英特尔 25%、增持 SpaceX（DCD），AI-RAN 合作对象的股权绑定减弱；据 Tom's Hardware 标题超微遭股东诉讼涉英伟达高管家属（细节未查证）。据 Seeking Alpha 标题，Ambarella 因 NXP 收购谈判或进入最后阶段而上涨（细节未查证；FT 7 月曾报道双方谈判）。",
+    "quantum": "【06:35】BMO 称与希腊 DUTH 在 IBM 量子计算机（含 Nighthawk r2）上完成机器学习特征选择并实现“量子效用”，样本量少一到两个数量级（BMO 新闻稿、经 IBM 审阅，非独立同行评审）；IOSCO 报告称金融市场抗量子准备仍处早期、部分业内人士建议按“五年内可能破解主流加密”做准备（The Quantum Insider）——后量子密码迁移是比量子硬件更确定的支出；SK Broadband 将在韩国—新加坡海缆测试量子安全，Quandela 与汉民科技签 MoU。产业面偏正但均为早期，不改变浪位。",
+    "robotics": "无重要新信息。",
+    "aerospace": "【06:35】英伟达 SEC 文件显示同期增持 SpaceX 770 万股、持股总值约 196.8 亿美元（DCD），轨道 / 太空算力叙事的股东绑定加深；不改变板块浪位。",
+    "autonomous": "【06:35】据 Seeking Alpha 标题，Ambarella（AMBA，车载 / 边缘视觉芯片）因 NXP 收购谈判或进入最后阶段而上涨（细节未查证），快照 AMBA 54.64，高于 2027 前瞻区间中值（29.09/49.94/86.09 的中值~上沿），自动驾驶感知芯片的并购估值锚值得跟踪。"
+   },
+   "watch": [
+    {
+     "t": "INTC",
+     "why": "18A-P 拿到首个外部客户（客户未具名，DCD），代工“从零到一”；快照 54.67，2027 前瞻区间 29.98/56.35/116.19 的下沿~中值、接近中值。"
+    },
+    {
+     "t": "NVDA",
+     "why": "治理面持续：7~9 月卖出过半诺基亚持股、增持 SpaceX（SEC 文件），超微股东诉讼标题牵涉英伟达高管家属（未查证）；快照 150.96（−2.9%），2027 前瞻区间 102.85/184.89/272.94 的下沿~中值。"
+    },
+    {
+     "t": "SMCI",
+     "why": "据 Tom's Hardware 标题遭股东起诉、指称英伟达高管妻子知悉违规对华销售（细节未查证），今年 3 月已有同类集体诉讼；快照 24.37，2027 前瞻区间 19.95/28.03/39.56 的下沿~中值。"
+    },
+    {
+     "t": "AMBA",
+     "why": "NXP 收购谈判或进入最后阶段（Seeking Alpha 标题，未查证）；快照 54.64，2027 前瞻区间 29.09/49.94/86.09 的中值~上沿。"
+    },
+    {
+     "t": "TSLA",
+     "why": "发布 Powercore 固态变压器平台进入数据中心供电（最高 7.4MW，明年投运，厂商自述）；快照 383.72，2027 前瞻区间 112.37/314.09/781.0 的中值~上沿。"
+    },
+    {
+     "t": "DUK",
+     "why": "北卡批准数据中心专属电价类别（15 年合约、75% 保底、预付扩建成本，1-1 生效）；快照 130.05，约在 2027 前瞻区间中值（95.99/130.28/172.29）。"
+    }
+   ],
+   "sources": [
+    [
+     "Intel secures first external customer for 18A-P process node (DCD)",
+     "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/"
+    ],
+    [
+     "Nvidia sells more than half of Nokia stake (DCD)",
+     "https://www.datacenterdynamics.com/en/news/nvidia-sells-more-than-half-of-nokia-stake/"
+    ],
+    [
+     "Tesla unveils Powercore solid-state transformer platform (DCD)",
+     "https://www.datacenterdynamics.com/en/news/tesla-unveils-powercore-solid-state-transformer-platform-aimed-at-data-centers/"
+    ],
+    [
+     "Duke Energy secures approval for data center rate class (DCD)",
+     "https://www.datacenterdynamics.com/en/news/north-carolina-utility-duke-energy-secures-regulatory-approval-for-new-data-center-rate-class/"
+    ],
+    [
+     "Nscale brings Nvidia Vera Rubin NVL72 rack online (DCD)",
+     "https://www.datacenterdynamics.com/en/news/nscale-brings-nvidia-vera-rubin-nvl72-rack-online/"
+    ],
+    [
+     "Merlin pauses two data centers near Bilbao (DCD)",
+     "https://www.datacenterdynamics.com/en/news/merlin-pauses-development-on-two-data-centers-near-bilbao-spain-due-to-grid-issues/"
+    ],
+    [
+     "ChronoScale and STN form JV in Odessa, Texas (DCD)",
+     "https://www.datacenterdynamics.com/en/news/chronoscale-and-stn-form-jv-to-develop-data-center-campus-in-odessa-texas/"
+    ],
+    [
+     "BMO reports quantum utility using IBM quantum computers (The Quantum Insider)",
+     "https://thequantuminsider.com/2026/11/19/bmo-reports-quantum-utility-in-machine-learning-application-using-ibm-quantum-computers/"
+    ],
+    [
+     "Securities regulators warn on quantum security (The Quantum Insider)",
+     "https://thequantuminsider.com/2026/11/19/securities-regulators-warn-that-slow-progress-on-quantum-security-is-a-mistake/"
+    ],
+    [
+     "Super Micro sued by shareholders over China-related criminal case (Reuters / Yahoo, 2026-03)",
+     "https://finance.yahoo.com/markets/stocks/articles/super-micro-sued-shareholders-over-221915002.html"
+    ],
+    [
+     "NXP reportedly in talks to buy Ambarella (Investing.com)",
+     "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
+    ]
+   ]
+  },
   {
    "date": "2026-11-18",
    "market": "【收盘完整研判，含今日盘中 8 次增量与此后 Summizer 新增 3 篇】资金面继续收紧：得分 22（昨 23），10 年期美债 5.07%（近一年 90% 分位、一年 +93bp），美元指数 103.8，高收益债相对长债近 3 个月由 +0.6% 转为 −0.8%，信用端开始避险；新增变量是 10 月 FOMC 纪要——几乎所有与会者认为后续加息可能合适，“许多与会者”把 AI 建设视为实质性通胀风险，CME 定价 12 月加息概率近 95%（CNBC / Quartz）。情绪面仍“偏悲观”但较昨天回升（热度 38，昨 31）：VIX 24.6（92% 分位、期限结构倒挂）、CNN 恐贪 25、本页只有 31% 站上 200 日线，三倍杠杆 ETF 成交占比仍在 85% 分位。当天两条主线：一是英伟达财报后连续回吐（收 150.96，−2.9%），新云同跌，而 Anthropic 以每股 83 美元定价（高于 70~78 区间，按 8.25 亿股约募资 685 亿美元，11-19 以 ANT 在纳斯达克交易，CNBC），AMZN +3.8%、AMD +5.3%——资金从芯片 / 新云向模型层及其股东轮动；二是网络安全股大涨（PANW +9.9%、OKTA +12.1%、CRWD +8.0%），由国土安全部长关于 AI 驱动攻击的国会证词和近期一连串宕机（官方称源于 AI 加速漏洞发现后的密集打补丁）触发，PANW 盘后一季报 NGS ARR +66% 并上调全年指引。浪位：AI 三浪今天都在“财报已改善，价格未反映”（昨天二浪在“尚未启动”），机器人、自动驾驶一浪同样在阈值附近，视为噪声。整体结论：需求面确定（英伟达指引、Anthropic 定价），压力从英伟达治理面扩展到资金面——联储纪要把 AI 资本开支点名为通胀来源，“AI 越热、利率越难降”的反身性开始进入官方叙事。\n\n【盘中增量记录】\n（盘前 / 早间增量，完整研判 14:20 发布）【06:28 更新，含 Summizer 新增的 13 篇】隔夜主线仍是英伟达财报后的再定价：Reuters / Bloomberg 标题称英伟达指引缓和了 AI 需求担忧、纳指期货走高，NVDA 快照 155.46（2027 前瞻区间 106.66/190.40/292.47 的下沿~中值）——需求面确认、情绪面边际修复。资金面出现两个相反信号：英伟达澄清贷款担保只在客户自筹资金并完成采购安装后才生效（TechCrunch），说明它承担的是“建成后还款”而非“建设”风险，对早期新云偏负；同时北弗吉尼亚 Loudoun 县正式通过 12 个月数据中心与变电站审批暂停（DCD），产业面约束从电力扩展到“社会许可”。治理面仍有噪声：据 Tom's Hardware / Semafor 标题，部分董事仍在推动黄仁勋回任，与董事长 11-17 的表态相反（细节未查证）。今天的关键事件是 Anthropic 定价（多家媒体标题称今天定价）。整体结论不变：需求面确定，压力在资金面与治理面。\n【07:28 更新，含 Summizer 新增的 3 篇】开盘后资金面出现分化：据 CNBC 标题，CoreWeave、IREN、Nebius 在英伟达财报后走低（细节未查证；快照 CRWV 48.36、−3.1%，IREN −1.3%，NBIS 反而 +2.9%，来源与快照不完全一致），说明英伟达“只担保建成后”的口径正在被市场转化为新云的融资折价——需求面确认、资金面向新云偏负。据 CNBC 标题，Anthropic 因认购踊跃考虑扩大发行（细节未查证），情绪面对 AI 模型层偏正。产业面有一正一负：德州 TCEQ 11-16 恢复数据中心许可审批（与 Loudoun 暂停形成对照），但候任州长主张暂停新项目，政策风险延后到 2027-01。整体结论不变：需求面确定，压力在资金面与治理面。\n【08:28 更新，含 Summizer 新增的 6 篇】盘中英伟达财报后的反弹回吐：快照 NVDA 152.29（−2.0%，2027 前瞻区间 103.76/186.52/275.35 的下沿~中值），CNBC 标题称英伟达走低并拖累新云，快照 CRWV 47.42（−5.0%）、IREN −2.9%——情绪面由修复转为回落，资金面对新云的折价在加深。产业面出现第一个“减速”数据点：Cleanview 统计美国 Q3 新开工数据中心 8.4GW，低于 Q2 创纪录的 11.2GW，是 2025 年 Q1 以来首次环比下降；但 10 月新开工 4.6GW 为 6 月以来最高，年初至今 38GW 约为去年两倍，在建 58GW 接近现有运营的 65GW（DCD），属一个季度的回落而非拐点。整体结论不变：需求面确定，压力在资金面与情绪面。\n【09:28 更新，含 Summizer 新增的 3 篇】治理面再添一层：据 Seeking Alpha 标题，国会要求英伟达临时 CEO（Kress）就 Megaspeed 事件做简报（细节未查证）——此前三位众院主席邀请的是黄仁勋本人、原定 11-18 闭门简报，问询对象扩展到现任管理层，治理面压力未见缓解；快照 NVDA 151.39（−2.6%，2027 前瞻区间 103.15/185.41/273.72 的下沿~中值）。产业面两条增量：小马智行重申年底 Robotaxi 3,500 辆、20 城目标（SEC 6-K），Robotruck 明年向港口扩展（据 Seeking Alpha 标题）；据 The Robot Report 标题，Rockwell（ROK）收购移动机器人公司 AGILOX（细节未查证），工业自动化龙头继 2023 年收购 Clearpath 后再补 AMR。Summizer 新增 Dell / AMD 访谈称 Agent 负载重新抬高服务器 CPU 地位（厂商自述）。整体结论不变：需求面确定，压力在资金面与治理面。\n【10:27 更新，含 Summizer 新增的 3 篇】情绪面在模型层与芯片层之间分化：Anthropic IPO 仍是今天最大事件，Bloomberg 标题称需求为“历史性上市”铺路、并与 SpaceX 纪录比较（最终定价细节未查证；此前公布的区间为每股 70~78 美元，Renaissance Capital 称目标募资约 610 亿美元、市值约 1.2 万亿美元）；Reuters 标题称纳指在消化英伟达指引与 Anthropic IPO 中震荡上行。英伟达治理面继续发酵：据 Seeking Alpha 标题，Bill Ackman 称英伟达董事会“未以股东最佳利益行事”（细节未查证；此前他公开支持黄仁勋），CNBC 标题称员工在临时 CEO Kress 与黄仁勋回任之间分裂；快照 NVDA 151.30（−2.7%，2027 前瞻区间 103.09/185.30/273.56 的下沿~中值）。推理边缘云出现正面信号：据 Seeking Alpha 标题，Akamai 因管理层乐观的 AI 展望上涨约 9%（快照 AKAM 92.71，+9.5%，区间 70.49/106.14/153.93 的下沿~中值，细节未查证）。整体结论不变：需求面确定，压力在治理面与新云的资金面。\n【11:28 更新，含 Summizer 新增的 1 篇】英伟达治理面开始转向“稳住团队”：据 CNBC 标题，临时 CEO Kress 在黄仁勋离任后的首次全员会上对员工说“继续向前”；据 Tom's Hardware 标题，公司承诺 12 月前给员工加薪并发放股权，以平息内部不满（细节未查证，网络检索未找到正文）。这对人才流失是缓冲，但会抬高运营费用和股权稀释——治理面压力从对外问询转到内部留人成本。据 Bloomberg 标题，美股因英伟达财报后的反弹熄火而下跌；快照 NVDA 151.77（−2.4%，2027 前瞻区间 103.41/185.88/274.41 的下沿~中值），情绪面延续回落。整体结论不变：需求面确定，压力在治理面与新云的资金面。\n【12:28 更新】自动驾驶政策面压力从加州外溢：据 Axios 标题，Waymo 在加州高速禁令后也从亚利桑那高速撤出（细节未查证，未确认是监管要求还是公司主动收缩）——政策面继续偏负，Robotaxi 高速场景的兑现时间进一步后移；快照 GOOGL 284.17（+1.4%，2027 前瞻区间 150.29/232.60/370.67 的中值~上沿），Anthropic 持股价值仍是主要支撑。英伟达财报后新云股走弱（CNBC 标题）已在前几次更新覆盖。整体结论不变：需求面确定，压力在治理面与新云的资金面。\n【13:28 更新，含 Summizer 新增的 1 篇】模型层情绪面继续走强：据 Bloomberg 标题，Anthropic 正考虑把 IPO 定价提高到每股最高 85 美元（细节未查证），高于此前公布的 70~78 美元区间；此前 Bloomberg 援引 FT 称承销商预计定价高于区间、隐含估值 1.5 万亿美元以上（stockanalysis 转载）。芯片层情绪面仍在回落：MarketWatch / Reuters 标题称英伟达强劲指引“被市场耸肩以对”，快照 NVDA 150.96（−2.9%，2027 前瞻区间 102.85/184.89/272.94 的下沿~中值），CRWV 47.83（−4.1%）、IREN −3.6%。产业面对存储偏正：据 Seeking Alpha 标题，美光重申 2027~28 年供给比 2026 年更紧、并继续与英伟达合作（与 9 月财报会口径一致，属重申）。整体结论不变：需求面确定，资金正从芯片 / 新云向模型层 IPO 轮动，压力在治理面与新云的资金面。\n【15:28 更新，含 Summizer 新增的 3 篇】政策面新增一项不确定性：据 Reuters 标题，美国议员要求微软就其与字节跳动 AI 合作谈判的报道做简报（细节未查证，未找到正文，谈判内容与规模不明）——今年 7 月国会已针对中国公司经 Azure 使用美国模型的“云端漏洞”提出立法，此事若属实，会把微软的对华云 / AI 业务放到政策面压力之下；快照 MSFT 508.29（+0.4%，2027 前瞻区间 377.23/514.91/689.99 的下沿~中值）。Summizer 补充 Anthropic 定价细节：83 美元对应完全稀释估值约 1.5 万亿美元，周四在纳斯达克上市（代码 ANT），AMD、博通、谷歌、美光、微软、英伟达、台积电通过同步私募认购 260 亿美元无投票权股份（TechCrunch）——芯片 / 云厂商同时是 Anthropic 的供应商和股东，模型层估值与上游订单的绑定进一步加深。PANW 一季报与收购 Applied Compute 已在前次覆盖；纳德拉关于 Agent 重塑网络变现的发言属观点，不改变判断。整体结论不变：需求面确定，压力在治理面与新云的资金面。\n【19:28 更新，含 Summizer 新增的 2 篇】存储环节基本面再获验证：据 SiliconANGLE，Everpure（原 Pure Storage，NYSE: P，不在本站股票池）三季度营收同比 +51% 至 15 亿美元（预期 13.3 亿），产品收入 +77%，连续五季增速 16%→20%→35%→38%→51%，全年指引第三次上调至 52~52.1 亿美元，并拿下一家前五大超大规模云厂商的设计合同，盘后涨约 4%（Q3 数字仅此一个来源，Q2 的 38% 与此前指引 50.3~50.7 亿可与其他来源对上）。分析师指出增长部分来自闪存涨价转嫁——“量”是结构性的、“价”是周期性的，与美光重申 2027~28 年供给更紧的口径一致。模型层：Google 发布中端模型 Gemini 4 Neon，按厂商自测速度约为 Carbon 的 3 倍、成本低约 60%；独立的 Artificial Analysis 智能指数 61 排第三，前三名只差 1~4 分，七周内第四个模型，竞争继续转向单位任务成本。整体结论不变：需求面确定，AI 资本开支向存储扩散，压力在治理面与新云的资金面。\n【23:28 更新】模型层预期面再上一档：据 Bloomberg 标题，Anthropic IPO 募资额达创纪录的 1,073 亿美元、超过 SpaceX 今年 6 月的 857 亿美元（细节未查证；此前 Renaissance Capital 口径约 610 亿美元，差额是否含 260 亿美元同步私募或超额配售尚不清楚，两者口径有分歧）。芯片层资金面有一个新质疑：据 Seeking Alpha 标题，Michael Burry 质疑华尔街为英伟达客户搭建的大规模融资安排的进展（细节未查证），与新云资金面压力同向；快照 NVDA 150.96（−2.9%，2027 前瞻区间 102.85/184.89/272.94 的下沿~中值）。据 Bloomberg 标题，联想因 AI 硬件需求强劲销售超预期，服务器整机产业面延续偏正。整体结论不变：需求面确定，资金向模型层轮动，压力在治理面与新云的资金面。",
@@ -2975,7 +3087,7 @@
    ]
   }
  ],
- "updated": "2026-11-18T23:28",
+ "updated": "2026-11-19T06:35",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
