@@ -1039,3 +1039,17 @@
 {"ts": "2026-11-19T21:10:38+00:00", "title": "💥 ESTC 单日 -8.3%", "body": "Elastic N.V. 收于 76.09。信号：趋势中。", "priority": "low", "sent": true}
 {"ts": "2026-11-19T21:10:38+00:00", "title": "💥 TSAT 单日 -8.9%", "body": "Telesat Corporation 收于 41.31。信号：中性。", "priority": "low", "sent": true}
 {"ts": "2026-11-19T22:30:00+00:00", "title": "📝 今日研判 2026-11-19", "body": "资金面得分 21（钱贵）；道指 −1,100 点、纳指 −2.25%、标普连跌 6 天，VIX 28.4、恐贪 19（极度恐惧）；ANT 首日收 +17% 没带动大盘。AMD −7.7%（Hunterbrook 做空报告，AMD 否认），NBIS −9.4%；盘后 INTU 指引远低于预期约 −13%，KEYS 四季度超指引。浪位未变，抛售在价格层面、未见基本面下修。 关注：INTU, KEYS, AMD, NVDA, PANW, NBIS, SANM, ESTC, AMBA, INTC", "priority": "normal", "sent": true}
+{"ts": "2026-11-19T23:28:59+00:00", "title": "📝 研判更新 15:28", "body": "据 Seeking Alpha 标题（细节未查证），加州总检察长就涉华问题向英伟达发出调查传票，合规面再承压；微软 agent 框架发布链被攻破。整体结论不变。涉及：NVDA MSFT", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:44+00:00", "title": "🟢 MTRN 进入「关注买点」", "body": "Materion Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 43% 位置；偏离200日线 -7%", "priority": "high", "sent": true}
+{"ts": "2026-11-20T01:16:44+00:00", "title": "🟢 WWD 进入「关注买点」", "body": "Woodward, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 48；处于52周区间的 35% 位置；偏离200日线 -12%", "priority": "high", "sent": true}
+{"ts": "2026-11-20T01:16:44+00:00", "title": "🔴 A 进入「回调风险」", "body": "Agilent Technologies, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 55；处于52周区间的 94% 位置；偏离200日线 +28%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:45+00:00", "title": "🔴 AJG 进入「回调风险」", "body": "Arthur J. Gallagher & Co.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 60；处于52周区间的 94% 位置；偏离200日线 +21%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:45+00:00", "title": "🔴 BSY 进入「回调风险」", "body": "Bentley Systems, Incorporated：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 65；处于52周区间的 90% 位置；偏离200日线 +26%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:45+00:00", "title": "🔴 DUK 进入「回调风险」", "body": "Duke Energy Corporation (Holdin：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 67；处于52周区间的 97% 位置；偏离200日线 +6%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:46+00:00", "title": "🔴 GEHC 进入「回调风险」", "body": "GE HealthCare Technologies Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 67；处于52周区间的 85% 位置；偏离200日线 +20%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:46+00:00", "title": "🔴 GSAT 进入「回调风险」", "body": "Globalstar, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 66；处于52周区间的 100% 位置；偏离200日线 +12%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:46+00:00", "title": "🔴 SAIC 进入「回调风险」", "body": "Science Applications Internatio：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 54；处于52周区间的 92% 位置；偏离200日线 +30%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:46+00:00", "title": "🔴 STE 进入「回调风险」", "body": "STERIS plc (Ireland)：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 68；处于52周区间的 91% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:47+00:00", "title": "🔴 U 进入「回调风险」", "body": "Unity Software Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 58；处于52周区间的 89% 位置；偏离200日线 +52%", "priority": "normal", "sent": true}
+{"ts": "2026-11-20T01:16:47+00:00", "title": "🚀 ENVX 单日 +8.0%", "body": "Enovix Corporation 收于 1.48。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-20T01:16:47+00:00", "title": "还有 3 条更新", "body": "🚀 OKTA 单日 +12.1%\n🚀 RBRK 单日 +9.3%\n💥 YSS 单日 -11.1%", "priority": "low", "sent": true}
