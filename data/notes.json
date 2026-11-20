@@ -75,6 +75,11 @@
   ],
   "INTC": [
    {
+    "date": "2026-11-20",
+    "text": "产业面向上：微软成为首家公开采用 EMIB-T 封装做 Azure 自研芯片的客户，并锁定多年 Xeon（含 Diamond Rapids）供货，金额未披露；扩产受高端基板紧缺约束。",
+    "url": "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html"
+   },
+   {
     "date": "2026-11-19",
     "text": "产业面向上：18A-P 首个外部客户，大盘 −2% 时逆势 +1.9%，接近 2027 前瞻中值。",
     "url": "https://www.datacenterdynamics.com/en/news/intel-secures-first-external-customer-for-18a-p-process-node/"
@@ -154,6 +159,11 @@
    }
   ],
   "WULF": [
+   {
+    "date": "2026-11-20",
+    "text": "产业面兑现：肯塔基 480MW 园区（客户 Anthropic、Google 兜底、Fluor 总包）进入钢结构施工，首栋 2027 年上线。",
+    "url": "https://www.datacenterdynamics.com/en/news/terawulf-starts-construction-at-kentucky-data-center-campus/"
+   },
    {
     "date": "2026-11-08",
     "text": "谷歌为 TeraWulf 肯塔基数据中心提供信用担保——大厂用自身信用帮中小开发商降低融资成本。",
@@ -456,6 +466,11 @@
   ],
   "NBIS": [
    {
+    "date": "2026-11-20",
+    "text": "产业面 / 供给面向上：与 Mega Or 追加以色列 134MW、七年租期，累计约 222MW，2028Q2 前完工；资金面上卖方对其负债与客户预付款撑资本开支有质疑。",
+    "url": "https://www.datacenterdynamics.com/en/news/nebius-expands-israel-data-center-lease-with-mega-or-by-134mw/"
+   },
+   {
     "date": "2026-11-19",
     "text": "资金面 / 情绪面向下：收盘 −9.4%，未见公司层面新消息，新云在风险偏好下降时跌幅最大。",
     "url": "https://www.bnnbloomberg.ca/markets/2026/11/19/wall-street-looks-set-to-halt-its-losing-streak-after-anthropics-ipo-revives-ai-stocks/"
@@ -474,11 +489,6 @@
     "date": "2026-11-13",
     "text": "资金面偏负：TechCrunch 报道英伟达可能收缩对新云和 AI 基础设施创业公司的投资，同类公司的融资和估值环境转紧；当日 −9.9% 收于 115.88。",
     "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "资金面偏负：财报后连续两日大跌（今日 −9.9%），资本开支大幅上调叠加 10 年期美债 5.15%，市场在给依赖融资的新云厂商加折价。",
-    "url": "https://www.securities.io/nebius-raises-capex-to-27-billion-as-capacity-delays-shift-revenue/"
    }
   ],
   "AMAT": [
@@ -731,6 +741,11 @@
    }
   ],
   "BABA": [
+   {
+    "date": "2026-11-20",
+    "text": "基本面向上：FY27Q2 AI 云收入 610 亿元（+53%）、外部云 +64%，柔佛第三座数据中心上线，平头哥下一代芯片明年量产（DCD 转述）；合规面的 Megaspeed 风险未消。",
+    "url": "https://www.datacenterdynamics.com/en/news/alibaba-cloud-launches-sixth-data-center-in-malaysia/"
+   },
    {
     "date": "2026-11-19",
     "text": "合规面偏负：据 Seeking Alpha 标题（细节未查证），阿里巴巴因与 Megaspeed 的关系被起诉；此前 Culper 指称 Megaspeed 由阿里经空壳出资、FT 称阿里为其锚定客户，美方调查对象是 Megaspeed 而非阿里。",
@@ -1004,6 +1019,11 @@
  "sectors": {
   "ai": [
    {
+    "date": "2026-11-20",
+    "text": "电力成为 AI 扩张的显性约束并开始进入规则：PJM 向 FERC 提交合并并网方案（12 个月接入、50MW 以上为“大型计算负载”、升级成本向数据中心收取），Google 出资改造输电线、Meta 因燃气发电重估净零目标；先进封装（EMIB）获微软采用，封装 / 基板与电力同为供给瓶颈。",
+    "url": "https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/"
+   },
+   {
     "date": "2026-11-19",
     "text": "11-19 收盘：ANT 首日 +17% 没有带动大盘，纳指 −2.25%、VIX 28.4，AMD（做空报告）、NBIS、CRWV 领跌；INTU 下季指引大幅低于预期并出售 Mailchimp，应用软件被 AI 压缩预期的逆风再坐实一步；KEYS 四季度超指引，AI 测试测量需求向上——硬件需求面与软件预期面继续分化。"
    },
@@ -1018,10 +1038,6 @@
    {
     "date": "2026-11-18",
     "text": "产业面约束扩展到“社会许可”：北弗吉尼亚 Loudoun 县正式通过最长 12 个月的数据中心 / 变电站审批暂停（该县预算 40% 来自数据中心）；英伟达澄清担保只在建成后生效，新机房建设期风险仍由新云承担。 产业面：Cleanview 统计 Q3 美国数据中心新开工 8.4GW，自 2025Q1 以来首次环比下降；但 10 月回升到 4.6GW、年初至今 38GW 约为去年两倍，在建 58GW vs 运营 65GW，属单季回落而非拐点。"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "英伟达三季报确认需求面（收入 +103%、四季度指引 1,300 亿美元不含中国），同日 SEC 调查报道与员工人才流失警告让治理面继续承压；应用层 Anthropic 上市前软件股集体下跌，“AI 原生替代 SaaS”进入资金面定价。 晚间补充：英伟达全年增长预测上调至 75%、退出对华 H200；瓶颈从 GPU 转到下游机房、电力和客户融资能力。 资金面：英伟达股权投资 / 担保规模达 655 亿 / 1,180 亿美元后，Kress 转向“严格评估 + 多余现金回馈股东”，下游“供应商融资”来源收缩，早期实验室与小型新云融资压力上升。"
    }
   ],
   "quantum": [
@@ -1107,6 +1123,77 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-20",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 13 篇】情绪面继续转冷：VIX 升至 30.6（近一年 100% 分位，期限结构倒挂），进入“极度恐慌”区间；Anthropic（ANT）上市第二天盘前下跌，跌幅各家口径不一（CNBC 约 −13%、CNBC Africa 约 −6%、Quartz 约 −8%，取数时点不同），前一日收 97.17 美元、仍高于 83 美元发行价约 17%，英伟达、AMD 盘前同步走弱。资金面没有新增利好，报道归因仍是 AI 估值担忧、AMD 对华敞口争议和英伟达管理层变动——都是 11-19 已写入的因素在延续。产业面反而在继续兑现：微软成为首家公开采用英特尔 EMIB（EMIB-T）先进封装做 Azure 自研芯片的公司，并锁定多年 Xeon（含 Diamond Rapids）供货；TeraWulf 为 Anthropic 建设的肯塔基 480MW 园区进入钢结构施工；Nebius 在以色列追加租用 134MW；PJM 向 FERC 提交方案，拟把数据中心 / 电厂并网时间从约两年缩短到 12 个月。三浪框架下：一浪（硬件）、三浪仍是“财报已改善，价格未反映”，二浪在“尚未启动 / 财报已改善”之间反复；今天的变化集中在情绪面和价格，整体结论不变——需求面 / 产业面确定，压力在资金面、合规面与情绪面；VIX ≥30 叠加倒挂历史上往往接近情绪底，但杠杆 ETF 成交仍高，尚未看到出清。",
+   "sectors": {
+    "ai": "【06:29】产业面：微软宣布采用英特尔 EMIB-T 封装做 Azure 自研芯片，并确认多年 Xeon 供货（含 2027 年放量的 Diamond Rapids），合同金额与芯片型号未披露（Intel 新闻稿、TechPowerUp）；英特尔方面称 EMIB 所需高端有机基板全行业紧缺，限制扩产速度。电力瓶颈：PJM 提交合并并网研究方案（50MW 以上定义为“大型计算负载”，输电升级成本可直接向数据中心收取，扰动期间须保持并网），FERC 拟 120 天内裁决；Google 出资约 1080 万美元为 AEP 旗下 Ohio Power 换装先进导线，让 24MW 提前两年可用；Meta 承认因依赖燃气发电、净碳足迹 +45%，重新评估 2030 净零（均 DCD）。算力供给：TeraWulf 肯塔基园区（480MW，客户 Anthropic、Google 兜底）开始立钢，首栋 2027 年上线；Nebius 与 Mega Or 追加 134MW、七年租期。阿里云柔佛第三座数据中心上线，阿里 FY27Q2 AI 云收入 610 亿元（+53%），平头哥下一代芯片明年量产（DCD 转述）。情绪面：ANT 上市次日盘前下跌、NVDA / AMD 同跌，VIX 30.6。合规面：据 Seeking Alpha 标题（细节未查证、未检索到独立报道），特朗普政府半年内批准约 90 万颗英伟达 / AMD AI 芯片对华出口，数字待核实。",
+    "quantum": "【06:29】无重要新信息：KT 与 LG 电子演示量子安全直接通信（QSDC），只传了 1024 比特数据、未给距离和误码率（The Quantum Insider），属早期验证，不涉及本站上市公司浪位。",
+    "robotics": "无重要新信息",
+    "aerospace": "【06:29】无重要新信息（一级市场：Sophia Space 在 Kepler 中继星座上部署在轨计算操作系统，轨道算力仍处软件先行的早期阶段）。",
+    "autonomous": "无重要新信息"
+   },
+   "watch": [
+    {
+     "t": "NBIS",
+     "why": "Nebius 与以色列 Mega Or 追加租用 134MW（七年 + 五年续约，累计约 222MW，DCD），供给端继续扩张，但卖方已有“负债 / 预付款撑资本开支”的质疑；现价 96.92，位于 2027 前瞻区间 78.13 / 124.83 / 189.9 的下沿~中值之间。"
+    },
+    {
+     "t": "INTC",
+     "why": "微软成为首家公开采用英特尔 EMIB 封装做 Azure 芯片的客户，并锁定多年 Xeon 供货（Intel 新闻稿），代工 / 封装的外部客户叙事再加一项，Wedbush 称利好但重要程度未明；现价 55.72，位于 2027 前瞻区间 30.26 / 56.89 / 117.3 的下沿~中值之间。"
+    },
+    {
+     "t": "WULF",
+     "why": "TeraWulf 为 Anthropic 建设的肯塔基 480MW 园区进入钢结构施工，首栋 2027 年上线（DCD），融资承诺开始转为在建产能；现价 11.58，位于 2027 前瞻区间 7.29 / 15.68 / 25.52 的下沿~中值之间。"
+    },
+    {
+     "t": "NVDA",
+     "why": "ANT 上市次日盘前下跌、英伟达同步走弱；据 Seeking Alpha 标题（未查证）半年内获批约 90 万颗对华 AI 芯片；现价 145.98，位于 2027 前瞻区间 99.08 / 178.79 / 262.93 的下沿~中值之间。"
+    }
+   ],
+   "sources": [
+    [
+     "Anthropic stock falls 13% premarket amid AI sell-off as Nvidia, AMD also sink (CNBC)",
+     "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html"
+    ],
+    [
+     "Anthropic stock slips after record IPO as AI selloff drags down Nvidia and AMD (Quartz)",
+     "https://qz.com/anthropic-stock-slips-record-ipo-ai-selloff-nvidia-amd-112026"
+    ],
+    [
+     "Microsoft and Intel deepen collaboration for Azure infrastructure (Intel)",
+     "https://www.intel.com/content/www/us/en/newsroom/news/corporate/microsoft-azure-infrastructure-collaboration.html"
+    ],
+    [
+     "Microsoft to use Intel's EMIB advanced packaging (TechPowerUp)",
+     "https://www.techpowerup.com/354994/microsoft-to-use-intels-emib-advanced-packaging-technology"
+    ],
+    [
+     "Nebius expands Israel data center lease with Mega Or by 134MW (DCD)",
+     "https://www.datacenterdynamics.com/en/news/nebius-expands-israel-data-center-lease-with-mega-or-by-134mw/"
+    ],
+    [
+     "TeraWulf starts construction at Kentucky data center campus (DCD)",
+     "https://www.datacenterdynamics.com/en/news/terawulf-starts-construction-at-kentucky-data-center-campus/"
+    ],
+    [
+     "PJM plan could cut grid connection times to 12 months (DCD)",
+     "https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/"
+    ],
+    [
+     "Google to fund $10.8m transmission line upgrade for Ohio Power (DCD)",
+     "https://www.datacenterdynamics.com/en/news/google-to-fund-108m-transmission-line-upgrade-for-ohio-power-in-columbus/"
+    ],
+    [
+     "Meta to reevaluate net-zero timeline (DCD)",
+     "https://www.datacenterdynamics.com/en/news/meta-to-reevaluate-net-zero-timeline-on-the-back-of-record-emissions/"
+    ],
+    [
+     "Alibaba Cloud launches sixth data center in Malaysia (DCD)",
+     "https://www.datacenterdynamics.com/en/news/alibaba-cloud-launches-sixth-data-center-in-malaysia/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-19",
    "market": "【收盘完整研判，含 13:28 后 Summizer 新增的 3 篇】资金面没有改善：系统资金面得分 21（钱贵 / 紧缩），10 年期美债 5.05%（一年 +93bp）、美元指数 103.93（一年 +4.4%）、高收益债相对长期国债近 3 个月 −1.5%，资金在避险。情绪面明显转冷：Anthropic（ANT）首日开盘较 83 美元发行价 +34%、收盘约 +17%，但没有带动大盘——道指跌约 1,100 点、纳指 −2.25% 至 23,879、标普 −2.0% 连跌第 6 天（AP 称为 2024 年以来最长连跌），超过 90% 的标普成分股下跌；VIX 收 28.4（近一年 99% 分位，期限结构倒挂）、CNN 恐贪指数 19（极度恐惧，一周前 40），而三倍做多 ETF 成交占比仍在 87% 分位，杠杆还没出清。报道把下跌归因于 AI 估值担忧、通胀与联储利率路径、英伟达管理层变动；个股层面 AMD −7.7%（Hunterbrook 做空报告指称对华敞口，AMD 否认）、NBIS −9.4%、CRWV −6.1%，盘后 INTU 因下季指引远低于预期跌约 13%。浪位：AI 一浪、三浪仍是“财报已改善，价格未反映”，二浪“尚未启动”，今天的抛售是价格层面的，没有看到基本面数据被下修；整体结论不变——需求面确定，压力在资金面（利率）、治理 / 合规面与情绪面，本页 735 家中只有 28% 站上 200 日线。\n\n【15:28 更新，含 Summizer 新增的 2 篇】合规面再添一项：据 Seeking Alpha 标题（细节未查证），加州总检察长已就涉华问题向英伟达送达调查传票；此前 11 月 17 日总检察长 Bonta 只表示在评估、称芯片流向中国方面“出现了危险信号”，并未公布立案（Stocktwits 转述 Bloomberg），两者口径有差异，以后续正式公告为准。另据 SiliconANGLE，微软 Agent Framework 的官方 PyPI 包被人用内部发布证书推送了两个窃取凭证的恶意版本（约一小时后撤下，Wiz 只确认 3 次成功窃取），agent 落地的瓶颈之一是安全和信任，价值向供应链 / 身份安全层倾斜。这两件都落在治理 / 合规面与情绪面，不改变需求面和产业面，整体结论不变；INTU 指引与 Mailchimp 出售此前已写入。\n\n【17:28 更新，含 Summizer 新增的 4 篇】预期面再添一个软件样本：Elastic（ESTC）二季度调整后 EPS 0.94 美元、收入 4.96 亿美元（+17%）均超预期，但下季指引 EPS 0.90~0.92 美元、收入 5.075~5.085 亿美元低于预期 0.95 美元 / 5.176 亿美元，盘后约 −8%（SiliconANGLE），和 INTU 一样是“业绩好、指引弱”，市场仍在用“AI 压缩软件商业模式”给中间层定价。产业面：Anthropic 招股文件显示未来 12 个月算力 / 基础设施承诺约 707 亿美元、2030 年底前 4516 亿美元，披露的总承诺约 1.05~1.08 万亿美元（TechCrunch），算力需求端的确定性再被坐实，但也说明前沿实验室要持续向公开市场融资，资金面压力会传导到上游。合规面：英伟达加州传票一事已有 Reuters 标题（正文未查证），与此前“仍在评估”的报道口径仍不一致。整体结论不变：需求面 / 产业面确定，压力在资金面、合规面和软件股的预期面。\n\n【19:28 更新，含 Summizer 新增的 2 篇】预期面补一个硬件样本：据 Seeking Alpha 标题（细节未查证），Keysight（KEYS）给出一季度收入指引 20.40~20.60 亿美元、预计 2027 财年收入增长约 20%，四季度收入约 19.9 亿美元之后指引继续抬升，AI 测试测量需求在财报层面延续，与 INTU / ESTC 软件“业绩好、指引弱”形成对照。政策面：26 名国会议员（含 7 名共和党人）成立两党 AI 安全与创新党团，以 agent 越出沙盒的已发生事件为立法依据（SiliconANGLE），联邦层面监管讨论的触发点从假设风险转向 agent 事故，短期不改需求面。另据 Seeking Alpha 标题（细节未查证）英伟达在洽谈以 5 亿美元以上收购扩散模型初创公司 Inception，规模相对其体量很小。Waymo 撤出高速为 11-17 已写入的旧闻重复报道。整体结论不变：需求面 / 产业面确定，压力在资金面、合规面和软件股预期面。\n\n【21:28 更新】合规面再添一条线索：据 Seeking Alpha 标题（细节未查证，未检索到独立报道），阿里巴巴因与 Megaspeed 的关系被起诉；此前公开信息是 Culper Research 5 月指称 Megaspeed 由阿里经空壳公司出资、FT 称阿里是其东南亚云服务的锚定客户，Megaspeed 否认转运，美方调查对象是 Megaspeed 而非阿里；另有 11-9 在北加州联邦法院提起的针对英伟达 Megaspeed 相关表述的证券集体诉讼（尚未认证）。这件事把英伟达治理 / 出口合规的风险延伸到中国云厂商一侧，仍落在合规面与情绪面，不改变需求面和产业面，整体结论不变。ESTC 全年指引 20~20.08 亿美元、经营利润率上调到约 19.5% 属已写入财报的补充；Waymo 撤出高速为重复报道。",
@@ -3292,7 +3379,7 @@
    ]
   }
  ],
- "updated": "2026-11-19T22:28",
+ "updated": "2026-11-20T06:29",
  "trend": {
   "NVDA": {
    "date": "2026-11-18",
