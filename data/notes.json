@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-21",
+    "text": "情绪面 / 合规面转差：11-20 −14% 收 125.53、连跌 7 周；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），贝森特称出口政策不变（对冲），基本面指引未变。",
+    "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+   },
+   {
     "date": "2026-11-19",
     "text": "产业面小幅：据 Seeking Alpha 标题（细节未查证）洽谈以 5 亿美元以上收购扩散模型初创 Inception，延续软件 / 模型层补强，金额相对体量很小，不改变合规面压力。",
     "url": "https://seekingalpha.com/symbol/NVDA"
@@ -19,11 +24,6 @@
    {
     "date": "2026-11-19",
     "text": "情绪面向下：大盘 −2% 当天收 145.98（−3.3%），财报后需求面数据未变，按电力 / 资本 / 承购证明分配供货的表述让新云资金面成为下游约束。",
-    "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "产业面 / 资金面：电话会上 Kress 明确供货分配看电力与机房就绪、资本和承购证明（非投资级客户），价格统一；监管面：已不再向中国发运获许可的 Hopper；需求面：Vera CPU 获 CoreWeave、Meta、Nscale、OpenAI 采用，CPO 进入量产。",
     "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
    }
   ],
@@ -133,6 +133,11 @@
   ],
   "AMZN": [
    {
+    "date": "2026-11-21",
+    "text": "产业面：据报以约 70 亿~75 亿美元洽购 Decart（由 Annapurna 负责人牵头，提升 Trainium 效率与跨硬件迁移），未官宣；股价 11-20 仅 −4.1%，相对抗跌。",
+    "url": "https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/"
+   },
+   {
     "date": "2026-11-19",
     "text": "预期面向上：ANT 首日开盘 111.50 美元（+34%，估值约 2 万亿美元），亚马逊所持 Anthropic 股权按市价再重估。",
     "url": "https://siliconangle.com/2026/11/18/after-anthropic-prices-ipo-higher-than-expected-shares-shoot-up-34-trading-debut/"
@@ -151,11 +156,6 @@
     "date": "2026-11-16",
     "text": "产业面向上：AWS 印第安纳 Project Rise 70 亿美元园区开工（土地买自 NIPSCO、紧邻电厂）；Zoox 无人驾驶出租车接入 Uber 拉斯维加斯（标题）。",
     "url": "https://www.datacenterdynamics.com/en/news/aws-breaks-ground-on-7bn-data-center-in-indiana/"
-   },
-   {
-    "date": "2026-11-15",
-    "text": "产业面 / 预期面向下：据 SpaceNews，ULA Vulcan 发射失败，40 颗 Leo 卫星未入轨（亚马逊 38 次 Vulcan 采购中的首发），Vulcan 停飞待查；卫星宽带部署进一步延后，对整体基本面影响有限。",
-    "url": "https://spacenews.com/vulcan-launch-of-amazon-leo-satellites-fails/"
    }
   ],
   "WULF": [
@@ -425,6 +425,11 @@
   ],
   "AMD": [
    {
+    "date": "2026-11-21",
+    "text": "产业面：申请文件显示 AMD 是宾州 Project Phoenix 园区（5C 运营，首栋 IT 160MW）计划最终用户，芯片厂开始自己锁定电力和场地；11-20 股价 −13.3%。",
+    "url": "https://www.datacenterdynamics.com/en/news/amd-set-to-lease-planned-5c-data-center-in-pennsylvania/"
+   },
+   {
     "date": "2026-11-19",
     "text": "合规 / 情绪面向下：Hunterbrook 做空报告指称对华敞口（2025 年中国大陆 / 香港开票约占 22%）与固件流向实体清单企业，AMD 否认，报告方承认不构成违规证据；收盘 −7.7%。",
     "url": "https://finance.yahoo.com/technology/articles/amd-shares-slide-over-9-171600324.html"
@@ -443,11 +448,6 @@
     "date": "2026-11-19",
     "text": "产业面偏正（OpenAI 单方披露）：OpenAI 称其模型在 AMD 旗舰 GPU IP 上带来最高 14% PPA 改进、即将推出的 CPU 关键模块个位数提升，深化双方设计层合作。",
     "url": "https://www.datacenterdynamics.com/en/news/openai-claims-its-models-have-delivered-chip-design-improvements-across-both-in-house-and-amd-designed-hardware/"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "产业面偏正（未查证细节）：据 Fortune 标题 OpenAI 继续推进与 AMD 的合作、分散对英伟达的依赖；英伟达治理风波强化了客户“第二供应商”的动机（判断）。",
-    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNVVleXlRV2xxdHo2ams5NWFBWUlNdzF1VlNJWWJCX201T0VqVTAyejZFY3ZsVDhGb0FSSDZyUEI3Rk83MjM3SjdBTW1XZHNKckY2eVdjS01yVGk4UWRXeVFYUUM4bGFvUG5VRXphTXEzdU53QUg4S0xiS1ZlZ283eVRwQnhUckNXYjNlWkZDVm96R0EweFFLT1hwZjZmT1pqaTNWcXBtc2FDakdPWUpDLUdIMW96Y0VEejZIajMxelZ"
    }
   ],
   "APLD": [
@@ -465,6 +465,11 @@
    }
   ],
   "NBIS": [
+   {
+    "date": "2026-11-21",
+    "text": "情绪面 / 资金面：11-20 −16.1% 收 81.31，卖方多篇下调评级聚焦融资能力；海外数据中心征税提议对其海外扩张是新的合规变量（细节未定）。",
+    "url": "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html"
+   },
    {
     "date": "2026-11-20",
     "text": "产业面 / 供给面向上：与 Mega Or 追加以色列 134MW、七年租期，累计约 222MW，2028Q2 前完工；资金面上卖方对其负债与客户预付款撑资本开支有质疑。",
@@ -484,11 +489,6 @@
     "date": "2026-11-13",
     "text": "资金面：英伟达 5000 亿美元 AI 融资平台据报无贷款落地、至少一家贷方讨论退出（纽约时报转述），叠加利率上行，新云借债扩张的资金面进一步偏负。",
     "url": "https://fourweekmba.com/ai-nvidia-ceo-exit-500b-ai-lending-plan-has-closed-no-loans/"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "资金面偏负：TechCrunch 报道英伟达可能收缩对新云和 AI 基础设施创业公司的投资，同类公司的融资和估值环境转紧；当日 −9.9% 收于 115.88。",
-    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
    }
   ],
   "AMAT": [
@@ -1019,10 +1019,22 @@
     "text": "预期面待定：财报前一天 −8.1%，11-19 盘后发布财报，结果待下次研判补充。",
     "url": "https://www.barchart.com/story/news/34488552/why-elastic-estc-shares-are-sliding-today"
    }
+  ],
+  "ORCL": [
+   {
+    "date": "2026-11-21",
+    "text": "资金面改善：公司称履行 OpenAI 合同的融资已全部完成（Reuters / The Information 标题，金额未查证），回应了资本开支融资缺口的担忧；同日股价 −8.5% 随板块下跌。",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSmpQQVdqRTFyNlZSVVFsZG8yNGJ5WWRaOU1ZRXJXQkJJM05GaXY5ZUpQTndMVVljNXNpYUJDUmF1T3hQcWkzNi1udWc4c3pMV3F6RFk1dUctcG5jOFlRcUJDMV9IM2hBdV9KbUJqSmJVa1lXS19LTUVJcUg3alFNWl9RREgwRUVrRU9LSkFoRGZJUWpxLVB1bzlldWE4VDRHRmczZVBMbXFiYlRVSHQ2S293M1JnZUNMSTdZdEVKTVpMXzA?oc=5"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-21",
+    "text": "情绪面出清 + 合规面扩散：11-20 AI 链单日普跌 10%~16%（NVDA −14%），加州对英伟达调查据报涉刑事，白宫提出对海外数据中心征税；对冲项是出口政策不变、Oracle 完成 OpenAI 合同融资。产业面（AMD 自锁电力场地、CPO 万卡网络、电网审批提速法案）继续向前，价格与基本面背离扩大。",
+    "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+   },
    {
     "date": "2026-11-20",
     "text": "电力成为 AI 扩张的显性约束并开始进入规则：PJM 向 FERC 提交合并并网方案（12 个月接入、50MW 以上为“大型计算负载”、升级成本向数据中心收取），Google 出资改造输电线、Meta 因燃气发电重估净零目标；先进封装（EMIB）获微软采用，封装 / 基板与电力同为供给瓶颈。",
@@ -1039,10 +1051,6 @@
    {
     "date": "2026-11-18",
     "text": "FOMC 纪要：几乎所有与会者认为后续加息可能合适，“许多与会者”把 AI 建设视为实质性通胀风险——资金面对 AI 资本开支的约束首次被联储点名；同日 Anthropic 以 83 美元定价高于区间，模型层预期面向上，英伟达 10-Q 推迟让治理面再添不确定性。存储环节：Everpure 营收增速连续五季加快至 +51%，拿下前五大云厂商设计合同，AI 资本开支向存储层扩散（部分来自闪存涨价，周期性需区分）。"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "产业面约束扩展到“社会许可”：北弗吉尼亚 Loudoun 县正式通过最长 12 个月的数据中心 / 变电站审批暂停（该县预算 40% 来自数据中心）；英伟达澄清担保只在建成后生效，新机房建设期风险仍由新云承担。 产业面：Cleanview 统计 Q3 美国数据中心新开工 8.4GW，自 2025Q1 以来首次环比下降；但 10 月回升到 4.6GW、年初至今 38GW 约为去年两倍，在建 58GW vs 运营 65GW，属单季回落而非拐点。"
    }
   ],
   "quantum": [
@@ -1128,6 +1136,101 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-21",
+   "market": "（周末增量，完整研判 14:20 发布）【18:29 更新，含 Summizer 新增的 19 篇】11-20（周五）是 AI 链的集中出清日：据快照，NVDA −14.0% 收 125.53（2027 前瞻区间 85.2 / 153.74 / 226.1，位于下沿与中值之间、比中值低约 18%），AMD −13.3%、AVGO −12.2%、AMAT −10.7%、NBIS −16.1%、WULF −14.9%、CRWV −12.0%、ORCL −8.5%、INTC −8.0%；CNBC 称英伟达连跌 7 周、为 2008 年以来最长，Seeking Alpha 标题称纳指当周跌约 10%，WSJ 标题称 AI 相关市值累计蒸发约 4 万亿美元。五面里变化的是情绪面和合规面：情绪面从“恐慌”进一步走向“踩踏”（VIX 11-20 盘中到 31.4、近一年 100% 分位、期限结构倒挂）；合规面新增 Bloomberg 标题称加州对英伟达的调查涵盖潜在刑事违法（正文未查证，此前口径是民事 / 证券披露），以及特朗普称要对在海外建数据中心的美国公司征“巨额税”（细节空白）。对冲的一面：财长贝森特对 CNBC 说对英伟达的芯片出口政策不变（Seeking Alpha 标题写作“排除进一步限制”），Oracle 称为履行 OpenAI 合同的融资已全部完成（Reuters / The Information 标题，金额细节未查证）——这直接回应了过去两周市场对“AI 资本开支谁来出钱”的担忧。产业面没有转向：AMD 被申请文件列为宾州 Project Phoenix 园区（首栋 160MW）最终用户，芯片厂开始亲自锁定电力和场地；Lambda 在魁北克上线首个万卡级 CPO 光交换网络；参议院 62:33 通过 BAAJA，数据中心多付电网成本、换输电审批提速。三浪框架下：一浪（芯片 / 硬件）价格跌回前瞻区间下半段，“财报已改善、价格未反映”的背离进一步拉大；整体结论不变——需求和产业面确定，压力集中在合规面、资金面与情绪面；VIX≥30 叠加倒挂通常接近情绪底，但治理（CEO 继任、调查范围）尚无落点，出清是否结束要看下周价格是否止跌。",
+   "sectors": {
+    "ai": "【18:29】11-20 板块踩踏：NVDA −14%、AMD −13%、AVGO −12%、AMAT −11%，新云 NBIS −16%、WULF −15%、CRWV −12%。合规面：加州调查据 Bloomberg 标题涉及潜在刑事违法（未查证）；特朗普要对海外建数据中心征税（细节空白，可能冲击东南亚新云 / 渠道），同日 Kress 确认不再向中国卖 H200（TechCrunch）。对冲：贝森特称出口政策不变；Oracle 称 OpenAI 合同融资已完成；亚马逊据报以约 70 亿~75 亿美元洽购 Decart（由 Annapurna 负责人牵头，目标是提升 Trainium 效率，未官宣）。产业面：AMD 锁定宾州 160MW 园区、Lambda 万卡 CPO 网络上线、参议院通过数据中心电网付费法案（成本小利空、审批提速利好电网层）。",
+    "quantum": "【18:29】The Quantum Insider 梳理商务部 20.13 亿美元 CHIPS 量子意向书条款：IBM 旗下 Anderon 最高 10 亿、GlobalFoundries 最高 3.75 亿，Atom Computing、D-Wave、Infleqtion、PsiQuantum、Quantinuum、Rigetti 各最高 1 亿，商务部在每家拿非控股少数股权——资金面利好、但带来股权稀释与政府股东条款，估值需计入。",
+    "robotics": "无重要新信息（IEEE Video Friday 为科研演示，不涉及上市公司浪位）",
+    "aerospace": "【18:29】产业面：Starship 第 15 飞 Ship 42 从轨道返回被塔臂抓取成功、Booster 22 返回途中改为海上着陆后被终止（NASASpaceflight），二级回收的完成度高于一级；隔热瓦与尾裙损伤仍待解决。TechCrunch 指出轨道算力的融资问题（芯片无法抵押、无残值回收）可能先于物理问题卡住商业化。Filtronic 据 Seeking Alpha 标题获 SpaceX 创纪录订单（细节未查证）。",
+    "autonomous": "无重要新信息"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "11-20 −14.0% 收 125.53，连跌 7 周（2008 年以来最长）；2027 前瞻区间 85.2 / 153.74 / 226.1，价格在下沿与中值之间、较中值低约 18%。基本面（四季度指引 1,300 亿美元）没变，压力来自加州调查据报涉刑事、CEO 继任未定、对华 H200 退出。"
+    },
+    {
+     "t": "AMD",
+     "why": "11-20 −13.3% 收 424.39，2027 前瞻区间 320.69 / 519.77 / 906.39，位于下沿与中值之间；产业面新增宾州 Project Phoenix 园区（首栋 160MW）最终用户身份，芯片厂直接锁定电力与场地。"
+    },
+    {
+     "t": "ORCL",
+     "why": "11-20 −8.5% 收 101.19，前瞻区间 75.64 / 123.93 / 186.04；公司称履行 OpenAI 合同的融资已全部完成（Reuters 标题），资金面最大的疑问之一得到回应，但价格尚未反映。"
+    },
+    {
+     "t": "AVGO",
+     "why": "11-20 −12.2% 收 304.41，前瞻区间 251.93 / 372.82 / 561.03，位于下沿与中值之间，无公司层面新消息，属板块性估值压缩。"
+    },
+    {
+     "t": "AMAT",
+     "why": "11-20 −10.7% 收 302.63，前瞻区间 204.05 / 370.64 / 597.14，设备股随 AI 链一起被抛售，无公司层面新消息。"
+    },
+    {
+     "t": "NBIS",
+     "why": "11-20 −16.1% 收 81.31，前瞻区间 64.88 / 105.72 / 162.64；Seeking Alpha 多篇下调评级聚焦融资能力，海外数据中心征税若落地，对其以色列 / 欧洲扩张构成合规面新变量。"
+    },
+    {
+     "t": "SANM",
+     "why": "11-20 −9.7% 收 139.76，继续低于 2027 前瞻下沿 145.74（中值 200.29），无公司层面新消息，价格与基本面背离进一步扩大。"
+    },
+    {
+     "t": "AMZN",
+     "why": "11-20 仅 −4.1% 收 246.82，位于前瞻中值 202.03 与上沿之间，相对抗跌；据报以约 70 亿~75 亿美元洽购 Decart 以提升 Trainium 效率（未官宣）。"
+    }
+   ],
+   "sources": [
+    [
+     "CNBC：英伟达跌 14%、连跌 7 周为 2008 年以来最长",
+     "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+    ],
+    [
+     "Bloomberg（标题）：加州英伟达调查涵盖潜在刑事违法",
+     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3ZKSUpVM0xWNVRuM3B0RjhyOTM0NUNoRmNYVnVKYm50andhaTFJVHZLenZrckE1aFZuMGhiSW42Mlh5c2lZcGc5eTg1NDQwWVRFQWxSOGtzWHk2S2pGLVpvM3N2enh4Mms5OTF0MHFXc0JnN3ZoYlB3ODJqX3FoSjJCTWlPOHQ2SjNOQ1Q3cjVNR0NWRVYxWVFEanpwZC1mSW5SeGpXSDRqX1d0TUVwdE1vYVJWUQ?oc=5"
+    ],
+    [
+     "CNBC：特朗普威胁对海外建数据中心的美国公司征税",
+     "https://www.cnbc.com/2026/11/20/trump-data-centers-ai-companies-tax.html"
+    ],
+    [
+     "CNBC：贝森特称英伟达芯片出口政策不变",
+     "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html"
+    ],
+    [
+     "Reuters（标题）：Oracle 称 OpenAI 基础设施合同融资已完成",
+     "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSmpQQVdqRTFyNlZSVVFsZG8yNGJ5WWRaOU1ZRXJXQkJJM05GaXY5ZUpQTndMVVljNXNpYUJDUmF1T3hQcWkzNi1udWc4c3pMV3F6RFk1dUctcG5jOFlRcUJDMV9IM2hBdV9KbUJqSmJVa1lXS19LTUVJcUg3alFNWl9RREgwRUVrRU9LSkFoRGZJUWpxLVB1bzlldWE4VDRHRmczZVBMbXFiYlRVSHQ2S293M1JnZUNMSTdZdEVKTVpMXzA?oc=5"
+    ],
+    [
+     "TechRepublic：亚马逊据报洽购 Decart",
+     "https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/"
+    ],
+    [
+     "DCD：AMD 将租用宾州 5C 数据中心",
+     "https://www.datacenterdynamics.com/en/news/amd-set-to-lease-planned-5c-data-center-in-pennsylvania/"
+    ],
+    [
+     "DCD：参议院通过数据中心电网付费法案",
+     "https://www.datacenterdynamics.com/en/news/us-senate-passes-bill-requiring-data-centers-to-pay-more-for-grid-infrastructure/"
+    ],
+    [
+     "DCD：Lambda 部署英伟达 CPO 交换机",
+     "https://www.datacenterdynamics.com/en/news/lambda-deploys-nvidia-photonics-switches-at-qscale-data-center/"
+    ],
+    [
+     "TechCrunch：两个英伟达",
+     "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/"
+    ],
+    [
+     "The Quantum Insider：商务部量子奖励条款",
+     "https://thequantuminsider.com/2026/11/20/how-the-department-of-commerces-quantum-awards-work-and-what-companies-give-in-return/"
+    ],
+    [
+     "NASASpaceflight：Ship 42 回收之后",
+     "https://www.nasaspaceflight.com/2026/11/ship-42-catch-future/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-20",
    "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 13 篇】情绪面继续转冷：VIX 升至 30.6（近一年 100% 分位，期限结构倒挂），进入“极度恐慌”区间；Anthropic（ANT）上市第二天盘前下跌，跌幅各家口径不一（CNBC 约 −13%、CNBC Africa 约 −6%、Quartz 约 −8%，取数时点不同），前一日收 97.17 美元、仍高于 83 美元发行价约 17%，英伟达、AMD 盘前同步走弱。资金面没有新增利好，报道归因仍是 AI 估值担忧、AMD 对华敞口争议和英伟达管理层变动——都是 11-19 已写入的因素在延续。产业面反而在继续兑现：微软成为首家公开采用英特尔 EMIB（EMIB-T）先进封装做 Azure 自研芯片的公司，并锁定多年 Xeon（含 Diamond Rapids）供货；TeraWulf 为 Anthropic 建设的肯塔基 480MW 园区进入钢结构施工；Nebius 在以色列追加租用 134MW；PJM 向 FERC 提交方案，拟把数据中心 / 电厂并网时间从约两年缩短到 12 个月。三浪框架下：一浪（硬件）、三浪仍是“财报已改善，价格未反映”，二浪在“尚未启动 / 财报已改善”之间反复；今天的变化集中在情绪面和价格，整体结论不变——需求面 / 产业面确定，压力在资金面、合规面与情绪面；VIX ≥30 叠加倒挂历史上往往接近情绪底，但杠杆 ETF 成交仍高，尚未看到出清。【07:28 更新】增量很少：EMIB / Nebius 等 Summizer 新文已在 06:29 写入。价格层面 SANM 盘中跌约 6% 至 145.44，跌破 2027 前瞻区间下沿 148.68（中值 204.32），未检索到当天公司层面的新消息，暂按大盘避险情绪下的估值压缩看待；同期 NVDA −3.8%。系统浪位提示 AI 二浪回到“财报已改善，价格未反映”、机器人一浪回到“尚未启动”，属于在边界附近反复。整体结论不变：问题在情绪面和资金面，产业面和基本面没有转向。",
@@ -3388,15 +3491,27 @@
    ]
   }
  ],
- "updated": "2026-11-20T07:28",
+ "updated": "2026-11-21T18:29",
  "trend": {
   "NVDA": {
-   "date": "2026-11-18",
+   "date": "2026-11-21",
    "dir": "分化",
-   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。",
+   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。",
    "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定；没有反映继任期的人才与客户关系风险、SEC 调查若涉及收入地区口径（新加坡曾占季度收入约 22%，口径已改为客户总部）带来的重述 / 信任折价、出口管制“管使用者”对东南亚新云需求的影响，以及收紧客户担保后新云下单能力下降（判断）。",
-   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。",
+   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。",
    "src": [
+    [
+     "CNBC：英伟达跌 14%、连跌 7 周",
+     "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+    ],
+    [
+     "Bloomberg（标题）：加州调查涵盖潜在刑事违法",
+     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3ZKSUpVM0xWNVRuM3B0RjhyOTM0NUNoRmNYVnVKYm50andhaTFJVHZLenZrckE1aFZuMGhiSW42Mlh5c2lZcGc5eTg1NDQwWVRFQWxSOGtzWHk2S2pGLVpvM3N2enh4Mms5OTF0MHFXc0JnN3ZoYlB3ODJqX3FoSjJCTWlPOHQ2SjNOQ1Q3cjVNR0NWRVYxWVFEanpwZC1mSW5SeGpXSDRqX1d0TUVwdE1vYVJWUQ?oc=5"
+    ],
+    [
+     "CNBC：贝森特称出口政策不变",
+     "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html"
+    ],
     [
      "TechCrunch：英伟达推迟提交 10-Q",
      "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/"
@@ -3424,10 +3539,6 @@
     [
      "CNN：黄仁勋称愿意回任",
      "https://www.cnn.com/2026/11/17/business/jensen-huang-nvidia-ceo-statement"
-    ],
-    [
-     "TechCrunch：英伟达周二财报应回答的问题",
-     "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/"
     ]
    ]
   },
