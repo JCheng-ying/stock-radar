@@ -643,6 +643,11 @@
   ],
   "TSM": [
    {
+    "date": "2026-11-22",
+    "text": "合规面向下：BIS 取消晶体管数量自检通道后，暂停向部分中国设计公司交付 16nm 及以下芯片（需美国许可，在途货物 12-21 前放行），中国客户退回 28/40nm；影响收入结构但不改 AI 主业需求。",
+    "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
+   },
+   {
     "date": "2026-11-14",
     "text": "产业面 / 资本配置：董事会批准对 Anthropic、OpenAI 各最多 5 亿美元投资（上限，未完成），并批准约 409 亿美元资本拨款，台积电开始在客户的模型层持股，绑定加深。",
     "url": "https://focustaiwan.tw/business/202611110009"
@@ -1031,6 +1036,11 @@
  "sectors": {
   "ai": [
    {
+    "date": "2026-11-22",
+    "text": "合规面延伸到代工环节：BIS 新规让台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（含小米、OPPO、vivo 等消费电子客户），限制从“卖什么 GPU”扩展到“替谁代工”；产业需求面不变。",
+    "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
+   },
+   {
     "date": "2026-11-21",
     "text": "情绪面出清 + 合规面扩散：11-20 AI 链单日普跌 10%~16%（NVDA −14%），加州对英伟达调查据报涉刑事，白宫提出对海外数据中心征税；对冲项是出口政策不变、Oracle 完成 OpenAI 合同融资。产业面（AMD 自锁电力场地、CPO 万卡网络、电网审批提速法案）继续向前，价格与基本面背离扩大。",
     "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
@@ -1047,10 +1057,6 @@
    {
     "date": "2026-11-19",
     "text": "电力约束从“有没有电”进入“谁承担风险”：北卡 Duke 数据中心电价要求 15 年合约、75% 保底与预付扩建成本，西班牙 Merlin 因拿不到电暂停在建楼（Nebius 为客户）；供给侧英特尔 18A-P 拿到首个外部客户、Vera Rubin 机柜开始在多家云上线，特斯拉以固态变压器切入 800VDC 供电。"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "FOMC 纪要：几乎所有与会者认为后续加息可能合适，“许多与会者”把 AI 建设视为实质性通胀风险——资金面对 AI 资本开支的约束首次被联储点名；同日 Anthropic 以 83 美元定价高于区间，模型层预期面向上，英伟达 10-Q 推迟让治理面再添不确定性。存储环节：Everpure 营收增速连续五季加快至 +51%，拿下前五大云厂商设计合同，AI 资本开支向存储层扩散（部分来自闪存涨价，周期性需区分）。"
    }
   ],
   "quantum": [
@@ -1136,6 +1142,45 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-22",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 1 篇】周日无交易，价格仍是 11-20 收盘（NVDA 125.53、TSM 318.71，均在 2027 前瞻区间下沿~中值）。五面里新增变化在合规面、方向向下：美国商务部 BIS 的临时最终规则取消了代工厂用“晶体管数量”自行放行中国设计公司的通道，据 Taipei Times / FT 报道，台积电已通知部分中国关联客户 16nm 及以下订单在拿到美国许可前暂停，三星采取类似措施，消费电子客户（报道点名小米、OPPO、vivo）也受影响，在途货物 12-21 前按旧规则放行；这是对上周“出口政策不变”口径的修正——政策没有加码到英伟达本身，但把限制延伸到成熟先进制程的代工环节。资金面 / 情绪面：WSJ、FT 标题讨论 Anthropic 上市后市值回落的责任归属（细节未查证），说明一级市场对 AI 估值的定价分歧仍在发酵。整体结论不变：产业需求未变，压力仍集中在合规面与情绪面，下周看价格能否止跌。",
+   "sectors": {
+    "ai": "【06:29】合规面向下：BIS 新规取消晶体管数量自检通道，台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（需单独许可），中国客户基本退回 28/40nm 且不得用 HBM / 先进封装；对台积电是收入结构小幅压力（中国区占比不大，但涉及手机 SoC 客户），对封测（AMKR 11-20 −11.4%、ASX −13.8%）是情绪压力。观点文章（DCD，Summizer）：英国数据中心卡在电网接入，Nscale 英国站点等电到 2030 年代、微软 10 月退出，再次印证“电比 GPU 稀缺”。",
+    "quantum": "无重要新信息",
+    "robotics": "无重要新信息",
+    "aerospace": "【06:29】据 Tom's Hardware 标题，SpaceX 约 400 亿美元级 GPU 融资（Apollo 牵头、以英伟达 GPU 为抵押，10 月已报道）的贷款方担心抵押物上轨道后难以回收（细节未查证），与此前 TechCrunch 关于轨道算力融资难的判断一致，属于预期面的老问题，不是新事件。",
+    "autonomous": "无重要新信息"
+   },
+   "watch": [
+    {
+     "t": "TSM",
+     "why": "BIS 新规后暂停向部分中国设计公司交付 16nm 及以下芯片（Taipei Times / FT）；11-20 −9.5% 收 318.71，位于 2027 前瞻区间 268.53 / 390.34 / 561.36 的下沿~中值，比中值低约 18%。"
+    },
+    {
+     "t": "AMKR",
+     "why": "中国设计公司 16nm 以下需单独许可，封测通道同步收紧；11-20 −11.4% 收 30.24，2027 前瞻区间 22.52 / 37.04 / 65.91 的下沿~中值。"
+    }
+   ],
+   "sources": [
+    [
+     "Taipei Times：TSMC halts some China orders under new US rule",
+     "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
+    ],
+    [
+     "Tom's Hardware：TSMC pauses shipments to Chinese designers",
+     "https://www.tomshardware.com/tech-industry/tsmc-bans-more-chip-sales-to-china-due-to-stricter-u-s-export-sanctions"
+    ],
+    [
+     "TechCrunch：SpaceX locks in $40B GPU financing deal with Apollo",
+     "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
+    ],
+    [
+     "DCD：Britain is hosting the AI boom, not owning it",
+     "https://www.datacenterdynamics.com/en/opinions/britain-is-hosting-the-ai-boom-not-owning-it/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-21",
    "market": "（周末增量，完整研判 14:20 发布）【18:29 更新，含 Summizer 新增的 19 篇】11-20（周五）是 AI 链的集中出清日：据快照，NVDA −14.0% 收 125.53（2027 前瞻区间 85.2 / 153.74 / 226.1，位于下沿与中值之间、比中值低约 18%），AMD −13.3%、AVGO −12.2%、AMAT −10.7%、NBIS −16.1%、WULF −14.9%、CRWV −12.0%、ORCL −8.5%、INTC −8.0%；CNBC 称英伟达连跌 7 周、为 2008 年以来最长，Seeking Alpha 标题称纳指当周跌约 10%，WSJ 标题称 AI 相关市值累计蒸发约 4 万亿美元。五面里变化的是情绪面和合规面：情绪面从“恐慌”进一步走向“踩踏”（VIX 11-20 盘中到 31.4、近一年 100% 分位、期限结构倒挂）；合规面新增 Bloomberg 标题称加州对英伟达的调查涵盖潜在刑事违法（正文未查证，此前口径是民事 / 证券披露），以及特朗普称要对在海外建数据中心的美国公司征“巨额税”（细节空白）。对冲的一面：财长贝森特对 CNBC 说对英伟达的芯片出口政策不变（Seeking Alpha 标题写作“排除进一步限制”），Oracle 称为履行 OpenAI 合同的融资已全部完成（Reuters / The Information 标题，金额细节未查证）——这直接回应了过去两周市场对“AI 资本开支谁来出钱”的担忧。产业面没有转向：AMD 被申请文件列为宾州 Project Phoenix 园区（首栋 160MW）最终用户，芯片厂开始亲自锁定电力和场地；Lambda 在魁北克上线首个万卡级 CPO 光交换网络；参议院 62:33 通过 BAAJA，数据中心多付电网成本、换输电审批提速。三浪框架下：一浪（芯片 / 硬件）价格跌回前瞻区间下半段，“财报已改善、价格未反映”的背离进一步拉大；整体结论不变——需求和产业面确定，压力集中在合规面、资金面与情绪面；VIX≥30 叠加倒挂通常接近情绪底，但治理（CEO 继任、调查范围）尚无落点，出清是否结束要看下周价格是否止跌。",
@@ -3378,120 +3423,9 @@
      "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526453758/asts-ex99_1.htm"
     ]
    ]
-  },
-  {
-   "date": "2026-11-08",
-   "market": "这是一个月来的第一次研判（10 月 8 日后自动刷新没有运行，今天已修复）。一个月里市场的核心变化是：AI 的定价逻辑从“奖励资本开支”转向“检验现金流和回报”——四大云厂商今年资本开支合计超 7400 亿美元，谷歌、英特尔、高通财报后单日大跌，半导体 ETF（SMH）一个月 −24%、纳指 100 −12%，资金流向医疗、必需消费、房地产等防御板块。资金面仍是“钱贵”（29 分；10 年期美债 4.86%，比一年前高 70bp，高收益债相对国债近 3 个月 −2.5%，资金在避险）。情绪面已降到偏悲观（热度 35：VIX 25.6、恐贪指数 22），但杠杆 ETF 成交占比仍在近一年 81% 分位，说明散户杠杆还没出清，这是情绪底还没完全确认的信号。按框架，这正是“利空在被定价”的阶段：基本面仍在改善的公司大批进入“关注买点”（人工确认的公司里有 156 家），但需要等杠杆出清或 VIX 期限结构倒挂来确认情绪底。",
-   "sectors": {
-    "ai": "一浪从“主升浪”退到“财报已改善，价格未反映”：财报没坏（Arista 三季度收入 +58.5%、四次上调全年指引；英特尔数据中心业务 +78%），坏的是估值和融资信心。新出现的约束有三条：企业端 token 支出增速放缓（Ramp 数据 8~9 月合计仅 +1.5%）、中国对 H200 进口审批卡住近 60 万颗、数据中心在中期选举后面临地方监管阻力。网络（Arista）和现场发电（Bloom）仍在拿新单，是这轮回调里基本面最硬的两段。",
-    "quantum": "两家离子阱公司都上调了收入指引：IonQ 三季度收入 1.738 亿美元（+336%），但近一半来自收购的 SkyWater 晶圆代工；Quantinuum 收入 910 万美元（+233%）几乎都是量子本身。股价跟随大盘下跌，浪位仍是“尚未启动 / 财报已改善价格未反映”。",
-    "robotics": "Agility Robotics 经 SPAC 上市（代码 AGLT），二级市场第一次有纯人形机器人标的；另据报道 Figure 接手了微软放弃的 Nscale 算力，机器人模型训练的算力采购已到大模型公司量级。零部件一浪财报在改善但价格未跟上。",
-    "aerospace": "一浪、二浪都是“财报已改善，价格未反映”；UFO ETF 一个月 −7%，相对抗跌。国防主题（ITA）是主题 ETF 里唯一正收益的。",
-    "autonomous": "板块随大盘回调，浪位“尚未启动 / 财报已改善价格未反映”，本期 Summizer 没有重要的新产业消息。"
-   },
-   "watch": [
-    {
-     "t": "NVDA",
-     "why": "距高点 −22%、热度 24，进入“关注买点”；11 月 17 日发财报。变量：中国 H200 进口审批（近 60 万颗滞留香港）和云厂商资本开支是否被下调。"
-    },
-    {
-     "t": "ANET",
-     "why": "三季度收入 +58.5%、经营利润率 49%，首次给出 2027 年约 185 亿美元展望；股价一个月仍 −19%，基本面与价格背离最明显的一家。"
-    },
-    {
-     "t": "BE",
-     "why": "NTT Data 900MW 燃料电池协议（与单一开发商最大的一单），谷歌怀俄明园区也用 Bloom 供电；股价一个月 −37%、热度 24。"
-    },
-    {
-     "t": "MU",
-     "why": "收入同比 +346%、毛利率 85%，股价从高点回撤 43%；新出现的风险是台湾新厂因劳资纠纷暂停施工。12 月 23 日发财报。"
-    },
-    {
-     "t": "CRWV",
-     "why": "11 月 10 日发财报，热度只有 3（极度悲观）；这轮下跌的核心担忧是融资能力，看合同积压和融资安排。"
-    },
-    {
-     "t": "NBIS",
-     "why": "同样 11 月 10 日发财报，一个月 −41%；微软放弃 Nscale 扩容一事会让市场追问新型云的客户集中度。"
-    },
-    {
-     "t": "IONQ",
-     "why": "上调全年收入指引至 5.05~5.15 亿美元，但纯量子收入只占约一半；股价距高点 −55%。"
-    },
-    {
-     "t": "INTC",
-     "why": "财报日跌 31%（客户端业务下滑、指引弱），但数据中心 +78% 验证了 Agent 带动 CPU 需求；热度 9，处于极度悲观区。"
-    },
-    {
-     "t": "RKLB",
-     "why": "11 月 9 日发财报，热度 19；关注 Neutron 首飞进度和积压订单。"
-    },
-    {
-     "t": "AGLT",
-     "why": "Agility Robotics 新上市，首只纯人形机器人股；上市募资 4.65 亿美元用于 Digit 5 量产。"
-    }
-   ],
-   "sources": [
-    [
-     "TechCrunch：AI 支出繁荣出现裂缝（10-30）",
-     "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-    ],
-    [
-     "TechCrunch：Ramp 数据显示 AI 支出停滞（11-06）",
-     "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
-    ],
-    [
-     "SiliconANGLE：Arista 创纪录季度（11-04）",
-     "https://siliconangle.com/2026/11/04/aristas-record-quarter-shows-the-network-has-become-central-to-ai/"
-    ],
-    [
-     "SiliconANGLE：英特尔财报后大跌（10-29）",
-     "https://siliconangle.com/2026/10/29/shares-of-intel-plummet-more-than-20-following-weak-guidance-blamed-on-pc-market-slowdown/"
-    ],
-    [
-     "SiliconANGLE：高通营收不及预期、指引疲弱（11-04）",
-     "https://siliconangle.com/2026/11/04/qualcomms-stock-falls-on-revenue-miss-and-weak-guidance-arm-and-globalfoundries-do-little-better/"
-    ],
-    [
-     "SiliconANGLE：亚马逊财报后下跌（10-29）",
-     "https://siliconangle.com/2026/10/29/despite-cloud-boom-amazons-stock-falls-disappointing-earnings-and-revenue-miss/"
-    ],
-    [
-     "The Quantum Insider：IonQ 上调收入指引（11-05）",
-     "https://thequantuminsider.com/2026/11/05/ionq-raises-revenue-forecast-as-quarterly-sales-climb-to-173-8-million/"
-    ],
-    [
-     "The Quantum Insider：Quantinuum 上调收入展望（11-05）",
-     "https://thequantuminsider.com/2026/11/05/quantinuum-raises-revenue-outlook-after-landing-its-largest-cloud-agreement/"
-    ],
-    [
-     "DataCenterDynamics：NTT Data 与 Bloom 签 900MW（11-08）",
-     "https://www.datacenterdynamics.com/en/news/ntt-data-signs-900mw-fuel-cell-supply-deal-with-bloom-energy/"
-    ],
-    [
-     "DataCenterDynamics：微软未行使 Nscale 扩容选择权（11-05）",
-     "https://www.datacenterdynamics.com/en/news/microsoft-declined-option-for-expanded-compute-contract-in-texas-with-nscale/"
-    ],
-    [
-     "DataCenterDynamics：近 60 万颗 H200 滞留香港（11-08）",
-     "https://www.datacenterdynamics.com/en/news/almost-600000-nvidia-h200s-stranded-in-hong-kong-as-chinese-govt-stalls-on-import-approvals-report/"
-    ],
-    [
-     "DataCenterDynamics：美光台湾新厂因劳资纠纷暂停施工（11-08）",
-     "https://www.datacenterdynamics.com/en/news/ongoing-labor-dispute-sees-micron-pause-construction-at-its-45bn-memory-fab-in-taoyuan-taiwan-report/"
-    ],
-    [
-     "DataCenterDynamics：过半超大规模数据中心项目面临监管阻力（11-05）",
-     "https://www.datacenterdynamics.com/en/news/more-than-half-of-us-hyperscale-data-center-projects-face-regulatory-friction-after-2026-midterm-elections-report/"
-    ],
-    [
-     "SiliconANGLE：Agility Robotics 经 SPAC 登陆纳斯达克（11-05）",
-     "https://siliconangle.com/2026/11/05/humanoid-robot-maker-agility-robotics-debuts-on-the-nasdaq-after-spac-merger/"
-    ]
-   ]
   }
  ],
- "updated": "2026-11-21T21:28",
+ "updated": "2026-11-22T06:29",
  "trend": {
   "NVDA": {
    "date": "2026-11-21",
