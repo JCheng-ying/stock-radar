@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-22",
+    "text": "合规面向下：贝森特称政府给的 10 天期限内仍未收到对华出口合规答复，追问合规负责人与知情范围；董事长表态不聘回黄仁勋，治理落点继续悬空。",
+    "url": "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
+   },
+   {
     "date": "2026-11-21",
     "text": "情绪面 / 合规面转差：11-20 −14% 收 125.53、连跌 7 周；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），贝森特称出口政策不变（对冲），基本面指引未变。",
     "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
@@ -20,11 +25,6 @@
     "date": "2026-11-19",
     "text": "治理 / 合规面向下：据 Seeking Alpha 标题（细节未查证）加州总检察长就涉华问题发出调查传票；11/17 时 Bonta 仍称在评估是否行动，属于在 SEC 调查之外再加一层州级监管压力，需求面未变。",
     "url": "https://stocktwits.com/news-articles/markets/equity/california-ag-rob-bonta-highlights-red-flags-in-his-investigation-into-nvidia-and-jensen-huang/cNbO44MR9hO"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "情绪面向下：大盘 −2% 当天收 145.98（−3.3%），财报后需求面数据未变，按电力 / 资本 / 承购证明分配供货的表述让新云资金面成为下游约束。",
-    "url": "https://siliconangle.com/2026/11/19/what-we-learned-from-nvidias-first-earnings-call-without-jensen-huang/"
    }
   ],
   "ANET": [
@@ -602,6 +602,11 @@
   ],
   "DELL": [
    {
+    "date": "2026-11-22",
+    "text": "预期面待验证：11-24 财报市场预期收入约 506 亿美元，950 亿美元 AI 积压能否在存储芯片受限下转化是关键。",
+    "url": "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
+   },
+   {
     "date": "2026-11-13",
     "text": "情绪面回落：−7.2%，无公司层面新消息；产业面上 950 亿美元 AI 积压未变，11-24 财报看积压转化和存储成本对毛利率的影响。",
     "url": "https://convergedigest.com/dell-ai-server-backlog-95-billion-q2-fy2027/"
@@ -890,6 +895,11 @@
   ],
   "HPE": [
    {
+    "date": "2026-11-22",
+    "text": "预期面待验证：11-23 财报，订单远超可交付量，网络（Juniper）收入能否追上订单；EPS 指引在不同来源口径不一。",
+    "url": "https://finviz.com/news/422868/hpes-street-beating-bar-rests-on-whether-supply-can-unlock-record-ai-backlog"
+   },
+   {
     "date": "2026-11-18",
     "text": "政策 / 情绪面偏负：FAA 11-13 全国停飞追溯到两台新装 Juniper 路由器，FAA 已在约 60 台 Juniper 设备上关闭相关功能；HPE 称设备按安装方（L3Harris）配置运行、未发生故障，调查未结，责任归属有分歧。",
     "url": "https://www.sdxcentral.com/news/faa-ground-stop-saga-lumen-highlights-legacy-network-rut-as-hpe-bats-away-juniper-blame/"
@@ -1027,14 +1037,51 @@
   ],
   "ORCL": [
    {
+    "date": "2026-11-22",
+    "text": "资金面向上：公司宣布 OpenAI 大单所需融资已全部落实，11-20 盘后反弹，回应了“谁来出钱”的核心疑问；常规时段仍 −8.5%。",
+    "url": "https://news.futunn.com/en/post/1005256888/a-signal-of-easing-ai-financing-pressure-oracle-orclus-officially"
+   },
+   {
     "date": "2026-11-21",
     "text": "资金面改善：公司称履行 OpenAI 合同的融资已全部完成（Reuters / The Information 标题，金额未查证），回应了资本开支融资缺口的担忧；同日股价 −8.5% 随板块下跌。",
     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSmpQQVdqRTFyNlZSVVFsZG8yNGJ5WWRaOU1ZRXJXQkJJM05GaXY5ZUpQTndMVVljNXNpYUJDUmF1T3hQcWkzNi1udWc4c3pMV3F6RFk1dUctcG5jOFlRcUJDMV9IM2hBdV9KbUJqSmJVa1lXS19LTUVJcUg3alFNWl9RREgwRUVrRU9LSkFoRGZJUWpxLVB1bzlldWE4VDRHRmczZVBMbXFiYlRVSHQ2S293M1JnZUNMSTdZdEVKTVpMXzA?oc=5"
+   }
+  ],
+  "ADI": [
+   {
+    "date": "2026-11-22",
+    "text": "基本面向上待验证：三季度工业收入 +53%，四季度一致预期收入 +41%，11-24 盘前发布。",
+    "url": "https://www.hudson-labs.com/research/analog-devices-q4-2026-earnings-preview-adi-revenue-outlook"
+   }
+  ],
+  "WDAY": [
+   {
+    "date": "2026-11-22",
+    "text": "预期面待验证：首个应体现 AI 订单的季度，存量客户席位持平，按人头计费受 AI 冲击的程度决定估值。",
+    "url": "https://finviz.com/news/423401/workdays-promised-second-half-ai-bookings-surge-faces-its-first-real-test"
+   }
+  ],
+  "ADSK": [
+   {
+    "date": "2026-11-22",
+    "text": "预期面待验证：11-24 财报，MaintainX 首次并表，看有机账单增速是否维持上调后的节奏。",
+    "url": "https://finviz.com/news/423384/autodesks-raised-outlook-faces-its-first-test-as-maintainx-joins-the-numbers"
+   }
+  ],
+  "ZM": [
+   {
+    "date": "2026-11-22",
+    "text": "预期面待验证：11-23 财报，企业业务与语音 AI 能否抵消白标流失和 AI 成本对毛利率的压力。",
+    "url": "https://finviz.com/news/422873/zooms-enterprise-inflection-faces-its-next-test-as-white-label-churn-and-ai-costs-build"
    }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-22",
+    "text": "合规面：贝森特称仍未拿到英伟达对华出口合规答复（联邦层面与加州调查同向）；预期面远期变量：OpenAI 提议以预训练损失为行业“共同上限”度量，若落地偏向抑制超大预训练、利好推理侧（仅表态，无协议）。"
+   },
    {
     "date": "2026-11-22",
     "text": "合规面延伸到代工环节：BIS 新规让台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（含小米、OPPO、vivo 等消费电子客户），限制从“卖什么 GPU”扩展到“替谁代工”；产业需求面不变。",
@@ -1053,10 +1100,6 @@
    {
     "date": "2026-11-19",
     "text": "11-19 收盘：ANT 首日 +17% 没有带动大盘，纳指 −2.25%、VIX 28.4，AMD（做空报告）、NBIS、CRWV 领跌；INTU 下季指引大幅低于预期并出售 Mailchimp，应用软件被 AI 压缩预期的逆风再坐实一步；KEYS 四季度超指引，AI 测试测量需求向上——硬件需求面与软件预期面继续分化。"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "电力约束从“有没有电”进入“谁承担风险”：北卡 Duke 数据中心电价要求 15 年合约、75% 保底与预付扩建成本，西班牙 Merlin 因拿不到电暂停在建楼（Nebius 为客户）；供给侧英特尔 18A-P 拿到首个外部客户、Vera Rubin 机柜开始在多家云上线，特斯拉以固态变压器切入 800VDC 供电。"
    }
   ],
   "quantum": [
@@ -1144,40 +1187,88 @@
  "daily": [
   {
    "date": "2026-11-22",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 1 篇】周日无交易，价格仍是 11-20 收盘（NVDA 125.53、TSM 318.71，均在 2027 前瞻区间下沿~中值）。五面里新增变化在合规面、方向向下：美国商务部 BIS 的临时最终规则取消了代工厂用“晶体管数量”自行放行中国设计公司的通道，据 Taipei Times / FT 报道，台积电已通知部分中国关联客户 16nm 及以下订单在拿到美国许可前暂停，三星采取类似措施，消费电子客户（报道点名小米、OPPO、vivo）也受影响，在途货物 12-21 前按旧规则放行；这是对上周“出口政策不变”口径的修正——政策没有加码到英伟达本身，但把限制延伸到成熟先进制程的代工环节。资金面 / 情绪面：WSJ、FT 标题讨论 Anthropic 上市后市值回落的责任归属（细节未查证），说明一级市场对 AI 估值的定价分歧仍在发酵。整体结论不变：产业需求未变，压力仍集中在合规面与情绪面，下周看价格能否止跌。",
+   "market": "周日无交易，价格仍是 11-20 收盘；含 Summizer 当天新增的 1 篇。资金面得分 24（钱贵 / 紧缩：10 年期美债 4.91%、一年 +78bp，美元指数 103.81、近一年 99% 分位，高收益债相对长债近 3 个月 −2.6%）；情绪面热度 25（偏悲观：VIX 35.9、近一年 100% 分位、期限结构倒挂 1.16，CNN 恐贪指数 10、一周前 37），全部 746 家里只有 24% 站上 200 日线；AI 的一浪、三浪仍是「财报已改善，价格未反映」。今天新增的两件事都在合规面 / 预期面：① 贝森特周日对 CBS 表示，政府给英伟达的 10 天期限内仍未拿到对华出口合规的答复，追问谁负责合规、问题在公司内部知情到哪一层；董事长 Harvey Jones 已表态不会再聘回黄仁勋——治理与调查仍无落点，方向向下；② OpenAI 首席科学家 Pachocki 提出以预训练损失（perplexity）作为各家“共同上限”的度量（TechCrunch），目前只是表态、没有协议和数值，若成形，边际上会把算力需求从“更大的预训练集群”推向推理与后训练。资金面唯一明确的正面信号是甲骨文 11-20 盘后宣布 OpenAI 大单融资已落实、盘后反弹。本周是感恩节短周（11-26 休市），HPE、ZM（11-23）与 DELL、ADI、WDAY、ADSK（11-24）集中发财报，是检验“AI 硬件积压能否在存储受限下转化”和“软件席位是否被 AI 侵蚀”的第一批数据。整体结论不变：需求与产业面没有转向，压力在合规面、资金面与情绪面；情绪已在极端区，能否止跌要看治理与调查的落点和本周财报。",
    "sectors": {
-    "ai": "【06:29】合规面向下：BIS 新规取消晶体管数量自检通道，台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（需单独许可），中国客户基本退回 28/40nm 且不得用 HBM / 先进封装；对台积电是收入结构小幅压力（中国区占比不大，但涉及手机 SoC 客户），对封测（AMKR 11-20 −11.4%、ASX −13.8%）是情绪压力。观点文章（DCD，Summizer）：英国数据中心卡在电网接入，Nscale 英国站点等电到 2030 年代、微软 10 月退出，再次印证“电比 GPU 稀缺”。",
+    "ai": "合规面向下：贝森特称仍未收到英伟达对华出口合规答复（CBS / US News），是继加州调查之后联邦层面的同向压力。预期面的远期变量：Pachocki 提议用预训练损失给前沿进展设“共同上限”，若落地偏向抑制超大预训练集群、相对利好推理侧，目前无协议无数值。产业面待验证：DELL（AI 积压约 950 亿美元）与 HPE（订单远超可交付量）本周财报检验积压向收入的转化，瓶颈仍在存储芯片供给。",
     "quantum": "无重要新信息",
-    "robotics": "无重要新信息",
-    "aerospace": "【06:29】据 Tom's Hardware 标题，SpaceX 约 400 亿美元级 GPU 融资（Apollo 牵头、以英伟达 GPU 为抵押，10 月已报道）的贷款方担心抵押物上轨道后难以回收（细节未查证），与此前 TechCrunch 关于轨道算力融资难的判断一致，属于预期面的老问题，不是新事件。",
-    "autonomous": "无重要新信息"
+    "robotics": "无重要新信息（CNBC 报道一家未上市机器人初创公司现金紧张、员工失去医保，属一级市场融资降温的个案，细节未查证）",
+    "aerospace": "无重要新信息",
+    "autonomous": "无重要新信息（英伟达与沃尔沃、奔驰、Bolt 的 Hyperion 合作是 10 月 GTC 柏林旧闻；Waymo 暂停高速载客此前已写入）"
    },
    "watch": [
     {
-     "t": "TSM",
-     "why": "BIS 新规后暂停向部分中国设计公司交付 16nm 及以下芯片（Taipei Times / FT）；11-20 −9.5% 收 318.71，位于 2027 前瞻区间 268.53 / 390.34 / 561.36 的下沿~中值，比中值低约 18%。"
+     "t": "NVDA",
+     "why": "贝森特称 10 天期限内仍未拿到对华出口合规答复，董事长表态不聘回黄仁勋；11-20 −14.0%。现价 125.53，2027 前瞻区间 85.2 / 153.74 / 226.1，位于下沿与中值之间、比中值低约 18%。"
     },
     {
-     "t": "AMKR",
-     "why": "中国设计公司 16nm 以下需单独许可，封测通道同步收紧；11-20 −11.4% 收 30.24，2027 前瞻区间 22.52 / 37.04 / 65.91 的下沿~中值。"
+     "t": "ORCL",
+     "why": "11-20 盘后宣布 OpenAI 大单融资已落实并盘后反弹（富途），常规时段收 101.19（−8.5%）；2027 前瞻区间 75.64 / 123.93 / 186.04，比中值低约 18%，资金面最大疑问之一得到回应。"
+    },
+    {
+     "t": "DELL",
+     "why": "11-24 发财报：市场预期收入约 506 亿美元、EPS 6.63，看 950 亿美元 AI 积压在存储受限下的转化速度；11-20 −11.0%。现价 278.02，2027 前瞻区间 202.54 / 340.5 / 476.33，位于下沿与中值之间、比中值低约 18%。"
+    },
+    {
+     "t": "HPE",
+     "why": "11-23 发 FY26 四季度财报：订单远超可交付量，看网络（Juniper）收入能否追上订单；两家前瞻对 EPS 指引口径有分歧（1.12~1.22 vs 1.20~1.30）。11-20 −10.1%。现价 40.91，2027 前瞻区间 35.44 / 50.1 / 73.74，位于下沿与中值之间、比中值低约 18%。"
+    },
+    {
+     "t": "ADI",
+     "why": "11-24 盘前发财报：一致预期收入约 43.2 亿美元（+41%）、EPS 约 3.89，三季度工业收入 +53%，看工业复苏与数据中心电源能否延续；11-20 −8.3%。现价 345.92，2027 前瞻区间 254.65 / 423.66 / 601.45，位于下沿与中值之间、比中值低约 18%。"
+    },
+    {
+     "t": "WDAY",
+     "why": "11-24 发 FY27 三季度财报：首个应体现“下半年 AI 订单”的季度，存量客户席位数大体持平，按人头计费模式受 AI 冲击的程度是关键；现价 174.52，2027 前瞻区间 144.96 / 213.74 / 321.17，位于下沿与中值之间、比中值低约 18%。"
+    },
+    {
+     "t": "ADSK",
+     "why": "11-24 发财报：指引收入 21.3 亿~21.4 亿美元、EPS 3.04~3.09，MaintainX 首次并表，看有机账单增速；现价 244.48，2027 前瞻区间 203.52 / 292.14 / 418.29，位于下沿与中值之间、比中值低约 16%。"
+    },
+    {
+     "t": "ZM",
+     "why": "11-23 发财报：指引 EPS 1.46~1.48、收入 12.75 亿~12.8 亿美元，上季收入 +4.9%、线上月流失 2.9%；语音 AI 面临 OpenAI、Salesforce 竞争。现价 81.26，2027 前瞻区间 61.36 / 89.22 / 126.83，位于下沿与中值之间、比中值低约 9%。"
     }
    ],
    "sources": [
     [
-     "Taipei Times：TSMC halts some China orders under new US rule",
-     "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
+     "CBS News：贝森特称需要英伟达就对华芯片给出答复",
+     "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
     ],
     [
-     "Tom's Hardware：TSMC pauses shipments to Chinese designers",
-     "https://www.tomshardware.com/tech-industry/tsmc-bans-more-chip-sales-to-china-due-to-stricter-u-s-export-sanctions"
+     "US News / Reuters：美国就英伟达对华售芯片寻求答复",
+     "https://www.usnews.com/news/world/articles/2026-11-22/us-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says"
     ],
     [
-     "TechCrunch：SpaceX locks in $40B GPU financing deal with Apollo",
-     "https://techcrunch.com/2026/10/26/spacex-locks-in-40b-gpu-financing-deal-with-apollo/"
+     "TechCrunch：OpenAI 首席科学家谈如何限制 AI 发展",
+     "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"
     ],
     [
-     "DCD：Britain is hosting the AI boom, not owning it",
-     "https://www.datacenterdynamics.com/en/opinions/britain-is-hosting-the-ai-boom-not-owning-it/"
+     "富途：甲骨文宣布 OpenAI 大单融资已落实、盘后反弹",
+     "https://news.futunn.com/en/post/1005256888/a-signal-of-easing-ai-financing-pressure-oracle-orclus-officially"
+    ],
+    [
+     "Earnings Whispers / Finviz：戴尔需证明 950 亿美元 AI 积压能在存储受限下转化",
+     "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
+    ],
+    [
+     "Earnings Whispers / Finviz：HPE 能否超预期取决于供应能否释放创纪录 AI 积压",
+     "https://finviz.com/news/422868/hpes-street-beating-bar-rests-on-whether-supply-can-unlock-record-ai-backlog"
+    ],
+    [
+     "Hudson Labs：ADI FY26 四季度业绩前瞻",
+     "https://www.hudson-labs.com/research/analog-devices-q4-2026-earnings-preview-adi-revenue-outlook"
+    ],
+    [
+     "Earnings Whispers / Finviz：Workday 下半年 AI 订单承诺迎来首次检验",
+     "https://finviz.com/news/423401/workdays-promised-second-half-ai-bookings-surge-faces-its-first-real-test"
+    ],
+    [
+     "Earnings Whispers / Finviz：Autodesk 上调后的指引迎来首次检验（MaintainX 并表）",
+     "https://finviz.com/news/423384/autodesks-raised-outlook-faces-its-first-test-as-maintainx-joins-the-numbers"
+    ],
+    [
+     "Earnings Whispers / Finviz：Zoom 企业业务拐点面临白标流失与 AI 成本考验",
+     "https://finviz.com/news/422873/zooms-enterprise-inflection-faces-its-next-test-as-white-label-churn-and-ai-costs-build"
     ]
    ]
   },
@@ -3425,15 +3516,23 @@
    ]
   }
  ],
- "updated": "2026-11-22T10:28",
+ "updated": "2026-11-22T14:28",
  "trend": {
   "NVDA": {
-   "date": "2026-11-21",
+   "date": "2026-11-22",
    "dir": "分化",
-   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。",
+   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。 11-22：贝森特称 10 天期限内仍未收到对华出口合规答复，追问谁负责合规、知情到哪一层；董事长 Harvey Jones 表态不聘回黄仁勋——联邦层面的合规压力与加州调查同向，治理无落点的时间在拉长（判断：这是情绪与估值折价的主因，需求侧仍无负面数据）。",
    "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定；没有反映继任期的人才与客户关系风险、SEC 调查若涉及收入地区口径（新加坡曾占季度收入约 22%，口径已改为客户总部）带来的重述 / 信任折价、出口管制“管使用者”对东南亚新云需求的影响，以及收紧客户担保后新云下单能力下降（判断）。",
-   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。",
+   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。 英伟达何时、以何种形式回复财政部；CEO 正式人选。",
    "src": [
+    [
+     "CBS News：贝森特称需要英伟达就对华芯片给出答复",
+     "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
+    ],
+    [
+     "US News / Reuters：美国就英伟达对华售芯片寻求答复",
+     "https://www.usnews.com/news/world/articles/2026-11-22/us-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says"
+    ],
     [
      "CNBC：英伟达跌 14%、连跌 7 周",
      "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
@@ -3465,14 +3564,6 @@
     [
      "Tom's Hardware：英伟达员工警告人才流失",
      "https://www.tomshardware.com/tech-industry/big-tech/nvidia-employee-warns-of-irreplaceable-talent-exodus-if-jensen-huang-not-reinstated-cautions-board-and-top-brass-that-talent-at-nvidia-is-now-contemplating-departing"
-    ],
-    [
-     "StockTitan：NVIDIA 三季度财报",
-     "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-third-quarter-fiscal-fpx9dw5egxqa.html"
-    ],
-    [
-     "CNN：黄仁勋称愿意回任",
-     "https://www.cnn.com/2026/11/17/business/jensen-huang-nvidia-ceo-statement"
     ]
    ]
   },
@@ -3646,12 +3737,16 @@
    ]
   },
   "ORCL": {
-   "date": "2026-11-08",
+   "date": "2026-11-22",
    "dir": "分化",
-   "text": "RPO（长期订单）因 OpenAI 等大单暴增，是云基础设施里增速最高的之一。但建设靠大量借债，客户高度集中在少数 AI 实验室。",
-   "miss": "订单能否转化为收入取决于客户的融资和数据中心建设进度；甲骨文自己的信用成本上升会压利润，这些不在收入预期里。",
-   "watch": "RPO 转化率、自由现金流、债券利差 / CDS。",
+   "text": "顺风：RPO（长期订单）因 OpenAI 等大单暴增，11-20 盘后公司宣布履行 OpenAI 合同所需融资已全部落实，回应了过去两周“AI 资本开支谁来出钱”的核心疑问。逆风：建设高度依赖借债，客户集中在少数 AI 实验室，信用利差与 CDS 在 11 月走阔；股价 11-20 −8.5% 收 101.19，位于 2027 前瞻区间 75.64 / 123.93 / 186.04 的下沿~中值。",
+   "miss": "前瞻区间按 EPS 一致预期算，假设订单按期转化；没有反映客户（OpenAI 等）自身的融资能力、甲骨文信用成本上升对利润的压缩、数据中心建设延期把收入推到 2028 年以后的风险（判断）。",
+   "watch": "融资落实的具体结构（债务 / 合作方出资 / 租赁）；12 月财报的 RPO 转化率、自由现金流与资本开支；债券利差 / CDS。",
    "src": [
+    [
+     "富途：甲骨文宣布 OpenAI 大单融资已落实、盘后反弹",
+     "https://news.futunn.com/en/post/1005256888/a-signal-of-easing-ai-financing-pressure-oracle-orclus-officially"
+    ],
     [
      "IFRE：超大规模云和芯片公司 CDS 扩至纪录水平",
      "https://www.ifre.com/people-and-markets/2496665/hyperscaler-and-chipmaker-cds-widen-to-record-levels"
@@ -4230,12 +4325,16 @@
    ]
   },
   "DELL": {
-   "date": "2026-11-13",
+   "date": "2026-11-22",
    "dir": "顺风",
-   "text": "AI 服务器是确定的顺风：上季 AI 服务器订单 609 亿美元、确认收入 164 亿，积压约 950 亿美元（前一季 513 亿），全年 AI 服务器指引从 600 亿上调到 740 亿、总收入指引约 1,920 亿。逆风是交付和利润率：存储芯片供给限制积压转化速度，AI 服务器毛利率低于传统业务，11-13 随板块 −7.2%。",
+   "text": "AI 服务器是确定的顺风：上季 AI 服务器订单 609 亿美元、确认收入 164 亿，积压约 950 亿美元（前一季 513 亿），全年 AI 服务器指引从 600 亿上调到 740 亿、总收入指引约 1,920 亿。逆风是交付和利润率：存储芯片供给限制积压转化速度，AI 服务器毛利率低于传统业务，11-13 随板块 −7.2%。 11-22：11-24 财报市场预期收入约 506 亿美元（上年同期约 270 亿）、EPS 6.63；前瞻文章称传统服务器 +122%、存储 +26% 可部分对冲 AI 服务器较薄的利润率，股价已从约 596 的高点回落（11-20 收 278.02、−11.0%）。",
    "miss": "前瞻估值按 EPS 一致预期算，假设积压按期转化；没有反映客户集中在新云 / 大模型公司（其融资成本上升）、存储涨价挤压毛利率，以及 AI 服务器周期高点之后的回落（判断）。",
-   "watch": "11-24 财报：AI 订单和积压、AI 服务器毛利率、存储成本对指引的影响、新云客户占比。",
+   "watch": "11-24 财报：AI 订单与积压、AI 服务器毛利率、存储成本对指引的影响、新云客户占比；积压是否因客户融资收紧出现取消或延期。",
    "src": [
+    [
+     "Earnings Whispers / Finviz：戴尔需证明 950 亿美元 AI 积压能在存储受限下转化",
+     "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
+    ],
     [
      "Converge Digest：戴尔 AI 服务器积压 950 亿美元",
      "https://convergedigest.com/dell-ai-server-backlog-95-billion-q2-fy2027/"
@@ -4774,6 +4873,87 @@
     [
      "SiliconANGLE：NXP reportedly in talks to acquire vehicle chip supplier Ambarella",
      "https://siliconangle.com/2026/07/31/nxp-reportedly-talks-acquire-vehicle-chip-supplier-ambarella/"
+    ]
+   ]
+  },
+  "HPE": {
+   "date": "2026-11-22",
+   "dir": "分化",
+   "text": "顺风：AI 服务器与网络需求强，公司称订单远超可交付量，FY27 框架为收入 +13%~17%、EPS 4.40~4.60，Juniper 协同目标上调至 FY28 年化 8 亿美元，数据中心网络收入目标为到 FY29 年复合增长 50% 左右。逆风：供应（存储与零部件）卡住出货，AI 服务器利润率薄，传统服务器为周期性业务。",
+   "miss": "前瞻估值假设积压按期出货；没有反映供应受限时成本先涨、收入后到的利润挤压，以及 AI 服务器客户（新云 / 主权 AI）融资能力的变化（判断）。",
+   "watch": "11-23 财报：网络收入是否追上订单、AI 系统积压与毛利率、FY27 指引是否维持；不同来源对四季度 EPS 指引的口径分歧（1.12~1.22 vs 1.20~1.30）以公司公告为准。",
+   "src": [
+    [
+     "Earnings Whispers / Finviz：HPE 能否超预期取决于供应能否释放创纪录 AI 积压",
+     "https://finviz.com/news/422868/hpes-street-beating-bar-rests-on-whether-supply-can-unlock-record-ai-backlog"
+    ],
+    [
+     "HPE 投资者关系",
+     "https://investors.hpe.com/"
+    ]
+   ]
+  },
+  "ADI": {
+   "date": "2026-11-22",
+   "dir": "顺风",
+   "text": "顺风：工业周期复苏叠加数据中心电源 / 通信需求，三季度工业收入 19.7 亿美元（+53%）、占比 49%，四季度一致预期收入约 43.2 亿美元（+41%）、EPS 约 3.89，通信板块中数据中心约占八成。逆风：模拟芯片周期性强，复苏后半段增速会放缓；11-20 随半导体板块 −8.3%。",
+   "miss": "前瞻估值按一致预期外推高增速；没有反映工业补库存结束后的增速回落（周期高点风险）、汽车与中国需求的不确定性（判断）。",
+   "watch": "11-24 财报：工业收入环比是否仍有高个位数增长、订单出货比、毛利率能否维持约 74%、FY27 首季指引。",
+   "src": [
+    [
+     "Hudson Labs：ADI FY26 四季度业绩前瞻",
+     "https://www.hudson-labs.com/research/analog-devices-q4-2026-earnings-preview-adi-revenue-outlook"
+    ],
+    [
+     "ADI：将于 2026-11-24 公布 FY26 四季度业绩",
+     "https://www.analog.com/en/newsroom/press-releases/2026/10-22-2026-adi-report-4q-fy2026-financial-results.html"
+    ]
+   ]
+  },
+  "WDAY": {
+   "date": "2026-11-22",
+   "dir": "分化",
+   "text": "顺风：HR / 财务系统黏性高，AI agent 产品与按用量计费新模式据公司称年化收入接近 5 亿美元，营业利润率目标上调至 30.5%。逆风：按员工人数计费，存量客户席位大体持平，企业用 AI 替代岗位会直接压缩席位基数；管理层称 AI 收入的主要回报要到 FY28。",
+   "miss": "前瞻估值假设订阅收入稳定增长；没有反映 AI 压缩客户员工人数对按席位定价的结构性冲击，以及 AI agent 竞争（大模型厂商直接做 HR / 财务 agent）带来的定价权下降（判断）。",
+   "watch": "11-24 财报：订阅收入（全年指引 99.4 亿~99.5 亿美元）、cRPO 增速、AI 订单是否兑现、席位数与净留存率。",
+   "src": [
+    [
+     "Earnings Whispers / Finviz：Workday 下半年 AI 订单承诺迎来首次检验",
+     "https://finviz.com/news/423401/workdays-promised-second-half-ai-bookings-surge-faces-its-first-real-test"
+    ],
+    [
+     "Workday：将于 2026-11-24 公布 FY27 三季度业绩",
+     "https://newsroom.workday.com/2026-11-02-Workday-to-Announce-Fiscal-2027-Third-Quarter-Financial-Results-on-November-24,-2026"
+    ]
+   ]
+  },
+  "ADSK": {
+   "date": "2026-11-22",
+   "dir": "分化",
+   "text": "顺风：设计软件在建筑、制造、媒体领域地位稳固，上季 EPS 3.30、收入 20.5 亿美元均超预期，全年收入指引 82.95 亿~83.45 亿美元；收购 MaintainX 延伸到设备维护。逆风：上季公布的 FY27 盈利指引低于预期，AI 生成设计可能降低入门用户的付费意愿（判断）。",
+   "miss": "前瞻估值按一致预期算；没有反映 AI 生成式设计工具对低端席位的替代、并购整合对利润率的拖累，以及建筑与制造业资本开支周期（判断）。",
+   "watch": "11-24 财报：有机账单增速、MaintainX 对利润率的影响、净留存率、FY27 指引是否再调整。",
+   "src": [
+    [
+     "Earnings Whispers / Finviz：Autodesk 上调后的指引迎来首次检验（MaintainX 并表）",
+     "https://finviz.com/news/423384/autodesks-raised-outlook-faces-its-first-test-as-maintainx-joins-the-numbers"
+    ],
+    [
+     "Finviz：Autodesk 上季超预期但 FY27 盈利指引低于预期",
+     "https://finviz.com/news/386537/autodesk-shares-fall-as-fiscal-2027-earnings-guidance-trails-expectations-despite-q2-beat"
+    ]
+   ]
+  },
+  "ZM": {
+   "date": "2026-11-22",
+   "dir": "逆风",
+   "text": "顺风：现金流强，企业客户与联络中心 / 语音 AI 是增量，上季后上调全年 EPS 指引至 6.08~6.12。逆风：总收入增速仅约 5%（上季 12.77 亿美元、+4.9%），线上月流失 2.9% 未改善，语音 AI 领域面临 OpenAI、Salesforce 等直接竞争，AI 推理成本压毛利率。",
+   "miss": "前瞻估值假设低增速稳定延续；没有反映大模型厂商直接切入会议 / 联络中心带来的价格战，以及 AI 成本上升对毛利率的持续侵蚀（判断）。",
+   "watch": "11-23 财报：企业收入增速、联络中心与 AI 产品 ARR、线上流失率、毛利率。",
+   "src": [
+    [
+     "Earnings Whispers / Finviz：Zoom 企业业务拐点面临白标流失与 AI 成本考验",
+     "https://finviz.com/news/422873/zooms-enterprise-inflection-faces-its-next-test-as-white-label-churn-and-ai-costs-build"
     ]
    ]
   }

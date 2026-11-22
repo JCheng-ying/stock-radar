@@ -5100,5 +5100,330 @@
     ]
    }
   ]
+ },
+ "ai/chip/etch": {
+  "updated": "2026-11-22",
+  "note": "刻蚀 / 沉积 / 离子注入是晶圆厂里“一层层雕电路”的工序，设备由泛林、应用材料、东京电子三家主导。路线分歧在于：泛林押注刻蚀与 NAND / HBM 相关的高深宽比工艺，应用材料覆盖面最广，ASM 专攻原子层沉积（ALD）并受益于 GAA 晶体管；小厂（Axcelis、Veeco、盛美）则靠细分工序和合并求规模。对华出口管制是全组共同的变量。",
+  "companies": {
+   "LRCX": {
+    "products": "导体 / 介质刻蚀机、薄膜沉积（CVD / ALD）、清洗设备，以及售后服务",
+    "what": "泛林做的是在晶圆上“挖槽”和“铺薄膜”的机器，芯片里的每一层电路都要靠它刻出来、填进去。层数越多（3D NAND、HBM 堆叠），需要的刻蚀步骤越多。",
+    "diff": "2026-09 季度收入创纪录 82.2 亿美元、non-GAAP EPS 2.20，下季指引 86 亿美元 ±4 亿；管理层称增长来自代工与 NAND 投资，客户支持业务连续第四个季度创纪录。刻蚀份额与 GAA 相关的具体数据本次未查到。",
+    "ties": "客户：台积电、三星、SK 海力士、美光等",
+    "src": [
+     [
+      "Lam Research 2026-09 季度财报（Finviz）",
+      "https://finviz.com/news/405807/lam-research-corporation-reports-financial-results-for-the-quarter-ended-september-27-2026"
+     ],
+     [
+      "Lam Research Q1 Earnings Beat on Systems Sales and Margin Gains",
+      "https://swingtradebot.com/news-articles/23089923-lam-research-q1-earnings-beat-systems"
+     ]
+    ]
+   },
+   "AMAT": {
+    "products": "沉积（PVD / CVD / ALD / 外延）、刻蚀、离子注入、CMP、检测量测，全工序覆盖",
+    "what": "应用材料是品类最全的半导体设备商，几乎每道“加工”工序都有一台它的机器，可以给客户整套方案。",
+    "diff": "FY26 四季度收入创纪录 104.1 亿美元（+53%）、全年 344.5 亿美元（+21%），半导体系统收入 80.0 亿美元；FY27 一季度指引 111 亿美元 ±5 亿。对华限制使其无法向中国存储与成熟制程市场供货，中国占比降至二成多（日期未完全确认）。",
+    "ties": "客户：台积电、三星、英特尔、存储厂",
+    "src": [
+     [
+      "Applied Materials FY26 四季度业绩新闻稿",
+      "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
+     ],
+     [
+      "Newsquawk：AMAT Q4 FY26 调整后 EPS 4.16",
+      "https://www.newsquawk.com/headlines/applied-materials-inc-amat-q4-fy26-usd-adj-eps-416-exp-406-revenue-104bln-exp-103bln"
+     ]
+    ]
+   },
+   "~东京电子": {
+    "products": "涂胶显影、刻蚀、沉积、清洗",
+    "what": "日本最大的半导体设备商，和泛林、应用材料并列刻蚀 / 沉积三强，在光刻配套的涂胶显影上几乎独占。",
+    "diff": "本次未查到当日来源，仅作为竞争格局参照。",
+    "ties": "客户：台积电、三星等",
+    "src": [],
+    "unverified": true
+   },
+   "ACLS": {
+    "products": "离子注入机（Purion 系列，覆盖高能 / 中电流 / 大电流）",
+    "what": "离子注入是把特定原子“打进”硅片里改变导电性质，Axcelis 专做这一种机器，功率器件（碳化硅）和成熟制程用量大。",
+    "diff": "与 Veeco 全股票合并（Veeco 股东每股换 0.3575 股 Axcelis，合并后企业价值约 44 亿美元，Axcelis 股东持股约 58%），双方股东已批准，仍待中国市场监管总局审批，交割时间从 2026 下半年推迟到 2027 一季度末。",
+    "ties": "合并对象 Veeco",
+    "src": [
+     [
+      "Axcelis-Veeco 合并宣布（Nasdaq）",
+      "https://www.nasdaq.com/press-release/axcelis-technologies-and-veeco-instruments-combine-creating-leading-semiconductor"
+     ],
+     [
+      "Axcelis 与 Veeco 更新合并预计交割时间（Webull）",
+      "https://www.webull.com/news/15854302790247424"
+     ]
+    ]
+   },
+   "VECO": {
+    "products": "激光退火、离子束沉积、MOCVD、先进封装湿法设备",
+    "what": "Veeco 做的是几种细分工序设备：用激光快速加热修复晶圆、用离子束镀极薄的膜、长化合物半导体外延层等。",
+    "diff": "与 Axcelis 合并后产品线互补（注入 + 退火 + 沉积 + 封装），合并后公司将启用新名称和代码；交割待中国审批。",
+    "ties": "合并对象 Axcelis",
+    "src": [
+     [
+      "Axcelis-Veeco 合并宣布（Nasdaq）",
+      "https://www.nasdaq.com/press-release/axcelis-technologies-and-veeco-instruments-combine-creating-leading-semiconductor"
+     ],
+     [
+      "Axcelis-Veeco 44 亿美元合并获股东批准（Yahoo）",
+      "https://finance.yahoo.com/news/axcelis-veeco-4-4bn-merger-101535529.html"
+     ]
+    ]
+   },
+   "ASMIY": {
+    "products": "原子层沉积（ALD）、外延（Epi）、PECVD、立式炉",
+    "what": "ASM 做的是“一次只铺一层原子”的镀膜机，最先进的 GAA 晶体管要把栅极包住沟道四面，必须靠 ALD 才能做得均匀。",
+    "diff": "2026 三季度收入创纪录约 11.6 亿欧元（固定汇率 +44%）、设备收入 +48% 主要来自 ALD；给出 2027 年收入超过 57 亿欧元的展望；公司称 1.4nm GAA 将使可服务市场增加 4.5 亿~5 亿美元，并看好 DRAM ALD、外延与先进封装。",
+    "ties": "客户：台积电、三星、英特尔等先进制程厂",
+    "src": [
+     [
+      "Newsquawk：ASM Q3 2026 收入 11.6 亿欧元",
+      "https://www.newsquawk.com/headlines/asm-international-nv-asm-na-q3-2026-eur-adj-net-income-3154mln-revenue-116bln-exp-111bln"
+     ],
+     [
+      "FourWeekMBA：ASM 预计 2027 年收入超 57 亿欧元",
+      "https://fourweekmba.com/ai-asm-sees-2027-revenue-over-5-7b-after-a-record-quarter/"
+     ]
+    ]
+   },
+   "ACMR": {
+    "products": "单片清洗（含高温 SPM）、Tahoe 清洗、电镀（ECP）、炉管",
+    "what": "盛美做晶圆清洗机：每刻一层、镀一层之后都要把残留物洗干净，否则良率下降。主要市场在中国大陆。",
+    "diff": "2026 三季度收入 3.677 亿美元（+36.6%），清洗类收入 2.107 亿美元（+16.1%、占 57%），全年指引上调至 12.4 亿~12.8 亿美元；毛利率约 41.6%、客户预付款下降，有约 2.63 亿美元已交付设备待验收；预计年底在中国大陆以外约 10 家客户装机 20 台以上。",
+    "ties": "主要客户为中国大陆晶圆厂",
+    "src": [
+     [
+      "ACM Research 2026 三季度业绩（Morningstar / GlobeNewswire）",
+      "https://www.morningstar.com/news/globe-newswire/9870989/acm-research-reports-third-quarter-2026-results"
+     ],
+     [
+      "Zacks：ACMR 三季度因 ECP 增长超预期",
+      "https://www.zacks.com/stock/news/3025700/acmr-q3-earnings-beat-estimates-on-ecp-growth-revenues-rise-y-y"
+     ]
+    ]
+   },
+   "ICHR": {
+    "products": "气体输送子系统、流体模块、精密加工部件",
+    "what": "Ichor 给设备大厂做“供气管路”模块：把各种工艺气体按精确流量送进刻蚀 / 沉积腔体，是设备里的标准外包件。",
+    "diff": "2026 三季度收入约 3.29 亿美元（+37%）、毛利率约 16%（环比 +190bp），管理层称需求能见度延伸到 2027；但库存与应收增加使季度自由现金流约 −4,000 万美元，客户高度集中在两家设备大厂（10-Q 未在本次检索中确认具体是哪两家）。",
+    "ties": "客户：半导体设备 OEM（集中度高）",
+    "src": [
+     [
+      "Ichor 2026 三季度业绩（Morningstar / Business Wire）",
+      "https://www.morningstar.com/news/business-wire/20261102404580/ichor-holdings-ltd-announces-third-quarter-2026-financial-results"
+     ],
+     [
+      "Ichor Q3 收入增长 37%（Panabee）",
+      "https://www.panabee.com/news/ichor-earnings-q3-2026-report"
+     ]
+    ]
+   },
+   "UCTT": {
+    "products": "气体 / 液体输送子系统、腔体部件清洗与再制造服务",
+    "what": "超科林和 Ichor 类似，给设备大厂做子系统，同时提供腔体零件的清洗翻新服务。",
+    "diff": "本次未查到当日来源。",
+    "ties": "客户：半导体设备 OEM",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "ACLS",
+    "b": "VECO",
+    "type": "收购",
+    "desc": "全股票合并，Veeco 股东每股换 0.3575 股 Axcelis，待中国审批，预计 2027 一季度末前交割。",
+    "src": [
+     "Axcelis 与 Veeco 更新合并预计交割时间（Webull）",
+     "https://www.webull.com/news/15854302790247424"
+    ]
+   },
+   {
+    "a": "LRCX",
+    "b": "AMAT",
+    "type": "竞争",
+    "desc": "刻蚀与沉积两大美国设备商，均受益于 AI 带动的代工 / 存储投资，2026 年两家季度收入均创纪录。",
+    "src": [
+     "Applied Materials FY26 四季度业绩新闻稿",
+     "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
+    ]
+   },
+   {
+    "a": "ASMIY",
+    "b": "AMAT",
+    "type": "竞争",
+    "desc": "ALD 与外延在 GAA 时代需求上升，ASM 称 1.4nm GAA 使可服务市场增加 4.5 亿~5 亿美元，应用材料同样覆盖沉积与外延。",
+    "src": [
+     "FourWeekMBA：ASM 预计 2027 年收入超 57 亿欧元",
+     "https://fourweekmba.com/ai-asm-sees-2027-revenue-over-5-7b-after-a-record-quarter/"
+    ]
+   }
+  ]
+ },
+ "aerospace/rocket/fin": {
+  "updated": "2026-11-22",
+  "note": "火箭的姿态控制靠两类部件：推力矢量控制（摆动发动机喷管的作动器）和栅格舵 / 舵面作动器，再加上控制推进剂流量的阀门。新火箭公司（SpaceX 等）大多自研，上市公司里真正以运载火箭作动器为可见业务的是 Moog；派克、Crane、Woodward、TransDigm、HEICO 主要是航空零部件商，航天只占很小一块。",
+  "companies": {
+   "MOG-A": {
+    "products": "推力矢量控制（TVC）作动器与控制器、栅格舵 / 舵面作动器、隔离阀、逃逸塔作动器、推进阀门",
+    "what": "Moog 做的是火箭的“方向盘”：用作动器推动发动机喷管左右摆动，让火箭按预定轨迹飞；逃逸塔上的作动器能在出事时调节推力把飞船拉离火箭。",
+    "diff": "为 NASA SLS 芯级和助推器提供 TVC（12 个作动器、4 个控制器、2 个隔离阀），也负责上面级和猎户座逃逸塔作动，参与 2026-04 Artemis II 发射；在扩产 TVC 与舵面产线，涉及海军发射项目、Stratolaunch Talon A、ULA Vulcan。FY26 航天与国防收入约 14 亿美元（+22%）、经营利润率 14.1%。",
+    "ties": "客户：NASA、ULA、美国海军、Stratolaunch",
+    "src": [
+     [
+      "Moog：Moog Technology Successfully Steers Artemis II Launch",
+      "https://www.moog.com/news/operating-group-news/2026/moog-technology-successfully-steers-artemis-ii-launch.html"
+     ],
+     [
+      "Moog FY26 业绩 8-K（SEC）",
+      "https://www.sec.gov/Archives/edgar/data/0000067887/000162828026075170/ex991-112026.htm"
+     ],
+     [
+      "Aerospace Manufacturing and Design：Moog 扩产航天作动与航电",
+      "https://www.aerospacemanufacturinganddesign.com/news/moog-expands-space-actuation-avionics-manufacturing"
+     ]
+    ]
+   },
+   "?PH": {
+    "products": "航空液压 / 燃油系统、流体连接件（Stratoflex），收购中的 CIRCOR 航空业务（含燃油阀）",
+    "what": "派克是工业与航空流体部件巨头，管路、接头、阀门都做，航天是航空业务的边角。",
+    "diff": "公司称参与 NASA SLS 与猎户座项目，Stratoflex 有 150 多个料号用于航天飞机、500 多个用于国际空间站；收购 CIRCOR 航空业务预计 2026 下半年完成。航天收入占比很小，不计入浪位统计。",
+    "ties": "客户：NASA 项目主承包商",
+    "src": [
+     [
+      "Parker Aerospace",
+      "https://www.parker.com/us/en/industries/aerospace.html"
+     ],
+     [
+      "Parker：Stratoflex 航天应用",
+      "https://www.parker.com/us/en/divisions/stratoflex-products-division/solutions/space-leadership.html"
+     ]
+    ]
+   },
+   "?CR": {
+    "products": "航空航天阀门与传感器、低温（cryogenics）流体设备",
+    "what": "Crane 做飞机上的阀门、传感器，低温业务做液氧液氢等超低温介质的泵阀，主要服务发射场与航天基础设施。",
+    "diff": "低温业务主要服务航天发射与航空基础设施；2026 年多次上调全年 EPS 指引。航天收入占比未披露。",
+    "ties": "客户：航空 OEM、发射基础设施",
+    "src": [
+     [
+      "Crane Company 2026 二季度业绩（Barchart）",
+      "https://www.barchart.com/story/news/3509739/crane-company-reports-second-quarter-2026-results-and-raises-full-year-adjusted-eps-guidance"
+     ],
+     [
+      "Crane 业务分部",
+      "https://www.craneco.com/?p=89"
+     ]
+    ]
+   },
+   "?WWD": {
+    "products": "航空燃油控制、作动系统、工业燃气轮机控制",
+    "what": "Woodward 做发动机的“油门和执行机构”：控制燃油流量和舵面运动，主要用在飞机发动机上。",
+    "diff": "FY26 收入约 44 亿美元（+22%），四季度航空收入约 +18%，FY27 航空收入指引 +8%~13%；资本开支约 2.9 亿美元会压制利润率扩张，财报后股价下跌。航天不是主要业务。",
+    "ties": "客户：航空发动机与飞机制造商",
+    "src": [
+     [
+      "Woodward FY2026 业绩（Finviz）",
+      "https://finviz.com/news/424838/woodward-reports-record-sales-earnings-for-fiscal-year-2026"
+     ],
+     [
+      "247wallst：Woodward 四季度超预期但 2027 利润率提示",
+      "https://247wallst.com/cards/woodward-q4-2026-earnings-wwd-01m7r7qx6pj7rxqzew9wnpr73e"
+     ]
+    ]
+   },
+   "DCO": {
+    "products": "航空航天结构件、电子组件与互连线缆（含运载火箭与卫星用）",
+    "what": "Ducommun 给飞机、导弹、火箭做结构件和线缆组件，是二级供应商。",
+    "diff": "2026 三季度商用航空收入 +28% 至 9,700 万美元，军用与航天收入 −7% 至 1.19 亿美元（项目时点）；全年收入预期 8.85 亿~8.9 亿美元，二季度剩余履约义务创新高 12 亿美元。航天未单独披露。",
+    "ties": "客户：国防主承包商、航空 OEM",
+    "src": [
+     [
+      "Ducommun Q3 2026 业绩电话会要点（Nasdaq）",
+      "https://www.nasdaq.com/articles/ducommun-q3-earnings-call-highlights"
+     ],
+     [
+      "Ducommun Q2 2026 业绩电话会要点（Nasdaq）",
+      "https://www.nasdaq.com/articles/ducommun-q2-earnings-call-highlights"
+     ]
+    ]
+   },
+   "?TDG": {
+    "products": "航空专有零部件（阀门、泵、作动器等）及售后",
+    "what": "TransDigm 收购大量“小而关键”的航空零件公司，靠售后定价权赚钱，航天很少。",
+    "diff": "2026-01 以约 22 亿美元收购 Jet Parts Engineering 与 Victor Sierra（航空售后），2025-12 以约 9.6 亿美元收购 Stellant Systems（航空航天与国防电子），未查到航天阀门相关新业务。",
+    "ties": "客户：航空公司、OEM、国防",
+    "src": [
+     [
+      "Zacks：TransDigm 以 22 亿美元收购 Jet Parts Engineering 与 Victor Sierra",
+      "https://www.zacks.com/stock/news/2819368/tdg-to-buy-jet-parts-engineering-and-victor-sierra-aviation-for-22b"
+     ],
+     [
+      "Zacks：TransDigm 以 9.6 亿美元收购 Stellant Systems",
+      "https://www.zacks.com/stock/news/2811210/transdigm-to-buy-stellant-systems-for-960m-expand-product-portfolio"
+     ]
+    ]
+   },
+   "HEI": {
+    "products": "航空替代件（PMA）、电子组件、航天与国防用小众部件",
+    "what": "HEICO 一半做飞机替代零件，一半做国防航天电子和小众部件，靠持续小规模收购扩张。",
+    "diff": "本次未查到 2026 年航天相关的明确新业务或收购（Reinhold Industries 收购年份未确认）。",
+    "ties": "客户：航空公司、国防与航天主承包商",
+    "src": [
+     [
+      "Defense Daily：HEICO 收购 Reinhold Industries",
+      "https://www.defensedaily.com/heicoto-acquire-aerospace-component-manufacturer-reinhold-industries/business-financial"
+     ]
+    ],
+    "unverified": true
+   },
+   "?CW": {
+    "products": "国防作动与控制、传感器、阀门",
+    "what": "Curtiss-Wright 做军用作动器、阀门与电子，航天业务占比小。",
+    "diff": "本次未查到当日来源。",
+    "ties": "客户：美国国防部与主承包商",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "MOG-A",
+    "b": "NASA",
+    "type": "供应",
+    "desc": "为 SLS 芯级、助推器、上面级提供推力矢量控制，并为猎户座逃逸塔提供作动器，参与 Artemis II。",
+    "src": [
+     "Moog：Moog Technology Successfully Steers Artemis II Launch",
+     "https://www.moog.com/news/operating-group-news/2026/moog-technology-successfully-steers-artemis-ii-launch.html"
+    ]
+   },
+   {
+    "a": "MOG-A",
+    "b": "ULA",
+    "type": "供应",
+    "desc": "为 Vulcan 火箭提供 TVC 与舵面作动，Moog 正为此扩产。",
+    "src": [
+     "Aerospace Manufacturing and Design：Moog 扩产航天作动与航电",
+     "https://www.aerospacemanufacturinganddesign.com/news/moog-expands-space-actuation-avionics-manufacturing"
+    ]
+   },
+   {
+    "a": "PH",
+    "b": "CIRCOR 航空业务",
+    "type": "收购",
+    "desc": "派克收购 CIRCOR 的商用与国防航空业务（含燃油阀），预计 2026 下半年完成。",
+    "src": [
+     "Parker to Acquire CIRCOR’s Commercial and Defense Aerospace Business",
+     "https://investors.parker.com/news-events/press-releases/detail/507/parker-to-acquire-circors-commercial-and-defense"
+    ]
+   }
+  ]
  }
 }
