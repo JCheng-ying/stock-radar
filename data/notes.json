@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-23",
+    "text": "治理面由向下转为向上：董事会一致投票复任黄仁勋（立即生效），Kress 回任 CFO，据报美方认定无国家安全风险；盘前约 +30%，情绪面修复。合规面（SEC / 加州 / Megaspeed / 财政部答复）未变。",
+    "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
+   },
+   {
     "date": "2026-11-22",
     "text": "治理面 / 合规面仍向下：特朗普再次公开呼吁聘回黄仁勋，董事会据报未考虑，CEO 落点继续悬空；CNBC 标题称 Megaspeed / Alice Huang 调查出现新人物（细节未查证）。",
     "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html"
@@ -20,11 +25,6 @@
     "date": "2026-11-19",
     "text": "产业面小幅：据 Seeking Alpha 标题（细节未查证）洽谈以 5 亿美元以上收购扩散模型初创 Inception，延续软件 / 模型层补强，金额相对体量很小，不改变合规面压力。",
     "url": "https://seekingalpha.com/symbol/NVDA"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "合规面：Reuters 标题称加州总检察长就前 CEO 与涉华问题发出传票（正文未查证），与 Seeking Alpha 标题一致、与 11/17“仍在评估”的报道口径不同，以官方公告为准。",
-    "url": "https://news.google.com/search?q=California+AG+subpoenas+Nvidia"
    }
   ],
   "ANET": [
@@ -942,6 +942,11 @@
   ],
   "CRWD": [
    {
+    "date": "2026-11-23",
+    "text": "产业面 / 预期面：全股票约 439 亿美元收购 Zscaler，合并 ARR 超 100 亿美元；三季度净新增 ARR 4.19 亿美元创纪录，基本面向上，整合与稀释是新变量。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+   },
+   {
     "date": "2026-11-18",
     "text": "情绪面向上：AI 攻击警告与一连串宕机推动安全板块普涨，CRWD +8.0%；12-01 财报验证净新增 ARR。",
     "url": "https://seekingalpha.com/news/4674237-palo-alto-leads-cyber-stocks-higher-after-dhs-secretary-warns-of-ai-powered-attacks"
@@ -1079,10 +1084,28 @@
     "text": "预期面待验证：11-23 财报，企业业务与语音 AI 能否抵消白标流失和 AI 成本对毛利率的压力。",
     "url": "https://finviz.com/news/422873/zooms-enterprise-inflection-faces-its-next-test-as-white-label-churn-and-ai-costs-build"
    }
+  ],
+  "ZS": [
+   {
+    "date": "2026-11-23",
+    "text": "产业面：被 CrowdStrike 以全股票约 439 亿美元收购（1.135 股 CRWD / 股），后续价格主要跟随 CRWD 与交易完成概率。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+   }
+  ],
+  "ARM": [
+   {
+    "date": "2026-11-23",
+    "text": "治理面向上：CEO Haas 续约至 2033，回应被英伟达接触的传闻，管理层稳定性提高。",
+    "url": "https://www.datacenterdynamics.com/"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-23",
+    "text": "英伟达复任黄仁勋，AI 板块最大的治理不确定性解除，情绪面从极端区修复；合规调查仍在。安全软件进入整合（CRWD 收购 ZS，约 439 亿美元），服务器供给瓶颈仍在内存（据报提价最多 45%，未查证）。"
+   },
    {
     "date": "2026-11-22",
     "text": "合规面：贝森特称仍未拿到英伟达对华出口合规答复（联邦层面与加州调查同向）；预期面远期变量：OpenAI 提议以预训练损失为行业“共同上限”度量，若落地偏向抑制超大预训练、利好推理侧（仅表态，无协议）。"
@@ -1101,10 +1124,6 @@
     "date": "2026-11-20",
     "text": "电力成为 AI 扩张的显性约束并开始进入规则：PJM 向 FERC 提交合并并网方案（12 个月接入、50MW 以上为“大型计算负载”、升级成本向数据中心收取），Google 出资改造输电线、Meta 因燃气发电重估净零目标；先进封装（EMIB）获微软采用，封装 / 基板与电力同为供给瓶颈。",
     "url": "https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "11-19 收盘：ANT 首日 +17% 没有带动大盘，纳指 −2.25%、VIX 28.4，AMD（做空报告）、NBIS、CRWV 领跌；INTU 下季指引大幅低于预期并出售 Mailchimp，应用软件被 AI 压缩预期的逆风再坐实一步；KEYS 四季度超指引，AI 测试测量需求向上——硬件需求面与软件预期面继续分化。"
    }
   ],
   "quantum": [
@@ -1191,6 +1210,65 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-23",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布；含 Summizer 新增的 17 篇）价格仍为 11-20 收盘快照。资金面得分 22（钱贵 / 紧缩），情绪面热度 25（偏悲观），VIX 盘前一度升至 30.2、处近一年 99% 分位；AI 一浪、二浪、三浪的财报条件均已满足而价格未反映（二浪今晨新触发）。【06:28 更新】周一早间最大的变化在治理面：英伟达董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，立即生效，Kress 回任 CFO（CBS、PBS/AP）；据报美方官员认定其回任不构成国家安全风险。盘前 NVDA 约 +28%~31%（各家报道口径不同），带动科技股反弹。这消除了此前“CEO 落点悬空”这一情绪与估值折价的主因，治理面由向下转为向上、情绪面边际修复；但 SEC 民事调查、加州调查、Megaspeed 案与对华出口合规答复仍未落地，合规面没有改变。另：Arm CEO Haas 续约至 2033（此前有报道称英伟达曾接触他）；CrowdStrike 以全股票约 439 亿美元收购 Zscaler，同时公布创纪录净新增 ARR 4.19 亿美元；Tom's Hardware 标题称 AI 服务器厂商因内存短缺在签约数月后提价最多 45%（细节未查证），与本周 DELL / HPE 财报“积压受存储限制”的主线同向。整体结论：AI 板块最大的单一不确定性解除，情绪面有望从极端区修复；资金面仍紧，能否持续要看合规调查与本周财报。",
+   "sectors": {
+    "ai": "【06:28】治理面转正：英伟达复任黄仁勋（董事会一致投票），盘前约 +30%，科技股普涨；合规面（SEC / 加州 / Megaspeed / 财政部答复）仍待落地。CrowdStrike 439 亿美元全股票收购 Zscaler，安全软件加速整合；据 Tom's Hardware 标题，AI 服务器因内存短缺提价最多 45%（细节未查证），供给瓶颈仍在存储。基础设施侧：Oracle 重申 OpenAI 项目融资已足、Firmus 拟发 15 亿美元债、KKR 据报拟以最高 100 亿美元控股 EdgeCore、Vertiv 推出中压 UPS——资本仍在流入算力与数据中心。",
+    "quantum": "【06:28】只有一级市场与海外个案：Rotonium 称发布室温量子计算机、planqc 扩展至英国剑桥、Q.security 获 1,150 万美元融资、微软在以色列组建后量子安全团队；不涉及上市公司基本面。",
+    "robotics": "无重要新信息（机器人零部件公司 Coprod 获 600 万美元融资，ABB 以 26.5 亿美元收购 Ziehl-Abegg，均为个案）",
+    "aerospace": "无重要新信息（Barron's 标题称 SpaceX 股价因马斯克谈 Starlink 引发与特斯拉合并的猜测而反弹，细节未查证）",
+    "autonomous": "无重要新信息"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "董事会一致投票复任黄仁勋（CEO/总裁/董事，立即生效），盘前约 +28%~31%。快照价 125.53（11-20 收盘），2027 前瞻区间 85.2 / 153.74 / 226.1，位于下沿~中值之间、比中值低约 18%；若盘前涨幅守住（约 160~165），将回到中值上方。合规调查仍未落地。"
+    },
+    {
+     "t": "CRWD",
+     "why": "全股票约 439 亿美元收购 ZS（每股 ZS 换 1.135 股 CRWD），合并 ARR 超 100 亿美元；同时公布净新增 ARR 4.19 亿美元创纪录。现价 229.44，2027 前瞻区间 131.13 / 187.8 / 309.12，位于中值~上沿。"
+    },
+    {
+     "t": "ZS",
+     "why": "被 CRWD 全股票收购，对价随 CRWD 股价浮动（1.135 倍）。现价 194.82，2027 前瞻区间 110.91 / 149.33 / 214.4，位于中值~上沿。"
+    },
+    {
+     "t": "ARM",
+     "why": "CEO Haas 续约至 2033，据 Bloomberg 此前曾被英伟达接触，管理层不确定性消除。现价 152.2，2027 前瞻区间 93.62 / 145.4 / 241.88，略高于中值。"
+    },
+    {
+     "t": "ORCL",
+     "why": "11-20 盘后宣布 OpenAI 大单融资已落实并盘后反弹（富途），常规时段收 101.19（−8.5%）；2027 前瞻区间 75.64 / 123.93 / 186.04，比中值低约 18%，资金面最大疑问之一得到回应。"
+    },
+    {
+     "t": "DELL",
+     "why": "11-24 发财报：市场预期收入约 506 亿美元、EPS 6.63，看 950 亿美元 AI 积压在存储受限下的转化速度；11-20 −11.0%。现价 278.02，2027 前瞻区间 202.54 / 340.5 / 476.33，位于下沿与中值之间、比中值低约 18%。"
+    },
+    {
+     "t": "HPE",
+     "why": "11-23 发 FY26 四季度财报：订单远超可交付量，看网络（Juniper）收入能否追上订单；两家前瞻对 EPS 指引口径有分歧（1.12~1.22 vs 1.20~1.30）。11-20 −10.1%。现价 40.91，2027 前瞻区间 35.44 / 50.1 / 73.74，位于下沿与中值之间、比中值低约 18%。"
+    }
+   ],
+   "sources": [
+    [
+     "CBS News：英伟达复任黄仁勋",
+     "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
+    ],
+    [
+     "PBS / AP：董事会一致复任黄仁勋",
+     "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman"
+    ],
+    [
+     "CrowdStrike 8-K：收购 Zscaler 及三季度业绩",
+     "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+    ],
+    [
+     "DataCenterDynamics：Arm CEO 续约至 2033",
+     "https://www.datacenterdynamics.com/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-22",
    "market": "周日无交易，价格仍是 11-20 收盘；含 Summizer 当天新增的 1 篇。资金面得分 24（钱贵 / 紧缩：10 年期美债 4.91%、一年 +78bp，美元指数 103.81、近一年 99% 分位，高收益债相对长债近 3 个月 −2.6%）；情绪面热度 25（偏悲观：VIX 35.9、近一年 100% 分位、期限结构倒挂 1.16，CNN 恐贪指数 10、一周前 37），全部 746 家里只有 24% 站上 200 日线；AI 的一浪、三浪仍是「财报已改善，价格未反映」。今天新增的两件事都在合规面 / 预期面：① 贝森特周日对 CBS 表示，政府给英伟达的 10 天期限内仍未拿到对华出口合规的答复，追问谁负责合规、问题在公司内部知情到哪一层；董事长 Harvey Jones 已表态不会再聘回黄仁勋——治理与调查仍无落点，方向向下；② OpenAI 首席科学家 Pachocki 提出以预训练损失（perplexity）作为各家“共同上限”的度量（TechCrunch），目前只是表态、没有协议和数值，若成形，边际上会把算力需求从“更大的预训练集群”推向推理与后训练。资金面唯一明确的正面信号是甲骨文 11-20 盘后宣布 OpenAI 大单融资已落实、盘后反弹。本周是感恩节短周（11-26 休市），HPE、ZM（11-23）与 DELL、ADI、WDAY、ADSK（11-24）集中发财报，是检验“AI 硬件积压能否在存储受限下转化”和“软件席位是否被 AI 侵蚀”的第一批数据。整体结论不变：需求与产业面没有转向，压力在合规面、资金面与情绪面；情绪已在极端区，能否止跌要看治理与调查的落点和本周财报。\n【15:28 更新，含 Summizer 新增的 1 篇】两件小事，整体结论不变。① 航天板块产业面：NASASpaceflight 整理了中国载人登月的完整排序——梦舟无人对接天宫推迟到 2027 年初、2028 年左右无人揽月着陆、2029 年左右双长征十号无人全流程彩排，之后才载人，目标 2030 年前；长征十号 / 十号甲都还未首飞。这对美国月球链（Artemis 承包商、CLPS 供应商）是预期面的竞争压力叙事，偏支撑政策端预算，但不改变短期基本面。② 软件：据 Seeking Alpha 标题，ZM 财报（11-23）前分析师下调预期（细节未查证），预期面略向下，预期门槛也随之降低。\n【16:41 宏观博主 · 美投讲美股（9/5~10/31 共 6 期，今日补齐）】博主认为：本轮加息是预防性的，最终 2~3 次温和加息、市场已定价；美债收益率上行主要压估值（标普远期市盈率一年从 23 倍压到 19 倍，已大部分反映），不会改变大科技的 AI 资本开支（回报约 30%、融资余地大）；CoreWeave 的高杠杆是个案、不会传染；油价传导只停留在能源和运输，除非油价升到 150 美元以上或需求意外走强，通胀可控，因通胀带来的下跌反而是机会。对照本站：情绪面已在极端区（热度 25，VIX 35.9、恐贪指数 9.7），与他“恐慌是机会”的框架一致；但资金面比他录视频时更紧（得分 24，10 年期美债 4.91%、一年 +78bp，美元一年 +3.65%），杠杆 ETF 成交占比仍在 72% 分位、新型云信用压力也比他判断的更大，说明“风险只停留在估值层面”这一点尚未被数据确认。他的宏观判断都录于 11 月这轮下跌之前，作为辅助参考，不改变本站结论。\n【21:28 更新】两条英伟达治理面的增量，整体结论不变。① 特朗普在 Truth Social 再次呼吁英伟达董事会聘回黄仁勋，称这对公司和美国都最好（Benzinga）；但据 CNBC 知情人士，董事会并未考虑，董事长 Harvey Jones 此前已表态不复任——政治层面的支持与董事会立场继续背离，CEO 落点仍悬空，治理面方向未变，只是“回任”预期的噪音加大（预测市场 Kalshi 约 10%、Polymarket 约 37%，口径不同）。② CNBC 标题称美方对 Megaspeed 与 Alice Huang 的调查中出现“新人物”（正文细节未查证）；此前官方已公开确认在查两者，合规面压力继续向下。快照 NVDA 125.53（仍为 11-20 收盘），位于 2027 前瞻区间 85.2/153.74/226.1 的下沿~中值之间。",
@@ -3405,152 +3483,25 @@
      "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/"
     ]
    ]
-  },
-  {
-   "date": "2026-11-09",
-   "market": "今天是一次普涨反弹：标普 500 +2.34% 收于 7549.83，费城半导体指数 +6.9%，路透把原因归于油价回落缓解通胀担忧；唯一逆势的是英伟达（−4.27%，CEO 个人事件引发董事会调查）。资金面没有变化，仍是“钱贵”（27 分：10 年期美债 4.86%，一年 +77bp；路透称市场对 12 月加息的预期仍在 80% 以上），周二公布的 10 月 CPI 是对这轮反弹的第一个检验。情绪面从偏悲观回到中性（热度 35 → 46：VIX 25.6 → 19.9，恐贪指数 32，一周前 19），但三倍杠杆 ETF 成交占比仍在近一年 81% 分位，杠杆没有出清，所以这更像超跌反弹，还不能确认情绪底。浪位：AI 三浪仍都是“财报已改善，价格未反映”（二浪盘中一度翻成“启动初期”又退回），航空航天二浪升到“启动初期”，自动驾驶一浪退回“尚未启动”。 【盘后更新】收盘后有两件事改变了 AI 板块的预期面：一是特朗普称 FBI 正在调查黄仁勋事件，且已有股东提起集体诉讼，英伟达的管理层风险从“公司内部调查”升级为“联邦调查 + 诉讼”；二是据路透，Anthropic 向承销商发出又撤回了 IPO 条款（每股 70~80 美元、最多募资 693 亿美元），公司称定价有误、修订版随后发出——IPO 节奏出现不确定性。",
-   "sectors": {
-    "ai": "预期面出现两股相反的力量：芯片股普遍大涨（AMD +13.3%、博通 +8.8%、Marvell +9.5%），而英伟达因 CEO 事件下跌——这是公司层面的管理层风险，不是产业面变化，CNBC 援引的分析师也认为影响目前限于英伟达本身。另一条线是模型公司的估值在下修：据报道 Anthropic 的 IPO 估值讨论区间从 1.5~2 万亿美元降到 1.1~1.75 万亿美元，最早 11 月 10 日开始路演；OpenAI 新一轮 110 亿美元融资估值 1.25 万亿美元。模型公司的融资价格直接决定新型云和数据中心的订单能否落地，本周 CoreWeave（11-10）和 Nebius（11-12）的财报是验证点。 盘后：Anthropic 发出又撤回 IPO 条款（70~80 美元/股、最多 693 亿美元），据报道原文件列出谷歌、英伟达、AMD、博通、美光、微软、台积电以 IPO 价参与私募；英伟达的事件升级为 FBI 调查和股东集体诉讼。",
-    "quantum": "量子股跟随反弹（IonQ +8.3%、Rigetti +10.5%、D-Wave +7.4%），没有新的基本面信息；Rigetti 和 D-Wave 11 月 10 日发财报。产业面上，Pasqal 三季度收入 330 万欧元（去年同期 570 万），因为本季没有卖出整机，而服务收入 +53%——说明非头部量子公司收入仍是“块状”的。英国追加 1.38 亿英镑采购量子传感，政策重心在传感和网络而不是计算。",
-    "robotics": "无重要新信息。Agility Robotics（AGLT）上市后继续下跌，今天 −11.3%。",
-    "aerospace": "产业面利好集中出现：NASA 宣布 CLPS 2 月球运输合同池（10 年、上限 100 亿美元，8 家入选，包括 Intuitive Machines、Firefly、Voyager、洛马、诺格、SpaceX、蓝色起源、ispace-U.S.），入选只代表有资格竞标后续任务，不是确定收入；另有约 13 亿美元的发射任务单。Rocket Lab 三季度收入 2.678 亿美元（+73%）、积压 36 亿美元（环比 +52%），但 Neutron 首飞推迟到“不早于 2027 年”。AST SpaceMobile 与乐天成立日本合资公司，日本政府最多出资 1480 亿日元。航空航天二浪升到“启动初期”。 盘后：Rocket Lab 财报后盘后约 −6.5%（每股亏损 0.12 美元，差于预期的 0.07），Neutron 基础发射价从 5500 万提到 7000 万美元，前 16 次发射已订满；AST SpaceMobile 三季度收入 4230 万美元（+187%）但低于预期，维持全年 1.5~2 亿美元指引，现金 32 亿美元。",
-    "autonomous": "监管面转负：NHTSA 对 Waymo 开启召回质询（RQ26006，涉及 2,895 辆车），原因是 2025 年 11 月软件修复之后大部分“违规超越校车”事件仍在发生；质询是评估，不代表认定修复失败。特斯拉在圣安东尼奥上线 Robotaxi。一浪退回“尚未启动”。"
-   },
-   "watch": [
-    {
-     "t": "NVDA",
-     "why": "董事会因 CEO 被指成为外国情报目标而启动独立调查，股价 −4.27%，在芯片普涨日逆势；热度 18。现价 178.67 处于 2027 前瞻区间（132.5~218.8~335.1）下沿到中值之间，距中值 +22%。11 月 17 日财报。 盘后：特朗普称 FBI 正在调查此事，股东已提起集体诉讼。"
-    },
-    {
-     "t": "AVGO",
-     "why": "今天 +8.8%，仍处“关注买点”（热度 29）；现价 319.5 处于 2027 区间（263.3~391.3~586.4）下沿附近，距中值 +22%。英伟达管理层风险若持续，定制 ASIC 路线的相对地位会被市场重新比较。12 月 9 日财报。"
-    },
-    {
-     "t": "CRWV",
-     "why": "11 月 10 日财报，热度 7（极度悲观），一个月 −40%。模型公司估值下修是否影响它的合同积压和融资安排是核心问题；现价 48.98，2027 区间 13.6~78.8~167.4，距中值 +61%，区间很宽说明分歧极大。"
-    },
-    {
-     "t": "RKLB",
-     "why": "三季度收入 2.678 亿美元（+73%）、积压 36 亿美元（环比 +52%）、经营现金流转正（720 万美元），但每股亏损 0.12 美元差于预期，Neutron 首飞推迟到不早于 2027 年；收盘 +10.9% 后盘后约 −6.5%。Neutron 基础价提到 7000 万美元、前 16 次已订满，说明需求没受推迟影响。现价 58.86 高于 2027 区间中值（48.8）约 21%。"
-    },
-    {
-     "t": "ASTS",
-     "why": "与乐天成立 Rakuten AST（乐天 51%），日本政府最多提供 1480 亿日元（约 10 亿美元），目标 2029 年 3 月底在日本开通手机直连卫星服务；今天 +14.1%。但目前在轨只有 13 颗卫星；现价 36.89 高于 2027 区间中值（29.9）。 盘后公布三季度：收入 4230 万美元（+187%）低于预期，每股亏损 0.44 美元，维持全年 1.5~2 亿美元收入指引；12 月目标月产 6 颗卫星。"
-    },
-    {
-     "t": "LUNR",
-     "why": "入选 NASA CLPS 2 月球运输合同池（8 家之一），今天 +15%；11 月 12 日发财报。现价 12.04 处于 2027 区间（10.6~14.9~20.4）下沿附近，距中值 +24%。入选不等于拿到任务单。"
-    },
-    {
-     "t": "RGTI",
-     "why": "11 月 10 日财报，今天 +10.5%；距高点 −62%。看 108 比特系统之后的路线图和收入是否摆脱“块状”。现价 12.98 已高于 2027 区间中值（10.8）。"
-    },
-    {
-     "t": "GOOGL",
-     "why": "Waymo 被 NHTSA 开启召回质询（2,895 辆），自动驾驶监管面转负；对谷歌整体是小事，但会影响 Waymo 扩城节奏。现价 288.15 高于 2027 区间中值（235.9）约 22%。"
-    },
-    {
-     "t": "TSLA",
-     "why": "Robotaxi 上线圣安东尼奥并扩大奥斯汀服务区，今天 +5.5%；Cybertruck 的消息来源有分歧（Fortune 称准备停产并退订金，另一篇称订单远超产能）。现价 378 高于 2027 区间中值（309）。"
-    }
-   ],
-   "sources": [
-    [
-     "路透（经 Virginia Business）：油价回落带动美股反弹，英伟达下跌（11-09）",
-     "https://virginiabusiness.com/us-stocks-rally-oil-prices-ease-inflation-nvidia-slump/"
-    ],
-    [
-     "CNBC：英伟达因黄仁勋事件下跌 4%（11-09）",
-     "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html"
-    ],
-    [
-     "CNBC：黄仁勋事件与英伟达的接班问题（11-09）",
-     "https://www.cnbc.com/2026/11/09/jensen-huang-affair-nvidia-succession.html"
-    ],
-    [
-     "CNBC：10 月 CPI 周二公布（11-09）",
-     "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html"
-    ],
-    [
-     "Rocket Lab 三季度财报新闻稿（SEC 8-K，11-09）",
-     "https://www.sec.gov/Archives/edgar/data/0001819994/000181999426000073/rklb-11092026ex991.htm"
-    ],
-    [
-     "NASA：月球基地运输、技术与科学项目授标",
-     "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/"
-    ],
-    [
-     "WISN：NASA 授出 100 亿美元月球基地合同（11-08）",
-     "https://www.wisn.com/article/nasa-awards-10b-contracts-moon-base-cargo-nuclear-rover/74371043"
-    ],
-    [
-     "乐天新闻稿：成立 Rakuten AST（11-09）",
-     "https://global.rakuten.com/corp/news/press/2026/1109_01.html"
-    ],
-    [
-     "Light Reading：乐天与 AST 在日本成立合资公司",
-     "https://www.lightreading.com/satellite/rakuten-and-ast-form-d2d-joint-venture-in-japan"
-    ],
-    [
-     "TechCrunch：Waymo 修复后仍违规超越校车，NHTSA 介入（11-09）",
-     "https://techcrunch.com/2026/11/09/waymo-robotaxis-kept-illegally-passing-school-buses-after-software-fix-feds-say/"
-    ],
-    [
-     "FinanceFeeds：Anthropic IPO 路演周仍未披露价格区间",
-     "https://financefeeds.com/anthropic-ipo-date-roadshow-week-arrives-with-no-price-range-on-file/"
-    ],
-    [
-     "Yahoo Finance：Anthropic IPO 估值预期下调",
-     "https://finance.yahoo.com/markets/stocks/articles/anthropic-ipo-targets-november-debut-162209958.html"
-    ],
-    [
-     "SiliconANGLE：OpenAI 以 1.25 万亿美元估值融资 110 亿美元（11-06）",
-     "https://siliconangle.com/2026/11/06/openai-reportedly-raises-11b-in-new-funding-at-1-25t-valuation/"
-    ],
-    [
-     "The Quantum Insider：Pasqal 三季度收入下降（11-06）",
-     "https://thequantuminsider.com/2026/11/06/pasqal-q3-revenue-decline-services-growth/"
-    ],
-    [
-     "The Quantum Insider：英国量子商业化资金（11-06）",
-     "https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation/"
-    ],
-    [
-     "NASASpaceflight：星舰第 15 次飞行等待 FAA 许可",
-     "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/"
-    ],
-    [
-     "Axios：特斯拉在圣安东尼奥上线 Robotaxi（11-09）",
-     "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXJMY01yemp1UExHMGRvZzVPTmFlYUREWl91SnhIM2xjbjVXZDJCVGNqOVVUdEdWcWx6LWNSVW9GV0lZOXB5bTNkWEQtMDd1UVpQbm4tRV8zV1hKVzhqcEsxZVNWVDZ1akJjdW0tT2h6bnNDUDNwdGppWTd2d0VkVzA5OUtMS09GcjhZQ2s5cUJoVTFZcW5Eai1xYmZzTUdScEFCV3lGOGUxMXJr?oc=5"
-    ],
-    [
-     "Business Standard（路透）：Anthropic 撤回 693 亿美元 IPO 数据（11-10）",
-     "https://www.business-standard.com/world-news/anthropic-retracts-69-3-bn-ipo-figures-says-revised-details-to-follow-126111000143_1.html"
-    ],
-    [
-     "Al Jazeera（路透）：特朗普称 FBI 调查黄仁勋事件（11-10）",
-     "https://www.aljazeera.com/economy/2026/11/10/trump-says-fbi-probing-nvidia-ceos-affair-with-alleged-spy"
-    ],
-    [
-     "Yahoo Finance：Rocket Lab 财报后盘后下跌",
-     "https://finance.yahoo.com/markets/stocks/articles/rklb-stock-sinks-hours-q3-023023465.html"
-    ],
-    [
-     "AST SpaceMobile 三季度业务更新（SEC 8-K）",
-     "https://www.sec.gov/Archives/edgar/data/0001780312/000119312526453758/asts-ex99_1.htm"
-    ]
-   ]
   }
  ],
- "updated": "2026-11-22T21:28",
+ "updated": "2026-11-23T06:28",
  "trend": {
   "NVDA": {
-   "date": "2026-11-22",
+   "date": "2026-11-23",
    "dir": "分化",
-   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。 11-22：贝森特称 10 天期限内仍未收到对华出口合规答复，追问谁负责合规、知情到哪一层；董事长 Harvey Jones 表态不聘回黄仁勋——联邦层面的合规压力与加州调查同向，治理无落点的时间在拉长（判断：这是情绪与估值折价的主因，需求侧仍无负面数据）。 晚间：特朗普再次公开呼吁聘回黄仁勋，据 CNBC 董事会未考虑；CNBC 标题称 Megaspeed 案出现新涉案人物（细节未查证）。",
+   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。 11-22：贝森特称 10 天期限内仍未收到对华出口合规答复，追问谁负责合规、知情到哪一层；董事长 Harvey Jones 表态不聘回黄仁勋——联邦层面的合规压力与加州调查同向，治理无落点的时间在拉长（判断：这是情绪与估值折价的主因，需求侧仍无负面数据）。 晚间：特朗普再次公开呼吁聘回黄仁勋，据 CNBC 董事会未考虑；CNBC 标题称 Megaspeed 案出现新涉案人物（细节未查证）。 11-23：董事会一致投票复任黄仁勋（CEO/总裁/董事，立即生效），Kress 回任 CFO，据报美方认定无国家安全风险；盘前约 +28%~31%——此前估值折价的主因（CEO 悬空、人才流失）解除，治理面转正；合规面调查仍未落地（判断：剩余折价将主要取决于 SEC / 加州 / Megaspeed 的结论）。",
    "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定；没有反映继任期的人才与客户关系风险、SEC 调查若涉及收入地区口径（新加坡曾占季度收入约 22%，口径已改为客户总部）带来的重述 / 信任折价、出口管制“管使用者”对东南亚新云需求的影响，以及收紧客户担保后新云下单能力下降（判断）。",
-   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。 英伟达何时、以何种形式回复财政部；CEO 正式人选。",
+   "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。 英伟达何时、以何种形式回复财政部；CEO 正式人选。 复任后：10-Q 风险因素表述、对财政部的合规答复、董事长职位口径（AP 称兼任董事长，其他报道称 Jones 留任）、盘前涨幅能否守住。",
    "src": [
+    [
+     "CBS News：英伟达复任黄仁勋",
+     "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
+    ],
+    [
+     "PBS / AP：董事会一致复任",
+     "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman"
+    ],
     [
      "CBS News：贝森特称需要英伟达就对华芯片给出答复",
      "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
@@ -3582,14 +3533,6 @@
     [
      "Benzinga：英伟达双超预期、Vera Rubin 需求",
      "https://www.benzinga.com/markets/earnings/26/11/63372441/nvidia-stock-jumps-on-q3-double-beat-strong-outlook-explosive-demand-for-vera-rubin"
-    ],
-    [
-     "TechCrunch：SEC 据报调查英伟达",
-     "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/"
-    ],
-    [
-     "Tom's Hardware：英伟达员工警告人才流失",
-     "https://www.tomshardware.com/tech-industry/big-tech/nvidia-employee-warns-of-irreplaceable-talent-exodus-if-jensen-huang-not-reinstated-cautions-board-and-top-brass-that-talent-at-nvidia-is-now-contemplating-departing"
     ]
    ]
   },
