@@ -260,6 +260,7 @@ function overview(){
       ${s.margin&&s.margin.text?`<div class="small muted" style="margin-top:8px">融资余额：${esc(s.margin.text)}</div>`:""}
     </div>
   </div>
+  ${macroCard()}
   ${newsCard()}
   <h2>五大板块 · 浪的位置 <small>一浪基础设备 → 二浪 B 端应用 → 三浪 C 端应用；点击进入板块</small></h2>
   <div class="tw"><table><tr><th class="l">板块</th>${[1,2,3].map(w=>`<th class="l">${wv(w)}</th>`).join("")}</tr>
@@ -717,6 +718,10 @@ function blogDay(d,open){
   </div>`;
 }
 function blogPage(){
+  const tabs=`<div class="tabs" style="margin-top:6px"><button class="${state.blogSrc!=="macro"?"on":""}" onclick="state.blogSrc='stock';render()">视野环球财经 · 个股</button><button class="${state.blogSrc==="macro"?"on":""}" onclick="state.blogSrc='macro';render()">美投讲美股 · 宏观</button></div>`;
+  return tabs+(state.blogSrc==="macro"?macroPage():stockBlogPage());
+}
+function stockBlogPage(){
   const B=DATA.blogger;
   const intro=`<h2 style="margin-top:6px">博主观点 · ${esc(B?B.source:"视野环球财经")} <small>每天的视频整理成笔记后按股票拆开：他的评价、依据、对后续走势和估值的看法、他自己的操作计划。只记录博主说了什么，本站不加判断；卡片底部单独列出本站的前瞻区间作对照。不构成投资建议</small></h2>`;
   if(!B||!(B.days||[]).length)return intro+`<div class="card small muted">还没有整理好的笔记。</div>`;
@@ -732,6 +737,47 @@ function blogForCo(t){
   const O=(B.days||[]).flatMap(d=>(d.others||[]).filter(x=>x[0]===t).map(x=>[d,x[1]]));
   if(!L.length&&!O.length)return"";
   return `<h2>博主观点 <small>${esc(B.source)} · 只记录他说了什么</small></h2>${L.map(([d,x])=>`<div class="card" style="margin-bottom:8px"><div style="display:flex;gap:8px;align-items:baseline"><b>${esc(d.date)}</b>${stanceChip(x.stance)}<a class="small" href="${safeUrl(d.video)}" target="_blank" rel="noopener">视频</a></div><div style="margin-top:6px">${esc(x.verdict||"")}</div>${bList("信息支持",x.evidence)}${bList("后续走势",x.outlook)}${bList("估值 / 前瞻估值",x.valuation)}${bList("他的操作计划",x.plan)}${bList("其他看法",x.views)}</div>`).join("")}${O.map(([d,v])=>`<div class="note"><b>${esc(d.date)}</b> ${esc(v)}</div>`).join("")}`;
+}
+
+
+/* ---------- 宏观博主（美投讲美股） ---------- */
+function mdItems(items){
+  if(!items||!items.length)return"";
+  let h="",lvl=-1;
+  items.forEach(([l,x])=>{while(lvl<l){h+="<ul class='why' style='margin-top:2px'>";lvl++}while(lvl>l){h+="</ul>";lvl--}
+    const tk=x.match(/^([A-Z][A-Z.\-]{0,5})\s*[:：]/);
+    h+=`<li>${tk&&C[tk[1]]?tkLink(tk[1])+"："+esc(x.slice(tk[0].length)):esc(x)}</li>`});
+  while(lvl>=0){h+="</ul>";lvl--}
+  return h;
+}
+function macroEpisode(e,open){
+  const core=e.sections.find(s=>s.h.includes("核心判断"));
+  return `<div class="card" style="margin-bottom:12px;${open?"border-color:var(--accent)":""}">
+    <h3 style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><span>${esc(e.date)} · ${esc(e.title)}</span>${e.video?`<a href="${safeUrl(e.video)}" target="_blank" rel="noopener" class="small">看视频</a>`:""}</h3>
+    ${core?`<div class="note"><b>核心判断</b>${mdItems(core.items)}</div>`:""}
+    ${e.sections.filter(s=>s!==core).map(s=>`<details ${open?"open":""}><summary>${esc(s.h)}</summary>${mdItems(s.items)}</details>`).join("")}
+  </div>`;
+}
+function macroPage(){
+  const B=DATA.macro_blogger;
+  const intro=`<h2>宏观博主 · 美投讲美股 <small>宏观系列播放列表，大约两周一期。本地转写后按主题整理，只记录他说了什么、引用了哪些机构数据；作为判断资金面、情绪面和产业趋势的辅助参考，不是本站结论</small></h2>`;
+  if(!B||!(B.episodes||[]).length)return intro+`<div class="card small muted">还没有整理好的笔记。</div>`;
+  const E=B.episodes,i=Math.min(state.macroIdx||0,E.length-1);
+  const nav=E.length>1?`<div class="tabs" style="margin-bottom:10px">${E.map((e,k)=>`<button class="${k===i?"on":""}" onclick="state.macroIdx=${k};render()">${esc(e.date)}</button>`).join("")}</div>`:"";
+  return intro+nav+macroEpisode(E[i],true)+`<div class="src">来源：<a href="${safeUrl(B.playlist)}" target="_blank" rel="noopener">${esc(B.source)}</a> 公开视频，本地转写后整理；转写不清处已标注。新一期整理好后，网页和研判会自动更新。</div>`;
+}
+function macroCard(){
+  const B=DATA.macro_blogger;if(!B||!(B.episodes||[]).length)return"";
+  const e=B.episodes[0],core=e.sections.find(s=>s.h.includes("核心判断"));
+  return `<div class="card" style="margin-top:12px"><h3 style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap"><span>宏观博主最新判断 · 美投讲美股 · ${esc(e.date)}</span><a href="#" class="small" onclick="event.preventDefault();state.blogSrc='macro';go('blog')">全部笔记 →</a></h3>
+    <div class="small" style="color:var(--text)">${esc(e.title)}</div>${core?mdItems(core.items.filter(x=>x[0]===0).slice(0,6)):""}
+    <div class="src" style="margin-top:6px">博主观点，仅作为资金面 / 情绪面 / 产业趋势的辅助参考。</div></div>`;
+}
+function macroForCo(t){
+  const B=DATA.macro_blogger;if(!B)return"";
+  const L=(B.episodes||[]).filter(e=>e.tickers&&e.tickers[t]);
+  if(!L.length)return"";
+  return `<div class="card" style="margin-top:8px"><h3>美投讲美股（宏观系列）提到它</h3><ul class="feed">${L.map(e=>`<li><b>${esc(e.date)}</b>　${esc(e.tickers[t])}<div class="m"><a href="${safeUrl(e.video)}" target="_blank" rel="noopener">${esc(e.title)}</a></div></li>`).join("")}</ul></div>`;
 }
 
 /* ---------- 推送记录 ---------- */
@@ -794,7 +840,7 @@ function openCo(t){
       <ul class="why">${c.heat_why.map(w=>`<li>${esc(w)}</li>`).join("")}<li>大盘情绪：${esc(M.sentiment.zone)}（热度 ${M.sentiment.heat}）——${esc(M.sentiment.verdict)}</li></ul></div>
   </div>
   ${valSection(t,c)}
-  ${blogForCo(t)}
+  ${blogForCo(t)}${macroForCo(t)}
   ${finSection(t,c)}
   ${(c.notes||[]).length?`<h2>重大消息判断</h2>${c.notes.map(n=>`<div class="note"><b>${esc(n.date||"")}</b> ${esc(n.text||"")}${n.url?` <a href="${safeUrl(n.url)}" target="_blank" rel="noopener">来源</a>`:""}</div>`).join("")}`:""}
   <div class="grid g2" style="margin-top:12px">

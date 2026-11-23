@@ -10,6 +10,11 @@ def build(snap):
         snap["blogger"] = json.loads((config.DATA / "blogger.json").read_text())
     except Exception:
         snap["blogger"] = None
+    try:
+        from . import macro_blogger
+        snap["macro_blogger"] = macro_blogger.load()
+    except Exception:
+        snap["macro_blogger"] = None
     data = json.dumps(snap, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     three = (config.ROOT / "web" / "vendor" / "three.min.js").read_text().replace("</script", "<\\/script")
     html = html.replace("/*__THREE__*/", three, 1)

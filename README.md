@@ -147,3 +147,12 @@ web/template.html    网页模板（原生 JS + SVG；3D 用内嵌的 three.js�
   多跑几次 `./run.sh` 会逐步补齐（已拿到的有缓存）。
 - 拆解知识库是人工整理的，零件划分和公司归属都可能有疏漏，需要按 `REFRESH_INSTRUCTIONS.md` 定期维护。
 - SEC 接口要求请求头带联系邮箱，默认值是占位符，建议在 `.env` 里设置 `SEC_UA`。
+
+## 宏观博主：美投讲美股（宏观系列）
+
+播放列表 https://www.youtube.com/playlist?list=PLdx_la-W4WdCMcNlGbOdAGCjEQHtoduSW ，约两周一期。Summizer 的
+`rhino-finance-daily-notes` 定时任务每晚转写并按主题写成 `~/Desktop/Summizer/data/youtube/meitou/notes/日期.md`；
+本站生成网页时由 `src/macro_blogger.py` 直接解析这些笔记（不改写），展示在：
+「博主观点 → 美投讲美股 · 宏观」、总览页的「宏观博主最新判断」卡片、以及他点名过的公司详情页。
+`newscheck` 发现新笔记时，每小时的增量研判任务会把他的核心判断和本站资金面 / 情绪面读数做对照，写进当天研判
+（标注为“博主认为”，只作辅助参考）。

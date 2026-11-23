@@ -18,6 +18,7 @@ from . import config
 
 SUMMIZER = os.path.expanduser(os.environ.get("SUMMIZER_ARTICLES", "~/Desktop/Summizer/data/articles"))
 RHINO = os.path.expanduser(os.environ.get("RHINO_NOTES", "~/Desktop/Summizer/data/youtube/rhino/notes"))
+MEITOU = os.path.expanduser(os.environ.get("MEITOU_NOTES", "~/Desktop/Summizer/data/youtube/meitou/notes"))
 
 
 def blogger_pending():
@@ -85,10 +86,12 @@ def check():
             news.append({"ts": ts.astimezone().strftime("%m-%d %H:%M"), "src": x["src"], "title": x["title"],
                          "url": x["url"], "tickers": tk, "big": big})
     blog = blogger_pending()
-    material = bool(blog) or bool(arts) or bool(alerts) or sum(1 for n in news if n["big"]) >= 2 or len(news) >= 4
+    # 美投讲美股（宏观）：自上次研判以来新写好或改过的笔记，直接读 Markdown，不需要整理成 JSON
+    macro = [f for f in sorted(glob.glob(os.path.join(MEITOU, "*.md"))) if os.path.getmtime(f) > wm_ts]
+    material = bool(macro) or bool(blog) or bool(arts) or bool(alerts) or sum(1 for n in news if n["big"]) >= 2 or len(news) >= 4
     return {"since": wm.strftime("%Y-%m-%dT%H:%M"), "now": datetime.now().strftime("%Y-%m-%dT%H:%M"),
             "snapshot_generated": snap.get("generated"), "news_refreshed": snap.get("news_refreshed"),
-            "summizer_articles": arts, "blogger_notes": blog, "alerts": alerts, "news": news[:60], "material": material}
+            "summizer_articles": arts, "blogger_notes": blog, "macro_notes": macro, "alerts": alerts, "news": news[:60], "material": material}
 
 
 def main():
@@ -103,6 +106,9 @@ def main():
         print("  ", f)
     print(f"博主笔记待整理 {len(r['blogger_notes'])} 个")
     for f in r["blogger_notes"]:
+        print("  ", f)
+    print(f"宏观博主（美投）新笔记 {len(r['macro_notes'])} 篇")
+    for f in r["macro_notes"]:
         print("  ", f)
     print(f"重要推送 {len(r['alerts'])} 条")
     for a in r["alerts"]:
