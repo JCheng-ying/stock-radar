@@ -1288,3 +1288,25 @@
 {"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 LFUS 单日 +8.1%", "body": "Littelfuse, Inc. 收于 386.6。信号：趋势中。", "priority": "low", "sent": true}
 {"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 NTAP 单日 +8.2%", "body": "NetApp, Inc. 收于 170.66。信号：趋势中。", "priority": "low", "sent": true}
 {"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 RBRK 单日 +8.1%", "body": "Rubrik, Inc. 收于 115.38。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:44:15+00:00", "title": "📊 BABA 财报更新", "body": "Alibaba Group Holding Limited 截至 2026-09-30 的季度：收入同比 +10%；毛利率 38.0%（同比 -1.2pp）；EBITDA 利润率 38.3%；EPS 较预期 -27%；当前信号：关注买点（基本面 68 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:15+00:00", "title": "📊 KLIC 财报更新", "body": "Kulicke and Soffa Industries, I 截至 2026-09-30 的季度：收入同比 +131%；毛利率 47.8%（同比 +2.0pp）；EBITDA 利润率 23.8%；EPS 较预期 +6%；当前信号：关注买点（基本面 90 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:15+00:00", "title": "📊 PANW 财报更新", "body": "Palo Alto Networks, Inc. 截至 2026-10-31 的季度：收入同比 +39%；毛利率 68.0%（同比 -6.2pp）；EBITDA 利润率 12.9%；EPS 较预期 +8%；RPO 同比 +35%；当前信号：趋势中（基本面 63 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:16+00:00", "title": "📊 POET 财报更新", "body": "POET Technologies Inc. 截至 2026-09-30 的季度：收入同比 +244%；毛利率 100.0%（同比 +0.0pp）；EBITDA 利润率 -615.9%；EPS 较预期 -60%；当前信号：观察（基本面 75 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:16+00:00", "title": "📊 RCAT 财报更新", "body": "Red Cat Holdings, Inc. 截至 2026-09-30 的季度：收入同比 +22%；毛利率 0.5%（同比 -6.1pp）；EBITDA 利润率 -351.2%；EPS 较预期 -33%；当前信号：弱势（基本面 28 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:16+00:00", "title": "🟢 BABA 进入「关注买点」", "body": "Alibaba Group Holding Limited：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：观察）\nRSI 34；处于52周区间的 6% 位置；偏离200日线 -28%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:44:16+00:00", "title": "🔴 GSAT 进入「回调风险」", "body": "Globalstar, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 99% 位置；偏离200日线 +11%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:44:17+00:00", "title": "🔴 PAG 进入「回调风险」", "body": "Penske Automotive Group, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 63；处于52周区间的 91% 位置；偏离200日线 +16%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:44:17+00:00", "title": "🔴 R 进入「回调风险」", "body": "Ryder System, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 99% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:44:17+00:00", "title": "📅 ZS 今天发财报", "body": "Zscaler, Inc. 2026-11-23，一致预期 EPS 1.19。当前信号：趋势中，情绪热度 78。", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:44:18+00:00", "title": "🚀 AMD 单日 +8.7%", "body": "Advanced Micro Devices, Inc. 收于 461.3。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:44:18+00:00", "title": "🚀 ATI 单日 +8.1%", "body": "ATI Inc. 收于 178.98。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:44:18+00:00", "title": "还有 15 条更新", "body": "🚀 CAT 单日 +8.1%\n🚀 EME 单日 +8.3%\n🚀 FIG 单日 +8.6%\n🚀 GNRC 单日 +9.2%\n🚀 KALU 单日 +8.4%\n🚀 LMND 单日 +8.7%\n🚀 MRNA 单日 +8.6%\n🚀 NOVT 单日 +8.6%\n🚀 PWR 单日 +8.0%\n🚀 RRX 单日 +9.0%\n🚀 S 单日 +9.2%\n🚀 SNOW 单日 +8.8%\n🚀 TEL 单日 +8.2%\n🚀 TEX 单日 +8.6%\n🚀 VST 单日 +8.3%", "priority": "low", "sent": true}
+{"ts": "2026-11-23T16:11:19+00:00", "title": "🟢 CSCO 进入「关注买点」", "body": "Cisco Systems, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 41% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:11:19+00:00", "title": "🟢 MDB 进入「关注买点」", "body": "MongoDB, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 35% 位置；偏离200日线 -6%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:11:20+00:00", "title": "🟢 SNPS 进入「关注买点」", "body": "Synopsys, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 35% 位置；偏离200日线 -3%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:11:20+00:00", "title": "🟢 TEM 进入「关注买点」", "body": "Tempus AI, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 37；处于52周区间的 36% 位置；偏离200日线 -1%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:11:20+00:00", "title": "💥 MNTS 单日 -8.7%", "body": "Momentus Inc. 收于 1.78。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T16:11:21+00:00", "title": "🚀 NRG 单日 +8.2%", "body": "NRG Energy, Inc. 收于 94.99。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T16:18:16+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:18:16+00:00", "title": "🚀 BDC 单日 +8.0%", "body": "Belden Inc 收于 100.21。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T16:18:16+00:00", "title": "🚀 MYRG 单日 +8.3%", "body": "MYR Group, Inc. 收于 268.19。信号：关注买点。", "priority": "low", "sent": true}
