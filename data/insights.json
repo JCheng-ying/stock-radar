@@ -5425,5 +5425,254 @@
     ]
    }
   ]
+ },
+ "aerospace/defense/radar": {
+  "updated": "2026-11-23",
+  "note": "军用雷达正在从行波管 / 无源阵列全面换成氮化镓（GaN）有源相控阵（AESA）：陆军防空（LTAMDS、Sentinel A4）、海军舰载（SPY-6）、战斗机火控（APG-83）都在 2026 年进入批量生产。整机由 RTX、洛马、诺格三家主承包商垄断，二级供应商（Mercury 等）提供射频与信号处理子系统；分歧在于整机厂自制芯片 / 模块的比例。",
+  "companies": {
+   "RTX": {
+    "products": "LTAMDS 低层防空反导雷达（爱国者新一代）、AN/SPY-6 舰载雷达家族",
+    "what": "雷达是导弹防御的“眼睛”：LTAMDS 360 度盯住来袭的飞机和导弹，引导爱国者拦截；SPY-6 装在驱逐舰上，同时搜索空中和弹道目标。",
+    "diff": "LTAMDS 2026-04 获 9.05 亿美元低速率生产合同（交付 5 部），项目累计约 53 亿美元，波兰订购 12 部；SPY-6 2026-07 获 18 亿美元延长合同，目前约每月一面阵列，计划 2028 年前产能翻倍，并在推动德国、日本、丹麦出口。",
+    "ties": "客户：美国陆军、美国海军、波兰；造舰方 HII 等",
+    "src": [
+     [
+      "Defense Post：雷神获 9.05 亿美元 LTAMDS 低速率生产合同",
+      "https://thedefensepost.com/2026/04/17/us-ltamds-raytheon-2/"
+     ],
+     [
+      "PR Newswire：雷神获 18 亿美元 SPY-6 生产与保障合同",
+      "https://www.prnewswire.com/news-releases/rtxs-raytheon-awarded-1-8-billion-hardware-production-and-sustainment-contract-for-spy-6-family-of-radars-302830375.html"
+     ],
+     [
+      "Naval News：雷神推动 SPY-6 出口（德国、日本、丹麦）",
+      "https://www.navalnews.com/naval-news/2026/08/raytheon-global-push-spy-6-radar-germany-japan-denmark/"
+     ]
+    ]
+   },
+   "LMT": {
+    "products": "AN/MPQ-64F2 Sentinel A4 陆基防空雷达、宙斯盾系统集成",
+    "what": "Sentinel A4 是陆军前沿防空用的机动雷达，负责发现无人机、巡航导弹和飞机，把目标交给近程防空武器。",
+    "diff": "X 波段数字有源相控阵，用商用 GaN 功放取代行波管；2026-02 交付首部 LRIP 2 批次（共 19 部），2026-06 获约 29.98 亿美元生产与工程合同，执行至 2031 年。",
+    "ties": "客户：美国陆军",
+    "src": [
+     [
+      "Defense Post：洛马获 29 亿美元 Sentinel A4 雷达生产合同",
+      "https://thedefensepost.com/2026/07/01/us-sentinel-a4-radar/"
+     ],
+     [
+      "洛马：首部 LRIP 2 批次 Sentinel A4 交付",
+      "https://news.lockheedmartin.com/2026-02-02-Lockheed-Martin-Delivers-First-Sentinel-A4-from-LRIP-2-Advances-Toward-Full-Rate-Production?asPDF=1"
+     ]
+    ]
+   },
+   "NOC": {
+    "products": "AN/APG-83 SABR 战斗机火控雷达、AN/TPS-80 G/ATOR 地面多任务雷达",
+    "what": "APG-83 给老款 F-16 换上有源相控阵“眼睛”，看得更远、抗干扰更强；G/ATOR 是海军陆战队的通用地面雷达，可防空也可反炮兵。",
+    "diff": "2026-05 交付第 1,000 部 APG-83；2026-11 获 7,960 万美元改进合同，合同累计约 20.6 亿美元（各报道对授予日期有分歧）；G/ATOR 获最高 6.97 亿美元保障框架协议（授予时不拨款，按任务单拨付）。",
+    "ties": "客户：美国空军、F-16 海外用户、美国海军陆战队",
+    "src": [
+     [
+      "Army Recognition：诺格获 7,960 万美元 F-16 APG-83 改进合同",
+      "https://www.armyrecognition.com/news/aerospace-news/2026/us-air-force-awards-northrop-grumman-79-6-million-for-f-16-an-apg-83-aesa-radar-modernization"
+     ],
+     [
+      "GovConWire：诺格获最高 6.97 亿美元海军陆战队雷达保障协议",
+      "https://www.govconwire.com/articles/northrop-grumman-navy-radar-sustainment"
+     ]
+    ]
+   },
+   "MRCY": {
+    "products": "射频 / 微波 / 毫米波子系统、雷达与电子战信号处理模块",
+    "what": "Mercury 不造整部雷达，而是做雷达里处理信号的“发动机零件”：把天线收到的微弱回波放大、数字化并快速计算，供主承包商装进整机。",
+    "diff": "FY27Q1 收入约 2.53 亿美元（+12%），订单约 3.7 亿美元（订单出货比 1.46），积压约 21 亿美元（+45%）并上调全年指引；自由现金流仍为负。分业务的雷达 / 电子战占比未查到当期来源。",
+    "ties": "客户：RTX、洛马、诺格等主承包商（未查到当期具体项目披露）",
+    "src": [
+     [
+      "Mercury Systems：2027 财年一季度业绩 8-K",
+      "https://www.sec.gov/Archives/edgar/data/0001049521/000104952126000096/a2027q1earningsreleaseex.htm"
+     ]
+    ]
+   },
+   "CW": {
+    "products": "防务电子（加固计算机、数据采集）、舰船与地面系统部件",
+    "what": "Curtiss-Wright 给雷达、舰船、战车提供加固过的计算和电子模块，让设备能在震动、高温环境下工作。",
+    "diff": "雷达 / 电子战相关业务未查到 2026 年当期来源。",
+    "ties": "客户：美国国防部主承包商",
+    "src": [],
+    "unverified": true
+   },
+   "HII": {
+    "products": "驱逐舰、航母等水面舰艇建造（舰载雷达的集成方）",
+    "what": "HII 是造军舰的船厂，雷达本身由 RTX 等供应，HII 负责把 SPY-6 等雷达装上船并完成系统集成。",
+    "diff": "属于雷达的下游集成，不是雷达制造商；具体舰型与 SPY-6 的装舰进度未查到当期来源。",
+    "ties": "供应商：RTX（SPY-6）；客户：美国海军",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "RTX",
+    "b": "美国陆军",
+    "type": "客户",
+    "desc": "LTAMDS 低速率生产合同 9.05 亿美元，项目累计约 53 亿美元。",
+    "src": [
+     "Defense Post：雷神获 9.05 亿美元 LTAMDS 低速率生产合同",
+     "https://thedefensepost.com/2026/04/17/us-ltamds-raytheon-2/"
+    ]
+   },
+   {
+    "a": "RTX",
+    "b": "美国海军",
+    "type": "客户",
+    "desc": "SPY-6 家族 18 亿美元生产与保障延长合同。",
+    "src": [
+     "PR Newswire：雷神获 18 亿美元 SPY-6 生产与保障合同",
+     "https://www.prnewswire.com/news-releases/rtxs-raytheon-awarded-1-8-billion-hardware-production-and-sustainment-contract-for-spy-6-family-of-radars-302830375.html"
+    ]
+   },
+   {
+    "a": "LMT",
+    "b": "美国陆军",
+    "type": "客户",
+    "desc": "Sentinel A4 约 29.98 亿美元生产与工程合同，至 2031 年。",
+    "src": [
+     "Defense Post：洛马获 29 亿美元 Sentinel A4 雷达生产合同",
+     "https://thedefensepost.com/2026/07/01/us-sentinel-a4-radar/"
+    ]
+   },
+   {
+    "a": "NOC",
+    "b": "美国空军",
+    "type": "客户",
+    "desc": "F-16 APG-83 改进合同追加 7,960 万美元，累计约 20.6 亿美元。",
+    "src": [
+     "Army Recognition：诺格获 7,960 万美元 F-16 APG-83 改进合同",
+     "https://www.armyrecognition.com/news/aerospace-news/2026/us-air-force-awards-northrop-grumman-79-6-million-for-f-16-an-apg-83-aesa-radar-modernization"
+    ]
+   },
+   {
+    "a": "RTX",
+    "b": "LMT",
+    "type": "竞争",
+    "desc": "两家都向陆军提供 GaN 有源相控阵防空雷达（LTAMDS 负责高层反导，Sentinel A4 负责前沿防空），层级互补、预算上竞争。",
+    "src": [
+     "Defense Post：洛马获 29 亿美元 Sentinel A4 雷达生产合同",
+     "https://thedefensepost.com/2026/07/01/us-sentinel-a4-radar/"
+    ]
+   }
+  ]
+ },
+ "aerospace/sat/array": {
+  "updated": "2026-11-23",
+  "note": "卫星相控阵天线不用转动就能电子扫描波束，是低轨星座和平板用户终端的核心。上市公司分三层：波束成形 / 射频芯片（ADI、MACOM、Teledyne e2v）、射频子系统（Mercury）、连接器等无源件（Amphenol）；整板天线多由卫星厂自研（如 SpaceX）。分歧在于芯片集成度：ADI 走高集成多波束芯片，MACOM 侧重分立 GaN / GaAs 器件。军方需求有波动——太空军已取消一笔 17 亿美元的相控阵天线采购。",
+  "companies": {
+   "ADI": {
+    "products": "ADAR1000 波束成形芯片、ADTR1101 收发模块、ADAR3000/3001 K/Ka 波段卫星载荷多波束芯片",
+    "what": "相控阵里每个小天线都要调相位和幅度，波束成形芯片就是做这件事的“调音台”，让一整块平板天线像转动的锅一样对准卫星。",
+    "diff": "在 ARRAY 2026 展出 8~11 GHz 模块化相控阵平台（芯片 + 收发模块 + 变频 + 射频系统模块），可提供从芯片到参考设计的整套方案；ADAR3000 系列面向低轨卫星的体积、重量、功耗约束。",
+    "ties": "客户：卫星载荷与地面终端厂商（具体客户未披露）",
+    "src": [
+     [
+      "Microwave Journal：ARRAY 2026 相控阵技术展示",
+      "https://www.microwavejournal.com/articles/46221-array-2026-showcases-the-next-generation-of-phased-array-technology"
+     ],
+     [
+      "Aerospace & Defence：ADI 多波束波束成形芯片用于卫星载荷相控阵",
+      "https://www.aerospace-and-defence.com/highly-integrated-multibeam-beamformers-offer-swap-benefits-for-payload-phased-array-antennas-a-cd5833e8283bae522b10c551fecd2bb9/"
+     ],
+     [
+      "ADI：卫星通信相控阵芯片方案",
+      "https://www.analog.com/media/en/news-marketing-collateral/solutions-bulletins-brochures/Phased-Array-ICs.pdf"
+     ]
+    ]
+   },
+   "MTSI": {
+    "products": "Ku 波段 / 航天级波束成形芯片（如 CGY2330UH/C1、CGY2179HV/C1）、GaN / GaAs 射频器件",
+    "what": "MACOM 做相控阵里负责放大和调相的射频芯片，用在卫星和军用雷达上。",
+    "diff": "产品目录可见 13.25~14.75 GHz 航天 / 军用波束成形芯片；未查到 2026 年专门的卫星相控阵公告。",
+    "ties": "客户：卫星与防务厂商（未披露）",
+    "src": [
+     [
+      "EverythingRF：波束成形芯片产品目录（含 MACOM）",
+      "https://www.everythingrf.com/search/beamforming-ics"
+     ]
+    ],
+    "unverified": true
+   },
+   "TDY": {
+    "products": "Teledyne e2v 宇航级 ADC（EV10AS940）、抗辐射处理器、波束成形相关器件",
+    "what": "Teledyne 做卫星里把模拟信号变成数字信号的高速转换器和抗辐射芯片，数字相控阵必须用到。",
+    "diff": "在 Satellite 2026 展出 EV10AS940 ADC 与抗辐射处理器；e2v 被列为波束成形芯片供应商，但 2026 年产品细节未查到。",
+    "ties": "客户：卫星载荷厂商",
+    "src": [
+     [
+      "Microwave Journal：Satellite 2026 展会——非地面网络与平板阵列",
+      "https://www.microwavejournal.com/articles/45550-satellite-2026-ntn-and-flat-panel-arrays"
+     ]
+    ]
+   },
+   "MRCY": {
+    "products": "射频 / 微波子系统、数字收发模块",
+    "what": "Mercury 把射频芯片组装成可直接装进雷达或卫星载荷的子系统。",
+    "diff": "整体积压约 21 亿美元，但卫星相控阵相关份额未查到当期来源。",
+    "ties": "客户：防务主承包商",
+    "src": [
+     [
+      "Mercury Systems：2027 财年一季度业绩 8-K",
+      "https://www.sec.gov/Archives/edgar/data/0001049521/000104952126000096/a2027q1earningsreleaseex.htm"
+     ]
+    ],
+    "unverified": true
+   },
+   "APH": {
+    "products": "航天级连接器与互连组件",
+    "what": "Amphenol 做的是把天线板、电源和计算机连起来的接头与线缆，是无源但必不可少的部件。",
+    "diff": "属于连接件供应，不做天线或波束成形芯片。",
+    "ties": "客户：卫星与防务厂商",
+    "src": [
+     [
+      "StockTitan：航天股主题（Karman、Amphenol 业务描述）",
+      "https://www.stocktitan.net/stocks/themes/space-stocks"
+     ]
+    ]
+   },
+   "KRMN": {
+    "products": "导弹防御与高超音速的载荷防护、推进与级间系统",
+    "what": "Karman 主要做导弹和火箭的结构与推进部件，与相控阵天线关联较弱。",
+    "diff": "未查到 Karman 的相控阵产品；归入本零件可能需要复核。",
+    "ties": "客户：导弹防御与发射项目",
+    "src": [
+     [
+      "StockTitan：航天股主题（Karman、Amphenol 业务描述）",
+      "https://www.stocktitan.net/stocks/themes/space-stocks"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "ADI",
+    "b": "MTSI",
+    "type": "竞争",
+    "desc": "两家都向卫星与防务相控阵供应波束成形 / 射频芯片，ADI 偏高集成方案，MACOM 偏分立器件。",
+    "src": [
+     "EverythingRF：波束成形芯片产品目录（含 MACOM）",
+     "https://www.everythingrf.com/search/beamforming-ics"
+    ]
+   },
+   {
+    "a": "美国太空军",
+    "b": "Parsons",
+    "type": "替代",
+    "desc": "太空军取消 17 亿美元先进相控阵天线采购后，Parsons 推出“抛物面 + 相控阵馈源”混合天线争取军方订单。",
+    "src": [
+     "SpaceNews：Parsons 发布军用卫星混合天线，太空军取消 17 亿美元相控阵天线采购",
+     "https://spacenews.com/parsons-unveils-new-satellite-antenna-aimed-at-military-market/"
+    ]
+   }
+  ]
  }
 }

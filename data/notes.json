@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-23",
+    "text": "合规面：复任同日，Megaspeed 据报将被列入实体清单（Fox Business 称已列入，MLQ 称商务部未确认）——政府对管理层放行、对渠道收紧，治理面向上与海外渠道风险向下同时发生。",
+    "url": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
+   },
+   {
+    "date": "2026-11-23",
     "text": "产业面：SpaceX 440 亿美元票据用于采购 Vera Rubin（2027H1 交付），需求侧可见度上升；同日亚马逊收购 Decart 优化栈并准备外售 Trainium，CUDA 护城河受到的挑战更直接。",
     "url": "https://www.datacenterdynamics.com/en/news/apollo-and-goldman-sachs-lead-44bn-spacex-gpu-financing-deal/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-22",
     "text": "治理面 / 合规面仍向下：特朗普再次公开呼吁聘回黄仁勋，董事会据报未考虑，CEO 落点继续悬空；CNBC 标题称 Megaspeed / Alice Huang 调查出现新人物（细节未查证）。",
     "url": "https://www.cnbc.com/2026/11/23/nvidia-megaspeed-chipmaker-us.html"
-   },
-   {
-    "date": "2026-11-22",
-    "text": "合规面向下：贝森特称政府给的 10 天期限内仍未收到对华出口合规答复，追问合规负责人与知情范围；董事长表态不聘回黄仁勋，治理落点继续悬空。",
-    "url": "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
    }
   ],
   "ANET": [
@@ -49,6 +49,11 @@
   "MU": [
    {
     "date": "2026-11-23",
+    "text": "产业面向上：整机厂因内存短缺加价最多 45%，短缺缓解时间被推迟到 2030 年（SK 海力士），存储厂议价力继续上升。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
+   {
+    "date": "2026-11-23",
     "text": "产业面向上：FT 称内存短缺使服务器厂商交付时加价最多 45%、CPU 节点涨两倍，SK 海力士把缓解时间推迟到 2030 年，存储涨价周期被拉长。",
     "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
    },
@@ -66,11 +71,6 @@
     "date": "2026-11-17",
     "text": "预期面偏负：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测并看过剩（细节未查证），与前一日 −7.6% 呼应；HBM / DRAM 端未见新变化。",
     "url": "https://www.webull.com/news/15571214812185600"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "资金面：芯片抛售中收跌 7.6% 至 719.02（MarketWatch 标题称板块抛售加剧），属财报 / IPO 前去风险，需求面无新负面信息。",
-    "url": "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf"
    }
   ],
   "INTC": [
@@ -613,6 +613,11 @@
   "DELL": [
    {
     "date": "2026-11-23",
+    "text": "预期面：11-24 财报前随 AI 普涨 +20.5%；HPE 毛利率环比下滑提示内存成本是本次财报的关键变量（判断）。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
+   {
+    "date": "2026-11-23",
     "text": "基本面（价格）向上、客户关系承压：FT 称 DELL 等在交付时要求比合同价高最多 45% 以转嫁内存成本。",
     "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
    },
@@ -634,6 +639,11 @@
   ],
   "PANW": [
    {
+    "date": "2026-11-23",
+    "text": "产业面向下（判断）：CRWD+ZS 把端点与网络安全合并为一个平台，直接对标 PANW 的平台化路线；股价仍低于 2027 前瞻下沿。",
+    "url": "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
+   },
+   {
     "date": "2026-11-19",
     "text": "预期面修复：财报次日 +6.4% 至 361.73，大盘下跌中逆势，但仍低于 2027 前瞻下沿 448.59。",
     "url": "https://www.cnbc.com/2026/11/19/palo-alto-networks-earnings-applied-compute.html"
@@ -652,11 +662,6 @@
     "date": "2026-11-17",
     "text": "预期面：11-18 盘后一季报，一致预期 EPS 约 0.97 美元、收入约 33.1 亿美元，市场关注 NGS ARR 与 FY27 收入指引 141~142 亿美元能否维持（Finviz 汇总）；股价低于 2027 前瞻下沿。",
     "url": "https://finviz.com/news/420783/palo-alto-networks-faces-a-credibility-test-as-stock-lags-its-upbeat-ai-security-story"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "预期面：11-18 盘后一季报（公司公告），一致预期 EPS 约 0.97~0.99 美元，上年 LLM 客户迁移带来的一次性 ARR 本季退出，可能压低新一代安全 ARR 增速；现价低于 2027 前瞻下沿。",
-    "url": "https://www.earningswhispers.com/article/PANW/23140"
    }
   ],
   "AMPX": [
@@ -921,6 +926,11 @@
   "HPE": [
    {
     "date": "2026-11-23",
+    "text": "基本面向上：FY27 收入增速指引从框架 +13%~17% 上调到 +27%~35%；毛利率环比 −210bp，内存成本压利润率。",
+    "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
+   },
+   {
+    "date": "2026-11-23",
     "text": "基本面 / 预期面向上：FY26Q4 收入 145 亿美元（+50%）、EPS 1.43 超指引；FY27 收入增速指引 +27%~35%、EPS 5.05~5.35（原框架 4.40~4.60）；GAAP 毛利率 38.0% 环比 −210 个基点，内存成本挤压利润率。",
     "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
    },
@@ -976,6 +986,11 @@
    }
   ],
   "CRWD": [
+   {
+    "date": "2026-11-23",
+    "text": "资金面 / 预期面：全股票收购 ZS 后股价 −8.9%，市场为稀释与整合定价；产业面上平台化逻辑被分析师视为对 PANW 的长期威胁。",
+    "url": "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
+   },
    {
     "date": "2026-11-23",
     "text": "产业面 / 预期面：全股票约 439 亿美元收购 Zscaler，合并 ARR 超 100 亿美元；三季度净新增 ARR 4.19 亿美元创纪录，基本面向上，整合与稀释是新变量。",
@@ -1110,6 +1125,11 @@
   ],
   "ZM": [
    {
+    "date": "2026-11-23",
+    "text": "基本面小幅向上：企业收入 +8.6%（13 个季度最快）、EPS 超预期、上调全年指引并首次派息；总收入增速仍约 5%。",
+    "url": "https://www.globenewswire.com/news-release/2026/11/23/3408888/0/en/zoom-communications-reports-financial-results-for-the-third-quarter-of-fiscal-year-2027.html"
+   },
+   {
     "date": "2026-11-22",
     "text": "预期面向下：据 Seeking Alpha 标题，11-23 财报前分析师预期持续下调（细节未查证），门槛降低，结果取决于席位与 AI 产品转化。",
     "url": "https://seekingalpha.com/symbol/ZM"
@@ -1123,6 +1143,11 @@
   "ZS": [
    {
     "date": "2026-11-23",
+    "text": "预期面：被 CRWD 以 1.135 倍换股收购，股价 +17.7%，相对隐含对价折让约 3.4%，此后股价主要跟随 CRWD 与交割进度。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+   },
+   {
+    "date": "2026-11-23",
     "text": "产业面：被 CrowdStrike 以全股票约 439 亿美元收购（1.135 股 CRWD / 股），后续价格主要跟随 CRWD 与交易完成概率。",
     "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
    }
@@ -1133,10 +1158,29 @@
     "text": "治理面向上：CEO Haas 续约至 2033，回应被英伟达接触的传闻，管理层稳定性提高。",
     "url": "https://www.datacenterdynamics.com/"
    }
+  ],
+  "SMTC": [
+   {
+    "date": "2026-11-23",
+    "text": "基本面向上：FY27Q3 收入 4.23 亿美元（+58%）、调整后 EPS 1.17，均高于指引上沿，数据中心连接业务驱动。",
+    "url": "https://stockhouse.com/news/press-releases/2026/11/23/semtech-announces-third-quarter-of-fiscal-year-2027-results"
+   }
+  ],
+  "SYM": [
+   {
+    "date": "2026-11-23",
+    "text": "基本面向上、预期面向下：FY26 首个全年 GAAP 盈利，但一季度收入指引偏弱，盘后约 −2.4%。",
+    "url": "https://ir.symbotic.com/news-releases/news-release-details/symbotic-reports-fourth-quarter-and-fiscal-year-2026-results"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-23",
+    "text": "合规面：Megaspeed 据报被列入实体清单，监管重点从“卖给谁”前移到“中间商是谁”；安全软件平台化整合（CRWD 收购 ZS）与 AI 运行时防护（Shirudo）、AI 自动审批（Claude Ship）同日出现。",
+    "url": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
+   },
    {
     "date": "2026-11-23",
     "text": "英伟达复任黄仁勋，AI 板块最大的治理不确定性解除，情绪面从极端区修复；合规调查仍在。安全软件进入整合（CRWD 收购 ZS，约 439 亿美元），服务器供给瓶颈仍在内存（据报提价最多 45%，未查证）。 内存短缺由 FT 报道坐实为合同外加价（最多 45%）、SK 海力士预计持续到 2030 年；GPU 资产支持融资（SpaceX 440 亿美元）标准化；亚马逊买下 Decart 优化栈准备外售 Trainium——算力扩张的约束从 GPU 转向存储与资本成本。"
@@ -1154,11 +1198,6 @@
     "date": "2026-11-21",
     "text": "情绪面出清 + 合规面扩散：11-20 AI 链单日普跌 10%~16%（NVDA −14%），加州对英伟达调查据报涉刑事，白宫提出对海外数据中心征税；对冲项是出口政策不变、Oracle 完成 OpenAI 合同融资。产业面（AMD 自锁电力场地、CPO 万卡网络、电网审批提速法案）继续向前，价格与基本面背离扩大。",
     "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
-   },
-   {
-    "date": "2026-11-20",
-    "text": "电力成为 AI 扩张的显性约束并开始进入规则：PJM 向 FERC 提交合并并网方案（12 个月接入、50MW 以上为“大型计算负载”、升级成本向数据中心收取），Google 出资改造输电线、Meta 因燃气发电重估净零目标；先进封装（EMIB）获微软采用，封装 / 基板与电力同为供给瓶颈。",
-    "url": "https://www.datacenterdynamics.com/en/news/pjm-plan-could-cut-data-center-and-power-plant-grid-connection-times-to-12-months/"
    }
   ],
   "quantum": [
@@ -1185,6 +1224,11 @@
   ],
   "robotics": [
    {
+    "date": "2026-11-23",
+    "text": "Symbotic FY26 首个全年 GAAP 盈利、积压约 223 亿美元，但一季度收入指引偏弱，仓储自动化的需求确定、交付节奏有波动。",
+    "url": "https://ir.symbotic.com/news-releases/news-release-details/symbotic-reports-fourth-quarter-and-fiscal-year-2026-results"
+   },
+   {
     "date": "2026-11-18",
     "text": "Atlas 据报将在格芯美国晶圆厂测试搬运晶圆（未获公司确认），人形机器人场景从汽车厂外溢；Hyster-Yale 可转债发行引发暴跌，传统叉车厂资金面承压。"
    },
@@ -1199,10 +1243,6 @@
    {
     "date": "2026-11-11",
     "text": "一浪（基础设备）升到“财报已改善，价格未反映”：收入、毛利率、EBITDA 利润率、RPO 四项财报检查全部满足，只差价格确认。"
-   },
-   {
-    "date": "2026-11-08",
-    "text": "Agility Robotics 上市（AGLT），人形机器人首个纯标的；Figure 接手约 10 万块 GPU 的算力租约（报道）。"
    }
   ],
   "aerospace": [
@@ -1247,62 +1287,54 @@
  "daily": [
   {
    "date": "2026-11-23",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布；含 Summizer 新增的 17 篇）价格仍为 11-20 收盘快照。资金面得分 22（钱贵 / 紧缩），情绪面热度 25（偏悲观），VIX 盘前一度升至 30.2、处近一年 99% 分位；AI 一浪、二浪、三浪的财报条件均已满足而价格未反映（二浪今晨新触发）。【06:28 更新】周一早间最大的变化在治理面：英伟达董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，立即生效，Kress 回任 CFO（CBS、PBS/AP）；据报美方官员认定其回任不构成国家安全风险。盘前 NVDA 约 +28%~31%（各家报道口径不同），带动科技股反弹。这消除了此前“CEO 落点悬空”这一情绪与估值折价的主因，治理面由向下转为向上、情绪面边际修复；但 SEC 民事调查、加州调查、Megaspeed 案与对华出口合规答复仍未落地，合规面没有改变。另：Arm CEO Haas 续约至 2033（此前有报道称英伟达曾接触他）；CrowdStrike 以全股票约 439 亿美元收购 Zscaler，同时公布创纪录净新增 ARR 4.19 亿美元；Tom's Hardware 标题称 AI 服务器厂商因内存短缺在签约数月后提价最多 45%（细节未查证），与本周 DELL / HPE 财报“积压受存储限制”的主线同向。整体结论：AI 板块最大的单一不确定性解除，情绪面有望从极端区修复；资金面仍紧，能否持续要看合规调查与本周财报。【07:28 更新，含 Summizer 新增的 5 篇】盘中确认了早间判断：据快照 NVDA 报 166.43（+32.6%，CNBC 称为公司史上第二大单日涨幅、市值单日增加近 1 万亿美元），回到 2027 前瞻区间下沿与中值之间、距中值仍约 22%；DELL +22.6%、ARM +18.5%、AMD +6.2%，Seeking Alpha 标题称纳指盘中约 +7%。情绪面从极端悲观区快速修复、资金面得分仍低（钱贵），属于情绪驱动的急速反弹，三浪框架下 AI 一至三浪“财报已满足、价格未反映”的缺口在收窄；合规面未变，整体结论不变。另：Seeking Alpha 标题称亚马逊收购 Decart 的芯片优化技术（细节未查证，此前 WSJ 报道为约 70 亿美元的收购谈判）；一级市场 AI 客服公司 Sierra 估值半年翻倍至 300 亿美元（TechCrunch），应用层资金仍集中在可按结果计费的场景。【08:28 更新，含 Summizer 新增的 2 篇】NVDA 复任消息已在上两次更新中写入，本时段新增的主要是跟进：Seeking Alpha 标题称多家华尔街机构因复任上调评级（细节未查证），预期面跟随情绪面修复。基本面上，KLIC 11-18 公布的 FY26Q4 收入 4.103 亿美元（同比 +131%，高于指引上限）、毛利率 47.8%，FY27Q1 指引 4.1 亿 ±0.2 亿美元（公司 8-K），先进封装需求得到验证；今日随大盘 +11.9% 至 61.22。产业面：西班牙通过数据中心皇家法令，要求至少 80% 用电来自新增可再生能源并按小时匹配（DCD），欧洲把电力约束从“稀缺”写成“监管成本”。整体结论不变：情绪驱动的反弹，资金面仍紧，合规面未落地。【09:28 更新，含 Summizer 新增的 3 篇】本时段没有新的基本面事实，主要是对 NVDA 复任的跟进：TechCrunch 评论认为复任解决了“失去他”的风险，却没有降低“留下他”的风险——据其援引 Semafor，特朗普直接致电董事会推动复任；Reuters 标题称多位美国议员批评复任决定（细节未查证）；黄仁勋仍定于 12-01 在众议院三个委员会闭门作证、法务总监次日出席（Axios），参议院银行委员会此前要求的公开听证尚未排期。治理面转正已写入，但合规面 / 政治面的不确定性没有减少，反而因政治介入而更受国会关注（判断）。其余为 CRWD 收购 ZS、DELL 财报前瞻等已覆盖内容的跟进报道。整体结论不变：情绪驱动的反弹，资金面仍紧，12-01 作证是下一个合规面节点。【10:28 更新，含 Summizer 新增的 3 篇】三件事都在产业面，方向分化：① Apollo 与高盛确认完成 440 亿美元 SpaceX GPU 优先 / 次级票据定价（超额认购，BlackRock、KKR 等为基石），用于采购英伟达 Vera Rubin、2027 年上半年交付、部署于地面算力（DCD），两家称为史上最大 GPU 融资——信用市场愿意为算力加杠杆，对 NVDA 2027 年需求是一笔可见订单，资金面在私募信贷层面并不紧。② 亚马逊以 75 亿美元收购 Decart 的优化栈技术与核心团队（TechCrunch 援引 Bloomberg），并准备对外出售 Trainium——此前“细节未查证”的标题得到确认，CUDA 迁移成本这一护城河受到更直接的挑战。③ 据 DCD 援引 FT，DELL、联想、SMCI、HPE 在交付时要求比合同价高最多 45%，GPU 服务器近期涨 20%~30%、CPU 节点涨两倍，SK 海力士把内存短缺缓解时间从 2028 年推迟到 2030 年——存储是瓶颈、整机厂议价力上升，但下游项目预算承压。整体结论不变：情绪驱动的反弹，资金面（宏观）仍紧，合规面待 12-01 作证。【11:28 更新，含 Summizer 新增的 1 篇】本时段没有新的基本面事实。情绪面继续修复：据快照 NVDA 报 164.21（+30.8%），仍位于 2027 前瞻区间下沿与中值之间、距中值约 18%；HPE 盘中 +18.1% 至 48.32（财报盘后发布，Seeking Alpha 标题），已接近其 2027 前瞻中值 59.18 以下约 18%。CNBC 标题称国会议员批评复任为“品格失败”，属已写入的政治面跟进。机器人一浪信号在“尚未启动”与“财报已改善、价格未反映”之间来回切换（收入增速条件处于临界），暂不视为结论变化。整体结论不变：情绪驱动的反弹，资金面仍紧，下一个节点是今晚 HPE 财报与 12-01 作证。【13:28 更新】收盘与盘后两件事。① 基本面：HPE FY26Q4 收入 145 亿美元（同比 +50%，服务器驱动）、Non-GAAP EPS 1.43 美元，高于公司指引 1.20~1.30；FY27 收入增速指引由此前框架 +13%~17% 上调到 +27%~35%（594 亿~631 亿美元），Non-GAAP EPS 5.05~5.35（此前框架 4.40~4.60），自由现金流至少 55 亿美元（公司公告）；但 GAAP 毛利率 38.0% 环比降 210 个基点，Seeking Alpha 标题称盘后先跌、MarketWatch 标题称随后走高，方向未定——“需求超预期、利润率被内存成本挤压”与上午 FT 加价报道一致。② 资金面：AMD 提交 S-3ASR，为售股股东登记约 3.37 亿股的转售（SEC 文件，涉及 Taalas 收购对价等，完整构成未查证），这是登记而非公司新发股，但给后续供给留出空间。收盘据快照 NVDA 165.05（+31.5%），MarketWatch 标题称为美股史上最大单日市值增幅，空头大幅回补；ORCL +12.4%、CRWV +22.3%。整体结论不变：情绪驱动的急速修复叠加 HPE 基本面上修，资金面（宏观）仍紧，合规面待 12-01 作证。",
+   "market": "资金面得分 23（钱贵 / 紧缩：10 年期美债 4.92%、一年 +81bp，美元指数一年 +4.2%），情绪面热度 29（偏悲观；VIX 26.6、近一年 96% 分位且期限结构倒挂，CNN 恐贪 17 极度恐惧），两项读数都还在悲观区。今天的主线是治理面：英伟达董事会复任黄仁勋，NVDA 收 165.05（+31.5%，MarketWatch 标题称为美股史上最大单日市值增幅），快照中人工确认公司里约 250 家日涨幅 ≥ 6%，几乎全部集中在 AI 一浪（芯片、光模块、存储、服务器）——这是情绪面从极端区的急速修复，而不是资金面转松。浪位上，AI 一浪、三浪仍是“财报已改善、价格未反映”，二浪早间短暂触发后回到“尚未启动”；航天一、二浪和机器人一浪同样处于“财报已改善、价格未反映”。基本面上，HPE、Semtech、Zoom、Symbotic 当晚财报都超出自身指引，但 HPE 毛利率环比 −210bp、Symbotic 一季度指引偏弱，“需求强、利润率 / 下季节奏有分歧”是共同特征；合规面反向收紧：Semafor 报道商务部将把 Megaspeed 列入实体清单（Fox Business 称已列入，MLQ 称商务部尚未确认，来源有分歧）。整体结论：AI 板块最大的单一不确定性（CEO 落点）解除、基本面继续上修，但资金面仍紧、合规面在“人放行、渠道收紧”，下一个节点是 11-24 DELL 财报与 12-01 黄仁勋国会作证。（本条为当日完整研判，整合了 06:28~13:28 的增量，含前一时段后 Summizer 新增的 5 篇。）",
    "sectors": {
-    "ai": "【06:28】治理面转正：英伟达复任黄仁勋（董事会一致投票），盘前约 +30%，科技股普涨；合规面（SEC / 加州 / Megaspeed / 财政部答复）仍待落地。CrowdStrike 439 亿美元全股票收购 Zscaler，安全软件加速整合；据 Tom's Hardware 标题，AI 服务器因内存短缺提价最多 45%（细节未查证），供给瓶颈仍在存储。基础设施侧：Oracle 重申 OpenAI 项目融资已足、Firmus 拟发 15 亿美元债、KKR 据报拟以最高 100 亿美元控股 EdgeCore、Vertiv 推出中压 UPS——资本仍在流入算力与数据中心。【07:28】盘中 NVDA +32.6%、DELL +22.6%、ARM +18.5%，情绪面修复幅度超出早间预期；亚马逊据 Seeking Alpha 标题收购 Decart 优化技术（细节未查证），自研芯片 + 跨硬件迁移软件是降低对英伟达依赖的方向；Sierra 估值 300 亿美元、约 75 倍年化收入，应用层一级市场预期已满。【08:28】KLIC FY26Q4 收入 +131%、FY27Q1 指引持平于约 4.1 亿美元，先进封装（TCB）放量得到财报验证；西班牙数据中心法令要求 80% 新增可再生能源 + 小时级匹配，欧洲数据中心的电力成本被监管重新定价，选址与项目经济性承压（产业面边际向下，限于欧洲）。【09:28】NVDA 复任后的政治面跟进：据报特朗普直接介入董事会、议员批评复任、12-01 众议院闭门作证照常——合规面风险未随复任消失。另有 DCD 长文梳理海上 / 水下数据中心（中国 HiCloud 已运行、规划 500MW 园区），属于电力与冷却约束下的选址探索，不涉及上市公司基本面。【10:28】SpaceX 440 亿美元 GPU 资产支持票据定价完成（Vera Rubin，2027H1 交付，地面算力），GPU 抵押融资从个案走向标准化；亚马逊 75 亿美元收购 Decart 优化栈确认、Trainium 将对外销售；FT 称服务器厂商在交付时加价最多 45%、SK 海力士预计短缺持续到 2030 年——产业面：需求与融资向上，成本端（内存）向上传导。【13:28】HPE FY27 收入增速指引上调至 +27%~35%、EPS 5.05~5.35，AI 服务器需求在整机层面再获财报验证，毛利率环比 −210 个基点反映内存成本；AMD 登记约 3.37 亿股售股股东转售（S-3ASR），资金面供给端小幅向下。",
-    "quantum": "【06:28】只有一级市场与海外个案：Rotonium 称发布室温量子计算机、planqc 扩展至英国剑桥、Q.security 获 1,150 万美元融资、微软在以色列组建后量子安全团队；不涉及上市公司基本面。【09:28】CyberRidge（一级市场）获欧盟 EIC 联合资助，“光子层”传输安全，与 QKD / PQC 并列的量子安全路线；不涉及上市公司。【11:28】QuEra（未上市）加入 Harvard 牵头、能源部 1,200 万美元的 ASQC 项目，用 AI 按应用定制纠错码与解码器，NVIDIA、Anthropic 与三家国家实验室参与（The Quantum Insider，公司新闻稿口径）；产业面小幅向上（纠错开销是瓶颈层），但目前只是立项、无结果，不涉及上市公司基本面。",
-    "robotics": "无重要新信息（机器人零部件公司 Coprod 获 600 万美元融资，ABB 以 26.5 亿美元收购 Ziehl-Abegg，均为个案）【11:28】机器人一浪信号日内两次切换（收入增速条件处于临界），等收盘确认。",
-    "aerospace": "无重要新信息（Barron's 标题称 SpaceX 股价因马斯克谈 Starlink 引发与特斯拉合并的猜测而反弹，细节未查证）【10:28】SpaceX 完成 440 亿美元 GPU 融资定价（DCD），用途为地面算力而非轨道数据中心，太空数据中心仍是远期叙事。",
-    "autonomous": "无重要新信息"
+    "ai": "治理面转正、合规面收紧：NVDA 复任后，Megaspeed 据报将被列入实体清单（两地调查其是否把英伟达芯片转运到中国，公司否认），监管重点从“卖给谁”前移到“中间商是谁”，英伟达海外渠道风险上升（判断）。基本面继续上修：HPE FY27 收入增速指引 +27%~35%，Semtech 季度收入 4.23 亿美元（+58%）、下季指引约 4.8 亿美元，数据中心连接芯片放量；成本端内存涨价向整机传导（FT 称最多 +45%）。安全软件进入平台化整合：CRWD 全股票收购 ZS，OpenAI 与思科开源运行时防护 Shirudo、Anthropic 发布可按策略自动批准代码的 Claude Ship——AI agent 让“审”和“防”也走向机器速度，产业面利好平台型安全厂商、对单品类厂商是逆风（判断）。",
+    "quantum": "无重要新信息（QuEra 参与能源部 1,200 万美元 AI 纠错项目已在早间写入；量子板块随科技股普涨，RGTI +13%、IONQ +13%、QBTS +12%，属情绪面跟随，无基本面变化）。",
+    "robotics": "Symbotic FY26 收入 28 亿美元（+25%）、首个全年 GAAP 盈利（净利 1.33 亿美元），四季度收入 7.78 亿美元落在自身指引 7.6~7.8 亿内；但一季度收入指引偏弱，盘后约 −2.4%（Investing.com）。基本面向上、预期面短期向下；机器人一浪仍是“财报已改善、价格未反映”。",
+    "aerospace": "无重要新信息。弗吉尼亚、俄勒冈等州就 Grok 生成违法图像起诉 SpaceX（Reuters 标题，细节未查证），属法律面个案；SpaceX 440 亿美元 GPU 票据用于地面算力已在早间写入。",
+    "autonomous": "无重要新信息（Waymo 因洪水预警暂停湾区服务，属运营个案）。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "董事会一致投票复任黄仁勋（CEO/总裁/董事，立即生效），盘前约 +28%~31%。快照价 125.53（11-20 收盘），2027 前瞻区间 85.2 / 153.74 / 226.1，位于下沿~中值之间、比中值低约 18%；若盘前涨幅守住（约 160~165），将回到中值上方。合规调查仍未落地。 07:28：盘中 166.43（+32.6%），处 2027 前瞻区间 112.96/203.83/299.77 的下沿~中值之间，距中值约 22%。 09:28：TechCrunch 称特朗普直接致电董事会推动复任、议员批评复任决定（Reuters 标题）；12-01 众议院三委员会闭门作证照常（Axios）——下一个合规面节点。"
-    },
-    {
-     "t": "CRWD",
-     "why": "全股票约 439 亿美元收购 ZS（每股 ZS 换 1.135 股 CRWD），合并 ARR 超 100 亿美元；同时公布净新增 ARR 4.19 亿美元创纪录。现价 229.44，2027 前瞻区间 131.13 / 187.8 / 309.12，位于中值~上沿。"
-    },
-    {
-     "t": "ZS",
-     "why": "被 CRWD 全股票收购，对价随 CRWD 股价浮动（1.135 倍）。现价 194.82，2027 前瞻区间 110.91 / 149.33 / 214.4，位于中值~上沿。"
-    },
-    {
-     "t": "ARM",
-     "why": "CEO Haas 续约至 2033，据 Bloomberg 此前曾被英伟达接触，管理层不确定性消除。现价 152.2，2027 前瞻区间 93.62 / 145.4 / 241.88，略高于中值。 07:28：盘中 180.41（+18.5%），已高于 2027 前瞻中值 158.31、位于中值~上沿。"
-    },
-    {
-     "t": "ORCL",
-     "why": "11-20 盘后宣布 OpenAI 大单融资已落实并盘后反弹（富途），常规时段收 101.19（−8.5%）；2027 前瞻区间 75.64 / 123.93 / 186.04，比中值低约 18%，资金面最大疑问之一得到回应。"
-    },
-    {
-     "t": "DELL",
-     "why": "11-24 发财报：市场预期收入约 506 亿美元、EPS 6.63，看 950 亿美元 AI 积压在存储受限下的转化速度；11-20 −11.0%。现价 278.02，2027 前瞻区间 202.54 / 340.5 / 476.33，位于下沿与中值之间、比中值低约 18%。 07:28：盘中 340.90（+22.6%），随 AI 板块反弹，11-24 财报前情绪先行。"
+     "why": "复任黄仁勋后收 165.05（+31.5%），位于 2027 前瞻区间 112.03 / 202.14 / 297.28 的下沿~中值、距中值约 22%；同日 Megaspeed 据报将被列入实体清单（来源对是否已正式列入有分歧），12-01 国会闭门作证是下一个合规面节点。"
     },
     {
      "t": "HPE",
-     "why": "11-23 发 FY26 四季度财报：订单远超可交付量，看网络（Juniper）收入能否追上订单；两家前瞻对 EPS 指引口径有分歧（1.12~1.22 vs 1.20~1.30）。11-20 −10.1%。现价 40.91，2027 前瞻区间 35.44 / 50.1 / 73.74，位于下沿与中值之间、比中值低约 18%。 11-23 盘中 +18.1% 至 48.32，财报前已越过 2027 前瞻区间下沿 41.8、距中值 59.18 约 18%。 【13:28】FY26Q4 收入 145 亿美元（+50%）、EPS 1.43 超指引，FY27 指引上调至收入 594 亿~631 亿、EPS 5.05~5.35；收盘 48.31（+18.1%），位于 2027 前瞻区间 41.79 / 59.17 / 86.96 的下沿~中值（区间尚未反映新指引）。"
+     "why": "FY26Q4 收入 145 亿美元（+50%）、EPS 1.43 超指引，FY27 指引收入 594 亿~631 亿、EPS 5.05~5.35；但毛利率环比 −210bp。收 48.02（+17.4%），位于 2027 前瞻区间 41.54 / 58.81 / 86.43 的下沿~中值（区间尚未反映新指引）。"
     },
     {
-     "t": "AMZN",
-     "why": "07:28：据 Seeking Alpha 标题收购 Decart 芯片优化技术（细节未查证）；现价 255.69 位于 2027 前瞻区间 133.0/209.29/330.6 的中值~上沿。 【10:28】75 亿美元收购 Decart 优化栈已确认（TechCrunch / Bloomberg），Trainium 准备对外销售；现价 258.72 位于 2027 前瞻区间中值 211.77 与上沿 334.52 之间。"
+     "t": "SMTC",
+     "why": "FY27Q3 收入 4.23 亿美元（+58%）、调整后 EPS 1.17，均高于指引上沿；四季度指引约 4.8 亿美元（单一二手来源）。常规时段已 +18.8% 至 104.13，位于 2027 前瞻区间 81.01 / 127.53 / 186.73 的下沿~中值、距中值约 22%。"
     },
     {
-     "t": "KLIC",
-     "why": "FY26Q4 收入 4.103 亿美元（+131%）、毛利率 47.8%，FY27Q1 指引 4.1 亿 ±0.2 亿；现价 61.22（今日 +11.9%）处 2027 前瞻区间下沿 50.06 与中值 69.72 之间，距中值约 12%。"
+     "t": "CRWD",
+     "why": "宣布全股票收购 ZS 后收 208.97（−8.9%），市场在为股本稀释和整合定价；仍位于 2027 前瞻区间 119.33 / 171.05 / 281.30 的中值~上沿。公司预计 30 个月内实现约 10 亿美元年化收入协同。"
     },
     {
-     "t": "SPCX",
-     "why": "440 亿美元 GPU 票据定价完成（Apollo / 高盛牵头），采购 Vera Rubin、2027H1 交付；现价 136.04（+6.5%）位于 2027 前瞻区间下沿与中值 160.45 之间、距中值约 18%。"
+     "t": "ZS",
+     "why": "收 229.24（+17.7%）；按 1.135 倍换股比例和 CRWD 收盘价计算的隐含对价约 237.2，现价折让约 3.4%，反映交割风险。已接近 2027 前瞻上沿 234.89。"
+    },
+    {
+     "t": "PANW",
+     "why": "SiliconANGLE 认为 CRWD+ZS 是对 Palo Alto 平台化路线的长期威胁；PANW 收 353.43，仍低于 2027 前瞻区间下沿 462.70，前瞻估值与股价的落差没有因今天的普涨收窄。"
+    },
+    {
+     "t": "ZM",
+     "why": "FY27Q3 收入 12.9 亿美元（+4.9%），企业收入 +8.6% 为 13 个季度最快，调整后 EPS 1.59 高于一致预期 1.49；上调全年收入指引至 51.00~51.05 亿美元并首次派息（每季 0.25 美元）。收 86.03，位于 2027 前瞻区间 63.13 / 91.80 / 130.49 的下沿~中值。"
+    },
+    {
+     "t": "SYM",
+     "why": "FY26 收入 28 亿美元（+25%）、首个全年 GAAP 盈利，积压约 223 亿美元；一季度收入指引偏弱、盘后约 −2.4%。收 34.97（+12.4%），已高于 2027 前瞻中值 32.18。"
+    },
+    {
+     "t": "DELL",
+     "why": "11-24 发财报，看 AI 服务器积压在内存受限、整机加价背景下的转化速度和毛利率（HPE 毛利率已环比 −210bp）。收 334.91（+20.5%），位于 2027 前瞻区间 243.98 / 410.18 / 573.80 的下沿~中值、距中值约 22%。"
     },
     {
      "t": "MU",
-     "why": "FT 称服务器厂商因内存短缺交付时加价最多 45%，SK 海力士预计短缺持续到 2030 年；现价 703.45（+18.3%）接近 2027 前瞻中值 728.87（距约 4%）。"
-    },
-    {
-     "t": "AMD",
-     "why": "S-3ASR 为售股股东登记约 3.37 亿股转售（SEC，涉及 Taalas 收购对价等，完整构成未查证）；收盘 453.46（+6.9%），位于 2027 前瞻区间 342.66 / 555.37 / 968.47 的下沿~中值、距中值约 18%。"
+     "why": "内存短缺仍是整条 AI 服务器链的瓶颈（FT 称整机加价最多 45%、SK 海力士预计短缺持续到 2030 年）；收 707.70（+19.0%），距 2027 前瞻中值 733.28 约 4%。"
     }
    ],
    "sources": [
@@ -1311,72 +1343,72 @@
      "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
     ],
     [
-     "PBS / AP：董事会一致复任黄仁勋",
-     "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman"
+     "Semafor：商务部将把 Megaspeed 列入实体清单",
+     "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
     ],
     [
-     "CrowdStrike 8-K：收购 Zscaler 及三季度业绩",
-     "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+     "Fox Business：Megaspeed 被列入商务部贸易黑名单",
+     "https://www.foxbusiness.com/politics/trump-admin-adds-megaspeed-commerce-department-trade-blacklist-after-nvidia-scandal"
     ],
     [
-     "DataCenterDynamics：Arm CEO 续约至 2033",
-     "https://www.datacenterdynamics.com/"
+     "MLQ：商务部尚未确认、联邦公报公示清单中暂无该规则",
+     "https://mlq.ai/news/commerce-is-set-to-add-megaspeed-to-the-entity-list-the-us-trade-blacklist/"
     ],
     [
-     "CNBC：Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 35%",
-     "https://www.cnbc.com/"
-    ],
-    [
-     "TechCrunch：Sierra doubles valuation to $30B",
-     "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/"
-    ],
-    [
-     "TechRepublic：Amazon reportedly in talks to buy Decart",
-     "https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/"
-    ],
-    [
-     "KLIC 8-K：第四季度 2026 业绩",
-     "https://www.sec.gov/Archives/edgar/data/0000056978/000005697826000038/ex991liveq42026.htm"
-    ],
-    [
-     "DCD：西班牙通过数据中心法令",
-     "https://www.datacenterdynamics.com/en/news/spain-approves-decree-on-data-centers-to-curb-electricity-costs/"
-    ],
-    [
-     "TechCrunch：Jensen Huang isn't out of the woods yet",
-     "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/"
-    ],
-    [
-     "Axios：黄仁勋同意 12-01 赴国会作证",
-     "https://axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates"
-    ],
-    [
-     "DCD：Apollo 与高盛牵头 440 亿美元 SpaceX GPU 融资",
-     "https://www.datacenterdynamics.com/en/news/apollo-and-goldman-sachs-lead-44bn-spacex-gpu-financing-deal/"
-    ],
-    [
-     "TechCrunch：亚马逊 75 亿美元收购 Decart 优化技术",
-     "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
-    ],
-    [
-     "DCD（援引 FT）：AI 服务器厂商因内存短缺加价最多 45%",
-     "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
-    ],
-    [
-     "QuEra Joins $12 Million DOE Project on AI-Designed Quantum Error Correction",
-     "https://thequantuminsider.com/2026/11/23/quera-12-million-doe-ai-quantum-error-correction/"
+     "TechCrunch：Megaspeed 或被列入美国黑名单",
+     "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/"
     ],
     [
      "BusinessWire：HPE FY26 第四季度业绩",
      "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
     ],
     [
-     "SEC：AMD S-3ASR 售股股东转售登记",
-     "https://www.sec.gov/Archives/edgar/data/2488/000119312526472370/d171551ds3asr.htm"
+     "Stockhouse：Semtech 2027 财年三季度业绩",
+     "https://stockhouse.com/news/press-releases/2026/11/23/semtech-announces-third-quarter-of-fiscal-year-2027-results"
     ],
     [
-     "Seeking Alpha：HPE 业绩与指引大超预期但盘后下跌",
-     "https://seekingalpha.com/news/4675761-hpe-falls-even-as-q4-results-guidance-top-estimates-by-wide-margin"
+     "Panabee：Semtech 三季度业绩与四季度指引",
+     "https://www.panabee.com/news/semtech-earnings-q3-2027"
+    ],
+    [
+     "GlobeNewswire：Zoom 2027 财年三季度业绩",
+     "https://www.globenewswire.com/news-release/2026/11/23/3408888/0/en/zoom-communications-reports-financial-results-for-the-third-quarter-of-fiscal-year-2027.html"
+    ],
+    [
+     "Symbotic：2026 财年四季度及全年业绩",
+     "https://ir.symbotic.com/news-releases/news-release-details/symbotic-reports-fourth-quarter-and-fiscal-year-2026-results"
+    ],
+    [
+     "Investing.com：Symbotic 因一季度收入指引偏弱盘后下跌",
+     "https://www.investing.com/news/earnings/symbotic-falls-as-q1-revenue-guidance-disappoints-5046480"
+    ],
+    [
+     "FourWeekMBA：Symbotic 季度收入接近指引上沿、积压 223 亿美元",
+     "https://fourweekmba.com/ai-778m-quarter-puts-symbotic-near-the-top-of-its-own-guide/"
+    ],
+    [
+     "CrowdStrike 8-K：收购 Zscaler 及三季度业绩",
+     "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+    ],
+    [
+     "SiliconANGLE：CrowdStrike 收购 Zscaler 是对平台化的投票、长期威胁 Palo Alto",
+     "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
+    ],
+    [
+     "TechCrunch：Anthropic 发布 Claude Ship",
+     "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"
+    ],
+    [
+     "SiliconANGLE：思科与 OpenAI 发布开源运行时防护 Shirudo",
+     "https://siliconangle.com/2026/11/23/cisco-and-openai-launch-shirudo-an-open-source-infrastructure-shield-to-protect-against-ai-driven-cyberattacks/"
+    ],
+    [
+     "DCD（援引 FT）：AI 服务器厂商因内存短缺加价最多 45%",
+     "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+    ],
+    [
+     "Axios：黄仁勋同意 12-01 赴国会作证",
+     "https://axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates"
     ]
    ]
   },
@@ -3596,15 +3628,27 @@
    ]
   }
  ],
- "updated": "2026-11-23T13:28",
+ "updated": "2026-11-23T14:27",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",
    "dir": "分化",
-   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。 11-22：贝森特称 10 天期限内仍未收到对华出口合规答复，追问谁负责合规、知情到哪一层；董事长 Harvey Jones 表态不聘回黄仁勋——联邦层面的合规压力与加州调查同向，治理无落点的时间在拉长（判断：这是情绪与估值折价的主因，需求侧仍无负面数据）。 晚间：特朗普再次公开呼吁聘回黄仁勋，据 CNBC 董事会未考虑；CNBC 标题称 Megaspeed 案出现新涉案人物（细节未查证）。 11-23：董事会一致投票复任黄仁勋（CEO/总裁/董事，立即生效），Kress 回任 CFO，据报美方认定无国家安全风险；盘前约 +28%~31%——此前估值折价的主因（CEO 悬空、人才流失）解除，治理面转正；合规面调查仍未落地（判断：剩余折价将主要取决于 SEC / 加州 / Megaspeed 的结论）。",
+   "text": "顺风是需求：三季度收入 1,158 亿美元（+103%）、数据中心 1,076 亿美元（+110%），四季度指引 1,300 亿美元 ±3% 且不含中国，Vera Rubin 据 Benzinga 需求强劲，云厂商与新云的资本开支仍在扩张。逆风集中在治理与政策：黄仁勋离任后继任未定（本人表示愿回任，董事长已在电话会上明确不让其复任），SEC 据 WSJ 就披露展开民事调查，Megaspeed 刑事调查、远程算力出口管制和东南亚渠道许可证让“卖给谁”的确定性下降；员工公开警告人才流失（判断：继任拖得越久，产品节奏和客户关系的风险越大）。 11-18：财报后两日回吐至 150.96；10-Q 未与财报同日提交，UBS 称与是否就黄仁勋相关调查新增风险因素有关，目标价 240→220、仍维持买入——分析师眼中的基本面与价格之间的差距，主要是“未披露风险”的折价（判断）。 11-21：11-20 单日 −14% 收 125.53、连跌 7 周（CNBC），已回到 2027 前瞻区间下沿与中值之间；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），合规面风险从“披露 / 民事”向“刑事”扩展的可能性是新增逆风；贝森特称出口政策不变、Kress 确认不再向中国卖 H200。需求侧没有新的负面数据。 11-22：贝森特称 10 天期限内仍未收到对华出口合规答复，追问谁负责合规、知情到哪一层；董事长 Harvey Jones 表态不聘回黄仁勋——联邦层面的合规压力与加州调查同向，治理无落点的时间在拉长（判断：这是情绪与估值折价的主因，需求侧仍无负面数据）。 晚间：特朗普再次公开呼吁聘回黄仁勋，据 CNBC 董事会未考虑；CNBC 标题称 Megaspeed 案出现新涉案人物（细节未查证）。 11-23：董事会一致投票复任黄仁勋（CEO/总裁/董事，立即生效），Kress 回任 CFO，据报美方认定无国家安全风险；盘前约 +28%~31%——此前估值折价的主因（CEO 悬空、人才流失）解除，治理面转正；合规面调查仍未落地（判断：剩余折价将主要取决于 SEC / 加州 / Megaspeed 的结论）。 11-23：董事会复任黄仁勋，治理面主要逆风解除，股价 +31.5%；同日 Megaspeed 据报将被列入实体清单（来源对是否已正式列入有分歧），合规面在“人放行、渠道收紧”，海外渠道的确定性反而下降（判断）。",
    "miss": "前瞻区间假设毛利率 70% 以上、份额大体不变、管理层稳定；没有反映继任期的人才与客户关系风险、SEC 调查若涉及收入地区口径（新加坡曾占季度收入约 22%，口径已改为客户总部）带来的重述 / 信任折价、出口管制“管使用者”对东南亚新云需求的影响，以及收紧客户担保后新云下单能力下降（判断）。",
    "watch": "次日股价能否修复六连周跌；电话会 / 10-Q 中地区口径与担保余额；SEC 调查是否被公司确认及范围；国会作证与 11-18 闭门简报；CEO 搜寻结果；四季度毛利率（memory 成本压力）。 对华 H200 退出与远程算力新规的实际收入影响（Jefferies 440 亿~620 亿美元 vs 公司“无影响”）；新云 320 亿美元承诺的兑现条件。 10-Q 何时提交、法律诉讼与风险因素章节是否新增 SEC / 司法部调查、渠道与客户集中度表述。 加州调查是否正式立案及是否涉刑事；海外数据中心征税细则（东南亚渠道）；下周能否止跌结束连跌。 英伟达何时、以何种形式回复财政部；CEO 正式人选。 复任后：10-Q 风险因素表述、对财政部的合规答复、董事长职位口径（AP 称兼任董事长，其他报道称 Jones 留任）、盘前涨幅能否守住。",
    "src": [
+    [
+     "CBS News：英伟达复任黄仁勋",
+     "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
+    ],
+    [
+     "Semafor：商务部将把 Megaspeed 列入实体清单",
+     "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
+    ],
+    [
+     "MLQ：商务部尚未确认、联邦公报公示清单中暂无该规则",
+     "https://mlq.ai/news/commerce-is-set-to-add-megaspeed-to-the-entity-list-the-us-trade-blacklist/"
+    ],
     [
      "CBS News：英伟达复任黄仁勋",
      "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
@@ -3616,34 +3660,6 @@
     [
      "CBS News：贝森特称需要英伟达就对华芯片给出答复",
      "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
-    ],
-    [
-     "US News / Reuters：美国就英伟达对华售芯片寻求答复",
-     "https://www.usnews.com/news/world/articles/2026-11-22/us-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says"
-    ],
-    [
-     "CNBC：英伟达跌 14%、连跌 7 周",
-     "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
-    ],
-    [
-     "Bloomberg（标题）：加州调查涵盖潜在刑事违法",
-     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3ZKSUpVM0xWNVRuM3B0RjhyOTM0NUNoRmNYVnVKYm50andhaTFJVHZLenZrckE1aFZuMGhiSW42Mlh5c2lZcGc5eTg1NDQwWVRFQWxSOGtzWHk2S2pGLVpvM3N2enh4Mms5OTF0MHFXc0JnN3ZoYlB3ODJqX3FoSjJCTWlPOHQ2SjNOQ1Q3cjVNR0NWRVYxWVFEanpwZC1mSW5SeGpXSDRqX1d0TUVwdE1vYVJWUQ?oc=5"
-    ],
-    [
-     "CNBC：贝森特称出口政策不变",
-     "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html"
-    ],
-    [
-     "TechCrunch：英伟达推迟提交 10-Q",
-     "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/"
-    ],
-    [
-     "CBS News：英伟达首份无黄仁勋的财报（盘后约 +3%）",
-     "https://www.cbsnews.com/news/nvidia-earnings-jensen-huang-colette-kress/"
-    ],
-    [
-     "Benzinga：英伟达双超预期、Vera Rubin 需求",
-     "https://www.benzinga.com/markets/earnings/26/11/63372441/nvidia-stock-jumps-on-q3-double-beat-strong-outlook-explosive-demand-for-vera-rubin"
     ]
    ]
   },
@@ -4171,12 +4187,16 @@
    ]
   },
   "PANW": {
-   "date": "2026-11-18",
+   "date": "2026-11-23",
    "dir": "分化",
-   "text": "顺风：AI 带来的攻击面扩大正变成采购理由——国土安全部长在国会警告 AI 驱动攻击后安全股集体上涨；一季度收入约 34.4 亿美元（+39%）、NGS ARR 97.3 亿美元（+66%，高于自身指引），全年收入指引从 141~142 亿上调到 145.2~145.7 亿美元。逆风：高增速很大部分来自 CyberArk 等并表，全年 NGS ARR 指引只有 +26%~27%（TradingKey 指出 66% 不可持续）；GAAP 经营利润从 3.09 亿降到 9,600 万美元，又以约 45 亿美元全股票收购 Applied Compute，股本继续扩张。",
-   "miss": "现价 339.92 低于 2027 前瞻区间下沿 407.32；前瞻区间按每股收益算，没有反映连续全股票收购带来的稀释和整合费用（GAAP 利润被压低）；反过来，若 AI Agent 安全成为强制采购，有机增长可能高于一致预期（判断）。",
+   "text": "顺风：AI 带来的攻击面扩大正变成采购理由——国土安全部长在国会警告 AI 驱动攻击后安全股集体上涨；一季度收入约 34.4 亿美元（+39%）、NGS ARR 97.3 亿美元（+66%，高于自身指引），全年收入指引从 141~142 亿上调到 145.2~145.7 亿美元。逆风：高增速很大部分来自 CyberArk 等并表，全年 NGS ARR 指引只有 +26%~27%（TradingKey 指出 66% 不可持续）；GAAP 经营利润从 3.09 亿降到 9,600 万美元，又以约 45 亿美元全股票收购 Applied Compute，股本继续扩张。 11-23：CRWD 宣布全股票收购 ZS，SiliconANGLE 分析师认为这是对平台化的投票、长期威胁 PANW——竞争者从“单品类联盟”变成“直接对标的平台”，产业面逆风加大（判断）。",
+   "miss": "现价 353.43 低于 2027 前瞻区间下沿 462.70；前瞻区间按每股收益算，没有反映连续全股票收购带来的稀释和整合费用，也没有反映 CRWD+ZS 合并后平台竞争加剧对定价的压力；反过来，若 AI agent 安全成为强制采购，有机增长可能高于一致预期（判断）。",
    "watch": "二季度 NGS ARR 指引 102.0~102.2 亿美元能否兑现、有机增速（剔除 CyberArk）、GAAP 经营利润率、Applied Compute 收购完成后的股本数。",
    "src": [
+    [
+     "SiliconANGLE：CrowdStrike 收购 Zscaler 是对平台化的投票、长期威胁 Palo Alto",
+     "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
+    ],
     [
      "Palo Alto Networks：2027 财年一季报新闻稿",
      "https://investors.paloaltonetworks.com/news-releases/news-release-details/palo-alto-networks-reports-fiscal-first-quarter-2027-financial"
@@ -4800,23 +4820,19 @@
    ]
   },
   "CRWD": {
-   "date": "2026-11-18",
-   "dir": "顺风",
-   "text": "顺风：AI 一方面让攻击更快（国土安全部长国会证词），另一方面让企业补丁频率上升、运维风险上升（近期宕机被官方归因于此），安全支出的优先级在提高；CrowdStrike 上季收入 14.7 亿美元（+26%）并上调全年净新增 ARR，正把身份保护延伸到 AI agent。逆风：大平台（PANW、微软）把身份与端点捆绑销售，价格竞争加剧；股价今年已大幅上涨。",
-   "miss": "现价 237.03 高于 2027 前瞻中值 194.02 约 22%，区间已含一部分 AI 安全溢价；前瞻估值反映不到的是平台捆绑带来的折扣压力，以及 2024 年式的大规模更新事故风险——在“补丁越来越密”的环境下，端点厂商自身的发布流程也是风险源（判断）。",
-   "watch": "12-01 财报的净新增 ARR、Falcon Flex 合同、AI agent 身份模块的客户数、毛利率。",
+   "date": "2026-11-23",
+   "dir": "分化",
+   "text": "顺风：AI agent 让攻击以机器速度发生，安全支出优先级上升；三季度净新增 ARR 4.19 亿美元创纪录，并以全股票约 439 亿美元收购 ZS，合并 ARR 超 100 亿美元，端点 + 网络覆盖 agent 行为的两端，公司预计 30 个月内约 10 亿美元年化收入协同。逆风：全股票收购稀释股本，宣布当日股价 −8.9%；SiliconANGLE 分析师认为按“一个数据集、一个策略引擎”的标准，CrowdStrike 目前还不算真正的平台，整合执行是主要风险。",
+   "miss": "前瞻区间按单体一致预期计算，没有反映合并后的股本扩张、整合费用和交叉销售协同的兑现节奏；端点厂商自身发布流程出事故的尾部风险也不在区间内（判断）。",
+   "watch": "交割进度与监管审查、Zscaler 客户转入 Falcon Flex 的数量、合并后净新增 ARR、GAAP 经营利润率。",
    "src": [
     [
-     "KuCoin 汇总：Okta、CrowdStrike 上季财报超预期并上调指引",
-     "https://www.kucoin.com/blog/okta-crowdstrike-earnings-ai-cybersecurity-demand"
+     "CrowdStrike 8-K：收购 Zscaler 及三季度业绩",
+     "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
     ],
     [
-     "Seeking Alpha：国土安全部长警告 AI 攻击，安全股走高",
-     "https://seekingalpha.com/news/4674237-palo-alto-leads-cyber-stocks-higher-after-dhs-secretary-warns-of-ai-powered-attacks"
-    ],
-    [
-     "SiliconANGLE：近期宕机归因于 AI 加速漏洞发现",
-     "https://siliconangle.com/2026/11/18/recent-spate-of-outages-attributed-to-technical-issues-amid-accelerated-ai-bug-discovery/"
+     "SiliconANGLE：CrowdStrike 收购 Zscaler 是对平台化的投票、长期威胁 Palo Alto",
+     "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
     ]
    ]
   },
@@ -5029,15 +5045,87 @@
    ]
   },
   "ZM": {
-   "date": "2026-11-22",
-   "dir": "逆风",
-   "text": "顺风：现金流强，企业客户与联络中心 / 语音 AI 是增量，上季后上调全年 EPS 指引至 6.08~6.12。逆风：总收入增速仅约 5%（上季 12.77 亿美元、+4.9%），线上月流失 2.9% 未改善，语音 AI 领域面临 OpenAI、Salesforce 等直接竞争，AI 推理成本压毛利率。",
-   "miss": "前瞻估值假设低增速稳定延续；没有反映大模型厂商直接切入会议 / 联络中心带来的价格战，以及 AI 成本上升对毛利率的持续侵蚀（判断）。",
-   "watch": "11-23 财报：企业收入增速、联络中心与 AI 产品 ARR、线上流失率、毛利率。",
+   "date": "2026-11-23",
+   "dir": "分化",
+   "text": "顺风：企业收入 8.054 亿美元（+8.6%，13 个季度最快），非 GAAP 经营利润率 41.6%，上调全年收入指引至 51.00~51.05 亿美元并首次派息，现金回报能力强。逆风：总收入增速仍只有 4.9%，自由现金流 5.58 亿美元低于上年同期 6.14 亿，语音 AI / 联络中心面临大模型厂商直接竞争。",
+   "miss": "前瞻估值假设低增速稳定延续；没有反映大模型厂商切入会议与联络中心带来的价格压力，以及 AI 推理成本对毛利率的侵蚀；派息说明公司自身也按成熟期公司定位（判断）。",
+   "watch": "企业收入增速能否维持 8% 以上、线上业务流失率、自由现金流、AI 产品 ARR。",
    "src": [
     [
-     "Earnings Whispers / Finviz：Zoom 企业业务拐点面临白标流失与 AI 成本考验",
-     "https://finviz.com/news/422873/zooms-enterprise-inflection-faces-its-next-test-as-white-label-churn-and-ai-costs-build"
+     "GlobeNewswire：Zoom 2027 财年三季度业绩",
+     "https://www.globenewswire.com/news-release/2026/11/23/3408888/0/en/zoom-communications-reports-financial-results-for-the-third-quarter-of-fiscal-year-2027.html"
+    ]
+   ]
+  },
+  "ZS": {
+   "date": "2026-11-23",
+   "dir": "分化",
+   "text": "被 CRWD 以每股换 1.135 股 CRWD 的全股票方式收购，独立发展的路径基本结束；股价此后主要跟随 CRWD 股价和交割进度。创始人 Chaudhry 在电话会上称作为伙伴做集成能做的事有限，这是交易的产业逻辑。",
+   "miss": "前瞻估值区间按 ZS 单体预期计算，已不适用于被收购后的定价；真正的变量是交割风险（反垄断审查）和 CRWD 股价，现价相对隐含对价折让约 3.4%（判断）。",
+   "watch": "反垄断审查进展、股东投票、ZS 与 CRWD 股价比值相对 1.135 的偏离。",
+   "src": [
+    [
+     "CrowdStrike 8-K：收购 Zscaler 及三季度业绩",
+     "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm"
+    ],
+    [
+     "SiliconANGLE：CrowdStrike 收购 Zscaler 是对平台化的投票、长期威胁 Palo Alto",
+     "https://siliconangle.com/2026/11/23/crowdstrikes-zscaler-deal-is-a-44b-vote-for-platformization-and-a-long-term-threat-to-palo-alto-networks/"
+    ]
+   ]
+  },
+  "SMTC": {
+   "date": "2026-11-23",
+   "dir": "顺风",
+   "text": "顺风：数据中心连接芯片放量，FY27Q3 收入 4.23 亿美元（环比 +24%、同比 +58%），调整后经营利润率创纪录 33.0%，四季度指引约 4.8 亿美元（单一二手来源）；正在出售蜂窝模组业务，向高增长的数据中心业务聚焦。逆风：收入对 AI 数据中心资本开支的周期依赖上升，客户集中度可能提高（判断）。",
+   "miss": "前瞻区间假设当前高增速延续，没有反映 AI 连接芯片的周期性和竞争（铜缆 / 光互连路线切换）；剥离蜂窝模组后的收入基数变化也可能让一致预期需要调整（判断）。",
+   "watch": "四季度收入是否达约 4.8 亿美元、数据中心收入占比、蜂窝模组出售完成后的毛利率。",
+   "src": [
+    [
+     "Stockhouse：Semtech 2027 财年三季度业绩",
+     "https://stockhouse.com/news/press-releases/2026/11/23/semtech-announces-third-quarter-of-fiscal-year-2027-results"
+    ],
+    [
+     "Panabee：Semtech 三季度业绩与四季度指引",
+     "https://www.panabee.com/news/semtech-earnings-q3-2027"
+    ]
+   ]
+  },
+  "SYM": {
+   "date": "2026-11-23",
+   "dir": "顺风",
+   "text": "顺风：FY26 收入 28 亿美元（+25%）、首个全年 GAAP 盈利（净利 1.33 亿美元），积压约 223 亿美元，仓储自动化需求有长期合同支撑。逆风：一季度收入指引偏弱、盘后下跌，收入按项目交付确认、季度波动大；客户集中度高（判断）。",
+   "miss": "前瞻区间没有反映大客户集中带来的单点风险，以及项目确认节奏造成的季度波动；积压能否按期转化取决于客户的资本开支节奏（判断）。",
+   "watch": "一季度收入与毛利率、积压转化速度、新客户签约。",
+   "src": [
+    [
+     "Symbotic：2026 财年四季度及全年业绩",
+     "https://ir.symbotic.com/news-releases/news-release-details/symbotic-reports-fourth-quarter-and-fiscal-year-2026-results"
+    ],
+    [
+     "Investing.com：Symbotic 因一季度收入指引偏弱盘后下跌",
+     "https://www.investing.com/news/earnings/symbotic-falls-as-q1-revenue-guidance-disappoints-5046480"
+    ],
+    [
+     "FourWeekMBA：Symbotic 季度收入接近指引上沿、积压 223 亿美元",
+     "https://fourweekmba.com/ai-778m-quarter-puts-symbotic-near-the-top-of-its-own-guide/"
+    ]
+   ]
+  },
+  "VOYG": {
+   "date": "2026-11-23",
+   "dir": "分化",
+   "text": "顺风：2026 年三季度收入 8,900 万美元（+124%）、订单 1.16 亿美元（订单出货比 1.3），积压 7.42 亿美元（含收购 Astrobotic 带来的 3.47 亿美元），全年收入指引上调下限至 2.85~3.05 亿美元。逆风：毛利率仅 11.5%（上年同期 15.4%），季度净亏损 5,570 万美元，调整后 EBITDA 亏损 4,490 万美元，增长靠收购拉动。",
+   "miss": "现价 19.70 位于 2027 前瞻区间 15.29 / 25.28 / 38.96 的下沿~中值、到中值空间约 28%；但前瞻区间没有反映持续亏损下的融资需求和股本稀释，也没有反映商业空间站等长周期项目的政府预算风险（判断）。",
+   "watch": "毛利率能否回升、Astrobotic 并表后的收入贡献（管理层称下半年 4,000~5,000 万美元）、经营现金流。",
+   "src": [
+    [
+     "Voyager：创纪录的 2026 年三季度收入、订单与积压",
+     "https://investors.voyagertechnologies.com/news/news-details/2026/Voyager-Reports-Record-Third-Quarter-2026-Revenue-Bookings-and-Backlog/default.aspx"
+    ],
+    [
+     "Simply Wall St：Voyager 三季度积压强劲但仍亏损",
+     "https://simplywall.st/stocks/us/capital-goods/nyse-voyg/voyager-technologies/news/voyager-technologies-voyg-q3-results-spotlight-backlog-stren"
     ]
    ]
   }
