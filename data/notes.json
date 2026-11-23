@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-23",
+    "text": "产业面：SpaceX 440 亿美元票据用于采购 Vera Rubin（2027H1 交付），需求侧可见度上升；同日亚马逊收购 Decart 优化栈并准备外售 Trainium，CUDA 护城河受到的挑战更直接。",
+    "url": "https://www.datacenterdynamics.com/en/news/apollo-and-goldman-sachs-lead-44bn-spacex-gpu-financing-deal/"
+   },
+   {
+    "date": "2026-11-23",
     "text": "合规面 / 政治面未改善：据 TechCrunch（援引 Semafor）特朗普直接致电董事会推动复任，议员批评复任决定（Reuters 标题，细节未查证）；12-01 众议院三委员会闭门作证照常，国会关注度上升。治理面转正不变。",
     "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-22",
     "text": "合规面向下：贝森特称政府给的 10 天期限内仍未收到对华出口合规答复，追问合规负责人与知情范围；董事长表态不聘回黄仁勋，治理落点继续悬空。",
     "url": "https://www.cbsnews.com/news/bessent-nvidia-china-ai-chips-alice-huang-canard/"
-   },
-   {
-    "date": "2026-11-21",
-    "text": "情绪面 / 合规面转差：11-20 −14% 收 125.53、连跌 7 周；Bloomberg 标题称加州调查涵盖潜在刑事违法（正文未查证），贝森特称出口政策不变（对冲），基本面指引未变。",
-    "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
    }
   ],
   "ANET": [
@@ -48,6 +48,11 @@
   ],
   "MU": [
    {
+    "date": "2026-11-23",
+    "text": "产业面向上：FT 称内存短缺使服务器厂商交付时加价最多 45%、CPU 节点涨两倍，SK 海力士把缓解时间推迟到 2030 年，存储涨价周期被拉长。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
+   {
     "date": "2026-11-19",
     "text": "资金面向上：美光以 IPO 价参与 Anthropic 260 亿美元私募，同时是其存储供应商（循环融资结构）；盘中 +6.9%。",
     "url": "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
@@ -66,11 +71,6 @@
     "date": "2026-11-16",
     "text": "资金面：芯片抛售中收跌 7.6% 至 719.02（MarketWatch 标题称板块抛售加剧），属财报 / IPO 前去风险，需求面无新负面信息。",
     "url": "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf"
-   },
-   {
-    "date": "2026-11-16",
-    "text": "资金面向下：芯片板块抛售加剧（MarketWatch 标题），盘中 −6.5%、收盘 −7.6% 至 719.02，落到 2027 前瞻区间中值下方；产业面无新消息。",
-    "url": ""
    }
   ],
   "INTC": [
@@ -134,6 +134,11 @@
   "AMZN": [
    {
     "date": "2026-11-23",
+    "text": "产业面向上：75 亿美元收购 Decart 优化栈技术与团队获确认（TechCrunch 援引 Bloomberg），并准备对外出售 Trainium，直接降低客户从 CUDA 迁移的成本。",
+    "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+   },
+   {
+    "date": "2026-11-23",
     "text": "产业面：据 Seeking Alpha 标题已收购 Decart 的芯片优化技术（细节未查证，此前为约 70 亿美元谈判），Trainium 效率与跨硬件迁移能力增强。",
     "url": "https://www.techrepublic.com/article/news-amazon-decart-ai-acquisition-talks/"
    },
@@ -151,11 +156,6 @@
     "date": "2026-11-18",
     "text": "预期面向上：Anthropic 以 83 美元定价、高于 70~78 区间，市场重估亚马逊持股价值，股价 +3.8%。",
     "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "预期面向上：Anthropic 上市后亚马逊持股 14.7%（保留的本票全转可达 23.8%，转换价约 2.09 / 5.05 美元），加上 AWS 十年超 1,000 亿美元的云支出承诺，形成股权增值 + 云收入双重敞口。",
-    "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/"
    }
   ],
   "WULF": [
@@ -522,6 +522,11 @@
   ],
   "SMCI": [
    {
+    "date": "2026-11-23",
+    "text": "基本面（价格）向上、客户关系承压：FT 称 SMCI 等在交付时要求比合同价高最多 45% 以转嫁内存成本。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
+   {
     "date": "2026-11-19",
     "text": "治理面 / 法律面偏负（待查证）：据 Tom's Hardware 标题，超微被股东起诉，指称英伟达一名高管的妻子知悉违规对华销售；今年 3 月超微已因联合创始人涉对华刑事案遭集体诉讼（Reuters）。",
     "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-sued-shareholders-over-221915002.html"
@@ -543,6 +548,11 @@
    }
   ],
   "SPCX": [
+   {
+    "date": "2026-11-23",
+    "text": "资金面 / 产业面向上：440 亿美元 GPU 优先 / 次级票据完成定价并超额认购，用于采购 Vera Rubin（2027H1 交付，地面算力）；以芯片为抵押的结构意味着轨道数据中心暂不在融资范围内。",
+    "url": "https://www.datacenterdynamics.com/en/news/apollo-and-goldman-sachs-lead-44bn-spacex-gpu-financing-deal/"
+   },
    {
     "date": "2026-11-14",
     "text": "产业面向上：Starship 第 15 次试飞上面级 Ship 42 在轨约 22.5 小时后被塔架接住，首次实现上面级回收；助推器未回收、据报道溅落前爆炸（更正此前“可控溅落”的说法）。",
@@ -601,6 +611,11 @@
    }
   ],
   "DELL": [
+   {
+    "date": "2026-11-23",
+    "text": "基本面（价格）向上、客户关系承压：FT 称 DELL 等在交付时要求比合同价高最多 45% 以转嫁内存成本。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
    {
     "date": "2026-11-23",
     "text": "情绪面向上：随英伟达复任 CEO 带动的科技股反弹盘中 +22.6%（340.90），11-24 财报前预期面先修复，积压转化仍待验证。",
@@ -905,6 +920,11 @@
   ],
   "HPE": [
    {
+    "date": "2026-11-23",
+    "text": "同业交付加价最多 45%（FT）；HPE 对 100 万美元以下报价锁价、有效期延长到 30 天，选择以价格确定性换客户。",
+    "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
+   },
+   {
     "date": "2026-11-22",
     "text": "预期面待验证：11-23 财报，订单远超可交付量，网络（Juniper）收入能否追上订单；EPS 指引在不同来源口径不一。",
     "url": "https://finviz.com/news/422868/hpes-street-beating-bar-rests-on-whether-supply-can-unlock-record-ai-backlog"
@@ -1114,7 +1134,7 @@
   "ai": [
    {
     "date": "2026-11-23",
-    "text": "英伟达复任黄仁勋，AI 板块最大的治理不确定性解除，情绪面从极端区修复；合规调查仍在。安全软件进入整合（CRWD 收购 ZS，约 439 亿美元），服务器供给瓶颈仍在内存（据报提价最多 45%，未查证）。"
+    "text": "英伟达复任黄仁勋，AI 板块最大的治理不确定性解除，情绪面从极端区修复；合规调查仍在。安全软件进入整合（CRWD 收购 ZS，约 439 亿美元），服务器供给瓶颈仍在内存（据报提价最多 45%，未查证）。 内存短缺由 FT 报道坐实为合同外加价（最多 45%）、SK 海力士预计持续到 2030 年；GPU 资产支持融资（SpaceX 440 亿美元）标准化；亚马逊买下 Decart 优化栈准备外售 Trainium——算力扩张的约束从 GPU 转向存储与资本成本。"
    },
    {
     "date": "2026-11-22",
@@ -1222,12 +1242,12 @@
  "daily": [
   {
    "date": "2026-11-23",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布；含 Summizer 新增的 17 篇）价格仍为 11-20 收盘快照。资金面得分 22（钱贵 / 紧缩），情绪面热度 25（偏悲观），VIX 盘前一度升至 30.2、处近一年 99% 分位；AI 一浪、二浪、三浪的财报条件均已满足而价格未反映（二浪今晨新触发）。【06:28 更新】周一早间最大的变化在治理面：英伟达董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，立即生效，Kress 回任 CFO（CBS、PBS/AP）；据报美方官员认定其回任不构成国家安全风险。盘前 NVDA 约 +28%~31%（各家报道口径不同），带动科技股反弹。这消除了此前“CEO 落点悬空”这一情绪与估值折价的主因，治理面由向下转为向上、情绪面边际修复；但 SEC 民事调查、加州调查、Megaspeed 案与对华出口合规答复仍未落地，合规面没有改变。另：Arm CEO Haas 续约至 2033（此前有报道称英伟达曾接触他）；CrowdStrike 以全股票约 439 亿美元收购 Zscaler，同时公布创纪录净新增 ARR 4.19 亿美元；Tom's Hardware 标题称 AI 服务器厂商因内存短缺在签约数月后提价最多 45%（细节未查证），与本周 DELL / HPE 财报“积压受存储限制”的主线同向。整体结论：AI 板块最大的单一不确定性解除，情绪面有望从极端区修复；资金面仍紧，能否持续要看合规调查与本周财报。【07:28 更新，含 Summizer 新增的 5 篇】盘中确认了早间判断：据快照 NVDA 报 166.43（+32.6%，CNBC 称为公司史上第二大单日涨幅、市值单日增加近 1 万亿美元），回到 2027 前瞻区间下沿与中值之间、距中值仍约 22%；DELL +22.6%、ARM +18.5%、AMD +6.2%，Seeking Alpha 标题称纳指盘中约 +7%。情绪面从极端悲观区快速修复、资金面得分仍低（钱贵），属于情绪驱动的急速反弹，三浪框架下 AI 一至三浪“财报已满足、价格未反映”的缺口在收窄；合规面未变，整体结论不变。另：Seeking Alpha 标题称亚马逊收购 Decart 的芯片优化技术（细节未查证，此前 WSJ 报道为约 70 亿美元的收购谈判）；一级市场 AI 客服公司 Sierra 估值半年翻倍至 300 亿美元（TechCrunch），应用层资金仍集中在可按结果计费的场景。【08:28 更新，含 Summizer 新增的 2 篇】NVDA 复任消息已在上两次更新中写入，本时段新增的主要是跟进：Seeking Alpha 标题称多家华尔街机构因复任上调评级（细节未查证），预期面跟随情绪面修复。基本面上，KLIC 11-18 公布的 FY26Q4 收入 4.103 亿美元（同比 +131%，高于指引上限）、毛利率 47.8%，FY27Q1 指引 4.1 亿 ±0.2 亿美元（公司 8-K），先进封装需求得到验证；今日随大盘 +11.9% 至 61.22。产业面：西班牙通过数据中心皇家法令，要求至少 80% 用电来自新增可再生能源并按小时匹配（DCD），欧洲把电力约束从“稀缺”写成“监管成本”。整体结论不变：情绪驱动的反弹，资金面仍紧，合规面未落地。【09:28 更新，含 Summizer 新增的 3 篇】本时段没有新的基本面事实，主要是对 NVDA 复任的跟进：TechCrunch 评论认为复任解决了“失去他”的风险，却没有降低“留下他”的风险——据其援引 Semafor，特朗普直接致电董事会推动复任；Reuters 标题称多位美国议员批评复任决定（细节未查证）；黄仁勋仍定于 12-01 在众议院三个委员会闭门作证、法务总监次日出席（Axios），参议院银行委员会此前要求的公开听证尚未排期。治理面转正已写入，但合规面 / 政治面的不确定性没有减少，反而因政治介入而更受国会关注（判断）。其余为 CRWD 收购 ZS、DELL 财报前瞻等已覆盖内容的跟进报道。整体结论不变：情绪驱动的反弹，资金面仍紧，12-01 作证是下一个合规面节点。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布；含 Summizer 新增的 17 篇）价格仍为 11-20 收盘快照。资金面得分 22（钱贵 / 紧缩），情绪面热度 25（偏悲观），VIX 盘前一度升至 30.2、处近一年 99% 分位；AI 一浪、二浪、三浪的财报条件均已满足而价格未反映（二浪今晨新触发）。【06:28 更新】周一早间最大的变化在治理面：英伟达董事会一致投票恢复黄仁勋总裁、CEO 及董事职务，立即生效，Kress 回任 CFO（CBS、PBS/AP）；据报美方官员认定其回任不构成国家安全风险。盘前 NVDA 约 +28%~31%（各家报道口径不同），带动科技股反弹。这消除了此前“CEO 落点悬空”这一情绪与估值折价的主因，治理面由向下转为向上、情绪面边际修复；但 SEC 民事调查、加州调查、Megaspeed 案与对华出口合规答复仍未落地，合规面没有改变。另：Arm CEO Haas 续约至 2033（此前有报道称英伟达曾接触他）；CrowdStrike 以全股票约 439 亿美元收购 Zscaler，同时公布创纪录净新增 ARR 4.19 亿美元；Tom's Hardware 标题称 AI 服务器厂商因内存短缺在签约数月后提价最多 45%（细节未查证），与本周 DELL / HPE 财报“积压受存储限制”的主线同向。整体结论：AI 板块最大的单一不确定性解除，情绪面有望从极端区修复；资金面仍紧，能否持续要看合规调查与本周财报。【07:28 更新，含 Summizer 新增的 5 篇】盘中确认了早间判断：据快照 NVDA 报 166.43（+32.6%，CNBC 称为公司史上第二大单日涨幅、市值单日增加近 1 万亿美元），回到 2027 前瞻区间下沿与中值之间、距中值仍约 22%；DELL +22.6%、ARM +18.5%、AMD +6.2%，Seeking Alpha 标题称纳指盘中约 +7%。情绪面从极端悲观区快速修复、资金面得分仍低（钱贵），属于情绪驱动的急速反弹，三浪框架下 AI 一至三浪“财报已满足、价格未反映”的缺口在收窄；合规面未变，整体结论不变。另：Seeking Alpha 标题称亚马逊收购 Decart 的芯片优化技术（细节未查证，此前 WSJ 报道为约 70 亿美元的收购谈判）；一级市场 AI 客服公司 Sierra 估值半年翻倍至 300 亿美元（TechCrunch），应用层资金仍集中在可按结果计费的场景。【08:28 更新，含 Summizer 新增的 2 篇】NVDA 复任消息已在上两次更新中写入，本时段新增的主要是跟进：Seeking Alpha 标题称多家华尔街机构因复任上调评级（细节未查证），预期面跟随情绪面修复。基本面上，KLIC 11-18 公布的 FY26Q4 收入 4.103 亿美元（同比 +131%，高于指引上限）、毛利率 47.8%，FY27Q1 指引 4.1 亿 ±0.2 亿美元（公司 8-K），先进封装需求得到验证；今日随大盘 +11.9% 至 61.22。产业面：西班牙通过数据中心皇家法令，要求至少 80% 用电来自新增可再生能源并按小时匹配（DCD），欧洲把电力约束从“稀缺”写成“监管成本”。整体结论不变：情绪驱动的反弹，资金面仍紧，合规面未落地。【09:28 更新，含 Summizer 新增的 3 篇】本时段没有新的基本面事实，主要是对 NVDA 复任的跟进：TechCrunch 评论认为复任解决了“失去他”的风险，却没有降低“留下他”的风险——据其援引 Semafor，特朗普直接致电董事会推动复任；Reuters 标题称多位美国议员批评复任决定（细节未查证）；黄仁勋仍定于 12-01 在众议院三个委员会闭门作证、法务总监次日出席（Axios），参议院银行委员会此前要求的公开听证尚未排期。治理面转正已写入，但合规面 / 政治面的不确定性没有减少，反而因政治介入而更受国会关注（判断）。其余为 CRWD 收购 ZS、DELL 财报前瞻等已覆盖内容的跟进报道。整体结论不变：情绪驱动的反弹，资金面仍紧，12-01 作证是下一个合规面节点。【10:28 更新，含 Summizer 新增的 3 篇】三件事都在产业面，方向分化：① Apollo 与高盛确认完成 440 亿美元 SpaceX GPU 优先 / 次级票据定价（超额认购，BlackRock、KKR 等为基石），用于采购英伟达 Vera Rubin、2027 年上半年交付、部署于地面算力（DCD），两家称为史上最大 GPU 融资——信用市场愿意为算力加杠杆，对 NVDA 2027 年需求是一笔可见订单，资金面在私募信贷层面并不紧。② 亚马逊以 75 亿美元收购 Decart 的优化栈技术与核心团队（TechCrunch 援引 Bloomberg），并准备对外出售 Trainium——此前“细节未查证”的标题得到确认，CUDA 迁移成本这一护城河受到更直接的挑战。③ 据 DCD 援引 FT，DELL、联想、SMCI、HPE 在交付时要求比合同价高最多 45%，GPU 服务器近期涨 20%~30%、CPU 节点涨两倍，SK 海力士把内存短缺缓解时间从 2028 年推迟到 2030 年——存储是瓶颈、整机厂议价力上升，但下游项目预算承压。整体结论不变：情绪驱动的反弹，资金面（宏观）仍紧，合规面待 12-01 作证。",
    "sectors": {
-    "ai": "【06:28】治理面转正：英伟达复任黄仁勋（董事会一致投票），盘前约 +30%，科技股普涨；合规面（SEC / 加州 / Megaspeed / 财政部答复）仍待落地。CrowdStrike 439 亿美元全股票收购 Zscaler，安全软件加速整合；据 Tom's Hardware 标题，AI 服务器因内存短缺提价最多 45%（细节未查证），供给瓶颈仍在存储。基础设施侧：Oracle 重申 OpenAI 项目融资已足、Firmus 拟发 15 亿美元债、KKR 据报拟以最高 100 亿美元控股 EdgeCore、Vertiv 推出中压 UPS——资本仍在流入算力与数据中心。【07:28】盘中 NVDA +32.6%、DELL +22.6%、ARM +18.5%，情绪面修复幅度超出早间预期；亚马逊据 Seeking Alpha 标题收购 Decart 优化技术（细节未查证），自研芯片 + 跨硬件迁移软件是降低对英伟达依赖的方向；Sierra 估值 300 亿美元、约 75 倍年化收入，应用层一级市场预期已满。【08:28】KLIC FY26Q4 收入 +131%、FY27Q1 指引持平于约 4.1 亿美元，先进封装（TCB）放量得到财报验证；西班牙数据中心法令要求 80% 新增可再生能源 + 小时级匹配，欧洲数据中心的电力成本被监管重新定价，选址与项目经济性承压（产业面边际向下，限于欧洲）。【09:28】NVDA 复任后的政治面跟进：据报特朗普直接介入董事会、议员批评复任、12-01 众议院闭门作证照常——合规面风险未随复任消失。另有 DCD 长文梳理海上 / 水下数据中心（中国 HiCloud 已运行、规划 500MW 园区），属于电力与冷却约束下的选址探索，不涉及上市公司基本面。",
+    "ai": "【06:28】治理面转正：英伟达复任黄仁勋（董事会一致投票），盘前约 +30%，科技股普涨；合规面（SEC / 加州 / Megaspeed / 财政部答复）仍待落地。CrowdStrike 439 亿美元全股票收购 Zscaler，安全软件加速整合；据 Tom's Hardware 标题，AI 服务器因内存短缺提价最多 45%（细节未查证），供给瓶颈仍在存储。基础设施侧：Oracle 重申 OpenAI 项目融资已足、Firmus 拟发 15 亿美元债、KKR 据报拟以最高 100 亿美元控股 EdgeCore、Vertiv 推出中压 UPS——资本仍在流入算力与数据中心。【07:28】盘中 NVDA +32.6%、DELL +22.6%、ARM +18.5%，情绪面修复幅度超出早间预期；亚马逊据 Seeking Alpha 标题收购 Decart 优化技术（细节未查证），自研芯片 + 跨硬件迁移软件是降低对英伟达依赖的方向；Sierra 估值 300 亿美元、约 75 倍年化收入，应用层一级市场预期已满。【08:28】KLIC FY26Q4 收入 +131%、FY27Q1 指引持平于约 4.1 亿美元，先进封装（TCB）放量得到财报验证；西班牙数据中心法令要求 80% 新增可再生能源 + 小时级匹配，欧洲数据中心的电力成本被监管重新定价，选址与项目经济性承压（产业面边际向下，限于欧洲）。【09:28】NVDA 复任后的政治面跟进：据报特朗普直接介入董事会、议员批评复任、12-01 众议院闭门作证照常——合规面风险未随复任消失。另有 DCD 长文梳理海上 / 水下数据中心（中国 HiCloud 已运行、规划 500MW 园区），属于电力与冷却约束下的选址探索，不涉及上市公司基本面。【10:28】SpaceX 440 亿美元 GPU 资产支持票据定价完成（Vera Rubin，2027H1 交付，地面算力），GPU 抵押融资从个案走向标准化；亚马逊 75 亿美元收购 Decart 优化栈确认、Trainium 将对外销售；FT 称服务器厂商在交付时加价最多 45%、SK 海力士预计短缺持续到 2030 年——产业面：需求与融资向上，成本端（内存）向上传导。",
     "quantum": "【06:28】只有一级市场与海外个案：Rotonium 称发布室温量子计算机、planqc 扩展至英国剑桥、Q.security 获 1,150 万美元融资、微软在以色列组建后量子安全团队；不涉及上市公司基本面。【09:28】CyberRidge（一级市场）获欧盟 EIC 联合资助，“光子层”传输安全，与 QKD / PQC 并列的量子安全路线；不涉及上市公司。",
     "robotics": "无重要新信息（机器人零部件公司 Coprod 获 600 万美元融资，ABB 以 26.5 亿美元收购 Ziehl-Abegg，均为个案）",
-    "aerospace": "无重要新信息（Barron's 标题称 SpaceX 股价因马斯克谈 Starlink 引发与特斯拉合并的猜测而反弹，细节未查证）",
+    "aerospace": "无重要新信息（Barron's 标题称 SpaceX 股价因马斯克谈 Starlink 引发与特斯拉合并的猜测而反弹，细节未查证）【10:28】SpaceX 完成 440 亿美元 GPU 融资定价（DCD），用途为地面算力而非轨道数据中心，太空数据中心仍是远期叙事。",
     "autonomous": "无重要新信息"
    },
    "watch": [
@@ -1261,11 +1281,19 @@
     },
     {
      "t": "AMZN",
-     "why": "07:28：据 Seeking Alpha 标题收购 Decart 芯片优化技术（细节未查证）；现价 255.69 位于 2027 前瞻区间 133.0/209.29/330.6 的中值~上沿。"
+     "why": "07:28：据 Seeking Alpha 标题收购 Decart 芯片优化技术（细节未查证）；现价 255.69 位于 2027 前瞻区间 133.0/209.29/330.6 的中值~上沿。 【10:28】75 亿美元收购 Decart 优化栈已确认（TechCrunch / Bloomberg），Trainium 准备对外销售；现价 258.72 位于 2027 前瞻区间中值 211.77 与上沿 334.52 之间。"
     },
     {
      "t": "KLIC",
      "why": "FY26Q4 收入 4.103 亿美元（+131%）、毛利率 47.8%，FY27Q1 指引 4.1 亿 ±0.2 亿；现价 61.22（今日 +11.9%）处 2027 前瞻区间下沿 50.06 与中值 69.72 之间，距中值约 12%。"
+    },
+    {
+     "t": "SPCX",
+     "why": "440 亿美元 GPU 票据定价完成（Apollo / 高盛牵头），采购 Vera Rubin、2027H1 交付；现价 136.04（+6.5%）位于 2027 前瞻区间下沿与中值 160.45 之间、距中值约 18%。"
+    },
+    {
+     "t": "MU",
+     "why": "FT 称服务器厂商因内存短缺交付时加价最多 45%，SK 海力士预计短缺持续到 2030 年；现价 703.45（+18.3%）接近 2027 前瞻中值 728.87（距约 4%）。"
     }
    ],
    "sources": [
@@ -1312,6 +1340,18 @@
     [
      "Axios：黄仁勋同意 12-01 赴国会作证",
      "https://axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates"
+    ],
+    [
+     "DCD：Apollo 与高盛牵头 440 亿美元 SpaceX GPU 融资",
+     "https://www.datacenterdynamics.com/en/news/apollo-and-goldman-sachs-lead-44bn-spacex-gpu-financing-deal/"
+    ],
+    [
+     "TechCrunch：亚马逊 75 亿美元收购 Decart 优化技术",
+     "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"
+    ],
+    [
+     "DCD（援引 FT）：AI 服务器厂商因内存短缺加价最多 45%",
+     "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
     ]
    ]
   },
@@ -3531,7 +3571,7 @@
    ]
   }
  ],
- "updated": "2026-11-23T09:28",
+ "updated": "2026-11-23T10:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",
