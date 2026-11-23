@@ -1310,3 +1310,10 @@
 {"ts": "2026-11-23T16:18:16+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
 {"ts": "2026-11-23T16:18:16+00:00", "title": "🚀 BDC 单日 +8.0%", "body": "Belden Inc 收于 100.21。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-23T16:18:16+00:00", "title": "🚀 MYRG 单日 +8.3%", "body": "MYR Group, Inc. 收于 268.19。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T16:42:57+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T16:42:58+00:00", "title": "🔴 PAG 进入「回调风险」", "body": "Penske Automotive Group, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 91% 位置；偏离200日线 +16%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T17:10:56+00:00", "title": "🟢 FLR 进入「关注买点」", "body": "Fluor Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 45；处于52周区间的 36% 位置；偏离200日线 -7%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T17:10:57+00:00", "title": "🔴 GSAT 进入「回调风险」", "body": "Globalstar, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 61；处于52周区间的 99% 位置；偏离200日线 +11%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T17:10:57+00:00", "title": "🚀 NNDM 单日 +8.5%", "body": "Nano Dimension Ltd. 收于 1.15。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T17:10:57+00:00", "title": "🚀 TSAT 单日 +9.2%", "body": "Telesat Corporation 收于 40.51。信号：中性。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T17:15:44+00:00", "title": "🚀 FIVN 单日 +9.0%", "body": "Five9, Inc. 收于 24.57。信号：观察。", "priority": "low", "sent": true}
