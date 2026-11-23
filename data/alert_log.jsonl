@@ -1324,3 +1324,11 @@
 {"ts": "2026-11-23T18:11:39+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
 {"ts": "2026-11-23T18:11:39+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
 {"ts": "2026-11-23T18:15:49+00:00", "title": "🟢 MDB 进入「关注买点」", "body": "MongoDB, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 36% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T18:28:58+00:00", "title": "📝 研判更新 10:28", "body": "SpaceX 440 亿美元 GPU 票据定价完成（采购 Vera Rubin，2027H1 交付）；亚马逊 75 亿美元收购 Decart 优化栈获确认、Trainium 将外售；FT 称服务器厂商因内存短缺交付加价最多 45%。涉及：SPCX NVDA AMZN MU DELL SMCI HPE", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T18:41:44+00:00", "title": "🟢 DLR 进入「关注买点」", "body": "Digital Realty Trust, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 43% 位置；偏离200日线 -7%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T18:41:45+00:00", "title": "🌊 机器人 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T18:41:45+00:00", "title": "🔴 J 进入「回调风险」", "body": "Jacobs Solutions Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 97% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T18:41:45+00:00", "title": "🚀 ATRO 单日 +8.1%", "body": "Astronics Corporation 收于 59.58。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T19:11:17+00:00", "title": "🌊 机器人 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T19:11:18+00:00", "title": "🚀 BWA 单日 +8.0%", "body": "BorgWarner Inc. 收于 50.72。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T19:16:59+00:00", "title": "🔴 J 进入「回调风险」", "body": "Jacobs Solutions Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 97% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
