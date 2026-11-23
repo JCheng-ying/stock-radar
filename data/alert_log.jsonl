@@ -1262,3 +1262,29 @@
 {"ts": "2026-11-23T11:16:00+00:00", "title": "😱 VIX 29.8：恐慌升温(≥22)", "body": "VIX 29.8，处于近一年 99% 分位——恐慌升温", "priority": "high", "sent": true}
 {"ts": "2026-11-23T12:17:04+00:00", "title": "😱 VIX 30.2：极度恐慌(≥30)", "body": "VIX 30.2，处于近一年 99% 分位——极度恐慌，利空大概率已充分定价", "priority": "high", "sent": true}
 {"ts": "2026-11-23T14:15:18+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T14:29:05+00:00", "title": "📝 研判更新 06:28", "body": "英伟达董事会一致复任黄仁勋，盘前约 +30%，治理面转正、合规调查仍待落地；CrowdStrike 全股票约 439 亿美元收购 Zscaler。涉及：NVDA CRWD ZS ARM", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T14:43:15+00:00", "title": "🔄 数据已追上，期间共 197 条变化", "body": "🚀 185 条：AAOI、ACHR、ACLS、ACMR、ADI、AEHR、AEIS、AEVA、AIRG、ALAB、ALGM、ALNT…\n🔴 6 条：FROG、MANH、OKTA、S、U、XMTR\n💥 4 条：GETY、KYCCF、RNECY、YASKY\n🌊 1 条：AI\n😱 1 条：VIX\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:12:55+00:00", "title": "📊 APD 财报更新", "body": "Air Products and Chemicals, Inc 截至 2026-09-30 的季度：收入同比 +12%；毛利率 30.5%（同比 -1.7pp）；EBITDA 利润率 34.1%；EPS 较预期 -0%；RPO 同比 +8%；当前信号：趋势中（基本面 72 分）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:55+00:00", "title": "🟢 ALNT 进入「关注买点」", "body": "Allient Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 40% 位置；偏离200日线 -7%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:56+00:00", "title": "🟢 CVGI 进入「关注买点」", "body": "Commercial Vehicle Group, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 46；处于52周区间的 38% 位置；偏离200日线 -15%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:56+00:00", "title": "🟢 DCO 进入「关注买点」", "body": "Ducommun Incorporated：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 41；处于52周区间的 45% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:56+00:00", "title": "🟢 DLR 进入「关注买点」", "body": "Digital Realty Trust, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 43% 位置；偏离200日线 -7%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:56+00:00", "title": "🟢 ROG 进入「关注买点」", "body": "Rogers Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 44% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:57+00:00", "title": "🟢 TEM 进入「关注买点」", "body": "Tempus AI, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 38% 位置；偏离200日线 +0%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:57+00:00", "title": "🟢 TMUS 进入「关注买点」", "body": "T-Mobile US, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 51；处于52周区间的 24% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:57+00:00", "title": "🌊 自动驾驶 一浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、毛利率（产品力）、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:12:58+00:00", "title": "🔴 R 进入「回调风险」", "body": "Ryder System, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 59；处于52周区间的 98% 位置；偏离200日线 +16%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:12:58+00:00", "title": "🔴 STE 进入「回调风险」", "body": "STERIS plc (Ireland)：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 64；处于52周区间的 87% 位置；偏离200日线 +15%", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:12:58+00:00", "title": "📅 CRWD 今天发财报", "body": "CrowdStrike Holdings, Inc. 2026-11-23，一致预期 EPS 0.36。当前信号：趋势中，情绪热度 51。", "priority": "normal", "sent": true}
+{"ts": "2026-11-23T15:12:58+00:00", "title": "还有 15 条更新", "body": "🚀 AGLT 单日 +10.4%\n🚀 AI 单日 +8.6%\n🚀 APH 单日 +8.6%\n🚀 ASMIY 单日 +10.2%\n🚀 CDNS 单日 +8.4%\n💥 CRWD 单日 -9.4%\n🚀 DDOG 单日 +8.5%\n🚀 ESTC 单日 +9.0%\n🚀 IFNNY 单日 +9.3%\n🚀 MDB 单日 +8.3%\n🚀 MTRN 单日 +8.6%\n🚀 NET 单日 +9.0%\n🚀 OKTA 单日 +9.0%\n🚀 ON 单日 +8.6%\n🚀 TLN 单日 +8.3%", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:50+00:00", "title": "🌊 自动驾驶 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-23T15:18:50+00:00", "title": "🚀 AAON 单日 +8.1%", "body": "AAON, Inc. 收于 81.28。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:50+00:00", "title": "🚀 APP 单日 +8.2%", "body": "Applovin Corporation 收于 376.67。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:50+00:00", "title": "🚀 BB 单日 +8.9%", "body": "BlackBerry Limited 收于 8.46。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:51+00:00", "title": "🚀 CRS 单日 +8.2%", "body": "Carpenter Technology Corporatio 收于 274.73。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:51+00:00", "title": "🚀 HSAI 单日 +8.5%", "body": "Hesai Group 收于 12.83。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:51+00:00", "title": "🚀 INDI 单日 +8.9%", "body": "indie Semiconductor, Inc. 收于 1.65。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 INVZ 单日 +10.0%", "body": "Innoviz Technologies Ltd. 收于 0.11。信号：弱势。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 LFUS 单日 +8.1%", "body": "Littelfuse, Inc. 收于 386.6。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 NTAP 单日 +8.2%", "body": "NetApp, Inc. 收于 170.66。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-23T15:18:52+00:00", "title": "🚀 RBRK 单日 +8.1%", "body": "Rubrik, Inc. 收于 115.38。信号：趋势中。", "priority": "low", "sent": true}
