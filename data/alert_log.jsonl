@@ -1388,3 +1388,10 @@
 {"ts": "2026-11-24T16:16:22+00:00", "title": "💥 SATL 单日 -8.3%", "body": "Satellogic Inc. 收于 2.42。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-24T16:16:22+00:00", "title": "💥 UMAC 单日 -8.8%", "body": "Unusual Machines, Inc. 收于 8.67。信号：观察。", "priority": "low", "sent": true}
 {"ts": "2026-11-24T16:29:16+00:00", "title": "📝 研判更新 08:29", "body": "Megaspeed 及子公司正式列入实体清单，NVDA −8.4%、HPE −15.9%、VRT −9.4%，AI 反弹大部分回吐；Amentum 财报双超 +17%。涉及：NVDA HPE VRT ASTS AMTM", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T16:40:32+00:00", "title": "🔴 MRNA 进入「回调风险」", "body": "Moderna, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 53；处于52周区间的 83% 位置；偏离200日线 +121%", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T16:40:33+00:00", "title": "💥 JOBY 单日 -8.2%", "body": "Joby Aviation, Inc. 收于 3.54。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T17:11:03+00:00", "title": "🟢 LFUS 进入「关注买点」", "body": "Littelfuse, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 47% 位置；偏离200日线 -11%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T17:11:03+00:00", "title": "🟢 NTNX 进入「关注买点」", "body": "Nutanix, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 33；处于52周区间的 51% 位置；偏离200日线 +2%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T17:11:03+00:00", "title": "💥 MVIS 单日 -8.3%", "body": "Microvision, Inc. 收于 0.84。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T17:15:04+00:00", "title": "🟢 ZM 进入「关注买点」", "body": "Zoom Communications, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 44；处于52周区间的 38% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T17:15:04+00:00", "title": "🔴 PAG 进入「回调风险」", "body": "Penske Automotive Group, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 91% 位置；偏离200日线 +15%", "priority": "normal", "sent": true}
