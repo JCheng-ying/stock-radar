@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-23",
+    "text": "合规面：据 Reuters 标题，新加坡在美方列入黑名单后对 Megaspeed 展开调查、同批还有一家阿里巴巴子公司（细节未查证）——转运地开始配合，渠道收紧方向偏负；亚洲供应链同步跟涨，情绪面修复外溢。",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN3FSU3Z2eG9hMGxOaUJ3VkptMG9CbEx0cHhoQzZ6RC1uRXV0OWtRa3k1VzYtQkhMRUVBVzE5QlAwSktWS1IzN2o3SFRWalVsQ1UzMkNkYXM0TEdJUzhYMTU2VjNtdVkyWTBpRGVlbUMxREdoS1ZmeUUwbElCcF9CSmxHVDBhdVJNM3FfOGVNU1YwUEpwLUw0MXVBUUdKbDF5VjFHVHY5c0FGcFNxWGZCbQ?oc=5"
+   },
+   {
+    "date": "2026-11-23",
     "text": "合规面：据 CNBC 标题，Megaspeed 已被列入贸易黑名单（细节未查证），此前来源分歧收敛；英伟达 2025 年 6 月已自行将其列入禁售名单，基本面直接影响有限，渠道合规风险方向偏负不变。",
     "url": "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-23",
     "text": "合规面 / 政治面未改善：据 TechCrunch（援引 Semafor）特朗普直接致电董事会推动复任，议员批评复任决定（Reuters 标题，细节未查证）；12-01 众议院三委员会闭门作证照常，国会关注度上升。治理面转正不变。",
     "url": "https://techcrunch.com/2026/11/23/jensen-huang-isnt-out-of-the-woods-yet/"
-   },
-   {
-    "date": "2026-11-23",
-    "text": "治理面由向下转为向上：董事会一致投票复任黄仁勋（立即生效），Kress 回任 CFO，据报美方认定无国家安全风险；盘前约 +30%，情绪面修复。合规面（SEC / 加州 / Megaspeed / 财政部答复）未变。 盘中确认 +32.6% 至 166.43，仍低于 2027 前瞻中值约 22%。",
-    "url": "https://www.cbsnews.com/news/nvidia-reinstates-jensen-huang-ceo/"
    }
   ],
   "ANET": [
@@ -1282,6 +1282,10 @@
   ],
   "autonomous": [
    {
+    "date": "2026-11-23",
+    "text": "浪位：一浪、二浪转为“财报已改善、价格未反映”（收入增速、毛利率、EBITDA 利润率达标；相对强度、广度未达标），基本面先行、价格未确认。"
+   },
+   {
     "date": "2026-11-17",
     "text": "加州 DMV 正式以“迫在眉睫的公共安全危险”禁止 Waymo 上州内高速，Waymo 全美暂停高速载客——此前标注“细节未查证”的消息已被多家媒体证实，监管面由质询升级为运营限制。"
    },
@@ -1299,13 +1303,13 @@
  "daily": [
   {
    "date": "2026-11-23",
-   "market": "资金面得分 23（钱贵 / 紧缩：10 年期美债 4.92%、一年 +81bp，美元指数一年 +4.2%），情绪面热度 29（偏悲观；VIX 26.6、近一年 96% 分位且期限结构倒挂，CNN 恐贪 17 极度恐惧），两项读数都还在悲观区。今天的主线是治理面：英伟达董事会复任黄仁勋，NVDA 收 165.05（+31.5%，MarketWatch 标题称为美股史上最大单日市值增幅），快照中人工确认公司里约 250 家日涨幅 ≥ 6%，几乎全部集中在 AI 一浪（芯片、光模块、存储、服务器）——这是情绪面从极端区的急速修复，而不是资金面转松。浪位上，AI 一浪、三浪仍是“财报已改善、价格未反映”，二浪早间短暂触发后回到“尚未启动”；航天一、二浪和机器人一浪同样处于“财报已改善、价格未反映”。基本面上，HPE、Semtech、Zoom、Symbotic 当晚财报都超出自身指引，但 HPE 毛利率环比 −210bp、Symbotic 一季度指引偏弱，“需求强、利润率 / 下季节奏有分歧”是共同特征；合规面反向收紧：Semafor 报道商务部将把 Megaspeed 列入实体清单（Fox Business 称已列入，MLQ 称商务部尚未确认，来源有分歧）。整体结论：AI 板块最大的单一不确定性（CEO 落点）解除、基本面继续上修，但资金面仍紧、合规面在“人放行、渠道收紧”，下一个节点是 11-24 DELL 财报与 12-01 黄仁勋国会作证。（本条为当日完整研判，整合了 06:28~13:28 的增量，含前一时段后 Summizer 新增的 5 篇。）【18:25 更新】盘后两条细节补充，整体结论不变：据 MarketWatch 标题，HPE 交出史上最强增长后股价转跌（细节未查证；常规时段收 48.02、+17.4%），预期面上市场在消化毛利率环比 −210bp 与供给约束；据 Seeking Alpha 标题，Semtech 四季度指引为收入 4.8 亿美元、EPS 1.33，并把数据中心增长框架延伸到 FY2028，基本面上修得到确认。另有 Seeking Alpha 评论文章把美光降为“卖出”、称或为周期下行起点（观点文章，属预期面分歧，不改变本站对内存短缺的判断）。【18:28 更新，含 Summizer 新增的 2 篇】HPE 盘后转跌一事已在 18:25 写入；新增一条航天产业面细节：Northrop 第六次为 Cygnus 订购 Falcon 9，自家 Antares 330 仍无首飞时间表，中型发射班次继续集中于 SpaceX。属产业面小幅确认，整体结论不变。【19:28 更新】合规面细节：据 CNBC 标题，美国已把 Megaspeed 列入贸易黑名单（细节未查证）；此前 Fox Business 称已列入、MLQ 称商务部未确认，11 月中旬多家媒体（FT、Politico）还报道商务部在拖延，CNBC 这条若属实则分歧收敛为“已列入”。这是早间已写入的“渠道收紧”方向的落地，合规面继续偏负，但 NVDA 已明确早在 2025 年 6 月自行将其列入禁售名单，基本面直接影响有限；整体结论不变。另：WeRide（WRD，非人工确认公司）三季报数据入库，收入同比 +88%、毛利率 43.0%（同比 +10pp），EPS 低于预期约 5%，属自动驾驶板块基本面小幅确认。",
+   "market": "资金面得分 23（钱贵 / 紧缩：10 年期美债 4.92%、一年 +81bp，美元指数一年 +4.2%），情绪面热度 29（偏悲观；VIX 26.6、近一年 96% 分位且期限结构倒挂，CNN 恐贪 17 极度恐惧），两项读数都还在悲观区。今天的主线是治理面：英伟达董事会复任黄仁勋，NVDA 收 165.05（+31.5%，MarketWatch 标题称为美股史上最大单日市值增幅），快照中人工确认公司里约 250 家日涨幅 ≥ 6%，几乎全部集中在 AI 一浪（芯片、光模块、存储、服务器）——这是情绪面从极端区的急速修复，而不是资金面转松。浪位上，AI 一浪、三浪仍是“财报已改善、价格未反映”，二浪早间短暂触发后回到“尚未启动”；航天一、二浪和机器人一浪同样处于“财报已改善、价格未反映”。基本面上，HPE、Semtech、Zoom、Symbotic 当晚财报都超出自身指引，但 HPE 毛利率环比 −210bp、Symbotic 一季度指引偏弱，“需求强、利润率 / 下季节奏有分歧”是共同特征；合规面反向收紧：Semafor 报道商务部将把 Megaspeed 列入实体清单（Fox Business 称已列入，MLQ 称商务部尚未确认，来源有分歧）。整体结论：AI 板块最大的单一不确定性（CEO 落点）解除、基本面继续上修，但资金面仍紧、合规面在“人放行、渠道收紧”，下一个节点是 11-24 DELL 财报与 12-01 黄仁勋国会作证。（本条为当日完整研判，整合了 06:28~13:28 的增量，含前一时段后 Summizer 新增的 5 篇。）【18:25 更新】盘后两条细节补充，整体结论不变：据 MarketWatch 标题，HPE 交出史上最强增长后股价转跌（细节未查证；常规时段收 48.02、+17.4%），预期面上市场在消化毛利率环比 −210bp 与供给约束；据 Seeking Alpha 标题，Semtech 四季度指引为收入 4.8 亿美元、EPS 1.33，并把数据中心增长框架延伸到 FY2028，基本面上修得到确认。另有 Seeking Alpha 评论文章把美光降为“卖出”、称或为周期下行起点（观点文章，属预期面分歧，不改变本站对内存短缺的判断）。【18:28 更新，含 Summizer 新增的 2 篇】HPE 盘后转跌一事已在 18:25 写入；新增一条航天产业面细节：Northrop 第六次为 Cygnus 订购 Falcon 9，自家 Antares 330 仍无首飞时间表，中型发射班次继续集中于 SpaceX。属产业面小幅确认，整体结论不变。【19:28 更新】合规面细节：据 CNBC 标题，美国已把 Megaspeed 列入贸易黑名单（细节未查证）；此前 Fox Business 称已列入、MLQ 称商务部未确认，11 月中旬多家媒体（FT、Politico）还报道商务部在拖延，CNBC 这条若属实则分歧收敛为“已列入”。这是早间已写入的“渠道收紧”方向的落地，合规面继续偏负，但 NVDA 已明确早在 2025 年 6 月自行将其列入禁售名单，基本面直接影响有限；整体结论不变。另：WeRide（WRD，非人工确认公司）三季报数据入库，收入同比 +88%、毛利率 43.0%（同比 +10pp），EPS 低于预期约 5%，属自动驾驶板块基本面小幅确认。【20:28 更新】三条增量，整体结论不变：① 浪位——快照重算后，自动驾驶一浪、二浪由“尚未启动”变为“财报已改善、价格未反映”（收入增速、毛利率、EBITDA 利润率三项基本面检查达标），但一浪篮子近 3 个月 −35%、仅 12% 的公司站上 50 日线，属基本面先行、价格面未确认；② 合规面——据 Reuters 标题，美方同批还把一家阿里巴巴子公司列入黑名单，新加坡在美方列入后对 Megaspeed 展开调查（细节均未查证），“渠道收紧”从美国单边扩展到转运地配合，方向继续偏负；③ 情绪面——据 Seeking Alpha 标题，黄仁勋复任后台积电、SK 海力士等亚洲科技股周二早盘跟涨（细节未查证），AI 一浪的情绪修复在向亚洲供应链外溢。",
    "sectors": {
-    "ai": "治理面转正、合规面收紧：NVDA 复任后，Megaspeed 据报将被列入实体清单（两地调查其是否把英伟达芯片转运到中国，公司否认），监管重点从“卖给谁”前移到“中间商是谁”，英伟达海外渠道风险上升（判断）。基本面继续上修：HPE FY27 收入增速指引 +27%~35%，Semtech 季度收入 4.23 亿美元（+58%）、下季指引约 4.8 亿美元，数据中心连接芯片放量；成本端内存涨价向整机传导（FT 称最多 +45%）。安全软件进入平台化整合：CRWD 全股票收购 ZS，OpenAI 与思科开源运行时防护 Shirudo、Anthropic 发布可按策略自动批准代码的 Claude Ship——AI agent 让“审”和“防”也走向机器速度，产业面利好平台型安全厂商、对单品类厂商是逆风（判断）。【18:25】HPE 盘后据报转跌（MarketWatch 标题，细节未查证），“需求强、利润率有分歧”的特征在服务器端延续；Semtech 四季度 EPS 指引 1.33、数据中心框架延伸到 FY2028（Seeking Alpha 标题）。【19:28】Megaspeed 列入黑名单据 CNBC 标题已落地（细节未查证），渠道合规风险从“据报”变为“已发生”，方向与早间判断一致。",
+    "ai": "治理面转正、合规面收紧：NVDA 复任后，Megaspeed 据报将被列入实体清单（两地调查其是否把英伟达芯片转运到中国，公司否认），监管重点从“卖给谁”前移到“中间商是谁”，英伟达海外渠道风险上升（判断）。基本面继续上修：HPE FY27 收入增速指引 +27%~35%，Semtech 季度收入 4.23 亿美元（+58%）、下季指引约 4.8 亿美元，数据中心连接芯片放量；成本端内存涨价向整机传导（FT 称最多 +45%）。安全软件进入平台化整合：CRWD 全股票收购 ZS，OpenAI 与思科开源运行时防护 Shirudo、Anthropic 发布可按策略自动批准代码的 Claude Ship——AI agent 让“审”和“防”也走向机器速度，产业面利好平台型安全厂商、对单品类厂商是逆风（判断）。【18:25】HPE 盘后据报转跌（MarketWatch 标题，细节未查证），“需求强、利润率有分歧”的特征在服务器端延续；Semtech 四季度 EPS 指引 1.33、数据中心框架延伸到 FY2028（Seeking Alpha 标题）。【19:28】Megaspeed 列入黑名单据 CNBC 标题已落地（细节未查证），渠道合规风险从“据报”变为“已发生”，方向与早间判断一致。【20:28】据 Reuters 标题，同批被列入黑名单的还有一家阿里巴巴子公司，新加坡随后对 Megaspeed 展开调查（细节未查证）；据 Seeking Alpha 标题，台积电、SK 海力士等亚洲科技股跟涨（细节未查证）。",
     "quantum": "无重要新信息（QuEra 参与能源部 1,200 万美元 AI 纠错项目已在早间写入；量子板块随科技股普涨，RGTI +13%、IONQ +13%、QBTS +12%，属情绪面跟随，无基本面变化）。",
     "robotics": "Symbotic FY26 收入 28 亿美元（+25%）、首个全年 GAAP 盈利（净利 1.33 亿美元），四季度收入 7.78 亿美元落在自身指引 7.6~7.8 亿内；但一季度收入指引偏弱，盘后约 −2.4%（Investing.com）。基本面向上、预期面短期向下；机器人一浪仍是“财报已改善、价格未反映”。",
     "aerospace": "无重要新信息。弗吉尼亚、俄勒冈等州就 Grok 生成违法图像起诉 SpaceX（Reuters 标题，细节未查证），属法律面个案；SpaceX 440 亿美元 GPU 票据用于地面算力已在早间写入。【18:28】据 NASASpaceflight，Northrop 为 Cygnus 第六次订购 Falcon 9（NG-25 计划 11-29 发射），Antares 330 只称“有意义的进展”、未给首飞目标；产业面上中型发射对 SpaceX 的集中度进一步确认。NOC 收 542.14（+1.5%）。",
-    "autonomous": "无重要新信息（Waymo 因洪水预警暂停湾区服务，属运营个案）。【19:28】WeRide 三季度收入同比 +88%、毛利率 43.0%（同比 +10pp），EBITDA 利润率 −114%，规模化在推进但仍深度亏损。"
+    "autonomous": "无重要新信息（Waymo 因洪水预警暂停湾区服务，属运营个案）。【19:28】WeRide 三季度收入同比 +88%、毛利率 43.0%（同比 +10pp），EBITDA 利润率 −114%，规模化在推进但仍深度亏损。【20:28】浪位：一浪、二浪由“尚未启动”转为“财报已改善、价格未反映”（基本面三项达标，相对强度与广度仍不达标），属基本面先行。"
    },
    "watch": [
     {
@@ -1437,6 +1441,18 @@
     [
      "U.S. adds Megaspeed to trade blacklist over export control concerns amid Nvidia controversy (CNBC)",
      "https://www.cnbc.com/2026/11/24/us-adds-megaspeed-to-trade-blacklist-over-export-control-concerns-.html"
+    ],
+    [
+     "Reuters（经 Google 新闻）：美方把阿里巴巴子公司与 Megaspeed 列入黑名单",
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ3ZUR1ZCZXpLTkNjVFA5cm1ueHd6VjlHUzZSZWUtNE40NndKNFNWQVJqV3k4WHA5SU5BQTBvWmw5dlN3S1RZZHQ5WG5LRGhWMDFxUk83RjdGV0dqWUtjU3c4RlVkdkFBVlhfbXdiVm1WWW44dEtpUXY0Yjk0ZndBN2w3MURmNkVJLUlvM3ZpSmRfV3RTeUJYNHQtS29HaUFwejF2SlVtR2lpY0NqX3BYMg?oc=5"
+    ],
+    [
+     "Reuters（经 Google 新闻）：新加坡调查 Megaspeed",
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN3FSU3Z2eG9hMGxOaUJ3VkptMG9CbEx0cHhoQzZ6RC1uRXV0OWtRa3k1VzYtQkhMRUVBVzE5QlAwSktWS1IzN2o3SFRWalVsQ1UzMkNkYXM0TEdJUzhYMTU2VjNtdVkyWTBpRGVlbUMxREdoS1ZmeUUwbElCcF9CSmxHVDBhdVJNM3FfOGVNU1YwUEpwLUw0MXVBUUdKbDF5VjFHVHY5c0FGcFNxWGZCbQ?oc=5"
+    ],
+    [
+     "Seeking Alpha：黄仁勋复任后亚洲科技股上涨",
+     "https://seekingalpha.com/symbol/NVDA/news?source=feed_symbol_NVDA"
     ]
    ]
   },
@@ -3656,7 +3672,7 @@
    ]
   }
  ],
- "updated": "2026-11-23T19:28",
+ "updated": "2026-11-23T20:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",
