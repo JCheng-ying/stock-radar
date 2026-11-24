@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-24",
+    "text": "合规面：Megaspeed 列入实体清单但据报道未适用 FDPR 条款，实际收紧力度弱于标题；国会两党对复任的反弹延续，治理折价仍在。",
+    "url": "https://siliconangle.com/2026/11/24/congress-scrutinizes-jensen-huangs-return-as-megaspeed-restrictions-raise-questions/"
+   },
+   {
+    "date": "2026-11-24",
     "text": "政策面负向：据 MarketWatch 标题，特朗普推动复任后华盛顿出现两党反弹（细节未查证），此前国会已要求闭门问询、AI Overwatch 法案可能被重提；股价 −5.9% 至 155.38。",
     "url": "https://www.marketwatch.com/investing/stock/nvda"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-24",
     "text": "合规面 / 预期面负向：客户 Megaspeed 及泰、马子公司正式列入实体清单，东南亚中转与远程算力渠道收紧；黄仁勋 12 月 1 日接受众议院闭门问询、加州司法部长已发传票，治理折价延续，股价 −8.4%。",
     "url": "https://www.datacenterdynamics.com/en/news/us-govt-adds-singapores-megaspeed-and-subsidiaries-to-export-block-list/"
-   },
-   {
-    "date": "2026-11-24",
-    "text": "情绪面回吐 / 治理面待观察：复任后盘前跌逾 5%（CNBC）；据 Tom's Hardware 援引报道特朗普曾致电董事会推动复任（细节未查证），政治介入可能成为新的治理折价来源（判断）。",
-    "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
    }
   ],
   "ANET": [
@@ -48,6 +48,11 @@
   ],
   "MU": [
    {
+    "date": "2026-11-24",
+    "text": "预期面转负：BNP Paribas 降为中性、目标价 775 美元，认为存储供需最早 2027 年中趋于平衡、云厂商需求或被高估；股价 −11%。属卖方观点分歧，不是公司数据变化。",
+    "url": "https://www.fool.com/investing/2026/11/24/why-micron-stock-dove-today/"
+   },
+   {
     "date": "2026-11-23",
     "text": "产业面向上：整机厂因内存短缺加价最多 45%，短缺缓解时间被推迟到 2030 年（SK 海力士），存储厂议价力继续上升。",
     "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
@@ -66,11 +71,6 @@
     "date": "2026-11-18",
     "text": "产业面偏正（重申）：据 Seeking Alpha 标题，美光预计 2027~28 年供给比 2026 年更紧并继续与英伟达合作，与 9 月财报会“看不到供需恢复平衡”的口径一致；快照 705.27，位于 2027 前瞻中值下方。",
     "url": "https://tech-insider.org/micron-memory-crunch-20-percent-supply-growth-2026/"
-   },
-   {
-    "date": "2026-11-17",
-    "text": "预期面偏负：据 Seeking Alpha 标题，广发证券下调 NAND 价格预测并看过剩（细节未查证），与前一日 −7.6% 呼应；HBM / DRAM 端未见新变化。",
-    "url": "https://www.webull.com/news/15571214812185600"
    }
   ],
   "INTC": [
@@ -622,6 +622,11 @@
   ],
   "DELL": [
    {
+    "date": "2026-11-24",
+    "text": "基本面 / 产业面向上：三季度收入 549 亿美元（+103%），AI 服务器收入 220 亿美元、新单 602 亿美元、积压 1,323 亿美元；全年收入指引上调到 2,020 亿美元、AI 服务器到 780 亿美元。PC 业务增速放缓（Reuters）。",
+    "url": "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+   },
+   {
     "date": "2026-11-23",
     "text": "预期面：11-24 财报前随 AI 普涨 +20.5%；HPE 毛利率环比下滑提示内存成本是本次财报的关键变量（判断）。",
     "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
@@ -640,11 +645,6 @@
     "date": "2026-11-22",
     "text": "预期面待验证：11-24 财报市场预期收入约 506 亿美元，950 亿美元 AI 积压能否在存储芯片受限下转化是关键。",
     "url": "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
-   },
-   {
-    "date": "2026-11-13",
-    "text": "情绪面回落：−7.2%，无公司层面新消息；产业面上 950 亿美元 AI 积压未变，11-24 财报看积压转化和存储成本对毛利率的影响。",
-    "url": "https://convergedigest.com/dell-ai-server-backlog-95-billion-q2-fy2027/"
    }
   ],
   "PANW": [
@@ -860,6 +860,11 @@
   ],
   "SNDK": [
    {
+    "date": "2026-11-24",
+    "text": "预期面 / 情绪面转负：存储供给过剩担忧扩散，−17.4%；与公司此前披露的长期协议覆盖率形成分歧。",
+    "url": "https://invezz.com/sg/news/2026/11/24/why-micron-sandisk-and-other-memory-stocks-are-plunging-up-to-12percent-today/"
+   },
+   {
     "date": "2026-11-17",
     "text": "预期面偏负：广发证券据报道下调 NAND 价格预测、看过剩（标题，细节未查证），前一日 −8.6%；NAND 纯度高，受价格周期影响最直接。",
     "url": "https://www.webull.com/news/15571214812185600"
@@ -941,6 +946,11 @@
   "HPE": [
    {
     "date": "2026-11-24",
+    "text": "基本面分化：AI 积压 105 亿美元，但 Cloud & AI 营业利润率指引由 18.4% 降到约 14%，成本涨得比售价快。",
+    "url": "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
+   },
+   {
+    "date": "2026-11-24",
     "text": "预期面向下、产业面向上：Cloud & AI 营业利润率 18.4%→FY27 约 14%，成本涨得比售价快；但 AI 积压 105 亿美元、网络订单增速为收入的 4.5 倍以上，网络将贡献 FY27 四季度超 40% 营业利润，对 neocloud 融资零敞口（分析师文章，立场偏多）。",
     "url": "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
    },
@@ -958,11 +968,6 @@
     "date": "2026-11-23",
     "text": "预期面↓：创纪录增长后盘后据报转跌，市场关注毛利率环比 −210bp 与供给约束（MarketWatch 标题，细节未查证）。",
     "url": "https://www.marketwatch.com/"
-   },
-   {
-    "date": "2026-11-23",
-    "text": "基本面向上：FY27 收入增速指引从框架 +13%~17% 上调到 +27%~35%；毛利率环比 −210bp，内存成本压利润率。",
-    "url": "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
    }
   ],
   "KD": [
@@ -1032,6 +1037,11 @@
    }
   ],
   "AMBA": [
+   {
+    "date": "2026-11-24",
+    "text": "基本面 / 预期面转负：三季度收入与 EPS 双不及预期，−20%。",
+    "url": "https://seekingalpha.com/symbol/AMBA/news"
+   },
    {
     "date": "2026-11-24",
     "text": "基本面 / 预期面转负：据标题三季度非 GAAP EPS 0.28 美元、收入 1.1522 亿美元，均不及预期，股价 −20.0% 至 44.47，回到 2027 前瞻中值附近，此前的并购溢价大部分回吐（细节未查证）。",
@@ -1125,6 +1135,11 @@
   "ADI": [
    {
     "date": "2026-11-24",
+    "text": "预期面转负：一季度收入指引 44 亿 ±1.5 亿美元环比持平、FY27 资本开支 16~19 亿美元，增长斜率放缓被重新定价（−17.4%）。",
+    "url": "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
+   },
+   {
+    "date": "2026-11-24",
     "text": "预期面向下：一季度收入指引 44 亿 ±1.5 亿美元、环比基本持平，2027 财年资本开支 16~19 亿美元；股价 −16.9%，跌幅较盘前扩大。",
     "url": "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
    },
@@ -1141,12 +1156,22 @@
   ],
   "WDAY": [
    {
+    "date": "2026-11-24",
+    "text": "基本面持平偏正：收入 27.05 亿美元（+11.2%）、EPS 2.82 小幅超预期，盘后 −2.8%，市场仍在定价 AI 对席位数的压缩。",
+    "url": "https://investing.com/news/stock-market-news/workday-shares-fall-28-in-choppy-trading-after-thirdquarter-earnings-beat-5049010"
+   },
+   {
     "date": "2026-11-22",
     "text": "预期面待验证：首个应体现 AI 订单的季度，存量客户席位持平，按人头计费受 AI 冲击的程度决定估值。",
     "url": "https://finviz.com/news/423401/workdays-promised-second-half-ai-bookings-surge-faces-its-first-real-test"
    }
   ],
   "ADSK": [
+   {
+    "date": "2026-11-24",
+    "text": "基本面小幅向上：三季度 EPS 3.20、收入 21.6 亿美元超预期、四季度收入指引高于一致预期，但盘后约 −4%，情绪面未跟随。",
+    "url": "https://investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+   },
    {
     "date": "2026-11-22",
     "text": "预期面待验证：11-24 财报，MaintainX 首次并表，看有机账单增速是否维持上调后的节奏。",
@@ -1233,10 +1258,21 @@
     "text": "产业面向上（厂商自述）：DCD 赞助文章给出 800VDC 三阶段路线，2027 起边车电源柜 PowerDirect 5000（400~900kW），2028~2029 中压直流 / 固态变压器；同日随 AI 回吐 −9.4%。",
     "url": "https://www.datacenterdynamics.com/en/opinions/from-rack-to-data-hall-the-practical-path-to-800vdc/"
    }
+  ],
+  "NTNX": [
+   {
+    "date": "2026-11-24",
+    "text": "基本面向上：一季度 EPS 0.73 超预期 0.12 美元、收入 7.724 亿美元超预期。",
+    "url": "https://www.marketbeat.com/instant-alerts/earnings-nutanix-nasdaq-ntnx-announces-earnings-results-2026-11-24/"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-24",
+    "text": "Dell 盘后上调全年 AI 服务器指引到 780 亿美元、AI 积压 1,323 亿美元，需求侧继续确认；同日 BNP 把存储供需平衡点提前到 2027 年中、费城半导体指数 −7.9%，分歧从“需求有没有”转到“利润落在哪一层、存储周期何时见顶”。"
+   },
    {
     "date": "2026-11-24",
     "text": "Applied Digital 150MW / 18 年租约与台积电得州 2nm 厂申请：云厂商为 2028 年可并网容量锁长约、先进制程本土化推进，产业面继续向上；但同日 NVDA / AMD 开盘大幅回吐，价格侧仍由情绪主导。 午盘：Megaspeed 正式列入实体清单、NVDA −8.4%，合规折价加深；ABB 收购 Ziehl-Abegg 显示冷却链并购继续。"
@@ -1253,11 +1289,6 @@
    {
     "date": "2026-11-22",
     "text": "合规面：贝森特称仍未拿到英伟达对华出口合规答复（联邦层面与加州调查同向）；预期面远期变量：OpenAI 提议以预训练损失为行业“共同上限”度量，若落地偏向抑制超大预训练、利好推理侧（仅表态，无协议）。"
-   },
-   {
-    "date": "2026-11-22",
-    "text": "合规面延伸到代工环节：BIS 新规让台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（含小米、OPPO、vivo 等消费电子客户），限制从“卖什么 GPU”扩展到“替谁代工”；产业需求面不变。",
-    "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
    }
   ],
   "quantum": [
@@ -1330,6 +1361,10 @@
   ],
   "autonomous": [
    {
+    "date": "2026-11-24",
+    "text": "AMBA 三季度双不及预期、−20%，车载视觉芯片的基本面 / 预期面转负。"
+   },
+   {
     "date": "2026-11-23",
     "text": "浪位：一浪、二浪转为“财报已改善、价格未反映”（收入增速、毛利率、EBITDA 利润率达标；相对强度、广度未达标），基本面先行、价格未确认。"
    },
@@ -1351,49 +1386,117 @@
  "daily": [
   {
    "date": "2026-11-24",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 11 篇】资金面、情绪面读数沿用昨日（资金面 23 钱贵 / 紧缩，情绪面 29 偏悲观），本条只记录盘前增量。情绪面：昨日 AI 一浪的急速修复在盘前出现回吐——据 CNBC 标题，NVDA 盘前跌逾 5%（昨收 165.05、+31.5%），Seeking Alpha 标题称芯片与 AI 股从创纪录反弹中回落；据 Reuters / 彭博标题，Anthropic 盘前跌破 83 美元 IPO 价（细节未查证），AI 资产的估值情绪仍不稳。基本面：ADI 四季度收入 43.7 亿美元、调整后 EPS 4.06，分别超预期 5,000 万美元和 0.18 美元，但据 Seeking Alpha 标题一季度指引令股价盘前跌约 10%（指引数字未查证）——“财报超预期、指引 / 预期面分歧”延续了昨日 HPE、Symbotic 的特征。治理面：据 Tom's Hardware 援引报道，特朗普曾致电英伟达董事会会议推动复任黄仁勋（细节未查证），若属实，政治介入将成为治理折价的新来源。产业面：DatacenterHawk 三季度报告显示全球托管容量 77GW、空置率由 3.5% 降到 1.8%，供给大增仍被快速吸收，AI 算力需求侧没有过剩迹象。整体结论不变：需求侧继续确认，但资金面紧、情绪面在极端区来回摆动，三浪位置仍以“财报已改善、价格未反映”为主（快照浪位今晨在 AI 二浪、量子二浪、自动驾驶一浪上反复切换，属阈值边缘波动）。\n【07:28 更新，含 Summizer 新增的 2 篇】情绪面：盘前回吐在开盘后兑现——据 CNBC / Reuters 标题，NVDA 开盘后跌逾 5%，“英伟达带动的 AI 反弹退潮”拖累大盘低开；快照 NVDA 153.75（−6.9%）、AMD 409.8（−9.6%）、TSM 346.33（−4.8%），昨日一浪式修复回吐约三分之一，CNBC 标题提示针对英伟达的调查尚未结束，治理折价仍在。产业面继续向上：Applied Digital 与一家未具名投资级超大规模云厂商签 150MW、18 年 54 亿美元租约（含续约 33 年 127 亿美元），2028 上半年交付，云厂商在为 2028 年的可并网容量锁定超长租期；台积电向得州提交 Brazos County 2nm 晶圆厂申请（约 230 亿美元、计划 2027 动工 / 2029 投产，土地协议不具约束力、仍在比较 Sherman 等地）。整体结论不变：需求与产能侧持续确认，价格侧仍由资金面紧、情绪面摆动主导。\n【08:29 更新，含 Summizer 新增的 5 篇】合规面 / 情绪面转负：美国商务部正式把新加坡 Megaspeed 及其泰国、马来西亚子公司列入实体清单（DCD；Seeking Alpha 标题称同批还包括一家阿里巴巴子公司），昨日“据报道”已落地，监管重点从“卖给谁”前移到东南亚中间商与远程算力服务；DCD 同时提到黄仁勋与英伟达总法律顾问将于 12 月 1、2 日接受众议院委员会闭门问询、加州司法部长已发调查传票。快照 NVDA 151.18（−8.4%）、VRT 168.92（−9.4%）、HPE 40.38（−15.9%）、ASTS 22.61（−11.9%），昨日 AI 一浪式修复已大部分回吐。产业面仍向上：ABB 收购德国风机厂 Ziehl-Abegg（DCD 称 26.5 亿美元，雅虎转载彭博标题为 22.2 亿美元，口径差异未查证），电气巨头继续向数据中心冷却链并购；Vertiv 在 DCD 赞助文章中给出 800VDC 三阶段路线（2027 边车电源柜、2028~2029 中压直流 / 固态变压器，厂商自述）。整体结论不变：需求侧确认、价格侧由资金面紧 + 治理 / 合规折价主导，情绪面重新向悲观端摆动。\n【09:28 更新，含 Summizer 新增的 3 篇】产业面出现一条约束信号：科罗拉多州 Aurora 市议会通过数据中心暂停令（持续到 2027 年 9 月），Vantage 主动放弃已获批的 500MW Trident 项目、另行选址（DCD），与 Ottawa、Loudoun 的暂停令同一方向——“社区许可”正在从软风险变成能让已批项目消失的硬约束，供给侧落地变慢对已拿到并网和土地的存量容量是支撑、对新项目的时间表是逆风。另据 TechCrunch，Crusoe 投资方 G2VP 主张“太阳能 + 长时储能 + 离网”供电路线（投资人立场，未经独立验证）。情绪面：NVDA 盘中 153.27（-7.1%），与 08:29 读数接近，回吐未进一步扩大。整体结论不变。\n【10:28 更新，含 Summizer 新增的 1 篇】情绪面 / 政策面：据彭博标题，纳指 100 午前再度走弱，主因“英伟达狂热消退”叠加“新关税被提出”（关税对象与幅度未查证），关税是资金面之外新加入的风险偏好压制项；快照 NVDA 152.73（−7.5%）、AMD 410.27（−9.5%）、TSM 348.69（−4.1%），与 09:28 读数持平，回吐未扩大。治理面：据 CNBC，黄仁勋 12 月初接受国会问询的日期与英伟达 GTC 新品发布同日（发布内容未查证），产品催化与治理折价将在同一天被定价。Summizer 新增 1 篇为英国 NCSC 警告 AI 自主渗透工具推高攻击频率，与五个板块无直接关系。整体结论不变：需求侧确认、价格侧由资金面紧 + 治理 / 政策折价主导。\n【11:28 更新，含 Summizer 新增的 2 篇】情绪面 / 预期面：TechCrunch 正文确认 Anthropic 盘中跌破 83 美元 IPO 价、最低 76 美元，较周一收盘跌近 12%，距首日 111.50 美元开盘不到一周——上午“据标题”的破发已被证实。它的意义在于模型层估值锚下沉，可能沿“公开市场定价 → 私募估值 → IPO 窗口”传导到依赖融资的模型公司和 neocloud，但已签的算力 / 电力合同属于锁定资本开支，对基础设施层的影响更晚、更间接。快照 NVDA 152.97（−7.3%）、AMD 414.89（−8.5%）、HPE 40.35（−16.0%），回吐与 10:28 持平未扩大；Reuters 标题同样把 HPE 下跌归因于 AI 毛利率收缩盖过上调的指引，与此前判断一致。Summizer 另 1 篇为非上市的 Myriota 卫星物联网融资 4,000 万美元，与人工确认公司无直接关系。整体结论不变：需求侧确认，价格侧由资金面紧 + 治理 / 政策折价 + 模型层估值重定价主导，情绪面偏悲观。\n【12:28 更新】预期面：Seeking Alpha 标题给出了上午缺失的 ADI 指引数字——一季度收入 43.85~44.15 亿美元区间（44 亿 ±1.5 亿），中值较刚报的四季度 43.7 亿美元基本持平，同时给出 2027 财年资本开支 16~19 亿美元；市场把“环比不增长”读成工业 / 数据中心电源周期的斜率放缓，快照 ADI 314.82（−16.9%），跌幅从盘前约 −10% 扩大。治理面：据 CNBC 与 Seeking Alpha 标题，黄仁勋在全员会上表示英伟达不需要接班计划（细节未查证），在国会问询前夕这会延续市场对关键人风险的讨论，但不改变产业面。整体结论不变：需求侧确认，价格侧由资金面紧 + 治理 / 政策折价 + 估值重定价主导，情绪面偏悲观。\n【13:28 更新，含 Summizer 新增的 1 篇】预期面：SiliconANGLE 的分析师文章补上了 HPE 下跌的具体数字——Cloud & AI 部门本季营业利润率 18.4%，2027 财年指引约 14%，CFO 称下半年成本涨得比售价快，约 54% 的收入落在下半年；同时年末 AI 积压订单 105 亿美元，网络订单增速是网络收入增速的 4.5 倍以上（部件交期 28~40 周以上），管理层称对 neocloud 融资零敞口。这说明利润在从整机厂往内存和网络层转移，瓶颈在交付而非需求。AMBA 据 Seeking Alpha 标题三季度非 GAAP EPS 0.28 美元、收入 1.1522 亿美元，双双不及预期（收入仅贴近此前 1.15~1.24 亿美元指引下沿），快照 −20.0% 至 44.47，基本面 / 预期面转负。治理 / 政策面：据 MarketWatch 标题，特朗普推动黄仁勋复任后，华盛顿出现两党对英伟达的反弹（细节未查证）；快照 NVDA 155.38（−5.9%），较上午 −7%~−8% 收窄。整体结论不变：需求侧确认，价格侧由资金面紧 + 治理 / 政策折价 + 利润率重定价主导。",
+   "market": "【收盘完整研判，含 13:28 后 Summizer 新增的 3 篇】资金面 22 分、钱贵（紧缩）未变：10 年期美债 4.9%（一年 +84bp）、美元指数 103.83，高收益债相对长债近 3 个月 −1.9%，资金仍在避险；明日 PCE 是下一个资金面变量。情绪面热度 29（偏悲观）：VIX 26.4（一年 95% 分位、期限结构倒挂 1.035）、CNN 恐贪 17（极度恐惧），站上 200 日线的公司只剩 28%。今天是昨日 AI 一浪急速修复的回吐日：据 CNBC 口径，费城半导体指数收跌 7.88%、纳指 −1.48%、道指 +0.85%，NVDA −5.9%；跌幅最大的是存储（MU −11.0%、SNDK −17.4%，BNP Paribas 把美光降为中性、认为 DRAM/NAND 供需最早 2027 年中趋于平衡）和模拟 / 互连（ADI −17.4%、ALAB −13.9%、CRDO −13.1%），叠加 HPE 利润率指引、黄仁勋复任的国会反弹与 Anthropic 收盘跌破 83 美元 IPO 价。但盘后 Dell 给出了相反方向的基本面数据：三季度收入 549 亿美元（+103%）、AI 服务器收入 220 亿美元、新接 AI 订单 602 亿美元、AI 积压 1,323 亿美元，全年收入指引 1,920→2,020 亿美元、AI 服务器 740→780 亿美元——需求侧（产业面 / 基本面）继续向上，分歧在于利润率分配（HPE、Dell 的整机利润率 vs 存储涨价）和存储周期何时见顶（预期面）。整体结论：AI 板块浪位在一浪“财报已改善、价格未反映”区间来回，价格由资金面紧 + 治理 / 政策折价 + 存储周期预期主导；宏观博主（美投，2026-10-17）认为加息是预防性、温和的，通胀引发的下跌更像机会，与本站资金面仍偏紧的读数一致之处在于“钱贵”，不一致在于本站情绪面已到极度恐惧区，而他当时判断的尾部风险（通胀失控→激进加息冲击 AI 融资链）目前在 Anthropic 破发、neocloud 融资成本上可以看到局部迹象。",
    "sectors": {
-    "ai": "【06:29】ADI 四季度双超（收入 43.7 亿美元、EPS 4.06），但一季度指引令盘前约 −10%（Seeking Alpha 标题，指引细节未查证）；NVDA 盘前跌逾 5%、芯片股回吐（CNBC）；Seeking Alpha 标题称 HPE 警告 AI 服务器压利润率，与昨日毛利率 −210bp 一致；Anthropic 据报盘前跌破 IPO 价（细节未查证）。产业面：DatacenterHawk 称全球托管容量 77GW、空置率 1.8%，北美三季度租出 13.5GW 创纪录；AI 云初创 Marlowe 获 2.77 亿美元种子轮（DCD）。 【07:28】APLD 150MW / 18 年 / 54 亿美元新租约，合同基础租期收入累计超 410 亿美元，另获 Delta Forge 1 的 3 亿美元过桥贷款（SOFR+300bp，364 天），产业面向上、但资本成本仍高；台积电得州 2nm 厂申请属于本土先进制程扩产的早期信号（非最终选址）。开盘后 NVDA −6.9%、AMD −9.6%，昨日反弹部分回吐。 【08:29】Megaspeed 及子公司正式进入实体清单（DCD），对 NVDA 是合规面 / 预期面负向（东南亚渠道收紧），NVDA 151.18（−8.4%），仍在 2027 前瞻区间下沿 102.61~中值 185.16 之间；HPE 收入创纪录但股价 −15.9%（MarketWatch 标题），毛利率压力被放大；ABB 收购 Ziehl-Abegg（金额两源分歧），冷却链整合继续；VRT −9.4% 至 168.92，处于前瞻下沿 136.73~中值 206.88 之间。 【09:28】Aurora 暂停令致 Vantage 放弃 500MW Trident 项目（DCD），QTS 当地 160MW 项目因施工基本完成预计不受影响——本月第三起美国地方暂停令，新增容量的许可风险上升，已建成 / 在建容量的稀缺性上升；ABB 收购 Ziehl-Abegg 金额已在 DCD 正文确认为企业价值 26.5 亿美元（股权价值 22.2 亿美元），此前两源分歧系口径不同。 【10:28】据彭博标题，新关税被提出叠加 NVDA 回吐拖累纳指 100（关税细节未查证）；据 CNBC，黄仁勋国会问询与 GTC 新品发布同日，NVDA 152.73 仍处 2027 前瞻区间下沿 103.66~中值 187.06 之间。 【11:28】Anthropic 盘中最低 76 美元、跌破 83 美元 IPO 价（TechCrunch），模型层估值锚下沉，属预期面 / 情绪面负向；对算力基础设施的影响取决于后续私募融资和超大规模云厂商资本开支指引是否松动，目前尚无松动证据。\n【12:28】ADI 一季度收入指引中值约 44 亿美元、环比持平，资本开支 16~19 亿美元；模拟 / 电源链的增长斜率预期下修，股价 −16.9%。 【13:28】HPE：Cloud & AI 营业利润率 18.4%→FY27 指引约 14%，网络业务到 FY27 四季度将贡献超过 40% 的营业利润（目前收入占比不到四分之一），Juniper 协同目标上调到 8 亿美元；HPE 40.18（−16.3%）处 2027 前瞻下沿 33.40~中值 49.21 之间。AMBA 三季度双不及预期（标题），−20.0% 至 44.47，回到前瞻中值 45.05 附近。",
-    "quantum": "【06:29】政策面小幅向上：Diraq 与商务部敲定最高 3,800 万美元 CHIPS 研发资助（公司新闻稿），量子芯片开始被当作半导体制造问题获得产业政策支持；Planckian 获欧盟 EIC 1,000 万欧元、Pasqal 牵头欧洲防务基金容错项目。均为非上市公司，对人工确认公司无直接基本面影响。",
-    "robotics": "【07:28】据 The Robot Report 标题，软银收购 Marc Raibert 创办的 Robotics and AI Institute（此前报道称从现代集团手中收购、交易受美国审查，条款未披露；细节未查证），软银继续在机器人研发层加码，对人工确认公司无直接基本面影响。",
-    "aerospace": "【06:29】Vodafone 与 AST SpaceMobile 在西班牙马拉加启用欧洲首个地球—太空站（DCD），D2D 地面网关与运营商核心网对接推进，属产业面小幅确认；ASTS 快照收 25.67（+10.3%），处于 2027 前瞻区间中值 20.43~上沿 44.60 之间。 【07:28】据 Electrek 标题，特斯拉与 SpaceX 力争在新一届国会前于年底前达成合并（细节未查证；此前报道仅确认已成立特别委员会、尚无条款）。 【08:29】据 SpaceNews / 雅虎标题，Cerberus（Stratolaunch 所有者）收购空客美国空间系统业务（条款未查证），私募资本继续整合美国本土卫星制造；Amentum 四季度双超、首次授权最高 5 亿美元回购并给出 FY27 指引，股价 +17.2% 至 24.20（2027 前瞻下沿 20.04~中值 29.64 之间）；ASTS −11.9% 至 22.61，原因未查到可靠来源，暂按板块情绪回吐处理。 【09:28】据 Reuters 标题，摩根大通称若与特斯拉合并可助 SpaceX 进入标普 500（细节未查证），属预期面变量，未改变既有判断。 【11:28】澳大利亚卫星物联网公司 Myriota 完成 C 轮首批 4,000 万美元（SiliconANGLE），低带宽 5G NTN 工业物联网继续获得融资，非上市、对人工确认公司无直接影响。",
-    "autonomous": "【06:29】据 Seeking Alpha 标题，奔驰先于特斯拉获得德国自动驾驶批准（细节未查证），欧洲监管落地顺序对 TSLA 是竞争面小幅逆风；Mercedes 非人工确认公司。 【07:28】TSLA：据 Electrek 标题，特斯拉—SpaceX 合并或争取年底前敲定（未查证），预期面变量升温；快照 383.26，处于 2027 前瞻区间中值 313.71~上沿 780.06 之间。"
+    "ai": "产业面向上：Dell AI 积压 1,323 亿美元、本季新单 602 亿美元，全年 AI 服务器指引上调到 780 亿美元（Reuters），与 APLD 新签 150MW/18 年租约、DatacenterHawk 空置率 1.8% 同向；地方暂停令（Aurora）让新增容量许可变难。预期面转向分歧：BNP 把存储供需平衡点提前到 2027 年中，MU −11%、SNDK −17%；HPE Cloud & AI 营业利润率 18.4%→FY27 约 14%、ADI 一季度指引环比持平，市场在给“利润率 / 增速斜率”重新定价。合规面：Megaspeed 上实体清单但据报道未适用 FDPR 条款（SiliconANGLE），实际收紧力度可能弱于标题；黄仁勋下周二国会作证。软件层：ADSK、WDAY、NTNX 盘后均小幅超预期但股价 −3%~−5%，“AI 替代席位”担忧未解除。",
+    "quantum": "无重要新信息（Diraq 3,800 万美元 CHIPS 资助、Planckian 获 EIC 资助均为非上市公司）；量子篮子随大盘去风险，QBTS −7.8%、RGTI −6.2%。",
+    "robotics": "无重要新信息；软银收购 Robotics and AI Institute（The Robot Report，条款未披露）属研发层加码，对人工确认公司无直接基本面影响。",
+    "aerospace": "Amentum 四季度双超、首次授权 5 亿美元回购，+20.1% 至 24.80（2027 前瞻下沿~中值之间）；Cerberus 收购空客美国空间系统业务、Vodafone 与 AST 马拉加地面站启用属产业面小幅确认。ASTS −8.1%、RKLB −7.4% 随风险偏好回落。特斯拉—SpaceX 合并据报最早 12 月公布但条款未定（Electrek）。",
+    "autonomous": "AMBA 三季度收入 1.152 亿美元、非 GAAP EPS 0.28 双不及预期，−20.0% 至 44.47（2027 前瞻中值 45.05 附近），基本面 / 预期面转负；据 Seeking Alpha 标题奔驰先于特斯拉获德国自动驾驶批准（未查证）。TSLA 384.68 基本持平，合并预期仍是主要预期面变量。"
    },
    "watch": [
     {
-     "t": "ADI",
-     "why": "四季度收入 43.7 亿美元、调整后 EPS 4.06 双超，但一季度指引致盘前约 −10%；昨收 378.75（+9.5%），盘前价约落在 2027 前瞻区间下沿 279~中值 464 之间偏中部。 一季度指引 44 亿 ±1.5 亿美元（环比持平），股价 314.82（−16.9%），落在 2027 前瞻区间 232~386~689 的下沿与中值之间、更靠近中值下方。"
+     "t": "DELL",
+     "why": "盘后三季度收入 549 亿美元（+103%）、AI 服务器收入 220 亿美元、AI 积压 1,323 亿美元，全年收入指引 1,920→2,020 亿美元、非 GAAP EPS 25.50→29.68；常规时段 −11.8% 至 295.28，处于 2027 前瞻区间下沿 215~中值 362 之间。"
+    },
+    {
+     "t": "MU",
+     "why": "BNP Paribas 降为中性、目标价 1,700→775 美元，认为 DRAM/NAND 供需 2027 年中趋于平衡（早于此前 2028 年中的判断）；−11.0% 至 629.79，略低于 2027 前瞻中值 659（下沿 451 / 上沿 1,042）。"
+    },
+    {
+     "t": "SNDK",
+     "why": "同受存储供给过剩担忧拖累 −17.4% 至 77.95，仍在 2027 前瞻中值 75.7 上方、上沿 104 之下；此前公司称约三分之二 2028 财年出货已签长期协议，与 BNP 的过剩判断存在分歧。"
     },
     {
      "t": "NVDA",
-     "why": "复任后首个交易日盘前跌逾 5%（昨收 165.05），仍处于 2027 前瞻区间下沿 112~中值 202 之间；据报特朗普致电董事会推动复任（细节未查证），治理面的政治色彩成为新关注点。 07:28：开盘后延续回吐，快照 153.75（−6.9%），仍在 2027 前瞻区间下沿 104.36~中值 188.30 之间。 08:29：Megaspeed 正式列入实体清单，收 151.18（−8.4%），在 2027 前瞻下沿~中值之间。 10:28：国会问询与 GTC 新品发布同日（CNBC），产品催化与治理折价同日定价。 11:28 读数 152.97（−7.3%），仍在 2027 前瞻区间下沿 103.83~中值 187.35 之间；同日 Anthropic 跌破 IPO 价，模型层估值重定价成为新的情绪变量。 13:28：据 MarketWatch 标题华盛顿出现两党反弹，NVDA 155.38（−5.9%），跌幅较上午收窄。"
+     "why": "复任次日回吐 −5.9% 至 155.38（2027 前瞻下沿 105~中值 190 之间）；Megaspeed 上实体清单但据报道未适用 FDPR 条款，黄仁勋下周二国会作证、与 GTC 新品同日。"
+    },
+    {
+     "t": "ADI",
+     "why": "一季度收入指引 44 亿 ±1.5 亿美元（环比持平）、FY27 资本开支 16~19 亿美元，−17.4% 至 312.95，处于 2027 前瞻下沿 231~中值 383 之间。"
     },
     {
      "t": "HPE",
-     "why": "据 Seeking Alpha 标题，公司警示 AI 服务器毛利率压力、股价走弱；昨收 48.02，位于 2027 前瞻区间下沿 35.79~中值 58.81 之间；股息上调 19.3%、回购授权加 50 亿美元。 08:29：日内 −15.9% 至 40.38，跌破 2027 前瞻中值 49.46、接近下沿 30.10 上方。 13:28：SiliconANGLE 给出利润率 18.4%→约 14% 的指引落差与 105 亿美元 AI 积压订单，网络订单转化要到第二财季。"
-    },
-    {
-     "t": "ASTS",
-     "why": "欧洲首个 D2D 地球—太空站在马拉加启用；快照收 25.67，处于 2027 前瞻区间中值 20.43~上沿 44.60 之间。 08:29：昨日 +10% 后回吐 −11.9% 至 22.61，仍在前瞻中值 18.40 上方。"
-    },
-    {
-     "t": "APLD",
-     "why": "150MW / 18 年 / 54 亿美元新租约，合同基础租期收入超 410 亿美元（含续约 1,000 亿）；快照 12.49（−9.6%），在 2027 前瞻区间下沿 3.92~中值 17.92 之间，约在中值下方 30%。"
-    },
-    {
-     "t": "VRT",
-     "why": "08:29：AI 回吐中 −9.4% 至 168.92，处于 2027 前瞻区间下沿 136.73~中值 206.88 之间；同日在 DCD 发布 800VDC 路线（2027 边车电源柜 PowerDirect 5000，厂商自述）。"
-    },
-    {
-     "t": "AMTM",
-     "why": "08:29：四季度双超、首次授权 5 亿美元回购、给出 FY27 指引，+17.2% 至 24.20，处于 2027 前瞻下沿 20.04~中值 29.64 之间。"
+     "why": "Cloud & AI 营业利润率 18.4%→FY27 约 14%，AI 积压 105 亿美元；−16.3% 至 40.19，处于 2027 前瞻下沿 33.4~中值 49.2 之间。Dell 同日上调指引，整机厂之间的利润率分化值得对照。"
     },
     {
      "t": "AMBA",
-     "why": "三季度非 GAAP EPS 0.28 美元（低于预期 0.03）、收入 1.1522 亿美元（低于预期 458 万美元，贴近 1.15~1.24 亿指引下沿），快照 −20.0% 至 44.47，回到 2027 前瞻中值 45.05 附近（下沿 26.25 / 上沿 77.67）；NXP 收购传闻仍未落地。"
+     "why": "三季度收入 1.152 亿美元、非 GAAP EPS 0.28 双不及预期（Seeking Alpha 标题），−20.0% 至 44.47，回到 2027 前瞻中值 45.05 附近。"
+    },
+    {
+     "t": "ADSK",
+     "why": "盘后三季度 EPS 3.20、收入 21.6 亿美元均超预期、四季度收入指引高于一致预期，但盘后约 −4%；常规时段 255.70，处于 2027 前瞻下沿 208~中值 299 之间。"
+    },
+    {
+     "t": "WDAY",
+     "why": "盘后三季度调整后 EPS 2.82、收入 27.05 亿美元（+11.2%）小幅超预期，股价约 −2.8%；179.23 处于 2027 前瞻下沿 149~中值 220 之间。"
+    },
+    {
+     "t": "NTNX",
+     "why": "一季度 EPS 0.73（预期 0.61）、收入 7.724 亿美元超预期（MarketBeat），54.59 恰在 2027 前瞻中值 54.87 附近；VMware 客户迁移仍是核心看点。"
     }
    ],
    "sources": [
+    [
+     "Reuters（Investing.com）：Dell lifts annual forecasts after record quarter",
+     "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+    ],
+    [
+     "StockTitan：Dell 三季度 FY27 业绩（收入 549 亿美元、+103%）",
+     "https://www.stocktitan.net/news/DELL/dell-technologies-delivers-third-quarter-fiscal-2027-financial-1b9dmbjoh63j.html"
+    ],
+    [
+     "Motley Fool：Why Micron Stock Dove Today",
+     "https://www.fool.com/investing/2026/11/24/why-micron-stock-dove-today/"
+    ],
+    [
+     "Invezz：Why Micron, Sandisk and other memory stocks are plunging",
+     "https://invezz.com/sg/news/2026/11/24/why-micron-sandisk-and-other-memory-stocks-are-plunging-up-to-12percent-today/"
+    ],
+    [
+     "MLQ（援引 CNBC）：Nasdaq falls 1.5% as Nvidia drops 5.9% and chip stocks slide",
+     "https://mlq.ai/news/nasdaq-falls-15-as-nvidia-drops-59-and-chip-stocks-slide-dow-rises-09-and-anthropic-closes-below-its-ipo-price/"
+    ],
+    [
+     "Investing.com：Autodesk shares fall despite Q3 earnings beat",
+     "https://investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+    ],
+    [
+     "Investing.com：Workday shares fall 2.8% after third-quarter earnings beat",
+     "https://investing.com/news/stock-market-news/workday-shares-fall-28-in-choppy-trading-after-thirdquarter-earnings-beat-5049010"
+    ],
+    [
+     "MarketBeat：Nutanix Announces Earnings Results",
+     "https://www.marketbeat.com/instant-alerts/earnings-nutanix-nasdaq-ntnx-announces-earnings-results-2026-11-24/"
+    ],
+    [
+     "SiliconANGLE：Congress scrutinizes Jensen Huang’s return as Megaspeed restrictions raise questions",
+     "https://siliconangle.com/2026/11/24/congress-scrutinizes-jensen-huangs-return-as-megaspeed-restrictions-raise-questions/"
+    ],
+    [
+     "TechCrunch：Even the best AI agents struggle with everyday life",
+     "https://techcrunch.com/2026/11/24/even-the-best-ai-agents-struggle-with-everyday-life/"
+    ],
+    [
+     "TechCrunch：Walmart teams up with Meta to bring Black Friday deals to Muse",
+     "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/"
+    ],
+    [
+     "Electrek：SpaceX-Tesla merger announcement could come in December",
+     "https://electrek.co/2026/11/12/spacex-tesla-merger-announcement-december-report/"
+    ],
+    [
+     "SiliconANGLE：Key insights from HPE's Q4 earnings report",
+     "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
+    ],
+    [
+     "Seeking Alpha：ADI FY27 资本开支 16~19 亿美元、一季度收入指引 44 亿 ±1.5 亿",
+     "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
+    ],
+    [
+     "TechCrunch：Anthropic shares fall below IPO price",
+     "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
+    ],
     [
      "CNBC：英伟达盘前跌逾 5%",
      "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
@@ -1401,10 +1504,6 @@
     [
      "Tom's Hardware：据报特朗普致电董事会推动复任黄仁勋",
      "https://www.tomshardware.com/tech-industry/policy/trump-pressured-nvidia-to-bring-jensen-back-called-into-board-meeting-to-push-reinstatement-reports-claim-president-concerned-over-falling-stock-prices-with-huangs-return-reversing-slide"
-    ],
-    [
-     "Seeking Alpha：ADI 四季度业绩与一季度指引",
-     "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
     ],
     [
      "Reuters（经 Google 新闻）：Anthropic 跌破 83 美元 IPO 价",
@@ -1479,24 +1578,12 @@
      "https://www.cnbc.com/2026/11/24/jensen-huang-nvidia-congress-gtc.html"
     ],
     [
-     "Anthropic shares fall below IPO price, a worrying sign for AI startups (TechCrunch)",
-     "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"
-    ],
-    [
      "Myriota raises $40M to scale its constellation (SiliconANGLE)",
      "https://siliconangle.com/2026/11/24/industrial-internet-of-things-satellite-platform-myriota-raises-40m-to-scale-its-constellation-and-expand/"
     ],
     [
-     "Seeking Alpha：Analog Devices outlines $1.6B-$1.9B FY2027 CapEx plan while guiding Q1 revenue to $4.4B ± $150M",
-     "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
-    ],
-    [
      "Seeking Alpha / CNBC：Nvidia CEO says he has no succession plan during all-hands meeting",
      "https://www.cnbc.com/quotes/NVDA?tab=news"
-    ],
-    [
-     "SiliconANGLE：Key insights from HPE's Q4 earnings report",
-     "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
     ],
     [
      "Seeking Alpha：Ambarella Non-GAAP EPS of $0.28 misses",
@@ -3720,7 +3807,7 @@
    ]
   }
  ],
- "updated": "2026-11-24T13:28",
+ "updated": "2026-11-24T14:26",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",
@@ -3807,12 +3894,20 @@
    ]
   },
   "MU": {
-   "date": "2026-11-16",
+   "date": "2026-11-24",
    "dir": "顺风",
-   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。 11-15 新增逆风：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证）。 11-16：芯片板块抛售中收跌 7.6% 至 719.02，回到 2027 前瞻中值（748）下方；当天无需求侧负面消息，属资金面去风险（MarketWatch 标题）。",
-   "miss": "前瞻区间按一致预期 EPS 算，隐含高盈利能持续到 2027 年；存储是强周期行业，周期高点时市盈率看起来最便宜（判断）。客户自研 / 换供应商、三星 HBM 认证进度也影响份额。 反垄断诉讼的潜在赔偿和价格行为约束（集体诉讼刚进入取证，不代表认定违法）也不在前瞻估值里。",
+   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。 11-15 新增逆风：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证）。 11-16：芯片板块抛售中收跌 7.6% 至 719.02，回到 2027 前瞻中值（748）下方；当天无需求侧负面消息，属资金面去风险（MarketWatch 标题）。 11-24：BNP Paribas 降为中性、目标价 1,700→775 美元，认为 DRAM/NAND 供需最早 2027 年中趋于平衡（此前判断 2028 年中）、云厂商需求可能被高估，股价 −11.0% 至 629.79，略低于 2027 前瞻中值 659。这是卖方对周期拐点时间的分歧，公司自身数据尚未变化；Dell 同日上调 AI 服务器指引属于需求侧反证。",
+   "miss": "前瞻区间按一致预期 EPS 算，隐含高盈利能持续到 2027 年；存储是强周期行业，周期高点时市盈率看起来最便宜（判断）。客户自研 / 换供应商、三星 HBM 认证进度也影响份额。 反垄断诉讼的潜在赔偿和价格行为约束（集体诉讼刚进入取证，不代表认定违法）也不在前瞻估值里。 卖方开始讨论 2027 年中供需平衡，若成立，2027 年一致预期 EPS 有下修空间（判断）。",
    "watch": "12-23 财报的 HBM 收入和毛利率、DRAM 合约价、三星 / SK 海力士扩产计划、云厂商资本开支。",
    "src": [
+    [
+     "Invezz：Why Micron, Sandisk and other memory stocks are plunging",
+     "https://invezz.com/sg/news/2026/11/24/why-micron-sandisk-and-other-memory-stocks-are-plunging-up-to-12percent-today/"
+    ],
+    [
+     "Motley Fool：Why Micron Stock Dove Today",
+     "https://www.fool.com/investing/2026/11/24/why-micron-stock-dove-today/"
+    ],
     [
      "MarketWatch：芯片股抛售加剧",
      "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf"
@@ -3824,10 +3919,6 @@
     [
      "TradingKey：摩根士丹利称回调改善存储股风险收益（11-11）",
      "https://www.tradingkey.com/analysis/stocks/us-stocks/262300967-memory-stocks-morgan-stanley-micron-sandisk-ai-demand-buying-opportunity-tradingkey"
-    ],
-    [
-     "Tom's Hardware：DRAM 价格操纵诉讼撤诉动议被驳回",
-     "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
     ]
    ]
   },
@@ -4389,12 +4480,16 @@
    ]
   },
   "SNDK": {
-   "date": "2026-11-11",
+   "date": "2026-11-24",
    "dir": "顺风",
-   "text": "NAND 处在量价齐升阶段：2027 财年一季度收入约 110 亿美元（环比 +23%、同比 +378%），非 GAAP 毛利率 85.1%，环比增量约六成来自出货量、四成来自价格；二季度指引收入 122~126 亿美元。约一半 2027 财年和三分之二 2028 财年的出货已签长期协议，管理层预计 2027 年 NAND 位元需求增长约 40%。逆风：消费级收入环比 −29%，高价正在压抑消费端。",
-   "miss": "85% 的毛利率是价格周期的产物，前瞻区间按 2027 财年 EPS 约 227 美元算，等于假设高价维持；长期协议锁定的是量，价格条款和需求下修风险看不到（判断）。",
+   "text": "NAND 处在量价齐升阶段：2027 财年一季度收入约 110 亿美元（环比 +23%、同比 +378%），非 GAAP 毛利率 85.1%，环比增量约六成来自出货量、四成来自价格；二季度指引收入 122~126 亿美元。约一半 2027 财年和三分之二 2028 财年的出货已签长期协议，管理层预计 2027 年 NAND 位元需求增长约 40%。逆风：消费级收入环比 −29%，高价正在压抑消费端。 11-24：存储股集体下跌，SNDK −17.4% 至 77.95（仍在 2027 前瞻中值 75.7 上方）；起因是 BNP 认为 NAND 供需最早 2027 年中平衡，与公司“约三分之二 2028 财年出货已签长期协议”的说法存在分歧——长约锁量但未必锁价（判断）。",
+   "miss": "85% 的毛利率是价格周期的产物，前瞻区间按 2027 财年 EPS 约 227 美元算，等于假设高价维持；长期协议锁定的是量，价格条款和需求下修风险看不到（判断）。 长期协议的价格条款未披露，若合约价随现货下行，锁量不等于锁利润（判断）。",
    "watch": "二季度毛利率能否维持 84.5% 以上、数据中心收入占比、长期协议续签、三季度（传统淡季）指引。",
    "src": [
+    [
+     "Invezz：Why Micron, Sandisk and other memory stocks are plunging",
+     "https://invezz.com/sg/news/2026/11/24/why-micron-sandisk-and-other-memory-stocks-are-plunging-up-to-12percent-today/"
+    ],
     [
      "The Motley Fool：Sandisk 2027 财年一季度电话会纪要（10-30）",
      "https://www.fool.com/earnings/call-transcripts/2026/10/30/sandisk-sndk-q1-2027-earnings-call-transcript/"
@@ -4517,12 +4612,20 @@
    ]
   },
   "DELL": {
-   "date": "2026-11-22",
+   "date": "2026-11-24",
    "dir": "顺风",
-   "text": "AI 服务器是确定的顺风：上季 AI 服务器订单 609 亿美元、确认收入 164 亿，积压约 950 亿美元（前一季 513 亿），全年 AI 服务器指引从 600 亿上调到 740 亿、总收入指引约 1,920 亿。逆风是交付和利润率：存储芯片供给限制积压转化速度，AI 服务器毛利率低于传统业务，11-13 随板块 −7.2%。 11-22：11-24 财报市场预期收入约 506 亿美元（上年同期约 270 亿）、EPS 6.63；前瞻文章称传统服务器 +122%、存储 +26% 可部分对冲 AI 服务器较薄的利润率，股价已从约 596 的高点回落（11-20 收 278.02、−11.0%）。",
+   "text": "AI 服务器是确定的顺风：上季 AI 服务器订单 609 亿美元、确认收入 164 亿，积压约 950 亿美元（前一季 513 亿），全年 AI 服务器指引从 600 亿上调到 740 亿、总收入指引约 1,920 亿。逆风是交付和利润率：存储芯片供给限制积压转化速度，AI 服务器毛利率低于传统业务，11-13 随板块 −7.2%。 11-22：11-24 财报市场预期收入约 506 亿美元（上年同期约 270 亿）、EPS 6.63；前瞻文章称传统服务器 +122%、存储 +26% 可部分对冲 AI 服务器较薄的利润率，股价已从约 596 的高点回落（11-20 收 278.02、−11.0%）。 11-24：三季度收入 549 亿美元（+103%），AI 服务器收入 220 亿美元、新单 602 亿美元、积压从约 950 亿升到 1,323 亿美元；全年收入指引上调到 2,020 亿美元、AI 服务器 780 亿美元、非 GAAP EPS 29.68（原 25.50）——积压转化好于 11-22 时担心的情形。Reuters 提示 PC 业务增速放缓。常规时段随芯片股 −11.8% 至 295.28。",
    "miss": "前瞻估值按 EPS 一致预期算，假设积压按期转化；没有反映客户集中在新云 / 大模型公司（其融资成本上升）、存储涨价挤压毛利率，以及 AI 服务器周期高点之后的回落（判断）。",
-   "watch": "11-24 财报：AI 订单与积压、AI 服务器毛利率、存储成本对指引的影响、新云客户占比；积压是否因客户融资收紧出现取消或延期。",
+   "watch": "四季度收入指引 563 亿美元、EPS 8.40 的兑现；AI 服务器毛利率与存储成本转嫁；积压中新云 / 大模型客户占比及是否有延期。",
    "src": [
+    [
+     "StockTitan：Dell 三季度 FY27 业绩（收入 549 亿美元、+103%）",
+     "https://www.stocktitan.net/news/DELL/dell-technologies-delivers-third-quarter-fiscal-2027-financial-1b9dmbjoh63j.html"
+    ],
+    [
+     "Reuters（Investing.com）：Dell lifts annual forecasts after record quarter",
+     "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+    ],
     [
      "Earnings Whispers / Finviz：戴尔需证明 950 亿美元 AI 积压能在存储受限下转化",
      "https://finviz.com/news/423394/dell-must-prove-its-95-billion-ai-backlog-can-convert-despite-memory-constraints"
@@ -5069,12 +5172,16 @@
    ]
   },
   "HPE": {
-   "date": "2026-11-23",
+   "date": "2026-11-24",
    "dir": "顺风",
-   "text": "顺风：AI 服务器与网络需求强，公司称订单远超可交付量，FY27 框架为收入 +13%~17%、EPS 4.40~4.60，Juniper 协同目标上调至 FY28 年化 8 亿美元，数据中心网络收入目标为到 FY29 年复合增长 50% 左右。逆风：供应（存储与零部件）卡住出货，AI 服务器利润率薄，传统服务器为周期性业务。 11-23 财报：FY26Q4 收入 145 亿美元（+50%）、Non-GAAP EPS 1.43（指引 1.20~1.30），FY27 指引上调为收入 594 亿~631 亿美元（+27%~35%）、EPS 5.05~5.35、自由现金流 ≥55 亿美元，75% 以上自由现金流回馈股东——积压开始转化为收入；GAAP 毛利率 38.0% 环比 −210 个基点，成本端压力兑现（判断：需求面由“订单远超交付”走向“交付加速”，利润率是新的主要变量）。",
+   "text": "顺风：AI 服务器与网络需求强，公司称订单远超可交付量，FY27 框架为收入 +13%~17%、EPS 4.40~4.60，Juniper 协同目标上调至 FY28 年化 8 亿美元，数据中心网络收入目标为到 FY29 年复合增长 50% 左右。逆风：供应（存储与零部件）卡住出货，AI 服务器利润率薄，传统服务器为周期性业务。 11-23 财报：FY26Q4 收入 145 亿美元（+50%）、Non-GAAP EPS 1.43（指引 1.20~1.30），FY27 指引上调为收入 594 亿~631 亿美元（+27%~35%）、EPS 5.05~5.35、自由现金流 ≥55 亿美元，75% 以上自由现金流回馈股东——积压开始转化为收入；GAAP 毛利率 38.0% 环比 −210 个基点，成本端压力兑现（判断：需求面由“订单远超交付”走向“交付加速”，利润率是新的主要变量）。 11-24：SiliconANGLE 补充：Cloud & AI 营业利润率 18.4%→FY27 约 14%，CFO 称下半年成本涨得比售价快，约 54% 收入落在下半年；AI 积压 105 亿美元，网络订单增速是收入增速的 4.5 倍以上；股价 −16.3% 至 40.19。同日 Dell 上调指引，说明需求不是问题，问题在整机厂的成本转嫁能力（判断）。",
    "miss": "前瞻估值假设积压按期出货；没有反映供应受限时成本先涨、收入后到的利润挤压，以及 AI 服务器客户（新云 / 主权 AI）融资能力的变化（判断）。",
    "watch": "FY27Q1 毛利率能否企稳、内存加价能否转嫁、网络（Juniper）收入增速、盘后分歧（先跌后涨）次日如何收敛；2027 前瞻区间更新后中值的变化。",
    "src": [
+    [
+     "SiliconANGLE：Key insights from HPE's Q4 earnings report",
+     "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
+    ],
     [
      "BusinessWire：HPE FY26 第四季度业绩",
      "https://www.businesswire.com/news/home/20261123129850/en/HPE-reports-fiscal-2026-fourth-quarter-results"
@@ -5090,12 +5197,16 @@
    ]
   },
   "ADI": {
-   "date": "2026-11-22",
+   "date": "2026-11-24",
    "dir": "顺风",
-   "text": "顺风：工业周期复苏叠加数据中心电源 / 通信需求，三季度工业收入 19.7 亿美元（+53%）、占比 49%，四季度一致预期收入约 43.2 亿美元（+41%）、EPS 约 3.89，通信板块中数据中心约占八成。逆风：模拟芯片周期性强，复苏后半段增速会放缓；11-20 随半导体板块 −8.3%。",
+   "text": "顺风：工业周期复苏叠加数据中心电源 / 通信需求，三季度工业收入 19.7 亿美元（+53%）、占比 49%，四季度一致预期收入约 43.2 亿美元（+41%）、EPS 约 3.89，通信板块中数据中心约占八成。逆风：模拟芯片周期性强，复苏后半段增速会放缓；11-20 随半导体板块 −8.3%。 11-24：四季度收入 43.7 亿美元、调整后 EPS 4.06 双超，但一季度收入指引 44 亿 ±1.5 亿美元（环比持平）、FY27 资本开支 16~19 亿美元，股价 −17.4% 至 312.95——市场把“复苏后半段增速放缓”提前定价，与此前逆风判断一致。",
    "miss": "前瞻估值按一致预期外推高增速；没有反映工业补库存结束后的增速回落（周期高点风险）、汽车与中国需求的不确定性（判断）。",
-   "watch": "11-24 财报：工业收入环比是否仍有高个位数增长、订单出货比、毛利率能否维持约 74%、FY27 首季指引。",
+   "watch": "二季度起工业收入能否恢复环比增长、数据中心电源收入占比、订单出货比、资本开支对自由现金流的影响。",
    "src": [
+    [
+     "Seeking Alpha：ADI FY27 资本开支 16~19 亿美元、一季度收入指引 44 亿 ±1.5 亿",
+     "https://seekingalpha.com/symbol/ADI/news?source=feed_symbol_ADI"
+    ],
     [
      "Hudson Labs：ADI FY26 四季度业绩前瞻",
      "https://www.hudson-labs.com/research/analog-devices-q4-2026-earnings-preview-adi-revenue-outlook"
@@ -5107,12 +5218,16 @@
    ]
   },
   "WDAY": {
-   "date": "2026-11-22",
+   "date": "2026-11-24",
    "dir": "分化",
-   "text": "顺风：HR / 财务系统黏性高，AI agent 产品与按用量计费新模式据公司称年化收入接近 5 亿美元，营业利润率目标上调至 30.5%。逆风：按员工人数计费，存量客户席位大体持平，企业用 AI 替代岗位会直接压缩席位基数；管理层称 AI 收入的主要回报要到 FY28。",
+   "text": "顺风：HR / 财务系统黏性高，AI agent 产品与按用量计费新模式据公司称年化收入接近 5 亿美元，营业利润率目标上调至 30.5%。逆风：按员工人数计费，存量客户席位大体持平，企业用 AI 替代岗位会直接压缩席位基数；管理层称 AI 收入的主要回报要到 FY28。 11-24：三季度调整后 EPS 2.82（预期 2.75）、收入 27.05 亿美元（+11.2%，预期约 26.9 亿）小幅超预期，股价约 −2.8%；收入增速仍在低双位数，席位压缩担忧没有被这份财报解除（判断）。",
    "miss": "前瞻估值假设订阅收入稳定增长；没有反映 AI 压缩客户员工人数对按席位定价的结构性冲击，以及 AI agent 竞争（大模型厂商直接做 HR / 财务 agent）带来的定价权下降（判断）。",
-   "watch": "11-24 财报：订阅收入（全年指引 99.4 亿~99.5 亿美元）、cRPO 增速、AI 订单是否兑现、席位数与净留存率。",
+   "watch": "cRPO 增速、四季度订阅收入指引、AI agent 产品收入占比、净留存率与席位数。",
    "src": [
+    [
+     "Investing.com：Workday shares fall 2.8% after third-quarter earnings beat",
+     "https://investing.com/news/stock-market-news/workday-shares-fall-28-in-choppy-trading-after-thirdquarter-earnings-beat-5049010"
+    ],
     [
      "Earnings Whispers / Finviz：Workday 下半年 AI 订单承诺迎来首次检验",
      "https://finviz.com/news/423401/workdays-promised-second-half-ai-bookings-surge-faces-its-first-real-test"
@@ -5124,12 +5239,16 @@
    ]
   },
   "ADSK": {
-   "date": "2026-11-22",
+   "date": "2026-11-24",
    "dir": "分化",
-   "text": "顺风：设计软件在建筑、制造、媒体领域地位稳固，上季 EPS 3.30、收入 20.5 亿美元均超预期，全年收入指引 82.95 亿~83.45 亿美元；收购 MaintainX 延伸到设备维护。逆风：上季公布的 FY27 盈利指引低于预期，AI 生成设计可能降低入门用户的付费意愿（判断）。",
+   "text": "顺风：设计软件在建筑、制造、媒体领域地位稳固，上季 EPS 3.30、收入 20.5 亿美元均超预期，全年收入指引 82.95 亿~83.45 亿美元；收购 MaintainX 延伸到设备维护。逆风：上季公布的 FY27 盈利指引低于预期，AI 生成设计可能降低入门用户的付费意愿（判断）。 11-24：三季度 EPS 3.20（预期约 3.07）、收入 21.6 亿美元（预期约 21.3 亿）均超预期，四季度收入指引高于一致预期，但盘后约 −4%——基本面稳，估值仍受“AI 压缩设计软件席位”的叙事压制（判断）。",
    "miss": "前瞻估值按一致预期算；没有反映 AI 生成式设计工具对低端席位的替代、并购整合对利润率的拖累，以及建筑与制造业资本开支周期（判断）。",
-   "watch": "11-24 财报：有机账单增速、MaintainX 对利润率的影响、净留存率、FY27 指引是否再调整。",
+   "watch": "四季度账单增速、净留存率、MaintainX 整合后的利润率、FY28 初步指引。",
    "src": [
+    [
+     "Investing.com：Autodesk shares fall despite Q3 earnings beat",
+     "https://investing.com/news/transcripts/autodesk-shares-fall-despite-q3-earnings-beat-strong-guidance-5049017"
+    ],
     [
      "Earnings Whispers / Finviz：Autodesk 上调后的指引迎来首次检验（MaintainX 并表）",
      "https://finviz.com/news/423384/autodesks-raised-outlook-faces-its-first-test-as-maintainx-joins-the-numbers"
@@ -5222,6 +5341,23 @@
     [
      "Simply Wall St：Voyager 三季度积压强劲但仍亏损",
      "https://simplywall.st/stocks/us/capital-goods/nyse-voyg/voyager-technologies/news/voyager-technologies-voyg-q3-results-spotlight-backlog-stren"
+    ]
+   ]
+  },
+  "NTNX": {
+   "date": "2026-11-24",
+   "dir": "顺风",
+   "text": "顺风：博通收购 VMware 后的提价和捆绑促使部分企业寻找替代，Nutanix 的超融合 / 混合云平台是主要承接方之一；一季度 EPS 0.73（预期 0.61）、收入 7.724 亿美元（预期约 7.624 亿）均超预期。逆风：VMware 迁移是多年项目、节奏取决于客户续约周期，当天股价仍随科技股 −5.2% 至 54.59，恰在 2027 前瞻中值 54.87 附近。",
+   "miss": "前瞻估值假设 VMware 迁移需求持续兑现；没有反映博通若调整定价策略或客户转向公有云带来的需求回落，以及 AI 推理部署更多走公有云 / neocloud 对本地基础设施软件的分流（判断）。",
+   "watch": "ARR 与净留存率、新客户数（尤其大型 VMware 迁移客户）、自由现金流利润率、全年指引是否上调。",
+   "src": [
+    [
+     "MarketBeat：Nutanix Announces Earnings Results",
+     "https://www.marketbeat.com/instant-alerts/earnings-nutanix-nasdaq-ntnx-announces-earnings-results-2026-11-24/"
+    ],
+    [
+     "Investing.com：Nutanix earnings test VMware opportunity",
+     "https://www.investing.com/news/earnings/nutanix-in-the-spotlight-as-earnings-test-vmware-opportunity-93CH-5048521"
     ]
    ]
   }

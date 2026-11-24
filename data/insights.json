@@ -5674,5 +5674,314 @@
     ]
    }
   ]
+ },
+ "ai/assistant/server": {
+  "updated": "2026-11-24",
+  "note": "整机柜这一层收入增长最快、利润率最薄：Dell、Supermicro、HPE 这类品牌厂直接卖给企业、主权和新云客户，Celestica、Sanmina、Jabil、Flex 和台湾鸿海 / 广达 / 纬创这类代工厂替超大规模云厂商按设计生产。分歧在利润率：Dell 11-24 上调全年 AI 服务器指引到 780 亿美元，HPE 同期把 Cloud & AI 营业利润率指引从 18.4% 降到约 14%，Supermicro 毛利率降到 12.7%——同样的需求，谁能把内存涨价转嫁出去决定了利润落在哪里。",
+  "companies": {
+   "DELL": {
+    "products": "PowerEdge XE 系列 AI 服务器（英伟达 GB300 / Vera Rubin 等平台）、AI Factory 整体方案",
+    "what": "把 GPU、CPU、内存、网络、液冷装进机柜，连同安装、软件和售后一起卖给企业和云厂商，相当于 AI 算力的“总装 + 交付商”。",
+    "diff": "规模最大的品牌厂：三季度 FY27 AI 服务器收入 220 亿美元、新单 602 亿美元、积压 1,323 亿美元，全年 AI 服务器指引 780 亿美元；带企业销售渠道和融资服务。",
+    "ties": "英伟达；客户含新云、模型公司和大企业（具体名单未完整披露）",
+    "src": [
+     [
+      "Reuters（Investing.com）：Dell 上调全年指引、AI 积压 1,323 亿美元",
+      "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+     ]
+    ]
+   },
+   "SMCI": {
+    "products": "DCBBS 数据中心积木式方案、液冷 GPU 机柜",
+    "what": "超微做模块化的 GPU 服务器和液冷机柜，强调上新平台速度快，客户可以像搭积木一样整栋数据中心采购。",
+    "diff": "一季度 FY27 收入 199 亿美元（+约 3 倍），远超公司 145~155 亿指引，但 GAAP 毛利率由 17.5% 降到 12.7%，经营现金流为负 4.34 亿美元；全年指引据报上调到 720~820 亿美元（来源为二手报道）。",
+    "ties": "英伟达、AMD；大客户含新云与 xAI 类客户（未逐一披露）",
+    "src": [
+     [
+      "Supermicro 一季度 FY27 业绩（Yahoo 转载新闻稿）",
+      "https://finance.yahoo.com/markets/stocks/articles/supermicro-announces-first-quarter-fiscal-210500756.html"
+     ],
+     [
+      "CryptoBriefing：Supermicro 创纪录季度但股价反应平淡",
+      "https://cryptobriefing.com/super-micro-q1-fy27-results-stock-muted/"
+     ]
+    ]
+   },
+   "HPE": {
+    "products": "Cray / ProLiant AI 系统、GB300 NVL72 机柜、Juniper 网络",
+    "what": "慧与卖 AI 服务器和超算，同时用收购来的 Juniper 卖数据中心网络，想靠“服务器 + 网络”一起卖提高利润。",
+    "diff": "AI 积压 105 亿美元，但 Cloud & AI 营业利润率 18.4%→FY27 指引约 14%，CFO 称成本涨得比售价快；网络到 FY27 四季度预计贡献超 40% 营业利润。",
+    "ties": "英伟达、AMD；主权 AI 与超算客户",
+    "src": [
+     [
+      "SiliconANGLE：Key insights from HPE's Q4 earnings report",
+      "https://siliconangle.com/2026/11/24/key-insights-from-hpes-q4-earnings-report/"
+     ]
+    ]
+   },
+   "CLS": {
+    "products": "超大规模云定制计算 / 机柜（CCS 部门）、800G/1.6T 交换机（HPS）",
+    "what": "Celestica 替谷歌、Meta 这类云厂商按它们自己的设计生产服务器和交换机，自己也设计白牌交换机硬件。",
+    "diff": "三季度收入 58.3 亿美元（+83%），CCS 部门 48.7 亿美元（+102%）、利润率 8.9%；库存环比增 11 亿美元为需求备货。",
+    "ties": "多家超大规模云厂商（不点名）",
+    "src": [
+     [
+      "Motley Fool：Celestica Q3 2026 业绩电话会纪要",
+      "https://www.fool.com/earnings/call-transcripts/2026/10/27/celestica-cls-q3-2026-earnings-call-transcript/"
+     ]
+    ]
+   },
+   "SANM": {
+    "products": "AI 机柜整机集成（含原 ZT Systems 制造业务）、AMD Helios 机柜",
+    "what": "Sanmina 是代工厂，收购了 AMD 出售的 ZT Systems 制造部分，负责把 AMD 的整机柜方案量产出来。",
+    "diff": "Cloud & AI 收入 23.7 亿美元（+179%），FY27 指引总收入 175~195 亿美元、其中 Cloud & AI Systems 75~90 亿美元；AMD 下一代机柜收入集中在下半财年。",
+    "ties": "AMD（Helios）、超大规模云和 OEM 客户",
+    "src": [
+     [
+      "Converge Digest：Sanmina Q4 FY26 收入 +84%，AI 机柜爬坡",
+      "https://convergedigest.com/sanmina-q4-fy26-results-fy27-guidance-ai-racks/"
+     ]
+    ]
+   },
+   "FLEX": {
+    "products": "数据中心机柜、电源（含 800VDC）、液冷，计划分拆部分业务",
+    "what": "伟创力替云厂商做机柜和配套电源 / 散热，更偏“电力 + 散热 + 机柜”这一侧，而不是 GPU 主板。",
+    "diff": "据报道今年数据中心收入约 65 亿美元（+35% 以上），产品支持 19/21 英寸机柜和 800VDC；不同来源的全年总收入指引不一致。",
+    "ties": "超大规模云厂商（未披露）",
+    "src": [
+     [
+      "Yahoo：Flex 如何加速扩张数据中心业务",
+      "https://finance.yahoo.com/news/flex-accelerating-expansion-data-center-140200491.html"
+     ],
+     [
+      "Yahoo：Flex 分拆与电源收购",
+      "https://finance.yahoo.com/sectors/technology/articles/flex-fuels-growth-via-spinco-141400363.html"
+     ]
+    ],
+    "unverified": true
+   },
+   "JBL": {
+    "products": "AI 机柜集成、液冷与电源管理、印度 AI 基础设施制造平台",
+    "what": "捷普替客户组装 AI 机柜，并做配套液冷、电源；正在印度建一体化的 AI 机柜工厂。",
+    "diff": "此前预计 FY26 AI 相关收入约 121 亿美元（+35%）；分析师认为液冷和电源能力帮它避开了部分项目延期。",
+    "ties": "超大规模云厂商（未披露）",
+    "src": [
+     [
+      "Yahoo：Jabil 押注印度 AI 基础设施",
+      "https://uk.finance.yahoo.com/news/jabil-bets-big-indias-ai-171500778.html"
+     ]
+    ],
+    "unverified": true
+   },
+   "~鸿海 / 广达 / 纬创": {
+    "products": "GB200 / GB300 NVL72 机柜代工",
+    "what": "台湾代工厂是英伟达整机柜的主力生产者，大部分云厂商订单最后都由它们出货。",
+    "diff": "据报道 2025 年 GB200/GB300 机柜出货鸿海约 52%、纬创约 21%、广达约 19%；摩根士丹利预测 2027 年约 9.04 万柜中鸿海 43%、广达 26%、纬创 24%（二手转述）。",
+    "ties": "英伟达、微软、亚马逊、Meta 等",
+    "src": [
+     [
+      "DATAAD：GB300 NVL72 供应商（美国 vs 台湾）",
+      "https://dataad.com/post/nvidia-gb300-nvl72-suppliers"
+     ],
+     [
+      "Exencial（转述摩根士丹利）：大中华 AI 硬件与机柜份额",
+      "https://exencialrp.substack.com/p/morgan-stanley-maps-greater-china"
+     ]
+    ]
+   }
+  },
+  "relations": [
+   {
+    "a": "DELL",
+    "b": "HPE",
+    "type": "竞争",
+    "desc": "同一季度 Dell 上调 AI 服务器指引、HPE 下调 AI 部门利润率指引，品牌厂之间成本转嫁能力出现分化。",
+    "src": [
+     "Reuters（Investing.com）：Dell 上调全年指引、AI 积压 1,323 亿美元",
+     "https://www.investing.com/news/stock-market-news/dell-lifts-annual-forecasts-after-record-quarter-on-surging-ai-server-demand-5049024"
+    ]
+   },
+   {
+    "a": "DELL",
+    "b": "SMCI",
+    "type": "竞争",
+    "desc": "两者与 HPE 是英伟达 AI 服务器的三大美国品牌厂，在企业和新云订单上直接竞争。",
+    "src": [
+     "GPUsmith：Supermicro vs Dell vs HPE 服务器对比",
+     "https://gpusmith.com/articles/en/nvidia-ai-server-oem-comparison"
+    ]
+   },
+   {
+    "a": "SANM",
+    "b": "AMD",
+    "type": "合作",
+    "desc": "Sanmina 接手 ZT Systems 制造业务，量产 AMD Helios 整机柜。",
+    "src": [
+     "Converge Digest：Sanmina Q4 FY26 收入 +84%，AI 机柜爬坡",
+     "https://convergedigest.com/sanmina-q4-fy26-results-fy27-guidance-ai-racks/"
+    ]
+   },
+   {
+    "a": "~鸿海",
+    "b": "NVDA",
+    "type": "供应",
+    "desc": "鸿海是 GB200/GB300 机柜份额最大的代工厂。",
+    "src": [
+     "DATAAD：GB300 NVL72 供应商（美国 vs 台湾）",
+     "https://dataad.com/post/nvidia-gb300-nvl72-suppliers"
+    ]
+   },
+   {
+    "a": "CLS",
+    "b": "超大规模云",
+    "type": "供应",
+    "desc": "Celestica 为多家超大规模云厂商生产定制计算与 1.6T 交换机。",
+    "src": [
+     "Motley Fool：Celestica Q3 2026 业绩电话会纪要",
+     "https://www.fool.com/earnings/call-transcripts/2026/10/27/celestica-cls-q3-2026-earnings-call-transcript/"
+    ]
+   }
+  ]
+ },
+ "aerospace/sat/obc": {
+  "updated": "2026-11-24",
+  "note": "星载计算机正从“够用就行的老处理器”转向能在轨跑 AI 的多核芯片。三条路线：专门的抗辐射 CPU（BAE RAD5545、Microchip PIC64-HPSC 的 RISC-V）、抗辐射 FPGA / 自适应 SoC（AMD Versal XQR、Microchip、Lattice）、商用芯片加筛选和冗余（Teledyne e2v 的 LX2160-Space 等）。分歧在“抗辐射等级 vs 算力 / 成本”：深空和高轨要硬抗辐射，低轨新航天更愿意用便宜的耐辐射件。",
+  "companies": {
+   "MCHP": {
+    "products": "PIC64-HPSC（RT 面向低轨、RH 面向中高轨和深空）、抗辐射 FPGA",
+    "what": "给航天器用的 64 位 RISC-V 处理器，是 NASA 下一代航天计算平台的芯片，能扛住太空辐射还能跑 AI 推理。",
+    "diff": "2026-10 公布 RH 版早期辐射测试：总剂量测到 200 krad(Si)、单粒子锁定 78.2 MeV·cm²/mg；集成 240G TSN 以太网交换和后量子安全。",
+    "ties": "NASA HPSC 项目；生态伙伴（板卡、软件厂商）",
+    "src": [
+     [
+      "Microchip：PIC64-HPSC 生态",
+      "https://www.microchip.com/en-us/products/microprocessors/64-bit-mpus/pic64-hpsc/ecosystem"
+     ],
+     [
+      "SiliconLogix：PIC64-HPSC 早期辐射测试结果",
+      "https://www.siliconlogix.it/en/article/pic64-hpsc-risc-v-in-space-early-radiation-results-and-firmware-challenges"
+     ]
+    ]
+   },
+   "AMD": {
+    "products": "Versal AI Core XQRVC1902、XQRVE2302 等航天级自适应 SoC",
+    "what": "把 FPGA 和 AI 引擎做在一颗芯片上，卫星可以在轨处理图像、雷达数据，只把结果传回地面。",
+    "diff": "XQRVE2302 达到 Class B 飞行级；SRAM 型器件需要刷新（scrubbing）和冗余设计，下一代 AI Edge Gen 2 / RF 航天版预计 2029 年。",
+    "ties": "卫星载荷厂商（未逐一披露）",
+    "src": [
+     [
+      "AMD：飞行级 Versal 自适应 SoC 开放订购",
+      "https://www.amd.com/en/blogs/2025/available-for-order-flight-qualified-amd-versal-a.html"
+     ],
+     [
+      "Fidus：自适应 SoC 与抗辐射 FPGA 对比",
+      "https://fidus.com/blog/blog-radiation-tolerant-adaptive-soc-vs-rad-hard-fpga/"
+     ]
+    ]
+   },
+   "TDY": {
+    "products": "LX2160-Space 16 核 Arm 处理器、航天 DDR4（8GB/16GB）、宇航级 ADC",
+    "what": "Teledyne e2v 把商用高性能芯片改造、筛选成太空可用的版本，让卫星有接近地面服务器的算力。",
+    "diff": "LX2160-Space 飞行件计划 2026 年底前提供，可选 NASA 1/2/3 级、ECSS 3 级和自家 New Space 等级；11-12 扩展 16GB 航天 DDR4。",
+    "ties": "卫星与航天器制造商（未披露）",
+    "src": [
+     [
+      "New Electronics：Teledyne e2v LX2160-Space 年底前提供飞行件",
+      "https://www.newelectronics.co.uk/content/product-launches/teledyne-e2v-to-release-lx2160-space-flight-models-by-end-of-2026"
+     ],
+     [
+      "SatNews：Teledyne e2v 扩展航天 DDR4 内存（2026-11-12）",
+      "https://satnews.com/2026/11/12/teledyne-e2v-expands-space-ddr4-memory-line-with-8-gb-and-16-gb-nasa-grade-models/"
+     ]
+    ]
+   },
+   "BAESY": {
+    "products": "RAD5545 SpaceVPX 单板计算机、RAD750",
+    "what": "BAE 的抗辐射计算机是很多美国军用和深空任务的“标准大脑”，可靠性优先、算力次之。",
+    "diff": "RAD5545 为多核 SpaceVPX 架构，也用于在轨可重编程的软件无线电载荷；属传统高可靠路线。",
+    "ties": "美国国防部、NASA 任务",
+    "src": [
+     [
+      "BAE Systems：抗辐射电子产品",
+      "https://www.baesystems.com/en/product/radiation-hardened-electronics"
+     ],
+     [
+      "NewSpace Economy：2026 抗辐射处理器市场格局",
+      "https://newspaceeconomy.ca/2026/11/10/radiation-hardened-processors-market-landscape-2026/"
+     ]
+    ]
+   },
+   "MRCY": {
+    "products": "航天级处理与存储子系统",
+    "what": "Mercury 做把芯片集成成可上天的处理板卡和子系统，偏防务客户。",
+    "diff": "未查到 2026 年专门的星载计算新品公告。",
+    "ties": "防务主承包商",
+    "src": [
+     [
+      "NewSpace Economy：2026 抗辐射处理器市场格局",
+      "https://newspaceeconomy.ca/2026/11/10/radiation-hardened-processors-market-landscape-2026/"
+     ]
+    ],
+    "unverified": true
+   },
+   "TXN": {
+    "products": "航天级（SEP / QMLV）电源管理、接口和数据转换芯片",
+    "what": "德州仪器给卫星供应电源和接口等配套芯片，不是主处理器，但每块星载板卡都要用。",
+    "diff": "未查到当日针对星载计算的新公告。",
+    "ties": "卫星制造商（广泛）",
+    "src": [
+     [
+      "NewSpace Economy：2026 抗辐射处理器市场格局",
+      "https://newspaceeconomy.ca/2026/11/10/radiation-hardened-processors-market-landscape-2026/"
+     ]
+    ],
+    "unverified": true
+   },
+   "LSCC": {
+    "products": "低功耗 FPGA（航天应用多为耐辐射筛选版）",
+    "what": "莱迪思的小型 FPGA 常用作卫星里的控制和接口逻辑。",
+    "diff": "本轮搜索未查到 2026 年航天相关公告。",
+    "ties": "未披露",
+    "src": [
+     [
+      "NewSpace Economy：2026 抗辐射处理器市场格局",
+      "https://newspaceeconomy.ca/2026/11/10/radiation-hardened-processors-market-landscape-2026/"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "MCHP",
+    "b": "NASA",
+    "type": "客户",
+    "desc": "PIC64-HPSC 是 NASA 高性能航天计算（HPSC）项目的处理器。",
+    "src": [
+     "Microchip：PIC64-HPSC 生态",
+     "https://www.microchip.com/en-us/products/microprocessors/64-bit-mpus/pic64-hpsc/ecosystem"
+    ]
+   },
+   {
+    "a": "AMD",
+    "b": "MCHP",
+    "type": "竞争",
+    "desc": "AMD 的 SRAM 型 Versal 与抗辐射 FPGA / MPU 在卫星载荷处理上互为替代，取舍在算力与抗辐射设计负担之间。",
+    "src": [
+     "Fidus：自适应 SoC 与抗辐射 FPGA 对比",
+     "https://fidus.com/blog/blog-radiation-tolerant-adaptive-soc-vs-rad-hard-fpga/"
+    ]
+   },
+   {
+    "a": "TDY",
+    "b": "BAESY",
+    "type": "竞争",
+    "desc": "Teledyne e2v 用商用多核芯片筛选路线争夺 BAE 传统抗辐射单板机的市场。",
+    "src": [
+     "NewSpace Economy：2026 抗辐射处理器市场格局",
+     "https://newspaceeconomy.ca/2026/11/10/radiation-hardened-processors-market-landscape-2026/"
+    ]
+   }
+  ]
  }
 }
