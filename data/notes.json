@@ -457,6 +457,11 @@
   ],
   "APLD": [
    {
+    "date": "2026-11-24",
+    "text": "产业面 / 基本面向上：与未具名投资级超大规模云厂商签 150MW、18 年 54 亿美元租约（含续约 33 年 127 亿），2028 上半年交付；合同基础租期收入超 410 亿美元，但新增 SOFR+300bp 过桥贷款显示建设期资本成本仍高。",
+    "url": "https://www.datacenterdynamics.com/en/news/applied-digital-signs-54bn-18-year-lease-with-unnamed-hyperscaler/"
+   },
+   {
     "date": "2026-11-10",
     "text": "产业面正向：中期选举中全美 40 多项反数据中心地方提案里，只有其 Polaris Forge 2 所在的北达科他州 Harwood 否决；“社区同意”正在成为稀缺资产。",
     "url": "https://www.datacenterdynamics.com/en/analysis/data-center-harwood-north-dakota-applied-digital-us-midterm-elections/"
@@ -677,6 +682,11 @@
    }
   ],
   "TSM": [
+   {
+    "date": "2026-11-24",
+    "text": "产业面向上（早期）：向得州提交 Brazos County 2nm 厂申请，约 230 亿美元投入、计划 2027 动工 2029 投产；土地协议不具约束力，仍在评估 Sherman 等地。",
+    "url": "https://www.datacenterdynamics.com/en/news/tsmc-files-application-for-proposed-2nm-chip-fab-in-brazos-county-texas/"
+   },
    {
     "date": "2026-11-22",
     "text": "合规面向下：BIS 取消晶体管数量自检通道后，暂停向部分中国设计公司交付 16nm 及以下芯片（需美国许可，在途货物 12-21 前放行），中国客户退回 28/40nm；影响收入结构但不改 AI 主业需求。",
@@ -1206,6 +1216,10 @@
  "sectors": {
   "ai": [
    {
+    "date": "2026-11-24",
+    "text": "Applied Digital 150MW / 18 年租约与台积电得州 2nm 厂申请：云厂商为 2028 年可并网容量锁长约、先进制程本土化推进，产业面继续向上；但同日 NVDA / AMD 开盘大幅回吐，价格侧仍由情绪主导。"
+   },
+   {
     "date": "2026-11-23",
     "text": "合规面：Megaspeed 据报被列入实体清单，监管重点从“卖给谁”前移到“中间商是谁”；安全软件平台化整合（CRWD 收购 ZS）与 AI 运行时防护（Shirudo）、AI 自动审批（Claude Ship）同日出现。",
     "url": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
@@ -1222,11 +1236,6 @@
     "date": "2026-11-22",
     "text": "合规面延伸到代工环节：BIS 新规让台积电、三星暂停向部分中国设计公司交付 16nm 及以下芯片（含小米、OPPO、vivo 等消费电子客户），限制从“卖什么 GPU”扩展到“替谁代工”；产业需求面不变。",
     "url": "https://www.taipeitimes.com/News/biz/archives/2026/11/20/2003868041"
-   },
-   {
-    "date": "2026-11-21",
-    "text": "情绪面出清 + 合规面扩散：11-20 AI 链单日普跌 10%~16%（NVDA −14%），加州对英伟达调查据报涉刑事，白宫提出对海外数据中心征税；对冲项是出口政策不变、Oracle 完成 OpenAI 合同融资。产业面（AMD 自锁电力场地、CPO 万卡网络、电网审批提速法案）继续向前，价格与基本面背离扩大。",
-    "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
    }
   ],
   "quantum": [
@@ -1320,13 +1329,13 @@
  "daily": [
   {
    "date": "2026-11-24",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 11 篇】资金面、情绪面读数沿用昨日（资金面 23 钱贵 / 紧缩，情绪面 29 偏悲观），本条只记录盘前增量。情绪面：昨日 AI 一浪的急速修复在盘前出现回吐——据 CNBC 标题，NVDA 盘前跌逾 5%（昨收 165.05、+31.5%），Seeking Alpha 标题称芯片与 AI 股从创纪录反弹中回落；据 Reuters / 彭博标题，Anthropic 盘前跌破 83 美元 IPO 价（细节未查证），AI 资产的估值情绪仍不稳。基本面：ADI 四季度收入 43.7 亿美元、调整后 EPS 4.06，分别超预期 5,000 万美元和 0.18 美元，但据 Seeking Alpha 标题一季度指引令股价盘前跌约 10%（指引数字未查证）——“财报超预期、指引 / 预期面分歧”延续了昨日 HPE、Symbotic 的特征。治理面：据 Tom's Hardware 援引报道，特朗普曾致电英伟达董事会会议推动复任黄仁勋（细节未查证），若属实，政治介入将成为治理折价的新来源。产业面：DatacenterHawk 三季度报告显示全球托管容量 77GW、空置率由 3.5% 降到 1.8%，供给大增仍被快速吸收，AI 算力需求侧没有过剩迹象。整体结论不变：需求侧继续确认，但资金面紧、情绪面在极端区来回摆动，三浪位置仍以“财报已改善、价格未反映”为主（快照浪位今晨在 AI 二浪、量子二浪、自动驾驶一浪上反复切换，属阈值边缘波动）。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 11 篇】资金面、情绪面读数沿用昨日（资金面 23 钱贵 / 紧缩，情绪面 29 偏悲观），本条只记录盘前增量。情绪面：昨日 AI 一浪的急速修复在盘前出现回吐——据 CNBC 标题，NVDA 盘前跌逾 5%（昨收 165.05、+31.5%），Seeking Alpha 标题称芯片与 AI 股从创纪录反弹中回落；据 Reuters / 彭博标题，Anthropic 盘前跌破 83 美元 IPO 价（细节未查证），AI 资产的估值情绪仍不稳。基本面：ADI 四季度收入 43.7 亿美元、调整后 EPS 4.06，分别超预期 5,000 万美元和 0.18 美元，但据 Seeking Alpha 标题一季度指引令股价盘前跌约 10%（指引数字未查证）——“财报超预期、指引 / 预期面分歧”延续了昨日 HPE、Symbotic 的特征。治理面：据 Tom's Hardware 援引报道，特朗普曾致电英伟达董事会会议推动复任黄仁勋（细节未查证），若属实，政治介入将成为治理折价的新来源。产业面：DatacenterHawk 三季度报告显示全球托管容量 77GW、空置率由 3.5% 降到 1.8%，供给大增仍被快速吸收，AI 算力需求侧没有过剩迹象。整体结论不变：需求侧继续确认，但资金面紧、情绪面在极端区来回摆动，三浪位置仍以“财报已改善、价格未反映”为主（快照浪位今晨在 AI 二浪、量子二浪、自动驾驶一浪上反复切换，属阈值边缘波动）。\n【07:28 更新，含 Summizer 新增的 2 篇】情绪面：盘前回吐在开盘后兑现——据 CNBC / Reuters 标题，NVDA 开盘后跌逾 5%，“英伟达带动的 AI 反弹退潮”拖累大盘低开；快照 NVDA 153.75（−6.9%）、AMD 409.8（−9.6%）、TSM 346.33（−4.8%），昨日一浪式修复回吐约三分之一，CNBC 标题提示针对英伟达的调查尚未结束，治理折价仍在。产业面继续向上：Applied Digital 与一家未具名投资级超大规模云厂商签 150MW、18 年 54 亿美元租约（含续约 33 年 127 亿美元），2028 上半年交付，云厂商在为 2028 年的可并网容量锁定超长租期；台积电向得州提交 Brazos County 2nm 晶圆厂申请（约 230 亿美元、计划 2027 动工 / 2029 投产，土地协议不具约束力、仍在比较 Sherman 等地）。整体结论不变：需求与产能侧持续确认，价格侧仍由资金面紧、情绪面摆动主导。",
    "sectors": {
-    "ai": "【06:29】ADI 四季度双超（收入 43.7 亿美元、EPS 4.06），但一季度指引令盘前约 −10%（Seeking Alpha 标题，指引细节未查证）；NVDA 盘前跌逾 5%、芯片股回吐（CNBC）；Seeking Alpha 标题称 HPE 警告 AI 服务器压利润率，与昨日毛利率 −210bp 一致；Anthropic 据报盘前跌破 IPO 价（细节未查证）。产业面：DatacenterHawk 称全球托管容量 77GW、空置率 1.8%，北美三季度租出 13.5GW 创纪录；AI 云初创 Marlowe 获 2.77 亿美元种子轮（DCD）。",
+    "ai": "【06:29】ADI 四季度双超（收入 43.7 亿美元、EPS 4.06），但一季度指引令盘前约 −10%（Seeking Alpha 标题，指引细节未查证）；NVDA 盘前跌逾 5%、芯片股回吐（CNBC）；Seeking Alpha 标题称 HPE 警告 AI 服务器压利润率，与昨日毛利率 −210bp 一致；Anthropic 据报盘前跌破 IPO 价（细节未查证）。产业面：DatacenterHawk 称全球托管容量 77GW、空置率 1.8%，北美三季度租出 13.5GW 创纪录；AI 云初创 Marlowe 获 2.77 亿美元种子轮（DCD）。 【07:28】APLD 150MW / 18 年 / 54 亿美元新租约，合同基础租期收入累计超 410 亿美元，另获 Delta Forge 1 的 3 亿美元过桥贷款（SOFR+300bp，364 天），产业面向上、但资本成本仍高；台积电得州 2nm 厂申请属于本土先进制程扩产的早期信号（非最终选址）。开盘后 NVDA −6.9%、AMD −9.6%，昨日反弹部分回吐。",
     "quantum": "【06:29】政策面小幅向上：Diraq 与商务部敲定最高 3,800 万美元 CHIPS 研发资助（公司新闻稿），量子芯片开始被当作半导体制造问题获得产业政策支持；Planckian 获欧盟 EIC 1,000 万欧元、Pasqal 牵头欧洲防务基金容错项目。均为非上市公司，对人工确认公司无直接基本面影响。",
-    "robotics": "无重要新信息。",
-    "aerospace": "【06:29】Vodafone 与 AST SpaceMobile 在西班牙马拉加启用欧洲首个地球—太空站（DCD），D2D 地面网关与运营商核心网对接推进，属产业面小幅确认；ASTS 快照收 25.67（+10.3%），处于 2027 前瞻区间中值 20.43~上沿 44.60 之间。",
-    "autonomous": "【06:29】据 Seeking Alpha 标题，奔驰先于特斯拉获得德国自动驾驶批准（细节未查证），欧洲监管落地顺序对 TSLA 是竞争面小幅逆风；Mercedes 非人工确认公司。"
+    "robotics": "【07:28】据 The Robot Report 标题，软银收购 Marc Raibert 创办的 Robotics and AI Institute（此前报道称从现代集团手中收购、交易受美国审查，条款未披露；细节未查证），软银继续在机器人研发层加码，对人工确认公司无直接基本面影响。",
+    "aerospace": "【06:29】Vodafone 与 AST SpaceMobile 在西班牙马拉加启用欧洲首个地球—太空站（DCD），D2D 地面网关与运营商核心网对接推进，属产业面小幅确认；ASTS 快照收 25.67（+10.3%），处于 2027 前瞻区间中值 20.43~上沿 44.60 之间。 【07:28】据 Electrek 标题，特斯拉与 SpaceX 力争在新一届国会前于年底前达成合并（细节未查证；此前报道仅确认已成立特别委员会、尚无条款）。",
+    "autonomous": "【06:29】据 Seeking Alpha 标题，奔驰先于特斯拉获得德国自动驾驶批准（细节未查证），欧洲监管落地顺序对 TSLA 是竞争面小幅逆风；Mercedes 非人工确认公司。 【07:28】TSLA：据 Electrek 标题，特斯拉—SpaceX 合并或争取年底前敲定（未查证），预期面变量升温；快照 383.26，处于 2027 前瞻区间中值 313.71~上沿 780.06 之间。"
    },
    "watch": [
     {
@@ -1335,7 +1344,7 @@
     },
     {
      "t": "NVDA",
-     "why": "复任后首个交易日盘前跌逾 5%（昨收 165.05），仍处于 2027 前瞻区间下沿 112~中值 202 之间；据报特朗普致电董事会推动复任（细节未查证），治理面的政治色彩成为新关注点。"
+     "why": "复任后首个交易日盘前跌逾 5%（昨收 165.05），仍处于 2027 前瞻区间下沿 112~中值 202 之间；据报特朗普致电董事会推动复任（细节未查证），治理面的政治色彩成为新关注点。 07:28：开盘后延续回吐，快照 153.75（−6.9%），仍在 2027 前瞻区间下沿 104.36~中值 188.30 之间。"
     },
     {
      "t": "HPE",
@@ -1344,6 +1353,10 @@
     {
      "t": "ASTS",
      "why": "欧洲首个 D2D 地球—太空站在马拉加启用；快照收 25.67，处于 2027 前瞻区间中值 20.43~上沿 44.60 之间。"
+    },
+    {
+     "t": "APLD",
+     "why": "150MW / 18 年 / 54 亿美元新租约，合同基础租期收入超 410 亿美元（含续约 1,000 亿）；快照 12.49（−9.6%），在 2027 前瞻区间下沿 3.92~中值 17.92 之间，约在中值下方 30%。"
     }
    ],
    "sources": [
@@ -1378,6 +1391,18 @@
     [
      "Seeking Alpha：奔驰先于特斯拉获德国自动驾驶批准",
      "https://seekingalpha.com/symbol/TSLA/news?source=feed_symbol_TSLA"
+    ],
+    [
+     "Applied Digital signs $5.4bn 18-year lease with unnamed hyperscaler (DCD)",
+     "https://www.datacenterdynamics.com/en/news/applied-digital-signs-54bn-18-year-lease-with-unnamed-hyperscaler/"
+    ],
+    [
+     "TSMC files application for proposed 2nm chip fab in Brazos County, Texas (DCD)",
+     "https://www.datacenterdynamics.com/en/news/tsmc-files-application-for-proposed-2nm-chip-fab-in-brazos-county-texas/"
+    ],
+    [
+     "SoftBank agrees to acquire Robotics and AI Institute (The Robot Report)",
+     "https://www.therobotreport.com/softbank-agrees-to-acquire-robotics-and-ai-institute/"
     ]
    ]
   },
@@ -3593,7 +3618,7 @@
    ]
   }
  ],
- "updated": "2026-11-24T06:29",
+ "updated": "2026-11-24T07:28",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",

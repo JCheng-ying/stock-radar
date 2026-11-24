@@ -1364,3 +1364,19 @@
 {"ts": "2026-11-24T14:17:54+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
 {"ts": "2026-11-24T14:17:54+00:00", "title": "🌊 量子计算 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
 {"ts": "2026-11-24T14:17:54+00:00", "title": "🌊 自动驾驶 一浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、EBITDA 利润率（经营效率）", "priority": "high", "sent": true}
+{"ts": "2026-11-24T14:29:16+00:00", "title": "📝 研判更新 06:29", "body": "ADI 四季度双超但一季度指引致盘前约 −10%；NVDA 复任后盘前回吐逾 5%，据报特朗普曾致电董事会推动复任（未查证）。涉及：ADI NVDA HPE ASTS", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T14:45:20+00:00", "title": "🔄 数据已追上，期间共 49 条变化", "body": "💥 20 条：ADI、AEHR、AMD、AXTI、BE、BTDR、BTQ、DELL、FORM、HPE、IREN、MU…\n🟢 16 条：AAON、ADI、AMD、ASX、ATRO、CSCO、CVGI、DELL、DT、HPE、KEYS、KNX…\n🚀 6 条：AMTM、ASMIY、DRSHF、RNECY、TEX、YASKY\n🔴 3 条：A、TMO、ZS\n🌊 2 条：AI、机器人\n📊 1 条：PTC\n💎 1 条：SANM\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T15:13:35+00:00", "title": "🔄 数据已追上，期间共 43 条变化", "body": "💥 27 条：ACMR、ALAB、AMBA、CEVA、CIFR、COHU、CRDO、CRWV、ENTG、GETY、ICHR、KLAC…\n🔴 7 条：AJG、ALL、DOCU、DUK、EPAM、SONY、ZBH\n🟢 4 条：FLR、LECO、LSCC、NTAP\n🚀 3 条：FLNC、GLOB、KDK\n🌊 2 条：AI、机器人\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T15:14:38+00:00", "title": "🟢 AMD 进入「关注买点」", "body": "Advanced Micro Devices, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 38；处于52周区间的 48% 位置；偏离200日线 -5%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T15:14:38+00:00", "title": "🟢 CNH 进入「关注买点」", "body": "CNH Industrial N.V.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 36% 位置；偏离200日线 -3%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T15:14:38+00:00", "title": "🟢 DCO 进入「关注买点」", "body": "Ducommun Incorporated：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 43；处于52周区间的 45% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T15:14:39+00:00", "title": "💥 AEVA 单日 -8.1%", "body": "Aeva Technologies, Inc. 收于 8.45。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:39+00:00", "title": "💥 AMKR 单日 -8.0%", "body": "Amkor Technology, Inc. 收于 32.01。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:40+00:00", "title": "💥 APLD 单日 -9.6%", "body": "Applied Digital Corporation 收于 12.49。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:40+00:00", "title": "💥 ARM 单日 -8.3%", "body": "Arm Holdings plc 收于 161.96。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:40+00:00", "title": "💥 ASTS 单日 -9.4%", "body": "AST SpaceMobile, Inc. 收于 23.26。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:40+00:00", "title": "💥 COHR 单日 -8.8%", "body": "Coherent Corp. 收于 196.73。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:41+00:00", "title": "💥 CORZ 单日 -9.6%", "body": "Core Scientific, Inc. 收于 11.18。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:41+00:00", "title": "💥 FN 单日 -8.6%", "body": "Fabrinet 收于 300.9。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:41+00:00", "title": "💥 HUT 单日 -8.8%", "body": "Hut 8 Corp. 收于 46.87。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-24T15:14:42+00:00", "title": "还有 5 条更新", "body": "💥 INDI 单日 -9.2%\n💥 INVZ 单日 -11.6%\n💥 KOPN 单日 -9.3%\n💥 OUST 单日 -8.7%\n🚀 SYM 单日 +8.3%", "priority": "low", "sent": true}
