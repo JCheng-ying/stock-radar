@@ -1418,3 +1418,8 @@
 {"ts": "2026-11-24T20:12:19+00:00", "title": "🟢 IRM 进入「关注买点」", "body": "Iron Mountain Incorporated (Del：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 50% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
 {"ts": "2026-11-24T20:12:19+00:00", "title": "🟢 KN 进入「关注买点」", "body": "Knowles Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 44% 位置；偏离200日线 -8%", "priority": "high", "sent": true}
 {"ts": "2026-11-24T20:12:19+00:00", "title": "🟢 MPWR 进入「关注买点」", "body": "Monolithic Power Systems, Inc.：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 45；处于52周区间的 39% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T20:28:51+00:00", "title": "📝 研判更新 12:28", "body": "ADI 一季度收入指引 44 亿±1.5 亿美元、环比持平，股价 −16.9%；黄仁勋称英伟达不需要接班计划（据标题）。涉及：ADI NVDA", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T21:10:17+00:00", "title": "🟢 DCO 进入「关注买点」", "body": "Ducommun Incorporated：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 42；处于52周区间的 44% 位置；偏离200日线 -10%", "priority": "high", "sent": true}
+{"ts": "2026-11-24T21:10:18+00:00", "title": "🔴 FROG 进入「回调风险」", "body": "JFrog Ltd.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 52；处于52周区间的 88% 位置；偏离200日线 +38%", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T21:10:18+00:00", "title": "🔴 ZS 进入「回调风险」", "body": "Zscaler, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 60；处于52周区间的 66% 位置；偏离200日线 +38%", "priority": "normal", "sent": true}
+{"ts": "2026-11-24T21:10:18+00:00", "title": "💥 HTZ 单日 -8.0%", "body": "Hertz Global Holdings, Inc 收于 1.03。信号：弱势。", "priority": "low", "sent": true}
