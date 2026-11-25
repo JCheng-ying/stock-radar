@@ -1430,3 +1430,6 @@
 {"ts": "2026-11-25T01:28:52+00:00", "title": "📝 研判更新 17:28", "body": "Nutanix 财报同日启动 CEO 接班程序，Ramaswami 将在继任者到任后卸任（8-K）；NVDA 治理折价讨论转向董事会诉讼责任（观点）。整体结论不变。涉及：NTNX NVDA", "priority": "normal", "sent": true}
 {"ts": "2026-11-25T02:28:57+00:00", "title": "📝 研判更新 18:28", "body": "据标题 AMBA 四季度收入指引仅 7000万~7500万美元（存储短缺致订单推迟，未查证）；NTNX 全年收入指引低于预期、盘后 −8%。 涉及：AMBA NTNX", "priority": "normal", "sent": true}
 {"ts": "2026-11-25T03:20:30+00:00", "title": "🔄 数据已追上，期间共 106 条变化", "body": "💥 69 条：ACMR、ADI、AEHR、AEVA、ALAB、ALGM、AMKR、APLD、ARM、ASTS、ASX、AXTI…\n🟢 23 条：AAON、ADI、AMD、ASX、ATRO、CNH、CSCO、CVGI、DCO、DELL、FLR、HPE…\n🔴 9 条：A、AJG、ALL、DOCU、DUK、EPAM、MRNA、ZBH、ZS\n🚀 3 条：GETY、GLOB、KDK\n💎 1 条：SANM\n🌊 1 条：AI\n详情见网页「推送记录」和各公司页面。", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T12:22:03+00:00", "title": "🌊 量子计算 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-25T12:22:03+00:00", "title": "😱 VIX 30.4：极度恐慌(≥30)", "body": "VIX 30.5，处于近一年 99% 分位——极度恐慌，利空大概率已充分定价；期限结构倒挂（短期恐慌高于远期，往往接近情绪底）", "priority": "high", "sent": true}
+{"ts": "2026-11-25T13:15:33+00:00", "title": "🌊 量子计算 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
