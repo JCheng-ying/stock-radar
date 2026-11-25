@@ -1476,3 +1476,12 @@
 {"ts": "2026-11-25T16:16:43+00:00", "title": "💥 DDOG 单日 -8.5%", "body": "Datadog, Inc. 收于 151.36。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-25T16:16:43+00:00", "title": "💥 GLW 单日 -8.1%", "body": "Corning Incorporated 收于 93.62。信号：关注买点。", "priority": "low", "sent": true}
 {"ts": "2026-11-25T16:16:43+00:00", "title": "💥 GLXY 单日 -8.1%", "body": "Galaxy Digital Inc. 收于 10.62。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-25T16:28:58+00:00", "title": "📝 研判更新 08:28", "body": "半导体/neocloud 盘中跌幅扩大（MU −11.7%、NBIS −13%、CRWV −10.9%、NVDA −8.7%），资金面主导、结论不变；neocloud 建设期融资风险上升。 涉及：NVDA MU CRWV NBIS AAOI", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T16:41:33+00:00", "title": "🟢 HII 进入「关注买点」", "body": "Huntington Ingalls Industries, ：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。 大盘情绪也在恐慌区，系统性的错杀概率更高。（此前：趋势中）\nRSI 52；处于52周区间的 20% 位置；偏离200日线 -9%", "priority": "high", "sent": true}
+{"ts": "2026-11-25T16:41:34+00:00", "title": "🔴 U 进入「回调风险」", "body": "Unity Software Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 52；处于52周区间的 85% 位置；偏离200日线 +44%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:10:09+00:00", "title": "🔴 PAG 进入「回调风险」", "body": "Penske Automotive Group, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 62；处于52周区间的 91% 位置；偏离200日线 +15%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:10:09+00:00", "title": "🔴 SAIL 进入「回调风险」", "body": "SailPoint, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 56；处于52周区间的 94% 位置；偏离200日线 +32%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:18:00+00:00", "title": "🔴 BSY 进入「回调风险」", "body": "Bentley Systems, Incorporated：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 59；处于52周区间的 87% 位置；偏离200日线 +24%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:18:00+00:00", "title": "🔴 MMM 进入「回调风险」", "body": "3M Company：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 62；处于52周区间的 90% 位置；偏离200日线 +16%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:18:00+00:00", "title": "🔴 NPK 进入「回调风险」", "body": "National Presto Industries, Inc：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 63；处于52周区间的 98% 位置；偏离200日线 +12%", "priority": "normal", "sent": true}
+{"ts": "2026-11-25T17:18:01+00:00", "title": "🚀 FLNC 单日 +8.3%", "body": "Fluence Energy, Inc. 收于 4.44。信号：弱势。", "priority": "low", "sent": true}
