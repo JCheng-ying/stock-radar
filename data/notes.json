@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-25",
+    "text": "资金面 / 政策面偏负：10 月 PCE 3.8%、12 月加息定价约 96%~98%，叠加新 20% 关税，股价再跌 7.0% 至 144.44，复任后的情绪修复基本回吐；需求面无新负面数据。",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+   },
+   {
+    "date": "2026-11-25",
     "text": "治理 / 司法面偏负加深：Megaspeed 剩余法律焦点收窄到公司对客户保证是否“知情”，CEO 与 Alice Huang 的私人关系是主要风险；司法部长称其为“好的企业公民”但未回应调查，加州 AG 与 SEC 调查针对信息披露。产业面需求不变。",
     "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/"
    },
@@ -20,11 +25,6 @@
     "date": "2026-11-24",
     "text": "治理面偏负（观点）：Sonnenfeld 认为股东派生诉讼会让董事会承担个人责任，诉讼可能增至约 30 起，治理折价从政治周期拉长到司法周期；产业面不变。",
     "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/"
-   },
-   {
-    "date": "2026-11-24",
-    "text": "合规面：Megaspeed 列入实体清单但据报道未适用 FDPR 条款，实际收紧力度弱于标题；国会两党对复任的反弹延续，治理折价仍在。",
-    "url": "https://siliconangle.com/2026/11/24/congress-scrutinizes-jensen-huangs-return-as-megaspeed-restrictions-raise-questions/"
    }
   ],
   "ANET": [
@@ -48,6 +48,11 @@
   ],
   "MU": [
    {
+    "date": "2026-11-25",
+    "text": "预期面 / 资金面偏负：连续两日约 −10%、−9.4% 至 570.39，据报道 BNP Paribas Exane 以供给过剩下调评级（细节未查证），叠加加息预期，存储周期定价转弱。",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+   },
+   {
     "date": "2026-11-24",
     "text": "预期面转负：BNP Paribas 降为中性、目标价 775 美元，认为存储供需最早 2027 年中趋于平衡、云厂商需求或被高估；股价 −11%。属卖方观点分歧，不是公司数据变化。",
     "url": "https://www.fool.com/investing/2026/11/24/why-micron-stock-dove-today/"
@@ -66,11 +71,6 @@
     "date": "2026-11-19",
     "text": "资金面向上：美光以 IPO 价参与 Anthropic 260 亿美元私募，同时是其存储供应商（循环融资结构）；盘中 +6.9%。",
     "url": "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "产业面偏正（重申）：据 Seeking Alpha 标题，美光预计 2027~28 年供给比 2026 年更紧并继续与英伟达合作，与 9 月财报会“看不到供需恢复平衡”的口径一致；快照 705.27，位于 2027 前瞻中值下方。",
-    "url": "https://tech-insider.org/micron-memory-crunch-20-percent-supply-growth-2026/"
    }
   ],
   "INTC": [
@@ -435,6 +435,11 @@
   ],
   "AMD": [
    {
+    "date": "2026-11-25",
+    "text": "资金面偏负：PCE 超预期与新关税下半导体领跌，AMD −8.5% 至 378.08，基本面无新信息。",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+   },
+   {
     "date": "2026-11-23",
     "text": "资金面边际向下：S-3ASR 为售股股东登记约 3.37 亿股转售（涉及 Taalas 收购对价等，完整构成未查证），非公司新发股，但增加潜在供给。",
     "url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526472370/d171551ds3asr.htm"
@@ -453,11 +458,6 @@
     "date": "2026-11-19",
     "text": "情绪面向下 / 监管面待定：据 CNBC 标题，一份做空报告指称 AMD 存在对华敞口，午盘 −9.5% 至 480.00（报告细节未查证）；若指控涉及出口管制合规会触及监管面，目前为做空方单方说法，基本面未变。",
     "url": "https://www.cnbc.com/technology/"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "产业面向上 / 情绪面向下：Vultr 称已下 12 亿美元 AMD Helios 机架订单、agentic AI 拉动 CPU 需求（厂商赞助访谈）；同日快照 −9.2%，据标题为芯片反弹回落（细节未查证）。",
-    "url": "https://siliconangle.com/2026/11/19/global-cloud-availability-sets-neocloud-platforms-apart-sc26/"
    }
   ],
   "APLD": [
@@ -1323,7 +1323,7 @@
   "ai": [
    {
     "date": "2026-11-25",
-    "text": "政策面偏紧：华为在美被陪审团判定窃取商业秘密、违反制裁等罪名成立，美国对华技术封锁有了司法依据，中美 AI 硬件供应链继续分离；产业面液冷 / 电力瓶颈继续得到确认（Schneider CDU 扩产翻倍、美国陆军招标要求自带电源）。"
+    "text": "政策面偏紧：华为在美被陪审团判定窃取商业秘密、违反制裁等罪名成立，美国对华技术封锁有了司法依据，中美 AI 硬件供应链继续分离；产业面液冷 / 电力瓶颈继续得到确认（Schneider CDU 扩产翻倍、美国陆军招标要求自带电源）；资金面再收紧：PCE 3.8% 使 12 月加息几成定局，叠加新 20% 关税，半导体连续两日大跌；产业面（电力 / 液冷瓶颈、算力需求）无新负面数据。"
    },
    {
     "date": "2026-11-24",
@@ -1438,10 +1438,10 @@
  "daily": [
   {
    "date": "2026-11-25",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 14 篇】隔夜没有改变结论的新事实，变化集中在政策 / 治理面和产业面两条线。一是政策面：据 DataCenterDynamics，纽约东区联邦陪审团认定华为及三家子公司共谋窃取商业秘密、银行 / 电信欺诈、违反 IEEPA 制裁和洗钱等罪名成立，RICO 有组织犯罪共谋一项不成立（华为称将继续抗辩）——美国对华技术封锁从行政手段多了司法判决作依据，中美 AI 硬件两套供应链继续分开走，与 NVDA 正在面对的出口管制审查是同一方向的政策面偏紧信号。二是 NVDA 治理 / 司法面：TechCrunch 指出 Megaspeed 事件的剩余焦点已收窄到“Nvidia 知道什么”——只拿客户书面保证是否足够，黄仁勋与 Alice Huang 的私人关系是最大法律风险；司法部长 Blanche 称 Nvidia 是“好的企业公民”但未回答调查问题，加州 AG 与 SEC 的调查则针对信息披露；另据 Seeking Alpha 转引 Reuters 标题，约 2.7 亿美元流向中国的 AI 服务器记录与 Alice Huang 的关系圈有关（细节未查证）。治理面偏负判断维持并略有加深。三是产业面小幅向上：Schneider 从 2027 年 1 月起把意大利工厂 CDU 产能翻倍、美国陆军第二轮九处基地数据中心用地招标要求“必须自带发电”、Exaion 签下 7,900 万美元 100% take-or-pay 的 B300 GPU 租约——液冷和电力继续是 AI 建设的瓶颈环节，算力需求向上不变。资金面仍紧、情绪面极端：VIX 30.4（一年 99% 分位、期限结构倒挂，系统推送），据 Seeking Alpha 标题 ORCL、CRWV 的 CDS 利差创纪录，AI 融资链的信用压力还在加大。量子计算二浪状态隔夜在“尚未启动”和“财报已改善、价格未反映”之间来回一次（EBITDA 利润率条件在临界值附近），最终回到后者，属数据边界抖动，不是新信号。整体结论不变：算力需求向上，价格由资金面、治理 / 政策折价和存储周期主导。",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 14 篇】隔夜没有改变结论的新事实，变化集中在政策 / 治理面和产业面两条线。一是政策面：据 DataCenterDynamics，纽约东区联邦陪审团认定华为及三家子公司共谋窃取商业秘密、银行 / 电信欺诈、违反 IEEPA 制裁和洗钱等罪名成立，RICO 有组织犯罪共谋一项不成立（华为称将继续抗辩）——美国对华技术封锁从行政手段多了司法判决作依据，中美 AI 硬件两套供应链继续分开走，与 NVDA 正在面对的出口管制审查是同一方向的政策面偏紧信号。二是 NVDA 治理 / 司法面：TechCrunch 指出 Megaspeed 事件的剩余焦点已收窄到“Nvidia 知道什么”——只拿客户书面保证是否足够，黄仁勋与 Alice Huang 的私人关系是最大法律风险；司法部长 Blanche 称 Nvidia 是“好的企业公民”但未回答调查问题，加州 AG 与 SEC 的调查则针对信息披露；另据 Seeking Alpha 转引 Reuters 标题，约 2.7 亿美元流向中国的 AI 服务器记录与 Alice Huang 的关系圈有关（细节未查证）。治理面偏负判断维持并略有加深。三是产业面小幅向上：Schneider 从 2027 年 1 月起把意大利工厂 CDU 产能翻倍、美国陆军第二轮九处基地数据中心用地招标要求“必须自带发电”、Exaion 签下 7,900 万美元 100% take-or-pay 的 B300 GPU 租约——液冷和电力继续是 AI 建设的瓶颈环节，算力需求向上不变。资金面仍紧、情绪面极端：VIX 30.4（一年 99% 分位、期限结构倒挂，系统推送），据 Seeking Alpha 标题 ORCL、CRWV 的 CDS 利差创纪录，AI 融资链的信用压力还在加大。量子计算二浪状态隔夜在“尚未启动”和“财报已改善、价格未反映”之间来回一次（EBITDA 利润率条件在临界值附近），最终回到后者，属数据边界抖动，不是新信号。整体结论不变：算力需求向上，价格由资金面、治理 / 政策折价和存储周期主导。【07:29 更新，含 Summizer 新增的 3 篇】资金面明显再收紧，这是今天盘中的主导变量：据 Yahoo Finance 盘中报道，10 月 PCE 同比 3.8%（2023 年以来最高）、核心 PCE 3.3% 高于预期 3.2%，市场对 12 月加息的定价升至约 96%~98%；同时政府宣布对中国、欧盟等主要贸易伙伴加征 20% 关税（叠加现有税率，生效时间未定，有报道称最早 1 月；涉及国家数各来源说法 14~16 个不一）。纳指盘中跌约 3.6%~4.1%（不同时点报道不一），半导体连续第二天领跌：快照 NVDA 144.44（−7.0%）、MU 570.39（−9.4%）、AMD 378.08（−8.5%）、AVGO −5.0%、TSM −6.7%，均落在 2027 前瞻区间下沿~中值。五面上看：资金面（本站读数 22、钱贵）进一步偏紧，政策面（关税）偏负，情绪面继续恶化；产业面与基本面没有新的负面数据——Summizer 新增的数据中心电气集成并购（Promera 收购 B&G）和欧盟 Quantum Act 的产业界回应（QuIC 要求 3~5 亿欧元首批采购承诺）都是产业面小幅正向。三浪框架下，NVDA 复任带来的情绪修复两天内基本回吐，价格回到由“利率 + 政策”主导的阶段。整体结论不变但更偏防守：算力需求向上，短期定价权在资金面。周四感恩节休市、周五半日交易。",
    "sectors": {
-    "ai": "【06:29】华为在美被判商业秘密窃取和违反制裁罪名成立（DCD），对华芯片政策面继续偏紧；NVDA Megaspeed 法律焦点转向公司“知情”程度（TechCrunch），治理 / 司法面偏负维持；Schneider CDU 扩产翻倍、美国陆军九处基地招标要求自带电源、Exaion 7,900 万美元 B300 租约，产业面液冷 / 电力环节小幅确认；ORCL、CRWV CDS 利差创纪录（Seeking Alpha 标题），neocloud 融资面偏负；据 Seeking Alpha 标题 Wedbush 认为 AAOI 与超大规模云厂商的合作显示需求强（细节未查证）。",
-    "quantum": "【06:29】Standard Chartered 在新加坡 MAS 支持下扩大量子研究项目，合作方含 RGTI、Quantinuum、OQC（银行自述，指标未经第三方验证），金融业作为早期付费方的产业面小幅确认；量子篮子二浪状态隔夜在临界值附近来回，最终仍为“财报已改善、价格未反映”。",
+    "ai": "【06:29】华为在美被判商业秘密窃取和违反制裁罪名成立（DCD），对华芯片政策面继续偏紧；NVDA Megaspeed 法律焦点转向公司“知情”程度（TechCrunch），治理 / 司法面偏负维持；Schneider CDU 扩产翻倍、美国陆军九处基地招标要求自带电源、Exaion 7,900 万美元 B300 租约，产业面液冷 / 电力环节小幅确认；ORCL、CRWV CDS 利差创纪录（Seeking Alpha 标题），neocloud 融资面偏负；据 Seeking Alpha 标题 Wedbush 认为 AAOI 与超大规模云厂商的合作显示需求强（细节未查证）。 【07:29】PCE 超预期 + 新 20% 关税叠加，半导体连续第二天大跌（NVDA −7.0%、MU −9.4%、AMD −8.5%），资金面 / 政策面偏负，产业面无新负面数据；据报道 BNP Paribas Exane 以供给过剩为由下调 MU 评级（细节未查证），存储周期预期面偏负；Promera 收购爱尔兰数据中心电气承包商 B&G（金额未披露，DCD），电力集成环节继续是瓶颈（产业面小幅正向）；亚马逊与 Meta 据 Fortune 就允许 Muse agent 接入亚马逊商店谈判，卡在搜索呈现和广告分成（TechCrunch 转引），agent 商业的瓶颈在利益分配而非技术。",
+    "quantum": "【06:29】Standard Chartered 在新加坡 MAS 支持下扩大量子研究项目，合作方含 RGTI、Quantinuum、OQC（银行自述，指标未经第三方验证），金融业作为早期付费方的产业面小幅确认；量子篮子二浪状态隔夜在临界值附近来回，最终仍为“财报已改善、价格未反映”。 【07:29】欧洲量子产业联盟 QuIC 回应 Quantum Act：要求生效 6 个月内落实 3~5 亿欧元采购承诺、5 年公共采购 77 亿~123 亿欧元，并为量子公司在主权科技股权基金中划份额（行业游说诉求，不是法案内容），欧洲本土优先采购对美国量子公司在欧订单是潜在逆风；量子篮子当日随大盘下跌（IONQ −7.8%、RGTI −6.9%）。",
     "robotics": "无重要新信息",
     "aerospace": "无重要新信息",
     "autonomous": "【06:29】据 Seeking Alpha 标题，分析师提示存储涨价和短缺可能继续压制 AMBA 需求，另有观点认为抛售过度（均为观点），延续昨日预期面转负的判断。"
@@ -1449,7 +1449,7 @@
    "watch": [
     {
      "t": "NVDA",
-     "why": "现价 155.38（前一日 −5.9%），处 2027 前瞻区间 105.46/190.30/279.87 的下沿~中值之间；Megaspeed 法律焦点转向公司“知情”程度，治理 / 司法面偏负，产业面需求不变。"
+     "why": "现价 155.38（前一日 −5.9%），处 2027 前瞻区间 105.46/190.30/279.87 的下沿~中值之间；Megaspeed 法律焦点转向公司“知情”程度，治理 / 司法面偏负，产业面需求不变。 07:29：PCE 超预期 + 新关税下再跌 7.0% 至 144.44，复任后的涨幅基本回吐，位于 2027 前瞻区间 98.04/176.90/260.16 的下沿~中值。"
     },
     {
      "t": "CRWV",
@@ -1466,6 +1466,10 @@
     {
      "t": "AMBA",
      "why": "现价 44.47（−20.0%），接近 2027 前瞻中值 45.05；存储短缺压制需求的担忧延续，预期面偏负。"
+    },
+    {
+     "t": "MU",
+     "why": "11-25 再跌 9.4% 至 570.39（前一日约 −10%），位于 2027 前瞻区间 397.47/600.41/951.18 的下沿~中值、低于中值；据报道 BNP Paribas Exane 以供给过剩下调评级、TrendForce 预期 NAND 价格走弱（细节未查证），存储周期预期面转弱叠加加息预期。"
     }
    ],
    "sources": [
@@ -1492,6 +1496,26 @@
     [
      "Standard Chartered expands quantum computing research program (The Quantum Insider)",
      "https://thequantuminsider.com/2026/11/25/standard-chartered-expands-quantum-computing-research-program-following-successful-research-phase/"
+    ],
+    [
+     "Yahoo Finance：PCE 超预期、新关税，芯片股连跌",
+     "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
+    ],
+    [
+     "Invezz：纳指期货下跌的 5 个原因（PCE、关税）",
+     "https://invezz.com/news/2026/11/25/nasdaq-futures-today-pce-trump-tariffs-dell-november-25/"
+    ],
+    [
+     "TechCrunch：亚马逊与 Meta 就 Muse 接入谈判",
+     "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+    ],
+    [
+     "DCD：Promera 收购 B&G",
+     "https://www.datacenterdynamics.com/en/news/promera-acquires-irish-electrical-contractor-bg-to-expand-data-center-offering/"
+    ],
+    [
+     "The Quantum Insider：QuIC 回应欧盟 Quantum Act",
+     "https://thequantuminsider.com/2026/11/25/quic-welcomes-the-european-quantum-act-pledges-to-mobilize-industry/"
     ]
    ]
   },
@@ -3835,7 +3859,7 @@
    ]
   }
  ],
- "updated": "2026-11-25T06:29",
+ "updated": "2026-11-25T07:29",
  "trend": {
   "NVDA": {
    "date": "2026-11-23",
