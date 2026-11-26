@@ -2,6 +2,11 @@
  "companies": {
   "NVDA": [
    {
+    "date": "2026-11-26",
+    "text": "政策面偏负：据 DCD / Seeking Alpha 标题，公司暂停向马来西亚、新加坡、泰国、印尼发运服务器（商务部转运风险许可规则落地，细节未查证），东南亚收入确认可能后移；治理面：特朗普称特赦黄仁勋“始终是选项”、众议院听证在即（Tom's Hardware 标题）。",
+    "url": "https://www.datacenterdynamics.com/en/news/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-in-wake-of-new-dept-of-commerce-export-rule-report/"
+   },
+   {
     "date": "2026-11-25",
     "text": "治理面分歧：据 Seeking Alpha 标题，穆迪在复任后维持 Aa1/稳定展望（11-18 已从正面降为稳定），与 S&P 负面观察判断不一，治理面偏负略缓；Burry 据报平掉纳指看跌期权、转为净多（细节未查证），情绪面空方叙事松动。",
     "url": "https://investinglive.com/stocks/moody-s-cuts-nvidia-outlook-to-stable-saying-huang-s-exit-clouds-strategy-and-policy/"
@@ -20,11 +25,6 @@
     "date": "2026-11-25",
     "text": "据 Seeking Alpha 标题，官员向国会幕僚表示没有证据显示中国在黄仁勋私人关系一事中起作用（细节未查证）；若属实，治理面偏负小幅缓和，SEC / 加州 AG 披露调查仍在。",
     "url": "https://www.bostonglobe.com/2026/11/09/world/china-dismisses-spy-plot-claim-involving-nvidia-ceo/"
-   },
-   {
-    "date": "2026-11-25",
-    "text": "资金面 / 政策面偏负：10 月 PCE 3.8%、12 月加息定价约 96%~98%，叠加新 20% 关税，股价再跌 7.0% 至 144.44，复任后的情绪修复基本回吐；需求面无新负面数据。",
-    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
    }
   ],
   "ANET": [
@@ -40,6 +40,11 @@
    }
   ],
   "BE": [
+   {
+    "date": "2026-11-26",
+    "text": "产业面 / 预期面偏正：广达美国子公司采购两套燃料电池微电网约 3.67 亿美元（加州约 2.499 亿、田纳西约 1.171 亿），双方第三笔交易，AI 服务器制造端开始自建电源。",
+    "url": "https://www.datacenterdynamics.com/en/news/quanta-inks-367m-deal-with-bloom-energy-for-two-fuel-cell-anchored-microgrid-systems/"
+   },
    {
     "date": "2026-11-08",
     "text": "与 NTT Data 签 900MW 固体氧化物燃料电池部署协议，首批 2027 年发货，是与单一数据中心开发商签过的最大一单。产业面（现场发电）和预期面利好。",
@@ -1344,6 +1349,10 @@
  "sectors": {
   "ai": [
    {
+    "date": "2026-11-26",
+    "text": "东南亚出口许可规则开始落地到发运（NVDA 据报暂停向四国发运服务器，细节未查证），政策面偏负；电力约束上移到服务器制造端（广达向 Bloom 采购 3.67 亿美元微电网），产业面继续确认向上。"
+   },
+   {
     "date": "2026-11-25",
     "text": "PCE 超预期、加息定价升至九成以上叠加新关税，AI 链价格由资金面主导；存储与服务器链在财报后被重新定价（SNDK、MU、NTNX），NVDA 治理面因 S&P 负面观察偏负加深；产业面（液冷、电力、带电土地）继续确认向上。"
    },
@@ -1358,11 +1367,6 @@
    {
     "date": "2026-11-24",
     "text": "Applied Digital 150MW / 18 年租约与台积电得州 2nm 厂申请：云厂商为 2028 年可并网容量锁长约、先进制程本土化推进，产业面继续向上；但同日 NVDA / AMD 开盘大幅回吐，价格侧仍由情绪主导。 午盘：Megaspeed 正式列入实体清单、NVDA −8.4%，合规折价加深；ABB 收购 Ziehl-Abegg 显示冷却链并购继续。"
-   },
-   {
-    "date": "2026-11-23",
-    "text": "合规面：Megaspeed 据报被列入实体清单，监管重点从“卖给谁”前移到“中间商是谁”；安全软件平台化整合（CRWD 收购 ZS）与 AI 运行时防护（Shirudo）、AI 自动审批（Claude Ship）同日出现。",
-    "url": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
    }
   ],
   "quantum": [
@@ -1458,6 +1462,61 @@
  },
  "margin_debt": null,
  "daily": [
+  {
+   "date": "2026-11-26",
+   "market": "（盘前 / 早间增量，完整研判 14:20 发布；今天感恩节美股休市，周五半日交易，本条含 Summizer 新增的 3 篇）隔夜没有新的宏观数据，资金面（钱贵）、情绪面（极端恐惧）和各板块浪位都沿用昨天收盘的读数。新信息集中在 AI 板块的政策面：据 DataCenterDynamics 与 Seeking Alpha 标题，NVDA 已暂停 / 收紧向马来西亚、新加坡、泰国、印尼发运服务器，起因是商务部 11 月中旬把这几国（另含巴西）列为“不可接受的转运风险”目的地、出口须逐笔申请许可（规则本身已有 Al Jazeera 等报道，“暂停发运”这一步细节未查证）——这意味着东南亚数据中心需求在 NVDA 四季度及以后的收入里会出现确认延迟，基本面 / 预期面小幅偏负；同时 Tom's Hardware 标题称被禁的 B300 整机在中国以美国价 5~6 倍公开出售，说明管制仍有漏洞、后续可能继续加码。治理面上，据 Tom's Hardware 标题，特朗普称对黄仁勋的特赦“始终是选项”并敦促他在众议院委员会听证中不要援引第五修正案（细节未查证），说明调查已走到国会听证层面，治理折价短期难以消退。产业面继续向上：广达美国子公司向 Bloom Energy 采购两套燃料电池微电网，约 3.67 亿美元（DCD），电力约束已从数据中心传导到服务器制造端。整体结论不变：算力需求向上，短期价格由资金面、政策和治理折价主导。",
+   "sectors": {
+    "ai": "政策面偏负：NVDA 据报暂停对马来西亚、新加坡、泰国、印尼发运服务器（DCD、Seeking Alpha 标题，商务部转运风险许可规则的落地结果，细节未查证），东南亚数据中心建设节奏和 NVDA、服务器代工的收入确认可能后移；B300 在中国黑市以 5~6 倍溢价出售（Tom's Hardware 标题），管制加码风险仍在。治理面：特朗普称特赦黄仁勋“始终是选项”、众议院将就此听证（标题，细节未查证）。产业面（电力）偏正：广达向 Bloom Energy 采购约 3.67 亿美元燃料电池微电网（加州约 2.499 亿、田纳西约 1.171 亿，双方第三笔交易），AI 服务器制造端也开始自建电源。另据 DCD 标题，INTC 相关诉讼文件指称政府施压其接受政府持股（细节未查证）。",
+    "quantum": "无重要新信息改变判断。欧盟 Quantum Act 的业界反馈汇总（The Quantum Insider）：法案可能把公共采购资格从“注册地”转向“控制权归属”，并对成员国设定后量子密码（PQC）迁移要求——对美国量子公司在欧采购是潜在逆风，与昨天判断一致；PQC 合规需求的确定性在上升。Quantum eMotion（QNC，小市值）完成对 Plurilock 的换股收购，属量子安全外围应用层，不涉及本站人工确认公司。二浪状态不变。",
+    "robotics": "无重要新信息。",
+    "aerospace": "无重要新信息。",
+    "autonomous": "无重要新信息。"
+   },
+   "watch": [
+    {
+     "t": "NVDA",
+     "why": "快照 149.3（−3.9%，11-25 收盘），位于 2027 前瞻区间 101.3 / 182.9 / 268.9 的下沿~中值，距中值约 +22%。新增政策面负面：据报暂停向东南亚四国发运服务器（许可规则落地，细节未查证）；治理面：特朗普称特赦“始终是选项”、众议院听证在即（标题）。"
+    },
+    {
+     "t": "BE",
+     "why": "快照 152.89（−2.3%），位于 2027 前瞻区间 77.64 / 187.25 / 340.54 的下沿~中值，距中值约 +22%。广达第三笔订单约 3.67 亿美元（两套微电网），继 NTT Data 900MW 之后再添制造业客户，产业面与预期面偏正。"
+    }
+   ],
+   "sources": [
+    [
+     "DCD：NVDA 暂停向东南亚四国发运服务器（报道）",
+     "https://www.datacenterdynamics.com/en/news/nvidia-halts-server-shipments-to-malaysia-singapore-thailand-and-indonesia-in-wake-of-new-dept-of-commerce-export-rule-report/"
+    ],
+    [
+     "Al Jazeera：美国封堵中国远程使用 AI 芯片（11-17 规则）",
+     "https://aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal"
+    ],
+    [
+     "Tom's Hardware：特朗普称特赦黄仁勋“始终是选项”",
+     "https://www.tomshardware.com/tech-industry/big-tech/trump-says-a-pardon-for-nvidia-ceo-jensen-huang-is-always-an-option-urges-him-not-to-plead-the-fifth-ahead-of-house-committee-grilling"
+    ],
+    [
+     "Tom's Hardware：被禁 B300 服务器在华公开出售",
+     "https://www.tomshardware.com/tech-industry/artificial-intelligence/export-banned-nvidia-blackwell-b300-servers-are-openly-for-sale-in-china-for-up-to-usd3-4-million-a-5x-to-6x-markup-over-u-s-prices"
+    ],
+    [
+     "DCD：广达与 Bloom Energy 签约 3.67 亿美元微电网",
+     "https://www.datacenterdynamics.com/en/news/quanta-inks-367m-deal-with-bloom-energy-for-two-fuel-cell-anchored-microgrid-systems/"
+    ],
+    [
+     "DCD：诉讼文件称政府施压 Intel 接受持股",
+     "https://www.datacenterdynamics.com/en/news/trump-administration-pressured-intel-into-accepting-govt-stake-in-company-lawsuit-documents-allege/"
+    ],
+    [
+     "The Quantum Insider：欧洲量子界回应 Quantum Act",
+     "https://thequantuminsider.com/2026/11/26/european-quantum-community-reacts-to-new-quantum-strategy/"
+    ],
+    [
+     "The Quantum Insider：Quantum eMotion 完成收购 Plurilock",
+     "https://thequantuminsider.com/2026/11/26/quantum-emotion-completes-acquisition-plurilock-security/"
+    ]
+   ]
+  },
   {
    "date": "2026-11-25",
    "market": "【全天汇总，取代今天各时段增量；今天无新增 Summizer 文章】资金面是今天的主导变量，进一步收紧：10 月 PCE 同比 3.8%、核心 3.3% 高于预期，市场对 12 月加息的定价升到九成以上，叠加政府宣布对主要贸易伙伴加征 20% 关税（生效时间未定），本站资金面得分 22（钱贵），10 年期美债 4.85%。情绪面处在极端恐惧区但盘中有修复：VIX 早盘 30.4、收盘前回落到约 28（一年 98% 分位、期限结构倒挂），CNN 恐贪 15，全站只有 29% 的公司站上 200 日线；纳指早盘跌约 4%，收盘大幅收窄，道指 +0.33%、标普 −0.25%（ABC），AI 基础设施股午后从低位反弹。浪位没有变化：AI 一浪 / 三浪、航天一 / 二浪、机器人一浪仍是“财报已改善、价格未反映”，自动驾驶三浪都“尚未启动”——基本面与价格背离继续扩大，关注买点名单因此大量扩容（这是热度低的机械结果，不是基本面变化）。个股层面两条主线：一是 NVDA 治理面再偏负（S&P 将 AA 评级列入负面观察，WaPo 报道五角大楼曾讨论动用《国防生产法》施压复任、五角大楼否认）；二是存储与服务器链在财报后被重新定价（SNDK 跌幅各家报道 5.6%~12% 不一，NTNX、AMBA 财报后大跌），而理想汽车三季度毛利率回升到 16.7% 后大涨。宏观博主（美投，10-17）认为唯一要警惕的尾部风险是“通胀失控→被迫激进加息→冲击 AI 融资链”、且概率不高；今天的 PCE 和加息定价正在朝这个尾部情形靠近，与本站资金面“钱贵”读数一致，不一致在于他判断加息会是 2~3 次温和加息、市场已定价，而今天的价格反应说明市场并未完全定价。整体结论不变：算力需求向上，短期价格由资金面、政策和治理折价主导；周四感恩节休市、周五半日。\n【19:27 更新，含 Summizer 新增的 1 篇】晚间新增的 NVDA 报道（S&P 负面观察、复任相关）均已在上文覆盖；AI 二浪推送在“尚未启动”与“财报已改善、价格未反映”之间来回切换，属于阈值附近的机械波动，浪位结论不变。新增一条应用层产业面信息：据 SiliconANGLE 援引 Bloomberg，语音 AI 公司 ElevenLabs 洽谈以 330 亿美元估值融资（上一轮 220 亿美元，年化收入约 7 亿美元、约 47 倍收入），与两天前 Sierra 300 亿美元估值同向——一级市场对 AI 应用层的定价仍在上行，和二级市场极端恐惧的情绪面形成反差。五个面中只有 AI 板块产业面小幅偏正，整体结论不变。\n【23:46 更新】晚间两条 NVDA 相关消息，均只查到标题：一是据 Seeking Alpha 标题，穆迪在黄仁勋复任后维持 Aa1 评级与稳定展望不变（穆迪 11-18 已因其离任把展望从正面降到稳定，这次没有回调），与 S&P 的负面观察形成分歧——两家评级机构对“复任是否解决治理问题”判断不一，治理面偏负的程度比白天略轻；二是据 Seeking Alpha 标题，Burry 在平掉纳指 100 看跌期权后多头仓位大于空头（细节未查证，此前报道显示他 10 月还在加仓纳指 100 看跌期权，来源之间有分歧），属情绪面的空方叙事松动。NVDA 快照 149.3（−3.9%），位于 2027 前瞻区间 101.3/182.9/268.9 的下沿与中值之间。五个面中只有情绪面、治理面小幅偏正，整体结论不变。",
@@ -3820,168 +3879,9 @@
      "https://www.datacenterdynamics.com/en/news/humain-raises-667m-for-ai-buildout-in-saudi-arabia/"
     ]
    ]
-  },
-  {
-   "date": "2026-11-12",
-   "market": "今天的主线是英伟达管理层突变：董事会公告黄仁勋辞去 CEO 和董事职务、即时生效，CFO Colette Kress 兼任临时 CEO，前 Synopsys CEO Harvey Jones 出任首任董事长；英伟达盘中一度跌约 14%，收盘 −4.3%（166.19），一个月累计 −25%。但据 MarketWatch，标普 500 基本没有跟跌——资金从英伟达转向 AMD（+5.9%）、博通（+5.5%）、Arista（+5.1%），同时投机小盘股普遍大跌（量子、eVTOL、加密矿企、机器人小票多数 −7%~−17%），说明是风险偏好收缩加板块内轮动，不是 AI 需求逻辑被否定。资金面从 24 分降到 22 分（10 年期美债 5.10%、一年 +98bp；美元指数 103.2 处于近一年最高分位），仍是“钱贵”；情绪面热度 51（中性）：VIX 18.7、CNN 恐贪 40（一周前 20），三倍杠杆 ETF 成交占比 87% 分位，杠杆仍偏高。浪位：AI 二浪重新回到“启动初期”，机器人一浪在“尚未启动”和“财报已改善，价格未反映”之间来回，航空航天三浪回到“尚未启动”。盘后应用材料、思科财报都超预期并上调指引，Nebius 则因 2026 收入落在区间下沿、资本开支大幅上调而 −16.8%。结论：预期面（设备、网络）继续向上，个股层面的管理层和融资风险在上升；接下来的验证点是英伟达 11-17 财报和 Anthropic 11-19 上市（据彭博认购约 6 倍）。上次研判后 Summizer 没有新增文章。 【晚间更新，含当晚 Summizer 新增的 16 篇】盘后两条新证据指向同一个结论——需求不缺，缺的是电、许可和融资：Nebius 下调 2026 收入的直接原因是为微软建设的新泽西 Vineland 数据中心由第三方运营商从临时发电机改用 Bloom Energy 燃料电池，约一半微软容量推迟到 2027 年二季度；2027 年 400~450 亿美元资本开支计划用客户预付款和以投资级合同抵押的融资覆盖最高 85%。软银季度亏损 71 亿美元，一半以上来自多订了近 50% 的燃气轮机定金——AI 电力链第一次出现“囤货过度”的价格发现。Cerebras 三季度核心收入 2.31 亿美元（+70%，高于预期 2.15 亿），宣布微软成为客户，盘后据 CNBC 涨约 17%，但积压增量小、仍需融资。据 CNBC，英伟达正走向 2012 年以来最长的周线连跌。整体结论不变。 【23:28 更新】英伟达芯片走私案在新加坡继续发酵：据彭博标题，新加坡已起诉第 5 名与该案有关的人员，另一篇彭博标题称与 Alice Huang 有关的公司在中国采购了被禁的英伟达芯片（两条细节均未查证）；CNBC 刊文梳理新加坡为何反复出现在这场争端中。这属于前两天监管风险的延续，进一步压低英伟达的情绪面，但没有新的公司层面处罚或需求变化，产业面和整体结论不变。另据 CNBC 标题，微软 Outlook 等 365 服务出现大范围宕机（细节未查证），属运营事件，暂不改变微软的五面判断。",
-   "sectors": {
-    "ai": "产业面不变、情绪面和个股风险上升：英伟达 CEO 离任（临时 CEO 由 CFO 兼任，董事会内外部同时物色继任者），市场把它当作“关键人风险”而不是需求问题——同日 AMD、博通、Arista 逆势大涨。预期面向上：应用材料 FY26 四季度收入 104.1 亿美元（+53%）、一季度指引 111 亿 ±5 亿；思科一季度收入 185 亿美元（+24%，网络 +43%），FY27 收入指引上调到 748~758 亿、超大规模客户 AI 基础设施收入预期从 75 亿上调到约 90 亿。资金面分化：Nebius 把 2026 资本开支提到约 270 亿、2027 年 400~450 亿美元，收入却因产能延迟落在区间下沿——新云厂商“先花钱、后收入”的压力在加大；据彭博 CoreWeave 计划再借至少 40 亿美元投资级贷款。 【晚间】替代路线在英伟达动荡期得到更多验证：Cerebras 拿下微软；初创公司 Luminal 融资 2300 万美元做跨芯片编译器，针对的是 CUDA 软件迁移成本这一真正的护城河；谷歌发布低价模型 Gemini 4 Hydrogen，智能指数反超自家旗舰，竞争从“谁最聪明”转向“单位任务成本”。据 SemiAnalysis（经 DataCenterDynamics），SpaceX 在开发基于 Vera Rubin NVL72 的定制机柜 Kessel，用于地面和轨道数据中心（未经官方确认）。据彭博标题，三星在谈收购数据中心冷却公司 Modine（细节未查证）。 【23:28】新加坡英伟达芯片案据彭博标题新增第 5 名被起诉者（细节未查证），监管 / 情绪面继续偏负，产业链需求判断不变。",
-    "quantum": "【晚间更新】产业面向上但集中在“经典层和软件层”：PsiQuantum 与 AMD 扩大合作，从 FPGA 扩到 Instinct GPU、EPYC 和 ROCm，AMD 计划入股（联合新闻稿，性能说法未经独立验证）；量子软件公司 Q-CTRL 完成 2.9 亿美元 C 轮（Salesforce Ventures 领投），估值逻辑主要在量子传感的国防 / 航空订单；IBM 在 QDC26 把目标从“科学优势”转向 2028 年证明产业影响。上市纯量子公司股价今天随投机股普跌，与产业消息背离。",
-    "robotics": "无重要产业新信息。基本面：发那科季度收入同比 +15%、毛利率 42.3%（+4.9pp）、EPS 超预期 31%，进入“关注买点”；罗克韦尔也进入“关注买点”。Agility Robotics（11-5 经 SPAC 上市，PIPE 价 10 美元）今天 −17% 收于 7.58，属于投机股普跌的一部分，未查到公司层面消息。 【晚间】德国 Agile Robots 完成 5 亿美元 F 轮、估值 85 亿美元（软银领投、英伟达和日立跟投），卖点是全关节力矩传感——资本在流向有工业部署和硬件产线的公司，而不只是人形概念（一级市场，非上市公司）。",
-    "aerospace": "产业面：据彭博，SpaceX 与特斯拉的合并谈判在推进，最快 12 月宣布（也可能拖到 2027 年初），结构是 SpaceX 吸收特斯拉；星舰第 15 次试飞定在 11-13。基本面：Mercury 季度收入 +12%、毛利率 +7.3pp、RPO +52%；TransDigm 收入 +23%。浪位：三浪回到“尚未启动”。 【晚间】发射运力是共同瓶颈：AST SpaceMobile 宣布自研三级火箭 Blacklift（低轨 20 吨、首飞目标 2028 年底，发布会未展示硬件，可行性存疑）；ULA 的 Vulcan 将在停飞后以 Amazon Leo 40 颗卫星复飞，若再出问题会拖累太空军和 NASA 任务。日本三菱日联与三菱电机、NTT 等签署卫星巨型星座可行性备忘录（无预算和时间表）。",
-    "autonomous": "据当地媒体，Zoox 把拉斯维加斯 Robotaxi 服务扩到大道以外区域并投放新一代车型（产业面小幅向上）；Lucid −11.3%、Aeva −8.1%、Pony −6.1%，随投机股回落。"
-   },
-   "watch": [
-    {
-     "t": "NVDA",
-     "why": "黄仁勋辞职（8-K），CFO Kress 兼任临时 CEO、Harvey Jones 任董事长；盘中一度 −14%、收盘 −4.3% 至 166.19，一个月 −25%；伯恩斯坦目标价 400 → 200。热度 10、信号“关注买点”；2027 前瞻区间 123.2~203.5~311.4，现价在下沿到中值之间、距中值 +22%。11-17 财报是管理层变动后的第一次检验。 晚间：新加坡芯片案据彭博标题起诉第 5 人（未查证），监管压力仍在累积。"
-    },
-    {
-     "t": "NBIS",
-     "why": "三季度收入 9.81 亿美元（+571%，高于预期 9.08 亿），但 2026 收入指向 30~34 亿区间下沿（路透称因产能延迟），2026 资本开支上调到约 270 亿、2027 年 400~450 亿美元（FactSet 预期约 288 亿），2027 收入指引 120~130 亿；股价 −16.8% 至 128.64。2027 前瞻区间 81.9~159.5~311.3，距中值 +24%。"
-    },
-    {
-     "t": "AMAT",
-     "why": "盘后：FY26 四季度收入 104.1 亿美元（+53%）、非 GAAP EPS 4.16、毛利率 50.6%；一季度收入指引 111 亿 ±5 亿（市场约 108.9 亿）。各家一致预期口径不同，EPS 是否超预期说法有分歧。收盘 380.95（−3.6%），2027 前瞻区间 300.4~466.6~707.5，距中值 +22%。"
-    },
-    {
-     "t": "CSCO",
-     "why": "盘后：一季度收入 185.2 亿美元（+24%）、非 GAAP EPS 1.40，网络收入 +43% 至 111.3 亿；FY27 收入指引从 722~734 亿上调到 748~758 亿，超大规模客户 AI 基础设施收入预期约 90 亿（8 月为 75 亿）；毛利率 65.6%（去年 68.1%）。收盘 102.01，正好在 2027 前瞻中值附近（区间 74.3~101.1~143.1）。"
-    },
-    {
-     "t": "SMCI",
-     "why": "据彭博，司法部（纽约南区）在查与 Alice Huang 有关的实体（含 Megaspeed）是否把超微产品走私到中国；超微不是被告、否认指控并配合调查。股价 −11.3% 至 26.99，一个月 −25%。基本面 93 分、信号“关注买点”，但这是规则信号，监管风险不在分数里。2027 前瞻区间 22.1~31.0~43.8，距中值 +15%。"
-    },
-    {
-     "t": "AMD",
-     "why": "英伟达管理层真空被市场当作竞争对手的机会：AMD +5.9% 至 585.3（热度 84、“回调风险”），博通 +5.5%、Arista +5.1%。11-9 的 MarketWatch 分析已提示 Melius 不认为份额会持续转移、对手也可能面临销售合规审视。2027 前瞻区间 419.9~682.6~1186.9，距中值 +17%。"
-    },
-    {
-     "t": "CRWV",
-     "why": "财报后 +24.7% 的第二天回吐 −6.9% 至 56.6；据彭博，公司计划再借至少 40 亿美元投资级贷款（继续靠债务扩产）。同行 Nebius 上调资本开支、收入落在下沿，市场对新云厂商的融资节奏更敏感。2027 前瞻区间 30.2~94.6~200.4，距中值 +67%。"
-    },
-    {
-     "t": "SPCX",
-     "why": "据彭博，SpaceX 与特斯拉合并谈判推进、最快 12 月宣布（也可能拖到 2027 年初），双方特别委员会在谈换股比例和治理；马斯克此前称不应视为确定。SpaceX 收于 139.94（+0.1%），特斯拉 +1.7%；星舰 11-13 第 15 次试飞。2027 前瞻区间 10.0~160.7~687.3（分析师分歧极大），距中值 +15%。"
-    },
-    {
-     "t": "CBRS",
-     "why": "盘后：三季度核心收入 2.31 亿美元（+70%，预期 2.15 亿），调整后经营利润率 −14%（指引 −24% 左右），宣布微软成为客户，据 CNBC 盘后涨约 17%；但积压增量小、正在评估融资方式。常规时段收于 97.75，2027 前瞻区间 84.8~113.6~164.7，距中值 +16%。"
-    },
-    {
-     "t": "GEV",
-     "why": "软银因多订燃气轮机（多出近 50%）计提大额损失，是 AI 电力链第一个“囤货过度”的反面证据；需要看 GE Vernova 等轮机厂的新订单和取消率是否受影响。现价 818.49，高于 2027 前瞻中值（区间 392.7~670.0~1074.0），信号“关注买点”。"
-    }
-   ],
-   "sources": [
-    [
-     "英伟达公告：CEO 交接",
-     "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/"
-    ],
-    [
-     "CNBC：英伟达收跌逾 4%，黄仁勋辞职",
-     "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html"
-    ],
-    [
-     "TechCrunch：黄仁勋辞职，CFO Kress 任临时 CEO",
-     "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/"
-    ],
-    [
-     "MarketWatch：标普 500 没有跟随英伟达下跌",
-     "https://www.marketwatch.com/story/the-s-p-500-is-shrugging-off-nvidias-selloff-heres-whats-keeping-the-rest-of-the-market-afloat-7cdf2f05?mod=mw_rss_topstories"
-    ],
-    [
-     "CNBC：Nebius 跌 16%，资本开支上调、指引偏弱",
-     "https://www.cnbc.com/2026/11/12/nebius-q3-earnings-report-2026.html"
-    ],
-    [
-     "DataCenterDynamics：Nebius 三季度签约 120 亿美元",
-     "https://www.datacenterdynamics.com/en/news/nebius-signs-12bn-in-deals-for-q3-all-deals-reportedly-cover-its-capex/"
-    ],
-    [
-     "应用材料 FY26 四季度新闻稿",
-     "https://ir.appliedmaterials.com/news-releases/news-release-details/applied-materials-announces-fourth-quarter-and-fiscal-year-2026"
-    ],
-    [
-     "Benzinga：应用材料四季度与一季度指引",
-     "https://www.benzinga.com/markets/earnings/26/11/63224703/applied-materials-reports-q4-earnings-raises-guidance-as-ai-drives-strong-chip-demand"
-    ],
-    [
-     "InvestingLive：应用材料指引与一致预期对比",
-     "https://investinglive.com/stocks/applied-materials-beats-on-q4-and-guides-above-forecasts-as-chip-equipment-demand-holds/"
-    ],
-    [
-     "Seeking Alpha：思科一季度超预期并上调全年指引",
-     "https://seekingalpha.com/news/4671741-cisco-edges-up-after-surpassing-q1-estimates-and-raising-full-year-guidance?feed_item_type=news"
-    ],
-    [
-     "StockTitan：思科一季度新闻稿",
-     "https://www.stocktitan.net/news/CSCO/cisco-reports-first-quarter-42972jcsdwos.html"
-    ],
-    [
-     "Quartz：司法部调查与 Alice Huang 有关的实体走私超微产品",
-     "https://qz.com/justice-department-alice-huang-super-micro-smuggling-china-111226"
-    ],
-    [
-     "MarketWatch（Morningstar 转载）：AMD 和博通是英伟达事件的赢家吗",
-     "https://www.morningstar.com/news/marketwatch/2026110986/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal"
-    ],
-    [
-     "彭博：SpaceX 与特斯拉合并谈判推进",
-     "https://www.bloomberg.com/news/articles/2026-11-12/spacex-and-tesla-talks-on-record-merger-are-said-to-progress"
-    ],
-    [
-     "Investing.com（路透）：SpaceX-特斯拉谈判进展",
-     "https://ca.investing.com/news/stock-market-news/spacex-tesla-merger-talks-progress-bloomberg-news-reports-4954156"
-    ],
-    [
-     "TechCrunch：Nebius 用 400 亿美元资本开支检验新云模式",
-     "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
-    ],
-    [
-     "CNBC：Cerebras 盘后涨 17%，收入超预期并宣布微软合作",
-     "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html"
-    ],
-    [
-     "TechCrunch：软银燃气轮机损失",
-     "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ai-s-natural-gas-ambitions/"
-    ],
-    [
-     "DataCenterDynamics：SpaceX 定制 Vera Rubin 机柜 Kessel",
-     "https://www.datacenterdynamics.com/en/news/spacex-developing-custom-nvidia-vera-rubin-rack-dubbed-kessel-for-its-orbital-data-centers-report/"
-    ],
-    [
-     "The Quantum Insider：PsiQuantum 与 AMD 扩大合作",
-     "https://thequantuminsider.com/2026/11/12/psiquantum-amd-expand-quantum-computing-infrastructure-partnership/"
-    ],
-    [
-     "The Quantum Insider：Q-CTRL 2.9 亿美元 C 轮",
-     "https://thequantuminsider.com/2026/11/12/q-ctrl-secures-us290-million-series-c-funding-led-by-salesforce-ventures/"
-    ],
-    [
-     "SpaceNews：AST SpaceMobile 自研火箭",
-     "https://spacenews.com/ast-spacemobile-presses-case-for-developing-own-launch-vehicle/"
-    ],
-    [
-     "NASASpaceflight：Vulcan 携 Amazon Leo 复飞",
-     "https://www.nasaspaceflight.com/2026/11/amazon-leo-lv-01/"
-    ],
-    [
-     "CNBC：英伟达走向 2012 年来最长周线连跌",
-     "https://www.cnbc.com/2026/11/13/nvidia-stock-jensen-affair-ai.html"
-    ],
-    [
-     "CNBC：Why Singapore keeps turning up in the fight over Nvidia chips and China",
-     "https://www.cnbc.com/2026/11/13/nvidia-jensen-huang-alice-spy-megaspeed-.html"
-    ],
-    [
-     "CNBC：Widespread Microsoft outage takes down Outlook and other 365 services",
-     "https://www.cnbc.com/2026/11/12/microsoft-outage-outlook-aws-google.html"
-    ]
-   ]
   }
  ],
- "updated": "2026-11-25T23:46",
+ "updated": "2026-11-26T07:42",
  "trend": {
   "NVDA": {
    "date": "2026-11-25",
