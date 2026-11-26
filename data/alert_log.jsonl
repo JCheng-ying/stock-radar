@@ -1509,3 +1509,16 @@
 {"ts": "2026-11-25T21:55:09+00:00", "title": "🚀 NPK 单日 +8.7%", "body": "National Presto Industries, Inc 收于 160.22。信号：回调风险。", "priority": "low", "sent": true}
 {"ts": "2026-11-25T21:55:09+00:00", "title": "还有 1 条更新", "body": "🚀 TTEC 单日 +8.0%", "priority": "low", "sent": true}
 {"ts": "2026-11-26T01:59:32+00:00", "title": "📝 研判更新 17:59", "body": "S&P 将英伟达 AA 评级列入负面观察（治理评估下调至中性，90 天内可能降至 AA-）；WaPo 称五角大楼曾讨论用国防生产法施压复任黄仁勋（五角大楼否认）。治理面偏负加深，整体结论不变。涉及：NVDA", "priority": "normal", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🟢 NWSA 进入「关注买点」", "body": "News Corporation：基本面在改善、预期差为正，而价格处在悲观区——利空大概率已充分定价。（此前：趋势中）\nRSI 40；处于52周区间的 43% 位置；偏离200日线 -3%", "priority": "high", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🌊 AI 二浪：尚未启动", "body": "此前：财报已改善，价格未反映。已满足：收入增速、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🌊 AI 二浪：财报已改善，价格未反映", "body": "此前：尚未启动。已满足：收入增速、EBITDA 利润率（经营效率）、RPO（长期大单）", "priority": "high", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🔴 ZS 进入「回调风险」", "body": "Zscaler, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 60；处于52周区间的 66% 位置；偏离200日线 +38%", "priority": "normal", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🔴 AAPL 进入「回调风险」", "body": "Apple Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 58；处于52周区间的 99% 位置；偏离200日线 +17%", "priority": "normal", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "💥 TXN 单日 -11.2%", "body": "Texas Instruments Incorporated 收于 258.44。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-26T02:42:01+00:00", "title": "🔴 GEHC 进入「回调风险」", "body": "GE HealthCare Technologies Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：趋势中）\nRSI 63；处于52周区间的 84% 位置；偏离200日线 +19%", "priority": "normal", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "💥 VELO 单日 -11.0%", "body": "Velo3D, Inc. 收于 3.0。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "🔴 R 进入「回调风险」", "body": "Ryder System, Inc.：价格处在极度乐观区，利好大概率已被消化，追高的盈亏比差。（此前：谨慎）\nRSI 59；处于52周区间的 98% 位置；偏离200日线 +16%", "priority": "normal", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "💥 VPG 单日 -8.6%", "body": "Vishay Precision Group, Inc. 收于 42.39。信号：观察。", "priority": "low", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "🚀 CNH 单日 +8.0%", "body": "CNH Industrial N.V. 收于 11.88。信号：趋势中。", "priority": "low", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "💥 VSH 单日 -10.2%", "body": "Vishay Intertechnology, Inc. 收于 22.29。信号：关注买点。", "priority": "low", "sent": true}
+{"ts": "2026-11-26T02:42:02+00:00", "title": "💥 WULF 单日 -8.2%", "body": "TeraWulf Inc. 收于 10.01。信号：观察。", "priority": "low", "sent": true}

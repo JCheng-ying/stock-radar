@@ -5983,5 +5983,248 @@
     ]
    }
   ]
+ },
+ "ai/rack/bmc": {
+  "updated": "2026-11-25",
+  "note": "这个零件其实是三类“小芯片”：给 GPU 供电的多相电源 / 垂直供电模块（瓶颈和单价最高）、远程管理整台服务器的 BMC 和配套控制 FPGA、以及给交换机和光模块提供基准节拍的时钟芯片。路线分歧在供电：48V 垂直供电（芯片正下方供电、损耗低）正在替代水平供电，下一步是 800V 直流机房架构；BMC 则从“管理芯片 + 外置 FPGA”走向集成信任根、减少外置逻辑。",
+  "companies": {
+   "MPWR": {
+    "products": "多相 GPU 供电控制器与功率级、48V 垂直供电模块，正在送样面向 800V 机房架构的高压 AC-DC 产品",
+    "what": "GPU 一颗要吃上千瓦电，但只能用不到 1 伏的电压，必须在芯片旁边把 48V 一步步降下来。MPS 做的就是这套“降压 + 稳压”的芯片和模块，供电越稳、损耗越低，GPU 越能跑满。",
+    "diff": "成本结构和集成度好，第三方分析认为它在大批量 GPU 插槽上赢过 Vicor；二季度收入 9.81 亿美元、同比 +48%。",
+    "ties": "英伟达是主要增长来源（第三方分析称客户集中是最大风险）",
+    "src": [
+     [
+      "Motley Fool：MPS 2026 年二季度电话会纪要",
+      "https://www.fool.com/earnings/call-transcripts/2026/07/30/monolithic-power-systems-mpwr-q2-2026-earnings-call-transcript/"
+     ],
+     [
+      "Finterra：MPS 在 AI 时代的供电业务深度分析",
+      "https://www.financialcontent.com/article/finterra-2026-4-9-the-power-behind-the-brain-a-deep-dive-into-monolithic-power-systems-mpwr-in-the-ai-era"
+     ]
+    ]
+   },
+   "SITM": {
+    "products": "MEMS 振荡器与时钟芯片（含收购的瑞萨时钟业务 TPD），面向相干光模块的超低抖动 GHz 时钟",
+    "what": "所有高速芯片都需要一个极其准确的“节拍器”。SiTime 用 MEMS（微机电）做这个节拍器，比传统石英更抗振动和温度变化；AI 机房里的交换机和光模块速度越快，对时钟精度要求越高。",
+    "diff": "三季度收入 2.987 亿美元（同比 +257%，含 TPD 8,630 万），通信 / 企业 / 数据中心收入 1.273 亿（+202%）；管理层称相干光模块用的时钟单价最高可达 5 倍，晶圆供应约束可能持续到 2027 年。",
+    "ties": "光模块与交换机厂商（公司未逐一披露）",
+    "src": [
+     [
+      "SiTime 8-K：2026 年三季度业绩",
+      "https://www.sec.gov/Archives/edgar/data/0001451809/000145180926000076/sitm-q326x8kxexx991.htm"
+     ],
+     [
+      "Futurum：SiTime 2026 财年三季度，光模块需求扩大时钟用量",
+      "https://futurumgroup.com/?p=97619"
+     ]
+    ]
+   },
+   "LSCC": {
+    "products": "控制类 FPGA（MachXO 系列）、平台信任根 FPGA",
+    "what": "服务器开机、上下电顺序、各个板卡之间的“杂事”需要一颗小 FPGA 来协调，Lattice 是这类低功耗小 FPGA 的主要供应商，也做开机时校验固件是否被篡改的安全芯片。",
+    "diff": "低功耗、小尺寸；风险是新一代 BMC（如 AST2700）的 LTPI 接口宣称可以省掉 DC-SCM 设计里的外置 FPGA，实际出货设计里是否普遍省掉没有公开数据。",
+    "ties": "服务器 OEM / ODM",
+    "src": [
+     [
+      "ServeTheHome：ASPEED AST2700 新一代 BMC",
+      "https://www.servethehome.com/this-is-the-aspeed-ast2700-next-gen-bmc-arm/"
+     ]
+    ],
+    "unverified": true
+   },
+   "Aspeed 信骅": {
+    "products": "AST2600、AST2700（台积电 12nm、四核 Arm Cortex-A35、内建 Caliptra 硅级信任根）",
+    "what": "BMC 是服务器里一颗独立的小电脑，主机死机也能远程开关机、看温度、刷固件。几乎每台服务器都有一颗，AI 服务器还要管 GPU 板和液冷。",
+    "diff": "在服务器 BMC 上市占率很高（多数机构估计过半，未见官方数字）；AST2700 把信任根集成进芯片。台湾上市，无美股代码。",
+    "ties": "服务器 ODM / OEM、云厂商",
+    "src": [
+     [
+      "ServeTheHome：ASPEED AST2700 新一代 BMC",
+      "https://www.servethehome.com/this-is-the-aspeed-ast2700-next-gen-bmc-arm/"
+     ],
+     [
+      "iThome：AST2700 内建 Caliptra 硅级信任根",
+      "https://www.ithome.com.tw/pr/172884"
+     ],
+     [
+      "NVIDIA 技术博客：分析 BMC 以保护数据中心基础设施",
+      "https://developer.nvidia.com/blog/analyzing-baseboard-management-controllers-to-secure-data-center-infrastructure"
+     ]
+    ],
+    "unverified": true
+   },
+   "ADI": {
+    "products": "电源管理（LTC / Maxim 系列）、电源监控与热插拔芯片",
+    "what": "负责服务器各个电压轨的监控、保护和热插拔，确保一块板卡插拔时不会把整个系统电坏。",
+    "diff": "产品线宽、偏通用；AI 服务器里不是 GPU 主供电的核心供应商（判断）。",
+    "ties": "服务器 OEM / 电源模块厂",
+    "src": [
+     [
+      "NVIDIA 技术博客：分析 BMC 以保护数据中心基础设施",
+      "https://developer.nvidia.com/blog/analyzing-baseboard-management-controllers-to-secure-data-center-infrastructure"
+     ]
+    ],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "MPWR",
+    "b": "NVDA",
+    "type": "供应",
+    "desc": "MPS 为英伟达 GPU 平台供应多相供电与垂直供电方案，第三方分析认为英伟达是其最大增长来源，设计份额变化是主要风险。",
+    "src": [
+     "Finterra：MPS 在 AI 时代的供电业务深度分析",
+     "https://www.financialcontent.com/article/finterra-2026-4-9-the-power-behind-the-brain-a-deep-dive-into-monolithic-power-systems-mpwr-in-the-ai-era"
+    ]
+   },
+   {
+    "a": "MPWR",
+    "b": "VICR",
+    "type": "竞争",
+    "desc": "在 GPU 垂直供电上竞争，第三方分析认为 MPS 凭成本和集成便利赢得更多大批量插槽（分析观点，公司未确认）。",
+    "src": [
+     "Finterra：MPS 在 AI 时代的供电业务深度分析",
+     "https://www.financialcontent.com/article/finterra-2026-4-9-the-power-behind-the-brain-a-deep-dive-into-monolithic-power-systems-mpwr-in-the-ai-era"
+    ]
+   },
+   {
+    "a": "SITM",
+    "b": "RNECY",
+    "type": "收购",
+    "desc": "SiTime 收购瑞萨时钟业务（TPD），三季度贡献 8,630 万美元收入。",
+    "src": [
+     "Futurum：SiTime 2026 财年三季度，光模块需求扩大时钟用量",
+     "https://futurumgroup.com/?p=97619"
+    ]
+   },
+   {
+    "a": "Aspeed 信骅",
+    "b": "LSCC",
+    "type": "替代",
+    "desc": "AST2700 的 LTPI 接口宣称可省去 DC-SCM 设计中的外置 FPGA，对控制类 FPGA 存在潜在替代（实际普及程度未见数据）。",
+    "src": [
+     "ServeTheHome：ASPEED AST2700 新一代 BMC",
+     "https://www.servethehome.com/this-is-the-aspeed-ast2700-next-gen-bmc-arm/"
+    ]
+   }
+  ]
+ },
+ "ai/phone/display": {
+  "updated": "2026-11-25",
+  "note": "手机屏幕已经是成熟的 OLED 市场，增量在 IT（平板、笔记本）OLED 和 AI 眼镜的微显示。眼镜显示的路线分歧最大：全彩 LCoS（Meta Ray-Ban Display 已量产采用）、Micro-LED（LEDoS，亮度高但全彩难）、硅基 OLED（OLEDoS，据报道苹果眼镜倾向此路线），再配光波导把画面送进眼睛。",
+  "companies": {
+   "OLED": {
+    "products": "磷光 OLED 发光材料（红 / 绿，推进磷光蓝）、OLED 专利授权、OLEDX",
+    "what": "OLED 屏幕每个像素自己发光，发光靠的是一层有机材料。Universal Display 拥有最省电的“磷光”材料专利，三星、LG、京东方等面板厂都要买它的材料或付授权费。",
+    "diff": "磷光蓝如果量产，能让屏幕再省电一大截，是独家看点；2026 年一季度把全年收入指引下调到 6.3~6.7 亿美元，三季度收入 1.604 亿美元、同比回升。",
+    "ties": "三星显示、LG Display、京东方等面板厂；Gen 8.6 IT OLED 新产线",
+    "src": [
+     [
+      "Business Wire：Universal Display 2026 年一季度业绩（下调全年指引）",
+      "https://www.businesswire.com/news/home/20260430275471/en/universal-display-corporation-announces-first-quarter-2026-financial-results/"
+     ],
+     [
+      "Finviz：Universal Display 2026 年三季度业绩",
+      "https://finviz.com/news/410694/universal-display-corporation-announces-third-quarter-2026-financial-results"
+     ]
+    ]
+   },
+   "HIMX": {
+    "products": "LCoS 微显示（与友达合作的超薄前光 LCoS）、显示驱动 IC",
+    "what": "LCoS 是在硅芯片上用液晶做成的极小屏幕，再用光源照亮投射到眼镜镜片里。奇景同时做手机 / 车载屏幕的驱动芯片。",
+    "diff": "CES 2026 与友达展示超薄高亮 LCoS；公开资料没有显示它是 Meta Ray-Ban Display 的面板供应商（据报道 Meta 用的是 OmniVision 的 LCoS）。",
+    "ties": "友达（AUO）",
+    "src": [
+     [
+      "Nasdaq：奇景与友达在 CES 2026 推出超薄高亮 LCoS 微显示",
+      "https://www.nasdaq.com/press-release/himax-and-auo-partner-unveil-ultra-slim-high-brightness-lcos-microdisplay-ces-2026"
+     ],
+     [
+      "TrendForce：Meta 新 AR 设备推动 LCoS 份额 2026 年升至 13%",
+      "https://www.trendforce.com/presscenter/news/20250919-12723.html"
+     ]
+    ]
+   },
+   "KOPN": {
+    "products": "军用与 AR 微显示（OLED / LCoS / 微 LED 研发）、Neural I/O 平台（CES 2027 首次展示）",
+    "what": "给头盔瞄准镜、夜视仪和 AR 眼镜做的指甲盖大小的屏幕，主要客户是军方。",
+    "diff": "三季度收入 1,820 万美元（同比 +52%），追加 1,860 万美元国防部独家合同；民用 AR 尚未放量。",
+    "ties": "美国国防部及军工承包商",
+    "src": [
+     [
+      "InvestingNews：Kopin 2026 年三季度业绩",
+      "https://investingnews.com/kopin-corporation-reports-third-quarter-2026-financial-results/"
+     ]
+    ]
+   },
+   "VUZI": {
+    "products": "光波导、单片彩色波导（送客户评估）、用于共封装光学的波导光互连",
+    "what": "光波导是一片薄玻璃，把微显示的画面“导”到眼前，是 AR 眼镜看上去像普通眼镜的关键。Vuzix 正从卖整机转向给其他品牌供应波导。",
+    "diff": "三季度收入仅 71.4 万美元（同比 −38%），现金约 920 万美元、按三季度消耗速度不到两个季度；同时把波导技术延伸到数据中心共封装光学。",
+    "ties": "OEM 客户（未披露）",
+    "src": [
+     [
+      "Vision Monday：Vuzix 三季度收入，转向 OEM 模式",
+      "https://www.visionmonday.com/business/article/vuzix-reports-q3-revenue-advances-transition-toward-oem-business-model/"
+     ],
+     [
+      "Panabee：Vuzix 三季度收入下降 38% 至 71.4 万美元",
+      "https://www.panabee.com/news/vuzix-earnings-q3-2026"
+     ]
+    ]
+   },
+   "LPL": {
+    "products": "手机、IT 与车载 OLED 面板",
+    "what": "LG Display 是全球第二大 OLED 面板厂，给手机、电视、笔记本和汽车做屏幕。",
+    "diff": "本次未查到 2026 年当日来源，需复核。",
+    "ties": "苹果等（据报道）",
+    "src": [],
+    "unverified": true
+   }
+  },
+  "relations": [
+   {
+    "a": "META",
+    "b": "OmniVision",
+    "type": "供应",
+    "desc": "据报道 Meta Ray-Ban Display 采用 OmniVision 的全彩 LCoS 面板配 Lumus 波导。",
+    "src": [
+     "OLED-Info：Meta 推出 LCoS 方案的 AI AR 眼镜",
+     "https://www.oled-info.com/meta-launches-lcos-powered-ai-ar-glasses-oled-microdisplay"
+    ]
+   },
+   {
+    "a": "HIMX",
+    "b": "AUO",
+    "type": "合作",
+    "desc": "奇景与友达合作推出超薄高亮前光 LCoS 微显示，瞄准 AR 眼镜。",
+    "src": [
+     "Nasdaq：奇景与友达在 CES 2026 推出超薄高亮 LCoS 微显示",
+     "https://www.nasdaq.com/press-release/himax-and-auo-partner-unveil-ultra-slim-high-brightness-lcos-microdisplay-ces-2026"
+    ]
+   },
+   {
+    "a": "KOPN",
+    "b": "美国国防部",
+    "type": "客户",
+    "desc": "Kopin 获国防部追加 1,860 万美元独家采购合同。",
+    "src": [
+     "InvestingNews：Kopin 2026 年三季度业绩",
+     "https://investingnews.com/kopin-corporation-reports-third-quarter-2026-financial-results/"
+    ]
+   },
+   {
+    "a": "LCoS",
+    "b": "LEDoS",
+    "type": "竞争",
+    "desc": "TrendForce 认为 Meta 量产机采用成熟 LCoS、原型机走 Micro-LED，两条路线在 AR 眼镜显示上竞争。",
+    "src": [
+     "TrendForce：AR 眼镜竞赛的下半场（2026-08）",
+     "https://www.trendforce.com/news/2026/08/18/news-the-second-half-of-the-ar-glasses-race-begins/"
+    ]
+   }
+  ]
  }
 }

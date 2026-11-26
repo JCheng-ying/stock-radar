@@ -3,6 +3,11 @@
   "NVDA": [
    {
     "date": "2026-11-25",
+    "text": "治理面偏负加深：S&P 把 AA 评级列入负面观察、管理与治理评估下调为中性，90 天内可能降一级；问题从“CEO 去留”转向“董事会独立性”。产业面与基本面不变。",
+    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-s-shares-drop-credit-rating-on-watch-two-days-after-huang-s-return"
+   },
+   {
+    "date": "2026-11-25",
     "text": "治理面偏负加深：S&P 将 AA 评级列入负面观察，治理评估从正面降至中性，认为 CEO 离任再复任未回答董事会对行为准则的监督问题，90 天内可能降一级；据 WaPo，五角大楼曾讨论以《国防生产法》施压复任（五角大楼否认），董事会独立性受质疑。",
     "url": "https://seekingalpha.com/news/4676682-nvidias-aa-credit-rating-placed-on-credit-watch-negative-by-sp-global"
    },
@@ -44,6 +49,11 @@
   "MU": [
    {
     "date": "2026-11-25",
+    "text": "预期面偏负延续：与 SNDK 同步下跌 5.2%，市场在提前定价存储价格见顶，基本面数据尚未下修。",
+    "url": "https://www.gurufocus.com/news/9220416/sandisk-sndk-shares-plunge-over-12-amid-tech-sector-selloff-on-november-25-2026"
+   },
+   {
+    "date": "2026-11-25",
     "text": "预期面 / 资金面偏负：连续两日约 −10%、−9.4% 至 570.39，据报道 BNP Paribas Exane 以供给过剩下调评级（细节未查证），叠加加息预期，存储周期定价转弱。",
     "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
    },
@@ -61,11 +71,6 @@
     "date": "2026-11-23",
     "text": "产业面向上：FT 称内存短缺使服务器厂商交付时加价最多 45%、CPU 节点涨两倍，SK 海力士把缓解时间推迟到 2030 年，存储涨价周期被拉长。",
     "url": "https://www.datacenterdynamics.com/en/news/ai-server-oems-hiking-prices-by-45-as-memory-shortage-bites-report/"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "资金面向上：美光以 IPO 价参与 Anthropic 260 亿美元私募，同时是其存储供应商（循环融资结构）；盘中 +6.9%。",
-    "url": "https://techcrunch.com/2026/11/19/anthropic-s-ipo-puts-ai-s-circular-financing-boom-to-the-test/"
    }
   ],
   "INTC": [
@@ -187,6 +192,11 @@
   "CRWV": [
    {
     "date": "2026-11-25",
+    "text": "资金面：早盘跌超 10%、收盘仅 −1.6%，波动反映融资面情绪；以大客户合同作抵押融资的模式还能走通，但成本上升。",
+    "url": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories"
+   },
+   {
+    "date": "2026-11-25",
     "text": "资金面：据 Seeking Alpha 转引报道标题，拟以 Meta 算力合同支撑出售 45 亿美元贷款（细节未查证）；合同抵押式融资通道仍开着，但信用利差高位下融资成本偏高。",
     "url": ""
    },
@@ -203,11 +213,6 @@
    {
     "date": "2026-11-18",
     "text": "资金面延续偏负：英伟达财报后新云股继续走低（CNBC 标题），快照 47.83（−4.1%），位于 2027 前瞻区间下沿~中值。",
-    "url": "https://www.cnbc.com/"
-   },
-   {
-    "date": "2026-11-18",
-    "text": "资金面偏负：据 CNBC 标题英伟达财报后新云股下跌（细节未查证），市场在为“担保只覆盖建成后”定价。",
     "url": "https://www.cnbc.com/"
    }
   ],
@@ -860,6 +865,11 @@
   ],
   "SNDK": [
    {
+    "date": "2026-11-25",
+    "text": "预期面转弱：NAND 减价担忧、评级下调和内部人减持叠加，连续第二天大跌（各家报道跌幅 5.6%~12% 不一）；长期协议锁量不锁价的分歧还没有被公司数据回答。",
+    "url": "https://www.tradingpedia.com/2026/11/25/sandisk-slides-on-nand-cuts-downgrade-insider-sales/"
+   },
+   {
     "date": "2026-11-24",
     "text": "预期面 / 情绪面转负：存储供给过剩担忧扩散，−17.4%；与公司此前披露的长期协议覆盖率形成分歧。",
     "url": "https://invezz.com/sg/news/2026/11/24/why-micron-sandisk-and-other-memory-stocks-are-plunging-up-to-12percent-today/"
@@ -1038,6 +1048,11 @@
   ],
   "AMBA": [
    {
+    "date": "2026-11-25",
+    "text": "预期面偏负：财报后跌 18.5%，存储涨价压毛利、库存偏高是主要疑问（据报道），物理 AI 叙事需要下季度毛利率验证。",
+    "url": "https://finviz.com/news/423396/ambarellas-physical-ai-pitch-meets-a-margin-inventory-and-memory-test"
+   },
+   {
     "date": "2026-11-24",
     "text": "预期面进一步转负：据标题四季度收入指引 7,000 万~7,500 万美元（三季度 1.152 亿美元），原因是存储短缺导致客户订单推迟（细节未查证）。",
     "url": "https://seekingalpha.com/symbol/AMBA/news"
@@ -1055,11 +1070,6 @@
    {
     "date": "2026-11-19",
     "text": "预期面（并购）：据 Seeking Alpha 标题与 NXP 收购谈判或进入最后阶段（未查证），+7.8% 至 58.93、高于 2027 前瞻中值；FT 7-31 首报谈判。",
-    "url": "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
-   },
-   {
-    "date": "2026-11-19",
-    "text": "预期面向上（待查证）：据 Seeking Alpha 标题，NXP 收购 Ambarella 的谈判可能进入最后阶段；FT 7 月首次报道谈判时 AMBA 市值约 33 亿美元。",
     "url": "https://www.investing.com/news/stock-market-news/ambarella-reportedly-in-talks-to-be-acquired-by-nxp-semiconductors-shares-spike-4829078"
    }
   ],
@@ -1126,6 +1136,11 @@
    }
   ],
   "ORCL": [
+   {
+    "date": "2026-11-25",
+    "text": "资金面偏负未变：盘中逼近三年低位后反弹，收 −4.9%；信用利差走阔反映 AI 融资链压力，产业面需求未变。",
+    "url": "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories"
+   },
    {
     "date": "2026-11-25",
     "text": "资金面偏负：据 Seeking Alpha 标题，ORCL 与 CRWV 的 CDS 利差创纪录，市场对其 AI 资本开支融资的信用定价继续恶化（细节未查证）。",
@@ -1291,6 +1306,11 @@
   ],
   "NTNX": [
    {
+    "date": "2026-11-25",
+    "text": "预期面偏负：财报超预期并上调指引后仍跌 14.6%，市场担心服务器短缺和硬件涨价拖慢项目落地、把部分客户推向公有云。",
+    "url": "https://finviz.com/news/423404/nutanix-must-prove-its-beat-and-raise-turn-can-survive-persistent-server-shortages"
+   },
+   {
     "date": "2026-11-24",
     "text": "预期面偏负：FY2027 收入指引 31.8~32.3 亿美元、中值低于一致预期 32.2 亿美元，叠加 CEO 接班不确定性，盘后 −8%；一季度收入 +15%、EPS 0.73 超预期，基本面本身稳健。",
     "url": "https://siliconangle.com/2026/11/24/rajiv-ramaswami-to-step-down-as-nutanix-begins-hunt-for-its-next-ceo/"
@@ -1312,10 +1332,21 @@
     "text": "基本面 / 预期面偏负：四季度收入、利润都超预期，但主要靠涨价，利润率在下滑；不给下季度指引，自由现金流预测约 30 亿美元、低于预期；Emma Walmsley 将于 1 月 4 日接任 CEO（据 SiliconANGLE，未经 HP 公告独立查证）。",
     "url": "https://siliconangle.com/2026/11/24/dell-and-hp-beat-expectations-but-their-fortunes-are-diverging-as-ai-dynamics-crush-the-pc-market/"
    }
+  ],
+  "LI": [
+   {
+    "date": "2026-11-25",
+    "text": "基本面小幅修复：三季度毛利率从 11.0% 回到 16.7%，交付 99,964 辆（同比 +7.2%），净亏损收窄到约 3.1 亿元；但 10 月交付同比 −8.6%，需求端仍弱。",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001791706/000110465926131768/tm2630657d1_ex99-1.htm"
+   }
   ]
  },
  "sectors": {
   "ai": [
+   {
+    "date": "2026-11-25",
+    "text": "PCE 超预期、加息定价升至九成以上叠加新关税，AI 链价格由资金面主导；存储与服务器链在财报后被重新定价（SNDK、MU、NTNX），NVDA 治理面因 S&P 负面观察偏负加深；产业面（液冷、电力、带电土地）继续确认向上。"
+   },
    {
     "date": "2026-11-25",
     "text": "政策面偏紧：华为在美被陪审团判定窃取商业秘密、违反制裁等罪名成立，美国对华技术封锁有了司法依据，中美 AI 硬件供应链继续分离；产业面液冷 / 电力瓶颈继续得到确认（Schneider CDU 扩产翻倍、美国陆军招标要求自带电源）；资金面再收紧：PCE 3.8% 使 12 月加息几成定局，叠加新 20% 关税，半导体连续两日大跌；产业面（电力 / 液冷瓶颈、算力需求）无新负面数据。 治理面：S&P 将 NVDA 评级列入负面观察，龙头公司的董事会监督问题从股价折价延伸到信用评级。"
@@ -1332,10 +1363,6 @@
     "date": "2026-11-23",
     "text": "合规面：Megaspeed 据报被列入实体清单，监管重点从“卖给谁”前移到“中间商是谁”；安全软件平台化整合（CRWD 收购 ZS）与 AI 运行时防护（Shirudo）、AI 自动审批（Claude Ship）同日出现。",
     "url": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist"
-   },
-   {
-    "date": "2026-11-23",
-    "text": "英伟达复任黄仁勋，AI 板块最大的治理不确定性解除，情绪面从极端区修复；合规调查仍在。安全软件进入整合（CRWD 收购 ZS，约 439 亿美元），服务器供给瓶颈仍在内存（据报提价最多 45%，未查证）。 内存短缺由 FT 报道坐实为合同外加价（最多 45%）、SK 海力士预计持续到 2030 年；GPU 资产支持融资（SpaceX 440 亿美元）标准化；亚马逊买下 Decart 优化栈准备外售 Trainium——算力扩张的约束从 GPU 转向存储与资本成本。"
    }
   ],
   "quantum": [
@@ -1408,6 +1435,10 @@
   ],
   "autonomous": [
    {
+    "date": "2026-11-25",
+    "text": "理想汽车三季度毛利率回升到 16.7%、股价 +10.5%，AMBA 财报后 −18.5%：自动驾驶链基本面分化，整车端修复、芯片端受存储涨价拖累。"
+   },
+   {
     "date": "2026-11-24",
     "text": "AMBA 三季度双不及预期、−20%，车载视觉芯片的基本面 / 预期面转负。"
    },
@@ -1422,10 +1453,6 @@
    {
     "date": "2026-11-17",
     "text": "政策面转负：据 TechCrunch 标题，Waymo 在加州 DMV 下令后暂停全美高速公路载客（细节未查证），L4 高速场景监管不确定性上升。"
-   },
-   {
-    "date": "2026-11-09",
-    "text": "NHTSA 对 Waymo 开启召回质询（RQ26006），监管面转负；特斯拉 Robotaxi 进入圣安东尼奥。一浪退回“尚未启动”。"
    }
   ]
  },
@@ -1433,41 +1460,97 @@
  "daily": [
   {
    "date": "2026-11-25",
-   "market": "（盘前 / 早间增量，完整研判 14:20 发布）【06:29 更新，含 Summizer 新增的 14 篇】隔夜没有改变结论的新事实，变化集中在政策 / 治理面和产业面两条线。一是政策面：据 DataCenterDynamics，纽约东区联邦陪审团认定华为及三家子公司共谋窃取商业秘密、银行 / 电信欺诈、违反 IEEPA 制裁和洗钱等罪名成立，RICO 有组织犯罪共谋一项不成立（华为称将继续抗辩）——美国对华技术封锁从行政手段多了司法判决作依据，中美 AI 硬件两套供应链继续分开走，与 NVDA 正在面对的出口管制审查是同一方向的政策面偏紧信号。二是 NVDA 治理 / 司法面：TechCrunch 指出 Megaspeed 事件的剩余焦点已收窄到“Nvidia 知道什么”——只拿客户书面保证是否足够，黄仁勋与 Alice Huang 的私人关系是最大法律风险；司法部长 Blanche 称 Nvidia 是“好的企业公民”但未回答调查问题，加州 AG 与 SEC 的调查则针对信息披露；另据 Seeking Alpha 转引 Reuters 标题，约 2.7 亿美元流向中国的 AI 服务器记录与 Alice Huang 的关系圈有关（细节未查证）。治理面偏负判断维持并略有加深。三是产业面小幅向上：Schneider 从 2027 年 1 月起把意大利工厂 CDU 产能翻倍、美国陆军第二轮九处基地数据中心用地招标要求“必须自带发电”、Exaion 签下 7,900 万美元 100% take-or-pay 的 B300 GPU 租约——液冷和电力继续是 AI 建设的瓶颈环节，算力需求向上不变。资金面仍紧、情绪面极端：VIX 30.4（一年 99% 分位、期限结构倒挂，系统推送），据 Seeking Alpha 标题 ORCL、CRWV 的 CDS 利差创纪录，AI 融资链的信用压力还在加大。量子计算二浪状态隔夜在“尚未启动”和“财报已改善、价格未反映”之间来回一次（EBITDA 利润率条件在临界值附近），最终回到后者，属数据边界抖动，不是新信号。整体结论不变：算力需求向上，价格由资金面、治理 / 政策折价和存储周期主导。【07:29 更新，含 Summizer 新增的 3 篇】资金面明显再收紧，这是今天盘中的主导变量：据 Yahoo Finance 盘中报道，10 月 PCE 同比 3.8%（2023 年以来最高）、核心 PCE 3.3% 高于预期 3.2%，市场对 12 月加息的定价升至约 96%~98%；同时政府宣布对中国、欧盟等主要贸易伙伴加征 20% 关税（叠加现有税率，生效时间未定，有报道称最早 1 月；涉及国家数各来源说法 14~16 个不一）。纳指盘中跌约 3.6%~4.1%（不同时点报道不一），半导体连续第二天领跌：快照 NVDA 144.44（−7.0%）、MU 570.39（−9.4%）、AMD 378.08（−8.5%）、AVGO −5.0%、TSM −6.7%，均落在 2027 前瞻区间下沿~中值。五面上看：资金面（本站读数 22、钱贵）进一步偏紧，政策面（关税）偏负，情绪面继续恶化；产业面与基本面没有新的负面数据——Summizer 新增的数据中心电气集成并购（Promera 收购 B&G）和欧盟 Quantum Act 的产业界回应（QuIC 要求 3~5 亿欧元首批采购承诺）都是产业面小幅正向。三浪框架下，NVDA 复任带来的情绪修复两天内基本回吐，价格回到由“利率 + 政策”主导的阶段。整体结论不变但更偏防守：算力需求向上，短期定价权在资金面。周四感恩节休市、周五半日交易。【08:28 更新，含 Summizer 新增的 2 篇】盘中跌幅继续扩大，资金面仍是主导：快照 NVDA 141.80（−8.7%）、MU 556.11（−11.7%）、ORCL 99.81（−8.9%）、CRWV 37.98（−10.9%）、NBIS 75.93（−13.0%）、AAOI 32.96（−14.2%），均在 2027 前瞻区间下沿~中值；情绪面偏悲观、资金面“钱贵（紧缩）”未变。产业面两条线：TechCrunch Equity 播客指出 neocloud 的稀缺资源正从 GPU 转向“带电土地 + 机房外壳 + 建设期融资”，Nvidia 只在项目接近可运行后才提供担保，建设期风险回到开发商和贷款方——与 ORCL / CRWV 信用利差走阔同向，neocloud 融资面偏负；SiliconANGLE 引 Vercel 数据称开源权重模型在其 token 流量中的占比从 7% 升到 56%，推理需求向多模型、多托管方扩散，算力总需求向上不变。治理面：据 Seeking Alpha 标题，官员向国会幕僚表示没有证据显示中国在黄仁勋私人关系一事中起作用（细节未查证），若属实是治理面小幅缓和，但加州 AG / SEC 的披露调查不受影响。整体结论不变：算力需求向上，短期价格由资金面和政策面主导。【09:28 更新，含 Summizer 新增的 4 篇】盘中跌幅略有收窄（快照 NVDA 144.72、−6.9%，MU 567.09、−10.0%，ORCL 102.97、−6.0%，仍在 2027 前瞻区间下沿~中值），资金面“钱贵”和情绪面偏悲观未变。产业面两条新线：一是中国数据中心开发商 GDS（万国数据）Q3 净收入 4.77 亿美元、同比 +10%，签约面积 +25.5%、上架率升至 81.2%，但全年 capex 指引从 15 亿下调到约 12 亿美元（DCD）——需求在、扩张节奏受外部约束，中国 AI 算力链基本面分化；二是俄亥俄州电力选址委员会批准为 EdgeConneX 数据中心配建最高 800MW 表后燃气电厂，州级许可压过地方反对（DCD），电力 / 社会许可瓶颈出现“审批上收到州”的解法，产业面小幅正向。政策面：据 Tom's Hardware 标题，有诉讼指控政府对 Intel 施压（细节未查证）；据 CNBC 标题，预测市场把 OpenAI IPO 预期推迟到 2027 年更晚（细节未查证），AI 一级市场估值兑现节奏偏慢，与 neocloud 融资面偏紧同向。整体结论不变：算力需求向上，短期价格由资金面和政策面主导。【12:27 更新】午盘后没有改变结论的新事实，跌幅较上午略收：快照 NVDA 144.15（−7.2%）、MU 573.25（−9.0%）、CRWV 39.84（−6.5%），均在 2027 前瞻区间下沿~中值；据 CNBC 标题，黄仁勋复任带来的反弹已熄火、AI 担忧回归，情绪面偏悲观未变。两条增量：一是资金面——据 Seeking Alpha 转引报道标题，CRWV 拟以 Meta 算力合同作支撑出售 45 亿美元贷款（细节未查证；此前 3 月已有 85 亿美元同类结构的 GPU 贷款），说明 neocloud 仍能靠大客户合同融资，但需要拿合同作抵押本身也印证融资面偏紧；二是政策面——参议院 FY27 国防拨款法案限制太空数据网络与 SB-AMTI 两个项目的 1 亿美元以上独家 / 非竞争合同（SatNews），彭博标题将其解读为针对 SpaceX，航天板块订单竞争格局小幅有利于其它承包商。整体结论不变：算力需求向上，短期价格由资金面和政策面主导。【12:28 更新，含 Summizer 新增的 2 篇】没有改变大盘结论的新事实，资金面“钱贵”、情绪面偏悲观未变。两条小增量：一是产业面——IQM 获韩国私营数据中心 QAI 订单，在首尔部署 54 比特 Radiance R3（2027 年底前交付），与 GPU 同机房、以量子即服务对外开放（公司新闻稿，未经独立验证），量子从“国家买设备”向“数据中心运营商采购”迈一小步；二是政策面——纽约州成为继加州后第二个禁售内置 AI 聊天机器人玩具的州（签署 90 天后生效，罚款每天 1.5 万美元，TechCrunch），消费级陪伴型 AI 硬件的监管来得比软件更快，但与本站五个板块的上市公司关联很小。整体结论不变。【17:59 更新】收盘后新增两条 NVDA 治理面消息，方向都偏负：一是 S&P 把英伟达 AA 评级列入负面观察（CreditWatch Negative），把管理与治理评估从“正面”下调到“中性”，理由是黄仁勋离任再复任仍不足以回答董事会如何监督高管行为准则；若 90 天内确认治理缺陷持续，可能下调一级至 AA-（此前 11-18 Moody's 已把展望从正面调为稳定）。二是据《华盛顿邮报》报道，五角大楼高层曾讨论以《国防生产法》施压董事会复任黄仁勋，五角大楼否认有此讨论——来源有分歧，但无论真假都说明复任过程带有政治介入色彩，董事会独立性成为评级机构和投资者共同关注的问题。快照 NVDA 收 148.37（−4.5%），盘中跌幅收窄，仍在 2027 前瞻区间下沿~中值（100.71 / 181.72 / 267.24）。五面上治理 / 政策面偏负加深，产业面与基本面不变，整体结论不变：算力需求向上，短期价格由资金面、政策和治理折价主导。另：VIX 约 28、一年 98% 分位、期限结构倒挂（系统推送），情绪面处于极端区域。",
+   "market": "【全天汇总，取代今天各时段增量；今天无新增 Summizer 文章】资金面是今天的主导变量，进一步收紧：10 月 PCE 同比 3.8%、核心 3.3% 高于预期，市场对 12 月加息的定价升到九成以上，叠加政府宣布对主要贸易伙伴加征 20% 关税（生效时间未定），本站资金面得分 22（钱贵），10 年期美债 4.85%。情绪面处在极端恐惧区但盘中有修复：VIX 早盘 30.4、收盘前回落到约 28（一年 98% 分位、期限结构倒挂），CNN 恐贪 15，全站只有 29% 的公司站上 200 日线；纳指早盘跌约 4%，收盘大幅收窄，道指 +0.33%、标普 −0.25%（ABC），AI 基础设施股午后从低位反弹。浪位没有变化：AI 一浪 / 三浪、航天一 / 二浪、机器人一浪仍是“财报已改善、价格未反映”，自动驾驶三浪都“尚未启动”——基本面与价格背离继续扩大，关注买点名单因此大量扩容（这是热度低的机械结果，不是基本面变化）。个股层面两条主线：一是 NVDA 治理面再偏负（S&P 将 AA 评级列入负面观察，WaPo 报道五角大楼曾讨论动用《国防生产法》施压复任、五角大楼否认）；二是存储与服务器链在财报后被重新定价（SNDK 跌幅各家报道 5.6%~12% 不一，NTNX、AMBA 财报后大跌），而理想汽车三季度毛利率回升到 16.7% 后大涨。宏观博主（美投，10-17）认为唯一要警惕的尾部风险是“通胀失控→被迫激进加息→冲击 AI 融资链”、且概率不高；今天的 PCE 和加息定价正在朝这个尾部情形靠近，与本站资金面“钱贵”读数一致，不一致在于他判断加息会是 2~3 次温和加息、市场已定价，而今天的价格反应说明市场并未完全定价。整体结论不变：算力需求向上，短期价格由资金面、政策和治理折价主导；周四感恩节休市、周五半日。",
    "sectors": {
-    "ai": "【06:29】华为在美被判商业秘密窃取和违反制裁罪名成立（DCD），对华芯片政策面继续偏紧；NVDA Megaspeed 法律焦点转向公司“知情”程度（TechCrunch），治理 / 司法面偏负维持；Schneider CDU 扩产翻倍、美国陆军九处基地招标要求自带电源、Exaion 7,900 万美元 B300 租约，产业面液冷 / 电力环节小幅确认；ORCL、CRWV CDS 利差创纪录（Seeking Alpha 标题），neocloud 融资面偏负；据 Seeking Alpha 标题 Wedbush 认为 AAOI 与超大规模云厂商的合作显示需求强（细节未查证）。 【07:29】PCE 超预期 + 新 20% 关税叠加，半导体连续第二天大跌（NVDA −7.0%、MU −9.4%、AMD −8.5%），资金面 / 政策面偏负，产业面无新负面数据；据报道 BNP Paribas Exane 以供给过剩为由下调 MU 评级（细节未查证），存储周期预期面偏负；Promera 收购爱尔兰数据中心电气承包商 B&G（金额未披露，DCD），电力集成环节继续是瓶颈（产业面小幅正向）；亚马逊与 Meta 据 Fortune 就允许 Muse agent 接入亚马逊商店谈判，卡在搜索呈现和广告分成（TechCrunch 转引），agent 商业的瓶颈在利益分配而非技术。 【08:28】盘中跌幅扩大（MU −11.7%、NBIS −13.0%、CRWV −10.9%、AAOI −14.2%）；TechCrunch 播客：neocloud 瓶颈转向带电土地与建设期融资，Nvidia 担保只覆盖接近完工的项目，neocloud 融资面偏负；开源权重模型 token 占比（Vercel 口径）7%→56%，推理需求扩散，产业面向上不变；据 Seeking Alpha 标题官员称无证据显示中国在黄仁勋私人关系事件中起作用（细节未查证），NVDA 治理面或小幅缓和。 【09:28】GDS Q3 收入 +10%、上架率 81.2%，但全年 capex 指引 15→12 亿美元（DCD），中国数据中心扩张节奏放缓；俄亥俄州批准 EdgeConneX 数据中心配建最高 800MW 表后燃气电厂（DCD），电力瓶颈的州级解法，产业面小幅正向；Panthalassa 海上波浪能 + 算力一体化方案（创始人自述，未经验证）属远期电力替代路线；据 CNBC 标题 OpenAI IPO 预期推迟至 2027 年更晚（细节未查证）。 【12:27】据 Seeking Alpha 标题 CRWV 拟以 Meta 合同支撑出售 45 亿美元贷款（细节未查证），合同抵押式融资仍可行、但融资面偏紧未变；据 Seeking Alpha 转引报道标题，出口管制收紧（11 月 16 日 BIS 规则把东南亚四国和巴西列为高转运风险地区）后部分 Nvidia 芯片经销商在找新买家，政策面偏负延续。 【17:59】S&P 将 NVDA 的 AA 评级列入负面观察、治理评估下调至中性（可能 90 天内降至 AA-）；据 WaPo 报道五角大楼曾讨论用《国防生产法》施压复任黄仁勋（五角大楼否认）——治理面偏负加深，NVDA 收 148.37（−4.5%）。",
-    "quantum": "【06:29】Standard Chartered 在新加坡 MAS 支持下扩大量子研究项目，合作方含 RGTI、Quantinuum、OQC（银行自述，指标未经第三方验证），金融业作为早期付费方的产业面小幅确认；量子篮子二浪状态隔夜在临界值附近来回，最终仍为“财报已改善、价格未反映”。 【07:29】欧洲量子产业联盟 QuIC 回应 Quantum Act：要求生效 6 个月内落实 3~5 亿欧元采购承诺、5 年公共采购 77 亿~123 亿欧元，并为量子公司在主权科技股权基金中划份额（行业游说诉求，不是法案内容），欧洲本土优先采购对美国量子公司在欧订单是潜在逆风；量子篮子当日随大盘下跌（IONQ −7.8%、RGTI −6.9%）。 【12:28】IQM 在一周内拿下第二台 54 比特 Radiance R3 订单，这次买家是韩国私营数据中心 QAI（GPU + 量子同机房、QaaS 转租，2027 年底前交付；公司新闻稿），私营算力运营商成为新的采购方，产业面小幅正向；IQM 未上市，对美股量子篮子是生态层信号，不改变浪位。",
-    "robotics": "【09:28】DARPA Triage Challenge 决赛（11 月 5 日起、奖金 250 万美元）检验机器人 / 无人机在大规模伤亡检伤分类中的表现，军用医疗是机器人早期付费场景之一（The Robot Report / Summizer），产业面小幅正向、无直接上市公司影响。 【12:28】纽约州继加州后禁售内置 AI 聊天机器人的玩具（TechCrunch），消费级陪伴机器人监管先行，属于小众品类，对工业 / 人形机器人主线影响很小。",
-    "aerospace": "【12:27】参议院 FY27 国防拨款法案禁止太空数据网络和 SB-AMTI 两个卫星项目的 1 亿美元以上独家 / 非竞争合同，Space Force 拨款约 547 亿美元（SatNews）；据彭博标题，这项条款针对 SpaceX 的独家合同。属于政策面，对其它卫星 / 发射承包商的竞标机会小幅正向，法案尚未通过。",
-    "autonomous": "【06:29】据 Seeking Alpha 标题，分析师提示存储涨价和短缺可能继续压制 AMBA 需求，另有观点认为抛售过度（均为观点），延续昨日预期面转负的判断。"
+    "ai": "资金面（PCE 超预期 + 加息定价）和政策面（新关税）偏负，产业面没有新的负面数据：Schneider CDU 产能翻倍、陆军基地招标要求自带电源、带电土地成为 neocloud 的新稀缺资源，液冷 / 电力环节继续确认。NVDA 治理面偏负加深（S&P 负面观察，可能 90 天内降至 AA-）。存储链预期面转弱：SNDK、MU 连续两天下跌，起因是 NAND 价格见顶的分歧与评级下调；NTNX 财报后 −14.6%，服务器短缺正在拖慢私有云项目的收入确认。",
+    "quantum": "无重要新信息改变判断。IQM 获韩国私营数据中心订单（公司新闻稿），私营算力运营商成为新采购方，产业面小幅正向；欧洲量子产业联盟要求本土优先采购，对美国量子公司在欧订单是潜在逆风。二浪仍为“财报已改善、价格未反映”（临界值附近抖动）。",
+    "robotics": "无重要新信息。一浪仍为“财报已改善、价格未反映”；纽约州禁售内置 AI 聊天机器人的玩具，只影响消费陪伴类小品类。",
+    "aerospace": "参议院 FY27 国防拨款法案限制太空数据网络和 SB-AMTI 两个项目的大额独家合同（SatNews，彭博标题解读为针对 SpaceX），法案未通过，对其它承包商的竞标机会小幅正向；航天一 / 二浪状态不变。",
+    "autonomous": "理想汽车三季度交付 99,964 辆（同比 +7.2%）、毛利率回到 16.7%（二季度 11.0%），净亏损收窄到约 3.1 亿元，股价 +10.5%，基本面小幅修复；AMBA 财报后 −18.5%，存储涨价压缩毛利、库存偏高是市场的担忧点（据报道），预期面偏负。三浪均“尚未启动”。"
    },
    "watch": [
     {
      "t": "NVDA",
-     "why": "现价 155.38（前一日 −5.9%），处 2027 前瞻区间 105.46/190.30/279.87 的下沿~中值之间；Megaspeed 法律焦点转向公司“知情”程度，治理 / 司法面偏负，产业面需求不变。 07:29：PCE 超预期 + 新关税下再跌 7.0% 至 144.44，复任后的涨幅基本回吐，位于 2027 前瞻区间 98.04/176.90/260.16 的下沿~中值。 08:28 盘中 141.80（−8.7%），仍在 2027 前瞻区间下沿 96~中值 174 之间；据 Seeking Alpha 标题官员称无证据显示中国在黄仁勋私人关系一事中起作用（未查证）。 17:59：S&P 负面观察（AA→可能 AA-），收 148.37，仍在 2027 前瞻区间下沿~中值。"
+     "why": "收 148.37（本站快照 −4.5%，Motley Fool 报 −3.9%，口径不同），位于 2027 前瞻区间下沿 100.71 / 中值 181.72 / 上沿 267.24 的下沿~中值，距中值约 +22%。S&P 将 AA 评级列入负面观察，理由是复任没有回答董事会如何监督高管行为准则——治理面偏负加深，产业面与基本面不变。"
     },
     {
-     "t": "CRWV",
-     "why": "现价 42.60（−11.9%），处 2027 前瞻区间 18.32/76.97/159.67 的下沿~中值之间、靠近下沿一侧；据 Seeking Alpha 标题 CDS 利差创纪录，资金面偏负。 12:27：据 Seeking Alpha 标题拟以 Meta 合同支撑出售 45 亿美元贷款（细节未查证），现价 39.84 位于 2027 前瞻区间 15.15~74.80~158.89 的下沿~中值。"
-    },
-    {
-     "t": "ORCL",
-     "why": "现价 109.50（−3.7%），处 2027 前瞻区间 81.86/134.11/201.32 的下沿~中值之间；CDS 利差创纪录（标题），融资压力是主要变量。"
-    },
-    {
-     "t": "AAOI",
-     "why": "现价 38.40，处 2027 前瞻区间 29.39/47.03/71.51 的下沿~中值之间；Wedbush 称超大规模云合作反映需求强（标题，未查证）。"
-    },
-    {
-     "t": "AMBA",
-     "why": "现价 44.47（−20.0%），接近 2027 前瞻中值 45.05；存储短缺压制需求的担忧延续，预期面偏负。"
+     "t": "SNDK",
+     "why": "快照 73.13，仍在 2027 前瞻中值 71.05 上方（区间 51.20~97.84）。当日跌幅各来源不一：MarketBeat −5.6%、GuruFocus 收盘 68.45（−12% 以上），本站快照 −22.5% 疑为前收盘口径问题；原因是 NAND 减价担忧、评级下调和内部人减持，预期面转弱。"
     },
     {
      "t": "MU",
-     "why": "11-25 再跌 9.4% 至 570.39（前一日约 −10%），位于 2027 前瞻区间 397.47/600.41/951.18 的下沿~中值、低于中值；据报道 BNP Paribas Exane 以供给过剩下调评级、TrendForce 预期 NAND 价格走弱（细节未查证），存储周期预期面转弱叠加加息预期。 08:28 盘中 556.11（−11.7%），已跌破 2027 前瞻中值 585，下沿 388。"
+     "why": "收 596.90（−5.2%），位于 2027 前瞻区间 415.94 / 628.32 / 995.38 的下沿~中值、接近中值；与 SNDK 同一条 NAND / DRAM 价格见顶分歧，基本面数据尚未出现下修。"
+    },
+    {
+     "t": "NTNX",
+     "why": "财报后 −14.6% 至 46.62，落到 2027 前瞻中值 49.33 下方（区间 36.06~65.61）。据报道公司超预期并上调指引，但服务器短缺、硬件涨价让部分项目推迟或转向公有云，收入确认节奏是市场担心的地方。"
+    },
+    {
+     "t": "AMBA",
+     "why": "财报后 −18.5% 至 36.25；2027 前瞻区间（0 / 29.67 / 352）分析师分歧过大、参考价值低。据报道毛利率、库存和存储涨价是主要疑问，预期面偏负。"
+    },
+    {
+     "t": "LI",
+     "why": "三季度财报后 +10.5% 至 11.82：交付 99,964 辆（同比 +7.2%），毛利率 16.7%（二季度 11.0%），净亏损约 3.1 亿元；本站没有可用的前瞻估值区间。基本面小幅修复，但 10 月交付同比 −8.6%，需求端仍弱。"
+    },
+    {
+     "t": "ORCL",
+     "why": "收 104.19（−4.9%），午后从三年低位附近反弹（MarketWatch），位于 2027 前瞻区间 77.89 / 127.61 / 191.56 的下沿~中值；CDS 利差走阔（据 Seeking Alpha 标题）说明资金面压力仍在。"
+    },
+    {
+     "t": "CRWV",
+     "why": "收 41.92（−1.6%），早盘曾跌超 10%，位于 2027 前瞻区间 15.94 / 78.70 / 167.19 的下沿~中值；据报道拟以 Meta 合同支撑出售 45 亿美元贷款（未查证细节），能融资但需要大客户合同作抵押。"
     }
    ],
    "sources": [
+    [
+     "ABC News：华尔街抹去早盘大跌、收盘涨跌互现，英伟达跌 4%",
+     "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
+    ],
+    [
+     "Motley Fool：11-25 收盘，英伟达跌 3.9%，市场消化 PCE 超预期与新关税",
+     "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-nvidia-slides-3-9-as-the-market-considers-hot-pce-inflation-data-and-new-tariff-proposals/"
+    ],
+    [
+     "CNN：AI 担忧盖过黄仁勋复任，科技股剧烈波动",
+     "https://www.cnn.com/2026/11/25/business/ai-sell-off-despite-huang-nvidia-return"
+    ],
+    [
+     "Nikkei Asia：黄仁勋复任两天后英伟达股价下跌、信用评级被列入观察",
+     "https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-s-shares-drop-credit-rating-on-watch-two-days-after-huang-s-return"
+    ],
+    [
+     "StockAnalysis：S&P 可能因董事会监督问题下调英伟达 AA 评级",
+     "https://stockanalysis.com/news/nvidia-sp-rating-creditwatch-negative/"
+    ],
+    [
+     "GuruFocus：SanDisk 11-25 随科技股抛售大跌逾 12%",
+     "https://www.gurufocus.com/news/9220416/sandisk-sndk-shares-plunge-over-12-amid-tech-sector-selloff-on-november-25-2026"
+    ],
+    [
+     "Tradingpedia：SanDisk 因 NAND 减价担忧、评级下调与内部人减持下跌",
+     "https://www.tradingpedia.com/2026/11/25/sandisk-slides-on-nand-cuts-downgrade-insider-sales/"
+    ],
+    [
+     "MarketBeat：SanDisk 内部人减持后下跌 5.6%",
+     "https://www.marketbeat.com/instant-alerts/price-sandisk-nasdaq-sndk-stock-price-down-56-following-insider-selling-2026-11-25/"
+    ],
+    [
+     "Finviz：Nutanix 需要证明“超预期并上调指引”能扛住服务器持续短缺",
+     "https://finviz.com/news/423404/nutanix-must-prove-its-beat-and-raise-turn-can-survive-persistent-server-shortages"
+    ],
+    [
+     "Finviz：Ambarella 的物理 AI 叙事遇上毛利率、库存与存储成本考验",
+     "https://finviz.com/news/423396/ambarellas-physical-ai-pitch-meets-a-margin-inventory-and-memory-test"
+    ],
+    [
+     "Li Auto 6-K：2026 年三季度未经审计财报",
+     "https://www.sec.gov/Archives/edgar/data/0001791706/000110465926131768/tm2630657d1_ex99-1.htm"
+    ],
+    [
+     "MarketWatch：Oracle、CoreWeave 等科技股抛售后反弹",
+     "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories"
+    ],
     [
      "Huawei found guilty of sanctions violations and stealing US trade secrets (DCD)",
      "https://www.datacenterdynamics.com/en/news/huawei-found-guilty-of-sanctions-violations-and-stealing-us-trade-secrets/"
@@ -1539,18 +1622,6 @@
     [
      "IQM to Deploy 54-Qubit Quantum Computer at South Korean Data Centre (The Quantum Insider)",
      "https://thequantuminsider.com/2026/11/25/iqm-deploy-54-qubit-quantum-computer-south-korea-data-centre/"
-    ],
-    [
-     "Want to buy your kid an AI toy this Christmas? Not in New York (TechCrunch)",
-     "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"
-    ],
-    [
-     "Seeking Alpha：S&P 将英伟达 AA 评级列入负面观察",
-     "https://seekingalpha.com/news/4676682-nvidias-aa-credit-rating-placed-on-credit-watch-negative-by-sp-global"
-    ],
-    [
-     "Security Boulevard：WaPo 称五角大楼曾讨论用国防生产法施压英伟达复任 CEO（五角大楼否认）",
-     "https://securityboulevard.com/2026/11/hegseth-weighed-cold-war-law-to-force-nvidia-to-reinstate-ceo-jensen-huang-report/"
     ]
    ]
   },
@@ -3894,7 +3965,7 @@
    ]
   }
  ],
- "updated": "2026-11-25T17:59",
+ "updated": "2026-11-25T18:37",
  "trend": {
   "NVDA": {
    "date": "2026-11-25",
@@ -3985,9 +4056,9 @@
    ]
   },
   "MU": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "dir": "顺风",
-   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。 11-15 新增逆风：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证）。 11-16：芯片板块抛售中收跌 7.6% 至 719.02，回到 2027 前瞻中值（748）下方；当天无需求侧负面消息，属资金面去风险（MarketWatch 标题）。 11-24：BNP Paribas 降为中性、目标价 1,700→775 美元，认为 DRAM/NAND 供需最早 2027 年中趋于平衡（此前判断 2028 年中）、云厂商需求可能被高估，股价 −11.0% 至 629.79，略低于 2027 前瞻中值 659。这是卖方对周期拐点时间的分歧，公司自身数据尚未变化；Dell 同日上调 AI 服务器指引属于需求侧反证。",
+   "text": "存储进入价格驱动的上行周期：AI 服务器拉动 HBM 和高容量 DRAM，CoreWeave 积压 1325 亿美元被市场视为需求延续的证据；美光以 IPO 价认购 Anthropic 约 10 亿美元，和最大的模型客户绑定更深。股价一个月跌约 25% 后在 11-11 单日 +11.9%，仍比 52 周高点 1255 美元低约 35%。逆风是周期本身：价格涨得越快，越容易刺激扩产和下游砍单。 11-15 新增逆风：DRAM 价格操纵集体诉讼撤诉动议被驳回、进入取证（Tom's Hardware 标题，细节未查证）。 11-16：芯片板块抛售中收跌 7.6% 至 719.02，回到 2027 前瞻中值（748）下方；当天无需求侧负面消息，属资金面去风险（MarketWatch 标题）。 11-24：BNP Paribas 降为中性、目标价 1,700→775 美元，认为 DRAM/NAND 供需最早 2027 年中趋于平衡（此前判断 2028 年中）、云厂商需求可能被高估，股价 −11.0% 至 629.79，略低于 2027 前瞻中值 659。这是卖方对周期拐点时间的分歧，公司自身数据尚未变化；Dell 同日上调 AI 服务器指引属于需求侧反证。 11-25：随 SNDK 再跌 5.2% 至 596.90，接近 2027 前瞻中值 628.32；两天的下跌是对价格周期的预期修正，还没有基本面数据支撑（判断）。",
    "miss": "前瞻区间按一致预期 EPS 算，隐含高盈利能持续到 2027 年；存储是强周期行业，周期高点时市盈率看起来最便宜（判断）。客户自研 / 换供应商、三星 HBM 认证进度也影响份额。 反垄断诉讼的潜在赔偿和价格行为约束（集体诉讼刚进入取证，不代表认定违法）也不在前瞻估值里。 卖方开始讨论 2027 年中供需平衡，若成立，2027 年一致预期 EPS 有下修空间（判断）。",
    "watch": "12-23 财报的 HBM 收入和毛利率、DRAM 合约价、三星 / SK 海力士扩产计划、云厂商资本开支。",
    "src": [
@@ -4004,12 +4075,8 @@
      "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf"
     ],
     [
-     "Yahoo / GuruFocus：美光涨 11%，CoreWeave 与 Anthropic 认购（11-11）",
-     "https://finance.yahoo.com/markets/stocks/articles/micron-stocks-jump-11-2-165403817.html"
-    ],
-    [
-     "TradingKey：摩根士丹利称回调改善存储股风险收益（11-11）",
-     "https://www.tradingkey.com/analysis/stocks/us-stocks/262300967-memory-stocks-morgan-stanley-micron-sandisk-ai-demand-buying-opportunity-tradingkey"
+     "GuruFocus：SanDisk 11-25 随科技股抛售大跌逾 12%",
+     "https://www.gurufocus.com/news/9220416/sandisk-sndk-shares-plunge-over-12-amid-tech-sector-selloff-on-november-25-2026"
     ]
    ]
   },
@@ -4137,9 +4204,9 @@
    ]
   },
   "CRWV": {
-   "date": "2026-11-11",
+   "date": "2026-11-25",
    "dir": "分化",
-   "text": "订单面继续改善：三季度收入 36.6 亿美元（+168%），积压从 6 月底 1040 亿美元增到 1325 亿美元，全年收入指引上调到 130~133 亿美元，调整后营业利润指引上调到 12.75~13.75 亿美元，管理层称 2028 年上半年实现调整后盈利。融资面仍紧：三季度净亏损 7.09 亿美元、债务近 470 亿美元、部分债券收益率超过 16%，全年资本开支 370~390 亿美元；2027 年资金主要靠客户预付款和硬件伙伴融资，母公司层面无担保债暂停。11-11 单日 +24.7%，说明市场先接受了这套融资方案。",
+   "text": "订单面继续改善：三季度收入 36.6 亿美元（+168%），积压从 6 月底 1040 亿美元增到 1325 亿美元，全年收入指引上调到 130~133 亿美元，调整后营业利润指引上调到 12.75~13.75 亿美元，管理层称 2028 年上半年实现调整后盈利。融资面仍紧：三季度净亏损 7.09 亿美元、债务近 470 亿美元、部分债券收益率超过 16%，全年资本开支 370~390 亿美元；2027 年资金主要靠客户预付款和硬件伙伴融资，母公司层面无担保债暂停。11-11 单日 +24.7%，说明市场先接受了这套融资方案。 11-25：早盘跌超 10% 后收 −1.6%（41.92），处在 2027 前瞻区间下沿~中值；据报道拟以 Meta 合同支撑出售 45 亿美元贷款——合同质押融资仍可行，但利率环境（12 月加息定价九成以上）抬高融资成本，资金面是最大变量（判断）。",
    "miss": "前瞻区间扣了净债务，但没有反映再融资成本、股权稀释和合同推迟的风险；客户集中（大模型公司）意味着 Anthropic / OpenAI 的融资价格直接决定订单能否兑现（判断）。",
    "watch": "合同挂钩担保债的发行条款与收益率、客户预付款金额、Anthropic 上市定价（约 11-19）、1.85GW 年底在运电力目标。",
    "src": [
@@ -4150,6 +4217,10 @@
     [
      "路透（经 Detroit News）：CoreWeave 财报带动市场上涨（11-11）",
      "https://www.detroitnews.com/story/business/2026/11/11/sp-500-nasdaq-rise-as-coreweave-results-ease-ai-spending-worries/92724217007/"
+    ],
+    [
+     "MarketWatch：Oracle、CoreWeave 等科技股抛售后反弹",
+     "https://www.marketwatch.com/story/oracles-stock-sinks-toward-a-3-year-low-as-the-ai-trade-continues-to-unravel-d4698d77?mod=mw_rss_topstories"
     ]
    ]
   },
@@ -4571,9 +4642,9 @@
    ]
   },
   "SNDK": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "dir": "顺风",
-   "text": "NAND 处在量价齐升阶段：2027 财年一季度收入约 110 亿美元（环比 +23%、同比 +378%），非 GAAP 毛利率 85.1%，环比增量约六成来自出货量、四成来自价格；二季度指引收入 122~126 亿美元。约一半 2027 财年和三分之二 2028 财年的出货已签长期协议，管理层预计 2027 年 NAND 位元需求增长约 40%。逆风：消费级收入环比 −29%，高价正在压抑消费端。 11-24：存储股集体下跌，SNDK −17.4% 至 77.95（仍在 2027 前瞻中值 75.7 上方）；起因是 BNP 认为 NAND 供需最早 2027 年中平衡，与公司“约三分之二 2028 财年出货已签长期协议”的说法存在分歧——长约锁量但未必锁价（判断）。",
+   "text": "NAND 处在量价齐升阶段：2027 财年一季度收入约 110 亿美元（环比 +23%、同比 +378%），非 GAAP 毛利率 85.1%，环比增量约六成来自出货量、四成来自价格；二季度指引收入 122~126 亿美元。约一半 2027 财年和三分之二 2028 财年的出货已签长期协议，管理层预计 2027 年 NAND 位元需求增长约 40%。逆风：消费级收入环比 −29%，高价正在压抑消费端。 11-24：存储股集体下跌，SNDK −17.4% 至 77.95（仍在 2027 前瞻中值 75.7 上方）；起因是 BNP 认为 NAND 供需最早 2027 年中平衡，与公司“约三分之二 2028 财年出货已签长期协议”的说法存在分歧——长约锁量但未必锁价（判断）。 11-25：再跌（各家报道 5.6%~12% 不一，快照 73.13，仍略高于 2027 前瞻中值 71.05），叠加评级下调与内部人减持——价格周期见顶的担忧在扩散，基本面数据尚未验证（判断）。",
    "miss": "85% 的毛利率是价格周期的产物，前瞻区间按 2027 财年 EPS 约 227 美元算，等于假设高价维持；长期协议锁定的是量，价格条款和需求下修风险看不到（判断）。 长期协议的价格条款未披露，若合约价随现货下行，锁量不等于锁利润（判断）。",
    "watch": "二季度毛利率能否维持 84.5% 以上、数据中心收入占比、长期协议续签、三季度（传统淡季）指引。",
    "src": [
@@ -4584,6 +4655,14 @@
     [
      "The Motley Fool：Sandisk 2027 财年一季度电话会纪要（10-30）",
      "https://www.fool.com/earnings/call-transcripts/2026/10/30/sandisk-sndk-q1-2027-earnings-call-transcript/"
+    ],
+    [
+     "Tradingpedia：SanDisk 因 NAND 减价担忧、评级下调与内部人减持下跌",
+     "https://www.tradingpedia.com/2026/11/25/sandisk-slides-on-nand-cuts-downgrade-insider-sales/"
+    ],
+    [
+     "GuruFocus：SanDisk 11-25 随科技股抛售大跌逾 12%",
+     "https://www.gurufocus.com/news/9220416/sandisk-sndk-shares-plunge-over-12-amid-tech-sector-selloff-on-november-25-2026"
     ]
    ]
   },
@@ -5242,9 +5321,9 @@
    ]
   },
   "AMBA": {
-   "date": "2026-11-24",
+   "date": "2026-11-25",
    "dir": "逆风",
-   "text": "FT 7-31 报道 NXP 在洽谈收购 Ambarella（当时市值约 33 亿美元），NXP 想补齐车载视觉 / 边缘 AI 能力；11-19 据 Seeking Alpha 标题谈判或进入最后阶段，股价 +7.8% 至 58.93、已高于 2027 前瞻中值。自身业务顺风是安防与车载边缘 AI 推理芯片，逆风是汽车客户份额集中和中国安防市场下滑（判断）。 11-24：三季度据标题双不及预期（收入 1.1522 亿美元、贴近指引下沿），股价 −20% 至 44.47，回到 2027 前瞻中值附近——并购溢价大部分回吐，基本面逆风显现（判断）。 18:28：据标题四季度收入指引 7,000 万~7,500 万美元，归因存储短缺导致订单推迟（未查证）——若属实，逆风从“份额 / 安防”扩大到存储周期，2027 一致预期有下修压力（判断）。",
+   "text": "FT 7-31 报道 NXP 在洽谈收购 Ambarella（当时市值约 33 亿美元），NXP 想补齐车载视觉 / 边缘 AI 能力；11-19 据 Seeking Alpha 标题谈判或进入最后阶段，股价 +7.8% 至 58.93、已高于 2027 前瞻中值。自身业务顺风是安防与车载边缘 AI 推理芯片，逆风是汽车客户份额集中和中国安防市场下滑（判断）。 11-24：三季度据标题双不及预期（收入 1.1522 亿美元、贴近指引下沿），股价 −20% 至 44.47，回到 2027 前瞻中值附近——并购溢价大部分回吐，基本面逆风显现（判断）。 18:28：据标题四季度收入指引 7,000 万~7,500 万美元，归因存储短缺导致订单推迟（未查证）——若属实，逆风从“份额 / 安防”扩大到存储周期，2027 一致预期有下修压力（判断）。 11-25：财报后 −18.5% 至 36.25；据报道毛利率、库存和存储涨价是主要疑问，逆风判断维持。",
    "miss": "股价已经部分反映并购溢价，若谈判破裂会回到基本面估值；即便成交，也需要多国反垄断审批（NXP 2016 年被高通收购就因中国审批失败）。",
    "watch": "NXP / Ambarella 是否发布正式公告及价格、下次财报（11-24）的车载与边缘 AI 收入、毛利率。 财报后：四季度指引、全年 10~15% 增长是否维持、NXP 谈判是否仍在推进。 存储价格何时缓和、客户订单是否回补；分析师对 2027 预期的下修幅度。",
    "src": [
@@ -5259,6 +5338,10 @@
     [
      "Seeking Alpha：Ambarella Q3 misses",
      "https://seekingalpha.com/symbol/AMBA/news"
+    ],
+    [
+     "Finviz：Ambarella 的物理 AI 叙事遇上毛利率、库存与存储成本考验",
+     "https://finviz.com/news/423396/ambarellas-physical-ai-pitch-meets-a-margin-inventory-and-memory-test"
     ]
    ]
   },
@@ -5436,10 +5519,10 @@
    ]
   },
   "NTNX": {
-   "date": "2026-11-24",
-   "dir": "顺风",
-   "text": "顺风：博通收购 VMware 后的提价和捆绑促使部分企业寻找替代，Nutanix 的超融合 / 混合云平台是主要承接方之一；一季度 EPS 0.73（预期 0.61）、收入 7.724 亿美元（预期约 7.624 亿）均超预期。逆风：VMware 迁移是多年项目、节奏取决于客户续约周期，当天股价仍随科技股 −5.2% 至 54.59，恰在 2027 前瞻中值 54.87 附近。 11-24 同日公告启动 CEO 接班程序：Ramaswami（2020 年 12 月上任）将在继任者到任后卸任，人选和时间表未公布（8-K）。",
-   "miss": "前瞻估值假设 VMware 迁移需求持续兑现；没有反映博通若调整定价策略或客户转向公有云带来的需求回落，以及 AI 推理部署更多走公有云 / neocloud 对本地基础设施软件的分流（判断）。",
+   "date": "2026-11-25",
+   "dir": "分化",
+   "text": "顺风：博通收购 VMware 后的提价和捆绑促使部分企业寻找替代，Nutanix 的超融合 / 混合云平台是主要承接方之一；一季度 EPS 0.73（预期 0.61）、收入 7.724 亿美元（预期约 7.624 亿）均超预期。逆风：VMware 迁移是多年项目、节奏取决于客户续约周期，当天股价仍随科技股 −5.2% 至 54.59，恰在 2027 前瞻中值 54.87 附近。 11-24 同日公告启动 CEO 接班程序：Ramaswami（2020 年 12 月上任）将在继任者到任后卸任，人选和时间表未公布（8-K）。 11-25：财报后 −14.6% 至 46.62，跌破 2027 前瞻中值 49.33。据报道公司超预期并上调指引，但服务器供应受限、硬件涨价使部分客户推迟项目或先上公有云——VMware 迁移需求是顺风，硬件瓶颈是逆风，方向由“顺风”改为“分化”（判断）。",
+   "miss": "前瞻估值假设 VMware 迁移需求持续兑现；没有反映博通若调整定价策略或客户转向公有云带来的需求回落，以及 AI 推理部署更多走公有云 / neocloud 对本地基础设施软件的分流（判断）。 服务器和存储短缺持续到 2027 年时，订阅收入确认会被推迟，前瞻 EPS 按正常交付节奏算（判断）。",
    "watch": "ARR 与净留存率、新客户数（尤其大型 VMware 迁移客户）、自由现金流利润率、全年指引是否上调。 CEO 继任人选与交接期间的执行节奏。",
    "src": [
     [
@@ -5453,6 +5536,61 @@
     [
      "Investing.com：Nutanix earnings test VMware opportunity",
      "https://www.investing.com/news/earnings/nutanix-in-the-spotlight-as-earnings-test-vmware-opportunity-93CH-5048521"
+    ],
+    [
+     "Finviz：Nutanix 需要证明“超预期并上调指引”能扛住服务器持续短缺",
+     "https://finviz.com/news/423404/nutanix-must-prove-its-beat-and-raise-turn-can-survive-persistent-server-shortages"
+    ]
+   ]
+  },
+  "LI": {
+   "date": "2026-11-25",
+   "dir": "分化",
+   "text": "三季度交付 99,964 辆（同比 +7.2%，处指引上沿），毛利率 16.7%（二季度 11.0%、去年同期 16.3%），净亏损约 3.1 亿元——毛利率修复说明价格战压力暂时缓和；但 10 月交付 29,025 辆、同比 −8.6%，纯电产品线和增程主力车型都面临中国车市的激烈竞争。顺风是毛利修复和智能驾驶 / AI 投入，逆风是需求和价格战（判断）。",
+   "miss": "本站没有可用的前瞻估值区间；中国车市补贴退坡、价格战再起和出口关税的影响，一致预期反映得很慢（判断）。",
+   "watch": "四季度交付指引与实际、毛利率能否守住 16% 以上、经营现金流、纯电车型月销。",
+   "src": [
+    [
+     "Li Auto 6-K：2026 年三季度未经审计财报",
+     "https://www.sec.gov/Archives/edgar/data/0001791706/000110465926131768/tm2630657d1_ex99-1.htm"
+    ],
+    [
+     "CnEVPost：理想汽车 2026 年三季度财报日期",
+     "https://cnevpost.com/2026/11/10/li-auto-q3-2026-results-nov-25/"
+    ]
+   ]
+  },
+  "TEM": {
+   "date": "2026-11-25",
+   "dir": "顺风",
+   "text": "三季度收入 4.115 亿美元（同比 +23%），其中诊断 3.035 亿（+20%）、数据与应用 1.081 亿（+33%）；调整后 EBITDA 2,560 万美元（去年同期 150 万），全年收入指引上调到 16.0~16.05 亿美元。顺风是肿瘤基因检测量和药企数据授权需求；逆风是遗传性肿瘤检测只增 3%、关联方 Pathos AI 贡献了 2,210 万美元数据收入。",
+   "miss": "数据业务的一部分来自关联方，独立客户需求的真实增速可能低于表面数字；检测报销政策（医保定价）变化不在前瞻 EPS 里（判断）。",
+   "watch": "数据与应用收入中非关联方的占比、诊断检测量增速、调整后 EBITDA 是否按约 6,500 万美元全年目标兑现。",
+   "src": [
+    [
+     "Tempus 8-K：2026 年三季度业绩",
+     "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526442619/tem-ex99_1.htm"
+    ],
+    [
+     "FourWeekMBA：Tempus 上调 2026 收入指引至 16 亿美元，数据业务 +33%",
+     "https://fourweekmba.com/ai-tempus-lifts-2026-revenue-guide-to-1-6b-data-unit-up-33/"
+    ]
+   ]
+  },
+  "BKSY": {
+   "date": "2026-11-25",
+   "dir": "分化",
+   "text": "三季度收入 4,280 万美元（同比 +118%，创纪录），净利润 1,850 万美元，调整后 EBITDA 1,280 万美元（利润率 29.9%），Gen-3 卫星带动影像与 AI 分析收入到 3,270 万美元，全年指引第二次上调。逆风：积压订单约 3.55 亿美元、与一季度后的约 3.8 亿大体持平，Gen-3 年底目标从 8 颗降到 7 颗，四季度 EBITDA 预计环比持平或下降。",
+   "miss": "收入高度依赖国防和国际政府客户的大单，订单时点和卫星发射节奏都会让季度数字大起大落；前瞻区间默认星座按时部署（判断）。",
+   "watch": "积压订单是否重新增长、第 8 颗 Gen-3 发射时间、国际政府客户续约、四季度调整后 EBITDA。",
+   "src": [
+    [
+     "BlackSky 2026 年三季度业绩（Business Wire / Morningstar）",
+     "https://www.morningstar.com/news/business-wire/20261105968484/blacksky-reports-third-quarter-2026-results"
+    ],
+    [
+     "Finviz：BlackSky Gen-3 创纪录季度，但积压订单、卫星进度和偏弱的四季度让市场存疑",
+     "https://finviz.com/news/417260/blackskys-record-gen-3-quarter-delivers-margin-breakout-and-higher-guidance-but-backlog-satellite-timing-and-a-soft-q4-setup-keep-the-market-skeptical"
     ]
    ]
   }
